@@ -1,0 +1,228 @@
+@import "tailwindcss";
+
+/* ============================================================
+   Design tokens — source unique de vérité (docs/plan_app_partie2_ui.md, partie H)
+   ============================================================ */
+:root {
+  /* Couleurs de base (mode clair) */
+  --fond: #FAF9F6;
+  --carte: #FFFFFF;
+  --texte: #1F2328;
+  --texte-2: #6B7280;
+  --bordure: #E7E5E0;
+
+  /* L'accent unique */
+  --accent: #4F46E5;
+  --accent-fort: #4338CA;
+
+  /* Couleurs qui portent un sens (jamais décoratives) */
+  --ok: #16A34A;
+  --effort: #D97706;
+  --alerte: #E11D48;
+
+  /* Liseré par famille de carte */
+  --type-memoire: #DBEAFE;
+  --type-comprendre: #EDE9FE;
+  --type-procedure: #D1FAE5;
+  --type-duel: #FEF3C7;
+  --type-page-blanche: #F3F4F6;
+
+  /* Texte */
+  --police: var(--font-inter), system-ui, sans-serif;
+  --taille-question: 20px;
+  --taille-texte: 17px;
+  --interligne: 1.5;
+  --largeur-max: 640px;
+
+  /* Animations */
+  --anim-micro: 150ms ease-out;
+  --anim-transition: 250ms ease-out;
+  --anim-fin: 600ms ease-out;
+
+  /* Espacements (multiples de 8) */
+  --e1: 8px;
+  --e2: 16px;
+  --e3: 24px;
+  --e4: 40px;
+}
+
+/* Expose les tokens à Tailwind : bg-fond, text-texte-2, border-bordure, bg-accent… */
+@theme inline {
+  --color-fond: var(--fond);
+  --color-carte: var(--carte);
+  --color-texte: var(--texte);
+  --color-texte-2: var(--texte-2);
+  --color-bordure: var(--bordure);
+  --color-accent: var(--accent);
+  --color-accent-fort: var(--accent-fort);
+  --color-ok: var(--ok);
+  --color-effort: var(--effort);
+  --color-alerte: var(--alerte);
+  --font-sans: var(--police);
+}
+
+/* ============================================================
+   Base
+   ============================================================ */
+html {
+  background: var(--fond);
+  color: var(--texte);
+  font-family: var(--police);
+  font-size: var(--taille-texte);
+  line-height: var(--interligne);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background: var(--fond);
+  color: var(--texte);
+  min-height: 100dvh;
+}
+
+.question {
+  font-size: var(--taille-question);
+  line-height: 1.45;
+  font-weight: 500;
+  max-width: 34em; /* ≈ 65 caractères */
+}
+
+.texte-2 {
+  color: var(--texte-2);
+}
+
+/* Signalement : 1 seul mot-clé en gras par carte */
+.mot-cle {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* ============================================================
+   Boutons (min 48px de haut, faciles à viser)
+   ============================================================ */
+.bouton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid var(--bordure);
+  background: var(--carte);
+  color: var(--texte);
+  font-size: var(--taille-texte);
+  font-weight: 500;
+  line-height: 1.3;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color var(--anim-micro), transform var(--anim-micro), border-color var(--anim-micro);
+}
+.bouton:hover { background: #F3F2EE; }
+.bouton:active { transform: scale(0.98); }
+.bouton:disabled { opacity: 0.45; cursor: default; transform: none; }
+.bouton:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.bouton-principal {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #FFFFFF;
+  justify-content: center;
+}
+.bouton-principal:hover { background: var(--accent-fort); }
+
+.bouton-choix {
+  width: 100%;
+  justify-content: flex-start;
+}
+.bouton-choix.est-choisi {
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+.bouton-choix.est-bon {
+  border-color: var(--ok);
+  box-shadow: inset 0 0 0 1px var(--ok);
+}
+.bouton-choix.est-faux {
+  border-color: var(--alerte);
+  box-shadow: inset 0 0 0 1px var(--alerte);
+}
+
+/* Indice de touche clavier */
+.touche {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 22px;
+  padding: 0 6px;
+  border-radius: 6px;
+  border: 1px solid var(--bordure);
+  background: var(--fond);
+  color: var(--texte-2);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--police);
+}
+.bouton-principal .touche {
+  background: rgba(255, 255, 255, 0.18);
+  border-color: rgba(255, 255, 255, 0.35);
+  color: #FFFFFF;
+}
+
+/* ============================================================
+   Animations — CSS uniquement, transform + opacity, ease-out
+   ============================================================ */
+@keyframes apparait {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes deplie {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes coche {
+  from { opacity: 0; transform: scale(0.6); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes tremble {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-7px); }
+  75%      { transform: translateX(7px); }
+}
+@keyframes rebond {
+  0%   { opacity: 0; transform: translateY(16px) scale(0.98); }
+  70%  { opacity: 1; transform: translateY(-4px) scale(1.01); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes fondu {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.anim-apparait { animation: apparait 250ms ease-out both; }
+.anim-deplie   { animation: deplie 200ms ease-out both; }
+.anim-coche    { animation: coche 300ms ease-out both; }
+.anim-tremble  { animation: tremble 250ms ease-out; }
+.anim-fin      { animation: rebond 600ms ease-out both; }
+
+.emoji-confiance {
+  transition: transform var(--anim-micro);
+}
+.emoji-confiance.est-choisi {
+  transform: scale(1.2);
+}
+
+.barre-progression > div {
+  transition: width 400ms ease-out;
+}
+
+/* Réglage système « réduire les animations » : tout passe en fondu simple */
+@media (prefers-reduced-motion: reduce) {
+  .anim-apparait, .anim-deplie, .anim-coche, .anim-fin {
+    animation: fondu 150ms ease-out both;
+  }
+  .anim-tremble { animation: none; }
+  .emoji-confiance, .barre-progression > div, .bouton {
+    transition: none;
+  }
+}
