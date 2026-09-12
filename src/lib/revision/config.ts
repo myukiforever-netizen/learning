@@ -13,7 +13,11 @@ export const CONFIG_REVISION = {
     life: [2, 10, 30, 90, 240],
   } satisfies Record<ObjectifRetention, number[]>,
 
-  /** « À vie » : une fois le calendrier épuisé, intervalle × ce facteur après chaque succès. */
+  /**
+   * Une fois le calendrier épuisé :
+   * - « à vie » : intervalle × multiplicateurVie après chaque succès ;
+   * - 3 mois / 1 an : on répète le dernier intervalle du calendrier.
+   */
   multiplicateurVie: 2,
 
   /** Réussi facilement (😎 + correct) : intervalle prévu × ce facteur. */
@@ -30,6 +34,8 @@ export const CONFIG_REVISION = {
 
   /** Durées de session proposées à l'accueil, en minutes. */
   durees: [10, 20, 40, 60],
+  /** Durée proposée par défaut. */
+  dureeParDefaut: 20,
 
   /** Pour convertir une durée en nombre de cartes. */
   secondesParCarte: 30,
@@ -43,4 +49,10 @@ export const CONFIG_REVISION = {
     /** Au-delà, on arrête de la faire revenir dans cette session. */
     maxRetoursParSession: 2,
   },
+
+  /**
+   * Fuseau horaire qui définit « aujourd'hui » (dates dues, série de jours).
+   * Le serveur peut tourner ailleurs (Vercel = UTC) : on fixe le fuseau de l'utilisateur.
+   */
+  fuseauHoraire: "Europe/Paris",
 } as const;

@@ -28,12 +28,14 @@ npm run lint     # vérifie le code
 ## Structure
 
 ```
-src/app/            écrans (accueil, session, session/fin, matieres, cerveau, reglages, connexion)
-src/components/     composants d'interface ; src/components/cartes/ = un fichier par type de carte
-src/lib/revision/   config.ts (TOUTES les valeurs réglables), planifier.ts (dates dues), composer.ts (composition de session)
-src/lib/import/     schéma, validation et fusion des JSON de matières
-src/lib/supabase/   clients Supabase (navigateur / serveur) et requêtes
-src/data/           cartes de test en dur (jalon 1)
+src/app/            écrans (accueil, session, matieres, cerveau, reglages, connexion)
+src/app/session/    page.tsx (serveur : compose la file) → Session.tsx (client : la pile de cartes) ; actions.ts (actions serveur)
+src/components/     composants d'interface ; cartes/ = un fichier par type de carte ; FinDeSession.tsx = page blanche → tri → récap
+src/lib/revision/   config.ts (TOUTES les valeurs réglables), planifier.ts (dates dues, boîtes), composer.ts (composition de session), serie.ts (🔥)
+src/lib/dates.ts    « aujourd'hui » dans le fuseau de l'utilisateur, ajout de jours
+src/lib/import/     schéma, validation et fusion des JSON de matières (jalon 3)
+src/lib/supabase/   client.ts / server.ts (clients) ; requetes.ts = TOUTES les lectures/écritures en base
+src/data/           cartes de démonstration (chargées en base par le bouton de l'accueil)
 supabase/migrations/ SQL de création des tables
 tests/              tests Vitest de la logique pure
 docs/               les 2 documents de référence
@@ -82,8 +84,14 @@ docs/               les 2 documents de référence
 - Tant que les clés Supabase sont vides dans `.env.local`, l'app tourne sans connexion (mode découverte du J1).
 - Le compte utilisateur n'est jamais créé depuis l'app (`shouldCreateUser: false`) : il est créé une fois dans le tableau de bord Supabase.
 - Le navigateur automatisé de Claude envoie Espace/Entrée avec `e.key` vide : tester ces raccourcis en envoyant de vrais `KeyboardEvent` via JavaScript.
+- Tables : `subjects → modules → concepts → cards`, `reviews` (1 ligne par carte déjà vue ; pas de ligne = nouvelle), `answers`, `sessions`. SQL dans `supabase/migrations/0001_schema.sql`, à coller dans l'éditeur SQL de Supabase. Identifiants texte stables (clé de fusion des JSON).
+- « Aujourd'hui » = date dans `CONFIG_REVISION.fuseauHoraire` (Europe/Paris), jamais la date du serveur (Vercel = UTC).
+- Modèle de révision : `step` (position dans le calendrier), `interval_days` (dernier intervalle appliqué), `ease_state` (`new`/`ok`/`failed`/`thought_knew`). Après un raté ou une boîte, le succès suivant utilise `interval_days` au lieu du calendrier.
+- Dans une session, seule la PREMIÈRE réponse à une carte replanifie ; les retours d'une carte ratée sont enregistrés dans `answers` sans replanifier.
+- Les écritures pendant la session sont asynchrones (la carte suivante n'attend pas) ; la fin de session attend toutes les écritures avant de clôturer.
 
 ## Avancement
 
-- J1 (projet + auth + mini-session en dur) : code terminé, 6 tests verts. Reste côté product owner : créer le projet Supabase et le dépôt GitHub (guides fournis en fin de jalon).
-- J2 (base + algorithme + accueil + fin de session) : à faire
+- J1 (projet + auth + mini-session en dur) : terminé, poussé sur GitHub (myukiforever-netizen/learning).
+- J2 (base + algorithme + accueil + fin de session) : code terminé, 21 tests verts, vérifié dans le navigateur en mode démo. Reste côté product owner : créer le projet Supabase, exécuter le SQL, remplir `.env.local`, puis tester avec enregistrement réel.
+- J3 (import/export JSON + écran Matières + SCHEMA.md) : à faire

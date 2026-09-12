@@ -63,3 +63,21 @@ export interface ReponseSession {
   timestamp: string;
   error_box: BoiteErreur | null;
 }
+
+/** État de révision d'une carte (table `reviews`). Pas de ligne en base = carte nouvelle. */
+export interface EtatRevision {
+  /** Position dans le calendrier de l'objectif (0 = début). */
+  step: number;
+  /** Dernier intervalle appliqué, en jours (après un raté : l'intervalle réduit à appliquer). */
+  interval_days: number;
+  /** Date à laquelle la carte redevient due, AAAA-MM-JJ. */
+  due_date: string;
+  /** new = jamais vue ; ok = en cours ; failed = ratée ; thought_knew = boîte ⚠️ (priorité max). */
+  ease_state: "new" | "ok" | "failed" | "thought_knew";
+}
+
+/** Une carte accompagnée de son état de révision (null = nouvelle). */
+export interface CarteAReviser {
+  carte: Carte;
+  revision: EtatRevision | null;
+}
