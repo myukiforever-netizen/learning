@@ -1,0 +1,196 @@
+{
+  "id": "marketing-preuves",
+  "name": "6. Le marketing fondé sur les preuves : Sharp, Binet et Field",
+  "concepts": [
+    {
+      "id": "double-jeopardy",
+      "name": "La loi de double jeopardy",
+      "cards": [
+        {
+          "id": "jeopardy-1",
+          "type": "flash",
+          "question": "Qu'est-ce que la loi de « double jeopardy » de Byron Sharp ?",
+          "answer": "Les petites marques ont moins d'acheteurs ET une fidélité légèrement moindre. Les deux varient ensemble avec la part de marché.",
+          "explanation": "Une petite marque est doublement pénalisée : moins de clients, et des clients un peu moins fidèles.",
+          "explanation_more": "Byron Sharp, « How Brands Grow », Oxford University Press, 2010 ; Ehrenberg-Bass Institute. Régularité empirique observée sur de nombreuses catégories.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "jeopardy-2",
+          "type": "duel",
+          "question": "Selon la double jeopardy, la fidélité d'une petite marque est-elle bien plus faible ou légèrement plus faible que celle d'une grande ?",
+          "options": ["Légèrement plus faible", "Bien plus faible"],
+          "answer": "Légèrement plus faible",
+          "explanation": "La différence de fidélité est petite ; la grosse différence, c'est le nombre d'acheteurs.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "jeopardy-3",
+          "type": "why",
+          "question": "Pourquoi dit-on que les lois de Sharp sont « descriptives » plutôt que « prescriptives » ?",
+          "answer": "Parce qu'elles décrivent des régularités observées dans les données d'achat (modèle NBD-Dirichlet), sans démontrer par expérience ce qu'il faut faire pour changer les choses.",
+          "explanation": "Une régularité solide n'est pas une recette prouvée. Et les critiques notent que Sharp minore l'émotion et la relation.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "penetration",
+      "name": "Croître par la pénétration, pas par la fidélité",
+      "cards": [
+        {
+          "id": "penetration-1",
+          "type": "qcm",
+          "question": "Sur 880 dossiers de la base IPA cités par Sharp, quelle part attribuait la croissance à la pénétration (nouveaux acheteurs) ?",
+          "options": ["82 %, contre 2 % pour la fidélité", "50 %, à égalité avec la fidélité", "20 %", "2 %, contre 82 % pour la fidélité"],
+          "options_why": [
+            "",
+            "Non : la pénétration domine largement.",
+            "Beaucoup plus.",
+            "C'est l'inverse."
+          ],
+          "answer": "82 %, contre 2 % pour la fidélité",
+          "explanation": "Les marques croissent surtout en recrutant de nouveaux acheteurs, pas en fidélisant davantage.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "penetration-2",
+          "type": "flash",
+          "question": "Que contredit le constat « croissance par la pénétration » dans le discours marketing courant ?",
+          "answer": "Une grande partie du discours sur la fidélisation et le ciblage étroit : mieux vaut être disponible mentalement et physiquement pour beaucoup d'acheteurs occasionnels.",
+          "explanation": "Disponibilité mentale (on pense à la marque) et disponibilité physique (on la trouve facilement).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "penetration-3",
+          "type": "cloze",
+          "question": "Base IPA, 880 dossiers : [[82]] % attribuent la croissance à la pénétration, [[2]] % à la fidélité.",
+          "answer": "Base IPA, 880 dossiers : 82 % attribuent la croissance à la pénétration, 2 % à la fidélité.",
+          "explanation": "Chiffres issus de rapports professionnels, cohérents entre sources, à vérifier sur la publication primaire pour un usage critique.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "penetration-4",
+          "type": "whatif",
+          "question": "Et si une marque consacrait 80 % de son budget à un programme de fidélité, qu'en penserait Sharp ?",
+          "answer": "Que c'est un pari contre les données : la fidélité varie peu et suit la part de marché. Le budget serait mieux employé à atteindre de nouveaux acheteurs et à être facile à trouver.",
+          "explanation": "Reste que ces lois sont descriptives : à confronter à tes propres données.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "regle-60-40",
+      "name": "La règle 60/40 de Binet et Field",
+      "cards": [
+        {
+          "id": "binet-1",
+          "type": "flash",
+          "question": "Que dit la règle 60/40 de Binet et Field (« The Long and the Short of It », 2013) ?",
+          "answer": "Répartir en moyenne 60 % du budget en construction de marque à long terme et 40 % en activation à court terme.",
+          "explanation": "C'est une moyenne (« centre de gravité »), pas une règle fixe : le ratio varie selon le secteur.",
+          "explanation_more": "Base d'environ 996 campagnes primées par l'IPA entre 1980 et 2010. En B2B, le B2B Institute de LinkedIn trouve plutôt 46/54.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "binet-2",
+          "type": "qcm",
+          "question": "Quelle est la principale réserve sur la règle 60/40 ?",
+          "options": [
+            "Elle vient de campagnes primées auto-déclarées : biais de sélection et de survie",
+            "Elle repose sur trop peu de campagnes",
+            "Elle a été réfutée par une expérience",
+            "Elle ne concerne que la télévision"
+          ],
+          "options_why": [
+            "",
+            "Non : près de mille campagnes.",
+            "Non : elle n'a pas été testée par expérience, c'est justement la limite.",
+            "Non : elle porte sur tous les canaux."
+          ],
+          "answer": "Elle vient de campagnes primées auto-déclarées : biais de sélection et de survie",
+          "explanation": "On ne voit que les campagnes qui ont gagné un prix et dont les résultats ont été déclarés par leurs auteurs.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "binet-3",
+          "type": "cloze",
+          "question": "Binet et Field : [[60]] % marque / 40 % activation, moyenne issue d'environ 996 campagnes primées. En B2B, plutôt [[46]]/54.",
+          "answer": "Binet et Field : 60 % marque / 40 % activation, moyenne issue d'environ 996 campagnes primées. En B2B, plutôt 46/54.",
+          "explanation": "Un centre de gravité, pas une loi : adapte selon ton secteur.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "binet-4",
+          "type": "duel",
+          "question": "Les régularités de Sharp et de Binet et Field viennent-elles d'expériences randomisées ou de données observationnelles agrégées ?",
+          "options": ["Données observationnelles agrégées", "Expériences randomisées"],
+          "answer": "Données observationnelles agrégées",
+          "explanation": "Statut du rapport : bien étayées mais observationnelles, donc descriptives. Pas de RCT.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "livres-hypotheses",
+      "name": "Les livres : hypothèses, jamais preuves",
+      "cards": [
+        {
+          "id": "livres-1",
+          "type": "sort",
+          "question": "Classe ces ouvrages selon la lecture recommandée par le rapport.",
+          "answer": "Solides mais descriptifs : Sharp, Binet et Field. Catalogues d'hypothèses à tester : Cialdini, Shotton, Sutherland, Barden. Extrême prudence : Ariely (« Predictably Irrational »).",
+          "explanation": "Trois attitudes de lecture différentes selon la qualité des preuves derrière chaque livre.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Solide mais descriptif", "Hypothèses à tester", "Extrême prudence"],
+            "items": [
+              { "text": "Sharp, « How Brands Grow »", "category": "Solide mais descriptif" },
+              { "text": "Cialdini, « Influence »", "category": "Hypothèses à tester" },
+              { "text": "Ariely, « Predictably Irrational »", "category": "Extrême prudence" },
+              { "text": "Binet et Field, « The Long and the Short of It »", "category": "Solide mais descriptif" },
+              { "text": "Shotton, « The Choice Factory »", "category": "Hypothèses à tester" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "livres-2",
+          "type": "flash",
+          "question": "Que penser de « Système 1 / Système 2 » de Kahneman aujourd'hui ?",
+          "answer": "Solide sur beaucoup de points, mais le chapitre 4 sur le priming a été désavoué par l'auteur lui-même en 2017.",
+          "explanation": "Même un excellent livre peut contenir un chapitre fondé sur une littérature effondrée.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "livres-3",
+          "type": "qcm",
+          "question": "Comment lire « Nudge » de Thaler et Sunstein selon le parcours recommandé ?",
+          "options": [
+            "Le lire, PUIS lire Maier et ses collègues (2022) et Szaszi et ses collègues (2022)",
+            "Le lire comme un manuel de recettes prouvées",
+            "Ne pas le lire",
+            "Lire seulement la Final Edition"
+          ],
+          "options_why": [
+            "",
+            "Non : l'efficacité générale du nudge est controversée après correction du biais de publication.",
+            "Non : il reste utile, à condition d'y ajouter la critique.",
+            "L'édition ne change pas le besoin de lire la critique."
+          ],
+          "answer": "Le lire, PUIS lire Maier et ses collègues (2022) et Szaszi et ses collègues (2022)",
+          "explanation": "Les défauts restent robustes ; l'efficacité générale du nudge est surestimée en agrégat.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "livres-4",
+          "type": "flash",
+          "question": "Que dit le rapport des livres de vente et de négociation (SPIN Selling, Challenger Sale, Never Split the Difference, Getting to Yes) ?",
+          "answer": "Des cadres praticables, utiles comme heuristiques, mais avec peu de tests randomisés indépendants. La méthodologie du Challenger Sale (CEB) est critiquée.",
+          "explanation": "Praticable ne veut pas dire prouvé : à utiliser comme grille, à évaluer sur tes résultats.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

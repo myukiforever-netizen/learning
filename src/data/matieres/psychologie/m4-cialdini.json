@@ -1,0 +1,215 @@
+{
+  "id": "cialdini",
+  "name": "4. Les techniques de Cialdini : ce qu'on sait vraiment",
+  "concepts": [
+    {
+      "id": "sept-principes",
+      "name": "Les 7 principes de Cialdini",
+      "cards": [
+        {
+          "id": "principes-1",
+          "type": "flash",
+          "question": "Quels sont les 7 principes d'influence de Cialdini (« Influence » et « Pré-suasion ») ?",
+          "answer": "Réciprocité, engagement (cohérence), preuve sociale, sympathie, autorité, rareté, et unité (ajouté plus tard).",
+          "explanation": "Principes plausibles, effets réels mais contextuels et souvent surestimés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "principes-2",
+          "type": "cloze",
+          "question": "Les 7 principes : réciprocité, engagement, preuve sociale, [[sympathie]], autorité, [[rareté]], unité.",
+          "answer": "Les 7 principes : réciprocité, engagement, preuve sociale, sympathie, autorité, rareté, unité.",
+          "explanation": "Le 7e, l'unité (le sentiment d'appartenir au même groupe), a été ajouté dans « Pré-suasion ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "principes-3",
+          "type": "qcm",
+          "question": "Comment le rapport résume-t-il l'état des preuves des 7 principes ?",
+          "options": [
+            "Plausibles, effets réels mais contextuels et souvent surestimés, peu de tests commerciaux propres",
+            "Tous démontrés par des tests commerciaux à grande échelle",
+            "Tous réfutés",
+            "Seule la rareté est prouvée"
+          ],
+          "options_why": [
+            "",
+            "Non : très peu de tests commerciaux rigoureux publiés.",
+            "Non : ils ne sont pas dans la liste rouge.",
+            "Non : la rareté est aussi contextuelle que les autres."
+          ],
+          "answer": "Plausibles, effets réels mais contextuels et souvent surestimés, peu de tests commerciaux propres",
+          "explanation": "Cialdini se lit comme une liste d'hypothèses à tester, pas comme un manuel de recettes prouvées.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "principes-4",
+          "type": "sort",
+          "question": "Associe chaque exemple au principe de Cialdini qu'il illustre.",
+          "answer": "Échantillon gratuit → réciprocité ; « plus que 3 en stock » → rareté ; blouse blanche → autorité ; « 10 000 clients » → preuve sociale.",
+          "explanation": "Reconnaître le principe, c'est déjà pouvoir se demander : quelle preuve, dans mon contexte ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Réciprocité", "Rareté", "Autorité", "Preuve sociale"],
+            "items": [
+              { "text": "Un échantillon gratuit avant l'achat", "category": "Réciprocité" },
+              { "text": "« Plus que 3 en stock »", "category": "Rareté" },
+              { "text": "Un expert en blouse blanche", "category": "Autorité" },
+              { "text": "« Déjà 10 000 clients satisfaits »", "category": "Preuve sociale" }
+            ]
+          },
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "porte-au-nez",
+      "name": "Réciprocité et porte-au-nez",
+      "cards": [
+        {
+          "id": "nez-1",
+          "type": "flash",
+          "question": "Qu'est-ce que la technique de la porte-au-nez ?",
+          "answer": "Demander d'abord quelque chose de très gros (refusé), puis quelque chose de plus petit : la concession du demandeur appelle une concession de l'autre.",
+          "explanation": "Elle repose sur la réciprocité. Effet réel mais modéré et sensible aux conditions.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "nez-2",
+          "type": "qcm",
+          "question": "Quelles conditions rendent la porte-au-nez efficace ?",
+          "options": [
+            "Même demandeur, requêtes rapprochées, concession perçue",
+            "Demandeurs différents, plusieurs jours d'écart",
+            "Une première demande raisonnable",
+            "Aucune condition, ça marche toujours"
+          ],
+          "options_why": [
+            "",
+            "Non : la réciprocité s'efface si ce n'est pas la même personne ou si le temps passe.",
+            "Non : la première demande doit être grosse pour que la seconde ressemble à une concession.",
+            "Non : l'effet est justement conditionnel."
+          ],
+          "answer": "Même demandeur, requêtes rapprochées, concession perçue",
+          "explanation": "Si l'autre ne perçoit pas de concession, il n'y a rien à rendre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "nez-3",
+          "type": "flash",
+          "question": "Quel est l'état des preuves de la porte-au-nez (Cialdini et ses collègues, 1975) ?",
+          "answer": "Mitigé : une méta-analyse de 2012 remet fortement en cause les résultats d'origine, mais une réplication de 2020-2021 (JPSP) a reproduit l'effet.",
+          "explanation": "Effet réel mais modéré : ni la vedette promise, ni un mythe.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "nez-4",
+          "type": "whatif",
+          "question": "Et si tu utilisais la porte-au-nez par email, avec une relance une semaine plus tard signée par un collègue, que prédis-tu ?",
+          "answer": "Un effet faible ou nul : deux des conditions clés manquent (même demandeur, requêtes rapprochées). La concession ne serait pas perçue comme telle.",
+          "explanation": "Une technique « connue » appliquée hors de ses conditions ne produit rien.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "pied-dans-la-porte",
+      "name": "Engagement, pied-dans-la-porte et « vous êtes libre de »",
+      "cards": [
+        {
+          "id": "pied-1",
+          "type": "flash",
+          "question": "Qu'est-ce que le pied-dans-la-porte, et quelle est la taille de son effet ?",
+          "answer": "Obtenir d'abord un petit oui pour obtenir ensuite un plus grand. Effet réel mais petit et hétérogène selon la méta-analyse.",
+          "explanation": "Le mécanisme est l'engagement : un premier acte pousse à rester cohérent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "pied-2",
+          "type": "duel",
+          "question": "Porte-au-nez ou pied-dans-la-porte : « on commence par une petite demande acceptée » ?",
+          "options": ["Pied-dans-la-porte", "Porte-au-nez"],
+          "answer": "Pied-dans-la-porte",
+          "explanation": "Pied-dans-la-porte = petit oui d'abord (engagement). Porte-au-nez = gros non d'abord (réciprocité).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "pied-3",
+          "type": "flash",
+          "question": "Qu'est-ce que la technique « vous êtes libre de… », et que dit la méta-analyse de Carpenter (2013) ?",
+          "answer": "Ajouter « mais vous êtes libre d'accepter ou de refuser » à une demande. Effet réel mais modeste.",
+          "explanation": "Côté francophone, c'est la théorie de l'engagement de Joule et Beauvois (« Petit traité de manipulation à l'usage des honnêtes gens »).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "pied-4",
+          "type": "sort",
+          "question": "Classe ces techniques selon leur mécanisme principal.",
+          "answer": "Engagement : pied-dans-la-porte, « vous êtes libre de ». Réciprocité : porte-au-nez, cadeau avant la demande.",
+          "explanation": "Deux mécanismes différents, deux familles de techniques.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Engagement", "Réciprocité"],
+            "items": [
+              { "text": "Pied-dans-la-porte", "category": "Engagement" },
+              { "text": "Porte-au-nez", "category": "Réciprocité" },
+              { "text": "« Vous êtes libre de refuser »", "category": "Engagement" },
+              { "text": "Un cadeau offert avant de demander", "category": "Réciprocité" }
+            ]
+          },
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "autres-principes",
+      "name": "Preuve sociale, autorité, rareté, sympathie, unité",
+      "cards": [
+        {
+          "id": "autres-1",
+          "type": "flash",
+          "question": "Que dit le rapport de la preuve sociale, l'autorité, la rareté, la sympathie et l'unité ?",
+          "answer": "Plausibles, souvent efficaces, mais avec des tailles d'effet variables et fortement contextuelles. Peu de tests commerciaux rigoureux publiés.",
+          "explanation": "« Souvent efficace » n'est pas « toujours » : d'où l'A/B test.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "autres-2",
+          "type": "qcm",
+          "question": "Quel est le principal risque quand on utilise la rareté ou l'urgence (« plus que 2 places ») ?",
+          "options": [
+            "La réactance et la perte de confiance, surtout avec de faux compteurs",
+            "Aucun : c'est le principe le plus sûr",
+            "Un effet trop fort qui sature les stocks",
+            "Une baisse des clics"
+          ],
+          "options_why": [
+            "",
+            "Non : les mesures sont souvent biaisées et les effets secondaires réels.",
+            "Non : ce n'est pas le problème observé.",
+            "Non : les clics montent souvent à court terme ; c'est la suite qui pose problème."
+          ],
+          "answer": "La réactance et la perte de confiance, surtout avec de faux compteurs",
+          "explanation": "Un faux compteur d'urgence est un dark pattern : gain à court terme, confiance perdue et risque légal.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "autres-3",
+          "type": "why",
+          "question": "Pourquoi les faux avis clients sont-ils un mauvais calcul, même s'ils exploitent un vrai mécanisme (la preuve sociale) ?",
+          "answer": "Parce qu'ils créent un risque légal et détruisent la confiance quand ils sont découverts. Le rapport recommande de tester la preuve sociale avec des avis vérifiés, jamais fabriqués.",
+          "explanation": "Un mécanisme réel exploité de façon trompeuse reste un dark pattern.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "autres-4",
+          "type": "cloze",
+          "question": "Test recommandé pour la preuve sociale : un A/B avec des avis [[vérifiés]]. Pour la rareté : un A/B avec suivi de la [[rétention]] et des retours.",
+          "answer": "Test recommandé pour la preuve sociale : un A/B avec des avis vérifiés. Pour la rareté : un A/B avec suivi de la rétention et des retours.",
+          "explanation": "Toujours mesurer au-delà du clic : ce qui se passe après décide de la valeur réelle.",
+          "retention_goal": "3m"
+        }
+      ]
+    }
+  ]
+}

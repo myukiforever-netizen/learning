@@ -1,0 +1,201 @@
+{
+  "id": "fraudes",
+  "name": "7. Fraudes et soupçons : traiter les stars avec prudence",
+  "concepts": [
+    {
+      "id": "ariely-gino",
+      "name": "Dan Ariely et Francesca Gino",
+      "cards": [
+        {
+          "id": "ariely-1",
+          "type": "flash",
+          "question": "Que disait l'étude de 2012 (Shu, Mazar, Gino, Ariely, Bazerman, PNAS) sur la signature, et qu'est-il arrivé ?",
+          "answer": "Que signer en haut d'un formulaire plutôt qu'en bas réduit la malhonnêteté. L'étude a été rétractée en 2021 : les données de l'expérience de terrain (assurance) étaient fabriquées.",
+          "explanation": "Un résultat célèbre, repris par des administrations, fondé sur des données inventées.",
+          "explanation_more": "Data Colada (posts 98 et 109, « Clusterfake ») a montré que le fichier de données provenait de l'ordinateur d'Ariely. Une réplication par les auteurs eux-mêmes (Kristal et ses collègues, 2020) avait déjà échoué.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ariely-2",
+          "type": "qcm",
+          "question": "Qu'a documenté Data Colada en juin 2023 au sujet de Francesca Gino ?",
+          "options": [
+            "Des données falsifiées dans plusieurs de ses articles",
+            "Une simple erreur de calcul",
+            "Un plagiat",
+            "Rien : elle a été blanchie"
+          ],
+          "options_why": [
+            "",
+            "Non : des manipulations de données, pas une erreur.",
+            "Non : le problème est la fabrication de données.",
+            "Non : Harvard a révoqué sa titularisation et des revues ont rétracté ses articles."
+          ],
+          "answer": "Des données falsifiées dans plusieurs de ses articles",
+          "explanation": "Harvard a révoqué sa titularisation ; Psychological Science et JPSP ont rétracté des articles. Gino poursuit Data Colada et Harvard en justice, et nie.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ariely-3",
+          "type": "flash",
+          "question": "Quelle conséquence le rapport tire-t-il pour le livre « Predictably Irrational » d'Ariely ?",
+          "answer": "Le lire avec une extrême prudence : fraude avérée sur au moins deux études (la signature en 2012, et une étude de 2002 sur les délais et la procrastination, rétractée en septembre 2026).",
+          "explanation": "Un auteur dont deux études vedettes sont rétractées ne peut plus être cité comme preuve.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ariely-4",
+          "type": "cloze",
+          "question": "L'étude sur la signature en haut du formulaire (PNAS, [[2012]]) a été rétractée en [[2021]] ; le fichier de données fabriquées provenait de l'ordinateur d'Ariely.",
+          "answer": "L'étude sur la signature en haut du formulaire (PNAS, 2012) a été rétractée en 2021 ; le fichier de données fabriquées provenait de l'ordinateur d'Ariely.",
+          "explanation": "Neuf ans entre la publication et la rétractation : le temps que des chercheurs indépendants examinent les données brutes.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "ariely-5",
+          "type": "why",
+          "question": "Pourquoi une étude frauduleuse peut-elle rester citée pendant des années avant d'être rétractée ?",
+          "answer": "Parce que les données brutes sont rarement examinées par d'autres, que le résultat plaît et se répand vite, et qu'il faut des enquêteurs indépendants (Data Colada, Brown et Heathers) pour repérer les anomalies.",
+          "explanation": "D'où la règle : une seule étude, même dans une grande revue, n'est pas une preuve.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "gueguen",
+      "name": "Nicolas Guéguen",
+      "cards": [
+        {
+          "id": "gueguen-1",
+          "type": "flash",
+          "question": "Que sont les « data thugs », et qu'ont-ils documenté chez Nicolas Guéguen ?",
+          "answer": "Nick Brown et James Heathers, deux chercheurs qui traquent les anomalies statistiques. En 2017, ils ont documenté des anomalies dans une dizaine d'articles de Guéguen (talons hauts, couleur rouge, serveuses blondes, cheveux attachés…).",
+          "explanation": "Des études « amusantes » sur l'influence en contexte commercial, aux chiffres statistiquement improbables.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "gueguen-2",
+          "type": "qcm",
+          "question": "Quelle formulation prudente le rapport retient-il pour Guéguen ?",
+          "options": [
+            "Soupçons sérieux et documentés, certains articles rétractés, mais pas de conclusion officielle de fraude",
+            "Fraude délibérée prouvée",
+            "Aucun problème",
+            "Toutes ses études sont rétractées"
+          ],
+          "options_why": [
+            "",
+            "Non : une commission universitaire l'a blanchi de fraude délibérée en 2019.",
+            "Non : expression de préoccupation et au moins deux rétractations.",
+            "Non : seulement certains articles."
+          ],
+          "answer": "Soupçons sérieux et documentés, certains articles rétractés, mais pas de conclusion officielle de fraude",
+          "explanation": "L'Université Rennes-2 a enquêté ; un article sur la couleur rouge et l'« intention sexuelle » a été rétracté en 2022.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "gueguen-3",
+          "type": "whatif",
+          "question": "Et si un article de blog te présentait « l'étude prouvant que toucher le bras du client augmente les ventes » (une étude de Guéguen), que fais-tu ?",
+          "answer": "Je la considère comme non fiable tant qu'elle n'est pas répliquée indépendamment. Ses résultats sur le toucher, le sourire ou le prénom en contexte commercial sont exactement ceux visés par les soupçons.",
+          "explanation": "Une étude n'est pas une preuve, et une étude d'un auteur sous soupçons documentés encore moins.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "vicary-fabrication",
+      "name": "Vicary et les chiffres inventés",
+      "cards": [
+        {
+          "id": "vicary-1",
+          "type": "duel",
+          "question": "La « preuve » fondatrice de la publicité subliminale (Vicary, 1957) est…",
+          "options": ["Une fabrication avouée par son auteur", "Une étude réelle jamais répliquée"],
+          "answer": "Une fabrication avouée par son auteur",
+          "explanation": "Vicary a avoué en 1962 que l'étude était fabriquée, peut-être même jamais menée. Elle est encore citée aujourd'hui.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "vicary-2",
+          "type": "sort",
+          "question": "Classe ces cas selon la nature du problème.",
+          "answer": "Fabrication avouée : Vicary. Données fabriquées prouvées, rétractation : Ariely/Gino (signature). Soupçons documentés sans conclusion officielle : Guéguen. Crise de réplication (pas de fraude) : ego depletion, power posing.",
+          "explanation": "Fraude, soupçons et non-réplication sont trois situations différentes ; le rapport les distingue soigneusement.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Fraude avérée", "Soupçons documentés", "Non répliqué (pas de fraude)"],
+            "items": [
+              { "text": "Vicary et la pub subliminale", "category": "Fraude avérée" },
+              { "text": "Étude de la signature (Ariely, Gino)", "category": "Fraude avérée" },
+              { "text": "Guéguen (talons hauts, couleur rouge)", "category": "Soupçons documentés" },
+              { "text": "Ego depletion", "category": "Non répliqué (pas de fraude)" },
+              { "text": "Power posing", "category": "Non répliqué (pas de fraude)" }
+            ]
+          },
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "lire-les-stars",
+      "name": "Comment lire un livre à succès",
+      "cards": [
+        {
+          "id": "stars-1",
+          "type": "flash",
+          "question": "Quelle attitude le rapport recommande-t-il face aux livres à succès sur l'influence ?",
+          "answer": "Les traiter comme des sources d'hypothèses à vérifier, jamais comme des preuves. Utiles pour générer des tests A/B, à valider ensuite.",
+          "explanation": "Cialdini, Shotton, Sutherland, Barden, Voss, Heath, Berger, Eyal : à lire comme des catalogues d'idées.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "stars-2",
+          "type": "sort",
+          "question": "Remets dans l'ordre le parcours de lecture progressif recommandé.",
+          "answer": "1. Comprendre la crise de la réplication. 2. Les mécanismes robustes contre fragiles. 3. Le nudge avec esprit critique. 4. Le marketing fondé sur les preuves et la mesure réelle. 5. Les livres à succès, comme hypothèses.",
+          "explanation": "On apprend d'abord à juger, puis on lit ce qu'il faut juger.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "La crise de la réplication (Open Science Collaboration, Data Colada)",
+              "Mécanismes robustes contre fragiles (Kahneman avec son mea culpa, Gal et Rucker, Scheibehenne)",
+              "Le nudge avec esprit critique (Nudge, puis Maier et Szaszi)",
+              "Le marketing fondé sur les preuves et la mesure réelle (Sharp, Binet et Field, Kohavi, Lewis et Rao, Gordon)",
+              "Les livres à succès, lus comme des hypothèses (Cialdini, Shotton, Sutherland…)"
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "stars-3",
+          "type": "qcm",
+          "question": "Quelles ressources francophones le rapport cite-t-il pour l'esprit critique ?",
+          "options": [
+            "Cortecs, l'AFIS (Science et pseudo-sciences) et Le Texier sur Stanford",
+            "Les blogs de croissance personnelle",
+            "Les formations PNL",
+            "Les magazines de management"
+          ],
+          "options_why": [
+            "",
+            "Non : ils diffusent souvent les mythes de la liste rouge.",
+            "Non : la PNL est elle-même dans la liste rouge.",
+            "Non : rarement fondés sur les preuves primaires."
+          ],
+          "answer": "Cortecs, l'AFIS (Science et pseudo-sciences) et Le Texier sur Stanford",
+          "explanation": "Des ressources d'esprit critique, en français, pour trier soi-même.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "stars-4",
+          "type": "why",
+          "question": "Pourquoi le rapport signale-t-il que certains livres n'ont été consultés « via recensions » ?",
+          "answer": "Par honnêteté : n'ayant pas lu ces ouvrages en entier, il ne leur attribue leurs thèses qu'avec prudence. C'est la même exigence que pour les études : dire ce qu'on sait, et comment on le sait.",
+          "explanation": "Un bon rapport signale ses propres limites. Méfie-toi de ceux qui n'en ont aucune.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

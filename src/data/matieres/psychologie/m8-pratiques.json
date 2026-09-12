@@ -1,0 +1,243 @@
+{
+  "id": "pratiques",
+  "name": "8. Les pratiques concrètes : quoi tester, quoi bannir",
+  "concepts": [
+    {
+      "id": "pratiques-a-tester",
+      "name": "Pratique par pratique : mécanisme, preuve, test",
+      "cards": [
+        {
+          "id": "pratique-1",
+          "type": "sort",
+          "question": "Associe chaque pratique au test que le rapport recommande.",
+          "answer": "Défaut opt-out → A/B sur inscription ET conversion réelle ; prix en 9 → A/B sur la marge ; effet leurre → menu à 2 contre 3 options ; pub de marque en recherche → expérience géographique on/off.",
+          "explanation": "Chaque pratique a son test adapté ; le point commun : un groupe témoin et une métrique de valeur réelle.",
+          "data": {
+            "mode": "classer",
+            "categories": ["A/B inscription et conversion", "A/B sur la marge", "Menu 2 contre 3 options", "Expérience géo on/off"],
+            "items": [
+              { "text": "Option par défaut (opt-out)", "category": "A/B inscription et conversion" },
+              { "text": "Prix en 9 (charm pricing)", "category": "A/B sur la marge" },
+              { "text": "Effet leurre (decoy)", "category": "Menu 2 contre 3 options" },
+              { "text": "Publicité de marque en recherche", "category": "Expérience géo on/off" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "pratique-2",
+          "type": "flash",
+          "question": "Effet leurre (decoy) : quel est l'état des preuves ?",
+          "answer": "Études de laboratoire solides (une troisième option rend une option cible plus attirante par comparaison), mais preuves de terrain rares et peu de tests commerciaux propres.",
+          "explanation": "Test recommandé : A/B entre un menu de prix à 2 options et un menu à 3 options.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "pratique-3",
+          "type": "qcm",
+          "question": "Prix en 9 (19,99 au lieu de 20) : que disent les preuves de terrain ?",
+          "options": ["Mitigées et hétérogènes : l'effet varie selon la catégorie et le positionnement", "Toujours positives", "Toujours nulles", "Négatives pour le luxe uniquement"],
+          "options_why": [
+            "",
+            "Non : parfois les ventes montent, parfois non.",
+            "Non : des effets existent dans certaines catégories.",
+            "Trop précis : le rapport ne dit pas cela."
+          ],
+          "answer": "Mitigées et hétérogènes : l'effet varie selon la catégorie et le positionnement",
+          "explanation": "Mécanisme supposé : la perception du chiffre de gauche. À tester sur la marge, pas seulement sur le volume.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "pratique-4",
+          "type": "sort",
+          "question": "Classe chaque pratique selon la recommandation du rapport.",
+          "answer": "À adopter en priorité : défauts bénéfiques annoncés, réduction de friction, clarté, réciprocité honnête, preuve sociale véridique. À tester : rareté, prix en 9, leurre. À proscrire : dark patterns, PNL, styles d'apprentissage, détection du mensonge non verbale.",
+          "explanation": "Trois listes : les paris à meilleure espérance, ce qui se teste, ce qui se bannit.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Adopter en priorité", "Tester en A/B", "Proscrire"],
+            "items": [
+              { "text": "Réduire la friction, être clair", "category": "Adopter en priorité" },
+              { "text": "Rareté et urgence", "category": "Tester en A/B" },
+              { "text": "Faux compteurs, désabonnement caché", "category": "Proscrire" },
+              { "text": "Preuve sociale véridique", "category": "Adopter en priorité" },
+              { "text": "Formation PNL pour les vendeurs", "category": "Proscrire" },
+              { "text": "Prix en 9", "category": "Tester en A/B" }
+            ]
+          },
+          "retention_goal": "life"
+        },
+        {
+          "id": "pratique-5",
+          "type": "cloze",
+          "question": "SMS de rappel (nudge de saillance) : effets mesurés de +[[2]] à +11 % en santé, modestes et [[décroissants]]. Test recommandé : un essai randomisé à grande échelle.",
+          "answer": "SMS de rappel (nudge de saillance) : effets mesurés de +2 à +11 % en santé, modestes et décroissants. Test recommandé : un essai randomisé à grande échelle.",
+          "explanation": "Un des rares nudges avec des preuves commerciales directes, grâce aux mégaétudes.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "recommandations",
+      "name": "Les 7 recommandations opérationnelles",
+      "cards": [
+        {
+          "id": "reco-1",
+          "type": "flash",
+          "question": "Quelle est la première recommandation du rapport ?",
+          "answer": "Par défaut, ne croire aucun effet unique spectaculaire. Exiger une réplication indépendante préenregistrée et une taille d'effet, pas seulement une significativité.",
+          "explanation": "C'est le réflexe de base : un résultat isolé et spectaculaire est suspect jusqu'à réplication.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "reco-2",
+          "type": "sort",
+          "question": "Remets dans l'ordre les recommandations opérationnelles du rapport.",
+          "answer": "1. Ne croire aucun effet unique. 2. Adopter les mécanismes robustes. 3. Tester tout le reste en A/B. 4. Présumer que la pub est dure à mesurer. 5. Bannir les outils pseudoscientifiques. 6. Éviter les dark patterns. 7. Fixer des seuils qui changeraient les décisions.",
+          "explanation": "Du plus général (comment croire) au plus concret (quand changer d'avis).",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Ne croire aucun effet unique spectaculaire",
+              "Adopter en priorité les mécanismes robustes",
+              "Tester tout le reste par A/B rigoureux",
+              "Présumer que l'effet de la pub est difficile à mesurer",
+              "Bannir les outils pseudoscientifiques",
+              "Éviter les dark patterns",
+              "Fixer des seuils qui changeraient les recommandations"
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "reco-3",
+          "type": "qcm",
+          "question": "Quels « mécanismes robustes » adopter en priorité, selon la recommandation 2 ?",
+          "options": [
+            "Défauts bénéfiques annoncés, réduction de friction, clarté, réciprocité honnête, preuve sociale véridique",
+            "Rareté, urgence, ancrage",
+            "PNL, typologies, microexpressions",
+            "Publicité subliminale et amorçage"
+          ],
+          "options_why": [
+            "",
+            "Ceux-là sont à tester, pas à adopter d'office.",
+            "Ceux-là sont à bannir.",
+            "Mythe et effet infime."
+          ],
+          "answer": "Défauts bénéfiques annoncés, réduction de friction, clarté, réciprocité honnête, preuve sociale véridique",
+          "explanation": "Ce sont les paris à meilleure espérance : mécanismes solides et sans risque de confiance.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "reco-4",
+          "type": "why",
+          "question": "Pourquoi la recommandation 6 préfère-t-elle « un désabonnement aussi simple que l'abonnement » à un désabonnement caché, même si le second retient plus de clients à court terme ?",
+          "answer": "Parce que le désabonnement caché est un dark pattern : illégal ou en passe de l'être (DSA, FTC, DGCCRF), il dégrade la confiance et la valeur client à long terme. Le gain de court terme se paie ensuite.",
+          "explanation": "Respecter l'autonomie n'est pas seulement éthique : c'est aussi le meilleur calcul sur la durée.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "reco-5",
+          "type": "worked_example",
+          "question": "Un consultant te propose une « technique de persuasion » découverte dans une étude de 2009 sur 40 étudiants. Déroule la décision.",
+          "answer": "Étude unique, petit échantillon, avant 2015, non répliquée → non fiable. Si l'idée est peu coûteuse : la tester en A/B. Sinon : passer.",
+          "explanation": "La règle de décision transforme un débat d'opinion en procédure simple.",
+          "data": {
+            "steps": [
+              { "prompt": "Quelle est la seule preuve avancée ?", "text": "Une étude unique de 2009 sur 40 personnes. Aucune réplication indépendante mentionnée." },
+              { "prompt": "Quelle règle de décision s'applique ?", "text": "Étude à petit échantillon, publiée avant 2015 environ, non répliquée → traiter l'effet comme non fiable." },
+              { "prompt": "Faut-il pour autant refuser toute idée non prouvée ?", "text": "Non : une idée peu coûteuse peut devenir une hypothèse d'A/B test, avec métrique de valeur réelle et groupe témoin." },
+              { "prompt": "Quel seuil pour continuer ou arrêter ?", "text": "Si le gain est stable au-delà du bruit et se répète, industrialiser ; s'il ne survit pas à trois tests indépendants sur ton audience, abandonner." }
+            ]
+          },
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "seuils-de-decision",
+      "name": "Les seuils qui changent une décision",
+      "cards": [
+        {
+          "id": "seuil-1",
+          "type": "flash",
+          "question": "Quels sont les trois seuils du rapport qui « changeraient les recommandations » ?",
+          "answer": "1. Une méta-analyse préenregistrée corrigée du biais de publication montre un effet net supérieur à zéro → réévaluer à la hausse. 2. Tes propres A/B tests répliqués montrent un gain de marge stable → industrialiser. 3. Un effet ne survit pas à trois tests indépendants sur ton audience → abandonner.",
+          "explanation": "Décider à l'avance ce qui te ferait changer d'avis, c'est la meilleure protection contre l'entêtement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "seuil-2",
+          "type": "cloze",
+          "question": "Seuil d'abandon : si un effet ne survit pas à [[trois]] tests indépendants sur ton audience, abandonne-le.",
+          "answer": "Seuil d'abandon : si un effet ne survit pas à trois tests indépendants sur ton audience, abandonne-le.",
+          "explanation": "Trois, pas un : un seul test négatif peut être du bruit, tout comme un seul test positif.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "seuil-3",
+          "type": "duel",
+          "question": "Quelle preuve fait remonter une tactique dans l'estime du rapport : une méta-analyse corrigée du biais de publication, ou un nouveau livre à succès qui la cite ?",
+          "options": ["Une méta-analyse corrigée du biais de publication", "Un nouveau livre à succès"],
+          "answer": "Une méta-analyse corrigée du biais de publication",
+          "explanation": "Les livres citent ; les méta-analyses corrigées mesurent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "seuil-4",
+          "type": "problem",
+          "question": "Tu as testé un bandeau « offre limitée » : test 1 +4 % de conversion, test 2 −1 %, test 3 +1 %, tous dans la marge de bruit. Que décides-tu, et pourquoi ?",
+          "answer": "Abandonner : l'effet n'a pas survécu à trois tests indépendants (aucun gain stable au-delà du bruit). En plus, la rareté artificielle risque la réactance et la perte de confiance.",
+          "explanation": "Appliquer le seuil décidé à l'avance, même si le premier test donnait envie d'y croire.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "questions-ouvertes",
+      "name": "Ce qui reste ouvert",
+      "cards": [
+        {
+          "id": "ouvert-1",
+          "type": "flash",
+          "question": "Cite trois questions encore ouvertes selon le rapport.",
+          "answer": "Reste-t-il un effet d'ego depletion minuscule ? Quels modérateurs exacts déclenchent l'aversion à la perte ? Quels nudges précis survivent à la correction du biais de publication ? (Aussi : la transférabilité culturelle WEIRD, l'apport réel de la prédiction neuronale, la valeur du NPS.)",
+          "explanation": "Savoir ce qui n'est pas tranché protège des réponses trop sûres, dans un sens comme dans l'autre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ouvert-2",
+          "type": "qcm",
+          "question": "Quelle question a remplacé « le nudge marche-t-il ? » ?",
+          "options": ["« Quel nudge, pour qui, dans quel contexte ? »", "« Combien coûte un nudge ? »", "« Le nudge est-il éthique ? »", "« Qui a inventé le nudge ? »"],
+          "options_why": [
+            "",
+            "Importante mais pas la question scientifique centrale.",
+            "Question réelle mais distincte de celle de l'efficacité.",
+            "Anecdotique."
+          ],
+          "answer": "« Quel nudge, pour qui, dans quel contexte ? »",
+          "explanation": "La moyenne n'a pas de sens ; seule la question précise en a.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ouvert-3",
+          "type": "flash",
+          "question": "Que dit le rapport du NPS (Net Promoter Score) ?",
+          "answer": "Qu'il est critiqué pour sa faible supériorité prédictive sur d'autres mesures de satisfaction. Point non approfondi, à explorer.",
+          "explanation": "Un indicateur très répandu n'est pas forcément un meilleur indicateur.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ouvert-4",
+          "type": "whatif",
+          "question": "Et si, dans deux ans, une grande réplication préenregistrée confirmait un effet aujourd'hui « effondré », que devrais-tu faire ?",
+          "answer": "Réévaluer à la hausse, comme le prévoit le seuil 1. Les statuts du rapport reflètent l'état des preuves au 12 septembre 2026 ; le champ évolue vite et une position honnête change avec les preuves.",
+          "explanation": "Le contraire de l'entêtement, c'est d'avoir décidé à l'avance ce qui te ferait changer d'avis.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

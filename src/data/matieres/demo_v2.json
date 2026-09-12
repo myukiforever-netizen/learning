@@ -3,7 +3,7 @@
   "name": "Démo : apprendre à apprendre",
   "version": 2,
   "color": "#4F46E5",
-  "description": "12 cartes pour découvrir l’app, ses idées fondatrices et tous ses types de cartes.",
+  "description": "18 cartes pour découvrir l’app, ses idées fondatrices et tous ses types de cartes.",
   "modules": [
     {
       "id": "sciences-apprentissage",

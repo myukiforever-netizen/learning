@@ -1,0 +1,346 @@
+{
+  "id": "conditionnels",
+  "name": "3. Les effets qui tiennent… sous conditions",
+  "concepts": [
+    {
+      "id": "aversion-perte",
+      "name": "L'aversion à la perte",
+      "cards": [
+        {
+          "id": "perte-1",
+          "type": "flash",
+          "question": "Quel « dogme marketing » sur l'aversion à la perte est remis en cause par Gal et Rucker (2018) ?",
+          "answer": "L'idée qu'une perte pèse toujours environ deux fois plus qu'un gain (coefficient 2,25 pour 1). Selon les enjeux et le contexte, l'asymétrie disparaît ou même s'inverse.",
+          "explanation": "L'asymétrie existe sous conditions, mais le « ×2 universel » n'est pas étayé.",
+          "explanation_more": "Journal of Consumer Psychology, 2018. Harinck et ses collègues (2007) : pour les petits montants, l'asymétrie disparaît. Walasek, Mullett et Stewart (2018) la confirment dans les choix risqués à enjeux substantiels.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "perte-2",
+          "type": "qcm",
+          "question": "Dans quelle situation l'aversion à la perte est-elle le mieux confirmée ?",
+          "options": [
+            "Choix risqués à enjeux substantiels",
+            "Petits montants",
+            "Toutes les situations, de façon égale",
+            "Uniquement en laboratoire avec des étudiants"
+          ],
+          "options_why": [
+            "",
+            "Non : sur de petits montants, l'asymétrie disparaît ou s'inverse.",
+            "Non : c'est justement le point contesté.",
+            "Trop restrictif : elle est confirmée sur de vrais enjeux."
+          ],
+          "answer": "Choix risqués à enjeux substantiels",
+          "explanation": "Plus l'enjeu est gros et risqué, plus la perte pèse. Sur de petites sommes, l'effet s'efface.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "perte-3",
+          "type": "duel",
+          "question": "Statut de l'aversion à la perte selon le rapport ?",
+          "options": ["Soutenue mais fortement contextuelle", "Contredite"],
+          "answer": "Soutenue mais fortement contextuelle",
+          "explanation": "Ce n'est pas un effet effondré comme l'ego depletion : il existe, mais pas partout ni à un coefficient fixe.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "perte-4",
+          "type": "whatif",
+          "question": "Et si tu écrivais une page de vente en misant tout sur « ne perdez pas… » pour un produit à 9 euros, que prédis-tu ?",
+          "answer": "Probablement peu d'effet : à petit montant, l'asymétrie perte/gain disparaît ou s'inverse. Il faudrait le tester en A/B plutôt que de le supposer.",
+          "explanation": "Le contexte (montant, risque) décide de l'effet. Sans test, tu ne sais pas.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "perte-5",
+          "type": "cloze",
+          "question": "Le coefficient « universel » d'aversion à la perte souvent cité est de [[2,25]] pour 1. Selon Gal et Rucker ([[2018]]), il n'est pas universel.",
+          "answer": "Le coefficient « universel » d'aversion à la perte souvent cité est de 2,25 pour 1. Selon Gal et Rucker (2018), il n'est pas universel.",
+          "explanation": "Même les auteurs qui défendent l'asymétrie concèdent que ce chiffre précis n'est pas universel.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "trop-de-choix",
+      "name": "Le trop-plein de choix (choice overload)",
+      "cards": [
+        {
+          "id": "choix-1",
+          "type": "flash",
+          "question": "Quelle est l'étude des confitures d'Iyengar et Lepper (2000) ?",
+          "answer": "Un stand avec 6 confitures faisait acheter 30 % des visiteurs ; avec 24 confitures, seulement 3 %. Citée partout comme la preuve que « trop de choix tue le choix ».",
+          "explanation": "Étude réelle, mais devenue une « loi » qu'elle n'est pas.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "choix-2",
+          "type": "qcm",
+          "question": "Méta-analyse de Scheibehenne, Greifeneder et Todd (2010, environ 50 études, plus de 5 000 participants) : effet moyen du trop-plein de choix ?",
+          "options": ["Quasi nul (d ≈ 0,02)", "Moyen (d ≈ 0,5)", "Fort (d ≈ 0,8)", "Négatif : plus de choix fait acheter plus"],
+          "options_why": [
+            "",
+            "Non : la moyenne est proche de zéro.",
+            "Encore moins.",
+            "Non : en moyenne, ni dans un sens ni dans l'autre."
+          ],
+          "answer": "Quasi nul (d ≈ 0,02)",
+          "explanation": "En moyenne, le nombre d'options ne change rien. L'effet réel n'apparaît que sous conditions précises.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "choix-3",
+          "type": "flash",
+          "question": "Dans quelles conditions le trop-plein de choix a-t-il un effet réel (Chernev, Böckenholt et Goodman, 2015) ?",
+          "answer": "Quand les options sont comparables entre elles, que l'enjeu est élevé, que le client est peu expert, et qu'il y a une pression de temps.",
+          "explanation": "Quatre conditions à vérifier avant d'invoquer l'effet. Sinon, il n'y a pas de raison de le supposer.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "choix-4",
+          "type": "sort",
+          "question": "Dans quel cas le trop-plein de choix risque-t-il de jouer ?",
+          "answer": "Il joue quand : options comparables, enjeu élevé, client peu expert, pression de temps. Il ne joue pas quand : options bien différenciées, client expert, tout son temps.",
+          "explanation": "Le contexte décide. « Ne jamais citer l'étude des confitures comme loi universelle sur une page de prix. »",
+          "data": {
+            "mode": "classer",
+            "categories": ["Favorise l'effet", "Ne favorise pas l'effet"],
+            "items": [
+              { "text": "Options quasi identiques", "category": "Favorise l'effet" },
+              { "text": "Client expert du produit", "category": "Ne favorise pas l'effet" },
+              { "text": "Enjeu élevé", "category": "Favorise l'effet" },
+              { "text": "Pression de temps", "category": "Favorise l'effet" },
+              { "text": "Options bien différenciées", "category": "Ne favorise pas l'effet" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "choix-5",
+          "type": "cloze",
+          "question": "Étude des confitures : [[6]] confitures → 30 % d'achat ; [[24]] confitures → 3 %. Méta-analyse 2010 : effet moyen d ≈ 0,02.",
+          "answer": "Étude des confitures : 6 confitures → 30 % d'achat ; 24 confitures → 3 %. Méta-analyse 2010 : effet moyen d ≈ 0,02.",
+          "explanation": "Une belle histoire, puis une moyenne à zéro : le contraste type entre une étude vedette et sa méta-analyse.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "options-par-defaut",
+      "name": "Les options par défaut : le nudge le plus solide",
+      "cards": [
+        {
+          "id": "defaut-1",
+          "type": "flash",
+          "question": "Que montrent Johnson et Goldstein (2003, « Do Defaults Save Lives? ») ?",
+          "answer": "Que les pays où l'on est donneur d'organes par défaut (opt-out) ont des taux d'enregistrement bien plus élevés que les pays où il faut s'inscrire (opt-in).",
+          "explanation": "L'effet d'un défaut sur le comportement par défaut est solidement établi. C'est le nudge le plus robuste.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "defaut-2",
+          "type": "why",
+          "question": "Pourquoi un taux d'enregistrement élevé ne garantit-il pas plus de dons d'organes réels ?",
+          "answer": "Parce que l'enregistrement n'est pas le don : le don effectif dépend aussi de l'infrastructure médicale et du droit de veto des familles au moment du décès.",
+          "explanation": "Le défaut change le comportement par défaut. L'extrapolation au résultat final est fortement contextuelle.",
+          "explanation_more": "En France (consentement présumé), le registre des refus comptait environ 500 000 noms fin 2024 (0,7 % de la population), mais le taux d'opposition constaté au moment du décès atteignait 37,1 % en 2025 selon l'Agence de la biomédecine.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "defaut-3",
+          "type": "qcm",
+          "question": "En France, malgré le consentement présumé, quel taux d'opposition au don était constaté au moment du décès en 2025 ?",
+          "options": ["Environ 37 %", "Environ 0,7 %", "Environ 5 %", "Environ 80 %"],
+          "options_why": [
+            "",
+            "0,7 %, c'est la part de la population inscrite sur le registre des refus, pas l'opposition réelle.",
+            "Bien plus.",
+            "Trop haut."
+          ],
+          "answer": "Environ 37 %",
+          "explanation": "Le défaut légal dit oui pour 99 % des gens, mais plus d'un tiers des dons sont refusés au moment décisif. Le défaut ne détermine pas mécaniquement le comportement final.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "defaut-4",
+          "type": "flash",
+          "question": "Qu'est-ce que l'effet d'éviction (crowding-out) observé par Steffel et ses collègues (2025) sur les défauts ?",
+          "answer": "Le consentement présumé au don après décès semble réduire les dons de vivants : le défaut « évince » une autre forme de don.",
+          "explanation": "Un nudge peut avoir des effets secondaires sur un comportement voisin. À mesurer aussi.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "defaut-5",
+          "type": "worked_example",
+          "question": "Tu veux utiliser une option par défaut (case cochée) sur ton site. Comment la tester honnêtement ?",
+          "answer": "A/B test opt-in contre opt-out, en mesurant l'inscription ET la conversion réelle, avec un suivi de la rétention pour repérer la réactance.",
+          "explanation": "Le piège : mesurer seulement l'inscription. Le défaut la gonfle presque toujours ; c'est le résultat final qui compte.",
+          "data": {
+            "steps": [
+              { "prompt": "Quel mécanisme fait marcher un défaut, et quel risque ?", "text": "Inertie et norme implicite. Risques : écart entre inscription et résultat final, effet d'éviction, réactance si c'est perçu comme un piège." },
+              { "prompt": "Quelles deux versions comparer ?", "text": "Version A : case décochée (opt-in). Version B : case cochée (opt-out). Répartition aléatoire des visiteurs." },
+              { "prompt": "Quelle métrique principale ?", "text": "Pas l'inscription seule : la conversion réelle (achat, usage, marge). L'inscription est un indicateur secondaire." },
+              { "prompt": "Que surveiller après ?", "text": "La rétention et les désabonnements : un défaut perçu comme un piège dégrade la confiance et la valeur client à long terme." }
+            ]
+          },
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "nudge-general",
+      "name": "Le nudge en général : le grand débat",
+      "cards": [
+        {
+          "id": "nudge-1",
+          "type": "flash",
+          "question": "Que disait la méta-analyse de Mertens et ses collègues (2022) sur le nudge, et qu'a montré la réanalyse de Maier et ses collègues la même année ?",
+          "answer": "Mertens : effet global du nudge d = 0,43. Maier : après correction du biais de publication, « aucune preuve ne subsiste que les nudges sont efficaces comme outils de changement de comportement ».",
+          "explanation": "Mêmes données, conclusion opposée : le biais de publication gonflait la moyenne.",
+          "explanation_more": "Les deux articles sont parus dans PNAS en 2022. Maier utilise une méthode bayésienne d'ajustement (RoBMA). Szaszi et ses collègues (2022) et Data Colada ajoutent que la moyenne agrège des interventions incomparables : des « moyennes sans signification ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "nudge-2",
+          "type": "qcm",
+          "question": "Que faut-il conclure du débat Mertens / Maier ?",
+          "options": [
+            "« Le nudge est un levier général efficace » est controversé ; certains nudges précis restent robustes",
+            "Tous les nudges sont inefficaces",
+            "Tous les nudges marchent avec d = 0,43",
+            "Le débat ne concerne que les économistes"
+          ],
+          "options_why": [
+            "",
+            "Non : les défauts, par exemple, restent solides, et les mégaétudes montrent des effets réels mais modestes.",
+            "Non : ce chiffre ne survit pas à la correction du biais de publication.",
+            "Non : c'est central pour toute personne qui applique des nudges."
+          ],
+          "answer": "« Le nudge est un levier général efficace » est controversé ; certains nudges précis restent robustes",
+          "explanation": "La bonne question n'est plus « le nudge marche-t-il ? » mais « quel nudge, pour qui, dans quel contexte ? ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "nudge-3",
+          "type": "why",
+          "question": "Pourquoi une moyenne d'effets de nudges très différents est-elle « sans signification » (Meaningless Means) ?",
+          "answer": "Parce qu'on additionne des interventions incomparables : un défaut sur un formulaire et un message de rappel n'ont ni le même mécanisme ni la même cible. Leur moyenne ne décrit aucune intervention réelle.",
+          "explanation": "Une moyenne n'a de sens que pour des choses comparables.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "nudge-4",
+          "type": "cloze",
+          "question": "Effet global du nudge selon Mertens (2022) : d = [[0,43]]. Après correction du biais de [[publication]] par Maier (2022) : plus aucune preuve.",
+          "answer": "Effet global du nudge selon Mertens (2022) : d = 0,43. Après correction du biais de publication par Maier (2022) : plus aucune preuve.",
+          "explanation": "Le biais de publication : les études qui trouvent un effet sont publiées, les autres restent dans les tiroirs.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "habitudes",
+      "name": "Les habitudes",
+      "cards": [
+        {
+          "id": "habitude-1",
+          "type": "flash",
+          "question": "Que montre Lally et ses collègues (2010) sur la formation d'une habitude ?",
+          "answer": "Un comportement quotidien devient automatique en 66 jours en médiane (de 18 à 254 selon les gens), et manquer un jour ne casse pas le processus.",
+          "explanation": "Ce qui est soutenu : la répétition en contexte stable. Ce qui est faux : un nombre de jours magique.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "habitude-2",
+          "type": "qcm",
+          "question": "Que penser des modèles B=MAP (BJ Fogg) et signal-routine-récompense (Duhigg) ?",
+          "options": [
+            "Des cadres pratiques utiles, mais dont les chiffres précis sont peu validés",
+            "Des lois scientifiques démontrées",
+            "Des pseudosciences à bannir",
+            "Des théories réfutées par Lally"
+          ],
+          "options_why": [
+            "",
+            "Non : ce sont des heuristiques, pas des lois.",
+            "Non : ils sont utiles pour organiser sa pensée.",
+            "Non : Lally ne les contredit pas, elle ne valide pas leurs chiffres."
+          ],
+          "answer": "Des cadres pratiques utiles, mais dont les chiffres précis sont peu validés",
+          "explanation": "Utiles comme grille de réflexion, à ne pas prendre pour des mesures.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "habitude-3",
+          "type": "duel",
+          "question": "Une habitude se forme en 21 jours : mythe ou soutenu ?",
+          "options": ["Mythe", "Soutenu"],
+          "answer": "Mythe",
+          "explanation": "Issu d'une lecture erronée de Maltz (1960), qui parlait d'adaptation post-chirurgicale.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "habitude-4",
+          "type": "whatif",
+          "question": "Et si tu manques un jour dans une nouvelle habitude, dois-tu repartir de zéro ?",
+          "answer": "Non : selon Lally, manquer un jour ne casse pas le processus. Ce qui compte, c'est de reprendre dans le même contexte.",
+          "explanation": "Utile pour cette app : rater une session ne détruit pas ce que tu as construit. Reviens demain.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "neuromarketing",
+      "name": "Le neuromarketing et la prédiction neuronale",
+      "cards": [
+        {
+          "id": "neuro-1",
+          "type": "flash",
+          "question": "Le « bouton d'achat » dans le cerveau : science ou marketing ?",
+          "answer": "Marketing. Mais une littérature sérieuse existe à côté, dite « brain-as-predictor » : l'activité cérébrale peut prédire modestement certains comportements.",
+          "explanation": "Séparer la promesse commerciale (survendue) de la recherche (préliminaire mais réelle).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "neuro-2",
+          "type": "qcm",
+          "question": "Berns et Moore (2012) : l'activité du striatum ventral à l'écoute de chansons prédisait leur succès commercial…",
+          "options": [
+            "Modestement, mais pas fondamentalement mieux que demander leurs préférences aux gens",
+            "Bien mieux que les questionnaires",
+            "Pas du tout",
+            "Parfaitement"
+          ],
+          "options_why": [
+            "",
+            "Non : l'apport par rapport à un simple questionnaire n'est pas démontré.",
+            "Non : il y avait bien une prédiction modeste.",
+            "Loin de là."
+          ],
+          "answer": "Modestement, mais pas fondamentalement mieux que demander leurs préférences aux gens",
+          "explanation": "Question ouverte du rapport : la prédiction neuronale ajoute-t-elle quelque chose à une bonne enquête ? Pas tranché.",
+          "explanation_more": "Falk et ses collègues (2010-2012) ont montré que l'activité du cortex préfrontal médian prédisait le changement de comportement et le succès de campagnes de santé au-delà des auto-déclarations : c'est le résultat le plus solide du domaine.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "neuro-3",
+          "type": "flash",
+          "question": "Qu'est-ce que la « séduction des explications neuroscientifiques » (Weisberg et ses collègues, 2008) ?",
+          "answer": "Ajouter des informations neuronales non pertinentes à une explication la rend plus convaincante pour des non-experts. Effet répliqué depuis.",
+          "explanation": "Méfie-toi d'une image de cerveau dans une présentation : elle convainc sans rien prouver.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "neuro-4",
+          "type": "duel",
+          "question": "Le livre « Buyology » de Martin Lindstrom est plutôt…",
+          "options": ["Critiqué pour surinterprétation", "Une référence scientifique"],
+          "answer": "Critiqué pour surinterprétation",
+          "explanation": "Statut du rapport : la prédiction neuronale a un soutien préliminaire réel mais limité ; les promesses commerciales sont largement survendues.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

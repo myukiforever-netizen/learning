@@ -1,0 +1,376 @@
+{
+  "id": "ventes",
+  "name": "5. Effet psychologique ≠ efficacité commerciale",
+  "concepts": [
+    {
+      "id": "idees-qui-echouent",
+      "name": "La plupart des idées ne gagnent rien",
+      "cards": [
+        {
+          "id": "kohavi-1",
+          "type": "qcm",
+          "question": "Chez Microsoft, quelle part des idées testées en A/B amélioraient la métrique visée (Kohavi et ses collègues) ?",
+          "options": ["Environ un tiers", "Environ 90 %", "Environ la moitié", "Presque toutes"],
+          "options_why": [
+            "",
+            "Beaucoup trop : la majorité des idées ne produisent rien.",
+            "Trop encore.",
+            "Non : c'est l'inverse."
+          ],
+          "answer": "Environ un tiers",
+          "explanation": "« Seul un tiers des idées testées chez Microsoft ont amélioré les métriques qu'elles devaient améliorer. » C'est normal, et c'est pour ça qu'on teste.",
+          "explanation_more": "Kohavi, Tang et Xu, « Trustworthy Online Controlled Experiments », Cambridge University Press, 2020, citant Kohavi, Crook et Longbotham (2009).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "kohavi-2",
+          "type": "flash",
+          "question": "Dans des domaines déjà très optimisés comme Bing ou Google, quel est le taux de succès des idées testées ?",
+          "answer": "Environ 10 à 20 % (Manzi, 2012). Plus un produit est déjà optimisé, plus il est dur de trouver un gain.",
+          "explanation": "Chez Airbnb, sur environ 250 idées testées, environ 20 ont eu un impact positif : plus de 90 % d'échecs.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "kohavi-3",
+          "type": "cloze",
+          "question": "Microsoft : environ [[un tiers]] des idées testées gagnent. Bing et Google : [[10 à 20]] %. Airbnb : environ 20 idées sur 250.",
+          "answer": "Microsoft : environ un tiers des idées testées gagnent. Bing et Google : 10 à 20 %. Airbnb : environ 20 idées sur 250.",
+          "explanation": "Retiens l'ordre de grandeur : la majorité des idées, même bonnes sur le papier, ne produisent rien de mesurable.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "kohavi-4",
+          "type": "why",
+          "question": "Pourquoi une idée fondée sur un effet psychologique réel peut-elle quand même ne rien changer aux ventes ?",
+          "answer": "Parce que l'effet peut être trop petit, trop conditionnel, ou noyé dans le bruit des autres facteurs. Réel en laboratoire ne veut pas dire visible sur une métrique commerciale.",
+          "explanation": "Interprétation du rapport : ancrage, rareté, preuve sociale peuvent être réels et pourtant invisibles dans les chiffres.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "kohavi-5",
+          "type": "whatif",
+          "question": "Et si ton équipe se décourageait parce que 7 tests sur 10 ne donnent rien, que lui dirais-tu ?",
+          "answer": "Que c'est le taux normal, même chez Microsoft ou Airbnb. Un test négatif est une information : il évite de déployer une idée inutile. Le problème serait de ne pas tester.",
+          "explanation": "Anticiper que la majorité des idées ne gagneront rien fait partie de la méthode.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "mesurer-la-pub",
+      "name": "Mesurer la publicité est très difficile",
+      "cards": [
+        {
+          "id": "lewis-1",
+          "type": "flash",
+          "question": "Que montrent Lewis et Rao (2015) à partir de 25 expériences publicitaires et 2,8 millions de dollars dépensés ?",
+          "answer": "Que mesurer le retour sur investissement d'une pub est statistiquement très difficile : l'intervalle de confiance médian sur le ROI dépasse 100 points de pourcentage.",
+          "explanation": "Autrement dit, la plupart des annonceurs ne peuvent tout simplement pas savoir si leur pub fonctionne.",
+          "explanation_more": "Quarterly Journal of Economics, 2015. Le coefficient de variation des ventes individuelles avoisine 10 ; détecter un effet publicitaire informatif peut exiger plus de 10 millions de personnes-semaines.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "lewis-2",
+          "type": "qcm",
+          "question": "Pourquoi l'effet d'une pub est-il si dur à détecter, selon Lewis et Rao ?",
+          "options": [
+            "Les ventes individuelles varient énormément d'une personne à l'autre : le bruit noie l'effet",
+            "Les gens mentent sur ce qu'ils achètent",
+            "Les plateformes cachent les données",
+            "Les pubs n'ont jamais d'effet"
+          ],
+          "options_why": [
+            "",
+            "Ce n'est pas la cause principale : le problème est statistique.",
+            "Non : même avec toutes les données, le bruit reste énorme.",
+            "Non : elles peuvent avoir un effet, mais petit face à la variabilité."
+          ],
+          "answer": "Les ventes individuelles varient énormément d'une personne à l'autre : le bruit noie l'effet",
+          "explanation": "Un coefficient de variation d'environ 10 : la dispersion des achats est dix fois plus grande que la moyenne. Un effet de quelques pour cent disparaît dedans.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "lewis-3",
+          "type": "cloze",
+          "question": "Lewis et Rao (2015) : [[25]] expériences, 2,8 M$ de dépenses, et parfois plus de [[10 millions]] de personnes-semaines nécessaires pour détecter un effet.",
+          "answer": "Lewis et Rao (2015) : 25 expériences, 2,8 M$ de dépenses, et parfois plus de 10 millions de personnes-semaines nécessaires pour détecter un effet.",
+          "explanation": "Des tailles d'échantillon hors de portée de presque tous les annonceurs.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "lewis-4",
+          "type": "whatif",
+          "question": "Et si tu ne peux pas atteindre la puissance statistique nécessaire pour mesurer ta pub, que dois-tu faire ?",
+          "answer": "Reconnaître l'incertitude plutôt que prétendre un ROI précis. Et privilégier des expériences géographiques ou randomisées plutôt que des attributions observationnelles.",
+          "explanation": "Recommandation 4 du rapport : présumer que l'effet est difficile à mesurer, et le dire honnêtement.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "pub-de-marque",
+      "name": "La pub de marque en recherche : le cas eBay",
+      "cards": [
+        {
+          "id": "ebay-1",
+          "type": "flash",
+          "question": "Qu'ont montré Blake, Nosko et Tadelis (2015) sur les annonces d'eBay sur ses propres mots-clés de marque ?",
+          "answer": "Qu'elles n'apportaient aucun bénéfice à court terme : ces clics auraient eu lieu de toute façon. ROI implicite d'environ −80 %. Couper ces annonces laissait le trafic quasi inchangé.",
+          "explanation": "Payer pour un clic que l'on aurait eu gratuitement : la pub cannibalise le trafic naturel.",
+          "explanation_more": "Econometrica, 2015. Une des rares expériences à grande échelle sur la publicité en recherche, menée avec l'accord d'eBay.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ebay-2",
+          "type": "qcm",
+          "question": "Quel test recommande le rapport pour vérifier l'utilité d'une pub de marque en recherche ?",
+          "options": [
+            "Une expérience géo-randomisée : couper la pub dans certaines zones, la garder dans d'autres",
+            "Regarder le taux de clic",
+            "Comparer les ventes avant et après",
+            "Demander à l'agence"
+          ],
+          "options_why": [
+            "",
+            "Un clic n'est pas une vente en plus : c'est exactement le piège du cas eBay.",
+            "Avant/après ne contrôle ni la saisonnalité ni le reste.",
+            "L'agence est juge et partie."
+          ],
+          "answer": "Une expérience géo-randomisée : couper la pub dans certaines zones, la garder dans d'autres",
+          "explanation": "Seule une comparaison avec un groupe témoin dit ce que la pub apporte vraiment.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ebay-3",
+          "type": "cloze",
+          "question": "Cas eBay (Blake, Nosko, Tadelis, 2015) : ROI implicite des annonces sur mots-clés de marque ≈ [[−80]] %.",
+          "answer": "Cas eBay (Blake, Nosko, Tadelis, 2015) : ROI implicite des annonces sur mots-clés de marque ≈ −80 %.",
+          "explanation": "Négatif : chaque euro dépensé en rapportait bien moins qu'un euro, parce que les clients seraient venus quand même.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "methodes-observationnelles",
+      "name": "Les méthodes d'attribution surestiment",
+      "cards": [
+        {
+          "id": "gordon-1",
+          "type": "flash",
+          "question": "Que montrent Gordon, Zettelmeyer, Bhargava et Chapsky (2019) avec 15 expériences randomisées chez Facebook ?",
+          "answer": "Que les méthodes observationnelles (attribution sans groupe témoin) se trompent énormément : dans la moitié des études, l'estimation de la hausse d'achats était fausse d'un facteur trois. Et l'effet réel de la pub tend à être petit.",
+          "explanation": "Sans groupe témoin, tu mesures autre chose que l'effet de ta pub.",
+          "explanation_more": "Marketing Science, 2019 : 500 millions d'observations, 1,6 milliard d'impressions. Combinée à Lewis-Rao et Kohavi, cette étude fonde la conclusion : un effet de laboratoire ne se traduit presque jamais mécaniquement en hausse des ventes mesurable.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "gordon-2",
+          "type": "duel",
+          "question": "Pour mesurer l'effet d'une pub, quelle méthode est fiable ?",
+          "options": ["Une expérience randomisée avec groupe témoin", "L'attribution observationnelle (dernier clic, modèles statistiques)"],
+          "answer": "Une expérience randomisée avec groupe témoin",
+          "explanation": "L'attribution observationnelle surestime d'un facteur d'environ trois. La randomisation est le seul juge fiable.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "gordon-3",
+          "type": "cloze",
+          "question": "Gordon et ses collègues (2019) : [[15]] expériences randomisées chez Facebook ; dans la moitié des cas, les méthodes observationnelles se trompaient d'un facteur [[trois]].",
+          "answer": "Gordon et ses collègues (2019) : 15 expériences randomisées chez Facebook ; dans la moitié des cas, les méthodes observationnelles se trompaient d'un facteur trois.",
+          "explanation": "Un facteur trois, c'est annoncer +30 % quand la réalité est +10 %.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "gordon-4",
+          "type": "why",
+          "question": "Pourquoi une attribution « au dernier clic » surestime-t-elle l'effet d'une pub ?",
+          "answer": "Parce qu'elle attribue à la pub des achats que les gens auraient faits de toute façon : les personnes exposées sont souvent déjà intéressées. Sans groupe témoin non exposé, on confond corrélation et effet.",
+          "explanation": "Le cas eBay est l'exemple extrême : les clics sur la marque venaient de gens qui cherchaient déjà eBay.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "megaetudes",
+      "name": "Les mégaétudes : des nudges réels mais modestes",
+      "cards": [
+        {
+          "id": "milkman-1",
+          "type": "flash",
+          "question": "Mégaétude de Milkman et ses collègues sur la salle de sport (Nature, 2021, 61 293 participants) : quels résultats ?",
+          "answer": "45 % des interventions augmentaient les visites hebdomadaires de 9 à 27 %, mais seulement 8 % avaient un effet significatif qui persistait après les 4 semaines.",
+          "explanation": "Les nudges marchent à grande échelle, mais l'effet est modeste et s'estompe vite.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "milkman-2",
+          "type": "qcm",
+          "question": "Rappels vaccinaux par SMS avant rendez-vous (PNAS 2021, 47 306 personnes) : effet moyen ?",
+          "options": ["+5 % en moyenne, jusqu'à +11 % pour le meilleur message", "+50 %", "Aucun effet", "+25 % pour tous les messages"],
+          "options_why": [
+            "",
+            "Beaucoup trop : les effets des nudges sont modestes.",
+            "Non : un effet réel existe.",
+            "Non : la moyenne est bien plus basse, et un seul message atteint +11 %."
+          ],
+          "answer": "+5 % en moyenne, jusqu'à +11 % pour le meilleur message",
+          "explanation": "Un SMS de rappel, c'est de la saillance et un pont intention-action : ça marche, un peu.",
+          "explanation_more": "Rappels en pharmacie (PNAS 2022, 689 693 personnes) : +2,0 points, soit +6,8 %.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "milkman-3",
+          "type": "cloze",
+          "question": "Mégaétude salle de sport : [[45]] % des interventions augmentent les visites, mais seulement [[8]] % ont un effet persistant après 4 semaines.",
+          "answer": "Mégaétude salle de sport : 45 % des interventions augmentent les visites, mais seulement 8 % ont un effet persistant après 4 semaines.",
+          "explanation": "L'écart entre 45 et 8 : la plupart des effets sont des effets de nouveauté.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "milkman-4",
+          "type": "duel",
+          "question": "Les mégaétudes de Milkman montrent-elles que les nudges sont inefficaces ou efficaces mais modestes ?",
+          "options": ["Efficaces mais modestes, et décroissants", "Inefficaces"],
+          "answer": "Efficaces mais modestes, et décroissants",
+          "explanation": "C'est la nuance à retenir face au débat Mertens/Maier : des effets réels existent sur le terrain, mais petits.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "dark-patterns",
+      "name": "Les dark patterns",
+      "cards": [
+        {
+          "id": "dark-1",
+          "type": "flash",
+          "question": "Qu'ont trouvé Mathur et ses collègues (2019) en analysant environ 11 000 sites marchands ?",
+          "answer": "1 818 instances de dark patterns, réparties en 15 types et 7 catégories, sur 53 000 pages produit ; 183 sites aux pratiques trompeuses, et 22 fournisseurs tiers qui vendent ces mécanismes clé en main.",
+          "explanation": "Les dark patterns sont répandus et industrialisés.",
+          "explanation_more": "« Dark Patterns at Scale », Proc. ACM HCI (CSCW), 2019. Exemples : faux compteurs d'urgence, cases précochées, désabonnement caché.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "dark-2",
+          "type": "qcm",
+          "question": "Pourquoi le rapport dit-il de proscrire les dark patterns, au-delà de l'éthique ?",
+          "options": [
+            "Risque légal (FTC, DSA, DGCCRF), churn et réputation dégradée",
+            "Parce qu'ils ne convertissent pas",
+            "Parce que Google les pénalise dans le référencement",
+            "Aucune raison pratique, seulement éthique"
+          ],
+          "options_why": [
+            "",
+            "Si : ils convertissent à court terme, c'est bien le problème.",
+            "Ce n'est pas l'argument du rapport.",
+            "Non : il y a des raisons très pratiques."
+          ],
+          "answer": "Risque légal (FTC, DSA, DGCCRF), churn et réputation dégradée",
+          "explanation": "Gain à court terme, perte de confiance et de valeur client à long terme, et illégalité croissante.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "dark-3",
+          "type": "sort",
+          "question": "Classe chaque pratique : dark pattern, ou alternative transparente ?",
+          "answer": "Dark patterns : faux compteur, désabonnement caché, case précochée non annoncée. Transparents : défaut bénéfique annoncé, désabonnement aussi simple que l'abonnement, comparaison honnête.",
+          "explanation": "Le rapport propose des alternatives qui respectent l'autonomie pour chaque dark pattern.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Dark pattern", "Alternative transparente"],
+            "items": [
+              { "text": "Compteur « plus que 2 places » fictif", "category": "Dark pattern" },
+              { "text": "Désabonnement aussi simple que l'abonnement", "category": "Alternative transparente" },
+              { "text": "Bouton de désabonnement introuvable", "category": "Dark pattern" },
+              { "text": "Défaut bénéfique clairement annoncé", "category": "Alternative transparente" },
+              { "text": "Case d'assurance précochée sans le dire", "category": "Dark pattern" },
+              { "text": "Comparaison honnête des offres", "category": "Alternative transparente" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "dark-4",
+          "type": "cloze",
+          "question": "Mathur et ses collègues (2019) : environ 11 000 sites, [[1 818]] instances de dark patterns, [[15]] types en 7 catégories.",
+          "answer": "Mathur et ses collègues (2019) : environ 11 000 sites, 1 818 instances de dark patterns, 15 types en 7 catégories.",
+          "explanation": "Et 22 fournisseurs tiers : on peut acheter un dark pattern comme un plugin.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "ab-test",
+      "name": "L'A/B test bien fait : le seul juge fiable",
+      "cards": [
+        {
+          "id": "ab-1",
+          "type": "flash",
+          "question": "Quels sont les ingrédients d'un A/B test bien mené selon le rapport ?",
+          "answer": "Hypothèse écrite à l'avance, groupe témoin, une seule métrique principale, puissance suffisante, durée qui couvre l'effet de nouveauté et la saisonnalité, pas de coup d'œil avant la fin, correction pour tests multiples.",
+          "explanation": "Sept ingrédients. En manquer un, c'est risquer de « prouver » une idée qui ne marche pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "ab-2",
+          "type": "sort",
+          "question": "Remets dans l'ordre les étapes d'un A/B test rigoureux.",
+          "answer": "Écrire l'hypothèse et la métrique principale → calculer la taille d'échantillon → lancer avec un groupe témoin → attendre la fin sans regarder → analyser en corrigeant les tests multiples.",
+          "explanation": "L'ordre compte : la métrique se choisit avant de voir les résultats, jamais après.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Écrire l'hypothèse et choisir la métrique principale",
+              "Calculer la taille d'échantillon nécessaire",
+              "Lancer avec répartition aléatoire et groupe témoin",
+              "Attendre la fin prévue sans regarder les résultats",
+              "Analyser en corrigeant pour les tests multiples"
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ab-3",
+          "type": "why",
+          "question": "Pourquoi ne faut-il pas regarder les résultats d'un A/B test avant la fin prévue (le « peeking ») ?",
+          "answer": "Parce qu'en regardant souvent et en arrêtant dès que ça semble gagner, on capte des fluctuations du hasard : on finit par « trouver » des effets qui n'existent pas.",
+          "explanation": "Plus on regarde, plus on a de chances de voir un faux positif.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ab-4",
+          "type": "qcm",
+          "question": "Quelle métrique principale choisir pour un A/B test sur une page de prix ?",
+          "options": ["La marge ou la rétention, pas seulement le clic", "Le taux de clic", "Le temps passé sur la page", "Le nombre de visiteurs"],
+          "options_why": [
+            "",
+            "Un clic n'est pas une vente : les dark patterns gonflent les clics et ruinent la suite.",
+            "Ne dit rien de la valeur créée.",
+            "Ne dépend pas de la page testée."
+          ],
+          "answer": "La marge ou la rétention, pas seulement le clic",
+          "explanation": "Recommandation 3 du rapport : une métrique principale unique, liée à la valeur réelle.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ab-5",
+          "type": "faded_example",
+          "question": "Tu veux tester un prix en 9 (19,99 au lieu de 20). Termine le plan de test.",
+          "answer": "Hypothèse : le prix en 9 augmente la marge. Deux versions au hasard, métrique = marge par visiteur, durée couvrant nouveauté et saisonnalité, pas de peeking. Si l'effet ne survit pas à trois tests, on abandonne.",
+          "explanation": "Le « charm pricing » a des preuves de terrain mitigées et variables selon la catégorie : c'est typiquement une hypothèse à tester, pas une loi.",
+          "data": {
+            "hidden": 2,
+            "steps": [
+              { "prompt": "Quelle hypothèse écrire à l'avance ?", "text": "« Afficher 19,99 au lieu de 20 augmente la marge par visiteur » (pas seulement le volume)." },
+              { "prompt": "Comment répartir les visiteurs ?", "text": "Au hasard entre la version A (20) et la version B (19,99), avec un calcul préalable de la taille d'échantillon." },
+              { "text": "Métrique principale : la marge par visiteur. Durée : assez longue pour couvrir l'effet de nouveauté et la saisonnalité. Aucun coup d'œil avant la fin." },
+              { "text": "Décision : si le gain de marge est stable au-delà du bruit et se répète, industrialiser ; s'il ne survit pas à trois tests indépendants, abandonner." }
+            ]
+          },
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

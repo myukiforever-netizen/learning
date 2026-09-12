@@ -1,0 +1,475 @@
+{
+  "id": "effondres",
+  "name": "2. Les effets qui se sont effondrés",
+  "concepts": [
+    {
+      "id": "ego-depletion",
+      "name": "L'ego depletion (la volonté qui s'épuise)",
+      "cards": [
+        {
+          "id": "ego-1",
+          "type": "flash",
+          "question": "Que disait la théorie de l'ego depletion, et qui l'a portée ?",
+          "answer": "Que la volonté est une ressource limitée qui s'épuise quand on l'utilise. Théorie de Baumeister, pilier des livres sur l'habitude et la vente.",
+          "explanation": "Idée séduisante, très reprise, mais qui n'a pas survécu aux grandes réplications.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ego-2",
+          "type": "qcm",
+          "question": "En 2021, une réplication dans 36 laboratoires (3 531 participants) a mesuré l'ego depletion. Résultat ?",
+          "options": ["Un effet quasi nul (d = 0,06), non significatif", "Un effet moyen confirmé", "Un effet fort", "Un effet inversé"],
+          "options_why": [
+            "",
+            "Non : les données étaient 4 fois plus probables si l'effet n'existe pas.",
+            "Encore moins.",
+            "Non plus : simplement rien de mesurable."
+          ],
+          "answer": "Un effet quasi nul (d = 0,06), non significatif",
+          "explanation": "Vohs et ses collègues (Psychological Science, 2021) confirment Hagger 2016 : l'effet robuste promis n'existe pas.",
+          "explanation_more": "Les défenseurs (Baumeister, Friese) contestent la tâche utilisée et pensent qu'un petit effet subsiste. Statut du rapport : contredit par les meilleures preuves ; un résidu autour de zéro n'est pas exclu, mais rien d'actionnable.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "ego-3",
+          "type": "cloze",
+          "question": "Réplication de l'ego depletion en 2021 : [[36]] laboratoires, plus de 3 500 participants, effet d = [[0,06]].",
+          "answer": "Réplication de l'ego depletion en 2021 : 36 laboratoires, plus de 3 500 participants, effet d = 0,06.",
+          "explanation": "Un d de 0,06, c'est presque zéro. À titre de comparaison, on parle d'effet moyen vers 0,5.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "ego-4",
+          "type": "duel",
+          "question": "Statut de l'ego depletion selon le rapport ?",
+          "options": ["Contredit par les meilleures preuves", "Soutenu mais contextuel"],
+          "answer": "Contredit par les meilleures preuves",
+          "explanation": "Contrairement à l'aversion à la perte (soutenue mais contextuelle), l'ego depletion est dans la liste rouge.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "power-posing",
+      "name": "Le power posing (les postures de pouvoir)",
+      "cards": [
+        {
+          "id": "power-1",
+          "type": "flash",
+          "question": "Que promettait l'étude de 2010 sur le power posing (Carney, Cuddy et Yap) ?",
+          "answer": "Que tenir une posture « de pouvoir » deux minutes augmente la testostérone, baisse le cortisol et pousse à prendre plus de risques.",
+          "explanation": "Étude sur 42 personnes seulement. Devenue célèbre par une conférence TED, pas par des réplications.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "power-2",
+          "type": "qcm",
+          "question": "En 2015, Ranehill et ses collègues ont refait l'étude avec 200 personnes. Qu'ont-ils retrouvé ?",
+          "options": [
+            "Seulement le sentiment subjectif de pouvoir",
+            "Les effets sur les hormones",
+            "Les effets sur la prise de risque",
+            "Tous les effets d'origine"
+          ],
+          "options_why": [
+            "",
+            "Non : aucun effet hormonal retrouvé.",
+            "Non : aucun effet sur le comportement.",
+            "Non : seul le ressenti a tenu."
+          ],
+          "answer": "Seulement le sentiment subjectif de pouvoir",
+          "explanation": "Le ressenti « je me sens puissant » tient, modestement. Les hormones et le comportement, non.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "power-3",
+          "type": "flash",
+          "question": "Qu'a fait Dana Carney, première auteure de l'étude sur le power posing, en 2016 ?",
+          "answer": "Elle a publiquement désavoué l'effet : « je ne crois pas que les effets du power posing soient réels ».",
+          "explanation": "Rare : une auteure qui renie son propre résultat vedette. Amy Cuddy, elle, défend encore l'effet sur le ressenti.",
+          "explanation_more": "Simmons et Simonsohn (2017) ont aussi montré, par une analyse des p-values, que la littérature citée en défense n'avait aucune valeur probante.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "power-4",
+          "type": "sort",
+          "question": "Pour le power posing, classe chaque effet annoncé selon son statut actuel.",
+          "answer": "Contredits : testostérone, cortisol, prise de risque. Soutenu mais modeste : le sentiment de pouvoir.",
+          "explanation": "Une seule partie de la promesse a survécu, la moins utile : se sentir puissant deux minutes.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Contredit", "Soutenu mais modeste"],
+            "items": [
+              { "text": "Hausse de testostérone", "category": "Contredit" },
+              { "text": "Baisse de cortisol", "category": "Contredit" },
+              { "text": "Plus de prise de risque", "category": "Contredit" },
+              { "text": "Se sentir plus puissant", "category": "Soutenu mais modeste" }
+            ]
+          },
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "priming-social",
+      "name": "Le priming social (l'amorçage du comportement)",
+      "cards": [
+        {
+          "id": "priming-1",
+          "type": "flash",
+          "question": "Quelle était l'expérience du « elderly priming » de Bargh (1996) ?",
+          "answer": "Des gens exposés à des mots liés à la vieillesse marchaient ensuite plus lentement dans le couloir.",
+          "explanation": "Résultat célèbre, non répliqué par Doyen et ses collègues en 2012.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "priming-2",
+          "type": "why",
+          "question": "Pourquoi l'effet du « elderly priming » apparaissait-il dans certaines réplications et pas dans d'autres ?",
+          "answer": "Parce qu'il apparaissait surtout quand les expérimentateurs s'attendaient au résultat : c'est un effet d'attente (effet Rosenthal), pas un effet des mots sur la marche.",
+          "explanation": "Quand celui qui chronomètre croit à l'effet, il le trouve. D'où l'importance des protocoles en aveugle.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "priming-3",
+          "type": "duel",
+          "question": "Lequel est bien établi : le priming social comportemental, ou le priming sémantique de court terme ?",
+          "options": ["Le priming sémantique de court terme", "Le priming social comportemental"],
+          "answer": "Le priming sémantique de court terme",
+          "explanation": "Voir le mot « pain » accélère la lecture de « beurre » quelques secondes après : solide. Faire marcher lentement avec des mots : non étayé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "priming-4",
+          "type": "flash",
+          "question": "Quel prix Nobel a reconnu en 2017 avoir trop fait confiance aux études de priming social, et où en parlait-il ?",
+          "answer": "Daniel Kahneman, dans un courrier public. Il avait consacré le chapitre 4 de « Système 1 / Système 2 » au priming.",
+          "explanation": "Un mea culpa notable : même un chapitre d'un livre de référence peut reposer sur une littérature fragile.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "priming-5",
+          "type": "cloze",
+          "question": "Le « professor priming » de [[Dijksterhuis]] (penser à un professeur rendrait meilleur à un quiz) a échoué en réplication enregistrée.",
+          "answer": "Le « professor priming » de Dijksterhuis (penser à un professeur rendrait meilleur à un quiz) a échoué en réplication enregistrée.",
+          "explanation": "Deuxième pilier du priming social tombé, après le elderly priming de Bargh.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "milgram-stanford",
+      "name": "Milgram et Stanford : les récits fragilisés",
+      "cards": [
+        {
+          "id": "milgram-1",
+          "type": "flash",
+          "question": "Qu'ont révélé les archives de Milgram étudiées par Gina Perry ?",
+          "answer": "Que beaucoup de participants n'ont pas été débriefés comme annoncé, que certains soupçonnaient la supercherie (les chocs étaient joués par un acteur), et que Milgram a tu des résultats gênants.",
+          "explanation": "Le phénomène existe, mais l'expérience « propre » racontée dans les manuels n'a pas eu lieu telle quelle.",
+          "explanation_more": "Livre : « Behind the Shock Machine ». Haslam et Reicher réinterprètent l'obéissance non comme aveugle, mais comme un « suivi engagé » d'une cause perçue comme scientifique.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "milgram-2",
+          "type": "duel",
+          "question": "Selon Haslam et Reicher, les participants de Milgram obéissaient de façon aveugle, ou suivaient une cause à laquelle ils croyaient ?",
+          "options": ["Ils suivaient une cause perçue comme scientifique", "Ils obéissaient aveuglément"],
+          "answer": "Ils suivaient une cause perçue comme scientifique",
+          "explanation": "C'est le « suivi engagé » : on obéit parce qu'on adhère à ce que l'autorité représente, pas par réflexe.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "stanford-1",
+          "type": "qcm",
+          "question": "Qu'a montré Thibault Le Texier à partir des archives de l'expérience de Stanford ?",
+          "options": [
+            "Que les gardiens avaient reçu la consigne explicite d'être durs",
+            "Que l'expérience n'a jamais eu lieu",
+            "Que les prisonniers étaient des acteurs payés",
+            "Que Zimbardo avait falsifié les chiffres"
+          ],
+          "options_why": [
+            "",
+            "Elle a bien eu lieu, mais pas comme racontée.",
+            "Non : ce sont les instructions données aux gardiens qui posent problème.",
+            "Le problème n'est pas des chiffres truqués mais une brutalité fabriquée par les consignes."
+          ],
+          "answer": "Que les gardiens avaient reçu la consigne explicite d'être durs",
+          "explanation": "Si les gardiens ont été instruits d'être durs, la thèse d'une brutalité qui « émerge spontanément » s'effondre.",
+          "explanation_more": "Le Texier, « Histoire d'un mensonge », La Découverte, 2018, et American Psychologist, 2019. Zimbardo et Haney ont répondu en 2020 sans traiter la plupart des points.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "stanford-2",
+          "type": "why",
+          "question": "Pourquoi le rapport dit-il que « les phénomènes bruts existent, mais pas comme démonstrations propres » pour Milgram et Stanford ?",
+          "answer": "Parce que des gens obéissent bien à une autorité et des rôles peuvent rendre cruel, mais ces deux expériences, telles qu'elles ont été menées et racontées, ne le démontrent pas proprement : consignes cachées, débriefings absents, résultats tus.",
+          "explanation": "Distingue toujours le phénomène de l'expérience censée le prouver.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "subliminal",
+      "name": "La publicité subliminale",
+      "cards": [
+        {
+          "id": "subliminal-1",
+          "type": "flash",
+          "question": "Que prétendait James Vicary en 1957, et qu'a-t-il avoué en 1962 ?",
+          "answer": "Il prétendait avoir augmenté les ventes de Coca (+18 %) et de pop-corn (+57 %) au cinéma avec des messages flashés trop vite pour être vus. En 1962, il a avoué que l'étude était fabriquée.",
+          "explanation": "Le mythe fondateur de la « pub subliminale » est un aveu de fabrication. Jamais répliqué en quarante ans.",
+          "explanation_more": "Aveu dans une interview à Advertising Age. Il est même possible que l'expérience n'ait jamais eu lieu.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "subliminal-2",
+          "type": "qcm",
+          "question": "En laboratoire (Karremans et ses collègues, 2006), l'amorçage subliminal d'une marque de boisson a eu un effet… ?",
+          "options": [
+            "Réel mais minuscule, seulement chez les gens déjà assoiffés",
+            "Fort chez tout le monde",
+            "Nul chez tout le monde",
+            "Fort chez les gens non assoiffés"
+          ],
+          "options_why": [
+            "",
+            "Non : l'effet est petit et fragile.",
+            "Non : il existe, mais sous condition.",
+            "C'est l'inverse : il faut déjà avoir soif."
+          ],
+          "answer": "Réel mais minuscule, seulement chez les gens déjà assoiffés",
+          "explanation": "L'amorçage subliminal existe, mais il est petit, conditionnel (un objectif déjà présent) et jamais démontré en conditions média réelles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "subliminal-3",
+          "type": "cloze",
+          "question": "Vicary annonçait +[[18]] % de ventes de Coca et environ +[[57]] % de pop-corn. Tout était inventé.",
+          "answer": "Vicary annonçait +18 % de ventes de Coca et environ +57 % de pop-corn. Tout était inventé.",
+          "explanation": "Des chiffres précis ne sont pas une preuve : ceux-là n'ont jamais existé.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "subliminal-4",
+          "type": "duel",
+          "question": "Statut : la « publicité subliminale à la Vicary » et « l'amorçage subliminal en laboratoire », c'est la même chose ?",
+          "options": ["Non : l'une est un mythe fabriqué, l'autre un effet réel mais infime", "Oui : les deux sont des mythes"],
+          "answer": "Non : l'une est un mythe fabriqué, l'autre un effet réel mais infime",
+          "explanation": "Ne confonds pas la légende (fabriquée) et l'effet de labo (réel, minuscule, conditionnel).",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "pnl",
+      "name": "La PNL (programmation neuro-linguistique)",
+      "cards": [
+        {
+          "id": "pnl-1",
+          "type": "flash",
+          "question": "Que disent les revues systématiques (Witkowski 2010, Sturt 2012) sur la PNL ?",
+          "answer": "Aucun soutien pour les « systèmes de représentation » (visuel, auditif, kinesthésique…) ni pour la lecture des mouvements des yeux. Statut : non étayé, voire contredit.",
+          "explanation": "Le rapport parle de « décoration pseudoscientifique » : du vocabulaire savant sans mécanisme prouvé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "pnl-2",
+          "type": "qcm",
+          "question": "Witkowski a analysé une base de 315 études sur la PNL. Quelle part soutenait ses affirmations ?",
+          "options": ["Environ 18 %, plus de la moitié les contredisant", "Environ 50 %", "Environ 80 %", "Aucune"],
+          "options_why": [
+            "",
+            "Non : bien moins.",
+            "Non : c'est à peu près l'inverse.",
+            "Quelques-unes la soutenaient, mais elles étaient de faible qualité."
+          ],
+          "answer": "Environ 18 %, plus de la moitié les contredisant",
+          "explanation": "Et Sturt relève que 89 % des études manquaient de groupe contrôle : même les rares soutiens sont fragiles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "pnl-3",
+          "type": "cloze",
+          "question": "Selon Sturt et ses collègues (2012), [[89]] % des études sur la PNL n'avaient pas de groupe [[contrôle]].",
+          "answer": "Selon Sturt et ses collègues (2012), 89 % des études sur la PNL n'avaient pas de groupe contrôle.",
+          "explanation": "Sans groupe contrôle, on ne peut pas savoir si le changement vient de la technique ou d'autre chose.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "pnl-4",
+          "type": "whatif",
+          "question": "Et si un formateur en vente te proposait un module PNL « pour lire les clients par leurs mouvements d'yeux », que lui réponds-tu ?",
+          "answer": "Que l'interprétation des mouvements oculaires n'a aucun soutien dans les revues systématiques, et que ce module coûterait de l'argent sans preuve. Je préfère investir dans des tests A/B.",
+          "explanation": "Recommandation du rapport : bannir les outils pseudoscientifiques (PNL, typologies, détection du mensonge non verbale).",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "mensonge",
+      "name": "Détecter le mensonge au langage corporel",
+      "cards": [
+        {
+          "id": "mensonge-1",
+          "type": "qcm",
+          "question": "Méta-analyse de Bond et DePaulo (2006, 24 483 juges) : quel est le taux moyen de bonnes réponses quand on essaie de repérer un mensonge ?",
+          "options": ["54 %, à peine mieux que le hasard", "75 %", "90 %", "Exactement 50 %"],
+          "options_why": [
+            "",
+            "Beaucoup trop optimiste.",
+            "Aucun humain n'atteint ça sans indices matériels.",
+            "Légèrement au-dessus, mais si peu que c'est inutilisable."
+          ],
+          "answer": "54 %, à peine mieux que le hasard",
+          "explanation": "On classe correctement 47 % des mensonges et 61 % des vérités. Le regard fuyant et les gestes ne sont pas des indices fiables.",
+          "explanation_more": "DePaulo 2003 et Hartwig et Bond 2011 confirment : les indices comportementaux populaires sont peu fiables, et les différences entre personnes « douées » ou non sont négligeables.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "mensonge-2",
+          "type": "cloze",
+          "question": "Bond et DePaulo (2006) : [[54]] % de jugements corrects en moyenne, avec [[47]] % des mensonges repérés et 61 % des vérités reconnues.",
+          "answer": "Bond et DePaulo (2006) : 54 % de jugements corrects en moyenne, avec 47 % des mensonges repérés et 61 % des vérités reconnues.",
+          "explanation": "On repère moins d'un mensonge sur deux : moins bien qu'une pièce de monnaie.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "mensonge-3",
+          "type": "flash",
+          "question": "Que sont les programmes de type SPOT (TSA), et pourquoi sont-ils critiqués ?",
+          "answer": "Des programmes de « détection comportementale » dans les aéroports, censés repérer des suspects à leur attitude. Ils sont critiqués pour manque de base scientifique.",
+          "explanation": "Même conclusion pour les microexpressions d'Ekman : leur usage opérationnel reste contesté.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "mensonge-4",
+          "type": "duel",
+          "question": "Certaines personnes sont-elles nettement douées pour détecter les mensonges ?",
+          "options": ["Non : les différences individuelles sont négligeables", "Oui : quelques « détecteurs humains » existent"],
+          "answer": "Non : les différences individuelles sont négligeables",
+          "explanation": "Le mythe du « profileur » qui lit les gens ne résiste pas aux données : tout le monde est à peu près au niveau du hasard.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "styles-apprentissage",
+      "name": "Styles d'apprentissage et typologies (MBTI, DISC…)",
+      "cards": [
+        {
+          "id": "styles-1",
+          "type": "flash",
+          "question": "Qu'est-ce que « l'hypothèse de correspondance » des styles d'apprentissage, et que dit Pashler (2008) ?",
+          "answer": "L'idée qu'enseigner selon le style préféré de chacun (visuel, auditif…) améliore l'apprentissage. Pashler et ses collègues : aucune preuve crédible.",
+          "explanation": "Les gens ont bien des préférences déclarées, mais s'y adapter ne donne pas de meilleurs résultats.",
+          "explanation_more": "Pashler, McDaniel, Rohrer et Bjork, Psychological Science in the Public Interest, 2008. Très peu d'études utilisent la méthode requise (interaction croisée) et celles qui le font ne trouvent rien.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "styles-2",
+          "type": "duel",
+          "question": "« Les gens ont des préférences » et « s'adapter à ces préférences améliore l'apprentissage » : quelle affirmation est fausse ?",
+          "options": ["S'adapter aux préférences améliore l'apprentissage", "Les gens ont des préférences"],
+          "answer": "S'adapter aux préférences améliore l'apprentissage",
+          "explanation": "Préférer, oui. En profiter, non : c'est précisément le maillon qui manque.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "styles-3",
+          "type": "qcm",
+          "question": "Que dit le rapport des typologies commerciales comme MBTI, DISC, « couleurs » ou cerveau gauche/droit ?",
+          "options": [
+            "Elles manquent de validité prédictive robuste",
+            "Elles sont validées pour le recrutement",
+            "Seul le MBTI est validé",
+            "Elles prédisent bien les performances de vente"
+          ],
+          "options_why": [
+            "",
+            "Non : aucune ne prédit de façon robuste.",
+            "Non : le MBTI n'échappe pas à la critique.",
+            "Rien ne le montre."
+          ],
+          "answer": "Elles manquent de validité prédictive robuste",
+          "explanation": "Par extension de la critique des styles d'apprentissage et du consensus psychométrique : à ne pas utiliser comme outils prédictifs.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "styles-4",
+          "type": "why",
+          "question": "Pourquoi les typologies (MBTI, DISC) restent-elles si populaires malgré l'absence de preuves ?",
+          "answer": "Parce qu'elles flattent : chacun se reconnaît dans une description positive et vague, et elles donnent une impression de maîtrise des autres. C'est agréable, pas prédictif.",
+          "explanation": "Un outil peut être plaisant et inutile à la fois. La question reste : prédit-il quelque chose de mesurable ?",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "mythes-divers",
+      "name": "Petits mythes tenaces",
+      "cards": [
+        {
+          "id": "mythes-1",
+          "type": "flash",
+          "question": "D'où vient le mythe des « 21 jours pour créer une habitude », et quel est le vrai chiffre ?",
+          "answer": "D'une lecture erronée de Maxwell Maltz (1960), qui parlait d'adaptation après une chirurgie, pas d'habitudes. Lally (2010) : médiane de 66 jours, avec une fourchette de 18 à 254 jours.",
+          "explanation": "Et manquer un jour ne casse pas le processus.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "mythes-2",
+          "type": "qcm",
+          "question": "« Notre attention est tombée à 8 secondes, moins qu'un poisson rouge. » Quelle est la source scientifique de ce chiffre ?",
+          "options": ["Aucune source primaire vérifiable", "Une étude de Microsoft", "Statistic Brain", "Une méta-analyse de 2015"],
+          "options_why": [
+            "",
+            "Souvent attribué à Microsoft, à tort : aucune étude primaire.",
+            "Site cité en boucle, sans source vérifiable derrière.",
+            "N'existe pas."
+          ],
+          "answer": "Aucune source primaire vérifiable",
+          "explanation": "Chiffre viral sans étude derrière. Un chiffre précis répété partout n'est pas une preuve.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "mythes-3",
+          "type": "sort",
+          "question": "Classe ces affirmations : mythe ou soutenu par des preuves ?",
+          "answer": "Mythes : 21 jours, attention de poisson rouge, « le cerveau est câblé pour », bouton d'achat neuromarketing. Soutenus : les défauts changent le comportement par défaut, une habitude se forme par répétition en contexte stable.",
+          "explanation": "La liste rouge du rapport : formules accrocheuses sans mécanisme ni preuve.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Mythe", "Soutenu"],
+            "items": [
+              { "text": "Une habitude se forme en 21 jours", "category": "Mythe" },
+              { "text": "Attention de 8 secondes, moins qu'un poisson rouge", "category": "Mythe" },
+              { "text": "« Le cerveau est câblé pour acheter »", "category": "Mythe" },
+              { "text": "Les options par défaut changent le comportement par défaut", "category": "Soutenu" },
+              { "text": "Une habitude se forme par répétition en contexte stable", "category": "Soutenu" },
+              { "text": "Le « bouton d'achat » du neuromarketing", "category": "Mythe" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "mythes-4",
+          "type": "flash",
+          "question": "Que penser des expressions « psychologie obscure », « recettes universelles de persuasion », « manipulation à distance » ?",
+          "answer": "Rhétorique sans mécanisme ni preuve. Un vrai mécanisme est partiel, conditionnel et mesurable ; une « recette universelle » est un signal de charlatanisme.",
+          "explanation": "Plus la promesse est totale, moins elle est crédible.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "mythes-5",
+          "type": "cloze",
+          "question": "Lally et ses collègues (2010) : [[66]] jours en médiane pour qu'un comportement quotidien devienne automatique, avec une fourchette de 18 à [[254]] jours.",
+          "answer": "Lally et ses collègues (2010) : 66 jours en médiane pour qu'un comportement quotidien devienne automatique, avec une fourchette de 18 à 254 jours.",
+          "explanation": "Énorme variabilité selon la personne et le comportement : aucune durée magique.",
+          "retention_goal": "3m"
+        }
+      ]
+    }
+  ]
+}
