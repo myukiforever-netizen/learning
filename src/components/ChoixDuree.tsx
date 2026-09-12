@@ -27,7 +27,7 @@ export function ChoixDuree() {
               role="radio"
               aria-checked={choisi}
               onClick={() => setDuree(valeur)}
-              className="bouton px-4 text-sm"
+              className="bouton px-3 sm:px-4 text-sm whitespace-nowrap"
               style={choisi ? { borderColor: "var(--accent)", boxShadow: "inset 0 0 0 1px var(--accent)" } : undefined}
             >
               {valeur} min
