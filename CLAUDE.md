@@ -91,6 +91,8 @@ docs/               les 2 documents de référence
 - Modèle de révision : `step` (position dans le calendrier), `interval_days` (dernier intervalle appliqué), `ease_state` (`new`/`ok`/`failed`/`thought_knew`). Après un raté ou une boîte, le succès suivant utilise `interval_days` au lieu du calendrier.
 - Dans une session, seule la PREMIÈRE réponse à une carte replanifie ; les retours d'une carte ratée sont enregistrés dans `answers` sans replanifier.
 - Les écritures pendant la session sont asynchrones (la carte suivante n'attend pas) ; la fin de session attend toutes les écritures avant de clôturer.
+- Préférences d'affichage (taille de texte, mode sombre) : cookie `ancre.affichage` lu dans `src/app/layout.tsx` → `data-theme="dark"` et `--taille-texte` sur `<html>`. Le mode sombre = mêmes tokens, valeurs redéfinies sous `:root[data-theme="dark"]` dans `globals.css`. Jamais de couleur en dur dans les composants.
+- Quota de nouveautés : table `settings` (`lireQuotaNouvelles`, repli sur la config si la table ou la ligne manque).
 
 ## Avancement
 
@@ -99,4 +101,5 @@ docs/               les 2 documents de référence
 - J3 (import/export JSON + écran Matières + SCHEMA.md) : terminé. Format dans `SCHEMA.md`, validation/fusion dans `src/lib/import/`, matières livrées dans `src/data/matieres/` (`demo_v1.json`), écran Matières (charger, importer avec aperçu, pause, export), export complet dans Réglages, type « duel » affiché via la mécanique QCM. 27 tests verts.
 - Contenu « Psychologie de l'influence » (source : `docs/sources/psychologie.md`) : EN PAUSE à la demande du product owner. À reprendre après J6 sous forme de `src/data/matieres/psychologie_v1.json` (8 modules prévus : bases pour juger une loi, effets effondrés, effets conditionnels, Cialdini, effet psy ≠ ventes, marketing fondé sur les preuves, fraudes, pratiques concrètes).
 - J4 (types de cartes restants) : terminé. 10 types → 6 mécaniques dans `Session.tsx` (flash, choix = qcm/duel, cloze, libre = why/whatif/problem, exemple = worked/faded, sort = classer/ordonner). Vérification automatique pure dans `src/lib/cartes/verifier.ts` (tolérante casse/accents). Démo passée en v2 avec un exemple de chaque type. 32 tests verts.
-- J5 (Mon cerveau + réglages + mode sombre) : à faire
+- J5 (Mon cerveau + réglages + mode sombre) : terminé. Stats pures dans `src/lib/stats/cerveau.ts` (% en mémoire = 0,9^(jours écoulés / intervalle), calibration confiance, liste rouge, ratio production). Affichage (taille, sombre) dans un cookie lu par le layout ; quota nouveautés dans la table `settings` (migration `0002_settings.sql`). 39 tests verts.
+- J6 (polissage mobile, raccourcis, reduced-motion, Vercel, UTILISATION.md) : à faire

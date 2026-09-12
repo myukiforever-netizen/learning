@@ -7,6 +7,17 @@ import { CONFIG_REVISION } from "@/lib/revision/config";
 import { composerSession, nouvellesDisponibles } from "@/lib/revision/composer";
 import { appliquerBoite, etatInitial, planifier, resultatDe } from "@/lib/revision/planifier";
 import { calculerSerie } from "@/lib/revision/serie";
+import {
+  calibrationConfiance,
+  messageCalibration,
+  pourcentageMatiere,
+  ratioProduction,
+  topRatees,
+  type Calibration,
+  type CarteRatee,
+  type ReponseStats,
+  type StatMatiere,
+} from "@/lib/stats/cerveau";
 import { calculerFusion, type CarteExistante, type ResultatFusion } from "@/lib/import/fusionner";
 import { aplatirMatiere, idGlobal, type MatiereJson } from "@/lib/import/schema";
 import type {
@@ -34,7 +45,7 @@ interface LigneCarte {
   options_why: string[] | null;
   retention_goal: ObjectifRetention;
   data: CarteData | null;
-  concepts: { name: string } | null;
+  concepts: { name: string; modules?: { subjects?: { id: string; name: string; color: string | null } } } | null;
 }
 
 interface LigneRevision {
@@ -70,10 +81,14 @@ function versEtat(r: LigneRevision): EtatRevision {
 
 const CHAMPS_CARTE =
   "id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, " +
-  "concepts!inner(name, modules!inner(subjects!inner(status)))";
+  "concepts!inner(name, modules!inner(subjects!inner(id, name, color, status)))";
 
 /** Cartes actives des matières actives, avec leur état de révision (null = nouvelle). */
-async function chargerCartesEtRevisions(): Promise<{ cartes: CarteAReviser[]; revisions: LigneRevision[] }> {
+interface CarteAvecMatiere extends CarteAReviser {
+  matiere: { id: string; name: string; color: string | null } | null;
+}
+
+async function chargerCartesEtRevisions(): Promise<{ cartes: CarteAvecMatiere[]; revisions: LigneRevision[] }> {
   const supabase = await createClient();
 
   const [cartesRes, revisionsRes] = await Promise.all([
@@ -93,10 +108,29 @@ async function chargerCartesEtRevisions(): Promise<{ cartes: CarteAReviser[]; re
 
   const cartes = ((cartesRes.data ?? []) as unknown as LigneCarte[]).map((ligne) => {
     const r = parCarte.get(ligne.id);
-    return { carte: versCarte(ligne), revision: r ? versEtat(r) : null };
+    const m = ligne.concepts?.modules?.subjects;
+    return { carte: versCarte(ligne), revision: r ? versEtat(r) : null, matiere: m ? { id: m.id, name: m.name, color: m.color } : null };
   });
 
   return { cartes, revisions };
+}
+
+// ---------- Réglages (table settings, une ligne par utilisateur) ----------
+
+/** Quota de nouvelles cartes par jour : réglage utilisateur, sinon valeur de la config. */
+export async function lireQuotaNouvelles(): Promise<number> {
+  const supabase = await createClient();
+  const { data, error } = await supabase.from("settings").select("new_per_day").maybeSingle();
+  if (error || !data) return CONFIG_REVISION.nouvellesParJour; // table absente ou pas encore de ligne
+  return data.new_per_day as number;
+}
+
+export async function enregistrerQuotaNouvelles(quota: number): Promise<void> {
+  const supabase = await createClient();
+  const { error } = await supabase
+    .from("settings")
+    .upsert({ new_per_day: quota, updated_at: new Date().toISOString() }, { onConflict: "user_id" });
+  if (error) throw new Error(error.message);
 }
 
 // ---------- Accueil ----------
@@ -110,7 +144,7 @@ export interface ChiffresAccueil {
 
 export async function chiffresAccueil(): Promise<ChiffresAccueil> {
   const jour = aujourdhui();
-  const { cartes, revisions } = await chargerCartesEtRevisions();
+  const [{ cartes, revisions }, quota] = await Promise.all([chargerCartesEtRevisions(), lireQuotaNouvelles()]);
 
   const dues = cartes.filter((c) => c.revision && c.revision.due_date <= jour).length;
   const nouvellesTotal = cartes.filter((c) => c.revision === null).length;
@@ -123,7 +157,7 @@ export async function chiffresAccueil(): Promise<ChiffresAccueil> {
 
   return {
     dues,
-    nouvelles: nouvellesDisponibles(nouvellesTotal, dejaAujourdhui),
+    nouvelles: nouvellesDisponibles(nouvellesTotal, dejaAujourdhui, quota),
     serie: calculerSerie(jours, jour),
     totalCartes: cartes.length,
   };
@@ -133,12 +167,13 @@ export async function chiffresAccueil(): Promise<ChiffresAccueil> {
 
 export async function composerSessionDepuisBase(minutes: number): Promise<CarteAReviser[]> {
   const jour = aujourdhui();
-  const { cartes, revisions } = await chargerCartesEtRevisions();
+  const [{ cartes, revisions }, quota] = await Promise.all([chargerCartesEtRevisions(), lireQuotaNouvelles()]);
   return composerSession({
     dues: cartes.filter((c) => c.revision && c.revision.due_date <= jour),
     nouvelles: cartes.filter((c) => c.revision === null),
     minutes,
     nouvellesDejaAujourdhui: revisions.filter((r) => r.introduced_on === jour).length,
+    quotaNouvelles: quota,
   });
 }
 
@@ -259,6 +294,51 @@ export async function terminerSession(
     .maybeSingle();
 
   return { prochaineDue: (prochaine?.due_date as string | undefined) ?? null };
+}
+
+// ---------- Mon cerveau ----------
+
+export interface DonneesCerveau {
+  matieres: StatMatiere[];
+  calibration: Calibration[];
+  messageCalibration: string | null;
+  listeRouge: CarteRatee[];
+  production: { production: number; total: number };
+  totalReponses: number;
+}
+
+export async function donneesCerveau(): Promise<DonneesCerveau> {
+  const jour = aujourdhui();
+  const supabase = await createClient();
+  const [{ cartes }, reponsesRes] = await Promise.all([
+    chargerCartesEtRevisions(),
+    supabase.from("answers").select("card_id, correct, confidence, error_box"),
+  ]);
+  if (reponsesRes.error) throw new Error(reponsesRes.error.message);
+  const reponses = (reponsesRes.data ?? []) as ReponseStats[];
+
+  const parMatiere = new Map<string, { id: string; name: string; color: string | null; cartes: CarteAvecMatiere[] }>();
+  for (const c of cartes) {
+    if (!c.matiere) continue;
+    const m = parMatiere.get(c.matiere.id) ?? { ...c.matiere, cartes: [] };
+    m.cartes.push(c);
+    parMatiere.set(c.matiere.id, m);
+  }
+  const matieres: StatMatiere[] = [...parMatiere.values()].map((m) => {
+    const { pourcentage, cartesVues } = pourcentageMatiere(m.cartes, jour);
+    return { id: m.id, name: m.name, color: m.color, pourcentage, cartesVues, cartesTotal: m.cartes.length };
+  });
+
+  const calibration = calibrationConfiance(reponses);
+  const toutesCartes = cartes.map((c) => c.carte);
+  return {
+    matieres,
+    calibration,
+    messageCalibration: messageCalibration(calibration),
+    listeRouge: topRatees(reponses, toutesCartes, CONFIG_REVISION.memoire.tailleListeRouge),
+    production: ratioProduction(reponses, toutesCartes),
+    totalReponses: reponses.length,
+  };
 }
 
 // ---------- Matières : liste, import (fusion v1 → v2), pause, export ----------

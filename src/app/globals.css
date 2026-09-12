@@ -44,6 +44,33 @@
   --e2: 16px;
   --e3: 24px;
   --e4: 40px;
+
+  /* Fond des boutons au survol / des champs actifs */
+  --carte-survol: #F3F2EE;
+}
+
+/* ============================================================
+   Mode sombre (option de confort du soir, jamais imposé) : mêmes tokens, valeurs adoucies.
+   La lecture reste un peu plus précise en mode clair.
+   ============================================================ */
+:root[data-theme="dark"] {
+  --fond: #16181D;
+  --carte: #1F2329;
+  --texte: #E5E7EB;
+  --texte-2: #9CA3AF;
+  --bordure: #2E323A;
+  --accent: #6366F1;
+  --accent-fort: #818CF8;
+  --ok: #4ADE80;
+  --effort: #FBBF24;
+  --alerte: #FB7185;
+  --type-memoire: #1E40AF;
+  --type-comprendre: #5B21B6;
+  --type-procedure: #065F46;
+  --type-duel: #92400E;
+  --type-page-blanche: #374151;
+  --carte-survol: #2A2E36;
+  color-scheme: dark;
 }
 
 /* Expose les tokens à Tailwind : bg-fond, text-texte-2, border-bordure, bg-accent… */
@@ -80,7 +107,7 @@ body {
 }
 
 .question {
-  font-size: var(--taille-question);
+  font-size: calc(var(--taille-texte) + 3px);
   line-height: 1.45;
   font-weight: 500;
   max-width: 34em; /* ≈ 65 caractères */
@@ -117,7 +144,7 @@ body {
   text-align: left;
   transition: background-color var(--anim-micro), transform var(--anim-micro), border-color var(--anim-micro);
 }
-.bouton:hover { background: #F3F2EE; }
+.bouton:hover { background: var(--carte-survol); }
 .bouton:active { transform: scale(0.98); }
 .bouton:disabled { opacity: 0.45; cursor: default; transform: none; }
 .bouton:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -242,4 +269,4 @@ body {
   outline: none;
 }
 .trou:disabled { opacity: 1; }
-.trou:focus { border-bottom-color: var(--accent-fort); background: #F3F2EE; }
+.trou:focus { border-bottom-color: var(--accent-fort); background: var(--carte-survol); }

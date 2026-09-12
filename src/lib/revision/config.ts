@@ -50,6 +50,24 @@ export const CONFIG_REVISION = {
     maxRetoursParSession: 2,
   },
 
+  /** Écran « Mon cerveau ». */
+  memoire: {
+    /** Part estimée encore en mémoire quand une carte arrive à sa date due (puis ça baisse). */
+    retentionALaDateDue: 0.9,
+    /** Réponses minimum à un niveau de confiance avant d'oser une phrase sur ta calibration. */
+    reponsesMinimumCalibration: 10,
+    /** Taille de la liste rouge. */
+    tailleListeRouge: 10,
+  },
+
+  /** Réglages utilisateur : valeurs par défaut et bornes. */
+  reglages: {
+    taillesTexte: [17, 19, 21, 24],
+    tailleTexteParDefaut: 17,
+    quotaNouvellesMin: 1,
+    quotaNouvellesMax: 60,
+  },
+
   /**
    * Fuseau horaire qui définit « aujourd'hui » (dates dues, série de jours).
    * Le serveur peut tourner ailleurs (Vercel = UTC) : on fixe le fuseau de l'utilisateur.
