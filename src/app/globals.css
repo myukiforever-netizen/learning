@@ -226,3 +226,20 @@ body {
     transition: none;
   }
 }
+
+/* Case d'un texte à trous : même taille que la question, soulignée, jamais de bordure agressive */
+.trou {
+  display: inline-block;
+  min-width: 5ch;
+  padding: 0 6px;
+  border: 0;
+  border-bottom: 2px solid var(--accent);
+  border-radius: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font: inherit;
+  text-align: center;
+  outline: none;
+}
+.trou:disabled { opacity: 1; }
+.trou:focus { border-bottom-color: var(--accent-fort); background: #F3F2EE; }

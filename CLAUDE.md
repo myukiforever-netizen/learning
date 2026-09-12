@@ -30,7 +30,8 @@ npm run lint     # vérifie le code
 ```
 src/app/            écrans (accueil, session, matieres, cerveau, reglages, connexion)
 src/app/session/    page.tsx (serveur : compose la file) → Session.tsx (client : la pile de cartes) ; actions.ts (actions serveur)
-src/components/     composants d'interface ; cartes/ = un fichier par type de carte ; FinDeSession.tsx = page blanche → tri → récap
+src/components/     composants d'interface ; cartes/ = un fichier par mécanique (Flash, Qcm, Cloze, Libre, Exemple, Sort) ; FinDeSession.tsx = page blanche → tri → récap
+src/lib/cartes/     verifier.ts : comparaison tolérante, lecture des trous [[...]], vérification classer/ordonner
 src/lib/revision/   config.ts (TOUTES les valeurs réglables), planifier.ts (dates dues, boîtes), composer.ts (composition de session), serie.ts (🔥)
 src/lib/dates.ts    « aujourd'hui » dans le fuseau de l'utilisateur, ajout de jours
 src/lib/import/     schema.ts (types + validation + aplatissement), fusionner.ts (v1 → v2 : nouvelles/modifiées/archivées)
@@ -97,4 +98,5 @@ docs/               les 2 documents de référence
 - J2 (base + algorithme + accueil + fin de session) : code terminé, 21 tests verts, vérifié dans le navigateur en mode démo. Reste côté product owner : créer le projet Supabase, exécuter le SQL, remplir `.env.local`, puis tester avec enregistrement réel.
 - J3 (import/export JSON + écran Matières + SCHEMA.md) : terminé. Format dans `SCHEMA.md`, validation/fusion dans `src/lib/import/`, matières livrées dans `src/data/matieres/` (`demo_v1.json`), écran Matières (charger, importer avec aperçu, pause, export), export complet dans Réglages, type « duel » affiché via la mécanique QCM. 27 tests verts.
 - Contenu « Psychologie de l'influence » (source : `docs/sources/psychologie.md`) : EN PAUSE à la demande du product owner. À reprendre après J6 sous forme de `src/data/matieres/psychologie_v1.json` (8 modules prévus : bases pour juger une loi, effets effondrés, effets conditionnels, Cialdini, effet psy ≠ ventes, marketing fondé sur les preuves, fraudes, pratiques concrètes).
-- J4 (types de cartes restants) : à faire
+- J4 (types de cartes restants) : terminé. 10 types → 6 mécaniques dans `Session.tsx` (flash, choix = qcm/duel, cloze, libre = why/whatif/problem, exemple = worked/faded, sort = classer/ordonner). Vérification automatique pure dans `src/lib/cartes/verifier.ts` (tolérante casse/accents). Démo passée en v2 avec un exemple de chaque type. 32 tests verts.
+- J5 (Mon cerveau + réglages + mode sombre) : à faire

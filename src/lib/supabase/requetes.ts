@@ -13,6 +13,7 @@ import type {
   BoiteErreur,
   Carte,
   CarteAReviser,
+  CarteData,
   Confiance,
   EtatRevision,
   ObjectifRetention,
@@ -32,6 +33,7 @@ interface LigneCarte {
   options: string[] | null;
   options_why: string[] | null;
   retention_goal: ObjectifRetention;
+  data: CarteData | null;
   concepts: { name: string } | null;
 }
 
@@ -58,6 +60,7 @@ function versCarte(ligne: LigneCarte): Carte {
     options: ligne.options,
     options_why: ligne.options_why,
     retention_goal: ligne.retention_goal,
+    data: ligne.data ?? null,
   };
 }
 
@@ -66,7 +69,7 @@ function versEtat(r: LigneRevision): EtatRevision {
 }
 
 const CHAMPS_CARTE =
-  "id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, " +
+  "id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, " +
   "concepts!inner(name, modules!inner(subjects!inner(status)))";
 
 /** Cartes actives des matières actives, avec leur état de révision (null = nouvelle). */
@@ -305,7 +308,7 @@ export async function cartesExistantes(matiereId: string): Promise<CarteExistant
   const { data, error } = await supabase
     .from("cards")
     .select(
-      "id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, status, " +
+      "id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, status, " +
         "concepts!inner(name, modules!inner(subject_id))",
     )
     .eq("concepts.modules.subject_id", matiereId);
@@ -366,6 +369,7 @@ export async function importerMatiere(matiere: MatiereJson): Promise<ResultatFus
         options: c.options ?? null,
         options_why: c.options_why ?? null,
         retention_goal: c.retention_goal,
+        data: c.data ?? null,
         status: "active",
         position: positions.get(c.id) ?? 0,
         updated_at: maintenant,
@@ -412,7 +416,7 @@ export async function exporterMatiere(matiereId: string): Promise<MatiereJson | 
     supabase.from("concepts").select("id, module_id, name, position, modules!inner(subject_id)").eq("modules.subject_id", matiereId).order("position"),
     supabase
       .from("cards")
-      .select("id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, position, concepts!inner(modules!inner(subject_id))")
+      .select("id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, position, concepts!inner(modules!inner(subject_id))")
       .eq("concepts.modules.subject_id", matiereId)
       .eq("status", "active")
       .order("position"),
@@ -451,6 +455,7 @@ export async function exporterMatiere(matiereId: string): Promise<MatiereJson | 
               ...(k.options ? { options: k.options } : {}),
               ...(k.options_why ? { options_why: k.options_why } : {}),
               retention_goal: k.retention_goal,
+              ...(k.data ? { data: k.data } : {}),
             })),
         })),
     })),

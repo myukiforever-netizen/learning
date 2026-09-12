@@ -36,6 +36,26 @@ export const FAMILLE_PAR_TYPE: Record<TypeCarte, FamilleCarte> = {
   sort: "duel",
 };
 
+/** Une étape d’exemple résolu : le texte de l’étape, et une mini-question posée avant de la déplier. */
+export interface EtapeExemple {
+  text: string;
+  prompt?: string;
+}
+
+/** Données propres à certains types de cartes (colonne `data`). */
+export interface CarteData {
+  /** worked_example / faded_example : les étapes, dans l’ordre. */
+  steps?: EtapeExemple[];
+  /** faded_example : nombre d’étapes finales cachées (à produire soi-même). Défaut : 1. */
+  hidden?: number;
+  /** sort : classer des éléments dans des catégories, ou les remettre dans l’ordre. */
+  mode?: "classer" | "ordonner";
+  /** sort/classer : les catégories (2 à 4). */
+  categories?: string[];
+  /** sort/classer : les éléments avec leur bonne catégorie ; sort/ordonner : les éléments dans le bon ordre. */
+  items?: ({ text: string; category: string } | string)[];
+}
+
 export interface Carte {
   id: string;
   concept_id: string;
@@ -53,6 +73,8 @@ export interface Carte {
   /** QCM : pourquoi chaque piège est faux, dans le même ordre que `options` ("" pour la bonne). */
   options_why?: string[] | null;
   retention_goal: ObjectifRetention;
+  /** Données propres au type (étapes, éléments à classer…). */
+  data?: CarteData | null;
 }
 
 /** Une réponse donnée pendant la session, avant enregistrement en base. */

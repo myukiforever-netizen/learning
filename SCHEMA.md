@@ -53,7 +53,7 @@ Les matières livrées avec l'app sont dans `src/data/matieres/`. Au jalon 3, on
 | Champ | Obligatoire | Description |
 |---|---|---|
 | `id` | oui | Identifiant stable, unique dans le fichier. **C'est la clé qui conserve ton historique de révision quand tu réimportes une v2.** |
-| `type` | oui | `flash`, `qcm` ou `duel` (les autres types arrivent au jalon 4 : `cloze`, `why`, `whatif`, `worked_example`, `faded_example`, `problem`, `sort`). |
+| `type` | oui | `flash`, `qcm`, `duel`, `cloze`, `why`, `whatif`, `problem`, `worked_example`, `faded_example`, `sort`. |
 | `question` | oui | La question, courte. |
 | `answer` | oui | La réponse. Pour `qcm` et `duel`, doit être exactement l'un des `options`. |
 | `explanation` | oui | Le pourquoi, 2 lignes max. Affiché après une erreur. |
@@ -61,12 +61,28 @@ Les matières livrées avec l'app sont dans `src/data/matieres/`. Au jalon 3, on
 | `options` | qcm, duel | Les choix. QCM : 2 à 6. Duel : exactement 2. |
 | `options_why` | non | Pourquoi chaque piège est faux, même ordre que `options`, `""` pour la bonne réponse. |
 | `retention_goal` | non | `3m`, `1y` (défaut) ou `life`. Décide le calendrier de révision. |
+| `data` | selon type | Données propres au type : `steps` et `hidden` pour les exemples, `mode`, `categories`, `items` pour classer/ordonner. Voir ci-dessous. |
 
 ### Les types de cartes
 
+**Mémoriser** (liseré bleu)
 - **flash** : question → tu réponds dans ta tête → tu révèles → tu dis si tu avais bon.
 - **qcm** : 2 à 6 choix dont des pièges plausibles ; après réponse, chaque piège explique pourquoi il est faux.
-- **duel** : deux notions que tu confonds, « ceci est A ou B ? ». Deux choix, même mécanique que le QCM.
+- **cloze** (texte à trous) : la `question` contient 1 à 3 trous écrits `[[réponse]]`. Tu tapes, l'app compare sans tenir compte de la casse, des accents ni de la ponctuation. Plusieurs réponses acceptées : `[[1885|mille huit cent quatre-vingt-cinq]]`. `answer` = la phrase complète (affichée au tri des erreurs).
+
+**Comprendre** (liseré violet)
+- **why** (Pourquoi ?) et **whatif** (Et si ?) : tu écris ta réponse, tu notes ta confiance, tu compares avec la réponse modèle (`answer`), tu t'auto-évalues.
+
+**Procédure** (liseré vert)
+- **worked_example** (exemple résolu) : `question` = l'énoncé ; `data.steps` = 2 à 8 étapes `{ "prompt": "mini-question posée avant", "text": "l'étape" }`. Chaque étape se déplie au tap. À la fin, `answer` = ce qu'il faut savoir refaire, et tu t'auto-évalues.
+- **faded_example** (exemple à compléter) : mêmes `steps`, mais les `data.hidden` dernières étapes (défaut 1) sont cachées : tu les écris toi-même, puis tu compares.
+- **problem** : tu résous seul, réponse libre, puis comparaison avec `answer`.
+
+**Discriminer** (liseré jaune)
+- **duel** : deux notions que tu confonds, « ceci est A ou B ? ». Exactement 2 `options`, même mécanique que le QCM.
+- **sort** : `data.mode` = `"classer"` (`data.categories` : 2 à 4 ; `data.items` : 2 à 8 `{ "text", "category" }`) ou `"ordonner"` (`data.items` : 3 à 8 textes **dans le bon ordre**, l'app les mélange). Vérification automatique élément par élément.
+
+Exemples de chaque type : `src/data/matieres/demo_v2.json`, module « Aller plus loin ».
 
 ## Ce qui se passe à l'import
 

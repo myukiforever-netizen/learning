@@ -1,9 +1,9 @@
 {
   "id": "demo",
   "name": "Démo : apprendre à apprendre",
-  "version": 1,
+  "version": 2,
   "color": "#4F46E5",
-  "description": "10 cartes pour découvrir l'app et les idées qui la fondent.",
+  "description": "12 cartes pour découvrir l’app, ses idées fondatrices et tous ses types de cartes.",
   "modules": [
     {
       "id": "sciences-apprentissage",
@@ -26,7 +26,12 @@
               "id": "oubli-2",
               "type": "qcm",
               "question": "Selon la courbe de l'oubli, quand perd-on le plus d'information ?",
-              "options": ["Dans les premières heures", "Après une semaine", "Après un mois", "À un rythme constant"],
+              "options": [
+                "Dans les premières heures",
+                "Après une semaine",
+                "Après un mois",
+                "À un rythme constant"
+              ],
               "options_why": [
                 "",
                 "À une semaine, la plus grande partie de la chute a déjà eu lieu.",
@@ -129,7 +134,12 @@
               "id": "entrelacement-2",
               "type": "qcm",
               "question": "Pour apprendre à distinguer deux notions proches A et B, quelle organisation est la plus efficace ?",
-              "options": ["Tout sur A, puis tout sur B", "A et B mélangés au hasard", "A un jour, B le lendemain", "B d'abord, puis A"],
+              "options": [
+                "Tout sur A, puis tout sur B",
+                "A et B mélangés au hasard",
+                "A un jour, B le lendemain",
+                "B d'abord, puis A"
+              ],
               "options_why": [
                 "Par blocs, on n'a jamais à se demander « est-ce A ou B ? ».",
                 "",
@@ -166,11 +176,175 @@
                 "Tu l'as surlignée",
                 "Tu l'as lue plusieurs fois"
               ],
-              "options_why": ["Reconnaître n'est pas retrouver.", "", "Surligner ne teste rien.", "Le nombre de lectures ne prédit pas la rétention."],
+              "options_why": [
+                "Reconnaître n'est pas retrouver.",
+                "",
+                "Surligner ne teste rien.",
+                "Le nombre de lectures ne prédit pas la rétention."
+              ],
               "answer": "Tu peux l'expliquer sans regarder tes notes",
               "explanation": "Savoir, c'est pouvoir produire l'information sans aide, pas seulement la reconnaître.",
               "explanation_more": "D'où les cartes « Pourquoi ? » de l'app : expliquer avec ses propres mots est le test le plus exigeant, et le plus fiable.",
               "retention_goal": "life"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aller-plus-loin",
+      "name": "Aller plus loin : tous les types de cartes",
+      "concepts": [
+        {
+          "id": "reviser-mieux",
+          "name": "Réviser mieux",
+          "cards": [
+            {
+              "id": "cloze-1",
+              "type": "cloze",
+              "question": "L’effet de test a été mesuré par Roediger et Karpicke en [[2006]] : après une semaine, se tester donnait environ [[56]] % de rétention contre 42 % pour la relecture.",
+              "answer": "2006 ; 56 %.",
+              "explanation": "Retiens le couple 56 % (test) contre 42 % (relecture) : l’écart apparaît à une semaine, pas à cinq minutes.",
+              "retention_goal": "1y"
+            },
+            {
+              "id": "why-1",
+              "type": "why",
+              "question": "Pourquoi l’app te demande-t-elle ta confiance AVANT de révéler la réponse ?",
+              "answer": "Pour comparer ce que tu crois savoir à ce que tu sais vraiment. Après la révélation, tout le monde a l’impression d’avoir su.",
+              "explanation": "Noter sa confiance avant, puis voir le résultat, corrige l’illusion de savoir. C’est le seul moment où la comparaison est honnête.",
+              "retention_goal": "life"
+            },
+            {
+              "id": "whatif-1",
+              "type": "whatif",
+              "question": "Et si l’app te montrait un score en direct pendant la session, que se passerait-il ?",
+              "answer": "Tu jugerais ta performance trop tôt : le résultat du jour ne prédit pas ce que tu retiendras dans 3 jours, et le stress dégrade la récupération.",
+              "explanation": "La performance immédiate et l’apprentissage durable sont deux choses différentes. Le récap n’arrive qu’à la fin, et la vraie note dans 3 jours.",
+              "retention_goal": "1y"
+            },
+            {
+              "id": "sort-1",
+              "type": "sort",
+              "question": "Classe chaque méthode : aide-t-elle vraiment à retenir ?",
+              "answer": "Se tester, espacer, expliquer aident. Relire et surligner n’aident presque pas.",
+              "explanation": "Ce qui aide demande un effort de récupération ou d’explication. Relire et surligner sont passifs : ils donnent une impression de maîtrise sans la créer.",
+              "data": {
+                "mode": "classer",
+                "categories": [
+                  "Aide vraiment",
+                  "N’aide presque pas"
+                ],
+                "items": [
+                  {
+                    "text": "Se tester",
+                    "category": "Aide vraiment"
+                  },
+                  {
+                    "text": "Relire plusieurs fois",
+                    "category": "N’aide presque pas"
+                  },
+                  {
+                    "text": "Espacer les révisions",
+                    "category": "Aide vraiment"
+                  },
+                  {
+                    "text": "Surligner",
+                    "category": "N’aide presque pas"
+                  },
+                  {
+                    "text": "Expliquer avec ses mots",
+                    "category": "Aide vraiment"
+                  }
+                ]
+              },
+              "retention_goal": "1y"
+            },
+            {
+              "id": "sort-2",
+              "type": "sort",
+              "question": "Remets dans l’ordre les étapes d’une carte dans cette app.",
+              "answer": "Je réponds, je note ma confiance, je vois la réponse, je lis pourquoi.",
+              "explanation": "Répondre vient toujours avant de voir la réponse, et la confiance se note avant la révélation.",
+              "data": {
+                "mode": "ordonner",
+                "items": [
+                  "Je réponds",
+                  "Je note ma confiance",
+                  "Je vois la réponse",
+                  "Je lis pourquoi"
+                ]
+              },
+              "retention_goal": "1y"
+            }
+          ]
+        },
+        {
+          "id": "calcul-intervalle",
+          "name": "Calculer un intervalle de révision",
+          "cards": [
+            {
+              "id": "worked-1",
+              "type": "worked_example",
+              "question": "Une carte « 1 an » vient d’être réussie avec effort à l’étape 2 (intervalle prévu : 30 jours). Quand la revoir ?",
+              "answer": "Dans 30 jours : réussi avec effort = intervalle prévu, sans bonus.",
+              "explanation": "Facile (😎 + correct) doublerait à 60 jours. Raté aurait divisé par deux et ramené la carte aujourd’hui.",
+              "data": {
+                "steps": [
+                  {
+                    "prompt": "Quel calendrier s’applique à une carte « 1 an » ?",
+                    "text": "Le calendrier 1 an : J+2, J+10, J+30, J+90, J+240."
+                  },
+                  {
+                    "prompt": "Quel est l’intervalle prévu à l’étape 2 ?",
+                    "text": "L’étape 2 correspond à 30 jours."
+                  },
+                  {
+                    "prompt": "Le résultat était « réussi avec effort ». Quel ajustement ?",
+                    "text": "Aucun bonus : on applique l’intervalle prévu, soit 30 jours."
+                  },
+                  {
+                    "prompt": "Et donc, la date ?",
+                    "text": "Aujourd’hui + 30 jours. Si la réponse avait été facile (😎), ce serait 60 jours."
+                  }
+                ]
+              },
+              "retention_goal": "1y"
+            },
+            {
+              "id": "faded-1",
+              "type": "faded_example",
+              "question": "Une carte « 3 mois » avec un dernier intervalle de 20 jours vient d’être ratée. Termine le raisonnement.",
+              "answer": "Intervalle réduit à 10 jours (20 ÷ 2), carte due aujourd’hui. Au prochain succès, elle sera revue dans 10 jours.",
+              "explanation": "Raté = intervalle précédent divisé par deux, et la carte revient aujourd’hui. Le succès suivant utilise l’intervalle réduit, puis le calendrier reprend.",
+              "data": {
+                "hidden": 2,
+                "steps": [
+                  {
+                    "prompt": "Quel est le dernier intervalle appliqué ?",
+                    "text": "Le dernier intervalle était de 20 jours."
+                  },
+                  {
+                    "prompt": "Quelle règle s’applique à un raté ?",
+                    "text": "Raté : prochain intervalle = moitié du précédent, et la carte revient aujourd’hui."
+                  },
+                  {
+                    "text": "20 ÷ 2 = 10 jours, carte due aujourd’hui."
+                  },
+                  {
+                    "text": "Au prochain succès, la carte sera revue dans 10 jours, puis le calendrier 3 mois reprend (J+45)."
+                  }
+                ]
+              },
+              "retention_goal": "1y"
+            },
+            {
+              "id": "problem-1",
+              "type": "problem",
+              "question": "Une carte « à vie » a épuisé son calendrier (dernier intervalle : 240 jours). Elle est réussie facilement (😎). Quel est le prochain intervalle ?",
+              "answer": "960 jours : après le calendrier, « à vie » double à chaque succès (480), et 😎 double encore (960).",
+              "explanation": "Deux doublements : celui de l’objectif « à vie » après le calendrier, puis celui du succès facile.",
+              "retention_goal": "1y"
             }
           ]
         }

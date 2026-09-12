@@ -1,6 +1,6 @@
 // Format d'une matière (fichier JSON versionné) : types, validation, aplatissement.
 // Le format complet est documenté dans SCHEMA.md à la racine du projet.
-import type { Carte, ObjectifRetention, TypeCarte } from "@/lib/types";
+import type { Carte, CarteData, ObjectifRetention, TypeCarte } from "@/lib/types";
 
 export interface CarteJson {
   id: string;
@@ -14,6 +14,8 @@ export interface CarteJson {
   /** QCM : pourquoi chaque piège est faux, même ordre que `options` ("" pour la bonne réponse). */
   options_why?: string[];
   retention_goal?: ObjectifRetention;
+  /** worked_example / faded_example : steps (+ hidden) ; sort : mode, categories, items. Voir SCHEMA.md. */
+  data?: CarteData;
 }
 
 export interface ConceptJson {
@@ -38,7 +40,18 @@ export interface MatiereJson {
 }
 
 /** Types de cartes que l'écran de session sait afficher aujourd'hui. */
-export const TYPES_PRIS_EN_CHARGE: readonly TypeCarte[] = ["flash", "qcm", "duel"];
+export const TYPES_PRIS_EN_CHARGE: readonly TypeCarte[] = [
+  "flash",
+  "qcm",
+  "duel",
+  "cloze",
+  "why",
+  "whatif",
+  "problem",
+  "worked_example",
+  "faded_example",
+  "sort",
+];
 
 const OBJECTIFS: readonly string[] = ["3m", "1y", "life"];
 const ID_VALIDE = /^[a-z0-9][a-z0-9_-]*$/;
@@ -112,9 +125,75 @@ export function validerMatiere(json: unknown): string[] {
             }
           }
         }
+
+        erreurs.push(...validerDonnees(carte, ouK));
       });
     });
   });
+
+  return erreurs;
+}
+
+/** Vérifications propres à cloze, worked_example, faded_example et sort. */
+function validerDonnees(carte: CarteJson, ou: string): string[] {
+  const erreurs: string[] = [];
+  const data = carte.data ?? {};
+
+  if (carte.type === "cloze") {
+    const trous = (carte.question.match(/\[\[.+?\]\]/g) ?? []).length;
+    if (trous < 1 || trous > 3) {
+      erreurs.push(`${ou} : une carte cloze doit contenir 1 à 3 trous [[...]] dans « question » (${trous} trouvés).`);
+    }
+  }
+
+  if (carte.type === "worked_example" || carte.type === "faded_example") {
+    const steps = data.steps;
+    if (
+      !Array.isArray(steps) ||
+      steps.length < 2 ||
+      steps.length > 8 ||
+      steps.some((e) => typeof e?.text !== "string" || e.text.trim() === "")
+    ) {
+      erreurs.push(`${ou} : « data.steps » doit contenir 2 à 8 étapes avec un « text ».`);
+    } else if (carte.type === "faded_example") {
+      const hidden = data.hidden ?? 1;
+      if (!Number.isInteger(hidden) || hidden < 1 || hidden >= steps.length) {
+        erreurs.push(`${ou} : « data.hidden » doit être entre 1 et ${steps.length - 1}.`);
+      }
+    }
+  }
+
+  if (carte.type === "sort") {
+    const items = data.items;
+    if (data.mode !== "classer" && data.mode !== "ordonner") {
+      erreurs.push(`${ou} : « data.mode » doit être « classer » ou « ordonner ».`);
+    } else if (data.mode === "classer") {
+      const categories = data.categories;
+      if (
+        !Array.isArray(categories) ||
+        categories.length < 2 ||
+        categories.length > 4 ||
+        categories.some((c) => typeof c !== "string" || c.trim() === "")
+      ) {
+        erreurs.push(`${ou} : « data.categories » doit contenir 2 à 4 catégories.`);
+      } else if (!Array.isArray(items) || items.length < 2 || items.length > 8) {
+        erreurs.push(`${ou} : « data.items » doit contenir 2 à 8 éléments.`);
+      } else {
+        items.forEach((item, i) => {
+          if (typeof item === "string" || typeof item.text !== "string" || !categories.includes(item.category)) {
+            erreurs.push(`${ou} : élément ${i + 1} doit avoir un « text » et une « category » parmi les catégories.`);
+          }
+        });
+      }
+    } else if (
+      !Array.isArray(items) ||
+      items.length < 3 ||
+      items.length > 8 ||
+      items.some((item) => typeof item !== "string" || item.trim() === "")
+    ) {
+      erreurs.push(`${ou} : en mode « ordonner », « data.items » doit contenir 3 à 8 textes dans le bon ordre.`);
+    }
+  }
 
   return erreurs;
 }
@@ -142,6 +221,7 @@ export function aplatirMatiere(m: MatiereJson): Carte[] {
           options: carte.options ?? null,
           options_why: carte.options_why ?? null,
           retention_goal: carte.retention_goal ?? "1y",
+          data: carte.data ?? null,
         });
       }
     }
