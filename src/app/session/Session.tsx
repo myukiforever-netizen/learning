@@ -25,11 +25,16 @@ interface EtatCarte {
   plus: boolean;
 }
 
-const LIBELLE_TYPE: Record<string, string> = { flash: "Flash", qcm: "QCM" };
+const LIBELLE_TYPE: Record<string, string> = { flash: "Flash", qcm: "QCM", duel: "Duel" };
+
+/** QCM et Duel partagent la même mécanique : choisir → confiance → valider. */
+function estAChoix(carte: Carte | undefined): carte is Carte {
+  return carte?.type === "qcm" || carte?.type === "duel";
+}
 
 function etatInitial(carte: Carte | undefined): EtatCarte {
   return {
-    etape: carte?.type === "qcm" ? "repondre" : "confiance",
+    etape: estAChoix(carte) ? "repondre" : "confiance",
     choix: null,
     confiance: null,
     correct: null,
@@ -65,7 +70,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
 
   const choisirOption = useCallback(
     (i: number) => {
-      if (!carte || carte.type !== "qcm") return;
+      if (!estAChoix(carte)) return;
       if (etat.etape !== "repondre" && etat.etape !== "confiance") return;
       if (i < 0 || i >= (carte.options?.length ?? 0)) return;
       setEtat((e) => ({ ...e, choix: i, etape: "confiance" }));
@@ -132,7 +137,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
   }, [carte, etat.etape, etat.confiance]);
 
   const valider = useCallback(() => {
-    if (!carte || carte.type !== "qcm") return;
+    if (!carte || !estAChoix(carte)) return;
     if (etat.etape !== "confiance" || etat.confiance === null || etat.choix === null) return;
     const correct = carte.options?.[etat.choix] === carte.answer;
     enregistrer(correct);
@@ -279,7 +284,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
             />
           )}
 
-          {carte.type === "qcm" && (
+          {estAChoix(carte) && (
             <Qcm
               carte={carte}
               phase={enFeedback ? "revele" : etat.etape === "confiance" ? "confiance" : "repondre"}

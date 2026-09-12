@@ -1,9 +1,10 @@
 import Link from "next/link";
 import { Session } from "./Session";
-import { CARTES_TEST } from "@/data/cartes-test";
+import { MATIERES_LIVREES } from "@/data/matieres";
 import { aujourdhui } from "@/lib/dates";
+import { aplatirMatiere } from "@/lib/import/schema";
 import { CONFIG_REVISION } from "@/lib/revision/config";
-import { ordonnerSansRepetition } from "@/lib/revision/composer";
+import { composerSession } from "@/lib/revision/composer";
 import { composerSessionDepuisBase, creerSession } from "@/lib/supabase/requetes";
 import { supabaseConfigure } from "@/lib/supabase/server";
 
@@ -14,15 +15,23 @@ function dureeChoisie(valeur: string | string[] | undefined): number {
   return durees.includes(n) ? n : CONFIG_REVISION.dureeParDefaut;
 }
 
+/** Mode découverte (sans Supabase) : toutes les matières livrées, mélangées, sans quota ni enregistrement. */
+function sessionDecouverte(minutes: number) {
+  const toutes = MATIERES_LIVREES.flatMap(aplatirMatiere).map((carte) => ({ carte, revision: null }));
+  for (let i = toutes.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [toutes[i], toutes[j]] = [toutes[j], toutes[i]];
+  }
+  return composerSession({ dues: [], nouvelles: toutes, minutes, nouvellesDejaAujourdhui: 0, quotaNouvelles: Infinity });
+}
+
 export default async function PageSession({ searchParams }: PageProps<"/session">) {
   const { duree } = await searchParams;
   const minutes = dureeChoisie(duree);
   const jour = aujourdhui();
 
-  // Sans clés Supabase : mode découverte, 10 cartes en dur, rien n'est enregistré.
   if (!supabaseConfigure()) {
-    const cartes = ordonnerSansRepetition(CARTES_TEST).map((carte) => ({ carte, revision: null }));
-    return <Session mode="demo" sessionId={null} cartes={cartes} aujourdhui={jour} />;
+    return <Session mode="demo" sessionId={null} cartes={sessionDecouverte(minutes)} aujourdhui={jour} />;
   }
 
   const cartes = await composerSessionDepuisBase(minutes);

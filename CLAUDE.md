@@ -33,9 +33,10 @@ src/app/session/    page.tsx (serveur : compose la file) → Session.tsx (client
 src/components/     composants d'interface ; cartes/ = un fichier par type de carte ; FinDeSession.tsx = page blanche → tri → récap
 src/lib/revision/   config.ts (TOUTES les valeurs réglables), planifier.ts (dates dues, boîtes), composer.ts (composition de session), serie.ts (🔥)
 src/lib/dates.ts    « aujourd'hui » dans le fuseau de l'utilisateur, ajout de jours
-src/lib/import/     schéma, validation et fusion des JSON de matières (jalon 3)
+src/lib/import/     schema.ts (types + validation + aplatissement), fusionner.ts (v1 → v2 : nouvelles/modifiées/archivées)
 src/lib/supabase/   client.ts / server.ts (clients) ; requetes.ts = TOUTES les lectures/écritures en base
-src/data/           cartes de démonstration (chargées en base par le bouton de l'accueil)
+src/data/matieres/  les matières livrées avec l'app (un JSON par matière, listées dans index.ts)
+src/app/api/export  téléchargement JSON (une matière réimportable, ou toutes les tables)
 supabase/migrations/ SQL de création des tables
 tests/              tests Vitest de la logique pure
 docs/               les 2 documents de référence
@@ -94,4 +95,6 @@ docs/               les 2 documents de référence
 
 - J1 (projet + auth + mini-session en dur) : terminé, poussé sur GitHub (myukiforever-netizen/learning).
 - J2 (base + algorithme + accueil + fin de session) : code terminé, 21 tests verts, vérifié dans le navigateur en mode démo. Reste côté product owner : créer le projet Supabase, exécuter le SQL, remplir `.env.local`, puis tester avec enregistrement réel.
-- J3 (import/export JSON + écran Matières + SCHEMA.md) : à faire
+- J3 (import/export JSON + écran Matières + SCHEMA.md) : terminé. Format dans `SCHEMA.md`, validation/fusion dans `src/lib/import/`, matières livrées dans `src/data/matieres/` (`demo_v1.json`), écran Matières (charger, importer avec aperçu, pause, export), export complet dans Réglages, type « duel » affiché via la mécanique QCM. 27 tests verts.
+- Contenu « Psychologie de l'influence » (source : `docs/sources/psychologie.md`) : EN PAUSE à la demande du product owner. À reprendre après J6 sous forme de `src/data/matieres/psychologie_v1.json` (8 modules prévus : bases pour juger une loi, effets effondrés, effets conditionnels, Cialdini, effet psy ≠ ventes, marketing fondé sur les preuves, fraudes, pratiques concrètes).
+- J4 (types de cartes restants) : à faire

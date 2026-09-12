@@ -2,13 +2,7 @@
 
 // Actions serveur appelées depuis les composants clients de la session.
 import { revalidatePath } from "next/cache";
-import { CARTES_TEST } from "@/data/cartes-test";
-import {
-  enregistrerReponse,
-  importerCartesDemo,
-  terminerSession,
-  type TriErreur,
-} from "@/lib/supabase/requetes";
+import { enregistrerReponse, terminerSession, type TriErreur } from "@/lib/supabase/requetes";
 import type { Confiance, ObjectifRetention } from "@/lib/types";
 
 export async function actionEnregistrerReponse(p: {
@@ -30,9 +24,4 @@ export async function actionTerminerSession(
   const resultat = await terminerSession(sessionId, texteRappel, tri);
   revalidatePath("/");
   return resultat;
-}
-
-export async function actionImporterDemo(): Promise<void> {
-  await importerCartesDemo(CARTES_TEST);
-  revalidatePath("/");
 }
