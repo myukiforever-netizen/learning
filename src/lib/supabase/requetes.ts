@@ -26,6 +26,8 @@ import type {
   CarteAReviser,
   CarteData,
   Confiance,
+  ContexteReponse,
+  PhaseCarte,
   EtatRevision,
   ObjectifRetention,
   TypeCarte,
@@ -33,7 +35,7 @@ import type {
 
 // ---------- Lignes brutes renvoyées par Supabase ----------
 
-interface LigneCarte {
+export interface LigneCarte {
   id: string;
   concept_id: string;
   type: TypeCarte;
@@ -45,10 +47,12 @@ interface LigneCarte {
   options_why: string[] | null;
   retention_goal: ObjectifRetention;
   data: CarteData | null;
+  phase: PhaseCarte | null;
+  level: 1 | 2 | 3 | null;
   concepts: { name: string; modules?: { subjects?: { id: string; name: string; color: string | null } } } | null;
 }
 
-interface LigneRevision {
+export interface LigneRevision {
   card_id: string;
   due_date: string;
   interval_days: number;
@@ -58,7 +62,7 @@ interface LigneRevision {
   history?: unknown[];
 }
 
-function versCarte(ligne: LigneCarte): Carte {
+export function versCarte(ligne: LigneCarte): Carte {
   return {
     id: ligne.id,
     concept_id: ligne.concept_id,
@@ -72,23 +76,25 @@ function versCarte(ligne: LigneCarte): Carte {
     options_why: ligne.options_why,
     retention_goal: ligne.retention_goal,
     data: ligne.data ?? null,
+    phase: ligne.phase ?? null,
+    niveau: ligne.level ?? null,
   };
 }
 
-function versEtat(r: LigneRevision): EtatRevision {
+export function versEtat(r: LigneRevision): EtatRevision {
   return { step: r.step, interval_days: r.interval_days, due_date: r.due_date, ease_state: r.ease_state };
 }
 
-const CHAMPS_CARTE =
-  "id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, " +
+export const CHAMPS_CARTE =
+  "id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, phase, level, " +
   "concepts!inner(name, modules!inner(subjects!inner(id, name, color, status)))";
 
 /** Cartes actives des matières actives, avec leur état de révision (null = nouvelle). */
-interface CarteAvecMatiere extends CarteAReviser {
+export interface CarteAvecMatiere extends CarteAReviser {
   matiere: { id: string; name: string; color: string | null } | null;
 }
 
-async function chargerCartesEtRevisions(): Promise<{ cartes: CarteAvecMatiere[]; revisions: LigneRevision[] }> {
+export async function chargerCartesEtRevisions(): Promise<{ cartes: CarteAvecMatiere[]; revisions: LigneRevision[] }> {
   const supabase = await createClient();
 
   const [cartesRes, revisionsRes] = await Promise.all([
@@ -201,18 +207,21 @@ export async function enregistrerReponse(p: {
   confiance: Confiance;
   objectif: ObjectifRetention;
   premiere: boolean;
+  contexte?: ContexteReponse;
+  /** false = réponse enregistrée sans replanifier (compréhension, sonde). */
+  planifie?: boolean;
 }): Promise<string> {
   const supabase = await createClient();
   const jour = aujourdhui();
 
   const { data, error } = await supabase
     .from("answers")
-    .insert({ session_id: p.sessionId, card_id: p.cardId, correct: p.correct, confidence: p.confiance })
+    .insert({ session_id: p.sessionId, card_id: p.cardId, correct: p.correct, confidence: p.confiance, context: p.contexte ?? "patrouille" })
     .select("id")
     .single();
   if (error) throw new Error(error.message);
 
-  if (p.premiere) {
+  if (p.premiere && p.planifie !== false) {
     const { data: existante } = await supabase
       .from("reviews")
       .select("card_id, due_date, interval_days, step, ease_state, introduced_on, history")
@@ -388,7 +397,7 @@ export async function cartesExistantes(matiereId: string): Promise<CarteExistant
   const { data, error } = await supabase
     .from("cards")
     .select(
-      "id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, status, " +
+      "id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, phase, level, status, " +
         "concepts!inner(name, modules!inner(subject_id))",
     )
     .eq("concepts.modules.subject_id", matiereId);
@@ -424,12 +433,19 @@ export async function importerMatiere(matiere: MatiereJson): Promise<ResultatFus
   if (e1) throw new Error(e1.message);
 
   const { error: e2 } = await supabase.from("modules").upsert(
-    matiere.modules.map((mod, i) => ({ id: idGlobal(matiere.id, mod.id), subject_id: matiere.id, name: mod.name, position: i })),
+    matiere.modules.map((mod, i) => ({ id: idGlobal(matiere.id, mod.id), subject_id: matiere.id, name: mod.name, position: i, galaxy: mod.galaxie ?? null })),
   );
   if (e2) throw new Error(e2.message);
 
   const concepts = matiere.modules.flatMap((mod) =>
-    mod.concepts.map((c, i) => ({ id: idGlobal(matiere.id, c.id), module_id: idGlobal(matiere.id, mod.id), name: c.name, position: i })),
+    mod.concepts.map((c, i) => ({
+      id: idGlobal(matiere.id, c.id),
+      module_id: idGlobal(matiere.id, mod.id),
+      name: c.name,
+      position: i,
+      discovery: c.decouverte ?? null,
+      planet: c.planete ?? null,
+    })),
   );
   const { error: e3 } = await supabase.from("concepts").upsert(concepts);
   if (e3) throw new Error(e3.message);
@@ -450,6 +466,8 @@ export async function importerMatiere(matiere: MatiereJson): Promise<ResultatFus
         options_why: c.options_why ?? null,
         retention_goal: c.retention_goal,
         data: c.data ?? null,
+        phase: c.phase ?? null,
+        level: c.niveau ?? null,
         status: "active",
         position: positions.get(c.id) ?? 0,
         updated_at: maintenant,
@@ -496,7 +514,7 @@ export async function exporterMatiere(matiereId: string): Promise<MatiereJson | 
     supabase.from("concepts").select("id, module_id, name, position, modules!inner(subject_id)").eq("modules.subject_id", matiereId).order("position"),
     supabase
       .from("cards")
-      .select("id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, position, concepts!inner(modules!inner(subject_id))")
+      .select("id, concept_id, type, question, answer, explanation, explanation_more, options, options_why, retention_goal, data, phase, level, position, concepts!inner(modules!inner(subject_id))")
       .eq("concepts.modules.subject_id", matiereId)
       .eq("status", "active")
       .order("position"),

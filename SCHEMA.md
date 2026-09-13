@@ -62,6 +62,13 @@ Les matières livrées avec l'app sont dans `src/data/matieres/`. Au jalon 3, on
 | `options_why` | non | Pourquoi chaque piège est faux, même ordre que `options`, `""` pour la bonne réponse. |
 | `retention_goal` | non | `3m`, `1y` (défaut) ou `life`. Décide le calendrier de révision. |
 | `data` | selon type | Données propres au type : `steps` et `hidden` pour les exemples, `mode`, `categories`, `items` pour classer/ordonner. Voir ci-dessous. |
+| `phase` | non | Odyssée : `comprehension` (laboratoire) ou `entrainement` (champ d'entraînement, entre dans la révision espacée). Sinon déduite du type : duel, qcm, sort, worked_example → compréhension ; les autres → entraînement. |
+| `niveau` | non | Odyssée : difficulté `1` (reconnaissance), `2` (rappel guidé), `3` (production). Sinon déduite du type. |
+
+### Champs Odyssée sur les modules et les concepts (optionnels)
+
+- Module (= galaxie) : `"galaxie": { "teinte": 0-360, "ambiance": "calme" | "tendu" | "mysterieux" | "lumineux" }`. Sinon dérivés de l'id.
+- Concept (= planète) : `"planete": { "teinte": 0-360, "relief": "rocheuse" | "gazeuse" | "glacee" | "volcanique" | "oceanique" }` et `"decouverte": [ … ]` (écrans de découverte, format détaillé au saut S2).
 
 ### Les types de cartes
 

@@ -75,7 +75,17 @@ export interface Carte {
   retention_goal: ObjectifRetention;
   /** Données propres au type (étapes, éléments à classer…). */
   data?: CarteData | null;
+  /** Phase du parcours (sinon déduite du type, voir config.odyssee.phaseParType). */
+  phase?: PhaseCarte | null;
+  /** Difficulté 1 à 3 (sinon déduite du type). */
+  niveau?: 1 | 2 | 3 | null;
 }
+
+/** Phase du parcours d’une planète où une carte est utilisée. */
+export type PhaseCarte = "comprehension" | "entrainement";
+
+/** Contexte dans lequel une réponse a été donnée (colonne answers.context). */
+export type ContexteReponse = "comprehension" | "entrainement" | "mission" | "soleil" | "patrouille" | "comete" | "sonde";
 
 /** Une réponse donnée pendant la session, avant enregistrement en base. */
 export interface ReponseSession {

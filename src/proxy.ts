@@ -7,8 +7,14 @@ export async function proxy(request: NextRequest) {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const cle = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-  // Supabase pas encore configuré : l'app tourne sans connexion (jalon 1, avant les clés).
-  if (!url || !cle) return NextResponse.next();
+  // Supabase pas encore configuré : tout mène à l'écran d'explication.
+  if (!url || !cle) {
+    if (request.nextUrl.pathname.startsWith("/configuration")) return NextResponse.next();
+    const destination = request.nextUrl.clone();
+    destination.pathname = "/configuration";
+    destination.search = "";
+    return NextResponse.redirect(destination);
+  }
 
   let response = NextResponse.next({ request });
 

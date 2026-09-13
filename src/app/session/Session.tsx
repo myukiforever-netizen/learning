@@ -6,6 +6,7 @@ import { BarreProgression } from "@/components/BarreProgression";
 import { Carte as CadreCarte } from "@/components/Carte";
 import { Feedback } from "@/components/Feedback";
 import { FinDeSession } from "@/components/FinDeSession";
+import { FinDePhase } from "@/components/odyssee/FinDePhase";
 import { Cloze } from "@/components/cartes/Cloze";
 import { Exemple } from "@/components/cartes/Exemple";
 import { Flash } from "@/components/cartes/Flash";
@@ -172,16 +173,22 @@ function verifier(carte: Carte, s: Saisie): boolean {
   }
 }
 
+/** Dans quel cadre la séance est jouée : décide de l'enregistrement, du retour des ratées et de l'écran de fin. */
+export type ModeSession = "patrouille" | "comprehension" | "entrainement" | "mission" | "soleil";
+
 interface Props {
-  /** demo = rien n'est enregistré ; base = tout est enregistré dans Supabase. */
-  mode: "demo" | "base";
-  sessionId: string | null;
+  mode: ModeSession;
+  sessionId: string;
   cartes: CarteAReviser[];
   /** Date du jour AAAA-MM-JJ (calculée côté serveur dans le fuseau de l'utilisateur). */
   aujourdhui: string;
+  /** Planète (phases) ou galaxie (soleil) concernée ; inutile en patrouille. */
+  cibleId?: string;
+  retourHref?: string;
+  rejouerHref?: string;
 }
 
-export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
+export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHref = "/", rejouerHref = "/" }: Props) {
   const [file, setFile] = useState<Carte[]>(() => cartes.map((c) => c.carte));
   const [index, setIndex] = useState(0);
   const [etat, setEtat] = useState<EtatCarte>(() => etatInitial(file[0]));
@@ -247,7 +254,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
       setReponses((r) => [...r, reponse]);
       setEtat((e) => ({ ...e, etape: "feedback", correct }));
 
-      if (mode === "base" && sessionId) {
+      {
         const promesse = actionEnregistrerReponse({
           sessionId,
           cardId: carte.id,
@@ -255,6 +262,9 @@ export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
           confiance: etat.confiance,
           objectif: carte.retention_goal,
           premiere,
+          contexte: mode,
+          // La compréhension est un premier contact guidé : elle n'entre pas dans le planning de révision.
+          planifie: mode !== "comprehension",
         })
           .then((id) => {
             if (premiere) idsReponses.current[carte.id] = id;
@@ -265,8 +275,9 @@ export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
         enregistrements.current.push(promesse);
       }
 
-      // Règle 5 : une carte ratée revient dans la même session, 5 à 10 cartes plus loin.
-      if (!correct) {
+      // Règle 5 : une carte ratée revient dans la même séance, 5 à 10 cartes plus loin
+      // (sauf en mission et au soleil : une épreuve ne se rallonge pas).
+      if (!correct && mode !== "mission" && mode !== "soleil") {
         const dejaRevenue = retours[carte.id] ?? 0;
         if (dejaRevenue < CONFIG_REVISION.retourCarteRatee.maxRetoursParSession) {
           setFile((f) => reinsererCarteRatee(f, index, carte));
@@ -312,17 +323,20 @@ export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
     setEtat((e) => ({ ...e, plus: !e.plus }));
   }, [etat.etape]);
 
-  /** Fin de session : attend que toutes les réponses soient en base, puis clôture. */
+  const attendreEnregistrements = useCallback(async () => {
+    await Promise.all(enregistrements.current);
+  }, []);
+
+  /** Fin de patrouille : attend que toutes les réponses soient en base, puis clôture. */
   const terminer = useCallback(
     async (texteRappel: string, tri: Omit<TriErreur, "answerId">[]): Promise<{ prochaineDue: string | null }> => {
-      if (mode !== "base" || !sessionId) return { prochaineDue: null };
       await Promise.all(enregistrements.current);
       const triComplet: TriErreur[] = tri
         .filter((t) => idsReponses.current[t.cardId])
         .map((t) => ({ ...t, answerId: idsReponses.current[t.cardId] }));
       return actionTerminerSession(sessionId, texteRappel, triComplet);
     },
-    [mode, sessionId],
+    [sessionId],
   );
 
   // ---- Raccourcis clavier : 1-4 choix, Espace révéler, Entrée valider, E en savoir plus
@@ -428,6 +442,20 @@ export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
 
   // ---- Rendu ----------------------------------------------------------
 
+  if (terminee && mode !== "patrouille" && cibleId) {
+    return (
+      <FinDePhase
+        mode={mode}
+        cibleId={cibleId}
+        cartes={cartes.map((c) => c.carte)}
+        reponses={reponses}
+        retourHref={retourHref}
+        rejouerHref={rejouerHref}
+        attendreEnregistrements={attendreEnregistrements}
+      />
+    );
+  }
+
   if (terminee) {
     return (
       <FinDeSession
@@ -460,7 +488,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui }: Props) {
     >
       <div className="flex items-center gap-4">
         <BarreProgression fait={index} total={file.length} />
-        <Link href="/" className="texte-2 text-sm whitespace-nowrap underline underline-offset-4">
+        <Link href={retourHref} className="texte-2 text-sm whitespace-nowrap underline underline-offset-4">
           Quitter
         </Link>
       </div>

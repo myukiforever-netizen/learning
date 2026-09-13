@@ -1,6 +1,6 @@
 // Format d'une matière (fichier JSON versionné) : types, validation, aplatissement.
 // Le format complet est documenté dans SCHEMA.md à la racine du projet.
-import type { Carte, CarteData, ObjectifRetention, TypeCarte } from "@/lib/types";
+import type { Carte, CarteData, ObjectifRetention, PhaseCarte, TypeCarte } from "@/lib/types";
 
 export interface CarteJson {
   id: string;
@@ -16,18 +16,33 @@ export interface CarteJson {
   retention_goal?: ObjectifRetention;
   /** worked_example / faded_example : steps (+ hidden) ; sort : mode, categories, items. Voir SCHEMA.md. */
   data?: CarteData;
+  /** Odyssée : phase (comprehension | entrainement) et niveau (1-3). Sinon déduits du type. */
+  phase?: PhaseCarte;
+  niveau?: 1 | 2 | 3;
+}
+
+/** Odyssée : un écran de découverte (lecteur du jalon S2 ; accepté dès maintenant). */
+export interface EcranDecouverte {
+  type: "histoire" | "analogie" | "exemple" | "predire" | "schema" | "experience";
+  [cle: string]: unknown;
 }
 
 export interface ConceptJson {
   id: string;
   name: string;
   cards: CarteJson[];
+  /** Odyssée : écrans de découverte de la planète. */
+  decouverte?: EcranDecouverte[];
+  /** Odyssée : apparence de la planète (sinon dérivée de l’id). */
+  planete?: { teinte?: number; relief?: "rocheuse" | "gazeuse" | "glacee" | "volcanique" | "oceanique" };
 }
 
 export interface ModuleJson {
   id: string;
   name: string;
   concepts: ConceptJson[];
+  /** Odyssée : teinte et ambiance de la galaxie (sinon dérivées de l’id). */
+  galaxie?: { teinte?: number; ambiance?: "calme" | "tendu" | "mysterieux" | "lumineux" };
 }
 
 export interface MatiereJson {
@@ -126,6 +141,10 @@ export function validerMatiere(json: unknown): string[] {
           }
         }
 
+        if (carte.phase !== undefined && carte.phase !== "comprehension" && carte.phase !== "entrainement") {
+          erreurs.push(`${ouK} : « phase » doit être comprehension ou entrainement.`);
+        }
+        if (carte.niveau !== undefined && ![1, 2, 3].includes(carte.niveau)) erreurs.push(`${ouK} : « niveau » doit être 1, 2 ou 3.`);
         erreurs.push(...validerDonnees(carte, ouK));
       });
     });
@@ -222,6 +241,8 @@ export function aplatirMatiere(m: MatiereJson): Carte[] {
           options_why: carte.options_why ?? null,
           retention_goal: carte.retention_goal ?? "1y",
           data: carte.data ?? null,
+          phase: carte.phase ?? null,
+          niveau: carte.niveau ?? null,
         });
       }
     }

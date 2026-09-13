@@ -35,7 +35,7 @@ export async function actionImporterMatiere(json: unknown): Promise<{ erreurs: s
   if (erreurs.length > 0) return { erreurs, apercu: null };
   const fusion = await importerMatiere(json as MatiereJson);
   revalidatePath("/");
-  revalidatePath("/matieres");
+  revalidatePath("/secteurs");
   return { erreurs: [], apercu: resumer(fusion) };
 }
 
@@ -46,7 +46,7 @@ export async function actionChargerMatiereLivree(formData: FormData): Promise<vo
   if (!matiere) throw new Error("Matière inconnue.");
   await importerMatiere(matiere);
   revalidatePath("/");
-  revalidatePath("/matieres");
+  revalidatePath("/secteurs");
 }
 
 export async function actionBasculerPause(formData: FormData): Promise<void> {
@@ -54,5 +54,5 @@ export async function actionBasculerPause(formData: FormData): Promise<void> {
   if (typeof id !== "string") throw new Error("Matière inconnue.");
   await basculerPause(id);
   revalidatePath("/");
-  revalidatePath("/matieres");
+  revalidatePath("/secteurs");
 }

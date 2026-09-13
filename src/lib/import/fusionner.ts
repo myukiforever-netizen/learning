@@ -31,6 +31,8 @@ const CHAMPS_COMPARES = [
   "options_why",
   "retention_goal",
   "data",
+  "phase",
+  "niveau",
 ] as const;
 
 function memeContenu(a: Carte, b: Carte): boolean {

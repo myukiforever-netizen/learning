@@ -3,7 +3,7 @@
 // Actions serveur appelées depuis les composants clients de la session.
 import { revalidatePath } from "next/cache";
 import { enregistrerReponse, terminerSession, type TriErreur } from "@/lib/supabase/requetes";
-import type { Confiance, ObjectifRetention } from "@/lib/types";
+import type { Confiance, ContexteReponse, ObjectifRetention } from "@/lib/types";
 
 export async function actionEnregistrerReponse(p: {
   sessionId: string;
@@ -12,6 +12,8 @@ export async function actionEnregistrerReponse(p: {
   confiance: Confiance;
   objectif: ObjectifRetention;
   premiere: boolean;
+  contexte?: ContexteReponse;
+  planifie?: boolean;
 }): Promise<string> {
   return enregistrerReponse(p);
 }

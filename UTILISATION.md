@@ -79,7 +79,7 @@ Autres commandes : `npm test` (tests de l'algorithme), `npm run build` (vérifie
 ## 6. Supabase : la base et la connexion (10 minutes, une seule fois)
 
 1. Sur supabase.com, crée un projet (région Europe).
-2. **SQL Editor** → nouvelle requête → colle `supabase/migrations/0001_schema.sql` → Run. Puis pareil avec `0002_settings.sql`.
+2. **SQL Editor** → nouvelle requête → colle `supabase/migrations/0001_schema.sql` → Run. Puis pareil avec `0002_settings.sql`, puis `0003_odyssee.sql`. Chaque fichier doit afficher « Success ».
 3. **Authentication → Users → Add user** : ton email, coche « Auto confirm ». C'est le seul compte : l'app n'en crée jamais.
 4. **Authentication → URL Configuration → Redirect URLs** : ajoute `http://localhost:3000/auth/callback` (et plus tard l'adresse Vercel, voir section 7).
 5. **Project Settings → API** : copie « Project URL » et la clé « anon public ».

@@ -28,8 +28,12 @@ npm run lint     # vérifie le code
 ## Structure
 
 ```
-src/app/            écrans (accueil, session, matieres, cerveau, reglages, connexion)
-src/app/session/    page.tsx (serveur : compose la file) → Session.tsx (client : la pile de cartes) ; actions.ts (actions serveur)
+src/app/            écrans : / (carte de l'univers), galaxie/[id] (+ /soleil), planete/[id] (+ /decouverte, /[phase]), patrouille, secteurs, cerveau, reglages, connexion, configuration
+src/app/session/    Session.tsx (client : le moteur des séances, prop `mode`) ; actions.ts (actions serveur). Pas de page.
+src/app/planete/actions.ts  fin de phase / de soleil (progression + XP)
+src/lib/odyssee/    univers.ts (statuts, déblocage), maitrise.ts (étoiles, détresse), recompenses.ts (XP, niveaux, carburant), composer.ts (phases, mission, soleil), planete.ts (apparence procédurale), urls.ts (ids ↔ adresses, « / » ↔ « ~ »)
+src/lib/supabase/odyssee.ts  lectures/écritures Odyssée (univers, progression, profil)
+src/components/odyssee/  CarteUnivers, Hud, PlaneteSvg, FinDePhase
 src/components/     composants d'interface ; cartes/ = un fichier par mécanique (Flash, Qcm, Cloze, Libre, Exemple, Sort) ; FinDeSession.tsx = page blanche → tri → récap
 src/lib/cartes/     verifier.ts : comparaison tolérante, lecture des trous [[...]], vérification classer/ordonner
 src/lib/revision/   config.ts (TOUTES les valeurs réglables), planifier.ts (dates dues, boîtes), composer.ts (composition de session), serie.ts (🔥)
@@ -54,18 +58,25 @@ docs/               les 2 documents de référence
 - Raccourcis clavier : 1-4 = choix, Espace = révéler, Entrée = valider, E = en savoir plus.
 - Simple avant élégant. Corriger la cause racine d'un bug, jamais une rustine.
 
-## Les 10 règles produit (non négociables)
+## Les 10 règles produit v2 « Odyssée » (13/09/2026, remplacent les règles v1)
 
-1. Jamais de longs textes à lire : tout le contenu arrive en petites cartes interactives, une action par écran.
-2. L'utilisateur répond TOUJOURS avant de voir la réponse.
-3. Chaque erreur affiche une explication courte du POURQUOI (2 lignes max + bouton « en savoir plus »).
-4. Avant chaque révélation de réponse : mini-sélecteur de confiance (3 emojis : 😕 😐 😎), 1 tap.
-5. Une carte ratée revient dans la même session, 5 à 10 cartes plus loin.
-6. Jamais de score affiché pendant la session. Le récap arrive uniquement à la fin.
-7. Rien ne bouge à l'écran pendant que l'utilisateur lit ou réfléchit. Animations uniquement aux transitions et feedbacks.
-8. Fin de session obligatoire : rappel libre (« écris tout ce que tu retiens ») puis tri des erreurs en 3 boîtes : « jamais su » / « su mais pas retrouvé » / « je croyais savoir » (cette dernière = priorité max).
-9. La couleur porte du sens, jamais de la décoration. Aucune image décorative.
-10. Message de fin de session : « Ta vraie note, c'est dans 3 jours. »
+1. On ne peut jamais être interrogé sur une notion qu'on n'a pas découverte. Chaque planète commence par la découverte.
+2. Une planète = 5 phases dans l'ordre : découverte, compréhension, entraînement, mission, révision. On peut rejouer n'importe quelle phase.
+3. On répond toujours avant de voir la réponse ; la confiance se note avant la révélation.
+4. Chaque erreur explique le pourquoi en 2 lignes + « en savoir plus ». Ton encourageant : jamais « échec ».
+5. Une carte ratée revient dans la même séance, 5 à 10 cartes plus loin (sauf mission et soleil).
+6. Le score n'apparaît qu'à la fin d'une mission ou d'une séance ; pendant, seule la progression est visible.
+7. Fin de patrouille obligatoire : journal de bord (page blanche) puis rapport d'incident (tri des erreurs en 3 boîtes).
+8. Chaque récompense (XP, badge, objet) est déclenchée par un acte d'apprentissage réel, jamais par le temps passé ni les clics.
+9. Animations et sons ne bloquent jamais une action ; `prefers-reduced-motion` respecté ; « silence radio » coupe tout.
+10. Message de fin de patrouille : « Ta vraie note, c'est dans 3 jours. »
+
+Les règles v1 « pas de sons, pas de badges, pas de décoration, rien ne bouge pendant la lecture » sont **levées** par le product owner (immersion partout). Les docs de design restent la référence pour la lisibilité (contraste, Inter, tailles).
+
+## L'univers (vocabulaire)
+
+Matière = **secteur** · module = **galaxie** · concept = **planète** · cartes = **notions / missions** · soleil = épreuve finale de la galaxie · patrouille = séance de révision espacée · signal de détresse = notion due ou fragile · trou noir = boîte ⚠️.
+Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après le soleil, saut hyperspatial optionnel (sonde). Plan détaillé : `~/.claude/plans/…` (jalons S1→S7).
 
 ## Décisions prises avec le product owner
 
@@ -103,4 +114,7 @@ docs/               les 2 documents de référence
 - J4 (types de cartes restants) : terminé. 10 types → 6 mécaniques dans `Session.tsx` (flash, choix = qcm/duel, cloze, libre = why/whatif/problem, exemple = worked/faded, sort = classer/ordonner). Vérification automatique pure dans `src/lib/cartes/verifier.ts` (tolérante casse/accents). Démo passée en v2 avec un exemple de chaque type. 32 tests verts.
 - J5 (Mon cerveau + réglages + mode sombre) : terminé. Stats pures dans `src/lib/stats/cerveau.ts` (% en mémoire = 0,9^(jours écoulés / intervalle), calibration confiance, liste rouge, ratio production). Affichage (taille, sombre) dans un cookie lu par le layout ; quota nouveautés dans la table `settings` (migration `0002_settings.sql`). 39 tests verts.
 - J6 (polissage mobile, raccourcis, reduced-motion, Vercel, UTILISATION.md) : terminé. Passe mobile vérifiée en 375 px (aucun débordement, boutons 48 px), icône SVG géométrique (`src/app/icon.svg`), `UTILISATION.md` (session, matières, Supabase, Vercel, dépannage), `README.md`.
-- Prochaine étape : le product owner branche Supabase (UTILISATION.md § 6), teste avec enregistrement réel, puis déploie sur Vercel (§ 7). Ensuite : reprendre le contenu Psychologie (`docs/sources/psychologie.md`) sous forme de matière JSON.
+- **Refonte « Odyssée » (13/09/2026)** : plan en 7 sauts S1→S7 validé.
+  - S1 (univers et navigation) : code terminé. Migration `0003_odyssee.sql` (planet_progress, galaxy_progress, profile, xp_events, colonnes phase/level/discovery/galaxy/planet, answers.context). Écrans univers / galaxie / planète / découverte provisoire / phases / soleil / patrouille. Mode découverte sans clés supprimé (redirection vers /configuration). 54 tests. **À vérifier dans le navigateur dès que le product owner a exécuté les 3 SQL.**
+  - S2 (découverte : schéma d'écrans, sonde, contenu des 43 planètes) : à faire. S3 direction artistique, S4 motivation, S5 son, S6 adaptation, S7 polissage : à faire.
+- Clés Supabase : en place dans `.env.local` depuis le 13/09/2026 (URL + anon uniquement ; jamais la service role).

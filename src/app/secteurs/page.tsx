@@ -17,7 +17,7 @@ export default async function PageMatieres() {
   return (
     <div className="flex flex-col gap-8">
       <header className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold">Matières</h1>
+        <h1 className="text-2xl font-semibold">Secteurs</h1>
         <Link href="/" className="texte-2 text-sm underline underline-offset-4">
           Accueil
         </Link>

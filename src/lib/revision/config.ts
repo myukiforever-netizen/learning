@@ -3,7 +3,7 @@
 // Aucune de ces valeurs ne doit être écrite « en dur » ailleurs.
 // ============================================================
 
-import type { ObjectifRetention } from "@/lib/types";
+import type { ObjectifRetention, TypeCarte } from "@/lib/types";
 
 export const CONFIG_REVISION = {
   /** Calendrier de base : jours entre deux révisions, selon l'objectif de rétention. */
@@ -66,6 +66,62 @@ export const CONFIG_REVISION = {
     tailleTexteParDefaut: 17,
     quotaNouvellesMin: 1,
     quotaNouvellesMax: 60,
+  },
+
+  /** Odyssée : parcours, missions, récompenses. */
+  odyssee: {
+    /** Score minimal (0 à 1) pour valider une mission de planète / franchir un soleil. */
+    seuilMission: 0.8,
+    seuilSoleil: 0.8,
+    /** Nombre de cartes tirées pour une mission / un soleil. */
+    cartesMission: { min: 6, max: 10 },
+    cartesSoleil: { min: 12, max: 20 },
+    /** Sonde : questions avant l'atterrissage, et pour un saut hyperspatial (réussites exigées). */
+    sonde: { atterrissage: 3, saut: 5, reussitesSaut: 4 },
+    /** Phase par défaut d'une carte selon son type (surchargeable dans le JSON). */
+    phaseParType: {
+      flash: "entrainement",
+      qcm: "comprehension",
+      duel: "comprehension",
+      cloze: "entrainement",
+      why: "entrainement",
+      whatif: "entrainement",
+      problem: "entrainement",
+      worked_example: "comprehension",
+      faded_example: "entrainement",
+      sort: "comprehension",
+    } as Record<TypeCarte, "comprehension" | "entrainement">,
+    /** Niveau de difficulté par défaut selon le type : 1 reconnaissance, 2 rappel guidé, 3 production. */
+    niveauParType: {
+      duel: 1,
+      qcm: 1,
+      worked_example: 1,
+      cloze: 2,
+      sort: 2,
+      faded_example: 2,
+      flash: 3,
+      why: 3,
+      whatif: 3,
+      problem: 3,
+    } as Record<TypeCarte, 1 | 2 | 3>,
+    /** Points d'expérience par acte d'apprentissage réel. */
+    xp: {
+      ecranDecouverte: 5,
+      comprehensionBonne: 10,
+      entrainementBonne: 10,
+      bonusFacile: 5,
+      missionReussie: 100,
+      bonusMissionParfaite: 50,
+      soleilFranchi: 300,
+      patrouilleCarte: 8,
+      journalDeBord: 20,
+      serieJour: 15,
+      comete: 60,
+    },
+    /** XP cumulé requis pour atteindre chaque niveau (index 0 = niveau 1). */
+    niveaux: [0, 100, 250, 500, 900, 1400, 2000, 2800, 3800, 5000, 6500, 8500, 11000, 14000, 18000],
+    /** Carburant : gagné en patrouille, dépensé par les sauts hyperspatiaux. */
+    carburant: { max: 100, parPatrouille: 25, coutSaut: 50, initial: 50 },
   },
 
   /**

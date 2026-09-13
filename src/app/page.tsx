@@ -1,85 +1,83 @@
 import Link from "next/link";
 import { deconnecter } from "@/app/auth/actions";
-import { ChoixDuree } from "@/components/ChoixDuree";
+import { CarteUnivers } from "@/components/odyssee/CarteUnivers";
+import { Hud } from "@/components/odyssee/Hud";
+import { prochaineDestination, resumeSecteur } from "@/lib/odyssee/univers";
+import { routes } from "@/lib/odyssee/urls";
+import { chargerUnivers } from "@/lib/supabase/odyssee";
 import { chiffresAccueil } from "@/lib/supabase/requetes";
-import { emailConnecte, supabaseConfigure } from "@/lib/supabase/server";
+import { emailConnecte } from "@/lib/supabase/server";
 
-export default async function Accueil() {
-  const configure = supabaseConfigure();
+/** La carte de l'univers : écran principal. */
+export default async function PageUnivers() {
+  const [univers, chiffres, email] = await Promise.all([chargerUnivers(), chiffresAccueil(), emailConnecte()]);
 
-  // Sans clés Supabase : mode découverte avec les matières livrées.
-  if (!configure) {
+  if (!univers) {
     return (
-      <div className="flex-1 flex flex-col items-center justify-center text-center gap-8">
+      <div className="flex-1 flex flex-col items-center justify-center text-center gap-6">
         <h1 className="text-3xl font-semibold tracking-tight">Ancre</h1>
-        <ChoixDuree />
-        <p className="texte-2">Mode découverte : rien n&apos;est enregistré.</p>
-        <p className="texte-2 text-sm">Connexion désactivée : Supabase n&apos;est pas encore configuré.</p>
-        <Navigation />
+        <p className="texte-2">Aucun secteur chargé. Charge une matière pour faire apparaître ses galaxies.</p>
+        <Link href="/secteurs" className="bouton bouton-principal text-lg px-8" style={{ minHeight: 56 }}>
+          Charger un secteur
+        </Link>
       </div>
     );
   }
 
-  const [email, chiffres] = await Promise.all([emailConnecte(), chiffresAccueil()]);
+  const { secteur, profil, detresse } = univers;
+  const destination = prochaineDestination(secteur);
+  const resume = resumeSecteur(secteur);
+  const signaux = [...detresse.values()].reduce((s, n) => s + n, 0);
 
   return (
-    <div className="flex-1 flex flex-col items-center justify-center text-center gap-8">
-      <h1 className="text-3xl font-semibold tracking-tight">Ancre</h1>
+    <div className="flex flex-col gap-6">
+      <Hud profil={profil} serie={chiffres.serie} signaux={chiffres.dues} />
 
-      {chiffres.totalCartes === 0 ? (
-        <div className="flex flex-col items-center gap-3">
-          <p className="texte-2">Aucune carte pour l&apos;instant.</p>
-          <Link href="/matieres" className="bouton bouton-principal text-lg px-8" style={{ minHeight: 56 }}>
-            Charger une matière
-          </Link>
-        </div>
-      ) : (
-        <ChoixDuree />
-      )}
+      <section className="flex flex-col gap-2">
+        <p className="texte-2 text-sm">Secteur</p>
+        <h1 className="text-2xl font-semibold">{secteur.nom}</h1>
+        <p className="texte-2 text-sm">
+          {resume.planetesValidees} / {resume.planetesTotal} planètes validées · {resume.galaxiesFranchies} / {secteur.galaxies.length} galaxies
+          franchies{signaux > 0 ? ` · ${signaux} signal${signaux > 1 ? "aux" : ""} de détresse` : ""}
+        </p>
+      </section>
 
-      <dl className="flex gap-8 sm:gap-12">
-        <Chiffre valeur={chiffres.dues} libelle="révisions dues" emoji="🔁" />
-        <Chiffre valeur={chiffres.nouvelles} libelle="nouveautés" emoji="🆕" />
-        <Chiffre valeur={chiffres.serie} libelle="jours d'affilée" emoji="🔥" />
-      </dl>
+      <CarteUnivers secteur={secteur} detresse={detresse} />
 
-      <Navigation />
+      <section className="panneau p-5 flex flex-col gap-3">
+        {destination.type === "planete" && (
+          <>
+            <p className="texte-2 text-sm">Prochaine destination</p>
+            <p className="font-medium">
+              {destination.planete.nom} <span className="texte-2">· {destination.galaxie.nom}</span>
+            </p>
+            <Link href={routes.planete(destination.planete.id)} className="bouton bouton-principal self-start">
+              Décoller
+            </Link>
+          </>
+        )}
+        {destination.type === "soleil" && (
+          <>
+            <p className="texte-2 text-sm">Prochaine destination</p>
+            <p className="font-medium">Le soleil de {destination.galaxie.nom} t&apos;attend.</p>
+            <Link href={routes.soleil(destination.galaxie.id)} className="bouton bouton-principal self-start">
+              Affronter le soleil
+            </Link>
+          </>
+        )}
+        {destination.type === "termine" && <p className="font-medium">Tout le secteur est exploré. Les patrouilles gardent tes notions vivantes.</p>}
+      </section>
 
-      {email && (
-        <form action={deconnecter}>
-          <button type="submit" className="texte-2 text-sm underline underline-offset-4">
-            Se déconnecter ({email})
-          </button>
-        </form>
-      )}
+      <nav className="flex flex-wrap gap-4 texte-2 text-sm justify-center" aria-label="Autres écrans">
+        <Link href="/secteurs" className="underline underline-offset-4">Secteurs</Link>
+        <Link href="/cerveau" className="underline underline-offset-4">Mon cerveau</Link>
+        <Link href="/reglages" className="underline underline-offset-4">Réglages</Link>
+        {email && (
+          <form action={deconnecter}>
+            <button type="submit" className="underline underline-offset-4">Se déconnecter</button>
+          </form>
+        )}
+      </nav>
     </div>
-  );
-}
-
-function Chiffre({ valeur, libelle, emoji }: { valeur: number; libelle: string; emoji: string }) {
-  return (
-    <div className="flex flex-col items-center">
-      <dt className="texte-2 text-sm order-2">
-        <span aria-hidden="true">{emoji}</span> {libelle}
-      </dt>
-      <dd className="text-3xl font-semibold order-1">{valeur}</dd>
-    </div>
-  );
-}
-
-/** Les autres écrans, en petit : l'accueil dit « viens faire ta session », pas « viens te promener ». */
-function Navigation() {
-  return (
-    <nav className="flex gap-4 texte-2 text-sm" aria-label="Autres écrans">
-      <Link href="/matieres" className="underline underline-offset-4">
-        Matières
-      </Link>
-      <Link href="/cerveau" className="underline underline-offset-4">
-        Mon cerveau
-      </Link>
-      <Link href="/reglages" className="underline underline-offset-4">
-        Réglages
-      </Link>
-    </nav>
   );
 }
