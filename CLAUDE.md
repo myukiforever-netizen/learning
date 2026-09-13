@@ -57,6 +57,7 @@ docs/               les 2 documents de référence
 - Animations CSS uniquement (transform + opacity), ease-out : 150ms micro-feedback, 250ms transitions, 600ms fin de session (seule célébration). Respecter `prefers-reduced-motion`.
 - Raccourcis clavier : 1-4 = choix, Espace = révéler, Entrée = valider, E = en savoir plus.
 - Simple avant élégant. Corriger la cause racine d'un bug, jamais une rustine.
+- **Contenu (univers, galaxies, planètes, cartes, découvertes) : lire et respecter `docs/GUIDE_UNIVERS.md`** avant toute écriture ou modification. Ids stables, version augmentée, découverte avant les cartes, analogies fidèles, vocabulaire dès 13 ans.
 
 ## Les 10 règles produit v2 « Odyssée » (13/09/2026, remplacent les règles v1)
 
@@ -121,3 +122,13 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
   - Résumé complet de la matière pour le product owner : `docs/psychologie_resume.md`.
   - S3 direction artistique (fond canvas, transitions), S4 motivation, S5 son, S6 adaptation, S7 polissage : à faire.
 - Clés Supabase : en place dans `.env.local` depuis le 13/09/2026 (URL + anon). Tables 0001→0003 exécutées par le product owner ; **0004_profils.sql à exécuter** pour activer les profils.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->

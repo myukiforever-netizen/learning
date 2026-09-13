@@ -11,6 +11,8 @@ Matière
 
 Les matières livrées avec l'app sont dans `src/data/matieres/`. Au jalon 3, on pourra aussi importer un fichier depuis l'écran « Matières ».
 
+Pour les règles éditoriales complètes (comment découper un univers, écrire une découverte avec analogies, ce qu'il ne faut pas faire, checklist), voir `docs/GUIDE_UNIVERS.md`.
+
 ## Règles d'or pour écrire des cartes
 
 - Une carte = une seule idée. Jamais de paragraphe à réciter.

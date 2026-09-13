@@ -39,7 +39,7 @@ Ancre est ton application personnelle d'apprentissage. Une seule règle : **tu r
 
 ## 3. Ajouter une matière
 
-Une matière = un fichier JSON. Le format exact et un exemple complet sont dans `SCHEMA.md`.
+Une matière = un fichier JSON. Le format exact et un exemple complet sont dans `SCHEMA.md`. Les règles pour écrire un bon contenu (découpage en galaxies et planètes, découvertes avec analogies, erreurs à éviter, checklist) sont dans `docs/GUIDE_UNIVERS.md`.
 
 **Le plus simple pour fabriquer un fichier** : ouvre une conversation avec Claude, colle-lui `SCHEMA.md` et ton cours (PDF, notes, sujet), et demande-lui :
 
