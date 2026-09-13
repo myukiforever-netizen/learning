@@ -9,6 +9,17 @@
 -- (SUPABASE_SECRET_KEY dans .env.local) pour ne jamais exposer l'écriture au navigateur.
 -- ============================================================
 
+-- 0. Les anciennes règles « propriétaire » dépendent de user_id : on les retire d'abord.
+do $
+declare t text;
+begin
+  foreach t in array array['subjects','modules','concepts','cards','reviews','sessions','answers','settings','planet_progress','galaxy_progress','profile','progression','xp_events'] loop
+    if to_regclass(t) is not null then
+      execute format('drop policy if exists "proprietaire" on %I', t);
+    end if;
+  end loop;
+end $;
+
 create table if not exists profiles (
   id          uuid primary key default gen_random_uuid(),
   name        text not null,
@@ -18,40 +29,40 @@ create table if not exists profiles (
 );
 
 -- ---------- Le contenu n'appartient plus à un compte ----------
-alter table subjects drop column if exists user_id;
-alter table modules  drop column if exists user_id;
-alter table concepts drop column if exists user_id;
-alter table cards    drop column if exists user_id;
+alter table subjects drop column if exists user_id cascade;
+alter table modules  drop column if exists user_id cascade;
+alter table concepts drop column if exists user_id cascade;
+alter table cards    drop column if exists user_id cascade;
 
 -- ---------- La progression appartient à un profil ----------
 -- reviews : une ligne par (profil, carte)
-alter table reviews drop column if exists user_id;
+alter table reviews drop column if exists user_id cascade;
 alter table reviews add column if not exists profile_id uuid references profiles(id) on delete cascade;
 alter table reviews drop constraint if exists reviews_pkey;
 delete from reviews where profile_id is null;
 alter table reviews alter column profile_id set not null;
 alter table reviews add primary key (profile_id, card_id);
 
-alter table sessions drop column if exists user_id;
+alter table sessions drop column if exists user_id cascade;
 alter table sessions add column if not exists profile_id uuid references profiles(id) on delete cascade;
 delete from sessions where profile_id is null;
 alter table sessions alter column profile_id set not null;
 
-alter table answers drop column if exists user_id;
+alter table answers drop column if exists user_id cascade;
 alter table answers add column if not exists profile_id uuid references profiles(id) on delete cascade;
 delete from answers where profile_id is null;
 alter table answers alter column profile_id set not null;
 
 -- settings : une ligne par profil
 alter table settings drop constraint if exists settings_pkey;
-alter table settings drop column if exists user_id;
+alter table settings drop column if exists user_id cascade;
 alter table settings add column if not exists profile_id uuid references profiles(id) on delete cascade;
 delete from settings where profile_id is null;
 alter table settings add primary key (profile_id);
 
 -- planet_progress : une ligne par (profil, planète)
 alter table planet_progress drop constraint if exists planet_progress_pkey;
-alter table planet_progress drop column if exists user_id;
+alter table planet_progress drop column if exists user_id cascade;
 alter table planet_progress add column if not exists profile_id uuid references profiles(id) on delete cascade;
 delete from planet_progress where profile_id is null;
 alter table planet_progress alter column profile_id set not null;
@@ -59,7 +70,7 @@ alter table planet_progress add primary key (profile_id, concept_id);
 
 -- galaxy_progress : une ligne par (profil, galaxie)
 alter table galaxy_progress drop constraint if exists galaxy_progress_pkey;
-alter table galaxy_progress drop column if exists user_id;
+alter table galaxy_progress drop column if exists user_id cascade;
 alter table galaxy_progress add column if not exists profile_id uuid references profiles(id) on delete cascade;
 delete from galaxy_progress where profile_id is null;
 alter table galaxy_progress alter column profile_id set not null;
@@ -68,12 +79,12 @@ alter table galaxy_progress add primary key (profile_id, module_id);
 -- profile (XP, carburant, badges, vaisseau, audio) devient « progression », une ligne par profil
 alter table if exists profile rename to progression;
 alter table progression drop constraint if exists profile_pkey;
-alter table progression drop column if exists user_id;
+alter table progression drop column if exists user_id cascade;
 alter table progression add column if not exists profile_id uuid references profiles(id) on delete cascade;
 delete from progression where profile_id is null;
 alter table progression add primary key (profile_id);
 
-alter table xp_events drop column if exists user_id;
+alter table xp_events drop column if exists user_id cascade;
 alter table xp_events add column if not exists profile_id uuid references profiles(id) on delete cascade;
 delete from xp_events where profile_id is null;
 alter table xp_events alter column profile_id set not null;
