@@ -12,7 +12,7 @@
 
 - Next.js (App Router) + TypeScript + Tailwind CSS, code dans `src/`
 - Supabase : base Postgres, **sans compte utilisateur** : profils à la Netflix (table `profiles`, cookie `ancre.profil`), progression rattachée à `profile_id`, contenu partagé. Clés dans `.env.local` (jamais dans le code), modèle dans `.env.example` ; `SUPABASE_SECRET_KEY` optionnelle, serveur uniquement
-- Vercel pour le déploiement (jalon 6)
+- Vercel : **en production sur https://ancre-murex.vercel.app** (projet « ancre », équipe « hello », 14/09/2026). Chaque push sur `main` redéploie automatiquement. Variables : `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SECRET_KEY`. Si une clé est régénérée dans Supabase, la mettre à jour dans Vercel (Settings → Environment Variables) puis redéployer.
 - Vitest pour les tests de la logique
 - Aucune autre dépendance sans l'accord du product owner
 
