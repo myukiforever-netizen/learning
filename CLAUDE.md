@@ -91,7 +91,7 @@ docs/               les 2 documents de référence
 - Modèle de révision : `step` (position dans le calendrier), `interval_days` (dernier intervalle appliqué), `ease_state` (`new`/`ok`/`failed`/`thought_knew`). Après un raté ou une boîte, le succès suivant utilise `interval_days` au lieu du calendrier.
 - Dans une session, seule la PREMIÈRE réponse à une carte replanifie ; les retours d'une carte ratée sont enregistrés dans `answers` sans replanifier.
 - Les écritures pendant la session sont asynchrones (la carte suivante n'attend pas) ; la fin de session attend toutes les écritures avant de clôturer.
-- Préférences d'affichage (taille de texte, mode sombre) : cookie `ancre.affichage` lu dans `src/app/layout.tsx` → `data-theme="dark"` et `--taille-texte` sur `<html>`. Le mode sombre = mêmes tokens, valeurs redéfinies sous `:root[data-theme="dark"]` dans `globals.css`. Jamais de couleur en dur dans les composants.
+- Mode sombre PAR DÉFAUT (demande du product owner du 13/09/2026, qui prime sur le « clair par défaut » des docs). Préférences d'affichage (taille de texte, mode sombre) : cookie `ancre.affichage` lu dans `src/app/layout.tsx` → `data-theme="dark"` et `--taille-texte` sur `<html>`. Le mode sombre = mêmes tokens, valeurs redéfinies sous `:root[data-theme="dark"]` dans `globals.css`. Jamais de couleur en dur dans les composants.
 - Quota de nouveautés : table `settings` (`lireQuotaNouvelles`, repli sur la config si la table ou la ligne manque).
 
 ## Avancement

@@ -12,7 +12,7 @@ export interface Affichage {
 
 export const AFFICHAGE_PAR_DEFAUT: Affichage = {
   tailleTexte: CONFIG_REVISION.reglages.tailleTexteParDefaut,
-  sombre: false,
+  sombre: true,
 };
 
 export function lireAffichageDepuis(valeur: string | undefined): Affichage {
@@ -22,7 +22,7 @@ export function lireAffichageDepuis(valeur: string | undefined): Affichage {
     const tailles: readonly number[] = CONFIG_REVISION.reglages.taillesTexte;
     return {
       tailleTexte: typeof json.tailleTexte === "number" && tailles.includes(json.tailleTexte) ? json.tailleTexte : AFFICHAGE_PAR_DEFAUT.tailleTexte,
-      sombre: json.sombre === true,
+      sombre: typeof json.sombre === "boolean" ? json.sombre : AFFICHAGE_PAR_DEFAUT.sombre,
     };
   } catch {
     return AFFICHAGE_PAR_DEFAUT;
