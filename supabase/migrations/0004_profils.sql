@@ -10,7 +10,7 @@
 -- ============================================================
 
 -- 0. Les anciennes règles « propriétaire » dépendent de user_id : on les retire d'abord.
-do $
+do $$
 declare t text;
 begin
   foreach t in array array['subjects','modules','concepts','cards','reviews','sessions','answers','settings','planet_progress','galaxy_progress','profile','progression','xp_events'] loop
@@ -18,7 +18,7 @@ begin
       execute format('drop policy if exists "proprietaire" on %I', t);
     end if;
   end loop;
-end $;
+end $$;
 
 create table if not exists profiles (
   id          uuid primary key default gen_random_uuid(),
