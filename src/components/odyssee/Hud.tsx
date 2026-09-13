@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { routes } from "@/lib/odyssee/urls";
 import type { Profil } from "@/lib/supabase/odyssee";
-import type { Profil as Joueur } from "@/lib/profils";
+import type { Profil as Joueur } from "@/lib/profils-types";
 
 interface Props {
   profil: Profil;

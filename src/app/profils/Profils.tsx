@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { actionChoisirProfil, actionCreerProfil, actionModifierProfil, actionSupprimerProfil } from "./actions";
-import { AVATARS, type Profil } from "@/lib/profils";
+import { AVATARS, type Profil } from "@/lib/profils-types";
 
 interface Props {
   profils: Profil[];

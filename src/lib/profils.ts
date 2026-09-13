@@ -2,18 +2,9 @@
 // toute la progression (révisions, réponses, planètes, XP) est rattachée à ce profil.
 import { cookies } from "next/headers";
 import { createClient } from "@/lib/supabase/server";
+import { AVATARS, COOKIE_PROFIL, type Profil } from "@/lib/profils-types";
 
-export const COOKIE_PROFIL = "ancre.profil";
-
-export interface Profil {
-  id: string;
-  nom: string;
-  avatar: string;
-  teinte: number;
-}
-
-/** Avatars proposés à la création (aucune image : des emojis, lisibles partout). */
-export const AVATARS = ["🚀", "🛰️", "🪐", "🌙", "☄️", "🛸", "🌌", "⭐", "🔭", "👩‍🚀", "👨‍🚀", "🧑‍🚀"] as const;
+export { AVATARS, COOKIE_PROFIL, type Profil };
 
 export async function listerProfils(): Promise<Profil[]> {
   const supabase = await createClient();
