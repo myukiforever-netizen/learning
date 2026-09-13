@@ -1,6 +1,7 @@
 // Lectures / écritures de l'Odyssée : structure du secteur, progression des planètes
 // et galaxies, profil (XP, carburant). Côté serveur uniquement.
 import { createClient } from "./server";
+import { profilCourantId } from "@/lib/profils";
 import { chargerCartesEtRevisions, type CarteAvecMatiere } from "./requetes";
 import { aujourdhui } from "@/lib/dates";
 import { CONFIG_REVISION } from "@/lib/revision/config";
@@ -82,9 +83,10 @@ async function structureSecteur(): Promise<{ structure: StructureSecteur; cartes
 
 async function progressions(): Promise<{ planetes: ProgressionPlanete[]; galaxies: ProgressionGalaxie[] }> {
   const supabase = await createClient();
+  const pid = await profilCourantId();
   const [p, g] = await Promise.all([
-    supabase.from("planet_progress").select("concept_id, stage, best_score, attempts, probe_passed, validated_at"),
-    supabase.from("galaxy_progress").select("module_id, sun_score, attempts, passed_at, jumped"),
+    supabase.from("planet_progress").select("concept_id, stage, best_score, attempts, probe_passed, validated_at").eq("profile_id", pid),
+    supabase.from("galaxy_progress").select("module_id, sun_score, attempts, passed_at, jumped").eq("profile_id", pid),
   ]);
   if (p.error) throw new Error(p.error.message);
   if (g.error) throw new Error(g.error.message);
@@ -123,7 +125,7 @@ export function cartesDePlanete(univers: Univers, conceptId: string): CarteARevi
 
 export async function lireProfil(): Promise<Profil> {
   const supabase = await createClient();
-  const { data, error } = await supabase.from("profile").select("xp, fuel, badges, ship, audio").maybeSingle();
+  const { data, error } = await supabase.from("progression").select("xp, fuel, badges, ship, audio").eq("profile_id", await profilCourantId()).maybeSingle();
   if (error || !data) return PROFIL_VIDE;
   return {
     xp: data.xp,
@@ -141,13 +143,14 @@ export async function lireProfil(): Promise<Profil> {
 export async function ajouterXp(evenement: EvenementXp | string, montant: number, refId?: string): Promise<number> {
   if (montant <= 0) return (await lireProfil()).xp;
   const supabase = await createClient();
+  const pid = await profilCourantId();
   const profil = await lireProfil();
   const total = profil.xp + montant;
   const { error } = await supabase
-    .from("profile")
-    .upsert({ xp: total, fuel: profil.carburant, updated_at: new Date().toISOString() }, { onConflict: "user_id" });
+    .from("progression")
+    .upsert({ profile_id: pid, xp: total, fuel: profil.carburant, updated_at: new Date().toISOString() }, { onConflict: "profile_id" });
   if (error) throw new Error(error.message);
-  const { error: e2 } = await supabase.from("xp_events").insert({ kind: evenement, amount: montant, ref_id: refId ?? null });
+  const { error: e2 } = await supabase.from("xp_events").insert({ profile_id: pid, kind: evenement, amount: montant, ref_id: refId ?? null });
   if (e2) throw new Error(e2.message);
   return total;
 }
@@ -156,8 +159,8 @@ export async function modifierCarburant(nouveau: number): Promise<void> {
   const supabase = await createClient();
   const profil = await lireProfil();
   const { error } = await supabase
-    .from("profile")
-    .upsert({ xp: profil.xp, fuel: Math.max(0, Math.min(CONFIG_REVISION.odyssee.carburant.max, nouveau)), updated_at: new Date().toISOString() }, { onConflict: "user_id" });
+    .from("progression")
+    .upsert({ profile_id: await profilCourantId(), xp: profil.xp, fuel: Math.max(0, Math.min(CONFIG_REVISION.odyssee.carburant.max, nouveau)), updated_at: new Date().toISOString() }, { onConflict: "profile_id" });
   if (error) throw new Error(error.message);
 }
 
@@ -189,12 +192,14 @@ export async function terminerPhase(p: {
   ecransVus?: number;
 }): Promise<ResultatPhase> {
   const supabase = await createClient();
+  const pid = await profilCourantId();
   const { xp, seuilMission } = CONFIG_REVISION.odyssee;
   const profilAvant = await lireProfil();
 
   const { data: existante } = await supabase
     .from("planet_progress")
     .select("stage, best_score, attempts, probe_passed")
+    .eq("profile_id", pid)
     .eq("concept_id", p.conceptId)
     .maybeSingle();
   const etapeAvant: EtapePlanete = (existante?.stage as EtapePlanete | undefined) ?? "available";
@@ -205,6 +210,7 @@ export async function terminerPhase(p: {
 
   const { error } = await supabase.from("planet_progress").upsert(
     {
+      profile_id: pid,
       concept_id: p.conceptId,
       stage: etape,
       best_score: p.phase === "mission" ? Math.max(existante?.best_score ?? 0, scorePourcent) : (existante?.best_score ?? 0),
@@ -213,7 +219,7 @@ export async function terminerPhase(p: {
       validated_at: etape === "validated" ? new Date().toISOString() : null,
       updated_at: new Date().toISOString(),
     },
-    { onConflict: "concept_id" },
+    { onConflict: "profile_id,concept_id" },
   );
   if (error) throw new Error(error.message);
 
@@ -247,12 +253,14 @@ export async function terminerPhase(p: {
 /** Enregistre une tentative de soleil : score, franchissement si ≥ seuil, XP. */
 export async function terminerSoleil(p: { moduleId: string; score: number; bonnesReponses: number }): Promise<ResultatPhase> {
   const supabase = await createClient();
+  const pid = await profilCourantId();
   const { xp, seuilSoleil } = CONFIG_REVISION.odyssee;
   const profilAvant = await lireProfil();
 
   const { data: existante } = await supabase
     .from("galaxy_progress")
     .select("sun_score, attempts, passed_at, jumped")
+    .eq("profile_id", pid)
     .eq("module_id", p.moduleId)
     .maybeSingle();
   const dejaFranchie = Boolean(existante?.passed_at);
@@ -261,6 +269,7 @@ export async function terminerSoleil(p: { moduleId: string; score: number; bonne
 
   const { error } = await supabase.from("galaxy_progress").upsert(
     {
+      profile_id: pid,
       module_id: p.moduleId,
       sun_score: Math.max(existante?.sun_score ?? 0, scorePourcent),
       attempts: (existante?.attempts ?? 0) + 1,
@@ -268,7 +277,7 @@ export async function terminerSoleil(p: { moduleId: string; score: number; bonne
       jumped: existante?.jumped ?? false,
       updated_at: new Date().toISOString(),
     },
-    { onConflict: "module_id" },
+    { onConflict: "profile_id,module_id" },
   );
   if (error) throw new Error(error.message);
 

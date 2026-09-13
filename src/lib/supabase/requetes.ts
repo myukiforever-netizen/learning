@@ -2,6 +2,7 @@
 // La logique de révision reste dans src/lib/revision : ce fichier ne fait que
 // lire, appeler cette logique, et écrire.
 import { createClient } from "./server";
+import { profilCourantId } from "@/lib/profils";
 import { aujourdhui, dateLocale } from "@/lib/dates";
 import { CONFIG_REVISION } from "@/lib/revision/config";
 import { composerSession, nouvellesDisponibles } from "@/lib/revision/composer";
@@ -96,6 +97,7 @@ export interface CarteAvecMatiere extends CarteAReviser {
 
 export async function chargerCartesEtRevisions(): Promise<{ cartes: CarteAvecMatiere[]; revisions: LigneRevision[] }> {
   const supabase = await createClient();
+  const pid = await profilCourantId();
 
   const [cartesRes, revisionsRes] = await Promise.all([
     supabase
@@ -104,7 +106,7 @@ export async function chargerCartesEtRevisions(): Promise<{ cartes: CarteAvecMat
       .eq("status", "active")
       .eq("concepts.modules.subjects.status", "active")
       .order("position"),
-    supabase.from("reviews").select("card_id, due_date, interval_days, step, ease_state, introduced_on"),
+    supabase.from("reviews").select("card_id, due_date, interval_days, step, ease_state, introduced_on").eq("profile_id", pid),
   ]);
   if (cartesRes.error) throw new Error(cartesRes.error.message);
   if (revisionsRes.error) throw new Error(revisionsRes.error.message);
@@ -126,7 +128,7 @@ export async function chargerCartesEtRevisions(): Promise<{ cartes: CarteAvecMat
 /** Quota de nouvelles cartes par jour : réglage utilisateur, sinon valeur de la config. */
 export async function lireQuotaNouvelles(): Promise<number> {
   const supabase = await createClient();
-  const { data, error } = await supabase.from("settings").select("new_per_day").maybeSingle();
+  const { data, error } = await supabase.from("settings").select("new_per_day").eq("profile_id", await profilCourantId()).maybeSingle();
   if (error || !data) return CONFIG_REVISION.nouvellesParJour; // table absente ou pas encore de ligne
   return data.new_per_day as number;
 }
@@ -135,7 +137,7 @@ export async function enregistrerQuotaNouvelles(quota: number): Promise<void> {
   const supabase = await createClient();
   const { error } = await supabase
     .from("settings")
-    .upsert({ new_per_day: quota, updated_at: new Date().toISOString() }, { onConflict: "user_id" });
+    .upsert({ profile_id: await profilCourantId(), new_per_day: quota, updated_at: new Date().toISOString() }, { onConflict: "profile_id" });
   if (error) throw new Error(error.message);
 }
 
@@ -157,7 +159,7 @@ export async function chiffresAccueil(): Promise<ChiffresAccueil> {
   const dejaAujourdhui = revisions.filter((r) => r.introduced_on === jour).length;
 
   const supabase = await createClient();
-  const { data: sessions, error } = await supabase.from("sessions").select("ended_at").not("ended_at", "is", null);
+  const { data: sessions, error } = await supabase.from("sessions").select("ended_at").eq("profile_id", await profilCourantId()).not("ended_at", "is", null);
   if (error) throw new Error(error.message);
   const jours = (sessions ?? []).map((s) => dateLocale(new Date(s.ended_at as string), CONFIG_REVISION.fuseauHoraire));
 
@@ -187,7 +189,7 @@ export async function creerSession(minutes: number): Promise<string> {
   const supabase = await createClient();
   const { data, error } = await supabase
     .from("sessions")
-    .insert({ duration_target: minutes })
+    .insert({ duration_target: minutes, profile_id: await profilCourantId() })
     .select("id")
     .single();
   if (error) throw new Error(error.message);
@@ -212,11 +214,12 @@ export async function enregistrerReponse(p: {
   planifie?: boolean;
 }): Promise<string> {
   const supabase = await createClient();
+  const pid = await profilCourantId();
   const jour = aujourdhui();
 
   const { data, error } = await supabase
     .from("answers")
-    .insert({ session_id: p.sessionId, card_id: p.cardId, correct: p.correct, confidence: p.confiance, context: p.contexte ?? "patrouille" })
+    .insert({ profile_id: pid, session_id: p.sessionId, card_id: p.cardId, correct: p.correct, confidence: p.confiance, context: p.contexte ?? "patrouille" })
     .select("id")
     .single();
   if (error) throw new Error(error.message);
@@ -225,6 +228,7 @@ export async function enregistrerReponse(p: {
     const { data: existante } = await supabase
       .from("reviews")
       .select("card_id, due_date, interval_days, step, ease_state, introduced_on, history")
+      .eq("profile_id", pid)
       .eq("card_id", p.cardId)
       .maybeSingle();
 
@@ -234,12 +238,13 @@ export async function enregistrerReponse(p: {
     const historique = [...(ligne?.history ?? []), { date: jour, correct: p.correct, confidence: p.confiance }];
 
     const { error: erreurRevision } = await supabase.from("reviews").upsert({
+      profile_id: pid,
       card_id: p.cardId,
       ...apres,
       introduced_on: ligne?.introduced_on ?? jour,
       history: historique,
       updated_at: new Date().toISOString(),
-    });
+    }, { onConflict: "profile_id,card_id" });
     if (erreurRevision) throw new Error(erreurRevision.message);
   }
 
@@ -260,12 +265,14 @@ export async function terminerSession(
   tri: TriErreur[],
 ): Promise<{ prochaineDue: string | null }> {
   const supabase = await createClient();
+  const pid = await profilCourantId();
   const jour = aujourdhui();
 
   const { error } = await supabase
     .from("sessions")
     .update({ ended_at: new Date().toISOString(), free_recall_text: texteRappel })
-    .eq("id", sessionId);
+    .eq("id", sessionId)
+    .eq("profile_id", pid);
   if (error) throw new Error(error.message);
 
   for (const t of tri) {
@@ -275,6 +282,7 @@ export async function terminerSession(
     const { data: existante } = await supabase
       .from("reviews")
       .select("card_id, due_date, interval_days, step, ease_state, introduced_on, history")
+      .eq("profile_id", pid)
       .eq("card_id", t.cardId)
       .maybeSingle();
     const ligne = existante as LigneRevision | null;
@@ -290,6 +298,7 @@ export async function terminerSession(
     const { error: e2 } = await supabase
       .from("reviews")
       .update({ ...apres, history: historique, updated_at: new Date().toISOString() })
+      .eq("profile_id", pid)
       .eq("card_id", t.cardId);
     if (e2) throw new Error(e2.message);
   }
@@ -297,6 +306,7 @@ export async function terminerSession(
   const { data: prochaine } = await supabase
     .from("reviews")
     .select("due_date")
+    .eq("profile_id", pid)
     .gt("due_date", jour)
     .order("due_date")
     .limit(1)
@@ -321,7 +331,7 @@ export async function donneesCerveau(): Promise<DonneesCerveau> {
   const supabase = await createClient();
   const [{ cartes }, reponsesRes] = await Promise.all([
     chargerCartesEtRevisions(),
-    supabase.from("answers").select("card_id, correct, confidence, error_box"),
+    supabase.from("answers").select("card_id, correct, confidence, error_box").eq("profile_id", await profilCourantId()),
   ]);
   if (reponsesRes.error) throw new Error(reponsesRes.error.message);
   const reponses = (reponsesRes.data ?? []) as ReponseStats[];

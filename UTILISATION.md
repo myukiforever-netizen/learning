@@ -4,7 +4,7 @@ Ancre est ton application personnelle d'apprentissage. Une seule règle : **tu r
 
 ## 1. La session quotidienne (2 minutes pour comprendre, 10 à 60 pour la faire)
 
-1. Ouvre l'app. L'accueil te montre trois chiffres : révisions dues 🔁, nouveautés 🆕, jours d'affilée 🔥.
+1. Ouvre l'app et choisis ton profil (« Qui explore aujourd'hui ? »). La carte de l'univers montre tes galaxies, ton niveau, ta série 🔥 et les signaux à secourir.
 2. Choisis une durée (10, 20, 40 ou 60 min) et clique **Démarrer ma session**.
 3. Chaque carte te pose une question. Réponds (dans ta tête, au clavier, ou en cliquant), note ta confiance 😕 😐 😎, puis révèle ou valide.
    - Bonne réponse : coche verte, on passe.
@@ -79,19 +79,18 @@ Autres commandes : `npm test` (tests de l'algorithme), `npm run build` (vérifie
 ## 6. Supabase : la base et la connexion (10 minutes, une seule fois)
 
 1. Sur supabase.com, crée un projet (région Europe).
-2. **SQL Editor** → nouvelle requête → colle `supabase/migrations/0001_schema.sql` → Run. Puis pareil avec `0002_settings.sql`, puis `0003_odyssee.sql`. Chaque fichier doit afficher « Success ».
-3. **Authentication → Users → Add user** : ton email, coche « Auto confirm ». C'est le seul compte : l'app n'en crée jamais.
-4. **Authentication → URL Configuration → Redirect URLs** : ajoute `http://localhost:3000/auth/callback` (et plus tard l'adresse Vercel, voir section 7).
-5. **Project Settings → API** : copie « Project URL » et la clé « anon public ».
-6. Dans `.env.local` :
+2. **SQL Editor** → nouvelle requête → colle `supabase/migrations/0001_schema.sql` → Run. Puis pareil avec `0002_settings.sql`, `0003_odyssee.sql` et `0004_profils.sql`. Chaque fichier doit afficher « Success ».
+3. **Project Settings → API** : copie « Project URL » et la clé « anon public ».
+4. Dans `.env.local` :
 
 ```
 NEXT_PUBLIC_SUPABASE_URL=https://xxxx.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=la_cle_anon
-ALLOWED_EMAIL=ton@email.com
+SUPABASE_SECRET_KEY=
 ```
 
-7. Relance `npm run dev`. L'app demande maintenant une connexion : entre ton email, clique le lien reçu.
+   `SUPABASE_SECRET_KEY` est optionnelle : c'est la clé « service role » (ou `sb_secret_…`). Elle reste sur le serveur et empêche quiconque d'écrire dans ta base avec la seule clé publique. Colle-la toi-même, jamais dans un chat.
+5. Relance `npm run dev`. L'app te demande de créer ton premier profil. Il n'y a pas de mot de passe : l'app est personnelle, ne partage pas son adresse.
 
 ## 7. Mettre en ligne sur Vercel (15 minutes, une seule fois)
 
@@ -99,19 +98,16 @@ Le code est sur GitHub (`myukiforever-netizen/learning`). Vercel le déploie à 
 
 1. Sur vercel.com, connecte-toi avec GitHub → **Add New → Project** → importe le dépôt `learning`.
 2. Framework détecté : Next.js. Ne change rien.
-3. **Environment Variables** : ajoute les trois mêmes variables que dans `.env.local` (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `ALLOWED_EMAIL`).
+3. **Environment Variables** : ajoute les mêmes variables que dans `.env.local` (`NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, et `SUPABASE_SECRET_KEY` si tu l'utilises).
 4. **Deploy**. Une à deux minutes plus tard, Vercel te donne une adresse du type `https://learning-xxxx.vercel.app`.
-5. Retourne dans Supabase → **Authentication → URL Configuration** :
-   - **Site URL** : ton adresse Vercel ;
-   - **Redirect URLs** : ajoute `https://learning-xxxx.vercel.app/auth/callback`.
-6. Ouvre ton adresse Vercel sur ton téléphone, connecte-toi, ajoute-la à l'écran d'accueil. C'est ton app.
+5. Ouvre ton adresse Vercel sur ton téléphone, choisis ton profil, ajoute la page à l'écran d'accueil. C'est ton app.
 
 Ensuite : chaque `git push` sur `main` redéploie automatiquement. Les données restent dans Supabase, jamais dans Vercel.
 
 ## 8. Si quelque chose cloche
 
-- « Cet email n'est pas autorisé » : vérifie `ALLOWED_EMAIL` (même orthographe que le compte Supabase).
-- Le lien de connexion renvoie vers une erreur : vérifie les **Redirect URLs** dans Supabase.
+- L'écran des profils affiche une erreur : le fichier `0004_profils.sql` n'a pas été exécuté.
+- Tu changes d'appareil : choisis simplement ton profil, ta progression est dans la base.
 - « Rien à réviser » : aucune carte due et quota de nouveautés atteint. Reviens demain ou monte le quota dans Réglages.
 - Le fichier JSON est refusé : l'app liste les problèmes en français (id en double, réponse absente des options…). Corrige et réessaie.
 - Les statistiques sont vides : elles se remplissent à partir de ta première session enregistrée.

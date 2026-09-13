@@ -1,16 +1,18 @@
 import Link from "next/link";
-import { deconnecter } from "@/app/auth/actions";
 import { CarteUnivers } from "@/components/odyssee/CarteUnivers";
 import { Hud } from "@/components/odyssee/Hud";
 import { prochaineDestination, resumeSecteur } from "@/lib/odyssee/univers";
 import { routes } from "@/lib/odyssee/urls";
 import { chargerUnivers } from "@/lib/supabase/odyssee";
 import { chiffresAccueil } from "@/lib/supabase/requetes";
-import { emailConnecte } from "@/lib/supabase/server";
+import { profilCourant } from "@/lib/profils";
+import { redirect } from "next/navigation";
 
 /** La carte de l'univers : écran principal. */
 export default async function PageUnivers() {
-  const [univers, chiffres, email] = await Promise.all([chargerUnivers(), chiffresAccueil(), emailConnecte()]);
+  const profil = await profilCourant();
+  if (!profil) redirect("/profils"); // cookie orphelin (profil supprimé)
+  const [univers, chiffres] = await Promise.all([chargerUnivers(), chiffresAccueil()]);
 
   if (!univers) {
     return (
@@ -24,14 +26,14 @@ export default async function PageUnivers() {
     );
   }
 
-  const { secteur, profil, detresse } = univers;
+  const { secteur, detresse } = univers;
   const destination = prochaineDestination(secteur);
   const resume = resumeSecteur(secteur);
   const signaux = [...detresse.values()].reduce((s, n) => s + n, 0);
 
   return (
     <div className="flex flex-col gap-6">
-      <Hud profil={profil} serie={chiffres.serie} signaux={chiffres.dues} />
+      <Hud profil={univers.profil} joueur={profil} serie={chiffres.serie} signaux={chiffres.dues} />
 
       <section className="flex flex-col gap-2">
         <p className="texte-2 text-sm">Secteur</p>
@@ -72,11 +74,7 @@ export default async function PageUnivers() {
         <Link href="/secteurs" className="underline underline-offset-4">Secteurs</Link>
         <Link href="/cerveau" className="underline underline-offset-4">Mon cerveau</Link>
         <Link href="/reglages" className="underline underline-offset-4">Réglages</Link>
-        {email && (
-          <form action={deconnecter}>
-            <button type="submit" className="underline underline-offset-4">Se déconnecter</button>
-          </form>
-        )}
+        <Link href="/profils" className="underline underline-offset-4">Changer de profil</Link>
       </nav>
     </div>
   );

@@ -11,7 +11,7 @@
 ## Stack
 
 - Next.js (App Router) + TypeScript + Tailwind CSS, code dans `src/`
-- Supabase : base Postgres + auth par magic link (email). Clés dans `.env.local` (jamais dans le code), modèle dans `.env.example`
+- Supabase : base Postgres, **sans compte utilisateur** : profils à la Netflix (table `profiles`, cookie `ancre.profil`), progression rattachée à `profile_id`, contenu partagé. Clés dans `.env.local` (jamais dans le code), modèle dans `.env.example` ; `SUPABASE_SECRET_KEY` optionnelle, serveur uniquement
 - Vercel pour le déploiement (jalon 6)
 - Vitest pour les tests de la logique
 - Aucune autre dépendance sans l'accord du product owner
@@ -84,7 +84,7 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
 - Carte Flash : réponse dans la tête → confiance → révélation → auto-évaluation « j'avais bon / pas encore ».
 - Boîte « je croyais savoir » : intervalle quasi remis à zéro + marqueur ⚠️ sur la carte. Pas de carte « Pourquoi ? » auto-générée.
 - Page blanche : après écriture, l'app affiche la liste des concepts vus dans la session (auto-comparaison).
-- Un seul utilisateur : inscriptions désactivées côté Supabase + `ALLOWED_EMAIL` vérifié + RLS.
+- Plus de connexion : profils à la Netflix (13/09/2026). L'app est personnelle ; la sécurité repose sur la discrétion de l'adresse et, en option, la clé secrète côté serveur.
 
 ## Méthode de travail
 
@@ -93,9 +93,8 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
 
 ## Notes techniques
 
-- Next.js 16 : la protection des pages se fait dans `src/proxy.ts` (remplace `middleware.ts`).
-- Tant que les clés Supabase sont vides dans `.env.local`, l'app tourne sans connexion (mode découverte du J1).
-- Le compte utilisateur n'est jamais créé depuis l'app (`shouldCreateUser: false`) : il est créé une fois dans le tableau de bord Supabase.
+- Next.js 16 : l'aiguillage se fait dans `src/proxy.ts` (remplace `middleware.ts`) : sans clés → /configuration ; sans cookie de profil → /profils. Aucun appel réseau dans le proxy.
+- Profils (13/09/2026, demande du product owner) : plus d'auth par email. `src/lib/profils.ts` (cookie, CRUD), écran `/profils`. Toute requête sur reviews / answers / sessions / settings / planet_progress / galaxy_progress / progression / xp_events DOIT filtrer ou renseigner `profile_id` (via `profilCourantId()`). Le client serveur (`server.ts`) est un singleton supabase-js avec la clé secrète si présente. Migration `0004_profils.sql` (RLS ouvert à anon : l'app est personnelle).
 - Le navigateur automatisé de Claude envoie Espace/Entrée avec `e.key` vide : tester ces raccourcis en envoyant de vrais `KeyboardEvent` via JavaScript.
 - Tables : `subjects → modules → concepts → cards`, `reviews` (1 ligne par carte déjà vue ; pas de ligne = nouvelle), `answers`, `sessions`. SQL dans `supabase/migrations/0001_schema.sql`, à coller dans l'éditeur SQL de Supabase. Identifiants texte stables (clé de fusion des JSON).
 - « Aujourd'hui » = date dans `CONFIG_REVISION.fuseauHoraire` (Europe/Paris), jamais la date du serveur (Vercel = UTC).
@@ -117,4 +116,4 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
 - **Refonte « Odyssée » (13/09/2026)** : plan en 7 sauts S1→S7 validé.
   - S1 (univers et navigation) : code terminé. Migration `0003_odyssee.sql` (planet_progress, galaxy_progress, profile, xp_events, colonnes phase/level/discovery/galaxy/planet, answers.context). Écrans univers / galaxie / planète / découverte provisoire / phases / soleil / patrouille. Mode découverte sans clés supprimé (redirection vers /configuration). 54 tests. **À vérifier dans le navigateur dès que le product owner a exécuté les 3 SQL.**
   - S2 (découverte : schéma d'écrans, sonde, contenu des 43 planètes) : à faire. S3 direction artistique, S4 motivation, S5 son, S6 adaptation, S7 polissage : à faire.
-- Clés Supabase : en place dans `.env.local` depuis le 13/09/2026 (URL + anon uniquement ; jamais la service role).
+- Clés Supabase : en place dans `.env.local` depuis le 13/09/2026 (URL + anon). Tables 0001→0003 exécutées par le product owner ; **0004_profils.sql à exécuter** pour activer les profils.

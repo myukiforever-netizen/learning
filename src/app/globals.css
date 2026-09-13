@@ -317,3 +317,25 @@ body {
 }
 .detresse { animation: pulse-detresse 1.8s ease-out infinite; transform-origin: center; }
 @media (prefers-reduced-motion: reduce) { .detresse { animation: none; opacity: 0.5; } }
+
+/* ============================================================
+   Profils (« Qui explore aujourd'hui ? »)
+   ============================================================ */
+.tuile-profil {
+  position: relative;
+  width: 112px;
+  height: 112px;
+  border-radius: 16px;
+  border: 3px solid transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 56px;
+  cursor: pointer;
+  transition: transform var(--anim-micro), border-color var(--anim-micro);
+}
+.tuile-profil:hover, .tuile-profil:focus-visible { transform: scale(1.06); border-color: var(--texte); outline: none; }
+.tuile-profil.est-ajout { background: transparent; border: 3px dashed var(--bordure); color: var(--texte-2); font-size: 48px; }
+.tuile-profil.est-gerable { filter: brightness(0.6); }
+.tuile-profil .crayon { position: absolute; font-size: 28px; color: #fff; filter: none; }
+@media (max-width: 480px) { .tuile-profil { width: 92px; height: 92px; font-size: 44px; } }

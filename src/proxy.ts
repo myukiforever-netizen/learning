@@ -1,61 +1,33 @@
-// Protection des pages : sans connexion, tout redirige vers /connexion.
-// (Next.js 16 : ce fichier remplace l'ancien middleware.ts.)
-import { createServerClient } from "@supabase/ssr";
+// Aiguillage avant chaque page : sans clés Supabase → /configuration ; sans profil choisi → /profils.
+// (Next.js 16 : ce fichier remplace l'ancien middleware.ts.) Aucun appel réseau ici : un cookie suffit.
 import { NextResponse, type NextRequest } from "next/server";
 
-export async function proxy(request: NextRequest) {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
-  const cle = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+const COOKIE_PROFIL = "ancre.profil";
 
-  // Supabase pas encore configuré : tout mène à l'écran d'explication.
-  if (!url || !cle) {
-    if (request.nextUrl.pathname.startsWith("/configuration")) return NextResponse.next();
-    const destination = request.nextUrl.clone();
-    destination.pathname = "/configuration";
-    destination.search = "";
-    return NextResponse.redirect(destination);
-  }
-
-  let response = NextResponse.next({ request });
-
-  const supabase = createServerClient(url, cle, {
-    cookies: {
-      getAll() {
-        return request.cookies.getAll();
-      },
-      setAll(cookiesToSet) {
-        cookiesToSet.forEach(({ name, value }) => request.cookies.set(name, value));
-        response = NextResponse.next({ request });
-        cookiesToSet.forEach(({ name, value, options }) => response.cookies.set(name, value, options));
-      },
-    },
-  });
-
-  // Rafraîchit la session si besoin et vérifie l'utilisateur auprès de Supabase.
-  const {
-    data: { user },
-  } = await supabase.auth.getUser();
-
+export function proxy(request: NextRequest) {
   const chemin = request.nextUrl.pathname;
-  const pagePublique = chemin.startsWith("/connexion") || chemin.startsWith("/auth/");
+  const configure = Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
 
-  if (!user && !pagePublique) {
-    const destination = request.nextUrl.clone();
-    destination.pathname = "/connexion";
-    destination.search = "";
-    return NextResponse.redirect(destination);
+  if (!configure) {
+    if (chemin.startsWith("/configuration")) return NextResponse.next();
+    return rediriger(request, "/configuration");
   }
+  if (chemin.startsWith("/configuration")) return rediriger(request, "/");
 
-  if (user && chemin.startsWith("/connexion")) {
-    const destination = request.nextUrl.clone();
-    destination.pathname = "/";
-    destination.search = "";
-    return NextResponse.redirect(destination);
-  }
+  const profilChoisi = Boolean(request.cookies.get(COOKIE_PROFIL)?.value);
+  const pageProfils = chemin.startsWith("/profils");
+  if (!profilChoisi && !pageProfils && !chemin.startsWith("/api/")) return rediriger(request, "/profils");
 
-  return response;
+  return NextResponse.next();
+}
+
+function rediriger(request: NextRequest, chemin: string) {
+  const destination = request.nextUrl.clone();
+  destination.pathname = chemin;
+  destination.search = "";
+  return NextResponse.redirect(destination);
 }
 
 export const config = {
-  matcher: ["/((?!_next/static|_next/image|favicon.ico).*)"],
+  matcher: ["/((?!_next/static|_next/image|icon.svg|favicon.ico).*)"],
 };
