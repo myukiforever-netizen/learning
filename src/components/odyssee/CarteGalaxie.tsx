@@ -116,7 +116,7 @@ export function CarteGalaxie({ galaxie, detresse }: Props) {
             <span className="planete-etat" style={{ color: validee ? "var(--ok)" : courante ? "var(--accent)" : "var(--texte-2)" }}>
               {courante ? "Tu es ici" : LIBELLE_ETAPE[pl.etape]}
               {validee && pl.meilleurScore > 0 ? ` · ${pl.meilleurScore} %` : ""}
-              {signaux > 0 ? ` · ${signaux} signal${signaux > 1 ? "aux" : ""}` : ""}
+              {signaux > 0 ? ` · ${signaux} ${signaux > 1 ? "signaux" : "signal"}` : ""}
             </span>
           </>
         );

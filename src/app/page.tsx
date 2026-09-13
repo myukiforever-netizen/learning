@@ -40,7 +40,7 @@ export default async function PageUnivers() {
         <h1 className="text-2xl font-semibold">{secteur.nom}</h1>
         <p className="texte-2 text-sm">
           {resume.planetesValidees} / {resume.planetesTotal} planètes validées · {resume.galaxiesFranchies} / {secteur.galaxies.length} galaxies
-          franchies{signaux > 0 ? ` · ${signaux} signal${signaux > 1 ? "aux" : ""} de détresse` : ""}
+          franchies{signaux > 0 ? ` · ${signaux} ${signaux > 1 ? "signaux" : "signal"} de détresse` : ""}
         </p>
       </section>
 

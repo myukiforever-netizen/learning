@@ -56,7 +56,7 @@ export default async function PagePlanete({ params }: PageProps<"/planete/[id]">
           </p>
           <p className="texte-2 text-sm">
             {cartes.length} notion{cartes.length > 1 ? "s" : ""}
-            {signaux > 0 ? ` · ${signaux} signal${signaux > 1 ? "aux" : ""} de détresse` : ""}
+            {signaux > 0 ? ` · ${signaux} ${signaux > 1 ? "signaux" : "signal"} de détresse` : ""}
           </p>
         </div>
       </div>
