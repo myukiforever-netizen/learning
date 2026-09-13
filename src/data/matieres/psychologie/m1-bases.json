@@ -1,59 +1,69 @@
 {
   "id": "bases",
-  "name": "1. Les bases : comment juger une « loi » psychologique",
+  "name": "1. Comment savoir si une idée est solide",
   "concepts": [
     {
       "id": "crise-replication",
-      "name": "La crise de la réplication",
+      "name": "Le jour où la psychologie a vérifié ses devoirs",
+      "decouverte": [
+        { "type": "histoire", "titre": "Cent études repassées à l'examen", "paragraphes": [
+          "En 2015, une grande équipe de chercheurs a eu une idée simple et un peu effrayante : reprendre 100 études de psychologie déjà publiées, et les refaire exactement pareil.",
+          "Au départ, 97 de ces 100 études annonçaient un résultat « significatif ». Après avoir été refaites : seulement 36 environ tenaient encore. Et même quand l'effet existait, il était en moyenne deux fois plus petit.",
+          "On a appelé ça la crise de la réplication. Retiens l'idée : un résultat publié une fois n'est pas une preuve. Il faut qu'une autre équipe le retrouve."
+        ] },
+        { "type": "analogie", "titre": "C'est comme un record battu une seule fois, sans caméra", "comme": "Un ami te dit qu'il a couru 100 mètres en 9 secondes, une fois, tout seul, sans chrono officiel. Tu le crois ? Tu voudrais qu'il le refasse devant témoins.", "enVrai": "Une étude, c'est pareil. Tant que personne d'autre n'a retrouvé le résultat en refaisant l'expérience, ce n'est qu'une promesse. La réplication, c'est le chrono officiel de la science." },
+        { "type": "predire", "question": "Dans ce grand test de 2015, quel domaine s'en est le mieux sorti ?", "options": ["La psychologie sociale (influence, persuasion)", "La psychologie cognitive (attention, mémoire)"], "answer": "La psychologie cognitive (attention, mémoire)", "explanation": "Les études sur la mémoire et l'attention tenaient dans plus d'un cas sur deux. La psychologie sociale, celle dont parlent les livres de vente, bien moins. Justement le domaine de ce cours : d'où l'importance de trier." },
+        { "type": "exemple", "titre": "Ce que ça change pour toi", "texte": "Tu lis « une étude prouve que la couleur rouge fait acheter ». Réflexe : c'est une étude, ou dix ? Faite sur 30 personnes ou 3 000 ? Quelqu'un l'a-t-il refaite ? Si la réponse est « une seule, petite, jamais refaite », tu la ranges dans « à vérifier », pas dans « vrai »." }
+      ],
       "cards": [
         {
           "id": "replication-1",
           "type": "flash",
-          "question": "En 2015, une grande équipe a refait 100 études de psychologie publiées. Combien ont donné le même résultat ?",
-          "answer": "Environ 36 %, alors que 97 % des études d'origine annonçaient un résultat significatif.",
-          "explanation": "Un résultat publié une fois n'est pas une preuve. Il faut qu'une autre équipe le retrouve, sans tricher sur les chiffres.",
-          "explanation_more": "Open Science Collaboration, Science, 2015. Les effets retrouvés étaient en moyenne deux fois plus petits que les effets d'origine. C'est ce qu'on appelle la crise de la réplication.",
+          "question": "En 2015, des chercheurs ont refait 100 études de psychologie. Combien ont donné le même résultat ?",
+          "answer": "Environ 36 sur 100, alors que 97 annonçaient un résultat « significatif » au départ.",
+          "explanation": "Un résultat publié une fois n'est pas une preuve. Il faut qu'une autre équipe le retrouve en refaisant l'expérience.",
+          "explanation_more": "Open Science Collaboration, revue Science, 2015. Les effets retrouvés étaient en moyenne deux fois plus petits que les effets annoncés. C'est ce qu'on appelle la crise de la réplication.",
           "retention_goal": "life"
         },
         {
           "id": "replication-2",
           "type": "qcm",
-          "question": "Dans cette réplication de 100 études, quelle taille avaient les effets retrouvés par rapport aux effets d'origine ?",
-          "options": ["Environ la moitié", "À peu près la même", "Plus grands", "Environ un dixième"],
+          "question": "Quand un effet existait quand même dans ces réplications, quelle taille avait-il par rapport à l'annonce d'origine ?",
+          "options": ["Environ la moitié", "À peu près la même", "Plus grand", "Environ un dixième"],
           "options_why": [
             "",
             "Non : même quand l'effet existait, il était bien plus petit qu'annoncé.",
-            "Non : les effets d'origine étaient gonflés, pas sous-estimés.",
+            "Non : les premières études gonflent les effets, elles ne les sous-estiment pas.",
             "Trop pessimiste : la moyenne était d'environ la moitié."
           ],
           "answer": "Environ la moitié",
-          "explanation": "Les premières études exagèrent souvent la taille d'un effet. Une réplication honnête le ramène à sa vraie taille, souvent bien plus petite.",
+          "explanation": "Une première étude exagère souvent. Refaite honnêtement, elle revient à sa vraie taille, souvent bien plus petite.",
           "retention_goal": "1y"
         },
         {
           "id": "replication-3",
           "type": "duel",
-          "question": "Quel domaine de la psychologie se répliquait le mieux dans le projet de 2015 ?",
+          "question": "Quel domaine se répliquait le mieux en 2015 ?",
           "options": ["La psychologie cognitive (attention, mémoire)", "La psychologie sociale"],
           "answer": "La psychologie cognitive (attention, mémoire)",
-          "explanation": "Les études sur l'attention et la mémoire tenaient dans plus de 50 % des cas. La psychologie sociale, celle des livres de vente, bien moins.",
+          "explanation": "Attention et mémoire tenaient dans plus d'un cas sur deux. La psychologie sociale, celle des livres de vente, bien moins.",
           "retention_goal": "1y"
         },
         {
           "id": "replication-4",
           "type": "why",
-          "question": "Pourquoi une étude à petit échantillon avec un résultat spectaculaire doit-elle te rendre méfiant ?",
-          "answer": "Parce qu'avec peu de participants, le hasard produit facilement un gros effet qui n'existe pas. Et plus un résultat est spectaculaire, plus il a de chances d'être une exception publiée parce qu'elle plaisait.",
-          "explanation": "Petit échantillon + effet énorme + jamais répliqué = suspect jusqu'à preuve du contraire.",
-          "explanation_more": "C'est la règle de décision du rapport : si la seule preuve est une étude à petit échantillon publiée avant 2015 environ et jamais répliquée, traite l'effet comme non fiable.",
+          "question": "Pourquoi une petite étude avec un résultat spectaculaire doit-elle te rendre méfiant ?",
+          "answer": "Parce qu'avec peu de participants, le hasard fabrique facilement un gros effet qui n'existe pas. Et plus un résultat est spectaculaire, plus il a de chances d'avoir été publié justement parce qu'il plaisait.",
+          "explanation": "Petite étude + effet énorme + jamais refaite = suspect jusqu'à preuve du contraire.",
+          "explanation_more": "La règle du cours : si la seule preuve est une petite étude d'avant 2015 environ, jamais refaite, traite l'effet comme non fiable.",
           "retention_goal": "life"
         },
         {
           "id": "replication-5",
           "type": "cloze",
-          "question": "Le projet de réplication de 2015 a été publié dans la revue [[Science]] et portait sur [[100]] études.",
-          "answer": "Le projet de réplication de 2015 a été publié dans la revue Science et portait sur 100 études.",
-          "explanation": "Retiens le chiffre rond : 100 études, dont seulement 36 environ se répliquaient.",
+          "question": "Le grand test de 2015 a été publié dans la revue [[Science]] et portait sur [[100]] études.",
+          "answer": "Le grand test de 2015 a été publié dans la revue Science et portait sur 100 études.",
+          "explanation": "Retiens le chiffre rond : 100 études, dont environ 36 seulement tenaient.",
           "retention_goal": "3m"
         }
       ]
@@ -61,46 +71,56 @@
     {
       "id": "bonne-question",
       "name": "La bonne question : pas « vrai ou faux »",
+      "decouverte": [
+        { "type": "histoire", "titre": "La question qui change tout", "paragraphes": [
+          "Quand quelqu'un te dit « c'est prouvé », tu as envie de demander : « c'est vrai ou c'est faux ? ». Mauvaise question.",
+          "La bonne, en trois morceaux : ça change de combien ? dans quelles conditions ? et mesuré sur quoi, une vraie action ou juste une opinion ?",
+          "Un effet peut être réel et minuscule. Réel mais seulement pour les débutants pressés. Réel sur une intention d'achat et invisible sur les achats. Chaque fois, « vrai » serait un mensonge par simplification."
+        ] },
+        { "type": "analogie", "titre": "C'est comme la météo qui annonce « de la pluie »", "comme": "« Il va pleuvoir » ne suffit pas. Trois gouttes ou un déluge ? Sur ta ville ou à 200 km ? Ce matin ou ce soir ? Selon la réponse, tu prends un parapluie ou tu annules la sortie.", "enVrai": "Pour un effet psychologique, c'est pareil. De combien (taille d'effet) ? Où (conditions) ? Sur quoi (un vrai comportement ou une simple intention) ? Sans ces trois réponses, tu ne sais pas quoi faire de l'idée." },
+        { "type": "predire", "question": "Une étude montre qu'une technique augmente « l'envie d'acheter » en laboratoire. Que sait-on de son effet sur les vraies ventes ?", "options": ["Les ventes montent aussi, un peu moins", "Rien : une envie n'est pas un achat", "Les ventes montent autant"], "answer": "Rien : une envie n'est pas un achat", "explanation": "Le lien entre « envie » et « achat » n'a pas été mesuré. Avoir envie coûte zéro ; payer coûte de l'argent. Beaucoup d'effets s'évaporent entre les deux. Seul un test en conditions réelles le dit." },
+        { "type": "exemple", "titre": "Une règle de décision à garder", "texte": "Si la seule preuve d'une idée est une petite étude publiée avant 2015 environ, et que personne ne l'a refaite, traite l'idée comme non fiable. Pas « fausse » : non fiable. Tu peux la tester toi-même si ça coûte peu, mais tu ne l'appliques pas les yeux fermés." }
+      ],
       "cards": [
         {
           "id": "question-1",
           "type": "flash",
-          "question": "Face à une « loi » psychologique, quelles sont les trois vraies questions à poser (au lieu de « c'est vrai ou faux ? ») ?",
-          "answer": "Quelle taille d'effet ? Dans quelles conditions ? Mesuré sur quel comportement réel ?",
-          "explanation": "Un effet peut être réel mais minuscule, ou réel seulement dans un cas précis, ou mesuré sur une intention et pas sur un achat.",
+          "question": "Devant une « loi » psychologique, quelles sont les trois vraies questions à poser, au lieu de « vrai ou faux ? » ?",
+          "answer": "Ça change de combien ? Dans quelles conditions ? Mesuré sur quel comportement réel ?",
+          "explanation": "Un effet peut être réel mais minuscule, ou réel seulement dans un cas précis, ou mesuré sur une envie et pas sur un achat.",
           "retention_goal": "life"
         },
         {
           "id": "question-2",
           "type": "qcm",
-          "question": "Une étude montre qu'une technique augmente « l'intention d'achat » en laboratoire. Que sais-tu de son effet sur les ventes ?",
-          "options": ["Rien : une intention n'est pas un achat", "Les ventes montent aussi, un peu moins", "Les ventes montent autant", "Les ventes montent plus"],
+          "question": "Une étude montre qu'une technique augmente « l'envie d'acheter » en laboratoire. Que sais-tu de son effet sur les ventes ?",
+          "options": ["Rien : une envie n'est pas un achat", "Les ventes montent aussi, un peu moins", "Les ventes montent autant", "Les ventes montent plus"],
           "options_why": [
             "",
-            "Rien ne permet de le dire : le lien intention → achat n'a pas été mesuré.",
-            "Encore moins : l'effet de laboratoire ne se traduit presque jamais mécaniquement.",
-            "Non : c'est l'inverse qui se produit d'habitude."
+            "Rien ne permet de le dire : le lien envie → achat n'a pas été mesuré.",
+            "Encore moins : un effet de laboratoire se traduit rarement tel quel dans la vraie vie.",
+            "Non : c'est plutôt l'inverse qui arrive."
           ],
-          "answer": "Rien : une intention n'est pas un achat",
-          "explanation": "Un effet de laboratoire sur une intention ne dit rien des ventes. Seul un test en conditions réelles le dit.",
+          "answer": "Rien : une envie n'est pas un achat",
+          "explanation": "Un effet de laboratoire sur une envie ne dit rien des ventes. Seul un test en conditions réelles le dit.",
           "retention_goal": "1y"
         },
         {
           "id": "question-3",
           "type": "sort",
-          "question": "Classe chaque affirmation : est-ce un bon ou un mauvais critère pour croire un effet ?",
-          "answer": "Bons critères : réplication indépendante préenregistrée, taille d'effet connue, mesure sur un comportement réel. Mauvais : un seul résultat significatif, un livre à succès, une étude spectaculaire.",
+          "question": "Classe chaque phrase : est-ce une bonne ou une mauvaise raison de croire un effet ?",
+          "answer": "Bonnes raisons : refait par une autre équipe, taille d'effet connue, mesuré sur une vraie action. Mauvaises : un seul résultat « significatif », un livre à succès, une petite étude spectaculaire.",
           "explanation": "« Significatif » veut juste dire « peu probable par hasard dans cette étude ». Ça ne dit ni la taille, ni si ça se reproduit.",
           "data": {
             "mode": "classer",
-            "categories": ["Bon critère", "Mauvais critère"],
+            "categories": ["Bonne raison", "Mauvaise raison"],
             "items": [
-              { "text": "Répliqué par une équipe indépendante", "category": "Bon critère" },
-              { "text": "Un seul résultat « significatif »", "category": "Mauvais critère" },
-              { "text": "Taille d'effet connue", "category": "Bon critère" },
-              { "text": "Cité dans un livre à succès", "category": "Mauvais critère" },
-              { "text": "Mesuré sur un comportement réel", "category": "Bon critère" },
-              { "text": "Résultat spectaculaire, petit échantillon", "category": "Mauvais critère" }
+              { "text": "Refait par une autre équipe, même résultat", "category": "Bonne raison" },
+              { "text": "Un seul résultat « significatif »", "category": "Mauvaise raison" },
+              { "text": "On sait de combien ça change", "category": "Bonne raison" },
+              { "text": "C'est dans un livre à succès", "category": "Mauvaise raison" },
+              { "text": "Mesuré sur de vrais achats", "category": "Bonne raison" },
+              { "text": "Résultat spectaculaire sur 30 personnes", "category": "Mauvaise raison" }
             ]
           },
           "retention_goal": "1y"
@@ -108,17 +128,17 @@
         {
           "id": "question-4",
           "type": "whatif",
-          "question": "Et si tu appliquais la règle « aucun effet unique spectaculaire n'est cru sans réplication » à ta veille marketing, que changerait-il concrètement ?",
-          "answer": "La plupart des « astuces psychologiques » virales deviendraient des hypothèses à tester en A/B, pas des vérités à appliquer. Tu passerais moins de temps à copier des recettes, plus à mesurer.",
-          "explanation": "Le rapport résume : les livres à succès sont des sources d'hypothèses, jamais des preuves.",
+          "question": "Et si tu appliquais la règle « aucun effet spectaculaire n'est cru sans réplication » à tout ce que tu lis sur le marketing, qu'est-ce qui changerait ?",
+          "answer": "La plupart des « astuces » virales deviendraient des idées à tester, pas des vérités à appliquer. Tu passerais moins de temps à copier des recettes, et plus à mesurer.",
+          "explanation": "Le cours résume : les livres à succès donnent des idées à tester, jamais des preuves.",
           "retention_goal": "1y"
         },
         {
           "id": "question-5",
           "type": "cloze",
-          "question": "Règle de décision : si l'unique preuve est une étude à petit échantillon publiée avant environ [[2015]] et jamais répliquée, l'effet est à traiter comme [[non fiable]].",
-          "answer": "Règle de décision : si l'unique preuve est une étude à petit échantillon publiée avant environ 2015 et jamais répliquée, l'effet est à traiter comme non fiable.",
-          "explanation": "2015 est l'année du grand projet de réplication : avant, les pratiques de publication étaient bien moins rigoureuses.",
+          "question": "Règle : si la seule preuve est une petite étude publiée avant environ [[2015]] et jamais refaite, l'effet est à traiter comme [[non fiable]].",
+          "answer": "Règle : si la seule preuve est une petite étude publiée avant environ 2015 et jamais refaite, l'effet est à traiter comme non fiable.",
+          "explanation": "2015, c'est l'année du grand test de réplication : avant, on publiait avec beaucoup moins de rigueur.",
           "retention_goal": "1y"
         }
       ]
@@ -126,50 +146,60 @@
     {
       "id": "familles-influence",
       "name": "Les familles d'influence (ne pas tout mélanger)",
+      "decouverte": [
+        { "type": "histoire", "titre": "« Influence », un mot qui cache huit choses", "paragraphes": [
+          "Convaincre par des arguments. Faire comme les autres. Obéir à un chef. Dire oui parce qu'on a déjà dit oui à un petit truc. Se laisser porter par une case cochée d'avance. Négocier. Manipuler. Menacer.",
+          "Tout ça, les livres appellent ça « influence ». Mais ce sont des mécanismes différents, avec des preuves différentes et des règles différentes.",
+          "Savoir les distinguer, c'est déjà pouvoir se demander : « pour celui-là, précisément, quelle preuve ? »"
+        ] },
+        { "type": "analogie", "titre": "C'est comme les outils d'une boîte à outils", "comme": "Un marteau, un tournevis et une scie servent tous à bricoler. Mais tu ne visses pas avec un marteau. Si quelqu'un te vend « un outil universel qui fait tout », tu te méfies.", "enVrai": "Persuasion, conformité, obéissance, engagement, nudge, négociation, manipulation, coercition : huit outils différents. Une « recette universelle de persuasion » est aussi crédible qu'un marteau-tournevis-scie." },
+        { "type": "predire", "question": "Un site coche d'avance la case « recevoir la newsletter ». Sans changer le prix, sans interdire de décocher. C'est quoi ?", "options": ["De la persuasion : on te convainc", "Un nudge : on change l'environnement du choix", "De la coercition : on t'oblige"], "answer": "Un nudge : on change l'environnement du choix", "explanation": "Rien ne t'est expliqué (pas de persuasion), rien ne t'est interdit (pas de coercition). On a juste changé le point de départ : la case est déjà cochée. C'est un nudge, l'architecture des choix." },
+        { "type": "analogie", "titre": "Manipulation et coercition : la ruse et la force", "comme": "Un pickpocket te distrait pour prendre ton portefeuille : c'est la ruse. Un voleur te le prend en te menaçant : c'est la force. Les deux sont du vol, mais pas de la même famille.", "enVrai": "La manipulation contourne ta réflexion en cachant l'intention (la ruse). La coercition te force par la menace (la force). Ce cours parle surtout des influences « douces » ; la coercition en sort." }
+      ],
       "cards": [
         {
           "id": "familles-1",
           "type": "duel",
-          "question": "« Changer une attitude par un message : arguments, crédibilité, façon de présenter. » C'est de la persuasion ou de la conformité ?",
+          "question": "« Changer ce que pense quelqu'un avec un message : des arguments, une source crédible, une façon de présenter. » C'est de la persuasion ou de la conformité ?",
           "options": ["Persuasion", "Conformité"],
           "answer": "Persuasion",
-          "explanation": "La persuasion passe par le traitement d'un message. La conformité, c'est s'aligner sur ce que font les autres.",
-          "explanation_more": "Le modèle de référence de la persuasion est celui de Petty et Cacioppo : route centrale (on réfléchit aux arguments) ou route périphérique (on se fie à des signaux comme la source).",
+          "explanation": "La persuasion passe par un message. La conformité, c'est faire comme les autres.",
+          "explanation_more": "Le modèle de référence (Petty et Cacioppo) décrit deux chemins : la route centrale (on réfléchit aux arguments) et la route périphérique (on se fie à des signaux comme l'apparence de la source).",
           "retention_goal": "1y"
         },
         {
           "id": "familles-2",
           "type": "duel",
-          "question": "« Un premier petit acte pousse à des actes suivants cohérents. » C'est l'engagement ou l'obéissance ?",
+          "question": "« Un premier petit oui pousse à dire oui ensuite, pour rester cohérent. » C'est l'engagement ou l'obéissance ?",
           "options": ["Engagement", "Obéissance"],
           "answer": "Engagement",
-          "explanation": "L'engagement, c'est l'effet d'un acte initial sur la suite (pied-dans-la-porte). L'obéissance, c'est se soumettre à une autorité.",
+          "explanation": "L'engagement, c'est l'effet d'un premier acte sur la suite. L'obéissance, c'est se soumettre à une autorité.",
           "retention_goal": "1y"
         },
         {
           "id": "familles-3",
           "type": "qcm",
-          "question": "Qu'est-ce qu'un nudge (architecture des choix), au sens strict ?",
+          "question": "Qu'est-ce qu'un nudge (« coup de pouce »), exactement ?",
           "options": [
-            "Changer l'environnement de décision sans interdire d'option ni changer les prix",
+            "Changer l'environnement du choix sans interdire d'option ni changer les prix",
             "Offrir une réduction pour orienter le choix",
             "Interdire la mauvaise option",
             "Convaincre avec de bons arguments"
           ],
           "options_why": [
             "",
-            "Une réduction change les incitations économiques : ce n'est plus un nudge.",
+            "Une réduction change l'argent en jeu : ce n'est plus un nudge.",
             "Interdire, c'est de la contrainte, pas un nudge.",
             "Ça, c'est de la persuasion."
           ],
-          "answer": "Changer l'environnement de décision sans interdire d'option ni changer les prix",
-          "explanation": "Le nudge joue sur les défauts, la friction, ce qui saute aux yeux. Toutes les options restent possibles et au même prix.",
+          "answer": "Changer l'environnement du choix sans interdire d'option ni changer les prix",
+          "explanation": "Le nudge joue sur les cases cochées d'avance, la facilité, ce qui saute aux yeux. Toutes les options restent possibles et au même prix.",
           "retention_goal": "1y"
         },
         {
           "id": "familles-4",
           "type": "duel",
-          "question": "« Influencer en cachant son intention ou en exploitant une faiblesse. » Manipulation ou coercition ?",
+          "question": "« Influencer en cachant son intention ou en profitant d'une faiblesse. » Manipulation ou coercition ?",
           "options": ["Manipulation", "Coercition"],
           "answer": "Manipulation",
           "explanation": "La manipulation contourne la réflexion en douce. La coercition, c'est la menace : elle sort du champ de l'influence « douce ».",
@@ -179,7 +209,7 @@
           "id": "familles-5",
           "type": "sort",
           "question": "Associe chaque situation à sa famille d'influence.",
-          "answer": "Preuve sociale = conformité ; concession qui appelle une concession = négociation/réciprocité ; option cochée par défaut = nudge ; suivre un ordre d'un supérieur = obéissance.",
+          "answer": "« 9 clients sur 10 » = conformité ; case cochée d'avance = nudge ; suivre l'ordre d'un supérieur = obéissance ; une concession en appelle une autre = négociation.",
           "explanation": "Beaucoup de « biais » vendus séparément ne sont que des visages différents de quelques familles simples.",
           "data": {
             "mode": "classer",
@@ -197,27 +227,37 @@
     },
     {
       "id": "quatre-processus",
-      "name": "Les 4 processus derrière les « biais »",
+      "name": "Les 4 moteurs derrière tous les « biais »",
+      "decouverte": [
+        { "type": "histoire", "titre": "Cent biais, quatre moteurs", "paragraphes": [
+          "Ouvre un livre sur les biais : tu en trouves cent, avec des noms savants. Impossible à retenir, et pas la peine.",
+          "Presque tous se ramènent à quatre moteurs : on garde ce qui est déjà en place (l'inertie), on juge par rapport à un point de départ (le point de référence), on économise l'effort de réfléchir, et on suit les autres.",
+          "Quatre moteurs à connaître, et tu comprends la plupart des effets du cours sans apprendre cent noms."
+        ] },
+        { "type": "analogie", "titre": "L'inertie, c'est comme un canapé confortable", "comme": "Tu es bien installé dans le canapé. Se lever demande un effort, même petit. Alors tu restes, même si l'autre fauteuil est peut-être mieux.", "enVrai": "Quand une case est cochée d'avance ou qu'un abonnement se renouvelle tout seul, changer demande un geste. Ce petit effort suffit à ce que la plupart des gens ne le fassent pas. C'est l'inertie." },
+        { "type": "analogie", "titre": "Le point de référence, c'est comme l'eau du bain", "comme": "Sors d'un bain chaud : l'air de la pièce paraît froid. Sors de dehors en hiver : la même pièce paraît chaude. La pièce n'a pas changé ; ton point de départ, si.", "enVrai": "Un prix barré à 100 euros rend 70 euros « pas cher ». Sans le prix barré, 70 euros paraît normal. On ne juge jamais une valeur toute seule, toujours par rapport à un point de référence." },
+        { "type": "predire", "question": "Tu cliques sur le premier résultat d'une recherche sans regarder les autres. Quel moteur est à l'œuvre ?", "options": ["L'inertie", "L'économie d'effort", "La conformité"], "answer": "L'économie d'effort", "explanation": "Lire dix résultats coûte de l'attention. Le cerveau prend le raccourci : le premier fera l'affaire. Ce n'est pas de l'inertie (rien n'était en place) ni de la conformité (tu ne suis personne). C'est l'économie d'effort." }
+      ],
       "cards": [
         {
           "id": "processus-1",
           "type": "flash",
-          "question": "Beaucoup de « biais » à la mode se ramènent à quatre processus de base. Lesquels ?",
-          "answer": "1. L'inertie (on garde ce qui est en place). 2. La sensibilité au point de référence. 3. L'économie d'effort mental. 4. La conformité aux signaux sociaux.",
-          "explanation": "Plutôt que d'apprendre 100 biais, retiens ces 4 moteurs : la plupart des effets en sont des combinaisons.",
+          "question": "Presque tous les « biais » à la mode se ramènent à quatre moteurs de base. Lesquels ?",
+          "answer": "1. L'inertie (on garde ce qui est en place). 2. Le point de référence (on juge par rapport à un point de départ). 3. L'économie d'effort. 4. La conformité (on suit les autres).",
+          "explanation": "Plutôt que d'apprendre cent biais, retiens ces quatre moteurs : la plupart des effets en sont des combinaisons.",
           "retention_goal": "life"
         },
         {
           "id": "processus-2",
           "type": "sort",
-          "question": "Rattache chaque effet à son processus de base.",
-          "answer": "Option par défaut → inertie ; ancrage de prix → point de référence ; on lit le premier résultat → économie d'effort ; avis clients → conformité.",
-          "explanation": "Un même processus explique plusieurs effets. C'est plus économique à retenir, et plus juste.",
+          "question": "Rattache chaque effet à son moteur.",
+          "answer": "Case cochée d'avance → inertie ; prix barré → point de référence ; premier résultat cliqué → économie d'effort ; produit le mieux noté → conformité.",
+          "explanation": "Un même moteur explique plusieurs effets. C'est plus facile à retenir, et plus juste.",
           "data": {
             "mode": "classer",
             "categories": ["Inertie", "Point de référence", "Économie d'effort", "Conformité"],
             "items": [
-              { "text": "On garde l'option cochée par défaut", "category": "Inertie" },
+              { "text": "On garde l'option cochée d'avance", "category": "Inertie" },
               { "text": "Un prix barré rend le prix réel moins cher", "category": "Point de référence" },
               { "text": "On clique le premier résultat", "category": "Économie d'effort" },
               { "text": "On choisit le produit le mieux noté", "category": "Conformité" }
@@ -228,63 +268,73 @@
         {
           "id": "processus-3",
           "type": "why",
-          "question": "Pourquoi ne faut-il pas traiter « la psychologie » comme une théorie unique du comportement ?",
-          "answer": "Parce que ce sont des mécanismes partiels, souvent en tension entre eux : l'inertie pousse à ne rien changer, la conformité pousse à suivre les autres. Selon le contexte, l'un ou l'autre l'emporte.",
-          "explanation": "Une « recette universelle de persuasion » est un signe de charlatanisme : les vrais mécanismes se contredisent selon la situation.",
+          "question": "Pourquoi ne faut-il pas voir « la psychologie » comme une seule grande théorie qui explique tout ?",
+          "answer": "Parce que ce sont des moteurs séparés, souvent en désaccord : l'inertie pousse à ne rien changer, la conformité pousse à suivre les autres. Selon la situation, l'un ou l'autre gagne.",
+          "explanation": "Une « recette universelle de persuasion » est un signal d'arnaque : les vrais moteurs se contredisent selon la situation.",
           "retention_goal": "1y"
         },
         {
           "id": "processus-4",
           "type": "qcm",
-          "question": "Les options par défaut marchent parce qu'elles jouent sur plusieurs processus à la fois. Lequel n'en fait PAS partie ?",
-          "options": ["La peur de rater une promotion", "L'inertie", "L'aversion à l'ambiguïté", "La lecture implicite d'une recommandation"],
+          "question": "Les cases cochées d'avance marchent grâce à plusieurs moteurs à la fois. Lequel n'en fait PAS partie ?",
+          "options": ["La peur de rater une promotion", "L'inertie", "La peur de l'inconnu", "L'impression que c'est le choix conseillé"],
           "options_why": [
             "",
-            "Si : ne rien faire, c'est garder le défaut.",
-            "Si : on préfère ce qui semble déjà décidé.",
-            "Si : le défaut est lu comme « ce qui est conseillé »."
+            "Si : ne rien faire, c'est garder la case cochée.",
+            "Si : on préfère ce qui semble déjà décidé pour nous.",
+            "Si : une case cochée d'avance se lit comme « c'est ce qu'on recommande »."
           ],
           "answer": "La peur de rater une promotion",
-          "explanation": "Un défaut marche par inertie, par aversion à l'ambiguïté et parce qu'on le lit comme une norme recommandée. La rareté n'y est pour rien.",
+          "explanation": "Une case cochée d'avance marche par inertie, par peur de l'inconnu et parce qu'on la lit comme un conseil. La rareté n'y est pour rien.",
           "retention_goal": "1y"
         }
       ]
     },
     {
       "id": "absence-de-preuve",
-      "name": "Absence de preuve ≠ preuve d'absence",
+      "name": "Pas de preuve, ce n'est pas la preuve du contraire",
+      "decouverte": [
+        { "type": "histoire", "titre": "La nuance qui sépare les bons des mauvais sceptiques", "paragraphes": [
+          "Quand une expérience refaite ne retrouve rien, on a envie de crier « c'était faux ! ». Doucement.",
+          "Ne rien trouver, ça veut dire : « on n'a pas de preuve que ça existe ». Ce n'est pas la même chose que « on a la preuve que ça n'existe pas ». L'effet peut subsister, tout petit, dans certains cas.",
+          "Ce cours distingue toujours « exagéré ou non démontré » de « prouvé faux ». C'est une question d'honnêteté : on dit exactement ce qu'on sait, pas plus."
+        ] },
+        { "type": "analogie", "titre": "C'est comme chercher tes clés dans une seule pièce", "comme": "Tu cherches tes clés dans la cuisine, tu ne les trouves pas. Peux-tu dire « mes clés n'existent plus » ? Non : elles ne sont pas dans la cuisine, c'est tout. Peut-être ailleurs, peut-être perdues.", "enVrai": "Une réplication qui échoue, c'est la cuisine fouillée : l'effet n'est pas là où on l'a cherché, dans ces conditions-là. Il peut exister ailleurs, plus petit. On baisse fortement sa confiance, on ne déclare pas « prouvé faux »." },
+        { "type": "predire", "question": "La plupart des études de psychologie ont été faites sur des étudiants occidentaux. Un effet trouvé chez eux marche-t-il forcément partout dans le monde ?", "options": ["Oui, un cerveau est un cerveau", "Non : rien ne le garantit tant qu'on ne l'a pas testé ailleurs"], "answer": "Non : rien ne le garantit tant qu'on ne l'a pas testé ailleurs", "explanation": "C'est la critique « WEIRD » : des échantillons occidentaux, éduqués, industrialisés, riches, démocratiques. Peu d'effets ont été vérifiés solidement dans d'autres cultures. Prudence avant de les appliquer partout." },
+        { "type": "exemple", "titre": "Un effet « effondré » qui subsisterait quand même", "texte": "L'idée que la volonté « s'use » comme une batterie a été refaite dans 36 laboratoires : presque rien. Peut-être reste-t-il un effet minuscule. Est-ce que ça change quelque chose pour toi ? Non : ce qui était promis, c'était un gros effet utilisable. Un effet minuscule ne sert à rien en pratique. C'est cette promesse-là qui est contredite." }
+      ],
       "cards": [
         {
           "id": "absence-1",
           "type": "duel",
-          "question": "Une réplication a échoué. Peut-on dire que l'effet est « prouvé faux » ?",
-          "options": ["Non : « non démontré », c'est différent de « prouvé faux »", "Oui : la réplication tranche"],
-          "answer": "Non : « non démontré », c'est différent de « prouvé faux »",
-          "explanation": "Le rapport distingue « exagéré / non démontré » de « prouvé faux ». Un effet peut subsister à petite échelle sous conditions précises.",
+          "question": "Une expérience refaite n'a rien retrouvé. Peut-on dire que l'effet est « prouvé faux » ?",
+          "options": ["Non : « pas démontré », ce n'est pas « prouvé faux »", "Oui : la réplication tranche"],
+          "answer": "Non : « pas démontré », ce n'est pas « prouvé faux »",
+          "explanation": "Le cours distingue « exagéré ou non démontré » de « prouvé faux ». Un effet peut subsister, tout petit, dans certains cas.",
           "retention_goal": "life"
         },
         {
           "id": "absence-2",
           "type": "flash",
-          "question": "Que signifie la critique « WEIRD » adressée à la psychologie ?",
-          "answer": "Que la plupart des effets ont été testés sur des échantillons occidentaux, éduqués, industrialisés, riches et démocratiques. Rien ne dit qu'ils se généralisent ailleurs.",
-          "explanation": "Peu d'effets ont été testés de façon solide dans d'autres cultures. Prudence avant de les appliquer partout.",
-          "explanation_more": "Henrich et ses collègues ont popularisé l'acronyme WEIRD (Western, Educated, Industrialized, Rich, Democratic).",
+          "question": "Que veut dire la critique « WEIRD » adressée à la psychologie ?",
+          "answer": "Que la plupart des effets ont été testés sur des gens occidentaux, éduqués, industrialisés, riches et démocratiques. Rien ne dit qu'ils marchent pareil ailleurs.",
+          "explanation": "Peu d'effets ont été vérifiés solidement dans d'autres cultures. Prudence avant de les appliquer partout.",
+          "explanation_more": "L'acronyme WEIRD (Western, Educated, Industrialized, Rich, Democratic) a été popularisé par Henrich et ses collègues.",
           "retention_goal": "1y"
         },
         {
           "id": "absence-3",
           "type": "cloze",
-          "question": "Le rapport n'a qualifié aucune idée de fausse sur la seule base d'une [[réplication échouée]] : il distingue « exagéré ou non démontré » de « prouvé faux ».",
-          "answer": "Le rapport n'a qualifié aucune idée de fausse sur la seule base d'une réplication échouée : il distingue « exagéré ou non démontré » de « prouvé faux ».",
-          "explanation": "Une réplication ratée baisse fortement la confiance, mais ne prouve pas l'inexistence de l'effet.",
+          "question": "Le cours n'a déclaré aucune idée fausse sur la seule base d'une [[réplication échouée]] : il distingue « exagéré ou non démontré » de « prouvé faux ».",
+          "answer": "Le cours n'a déclaré aucune idée fausse sur la seule base d'une réplication échouée : il distingue « exagéré ou non démontré » de « prouvé faux ».",
+          "explanation": "Une réplication ratée fait beaucoup baisser la confiance, mais ne prouve pas que l'effet n'existe pas.",
           "retention_goal": "3m"
         },
         {
           "id": "absence-4",
           "type": "whatif",
-          "question": "Et si un effet « effondré » (comme l'ego depletion) subsistait quand même à petite échelle, cela changerait-il quelque chose pour toi en pratique ?",
-          "answer": "Presque rien : un effet minuscule autour de zéro n'est pas actionnable. Ce qui était promis, c'était un effet robuste et utilisable ; c'est cette promesse qui est infirmée.",
+          "question": "Et si un effet « effondré » (comme la volonté qui s'use) existait quand même, tout petit, cela changerait-il quelque chose pour toi en pratique ?",
+          "answer": "Presque rien : un effet minuscule ne sert à rien en pratique. Ce qui était promis, c'était un gros effet utilisable ; c'est cette promesse-là qui est contredite.",
           "explanation": "La question pratique n'est pas « existe-t-il ? » mais « est-il assez gros et fiable pour agir dessus ? ».",
           "retention_goal": "1y"
         }

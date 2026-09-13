@@ -21,10 +21,52 @@ export interface CarteJson {
   niveau?: 1 | 2 | 3;
 }
 
-/** Odyssée : un écran de découverte (lecteur du jalon S2 ; accepté dès maintenant). */
-export interface EcranDecouverte {
-  type: "histoire" | "analogie" | "exemple" | "predire" | "schema" | "experience";
-  [cle: string]: unknown;
+/**
+ * Odyssée : un écran de découverte. Une planète en enchaîne 3 à 8, un seul à la fois.
+ * - histoire  : un titre et 1 à 3 courts paragraphes (une idée par paragraphe).
+ * - analogie  : « c'est comme… » (image simple) puis « en vrai… » (la notion).
+ * - exemple   : un cas concret en quelques lignes.
+ * - predire   : une question, 2 à 4 choix, l'utilisateur devine AVANT d'apprendre, puis la réponse et le pourquoi.
+ */
+export type EcranDecouverte =
+  | { type: "histoire"; titre: string; paragraphes: string[] }
+  | { type: "analogie"; titre: string; comme: string; enVrai: string }
+  | { type: "exemple"; titre: string; texte: string }
+  | { type: "predire"; question: string; options: string[]; answer: string; explanation: string };
+
+export function validerDecouverte(ecrans: unknown, ou: string): string[] {
+  const erreurs: string[] = [];
+  if (!Array.isArray(ecrans)) return [`${ou} : « decouverte » doit être une liste d'écrans.`];
+  if (ecrans.length < 3 || ecrans.length > 8) erreurs.push(`${ou} : « decouverte » doit contenir 3 à 8 écrans (${ecrans.length} trouvés).`);
+  ecrans.forEach((e, i) => {
+    const ouE = `${ou}, écran de découverte ${i + 1}`;
+    const ecran = e as Partial<Record<string, unknown>>;
+    const texte = (v: unknown) => typeof v === "string" && v.trim() !== "";
+    switch (ecran.type) {
+      case "histoire":
+        if (!texte(ecran.titre) || !Array.isArray(ecran.paragraphes) || ecran.paragraphes.length < 1 || ecran.paragraphes.length > 3 || !ecran.paragraphes.every(texte)) {
+          erreurs.push(`${ouE} : une histoire a un « titre » et 1 à 3 « paragraphes ».`);
+        }
+        break;
+      case "analogie":
+        if (!texte(ecran.titre) || !texte(ecran.comme) || !texte(ecran.enVrai)) erreurs.push(`${ouE} : une analogie a « titre », « comme » et « enVrai ».`);
+        break;
+      case "exemple":
+        if (!texte(ecran.titre) || !texte(ecran.texte)) erreurs.push(`${ouE} : un exemple a « titre » et « texte ».`);
+        break;
+      case "predire":
+        if (!texte(ecran.question) || !Array.isArray(ecran.options) || ecran.options.length < 2 || ecran.options.length > 4 || !ecran.options.every(texte)) {
+          erreurs.push(`${ouE} : une prédiction a « question » et 2 à 4 « options ».`);
+        } else if (!texte(ecran.answer) || !(ecran.options as string[]).includes(ecran.answer as string)) {
+          erreurs.push(`${ouE} : « answer » doit être l'une des « options ».`);
+        }
+        if (!texte(ecran.explanation)) erreurs.push(`${ouE} : « explanation » manquante.`);
+        break;
+      default:
+        erreurs.push(`${ouE} : « type » doit être histoire, analogie, exemple ou predire.`);
+    }
+  });
+  return erreurs;
 }
 
 export interface ConceptJson {
@@ -106,6 +148,7 @@ export function validerMatiere(json: unknown): string[] {
       else if (idsConcepts.has(concept.id)) erreurs.push(`${ouC} : id « ${concept.id} » en double.`);
       else idsConcepts.add(concept.id);
       if (typeof concept.name !== "string" || concept.name.trim() === "") erreurs.push(`${ouC} : « name » manquant.`);
+      if (concept.decouverte !== undefined) erreurs.push(...validerDecouverte(concept.decouverte, ouC));
       if (!Array.isArray(concept.cards) || concept.cards.length === 0) {
         erreurs.push(`${ouC} : « cards » doit être une liste non vide.`);
         return;

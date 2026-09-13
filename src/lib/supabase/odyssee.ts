@@ -55,7 +55,7 @@ async function structureSecteur(): Promise<{ structure: StructureSecteur; cartes
     supabase.from("modules").select("id, name, position").eq("subject_id", subject.id).order("position"),
     supabase
       .from("concepts")
-      .select("id, name, position, module_id, modules!inner(subject_id)")
+      .select("id, name, position, module_id, discovery, modules!inner(subject_id)")
       .eq("modules.subject_id", subject.id)
       .order("position"),
     chargerCartesEtRevisions(),
@@ -66,7 +66,7 @@ async function structureSecteur(): Promise<{ structure: StructureSecteur; cartes
   const nbCartes = new Map<string, number>();
   for (const c of cartes) nbCartes.set(c.carte.concept_id, (nbCartes.get(c.carte.concept_id) ?? 0) + 1);
 
-  const concepts = (conceptsRes.data ?? []) as unknown as { id: string; name: string; module_id: string }[];
+  const concepts = (conceptsRes.data ?? []) as unknown as { id: string; name: string; module_id: string; discovery: unknown[] | null }[];
   return {
     structure: {
       id: subject.id,
@@ -74,7 +74,7 @@ async function structureSecteur(): Promise<{ structure: StructureSecteur; cartes
       galaxies: (modulesRes.data ?? []).map((m) => ({
         id: m.id,
         nom: m.name,
-        planetes: concepts.filter((c) => c.module_id === m.id).map((c) => ({ id: c.id, nom: c.name, nbCartes: nbCartes.get(c.id) ?? 0 })),
+        planetes: concepts.filter((c) => c.module_id === m.id).map((c) => ({ id: c.id, nom: c.name, nbCartes: nbCartes.get(c.id) ?? 0, decouverte: c.discovery })),
       })),
     },
     cartes,

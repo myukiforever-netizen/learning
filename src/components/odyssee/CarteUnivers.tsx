@@ -10,19 +10,34 @@ interface Props {
 
 /** La carte du secteur : ses galaxies, en spirales SVG, sur une route qui serpente. */
 export function CarteUnivers({ secteur, detresse }: Props) {
+  return (
+    <div className="panneau p-2">
+      <div className="sm:hidden">
+        <Carte secteur={secteur} detresse={detresse} colonnes={1} />
+      </div>
+      <div className="hidden sm:block">
+        <Carte secteur={secteur} detresse={detresse} colonnes={2} />
+      </div>
+    </div>
+  );
+}
+
+function Carte({ secteur, detresse, colonnes }: Props & { colonnes: 1 | 2 }) {
   const n = secteur.galaxies.length;
-  const largeur = 640;
-  const hauteurLigne = 170;
-  const hauteur = Math.max(1, Math.ceil(n / 2)) * hauteurLigne + 40;
+  const largeur = colonnes === 1 ? 360 : 640;
+  const hauteurLigne = colonnes === 1 ? 150 : 170;
+  const positions = secteur.galaxies.map((_, i) =>
+    colonnes === 1
+      ? { cx: 180, cy: 80 + i * hauteurLigne }
+      : { cx: i % 2 === 0 ? 170 : 470, cy: 90 + Math.floor(i / 2) * hauteurLigne },
+  );
+  const hauteur = (positions[n - 1]?.cy ?? 0) + 110;
 
   return (
-    <div className="panneau p-2 overflow-x-auto">
+    <>
       <svg viewBox={`0 0 ${largeur} ${hauteur}`} className="w-full h-auto" role="list" aria-label="Galaxies du secteur">
         {secteur.galaxies.map((g, i) => {
-          const rangee = Math.floor(i / 2);
-          const gauche = i % 2 === 0;
-          const cx = gauche ? 170 : 470;
-          const cy = 90 + rangee * hauteurLigne;
+          const { cx, cy } = positions[i];
           const a = apparenceGalaxie(g.id);
           const p = palette(a.teinte);
           const verrouillee = g.statut === "verrouillee";
@@ -48,8 +63,7 @@ export function CarteUnivers({ secteur, detresse }: Props) {
             </g>
           );
           if (i < n - 1) {
-            const cx2 = (i + 1) % 2 === 0 ? 170 : 470;
-            const cy2 = 90 + Math.floor((i + 1) / 2) * hauteurLigne;
+            const { cx: cx2, cy: cy2 } = positions[i + 1];
             return (
               <g key={g.id}>
                 <path d={`M ${cx} ${cy} C ${cx} ${cy + 80}, ${cx2} ${cy2 - 80}, ${cx2} ${cy2}`} fill="none" stroke="var(--bordure)" strokeWidth="2" strokeDasharray="4 8" />
@@ -60,6 +74,6 @@ export function CarteUnivers({ secteur, detresse }: Props) {
           return <g key={g.id}>{verrouillee ? contenu : <Link href={routes.galaxie(g.id)}>{contenu}</Link>}</g>;
         })}
       </svg>
-    </div>
+    </>
   );
 }

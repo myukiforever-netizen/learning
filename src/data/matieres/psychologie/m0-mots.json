@@ -1,0 +1,687 @@
+{
+  "id": "mots",
+  "name": "0. Les mots de base, expliqués simplement",
+  "concepts": [
+    {
+      "id": "psychologie",
+      "name": "C'est quoi, la psychologie ?",
+      "cards": [
+        {
+          "id": "psy-1",
+          "type": "flash",
+          "question": "C'est quoi, la psychologie ?",
+          "answer": "La science qui étudie comment les gens pensent, ressentent et se comportent. Pas des devinettes : des observations et des expériences.",
+          "explanation": "Un psychologue chercheur ne « lit » pas dans les têtes. Il mesure ce que font vraiment les gens, dans des situations précises.",
+          "explanation_more": "Le mot vient du grec : « psukhê » (l'esprit) et « logos » (l'étude). Il existe des psychologues qui soignent (thérapeutes) et des psychologues qui font des recherches. Ce cours parle surtout des recherches.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "psy-2",
+          "type": "flash",
+          "question": "Que veut dire « influence » dans ce cours ?",
+          "answer": "Tout ce qui peut changer ce que quelqu'un pense ou fait, sans le forcer : un message, un cadeau, un exemple, une case cochée d'avance.",
+          "explanation": "Influencer n'est pas obliger. Si on te force, ce n'est plus de l'influence, c'est de la contrainte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "psy-3",
+          "type": "duel",
+          "question": "« Faire connaître un produit et donner envie de l'acheter. » C'est le marketing ou la vente ?",
+          "options": [
+            "Le marketing",
+            "La vente"
+          ],
+          "answer": "Le marketing",
+          "explanation": "Le marketing prépare le terrain (publicité, prix, image). La vente, c'est le moment où quelqu'un dit oui et paie.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "psy-4",
+          "type": "qcm",
+          "question": "Pourquoi les vendeurs et les publicitaires s'intéressent-ils tant à la psychologie ?",
+          "options": [
+            "Parce qu'ils veulent savoir ce qui fait dire « oui » aux gens",
+            "Parce que c'est obligatoire par la loi",
+            "Parce que la psychologie rend les produits meilleurs",
+            "Parce que les psychologues vendent des produits"
+          ],
+          "options_why": [
+            "",
+            "Aucune loi n'oblige à ça.",
+            "La psychologie ne change pas le produit, elle change la façon de le présenter.",
+            "Les psychologues chercheurs ne vendent rien : ce sont les vendeurs qui utilisent leurs idées."
+          ],
+          "answer": "Parce qu'ils veulent savoir ce qui fait dire « oui » aux gens",
+          "explanation": "Si on sait ce qui pousse quelqu'un à acheter, on peut essayer de le déclencher. Le problème : beaucoup de « trucs » vendus aux marketeurs ne marchent pas vraiment.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "psy-5",
+          "type": "cloze",
+          "question": "La psychologie est la [[science]] qui étudie comment les gens pensent, ressentent et se [[comportent]].",
+          "answer": "La psychologie est la science qui étudie comment les gens pensent, ressentent et se comportent.",
+          "explanation": "Trois choses : ce qu'on pense, ce qu'on ressent, ce qu'on fait.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "psy-6",
+          "type": "why",
+          "question": "Pourquoi ce cours dit-il que beaucoup de « lois psychologiques » vendues aux marketeurs sont douteuses ?",
+          "answer": "Parce que quand des chercheurs ont refait les expériences, beaucoup n'ont pas donné le même résultat. Une idée qui marche une fois dans un laboratoire ne marche pas forcément dans la vraie vie.",
+          "explanation": "Le cours ne dit pas « tout est faux ». Il dit : vérifie, et demande combien ça change vraiment.",
+          "retention_goal": "life"
+        }
+      ],
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Pourquoi tu as acheté ce truc dont tu n'avais pas besoin ?",
+          "paragraphes": [
+            "Un jour, tu entres dans un magasin pour un seul article. Tu ressors avec trois. Personne ne t'a forcé. Que s'est-il passé ?",
+            "Des gens ont réfléchi à l'endroit où poser les produits, à la couleur des étiquettes, à la petite phrase « il n'en reste que 2 ». C'est ça, l'influence.",
+            "La psychologie, c'est la science qui étudie comment on pense, ce qu'on ressent, et ce qu'on fait vraiment. Les vendeurs adorent s'en servir. Ce cours t'apprend à voir quand ça marche, et quand c'est du vent."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La psychologie, c'est comme la météo",
+          "comme": "La météo n'annonce pas ce que TU feras demain. Elle dit : « avec ce ciel, il y a 80 % de chances de pluie ». Elle observe des milliers de jours pour trouver des habitudes.",
+          "enVrai": "La psychologie ne lit pas dans ta tête. Elle observe des milliers de personnes et repère des tendances : « dans cette situation, la plupart des gens font ça ». Ce sont des probabilités, jamais des certitudes."
+        },
+        {
+          "type": "analogie",
+          "titre": "Influencer, c'est comme baisser le volume, pas couper le son",
+          "comme": "Si un ami te dit « viens, ça va être bien », il t'influence. Si on t'attache à une chaise, ce n'est plus de l'influence, c'est de la force.",
+          "enVrai": "Dans ce cours, influencer = changer un peu ce que quelqu'un pense ou fait, en douceur : par un message, un exemple, une case cochée d'avance. Tu restes libre de dire non. Sinon, on parle de contrainte."
+        },
+        {
+          "type": "predire",
+          "question": "À ton avis, sur toutes les « astuces psychologiques » vendues aux marketeurs, combien marchent vraiment quand on les teste sérieusement ?",
+          "options": [
+            "Presque toutes",
+            "Environ la moitié",
+            "Une petite partie, et souvent moins fort que promis"
+          ],
+          "answer": "Une petite partie, et souvent moins fort que promis",
+          "explanation": "Quand des chercheurs ont refait les expériences célèbres, beaucoup n'ont pas donné le même résultat. Et celles qui tiennent marchent moins fort qu'annoncé, ou seulement dans certains cas. C'est tout le sujet de ce cours."
+        },
+        {
+          "type": "exemple",
+          "titre": "Marketing ou vente ?",
+          "texte": "Une marque de baskets fait une pub avec un champion, choisit un prix, met les chaussures en vitrine : c'est du marketing (préparer le terrain). Puis un vendeur te parle en magasin et tu passes à la caisse : c'est la vente (le moment du oui). Les deux utilisent la psychologie."
+        }
+      ]
+    },
+    {
+      "id": "preuve",
+      "name": "C'est quoi, une preuve ?",
+      "cards": [
+        {
+          "id": "preuve-1",
+          "type": "flash",
+          "question": "C'est quoi, une étude scientifique ?",
+          "answer": "Un test organisé pour répondre à une question, avec des règles écrites à l'avance, des mesures, et des résultats que d'autres peuvent vérifier.",
+          "explanation": "La différence avec une simple opinion : on mesure, on écrit tout, et quelqu'un d'autre peut refaire pareil.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "preuve-2",
+          "type": "flash",
+          "question": "C'est quoi, une expérience (au sens scientifique) ?",
+          "answer": "Une étude où l'on change UNE chose exprès (par exemple la couleur d'un bouton) pour voir si ça change le résultat, en comparant avec un groupe où l'on n'a rien changé.",
+          "explanation": "Sans comparaison, impossible de savoir si c'est ta modification qui a agi, ou autre chose.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "preuve-3",
+          "type": "flash",
+          "question": "C'est quoi, un groupe contrôle (ou groupe témoin) ?",
+          "answer": "Le groupe de personnes à qui l'on ne fait rien de spécial, pour comparer avec celui à qui l'on fait quelque chose.",
+          "explanation": "Analogie : pour savoir si un engrais fait pousser les plantes, il faut aussi des plantes SANS engrais, à côté, dans le même jardin.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "preuve-4",
+          "type": "qcm",
+          "question": "Pourquoi tire-t-on au sort qui va dans le groupe « avec » et qui va dans le groupe « sans » ?",
+          "options": [
+            "Pour que les deux groupes se ressemblent, et que la seule différence soit ce qu'on teste",
+            "Pour que ce soit plus amusant",
+            "Pour aller plus vite",
+            "Parce que les chercheurs n'ont pas le droit de choisir"
+          ],
+          "options_why": [
+            "",
+            "Le hasard n'est pas là pour le plaisir.",
+            "Ça ne va pas plus vite.",
+            "Ils pourraient choisir, mais alors ils choisiraient sans le vouloir des gens différents dans chaque groupe."
+          ],
+          "answer": "Pour que les deux groupes se ressemblent, et que la seule différence soit ce qu'on teste",
+          "explanation": "Si tu mets les gens motivés d'un côté et les autres de l'autre, tu ne sais plus si c'est ton test ou la motivation qui a agi. Le tirage au sort mélange tout.",
+          "explanation_more": "On appelle ça « randomiser » (random = hasard en anglais). Un test avec tirage au sort et groupe témoin s'appelle un essai randomisé, ou RCT. C'est la preuve la plus solide qui existe.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "preuve-5",
+          "type": "duel",
+          "question": "« Mon cousin a mis un compteur d'urgence sur son site et il a vendu plus. » C'est une anecdote ou une étude ?",
+          "options": [
+            "Une anecdote",
+            "Une étude"
+          ],
+          "answer": "Une anecdote",
+          "explanation": "Une anecdote, c'est une histoire vécue par une personne. Elle peut être vraie, mais elle ne prouve rien : peut-être qu'il aurait vendu plus de toute façon.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "preuve-6",
+          "type": "cloze",
+          "question": "Dans une expérience, on compare un groupe à qui l'on fait quelque chose avec un groupe [[contrôle|témoin]] à qui l'on ne fait rien de spécial.",
+          "answer": "Dans une expérience, on compare un groupe à qui l'on fait quelque chose avec un groupe contrôle (ou témoin) à qui l'on ne fait rien de spécial.",
+          "explanation": "Pas de groupe contrôle, pas de preuve.",
+          "retention_goal": "3m"
+        }
+      ],
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le problème avec « ça a marché pour moi »",
+          "paragraphes": [
+            "Ton cousin met un compteur « plus que 3 en stock » sur son site. Le mois suivant, il vend plus. Il en est sûr : c'est le compteur.",
+            "Mais ce mois-là, c'était Noël. Et il avait aussi baissé ses prix. Et un influenceur avait parlé de lui. Alors, c'était le compteur ?",
+            "Une preuve, ce n'est pas une histoire qui finit bien. C'est une comparaison organisée pour que la SEULE différence soit ce qu'on teste."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le groupe contrôle, c'est comme les deux plantes sur le rebord de la fenêtre",
+          "comme": "Tu veux savoir si ton engrais marche. Tu mets deux plantes identiques côte à côte, même pot, même lumière, même eau. Une seule reçoit l'engrais. Si elle pousse plus, c'est l'engrais. Sans la deuxième plante, tu ne saurais jamais si c'est l'engrais ou le soleil.",
+          "enVrai": "La plante sans engrais, c'est le groupe contrôle (ou témoin). Dans une étude, c'est le groupe à qui l'on ne fait rien de spécial. Sans lui, on ne peut rien conclure."
+        },
+        {
+          "type": "analogie",
+          "titre": "Tirer au sort, c'est comme mélanger les cartes avant de distribuer",
+          "comme": "Si tu distribues les cartes sans mélanger, un joueur reçoit toutes les bonnes. La partie est faussée avant de commencer.",
+          "enVrai": "Si les chercheurs choisissent eux-mêmes qui va dans quel groupe, ils mettent sans le vouloir les gens motivés d'un côté. Le tirage au sort mélange tout : les deux groupes se ressemblent, et la seule différence, c'est le test."
+        },
+        {
+          "type": "predire",
+          "question": "Deux groupes de clients. Le groupe A voit une nouvelle pub et achète plus que le groupe B qui ne la voit pas. Mais le groupe A, ce sont les gens qui ont ouvert l'appli ce jour-là. Peut-on dire que la pub a marché ?",
+          "options": [
+            "Oui, A a acheté plus",
+            "Non : les gens qui ouvrent l'appli étaient déjà plus intéressés",
+            "On ne peut jamais rien dire"
+          ],
+          "answer": "Non : les gens qui ouvrent l'appli étaient déjà plus intéressés",
+          "explanation": "Les groupes ne se ressemblaient pas au départ : A contient des gens déjà chauds. Il fallait tirer au sort qui voit la pub. Ce piège précis fait croire à des effets publicitaires qui n'existent pas."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une vraie expérience, en trois lignes",
+          "texte": "Un site montre au hasard à la moitié des visiteurs un bouton bleu, et à l'autre moitié un bouton rouge, pendant un mois. À la fin, il compte les achats de chaque côté. Même période, mêmes gens (mélangés au hasard), une seule différence : la couleur. Ça, c'est une preuve."
+        }
+      ]
+    },
+    {
+      "id": "chiffres",
+      "name": "Les mots des chiffres",
+      "cards": [
+        {
+          "id": "chiffres-1",
+          "type": "flash",
+          "question": "C'est quoi, un échantillon ?",
+          "answer": "Le groupe de personnes qui participent à une étude. Petit échantillon = 20 personnes. Grand échantillon = des milliers.",
+          "explanation": "Plus l'échantillon est petit, plus le hasard peut fausser le résultat. Comme lancer une pièce 4 fois : tu peux avoir 4 fois pile sans que la pièce soit truquée.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "chiffres-2",
+          "type": "flash",
+          "question": "C'est quoi, la taille d'effet ?",
+          "answer": "De combien ça change. Pas « est-ce que ça marche ? » mais « ça marche de combien ? ». Un effet peut être réel et minuscule.",
+          "explanation": "Un médicament qui fait perdre 100 grammes existe peut-être, mais il ne sert à rien. Même chose pour une astuce de vente.",
+          "explanation_more": "Les chercheurs notent souvent la taille d'effet avec la lettre d : d = 0,06, c'est presque rien ; d = 0,5, c'est moyen ; d = 0,8, c'est gros. Tu verras ces lettres dans les autres galaxies.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "chiffres-3",
+          "type": "flash",
+          "question": "Que veut dire « significatif » dans une étude ?",
+          "answer": "Que le résultat aurait été peu probable si c'était juste le hasard. Ça ne veut PAS dire « grand » ni « important ».",
+          "explanation": "Piège de vocabulaire : dans la vie, significatif veut dire important. En science, ça veut juste dire « probablement pas dû au hasard ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "chiffres-4",
+          "type": "flash",
+          "question": "C'est quoi, une méta-analyse ?",
+          "answer": "Une étude qui rassemble toutes les études faites sur une question et calcule le résultat moyen.",
+          "explanation": "Une seule étude peut se tromper. Cinquante études mises ensemble, c'est beaucoup plus fiable.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "chiffres-5",
+          "type": "flash",
+          "question": "C'est quoi, une réplication ?",
+          "answer": "Refaire une étude, de préférence par une autre équipe, pour voir si on trouve la même chose.",
+          "explanation": "Si personne n'arrive à retrouver un résultat, il y a de fortes chances qu'il n'ait jamais été vrai.",
+          "explanation_more": "« Préenregistrée » veut dire que l'équipe a écrit à l'avance, publiquement, comment elle allait faire et ce qu'elle allait mesurer. Impossible ensuite de changer les règles pour que ça marche.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "chiffres-6",
+          "type": "sort",
+          "question": "Relie chaque mot à sa définition simple.",
+          "answer": "Échantillon = les gens qui participent ; taille d'effet = de combien ça change ; significatif = peu probable par hasard ; méta-analyse = toutes les études ensemble ; réplication = refaire l'étude.",
+          "explanation": "Cinq mots qui reviennent partout dans ce cours. Une fois qu'ils sont clairs, tout le reste devient lisible.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Les gens qui participent",
+              "De combien ça change",
+              "Peu probable par hasard",
+              "Refaire l'étude"
+            ],
+            "items": [
+              {
+                "text": "Échantillon",
+                "category": "Les gens qui participent"
+              },
+              {
+                "text": "Taille d'effet",
+                "category": "De combien ça change"
+              },
+              {
+                "text": "Significatif",
+                "category": "Peu probable par hasard"
+              },
+              {
+                "text": "Réplication",
+                "category": "Refaire l'étude"
+              }
+            ]
+          },
+          "retention_goal": "1y"
+        }
+      ],
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Un résultat « significatif » qui ne sert à rien",
+          "paragraphes": [
+            "Imagine un régime testé sur 10 000 personnes. Résultat : les gens perdent en moyenne 100 grammes de plus. Avec autant de participants, ce résultat est « significatif ».",
+            "Mais 100 grammes, c'est le poids d'un yaourt. Personne ne veut de ce régime.",
+            "C'est la leçon la plus importante des chiffres : « significatif » ne veut pas dire « grand ». Il faut toujours demander : de combien ?"
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La taille d'effet, c'est comme la note d'un médicament",
+          "comme": "Deux médicaments contre le mal de tête. Le premier le fait passer en 5 minutes, le second en 4 minutes 55. Les deux « marchent ». Mais un seul vaut la peine.",
+          "enVrai": "La taille d'effet, c'est « de combien ça change ». Les chercheurs la notent souvent avec la lettre d. Vers 0,1 : presque rien. Vers 0,5 : moyen. Vers 0,8 : gros. Une astuce de vente avec d = 0,06 existe peut-être, mais elle ne te fera rien gagner."
+        },
+        {
+          "type": "analogie",
+          "titre": "Un petit échantillon, c'est comme lancer une pièce 4 fois",
+          "comme": "Lance une pièce 4 fois : tu peux tomber 4 fois sur pile sans que la pièce soit truquée. Lance-la 4 000 fois : tu tomberas tout près de la moitié. Le hasard se calme avec le nombre.",
+          "enVrai": "L'échantillon, c'est le nombre de personnes dans une étude. Avec 20 personnes, le hasard peut fabriquer un gros effet qui n'existe pas. Avec 3 000, beaucoup moins. D'où la règle : méfie-toi des petites études spectaculaires."
+        },
+        {
+          "type": "analogie",
+          "titre": "La méta-analyse, c'est comme demander à toute la classe plutôt qu'à un seul élève",
+          "comme": "Si tu demandes à un seul élève la longueur du couloir, il peut se tromper. Si tu prends la moyenne des réponses de toute la classe, tu tombes très près de la vérité.",
+          "enVrai": "Une méta-analyse rassemble toutes les études faites sur une question et calcule leur résultat moyen. C'est bien plus fiable qu'une seule étude, même célèbre. Une réplication, c'est un autre élève qui refait la mesure pour vérifier."
+        },
+        {
+          "type": "predire",
+          "question": "Une étude sur 40 personnes trouve un effet énorme. Une autre, sur 3 000 personnes, trouve presque rien. Laquelle crois-tu ?",
+          "options": [
+            "La première : l'effet est énorme",
+            "La seconde : avec 3 000 personnes, le hasard pèse beaucoup moins",
+            "Les deux, on fait la moyenne"
+          ],
+          "answer": "La seconde : avec 3 000 personnes, le hasard pèse beaucoup moins",
+          "explanation": "Avec 40 personnes, le hasard peut créer un gros effet qui n'existe pas (comme 4 piles de suite). Avec 3 000, beaucoup moins. Faire la moyenne des deux serait une erreur : elles ne pèsent pas pareil."
+        }
+      ]
+    },
+    {
+      "id": "statuts",
+      "name": "Vrai, faux, ou ça dépend",
+      "cards": [
+        {
+          "id": "statut-1",
+          "type": "flash",
+          "question": "Dans ce cours, que veut dire « soutenu » pour une idée ?",
+          "answer": "Qu'il y a de bonnes preuves qu'elle est vraie : plusieurs études, refaites par d'autres, avec un effet mesurable.",
+          "explanation": "Soutenu ne veut pas dire « vrai à 100 % partout ». Ça veut dire : on peut s'appuyer dessus.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "statut-2",
+          "type": "flash",
+          "question": "Que veut dire « contredit » ?",
+          "answer": "Que les meilleures preuves disent le contraire de l'idée. Quand on a refait les expériences sérieusement, l'effet a disparu.",
+          "explanation": "Exemple : l'idée que la volonté « s'use » comme une batterie. Refaite dans 36 laboratoires : presque rien.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "statut-3",
+          "type": "flash",
+          "question": "Que veut dire « non étayé » ?",
+          "answer": "Qu'il n'y a pas de preuve sérieuse. Pas forcément prouvé faux, mais rien de solide pour y croire.",
+          "explanation": "« Étayer », c'est soutenir avec un appui. Non étayé = sans appui.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "statut-4",
+          "type": "flash",
+          "question": "Que veut dire « contextuel » (ou « ça dépend ») ?",
+          "answer": "Que l'effet existe, mais seulement dans certaines situations : avec de gros enjeux, ou des débutants, ou quand on est pressé.",
+          "explanation": "Beaucoup d'idées de ce cours sont là : ni vraies partout, ni fausses. Il faut connaître les conditions.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "statut-5",
+          "type": "flash",
+          "question": "Que veut dire « controversé » ?",
+          "answer": "Que les chercheurs ne sont pas d'accord entre eux, et que les preuves vont dans les deux sens.",
+          "explanation": "Quand c'est controversé, la bonne réponse est : « on ne sait pas encore ». Pas : « c'est prouvé ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "statut-6",
+          "type": "sort",
+          "question": "Classe chaque phrase selon le statut qu'elle décrit.",
+          "answer": "Beaucoup de bonnes études d'accord = soutenu. Les meilleures études disent le contraire = contredit. Aucune preuve sérieuse = non étayé. Ça marche seulement dans certains cas = contextuel.",
+          "explanation": "Ces quatre étiquettes sont celles du cours. Apprends à les reconnaître : elles disent quoi faire de chaque idée.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Soutenu",
+              "Contredit",
+              "Non étayé",
+              "Contextuel"
+            ],
+            "items": [
+              {
+                "text": "Beaucoup de bonnes études, toutes d'accord",
+                "category": "Soutenu"
+              },
+              {
+                "text": "Refaite sérieusement, l'effet a disparu",
+                "category": "Contredit"
+              },
+              {
+                "text": "Aucune étude sérieuse ne l'a testée",
+                "category": "Non étayé"
+              },
+              {
+                "text": "Ça marche avec de gros enjeux, pas avec des petits",
+                "category": "Contextuel"
+              }
+            ]
+          },
+          "retention_goal": "1y"
+        }
+      ],
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Ni tout vrai, ni tout faux",
+          "paragraphes": [
+            "Quand on te dit « c'est prouvé », la bonne question n'est pas « vrai ou faux ? ». C'est : « à quel point, et dans quels cas ? ».",
+            "Ce cours range chaque idée dans une case : soutenu, contredit, non étayé, contextuel, ou controversé. Cinq étiquettes, et tu sais quoi faire de l'idée.",
+            "Retiens surtout la différence entre « on n'a pas de preuve » et « on a la preuve du contraire ». Ce n'est pas pareil."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Les statuts, c'est comme les feux de signalisation",
+          "comme": "Vert : tu peux y aller. Rouge : arrête-toi. Orange clignotant : passe, mais regarde bien des deux côtés. Et un feu éteint : personne ne sait, ralentis.",
+          "enVrai": "Soutenu = vert, tu peux t'appuyer dessus. Contredit = rouge, les meilleures preuves disent le contraire. Contextuel = orange, ça marche dans certains cas seulement. Non étayé = feu éteint, aucune preuve sérieuse. Controversé = les experts se disputent."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un même mot, deux statuts différents",
+          "texte": "« Les pertes font plus mal que les gains. » Dans un choix risqué avec de gros enjeux : soutenu. Pour un achat à 3 euros : l'effet disparaît. Même idée, statut différent selon le contexte. C'est pour ça que « ça dépend » est souvent la réponse la plus juste."
+        },
+        {
+          "type": "predire",
+          "question": "Une idée n'a jamais été testée sérieusement. Quel est son statut ?",
+          "options": [
+            "Contredit : sans preuve, c'est faux",
+            "Non étayé : on ne sait pas, personne n'a vérifié",
+            "Soutenu : tant que personne n'a prouvé le contraire"
+          ],
+          "answer": "Non étayé : on ne sait pas, personne n'a vérifié",
+          "explanation": "Pas de preuve n'est pas preuve du contraire. « Non étayé » veut dire « sans appui » : on n'y croit pas, mais on ne dit pas non plus que c'est faux. C'est une nuance que ce cours garde toujours."
+        }
+      ]
+    },
+    {
+      "id": "pieges",
+      "name": "Les pièges à connaître",
+      "cards": [
+        {
+          "id": "piege-1",
+          "type": "flash",
+          "question": "C'est quoi, un biais ?",
+          "answer": "Une erreur de jugement que tout le monde fait sans s'en rendre compte, toujours dans le même sens. Comme une balance qui affiche toujours un kilo de trop.",
+          "explanation": "Un biais n'est pas une bêtise : c'est un raccourci du cerveau qui marche souvent, mais pas toujours.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "piege-2",
+          "type": "flash",
+          "question": "Pourquoi dit-on que « corrélation n'est pas cause » ?",
+          "answer": "Parce que deux choses qui bougent ensemble n'ont pas forcément l'une causé l'autre. L'été, on vend plus de glaces ET il y a plus de noyades : les glaces ne noient personne, c'est la chaleur.",
+          "explanation": "Quand deux choses vont ensemble, demande toujours : y a-t-il une troisième chose derrière ?",
+          "explanation_more": "C'est le piège central de la publicité : les gens qui voient une pub achètent plus, mais souvent parce qu'ils étaient déjà intéressés, pas à cause de la pub.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "piege-3",
+          "type": "flash",
+          "question": "C'est quoi, le biais de publication ?",
+          "answer": "Les études qui trouvent un effet sont publiées ; celles qui ne trouvent rien restent dans un tiroir. Du coup, en lisant seulement ce qui est publié, on croit que l'effet est plus fort qu'il ne l'est.",
+          "explanation": "Analogie : si on ne racontait que les fois où quelqu'un gagne au loto, on croirait que c'est facile.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "piege-4",
+          "type": "flash",
+          "question": "C'est quoi, une pseudoscience ?",
+          "answer": "Quelque chose qui a l'air scientifique (mots compliqués, schémas, « études ») mais qui n'a pas de vraies preuves derrière.",
+          "explanation": "Un signe qui ne trompe pas : ça promet des résultats énormes, universels, et ça n'accepte jamais d'être testé sérieusement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "piege-5",
+          "type": "qcm",
+          "question": "Les gens qui achètent des baskets chères courent plus vite. Que peut-on conclure ?",
+          "options": [
+            "Rien encore : peut-être que les gens sportifs achètent des baskets chères",
+            "Les baskets chères font courir plus vite",
+            "Courir vite fait acheter des baskets chères",
+            "Les deux à la fois, c'est sûr"
+          ],
+          "options_why": [
+            "",
+            "C'est possible, mais pas prouvé : il faudrait donner des baskets au hasard.",
+            "Possible aussi, mais rien ne le prouve.",
+            "« C'est sûr » est justement ce qu'on ne peut pas dire."
+          ],
+          "answer": "Rien encore : peut-être que les gens sportifs achètent des baskets chères",
+          "explanation": "Deux choses vont ensemble. Pour savoir laquelle cause l'autre, il faut une expérience avec tirage au sort.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "piege-6",
+          "type": "duel",
+          "question": "« Cette méthode marche pour tout le monde, à tous les coups, et nos concurrents la cachent. » Ça ressemble à de la science ou à de la pseudoscience ?",
+          "options": [
+            "Pseudoscience",
+            "Science"
+          ],
+          "answer": "Pseudoscience",
+          "explanation": "La vraie science dit « de combien, pour qui, dans quel cas », et elle montre ses résultats à tout le monde.",
+          "retention_goal": "1y"
+        }
+      ],
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Les glaces qui font se noyer",
+          "paragraphes": [
+            "Chaque été, quand les ventes de glaces montent, le nombre de noyades monte aussi. Les deux courbes bougent ensemble, année après année.",
+            "Faut-il interdire les glaces ? Bien sûr que non. C'est la chaleur qui fait les deux : on mange plus de glaces ET on se baigne plus.",
+            "Deux choses qui vont ensemble n'ont pas forcément l'une causé l'autre. C'est le piège numéro un, et toute la publicité tombe dedans."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un biais, c'est comme une balance mal réglée",
+          "comme": "Ta balance affiche toujours un kilo de trop. Elle n'est pas cassée au hasard : elle se trompe toujours dans le même sens. Si tu le sais, tu peux corriger.",
+          "enVrai": "Un biais, c'est une erreur de jugement que tout le monde fait, toujours dans le même sens, sans s'en rendre compte. Ce n'est pas être bête : c'est un raccourci du cerveau. Le connaître, c'est déjà pouvoir corriger."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le biais de publication, c'est comme ne raconter que les gagnants du loto",
+          "comme": "Si à la télé on ne montrait que les gens qui ont gagné au loto, jamais les millions qui ont perdu, tu finirais par croire que gagner est facile.",
+          "enVrai": "Les études qui trouvent un effet sont publiées. Celles qui ne trouvent rien restent dans un tiroir. En lisant seulement ce qui est publié, on croit que l'effet est bien plus fort qu'il ne l'est. Les bonnes méta-analyses corrigent ça."
+        },
+        {
+          "type": "predire",
+          "question": "Les élèves qui ont un bureau bien rangé ont de meilleures notes. Que peut-on conclure ?",
+          "options": [
+            "Ranger son bureau donne de meilleures notes",
+            "Pas grand-chose : peut-être que les élèves organisés font les deux",
+            "Avoir de bonnes notes donne envie de ranger"
+          ],
+          "answer": "Pas grand-chose : peut-être que les élèves organisés font les deux",
+          "explanation": "Deux choses vont ensemble. Il y a probablement une troisième chose derrière (être organisé, avoir du temps, être aidé). Pour savoir si ranger AIDE, il faudrait faire ranger la moitié des élèves au hasard et comparer."
+        },
+        {
+          "type": "exemple",
+          "titre": "Reconnaître une pseudoscience en 10 secondes",
+          "texte": "« Notre méthode marche pour tout le monde, à tous les coups, elle est basée sur le cerveau, et les grands groupes la cachent. » Quatre signaux d'alerte : ça marche partout (rien ne marche partout), à tous les coups (le hasard existe), « basée sur le cerveau » (ça impressionne sans rien prouver), et un secret (la vraie science montre tout)."
+        }
+      ]
+    },
+    {
+      "id": "tester",
+      "name": "Tester pour de vrai",
+      "cards": [
+        {
+          "id": "tester-1",
+          "type": "flash",
+          "question": "C'est quoi, une hypothèse ?",
+          "answer": "Une idée qu'on n'a pas encore vérifiée, écrite sous forme de pari : « si je fais ceci, alors il se passera cela ».",
+          "explanation": "Une hypothèse n'est ni vraie ni fausse : elle attend son test. Les livres de vente sont pleins d'hypothèses présentées comme des vérités.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "tester-2",
+          "type": "flash",
+          "question": "C'est quoi, un test A/B ?",
+          "answer": "Montrer la version A à une moitié des gens (tirés au sort) et la version B à l'autre moitié, puis comparer ce qu'ils font vraiment.",
+          "explanation": "C'est une expérience, mais sur un site ou une appli, avec de vrais clients. C'est le juge le plus fiable en marketing.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "tester-3",
+          "type": "flash",
+          "question": "Que veut dire « une étude a été rétractée » ?",
+          "answer": "Que la revue qui l'avait publiée l'a officiellement retirée, parce qu'elle contenait une grosse erreur ou des données inventées.",
+          "explanation": "Une étude rétractée ne compte plus. Si un livre s'appuie dessus, le livre a un problème.",
+          "explanation_more": "Quand des données sont inventées ou trafiquées exprès, on parle de fraude. Le cours en présente des exemples célèbres dans la galaxie « Fraudes ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "tester-4",
+          "type": "worked_example",
+          "question": "Tu as une idée : « un bouton rouge fera plus acheter qu'un bouton bleu ». Comment le tester pour de vrai ?",
+          "answer": "Écrire le pari, séparer les visiteurs au hasard, mesurer les achats (pas les clics), attendre assez longtemps, puis décider.",
+          "explanation": "Chaque étape empêche une erreur classique : sans hasard, tu compares des gens différents ; sans assez de temps, tu confonds hasard et effet.",
+          "data": {
+            "steps": [
+              {
+                "prompt": "Que faut-il écrire avant de commencer ?",
+                "text": "Le pari, noir sur blanc : « le bouton rouge augmente les achats ». Et ce qu'on va mesurer : les achats, pas les clics."
+              },
+              {
+                "prompt": "Comment répartir les visiteurs ?",
+                "text": "Au hasard : une moitié voit le bouton bleu, l'autre le rouge. Comme ça, les deux groupes se ressemblent."
+              },
+              {
+                "prompt": "Combien de temps attendre ?",
+                "text": "Assez pour avoir beaucoup de visiteurs, et sans regarder les résultats tous les jours (sinon on croit voir des effets qui sont du hasard)."
+              },
+              {
+                "prompt": "Et à la fin ?",
+                "text": "On compare les achats. Si la différence est trop petite pour être distinguée du hasard, on garde le bouton qu'on veut : ça ne change rien."
+              }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "tester-5",
+          "type": "cloze",
+          "question": "Dans un test [[A/B]], on montre deux versions à deux groupes tirés au [[sort|hasard]], puis on compare ce que les gens font vraiment.",
+          "answer": "Dans un test A/B, on montre deux versions à deux groupes tirés au sort, puis on compare ce que les gens font vraiment.",
+          "explanation": "Le mot important : « vraiment ». On mesure des actes, pas des avis.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "tester-6",
+          "type": "whatif",
+          "question": "Et si un vendeur te disait « pas besoin de tester, je le sais d'expérience », que lui répondrais-tu ?",
+          "answer": "Que son expérience est une anecdote : il se souvient des fois où ça a marché, pas des autres. Un petit test A/B coûte peu et dira la vérité.",
+          "explanation": "L'expérience personnelle est précieuse pour avoir des idées, mais pas pour les prouver.",
+          "retention_goal": "1y"
+        }
+      ],
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le bouton rouge",
+          "paragraphes": [
+            "Ton équipe est sûre : un bouton rouge fera plus acheter qu'un bouton bleu. Tout le monde a une opinion. Personne n'a de preuve.",
+            "Il y a une façon simple de trancher : montrer le rouge à une moitié des visiteurs, tirés au sort, et le bleu à l'autre moitié. Puis compter les achats.",
+            "C'est un test A/B. C'est ce que font les plus grands sites du monde, et voilà ce qu'ils découvrent : la plupart des idées, même bonnes sur le papier, ne changent rien."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Une hypothèse, c'est comme un pari écrit avant le match",
+          "comme": "Avant le match, tu écris « l'équipe bleue va gagner ». Après, tu compares. Si tu écris ton pari APRÈS le match, ça ne compte pas : tout le monde « avait prévu » le résultat.",
+          "enVrai": "Une hypothèse, c'est une idée pas encore vérifiée, écrite avant le test : « si je fais ceci, il se passera cela ». Écrire d'abord empêche de tricher avec soi-même après."
+        },
+        {
+          "type": "analogie",
+          "titre": "Regarder les résultats trop tôt, c'est comme arrêter le match à la première minute",
+          "comme": "Si tu arrêtes le match dès que ton équipe marque, elle « gagne » toujours. Ça ne veut rien dire : il faut jouer les 90 minutes.",
+          "enVrai": "Dans un test A/B, si tu regardes tous les jours et que tu arrêtes dès que ça a l'air de marcher, tu attrapes des coups de chance. Il faut décider la durée à l'avance et attendre la fin."
+        },
+        {
+          "type": "predire",
+          "question": "Chez Microsoft, des milliers d'idées ont été testées en A/B. À ton avis, quelle part a vraiment amélioré ce qu'elle devait améliorer ?",
+          "options": [
+            "Presque toutes",
+            "Environ un tiers",
+            "Environ 5 %"
+          ],
+          "answer": "Environ un tiers",
+          "explanation": "Un tiers seulement. Et dans des produits déjà très optimisés comme Google, c'est plutôt 10 à 20 %. Ce n'est pas un échec : c'est pour ça qu'on teste. Une idée non testée a deux chances sur trois de ne rien apporter."
+        },
+        {
+          "type": "exemple",
+          "titre": "Quand une étude est « rétractée »",
+          "texte": "Une revue publie une étude célèbre : signer en haut d'un formulaire rendrait plus honnête. Des années plus tard, on découvre que les données avaient été inventées. La revue retire officiellement l'étude : elle est « rétractée ». Elle ne compte plus. Et les livres qui s'appuyaient dessus ont un problème."
+        }
+      ]
+    }
+  ]
+}

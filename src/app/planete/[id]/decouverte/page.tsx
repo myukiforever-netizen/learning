@@ -1,13 +1,13 @@
 import { notFound } from "next/navigation";
-import { Decouverte, type EcranProvisoire } from "./Decouverte";
+import { Decouverte, type Ecran } from "./Decouverte";
+import type { EcranDecouverte } from "@/lib/import/schema";
 import { phaseDe } from "@/lib/odyssee/composer";
 import { depuisUrl, routes } from "@/lib/odyssee/urls";
 import { cartesDePlanete, chargerUnivers } from "@/lib/supabase/odyssee";
 
 /**
- * Découverte (version provisoire du saut S1) : les notions de la planète présentées
- * comme des fiches à lire, à partir des réponses et explications existantes.
- * Le saut S2 remplace ceci par de vrais écrans de découverte (histoire, analogie, prédiction…).
+ * Découverte d'une planète : ses écrans écrits (histoire, analogie, exemple, prédiction) ;
+ * sinon, des fiches provisoires construites à partir des notions existantes.
  */
 export default async function PageDecouverte({ params }: PageProps<"/planete/[id]/decouverte">) {
   const { id } = await params;
@@ -17,15 +17,20 @@ export default async function PageDecouverte({ params }: PageProps<"/planete/[id
   const planete = galaxie?.planetes.find((p) => p.id === conceptId);
   if (!univers || !galaxie || !planete || planete.etape === "locked") notFound();
 
-  const cartes = cartesDePlanete(univers, planete.id).map((c) => c.carte);
-  // D'abord les notions d'entraînement (les faits à retenir), puis les cartes de compréhension.
-  const ordonnees = [...cartes.filter((c) => phaseDe(c) === "entrainement"), ...cartes.filter((c) => phaseDe(c) === "comprehension")];
-  const ecrans: EcranProvisoire[] = ordonnees.map((c) => ({
-    titre: c.type === "cloze" ? "À retenir" : c.question,
-    texte: c.type === "cloze" ? c.answer : c.answer,
-    pourquoi: c.explanation,
-    plus: c.explanation_more ?? null,
-  }));
+  let ecrans: Ecran[];
+  if (planete.decouverte && planete.decouverte.length > 0) {
+    ecrans = planete.decouverte as EcranDecouverte[];
+  } else {
+    const cartes = cartesDePlanete(univers, planete.id).map((c) => c.carte);
+    const ordonnees = [...cartes.filter((c) => phaseDe(c) === "entrainement"), ...cartes.filter((c) => phaseDe(c) === "comprehension")];
+    ecrans = ordonnees.map((c) => ({
+      type: "fiche",
+      titre: c.type === "cloze" ? "À retenir" : c.question,
+      texte: c.answer,
+      pourquoi: c.explanation,
+      plus: c.explanation_more ?? null,
+    }));
+  }
 
   return (
     <Decouverte

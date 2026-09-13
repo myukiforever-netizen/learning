@@ -70,12 +70,6 @@ export default async function PageUnivers() {
         {destination.type === "termine" && <p className="font-medium">Tout le secteur est exploré. Les patrouilles gardent tes notions vivantes.</p>}
       </section>
 
-      <nav className="flex flex-wrap gap-4 texte-2 text-sm justify-center" aria-label="Autres écrans">
-        <Link href="/secteurs" className="underline underline-offset-4">Secteurs</Link>
-        <Link href="/cerveau" className="underline underline-offset-4">Mon cerveau</Link>
-        <Link href="/reglages" className="underline underline-offset-4">Réglages</Link>
-        <Link href="/profils" className="underline underline-offset-4">Changer de profil</Link>
-      </nav>
     </div>
   );
 }

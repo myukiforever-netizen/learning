@@ -48,7 +48,7 @@ export default async function PagePlanete({ params }: PageProps<"/planete/[id]">
         </Link>
       </header>
 
-      <div className="flex items-center gap-6 panneau p-5">
+      <div className="flex items-center gap-4 sm:gap-6 panneau p-4 sm:p-5">
         <PlaneteSvg id={planete.id} taille={120} halo={planete.etape === "validated" ? "fort" : "doux"} />
         <div className="flex flex-col gap-1">
           <p className="font-medium">
@@ -67,21 +67,21 @@ export default async function PagePlanete({ params }: PageProps<"/planete/[id]">
           const faite = etapeAuMoins(planete.etape, s.faitDes);
           const prochaine = ouverte && !faite;
           return (
-            <li key={s.phase} className="panneau p-4 flex items-center gap-4" style={{ opacity: ouverte ? 1 : 0.5 }}>
+            <li key={s.phase} className="panneau p-4 flex flex-wrap items-center gap-3 sm:gap-4" style={{ opacity: ouverte ? 1 : 0.5 }}>
               <span
                 className="touche"
                 style={faite ? { borderColor: "var(--ok)", color: "var(--ok)" } : prochaine ? { borderColor: "var(--accent)", color: "var(--accent)" } : undefined}
               >
                 {faite ? "✓" : i + 1}
               </span>
-              <div className="flex-1">
+              <div className="flex-1 min-w-[60%]">
                 <p className="font-medium">
                   {s.nom} <span className="texte-2 font-normal">· {s.lieu}</span>
                 </p>
                 <p className="texte-2 text-sm">{s.detail}</p>
               </div>
               {ouverte ? (
-                <Link href={routes.phase(planete.id, s.phase)} className={`bouton text-sm ${prochaine ? "bouton-principal" : ""}`}>
+                <Link href={routes.phase(planete.id, s.phase)} className={`bouton text-sm w-full sm:w-auto ${prochaine ? "bouton-principal" : ""}`}>
                   {faite ? "Rejouer" : "Entrer"}
                 </Link>
               ) : (
@@ -90,7 +90,7 @@ export default async function PagePlanete({ params }: PageProps<"/planete/[id]">
             </li>
           );
         })}
-        <li className="panneau p-4 flex items-center gap-4" style={{ opacity: planete.etape === "validated" ? 1 : 0.5 }}>
+        <li className="panneau p-4 flex flex-wrap items-center gap-3 sm:gap-4" style={{ opacity: planete.etape === "validated" ? 1 : 0.5 }}>
           <span className="touche">5</span>
           <div className="flex-1">
             <p className="font-medium">

@@ -6,7 +6,7 @@
 - Apprentissage par petites cartes interactives : on répond avant de voir la réponse, on note sa confiance, on trie ses erreurs.
 - Moteur de révision espacée simple et lisible, entièrement paramétré dans `src/lib/revision/config.ts`.
 - Les matières sont des paquets JSON versionnés, importables et réimportables sans perdre l'historique (schéma dans `SCHEMA.md`).
-- Documents de référence (à lire en cas de doute) : `docs/plan_app_apprentissage.md` (produit) et `docs/plan_app_partie2_ui.md` (design).
+- Documents de référence (à lire en cas de doute) : `docs/plan_app_apprentissage.md` (produit) et `docs/plan_app_partie2_ui.md` (design). Contenu : vocabulaire simple, analogies concrètes, accessible dès 13 ans (demande du 13/09/2026).
 
 ## Stack
 
@@ -115,5 +115,9 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
 - J6 (polissage mobile, raccourcis, reduced-motion, Vercel, UTILISATION.md) : terminé. Passe mobile vérifiée en 375 px (aucun débordement, boutons 48 px), icône SVG géométrique (`src/app/icon.svg`), `UTILISATION.md` (session, matières, Supabase, Vercel, dépannage), `README.md`.
 - **Refonte « Odyssée » (13/09/2026)** : plan en 7 sauts S1→S7 validé.
   - S1 (univers et navigation) : code terminé. Migration `0003_odyssee.sql` (planet_progress, galaxy_progress, profile, xp_events, colonnes phase/level/discovery/galaxy/planet, answers.context). Écrans univers / galaxie / planète / découverte provisoire / phases / soleil / patrouille. Mode découverte sans clés supprimé (redirection vers /configuration). 54 tests. **À vérifier dans le navigateur dès que le product owner a exécuté les 3 SQL.**
-  - S2 (découverte : schéma d'écrans, sonde, contenu des 43 planètes) : à faire. S3 direction artistique, S4 motivation, S5 son, S6 adaptation, S7 polissage : à faire.
+  - S1 vérifié dans le navigateur avec le profil du product owner (13/09/2026).
+  - S2 (découverte) : lecteur et schéma d'écrans faits (`histoire`, `analogie`, `exemple`, `predire` ; validés dans schema.ts ; colonne `concepts.discovery`). Contenu écrit avec analogies pour la galaxie 0 « mots de base » (nouveau module m0, 6 planètes, 33 cartes, niveau 13 ans) et la galaxie 1 (réécrite en mots simples). Matière en v2 (9 galaxies, 49 planètes, 216 cartes), importée dans la base du product owner. **Reste : découvertes des galaxies 2 à 8** (fiches provisoires en attendant), sonde pré-atterrissage.
+  - Menu global (`src/components/Navigation.tsx`) : barre en bas sur téléphone, en haut sur ordinateur, caché pendant les séances. Écran galaxie = chemin de planètes jusqu'au soleil (`CarteGalaxie.tsx`, étoiles, vaisseau, soleil animé). Carte de l'univers en 1 colonne sur mobile.
+  - Résumé complet de la matière pour le product owner : `docs/psychologie_resume.md`.
+  - S3 direction artistique (fond canvas, transitions), S4 motivation, S5 son, S6 adaptation, S7 polissage : à faire.
 - Clés Supabase : en place dans `.env.local` depuis le 13/09/2026 (URL + anon). Tables 0001→0003 exécutées par le product owner ; **0004_profils.sql à exécuter** pour activer les profils.

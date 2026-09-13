@@ -2,6 +2,7 @@
 // assemblés ici en une seule matière au format SCHEMA.md.
 // Source : docs/sources/psychologie.md (rapport du 12 septembre 2026).
 import type { MatiereJson, ModuleJson } from "@/lib/import/schema";
+import m0 from "./m0-mots.json";
 import m1 from "./m1-bases.json";
 import m2 from "./m2-effondres.json";
 import m3 from "./m3-conditionnels.json";
@@ -14,9 +15,9 @@ import m8 from "./m8-pratiques.json";
 export const PSYCHOLOGIE: MatiereJson = {
   id: "psychologie",
   name: "Psychologie de l'influence, marketing et vente",
-  version: 1,
+  version: 2,
   color: "#0F766E",
   description:
-    "Ce qui tient, ce qui dépend du contexte, et ce qui relève du bullshit : la crise de la réplication, les effets effondrés, les mécanismes robustes, Cialdini, la mesure commerciale, les fraudes et les pratiques à tester.",
-  modules: [m1, m2, m3, m4, m5, m6, m7, m8] as ModuleJson[],
+    "Pour débutants, dès 13 ans : les mots de base, puis ce qui tient, ce qui dépend du contexte et ce qui relève du bullshit dans la psychologie vendue aux marketeurs. Avec des histoires et des analogies.",
+  modules: [m0, m1, m2, m3, m4, m5, m6, m7, m8] as ModuleJson[],
 };

@@ -29,7 +29,7 @@ export interface ProgressionGalaxie {
 export interface StructureSecteur {
   id: string;
   nom: string;
-  galaxies: { id: string; nom: string; planetes: { id: string; nom: string; nbCartes: number }[] }[];
+  galaxies: { id: string; nom: string; planetes: { id: string; nom: string; nbCartes: number; decouverte?: unknown[] | null }[] }[];
 }
 
 export interface Planete {
@@ -41,6 +41,8 @@ export interface Planete {
   meilleurScore: number;
   tentatives: number;
   sondePassee: boolean;
+  /** Écrans de découverte (JSON brut, validé à l'import) ; null = fiches provisoires. */
+  decouverte: unknown[] | null;
 }
 
 export type StatutGalaxie = "verrouillee" | "ouverte" | "franchie";
@@ -103,6 +105,7 @@ export function construireSecteur(
         meilleurScore: pp?.best_score ?? 0,
         tentatives: pp?.attempts ?? 0,
         sondePassee: pp?.probe_passed ?? false,
+        decouverte: p.decouverte ?? null,
       };
     });
 

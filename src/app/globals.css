@@ -339,3 +339,142 @@ body {
 .tuile-profil.est-gerable { filter: brightness(0.6); }
 .tuile-profil .crayon { position: absolute; font-size: 28px; color: #fff; filter: none; }
 @media (max-width: 480px) { .tuile-profil { width: 92px; height: 92px; font-size: 44px; } }
+
+/* ============================================================
+   Menu principal : barre en bas (téléphone), barre fine en haut (ordinateur).
+   Discret : petites icônes, texte secondaire, l'entrée active seule en accent.
+   ============================================================ */
+.navigation {
+  position: fixed;
+  z-index: 20;
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  left: 0; right: 0; bottom: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  background: color-mix(in srgb, var(--carte) 94%, transparent);
+  border-top: 1px solid var(--bordure);
+  backdrop-filter: blur(10px);
+}
+.navigation-lien {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: 56px;
+  padding: 6px 4px;
+  color: var(--texte-2);
+  font-size: 11px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--anim-micro);
+  touch-action: manipulation;
+}
+.navigation-lien.est-actif { color: var(--accent); }
+.navigation-lien:hover { color: var(--texte); }
+.navigation-icone { font-size: 20px; line-height: 1; }
+.navigation-lien.est-actif .navigation-icone { transform: translateY(-1px); }
+
+/* La page laisse la place à la barre du bas */
+.page { padding-bottom: calc(76px + env(safe-area-inset-bottom)); }
+
+/* Ordinateur : barre fine en haut à droite, la page reste centrée */
+@media (min-width: 768px) {
+  .navigation {
+    top: 0; bottom: auto;
+    justify-content: flex-end;
+    gap: 4px;
+    padding: 6px 16px;
+    border-top: 0;
+    border-bottom: 1px solid var(--bordure);
+  }
+  .navigation-lien { flex: 0 0 auto; flex-direction: row; gap: 6px; min-height: 36px; padding: 4px 10px; border-radius: 10px; font-size: 13px; }
+  .navigation-lien.est-actif { background: color-mix(in srgb, var(--accent) 14%, transparent); }
+  .navigation-icone { font-size: 16px; }
+  .page { padding-top: 64px; padding-bottom: 32px; }
+}
+
+/* ============================================================
+   Mobile : confort tactile
+   ============================================================ */
+.bouton, .tuile-profil, .navigation-lien, a, button { -webkit-tap-highlight-color: transparent; }
+.bouton { touch-action: manipulation; }
+@media (max-width: 480px) {
+  .question { font-size: calc(var(--taille-texte) + 2px); }
+  .panneau { border-radius: 16px; }
+}
+
+/* ============================================================
+   Carte d'une galaxie : un chemin de planètes jusqu'au soleil
+   ============================================================ */
+.carte-galaxie {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse 70% 40% at 50% 100%, hsl(var(--teinte-galaxie) 70% 50% / 0.22), transparent 70%),
+    radial-gradient(ellipse 50% 30% at 20% 15%, hsl(var(--teinte-galaxie) 60% 45% / 0.14), transparent 70%),
+    color-mix(in srgb, var(--carte) 92%, transparent);
+}
+.carte-galaxie-fond { position: absolute; inset: 0; width: 100%; height: 100%; }
+@keyframes scintille { 0%, 100% { opacity: 0.25; } 50% { opacity: 1; } }
+.etoile { animation: scintille 3.2s ease-in-out infinite; }
+@keyframes avance { to { stroke-dashoffset: -32; } }
+.chemin-courant { animation: avance 1.6s linear infinite; }
+
+.planete-etape {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--texte);
+  transition: transform var(--anim-micro);
+}
+a.planete-etape:hover, a.planete-etape:focus-visible { transform: translate(-50%, -50%) scale(1.05); outline: none; }
+.planete-etape.est-verrouillee { opacity: 0.5; }
+.planete-nom { font-size: 13px; font-weight: 600; line-height: 1.25; max-width: 150px; }
+.planete-etat { font-size: 11px; }
+
+@keyframes flotte { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.planete-flotte { position: relative; animation: flotte 5s ease-in-out infinite; }
+.planete-signal { position: absolute; inset: -6px; border-radius: 50%; border: 2px solid var(--effort); }
+.planete-vaisseau { position: absolute; right: -14px; top: -4px; font-size: 26px; transform: rotate(-30deg); filter: drop-shadow(0 2px 4px rgb(0 0 0 / 0.4)); }
+.planete-badge {
+  position: absolute; right: -2px; bottom: 6px;
+  width: 26px; height: 26px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 13px; background: var(--carte); border: 1px solid var(--bordure);
+}
+.planete-badge.est-validee { background: var(--ok); color: #fff; border-color: var(--ok); font-weight: 700; }
+
+.soleil { position: relative; width: 120px; height: 120px; display: flex; align-items: center; justify-content: center; }
+.soleil-coeur {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #fff7d6, var(--soleil-couleur) 55%, hsl(var(--teinte-galaxie) 70% 35%));
+  box-shadow: 0 0 30px var(--soleil-halo), 0 0 70px var(--soleil-halo);
+}
+.soleil-rayons {
+  position: absolute; inset: 0; border-radius: 50%;
+  background: repeating-conic-gradient(from 0deg, var(--soleil-halo) 0deg 8deg, transparent 8deg 30deg);
+  mask: radial-gradient(circle, transparent 34%, #000 36%, #000 60%, transparent 62%);
+  -webkit-mask: radial-gradient(circle, transparent 34%, #000 36%, #000 60%, transparent 62%);
+}
+@keyframes tourne { to { transform: rotate(360deg); } }
+.soleil.est-actif .soleil-rayons { animation: tourne 40s linear infinite; }
+.soleil:not(.est-actif) .soleil-coeur { filter: grayscale(0.7) brightness(0.6); box-shadow: none; }
+.soleil:not(.est-actif) .soleil-rayons { opacity: 0.3; }
+
+@media (max-width: 480px) {
+  .planete-etape { width: 132px; }
+  .planete-nom { font-size: 12px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .etoile, .chemin-courant, .planete-flotte, .soleil-rayons { animation: none !important; }
+  a.planete-etape:hover { transform: translate(-50%, -50%); }
+}
