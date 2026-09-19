@@ -1,5 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import { Session } from "@/app/session/Session";
+import { Ambiance } from "@/components/audio/Ambiance";
+import { apparenceGalaxie } from "@/lib/odyssee/planete";
 import { aujourdhui } from "@/lib/dates";
 import { composerSoleil } from "@/lib/odyssee/composer";
 import { depuisUrl, routes } from "@/lib/odyssee/urls";
@@ -24,6 +26,8 @@ export default async function PageSoleil({ params }: PageProps<"/galaxie/[id]/so
   ).map((carte) => parId.get(carte.id)!);
 
   return (
+    <>
+    <Ambiance teinte={apparenceGalaxie(galaxie.id).teinte} />
     <Session
       mode="soleil"
       sessionId={sessionId}
@@ -33,5 +37,6 @@ export default async function PageSoleil({ params }: PageProps<"/galaxie/[id]/so
       retourHref={routes.galaxie(galaxie.id)}
       rejouerHref={routes.soleil(galaxie.id)}
     />
+    </>
   );
 }

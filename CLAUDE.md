@@ -31,6 +31,8 @@ npm run lint     # vérifie le code
 src/app/            écrans : / (carte de l'univers), galaxie/[id] (+ /soleil), planete/[id] (+ /decouverte, /[phase]), patrouille, secteurs, cerveau, reglages, connexion, configuration
 src/app/session/    Session.tsx (client : le moteur des séances, prop `mode`) ; actions.ts (actions serveur). Pas de page.
 src/app/planete/actions.ts  fin de phase / de soleil (progression + XP)
+src/lib/audio/      sons.ts (catalogue de sons + réglages, logique pure testée), moteur.ts (Web Audio : lecture, ambiance)
+src/components/audio/  AudioProvider (réglages + son des clics), Ambiance, BoutonSilence, ReglagesAudio
 src/lib/odyssee/    univers.ts (statuts, déblocage), maitrise.ts (étoiles, détresse), recompenses.ts (XP, niveaux, carburant), composer.ts (phases, mission, soleil), planete.ts (apparence procédurale), urls.ts (ids ↔ adresses, « / » ↔ « ~ »)
 src/lib/supabase/odyssee.ts  lectures/écritures Odyssée (univers, progression, profil)
 src/components/odyssee/  CarteUnivers, Hud, PlaneteSvg, FinDePhase
@@ -103,6 +105,7 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
 - Dans une session, seule la PREMIÈRE réponse à une carte replanifie ; les retours d'une carte ratée sont enregistrés dans `answers` sans replanifier.
 - Les écritures pendant la session sont asynchrones (la carte suivante n'attend pas) ; la fin de session attend toutes les écritures avant de clôturer.
 - Mode sombre PAR DÉFAUT (demande du product owner du 13/09/2026, qui prime sur le « clair par défaut » des docs). Préférences d'affichage (taille de texte, mode sombre) : cookie `ancre.affichage` lu dans `src/app/layout.tsx` → `data-theme="dark"` et `--taille-texte` sur `<html>`. Le mode sombre = mêmes tokens, valeurs redéfinies sous `:root[data-theme="dark"]` dans `globals.css`. Jamais de couleur en dur dans les composants.
+- Son (19/09/2026) : tout est **synthétisé** dans le navigateur (Web Audio), aucun fichier audio, aucune dépendance. Catalogue de 18 sons décrit en données dans `src/lib/audio/sons.ts` (testé : durées, gains, hauteurs) ; `moteur.ts` les joue et tient l'ambiance (drone par galaxie, note dérivée de la teinte). Le contexte audio naît au premier geste de l'utilisateur (règle des navigateurs). Réglages (effets, ambiance, volume) dans `localStorage` sous `ancre.audio`, donc **par appareil** comme la taille de texte, lus avec `useSyncExternalStore` (jamais de setState dans un effet). Un seul écouteur de clic dans `AudioProvider` sonorise tous les boutons et liens : `data-son="nom"` impose un son, `data-son="aucun"` fait taire un élément, `data-sans-son` sur un conteneur laisse la zone gérer ses propres sons (cartes de séance, écrans de découverte). « Silence radio » dans le tableau de bord coupe tout d'un geste.
 - Quota de nouveautés : table `settings` (`lireQuotaNouvelles`, repli sur la config si la table ou la ligne manque).
 
 ## Avancement
@@ -120,7 +123,8 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
   - S2 (découverte) : lecteur et schéma d'écrans faits (`histoire`, `analogie`, `exemple`, `predire` ; validés dans schema.ts ; colonne `concepts.discovery`). Contenu écrit avec analogies pour la galaxie 0 « mots de base » (nouveau module m0, 6 planètes, 33 cartes, niveau 13 ans) et la galaxie 1 (réécrite en mots simples). Matière en v2 (9 galaxies, 49 planètes, 216 cartes), importée dans la base du product owner. **Reste : découvertes des galaxies 2 à 8** (fiches provisoires en attendant), sonde pré-atterrissage.
   - Menu global (`src/components/Navigation.tsx`) : barre en bas sur téléphone, en haut sur ordinateur, caché pendant les séances. Écran galaxie = chemin de planètes jusqu'au soleil (`CarteGalaxie.tsx`, étoiles, vaisseau, soleil animé). Carte de l'univers en 1 colonne sur mobile.
   - Résumé complet de la matière pour le product owner : `docs/psychologie_resume.md`.
-  - S3 direction artistique (fond canvas, transitions), S4 motivation, S5 son, S6 adaptation, S7 polissage : à faire.
+  - S5 (son) : terminé le 19/09/2026. Sons de retour partout (choix, confiance, révélation, bonne réponse, « pas encore », carte suivante, page de découverte, décollage, arrivée, XP, niveau, déblocage, soleil, échec, profil, trou noir, fin de patrouille), ambiance par galaxie, réglages et silence radio. 10 tests sur le catalogue.
+  - S3 direction artistique (fond canvas, transitions), S4 motivation, S6 adaptation, S7 polissage : à faire.
 - Clés Supabase : en place dans `.env.local` depuis le 13/09/2026 (URL + anon). Tables 0001→0003 exécutées par le product owner ; **0004_profils.sql à exécuter** pour activer les profils.
 
 <!-- BEGIN:nextjs-agent-rules -->

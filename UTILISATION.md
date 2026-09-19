@@ -56,7 +56,14 @@ Puis **relis chaque carte** avant d'importer : garder / corriger / jeter. L'IA s
 ## 4. Mon cerveau et réglages
 
 - **Mon cerveau** : % estimé encore en mémoire par matière, ta confiance contre tes vrais résultats, la liste rouge des cartes qui résistent, et ta part de production (objectif : au moins 50 %).
-- **Réglages** : taille du texte, mode sombre (pour le soir), nombre de nouveautés par jour, et **Tout exporter** : tes données t'appartiennent, en un fichier JSON.
+- **Réglages** : taille du texte, mode sombre (pour le soir), **son** (effets, ambiance des galaxies, volume), nombre de nouveautés par jour, et **Tout exporter** : tes données t'appartiennent, en un fichier JSON.
+
+### Le son
+
+L'app fabrique ses sons elle-même : rien à télécharger, rien qui pèse. Un retour court à chaque réponse, un décollage quand tu voyages,
+une célébration quand une planète ou une galaxie tombe, et une ambiance très discrète, différente dans chaque galaxie.
+Le bouton 🔊 du tableau de bord coupe tout d'un geste ; les réglages fins sont dans Réglages, et ne valent que pour cet appareil.
+Le son ne démarre qu'après ton premier clic : c'est une règle des navigateurs.
 
 ## 5. Installer et lancer sur ton ordinateur
 

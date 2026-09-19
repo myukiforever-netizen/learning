@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { actionTerminerPhase } from "@/app/planete/actions";
+import { useSon } from "@/components/audio/AudioProvider";
 import { BarreProgression } from "@/components/BarreProgression";
 import type { EcranDecouverte } from "@/lib/import/schema";
 import type { ResultatPhase } from "@/lib/supabase/odyssee";
@@ -35,6 +36,7 @@ export function Decouverte({ conceptId, nomPlanete, ecrans, retourHref, suiteHre
   const [resultat, setResultat] = useState<ResultatPhase | null>(null);
   const [erreur, setErreur] = useState<string | null>(null);
   const [enCours, setEnCours] = useState(false);
+  const { jouer } = useSon();
   const termine = index >= ecrans.length;
   const ecran = ecrans[index];
 
@@ -42,9 +44,19 @@ export function Decouverte({ conceptId, nomPlanete, ecrans, retourHref, suiteHre
   const pret =
     !ecran || ecran.type === "predire" ? devine !== null : ecran.type === "histoire" ? paragraphesVus >= ecran.paragraphes.length : true;
 
+  /** Une prédiction : le son dit aussitôt si on avait deviné juste. Se tromper ici est utile. */
+  const deviner = useCallback(
+    (option: string, bonne: string) => {
+      setDevine(option);
+      jouer(option === bonne ? "bon" : "pasEncore");
+    },
+    [jouer],
+  );
+
   const avancer = useCallback(async () => {
     if (termine || enCours || !ecran) return;
     if (ecran.type === "histoire" && paragraphesVus < ecran.paragraphes.length) {
+      jouer("page");
       setParagraphesVus((n) => n + 1);
       return;
     }
@@ -53,6 +65,7 @@ export function Decouverte({ conceptId, nomPlanete, ecrans, retourHref, suiteHre
     setDevine(null);
     setParagraphesVus(1);
     if (index + 1 < ecrans.length) {
+      jouer("page");
       setIndex(index + 1);
       window.scrollTo({ top: 0 });
       return;
@@ -60,13 +73,15 @@ export function Decouverte({ conceptId, nomPlanete, ecrans, retourHref, suiteHre
     setEnCours(true);
     try {
       setResultat(await actionTerminerPhase({ conceptId, phase: "decouverte", score: 1, bonnesReponses: 0, bonnesFaciles: 0, ecransVus: ecrans.length }));
+      jouer("arrivee");
+      setTimeout(() => jouer("xp"), 600);
     } catch (e: unknown) {
       setErreur(e instanceof Error ? e.message : "Enregistrement impossible.");
     } finally {
       setEnCours(false);
       setIndex(ecrans.length);
     }
-  }, [termine, enCours, ecran, paragraphesVus, pret, index, ecrans.length, conceptId]);
+  }, [termine, enCours, ecran, paragraphesVus, pret, index, ecrans.length, conceptId, jouer]);
 
   useEffect(() => {
     function surTouche(e: KeyboardEvent) {
@@ -80,7 +95,7 @@ export function Decouverte({ conceptId, nomPlanete, ecrans, retourHref, suiteHre
         const option = ecran.options[Number(touche) - 1];
         if (option) {
           e.preventDefault();
-          setDevine(option);
+          deviner(option, ecran.answer);
         }
       } else if ((touche === "e" || touche === "E") && !termine) {
         e.preventDefault();
@@ -89,7 +104,7 @@ export function Decouverte({ conceptId, nomPlanete, ecrans, retourHref, suiteHre
     }
     window.addEventListener("keydown", surTouche);
     return () => window.removeEventListener("keydown", surTouche);
-  }, [avancer, termine, ecran, devine]);
+  }, [avancer, termine, ecran, devine, deviner]);
 
   if (termine) {
     return (
@@ -134,7 +149,7 @@ export function Decouverte({ conceptId, nomPlanete, ecrans, retourHref, suiteHre
         </Link>
       </div>
 
-      <div key={index} className="anim-apparait panneau overflow-hidden">
+      <div key={index} data-sans-son className="anim-apparait panneau overflow-hidden">
         <div className="h-1.5" style={{ background: "var(--type-comprendre)" }} aria-hidden="true" />
         <div className="p-6 sm:p-8 flex flex-col gap-5">
           <p className="texte-2 text-sm">
@@ -185,7 +200,7 @@ export function Decouverte({ conceptId, nomPlanete, ecrans, retourHref, suiteHre
                   if (revele && option === ecran.answer) classe += " est-bon";
                   else if (revele && option === devine) classe += " est-faux";
                   return (
-                    <button key={option} type="button" className={classe} disabled={revele} onClick={() => setDevine(option)}>
+                    <button key={option} type="button" data-son="aucun" className={classe} disabled={revele} onClick={() => deviner(option, ecran.answer)}>
                       <span className="touche">{i + 1}</span>
                       <span>{option}</span>
                     </button>

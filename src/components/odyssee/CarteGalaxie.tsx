@@ -126,7 +126,7 @@ export function CarteGalaxie({ galaxie, detresse }: Props) {
             {contenu}
           </div>
         ) : (
-          <Link key={pl.id} href={routes.planete(pl.id)} className="planete-etape" style={style}>
+          <Link key={pl.id} href={routes.planete(pl.id)} data-son="decollage" className="planete-etape" style={style}>
             {contenu}
           </Link>
         );
@@ -158,7 +158,7 @@ export function CarteGalaxie({ galaxie, detresse }: Props) {
           </>
         );
         return accessible ? (
-          <Link href={routes.soleil(galaxie.id)} className="planete-etape" style={style}>
+          <Link href={routes.soleil(galaxie.id)} data-son="decollage" className="planete-etape" style={style}>
             {contenu}
           </Link>
         ) : (

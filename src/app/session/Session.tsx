@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import { useSon } from "@/components/audio/AudioProvider";
 import { BarreProgression } from "@/components/BarreProgression";
 import { Carte as CadreCarte } from "@/components/Carte";
 import { Feedback } from "@/components/Feedback";
@@ -195,6 +196,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
   const [reponses, setReponses] = useState<ReponseSession[]>([]);
   const [retours, setRetours] = useState<Record<string, number>>({});
   const [erreurSauvegarde, setErreurSauvegarde] = useState<string | null>(null);
+  const { jouer } = useSon();
 
   // Identifiant en base de la PREMIÈRE réponse de chaque carte (pour le tri des erreurs).
   const idsReponses = useRef<Record<string, string>>({});
@@ -220,22 +222,25 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
       if (!carte || mecanique !== "choix") return;
       if (etat.etape !== "repondre" && etat.etape !== "confiance") return;
       if (i < 0 || i >= (carte.options?.length ?? 0)) return;
+      jouer("choix");
       setEtat((e) => ({ ...e, etape: "confiance", saisie: { ...e.saisie, choix: i } }));
     },
-    [carte, mecanique, etat.etape],
+    [carte, mecanique, etat.etape, jouer],
   );
 
   const pret = useCallback(() => {
     if (!carte || etat.etape !== "repondre" || !saisieComplete(carte, etat.saisie)) return;
+    jouer("choix");
     setEtat((e) => ({ ...e, etape: "confiance" }));
-  }, [carte, etat.etape, etat.saisie]);
+  }, [carte, etat.etape, etat.saisie, jouer]);
 
   const choisirConfiance = useCallback(
     (valeur: Confiance) => {
       if (etat.etape !== "confiance") return;
+      jouer("confiance");
       setEtat((e) => ({ ...e, confiance: valeur }));
     },
-    [etat.etape],
+    [etat.etape, jouer],
   );
 
   // ---- Enregistrement ---------------------------------------------------
@@ -253,6 +258,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
       };
       setReponses((r) => [...r, reponse]);
       setEtat((e) => ({ ...e, etape: "feedback", correct }));
+      jouer(correct ? "bon" : "pasEncore");
 
       {
         const promesse = actionEnregistrerReponse({
@@ -285,7 +291,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
         }
       }
     },
-    [carte, etat.confiance, index, retours, reponses, mode, sessionId],
+    [carte, etat.confiance, index, retours, reponses, mode, sessionId, jouer],
   );
 
   /** Vérification automatique (QCM, duel, trous, classer). */
@@ -299,8 +305,9 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
   const reveler = useCallback(() => {
     if (!carte || !autoEvaluee) return;
     if (etat.etape !== "confiance" || etat.confiance === null) return;
+    jouer("reveler");
     setEtat((e) => ({ ...e, etape: "revele" }));
-  }, [carte, autoEvaluee, etat.etape, etat.confiance]);
+  }, [carte, autoEvaluee, etat.etape, etat.confiance, jouer]);
 
   const autoEvaluer = useCallback(
     (correct: boolean) => {
@@ -312,11 +319,12 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
 
   const suivant = useCallback(() => {
     if (etat.etape !== "feedback") return;
+    if (index + 1 < file.length) jouer("suivant");
     const prochain = index + 1;
     setIndex(prochain);
     setEtat(etatInitial(file[prochain]));
     window.scrollTo({ top: 0 });
-  }, [etat.etape, index, file]);
+  }, [etat.etape, index, file, jouer]);
 
   const togglePlus = useCallback(() => {
     if (etat.etape !== "feedback") return;
@@ -481,6 +489,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
   return (
     <div
       className="flex flex-col gap-6"
+      data-sans-son
       // Un clic à la souris ne garde pas le focus sur le bouton : les raccourcis restent cohérents.
       onMouseDownCapture={(e) => {
         if ((e.target as HTMLElement).closest("button")) e.preventDefault();

@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Ambiance } from "@/components/audio/Ambiance";
 import { CarteGalaxie } from "@/components/odyssee/CarteGalaxie";
+import { apparenceGalaxie } from "@/lib/odyssee/planete";
 import { depuisUrl, routes } from "@/lib/odyssee/urls";
 import { chargerUnivers } from "@/lib/supabase/odyssee";
 
@@ -13,6 +15,7 @@ export default async function PageGalaxie({ params }: PageProps<"/galaxie/[id]">
 
   return (
     <div className="flex flex-col gap-6">
+      <Ambiance teinte={apparenceGalaxie(galaxie.id).teinte} />
       <header className="flex items-center justify-between gap-4">
         <div>
           <p className="texte-2 text-sm">Galaxie {galaxie.index + 1}</p>
@@ -37,14 +40,14 @@ export default async function PageGalaxie({ params }: PageProps<"/galaxie/[id]">
               <p className="font-medium" style={{ color: "var(--ok)" }}>
                 Franchi avec {galaxie.scoreSoleil} %. La galaxie suivante est ouverte.
               </p>
-              <Link href={routes.soleil(galaxie.id)} className="bouton self-start">
+              <Link href={routes.soleil(galaxie.id)} data-son="decollage" className="bouton self-start">
                 Refaire l&apos;épreuve
               </Link>
             </>
           ) : galaxie.soleilAccessible ? (
             <>
               <p className="font-medium">Toutes les planètes sont validées. L&apos;épreuve finale mélange tout le chapitre.</p>
-              <Link href={routes.soleil(galaxie.id)} className="bouton bouton-principal self-start">
+              <Link href={routes.soleil(galaxie.id)} data-son="decollage" className="bouton bouton-principal self-start">
                 Affronter le soleil
               </Link>
             </>

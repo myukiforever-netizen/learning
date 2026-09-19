@@ -32,7 +32,7 @@ export function Profils({ profils, courantId }: Props) {
               {mode === "choisir" ? (
                 <form action={actionChoisirProfil}>
                   <input type="hidden" name="id" value={p.id} />
-                  <button type="submit" className="tuile-profil" style={{ background: fondAvatar(p.teinte) }} aria-label={`Explorer avec ${p.nom}`}>
+                  <button type="submit" data-son="profil" className="tuile-profil" style={{ background: fondAvatar(p.teinte) }} aria-label={`Explorer avec ${p.nom}`}>
                     <span aria-hidden="true">{p.avatar}</span>
                   </button>
                 </form>

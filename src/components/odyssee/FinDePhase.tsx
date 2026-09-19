@@ -5,6 +5,7 @@
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { actionTerminerPhase, actionTerminerSoleil } from "@/app/planete/actions";
+import { useSon } from "@/components/audio/AudioProvider";
 import { scoreDe } from "@/lib/odyssee/composer";
 import { CONFIG_REVISION } from "@/lib/revision/config";
 import type { ResultatPhase } from "@/lib/supabase/odyssee";
@@ -36,6 +37,7 @@ export function FinDePhase({ mode, cibleId, cartes, reponses, retourHref, rejoue
   const [resultat, setResultat] = useState<ResultatPhase | null>(null);
   const [erreur, setErreur] = useState<string | null>(null);
   const lance = useRef(false);
+  const { jouer } = useSon();
 
   const score = scoreDe(reponses);
   const premieres = new Map<string, ReponseSession>();
@@ -56,11 +58,17 @@ export function FinDePhase({ mode, cibleId, cartes, reponses, retourHref, rejoue
             ? await actionTerminerSoleil({ moduleId: cibleId, score, bonnesReponses: bonnes.length })
             : await actionTerminerPhase({ conceptId: cibleId, phase: mode, score, bonnesReponses: bonnes.length, bonnesFaciles });
         setResultat(r);
+        // Le son dit le résultat avant même la lecture : déblocage, soleil, ou « pas encore ».
+        if (mode === "soleil") jouer(r.reussie ? "soleil" : "echec");
+        else if (mode === "mission") jouer(r.reussie ? "deblocage" : "echec");
+        else jouer("arrivee");
+        if (r.niveauApres > r.niveauAvant) setTimeout(() => jouer("niveau"), 1100);
+        else if (r.xpGagne > 0) setTimeout(() => jouer("xp"), 600);
       } catch (e: unknown) {
         setErreur(e instanceof Error ? e.message : "Enregistrement impossible.");
       }
     })();
-  }, [mode, cibleId, score, bonnes.length, bonnesFaciles, attendreEnregistrements]);
+  }, [mode, cibleId, score, bonnes.length, bonnesFaciles, attendreEnregistrements, jouer]);
 
   const evaluee = mode === "mission" || mode === "soleil";
   const reussi = resultat ? resultat.reussie : score >= seuil;

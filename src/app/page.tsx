@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { Ambiance } from "@/components/audio/Ambiance";
 import { CarteUnivers } from "@/components/odyssee/CarteUnivers";
 import { Hud } from "@/components/odyssee/Hud";
 import { prochaineDestination, resumeSecteur } from "@/lib/odyssee/univers";
@@ -33,6 +34,7 @@ export default async function PageUnivers() {
 
   return (
     <div className="flex flex-col gap-6">
+      <Ambiance />
       <Hud profil={univers.profil} joueur={profil} serie={chiffres.serie} signaux={chiffres.dues} />
 
       <section className="flex flex-col gap-2">
@@ -53,7 +55,7 @@ export default async function PageUnivers() {
             <p className="font-medium">
               {destination.planete.nom} <span className="texte-2">· {destination.galaxie.nom}</span>
             </p>
-            <Link href={routes.planete(destination.planete.id)} className="bouton bouton-principal self-start">
+            <Link href={routes.planete(destination.planete.id)} data-son="decollage" className="bouton bouton-principal self-start">
               Décoller
             </Link>
           </>
@@ -62,7 +64,7 @@ export default async function PageUnivers() {
           <>
             <p className="texte-2 text-sm">Prochaine destination</p>
             <p className="font-medium">Le soleil de {destination.galaxie.nom} t&apos;attend.</p>
-            <Link href={routes.soleil(destination.galaxie.id)} className="bouton bouton-principal self-start">
+            <Link href={routes.soleil(destination.galaxie.id)} data-son="decollage" className="bouton bouton-principal self-start">
               Affronter le soleil
             </Link>
           </>

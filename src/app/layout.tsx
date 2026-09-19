@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { AudioProvider } from "@/components/audio/AudioProvider";
 import { Navigation } from "@/components/Navigation";
 import { lireAffichage } from "@/lib/affichage";
 
@@ -30,10 +31,12 @@ export default async function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="fr" className={`${inter.variable} h-full`} data-theme={affichage.sombre ? "dark" : undefined} style={style}>
       <body className="min-h-full flex flex-col">
-        <Navigation />
-        <main className="page w-full mx-auto px-4 py-5 flex-1 flex flex-col" style={{ maxWidth: "var(--largeur-max)" }}>
-          {children}
-        </main>
+        <AudioProvider>
+          <Navigation />
+          <main className="page w-full mx-auto px-4 py-5 flex-1 flex flex-col" style={{ maxWidth: "var(--largeur-max)" }}>
+            {children}
+          </main>
+        </AudioProvider>
       </body>
     </html>
   );

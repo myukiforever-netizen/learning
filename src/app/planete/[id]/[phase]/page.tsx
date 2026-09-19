@@ -1,5 +1,7 @@
 import { notFound, redirect } from "next/navigation";
 import { Session } from "@/app/session/Session";
+import { Ambiance } from "@/components/audio/Ambiance";
+import { apparenceGalaxie } from "@/lib/odyssee/planete";
 import { aujourdhui } from "@/lib/dates";
 import { composerMission, composerPhase } from "@/lib/odyssee/composer";
 import { etapeAuMoins } from "@/lib/odyssee/univers";
@@ -32,6 +34,8 @@ export default async function PagePhase({ params }: PageProps<"/planete/[id]/[ph
 
   const sessionId = await creerSession(0);
   return (
+    <>
+    <Ambiance teinte={apparenceGalaxie(galaxie.id).teinte} />
     <Session
       mode={phase as Phase}
       sessionId={sessionId}
@@ -41,5 +45,6 @@ export default async function PagePhase({ params }: PageProps<"/planete/[id]/[ph
       retourHref={routes.planete(planete.id)}
       rejouerHref={routes.phase(planete.id, phase as Phase)}
     />
+    </>
   );
 }

@@ -5,6 +5,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { useSon } from "@/components/audio/AudioProvider";
 import { ajouterJours } from "@/lib/dates";
 import type { BoiteErreur, Carte, ObjectifRetention, ReponseSession } from "@/lib/types";
 
@@ -40,6 +41,7 @@ export function FinDeSession({ cartes, reponses, aujourdhui, onTerminer, erreurS
   const [enCours, setEnCours] = useState(false);
   const [prochaineDue, setProchaineDue] = useState<string | null>(null);
   const [erreur, setErreur] = useState<string | null>(null);
+  const { jouer } = useSon();
 
   // Les cartes ratées = celles dont la PREMIÈRE réponse était fausse.
   const erreurs = useMemo(() => {
@@ -58,6 +60,7 @@ export function FinDeSession({ cartes, reponses, aujourdhui, onTerminer, erreurS
       try {
         const resultat = await onTerminer(texte, triFinal);
         setProchaineDue(resultat.prochaineDue);
+        jouer("fin");
       } catch (e: unknown) {
         setErreur(e instanceof Error ? e.message : "Enregistrement impossible.");
       } finally {
@@ -65,13 +68,14 @@ export function FinDeSession({ cartes, reponses, aujourdhui, onTerminer, erreurS
         setPhase("recap");
       }
     },
-    [onTerminer, texte],
+    [onTerminer, texte, jouer],
   );
 
   const validerRappel = useCallback(() => {
     if (texte.trim().length === 0) return;
+    jouer("page");
     setPhase("concepts");
-  }, [texte]);
+  }, [texte, jouer]);
 
   const apresConcepts = useCallback(() => {
     if (erreurs.length === 0) void cloturer([]);
@@ -81,12 +85,14 @@ export function FinDeSession({ cartes, reponses, aujourdhui, onTerminer, erreurS
   const choisirBoite = useCallback(
     (boite: BoiteErreur) => {
       if (!carteATrier || enCours) return;
+      // Un trou noir s'ouvre : la boîte « je croyais savoir » a son propre son, grave.
+      jouer(boite === "thought_knew" ? "alerte" : "choix");
       const nouveauTri = [...tri, { cardId: carteATrier.id, objectif: carteATrier.retention_goal, boite }];
       setTri(nouveauTri);
       if (indexTri + 1 >= erreurs.length) void cloturer(nouveauTri);
       else setIndexTri(indexTri + 1);
     },
-    [carteATrier, enCours, tri, indexTri, erreurs.length, cloturer],
+    [carteATrier, enCours, tri, indexTri, erreurs.length, cloturer, jouer],
   );
 
   // ---- Raccourcis : Ctrl+Entrée valide le rappel, Entrée avance, 1-3 = boîtes

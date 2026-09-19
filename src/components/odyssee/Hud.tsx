@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BoutonSilence } from "@/components/audio/BoutonSilence";
 import { routes } from "@/lib/odyssee/urls";
 import type { Profil } from "@/lib/supabase/odyssee";
 import type { Profil as Joueur } from "@/lib/profils-types";
@@ -45,9 +46,16 @@ export function Hud({ profil, joueur, serie, signaux }: Props) {
           <span aria-hidden="true">⛽</span> {profil.carburant}
         </span>
       </div>
-      <Link href={routes.patrouille()} className={`bouton text-sm ${signaux > 0 ? "bouton-principal" : ""}`}>
-        Patrouille{signaux > 0 ? ` · ${signaux}` : ""}
-      </Link>
+      <div className="flex items-center gap-2">
+        <BoutonSilence />
+        <Link
+          href={routes.patrouille()}
+          data-son="decollage"
+          className={`bouton text-sm ${signaux > 0 ? "bouton-principal" : ""}`}
+        >
+          Patrouille{signaux > 0 ? ` · ${signaux}` : ""}
+        </Link>
+      </div>
     </div>
   );
 }

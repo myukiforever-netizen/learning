@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Session } from "@/app/session/Session";
+import { Ambiance } from "@/components/audio/Ambiance";
 import { aujourdhui } from "@/lib/dates";
 import { CONFIG_REVISION } from "@/lib/revision/config";
 import { composerSessionDepuisBase, creerSession } from "@/lib/supabase/requetes";
@@ -30,5 +31,10 @@ export default async function PagePatrouille({ searchParams }: PageProps<"/patro
   }
 
   const sessionId = await creerSession(minutes);
-  return <Session mode="patrouille" sessionId={sessionId} cartes={cartes} aujourdhui={aujourdhui()} retourHref="/" />;
+  return (
+    <>
+      <Ambiance />
+      <Session mode="patrouille" sessionId={sessionId} cartes={cartes} aujourdhui={aujourdhui()} retourHref="/" />
+    </>
+  );
 }

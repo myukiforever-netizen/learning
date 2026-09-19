@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Ambiance } from "@/components/audio/Ambiance";
 import { PlaneteSvg } from "@/components/odyssee/PlaneteSvg";
+import { apparenceGalaxie } from "@/lib/odyssee/planete";
 import { etoilesNotion } from "@/lib/odyssee/maitrise";
 import { etapeAuMoins, type EtapePlanete } from "@/lib/odyssee/univers";
 import { depuisUrl, routes } from "@/lib/odyssee/urls";
@@ -38,6 +40,7 @@ export default async function PagePlanete({ params }: PageProps<"/planete/[id]">
 
   return (
     <div className="flex flex-col gap-6">
+      <Ambiance teinte={apparenceGalaxie(galaxie.id).teinte} />
       <header className="flex items-center justify-between gap-4">
         <div>
           <p className="texte-2 text-sm">{galaxie.nom}</p>

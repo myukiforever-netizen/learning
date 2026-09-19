@@ -3,6 +3,7 @@ export const dynamic = "force-dynamic";
 
 import Link from "next/link";
 import { actionEnregistrerAffichage, actionEnregistrerQuota } from "./actions";
+import { ReglagesAudio } from "@/components/audio/ReglagesAudio";
 import { lireAffichage } from "@/lib/affichage";
 import { CONFIG_REVISION } from "@/lib/revision/config";
 import { lireQuotaNouvelles } from "@/lib/supabase/requetes";
@@ -62,6 +63,8 @@ export default async function PageReglages() {
           Enregistrer l&apos;affichage
         </button>
       </form>
+
+      <ReglagesAudio />
 
       <form action={actionEnregistrerQuota} className="bg-carte rounded-2xl border border-bordure shadow-sm p-5 flex flex-col gap-4">
         <h2 className="font-medium">Nouveautés par jour</h2>
