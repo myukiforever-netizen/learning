@@ -43,3 +43,7 @@ next-env.d.ts
 
 # Sauvegardes locales de données personnelles : jamais publiées
 /sauvegardes/
+
+# Fichiers sensibles déposés dans le dossier : jamais publiés
+*.key
+*.rdp
