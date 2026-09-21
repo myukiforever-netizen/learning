@@ -86,7 +86,7 @@ Autres commandes : `npm test` (tests de l'algorithme), `npm run build` (vérifie
 ## 6. Supabase : la base et la connexion (10 minutes, une seule fois)
 
 1. Sur supabase.com, crée un projet (région Europe).
-2. **SQL Editor** → nouvelle requête → colle `supabase/migrations/0001_schema.sql` → Run. Puis pareil avec `0002_settings.sql`, `0003_odyssee.sql` et `0004_profils.sql`. Chaque fichier doit afficher « Success ».
+2. **SQL Editor** → nouvelle requête → colle `supabase/migrations/0001_schema.sql` → Run. Puis pareil avec `0002_settings.sql`, `0003_odyssee.sql`, `0004_profils.sql` et `0005_noms_uniques.sql`. Chaque fichier doit afficher « Success ».
 3. **Project Settings → API** : copie « Project URL » et la clé « anon public ».
 4. Dans `.env.local` :
 
@@ -114,6 +114,8 @@ Ensuite : chaque `git push` sur `main` redéploie automatiquement. Les données 
 ## 8. Si quelque chose cloche
 
 - L'écran des profils affiche une erreur : le fichier `0004_profils.sql` n'a pas été exécuté.
+- « Un profil s'appelle déjà… » : chaque nom n'existe qu'une fois, même écrit avec d'autres majuscules ou accents. Choisis un autre nom.
+- Supprimer un profil : « Gérer les profils » puis « Supprimer » sous le profil, ou Réglages puis « Mon profil ». L'app montre ce qui sera perdu et demande de confirmer. C'est définitif.
 - Tu changes d'appareil : choisis simplement ton profil, ta progression est dans la base.
 - « Rien à réviser » : aucune carte due et quota de nouveautés atteint. Reviens demain ou monte le quota dans Réglages.
 - Le fichier JSON est refusé : l'app liste les problèmes en français (id en double, réponse absente des options…). Corrige et réessaie.

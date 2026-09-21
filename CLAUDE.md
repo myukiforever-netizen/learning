@@ -36,6 +36,7 @@ src/components/audio/  AudioProvider (réglages + son des clics), Ambiance, Bout
 src/lib/odyssee/    univers.ts (statuts, déblocage), maitrise.ts (étoiles, détresse), recompenses.ts (XP, niveaux, carburant), composer.ts (phases, mission, soleil), planete.ts (apparence procédurale), urls.ts (ids ↔ adresses, « / » ↔ « ~ »)
 src/lib/supabase/odyssee.ts  lectures/écritures Odyssée (univers, progression, profil)
 src/components/odyssee/  CarteUnivers, Hud, PlaneteSvg, FinDePhase
+src/components/profils/  ConfirmationSuppression (panneau de suppression), MonProfil (section des Réglages)
 src/components/     composants d'interface ; cartes/ = un fichier par mécanique (Flash, Qcm, Cloze, Libre, Exemple, Sort) ; FinDeSession.tsx = page blanche → tri → récap
 src/lib/cartes/     verifier.ts : comparaison tolérante, lecture des trous [[...]], vérification classer/ordonner
 src/lib/revision/   config.ts (TOUTES les valeurs réglables), planifier.ts (dates dues, boîtes), composer.ts (composition de session), serie.ts (🔥)
@@ -106,6 +107,7 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
 - Les écritures pendant la session sont asynchrones (la carte suivante n'attend pas) ; la fin de session attend toutes les écritures avant de clôturer.
 - Mode sombre PAR DÉFAUT (demande du product owner du 13/09/2026, qui prime sur le « clair par défaut » des docs). Préférences d'affichage (taille de texte, mode sombre) : cookie `ancre.affichage` lu dans `src/app/layout.tsx` → `data-theme="dark"` et `--taille-texte` sur `<html>`. Le mode sombre = mêmes tokens, valeurs redéfinies sous `:root[data-theme="dark"]` dans `globals.css`. Jamais de couleur en dur dans les composants.
 - Son (19/09/2026) : tout est **synthétisé** dans le navigateur (Web Audio), aucun fichier audio, aucune dépendance. Catalogue de 18 sons décrit en données dans `src/lib/audio/sons.ts` (testé : durées, gains, hauteurs) ; `moteur.ts` les joue et tient l'ambiance (drone par galaxie, note dérivée de la teinte). Le contexte audio naît au premier geste de l'utilisateur (règle des navigateurs). Réglages (effets, ambiance, volume) dans `localStorage` sous `ancre.audio`, donc **par appareil** comme la taille de texte, lus avec `useSyncExternalStore` (jamais de setState dans un effet). Un seul écouteur de clic dans `AudioProvider` sonorise tous les boutons et liens : `data-son="nom"` impose un son, `data-son="aucun"` fait taire un élément, `data-sans-son` sur un conteneur laisse la zone gérer ses propres sons (cartes de séance, écrans de découverte). « Silence radio » dans le tableau de bord coupe tout d'un geste.
+- Noms de profil uniques (21/09/2026) : un nom ne peut exister qu'une fois, majuscules, accents et espaces ignorés (`normaliserNom` et `profilAuMemeNom` dans `src/lib/profils-types.ts`, testés). Trois barrières : vérification pendant la frappe dans le formulaire, vérification serveur dans `creerProfil` / `modifierProfil` (erreur `NomDejaPris`, message prêt à afficher), et index d'unicité en base (`0005_noms_uniques.sql`, code 23505 traduit en même message). Le bouton d'envoi est désactivé pendant l'envoi (`useFormStatus`) : c'est un double clic qui avait créé 5 « selmen ». Suppression d'un profil : bouton « Supprimer » sous chaque profil dans « Gérer les profils », et section « Mon profil » dans Réglages ; même panneau `ConfirmationSuppression` (ce qui sera perdu, focus sur Annuler). Supprimer le profil courant efface le cookie et renvoie à /profils. Les sauvegardes locales de données (ex. doublons supprimés) vont dans `sauvegardes/`, ignoré par git.
 - Quota de nouveautés : table `settings` (`lireQuotaNouvelles`, repli sur la config si la table ou la ligne manque).
 
 ## Avancement
@@ -125,7 +127,7 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
   - Résumé complet de la matière pour le product owner : `docs/psychologie_resume.md`.
   - S5 (son) : terminé le 19/09/2026. Sons de retour partout (choix, confiance, révélation, bonne réponse, « pas encore », carte suivante, page de découverte, décollage, arrivée, XP, niveau, déblocage, soleil, échec, profil, trou noir, fin de patrouille), ambiance par galaxie, réglages et silence radio. 10 tests sur le catalogue.
   - S3 direction artistique (fond canvas, transitions), S4 motivation, S6 adaptation, S7 polissage : à faire.
-- Clés Supabase : en place dans `.env.local` depuis le 13/09/2026 (URL + anon). Tables 0001→0003 exécutées par le product owner ; **0004_profils.sql à exécuter** pour activer les profils.
+- Clés Supabase : en place dans `.env.local` depuis le 13/09/2026 (URL + anon). Migrations 0001→0004 exécutées par le product owner ; **0005_noms_uniques.sql à exécuter** (index d'unicité des noms, doublons supprimés le 21/09/2026).
 
 <!-- BEGIN:nextjs-agent-rules -->
 

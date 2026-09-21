@@ -4,6 +4,9 @@ export const dynamic = "force-dynamic";
 import Link from "next/link";
 import { actionEnregistrerAffichage, actionEnregistrerQuota } from "./actions";
 import { ReglagesAudio } from "@/components/audio/ReglagesAudio";
+import { MonProfil } from "@/components/profils/MonProfil";
+import { profilCourant, statsProfils } from "@/lib/profils";
+import type { StatsProfil } from "@/lib/profils-types";
 import { lireAffichage } from "@/lib/affichage";
 import { CONFIG_REVISION } from "@/lib/revision/config";
 import { lireQuotaNouvelles } from "@/lib/supabase/requetes";
@@ -11,9 +14,11 @@ import { supabaseConfigure } from "@/lib/supabase/server";
 
 export default async function PageReglages() {
   const configure = supabaseConfigure();
-  const [affichage, quota] = await Promise.all([
+  const [affichage, quota, profil, stats] = await Promise.all([
     lireAffichage(),
     configure ? lireQuotaNouvelles() : Promise.resolve(CONFIG_REVISION.nouvellesParJour),
+    configure ? profilCourant() : Promise.resolve(null),
+    configure ? statsProfils() : Promise.resolve<Record<string, StatsProfil>>({}),
   ]);
   const { taillesTexte, quotaNouvellesMin, quotaNouvellesMax } = CONFIG_REVISION.reglages;
 
@@ -25,6 +30,8 @@ export default async function PageReglages() {
           Accueil
         </Link>
       </header>
+
+      {profil && <MonProfil profil={profil} stats={stats[profil.id]} />}
 
       <form action={actionEnregistrerAffichage} className="bg-carte rounded-2xl border border-bordure shadow-sm p-5 flex flex-col gap-5">
         <h2 className="font-medium">Affichage</h2>
