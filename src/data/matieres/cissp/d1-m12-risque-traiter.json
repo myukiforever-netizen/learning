@@ -1,0 +1,2053 @@
+{
+  "id": "d1-m12-risque-traiter",
+  "name": "D1.12 Traiter et suivre le risque",
+  "galaxie": { "teinte": 232, "ambiance": "mysterieux" },
+  "concepts": [
+    {
+      "id": "d1-trait-eviter",
+      "name": "Traiter le risque (risk treatment) : éviter (avoid)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Que faire d'un risque ?",
+          "paragraphes": [
+            "Tu as repéré un risque : la rue devant ton collège est dangereuse à vélo. Tu as plusieurs choix.",
+            "Tu peux ne plus passer par là. Tu peux mettre un casque. Tu peux t'assurer. Ou tu peux te dire que le danger est acceptable.",
+            "Le choix que tu fais s'appelle un traitement du risque (risk treatment). Dans cette planète, tu vois le traitement en général, puis le premier : éviter (avoid)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Quatre façons d'aborder la rue",
+          "comme": "Éviter : tu prends un autre chemin. Atténuer : tu mets un casque et tu regardes bien. Transférer : tu prends une assurance pour ton vélo. Accepter : sur une rue calme, tu traverses sans rien faire de plus.",
+          "enVrai": "Ce sont les quatre réponses au risque : éviter (avoid), atténuer (mitigate), transférer (transfer), accepter (accept). Chaque risque reçoit l'une d'elles, ou un mélange. Où l'image s'arrête : la direction de l'entreprise décide, avec l'avis de l'expert en sécurité."
+        },
+        {
+          "type": "predire",
+          "question": "Une école juge trop dangereux de garder les notes sur un très vieux logiciel. Elle arrête de l'utiliser et le supprime. Quelle réponse est-ce ?",
+          "options": ["Éviter", "Atténuer", "Accepter"],
+          "answer": "Éviter",
+          "explanation": "Elle supprime l'activité qui crée le risque. Atténuer aurait voulu dire garder le logiciel en le protégeant mieux."
+        },
+        {
+          "type": "exemple",
+          "titre": "Interdire la clé USB",
+          "texte": "Une entreprise interdit les supports amovibles, comme les clés USB, et le stockage personnel dans le cloud. Plus de clé USB, donc plus de fuite par cette voie. Mais il faut acheter d'autres outils et former les employés. Éviter coûte souvent du temps et de l'argent au départ."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-trait-eviter-traitement-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « risk treatment »",
+          "answer": "Once you identify and assess your organization's threats, vulnerabilities, and risks, you must determine the best way to address each risk; this is known as risk treatment (or risk response).\n\nTraduction : Une fois que vous avez identifié et évalué les menaces, les vulnérabilités et les risques de votre organisation, vous devez déterminer la meilleure façon de traiter chaque risque ; c'est ce qu'on appelle le traitement du risque (ou la réponse au risque).",
+          "explanation": "Après avoir mesuré le risque, on choisit quoi en faire : c'est le traitement.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Response/Treatment ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-traitement-def2",
+          "type": "cloze",
+          "question": "Once you identify and assess your organization's threats, vulnerabilities, and risks, you must determine the best way to [[address]] each risk; this is known as risk [[treatment]] (or risk response).",
+          "answer": "Once you identify and assess your organization's threats, vulnerabilities, and risks, you must determine the best way to address each risk; this is known as risk treatment (or risk response).",
+          "explanation": "On cherche la meilleure façon de s'occuper (address) de chaque risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-traitement-def3",
+          "type": "cloze",
+          "question": "Once you identify and assess your organization's threats, vulnerabilities, and risks, you must determine [[the best way]] to [[address each risk]]; this is known as [[risk treatment]] (or risk response).",
+          "answer": "Once you identify and assess your organization's threats, vulnerabilities, and risks, you must determine the best way to address each risk; this is known as risk treatment (or risk response).",
+          "explanation": "La meilleure façon, pour chaque risque, et le nom officiel : risk treatment.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-traitement-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « risk treatment » (en anglais).",
+          "answer": "Once you identify and assess your organization's threats, vulnerabilities, and risks, you must determine the best way to address each risk; this is known as risk treatment (or risk response).\n\nTraduction : Une fois que vous avez identifié et évalué les menaces, les vulnérabilités et les risques de votre organisation, vous devez déterminer la meilleure façon de traiter chaque risque ; c'est ce qu'on appelle le traitement du risque (ou la réponse au risque).",
+          "explanation": "Commence par « Once you identify and assess » : d'abord on mesure, ensuite on traite.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-quatre-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les quatre catégories de « risk treatment »",
+          "answer": "There are four main categories of risk treatment, as we describe in the following sections: avoid, mitigate, transfer, and accept.\n\nTraduction : Il existe quatre grandes catégories de traitement du risque, que nous décrivons dans les sections suivantes : éviter, atténuer, transférer et accepter.",
+          "explanation": "Avoid, mitigate, transfer, accept : retiens-les dans cet ordre.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Risk Response/Treatment ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-quatre-def3",
+          "type": "cloze",
+          "question": "There are [[four main categories]] of risk treatment, as we describe in the following sections: [[avoid, mitigate]], [[transfer, and accept]].",
+          "answer": "There are four main categories of risk treatment, as we describe in the following sections: avoid, mitigate, transfer, and accept.",
+          "explanation": "Quatre catégories : les deux premières puis les deux dernières.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « risk avoidance »",
+          "answer": "Risk avoidance involves eliminating an identified risk by stopping or removing the activity or technology that causes the risk in the first place.\n\nTraduction : L'évitement du risque consiste à éliminer un risque identifié en arrêtant ou en supprimant l'activité ou la technologie qui est à l'origine du risque.",
+          "explanation": "On supprime la cause : plus d'activité, plus de risque.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Avoid ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-def2",
+          "type": "cloze",
+          "question": "Risk avoidance involves [[eliminating]] an identified risk by stopping or [[removing]] the activity or technology that causes the risk in the first place.",
+          "answer": "Risk avoidance involves eliminating an identified risk by stopping or removing the activity or technology that causes the risk in the first place.",
+          "explanation": "Éliminer le risque, en retirant ce qui le crée.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-def3",
+          "type": "cloze",
+          "question": "Risk avoidance involves [[eliminating an identified risk]] by [[stopping or removing]] the activity or technology that [[causes the risk]] in the first place.",
+          "answer": "Risk avoidance involves eliminating an identified risk by stopping or removing the activity or technology that causes the risk in the first place.",
+          "explanation": "Le but, le moyen, et la cible : l'activité ou la technologie qui cause le risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « risk avoidance » (en anglais).",
+          "answer": "Risk avoidance involves eliminating an identified risk by stopping or removing the activity or technology that causes the risk in the first place.\n\nTraduction : L'évitement du risque consiste à éliminer un risque identifié en arrêtant ou en supprimant l'activité ou la technologie qui est à l'origine du risque.",
+          "explanation": "Pense à l'autre chemin pour aller au collège : on supprime ce qui crée le danger.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-tolerance-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : quand utilise-t-on l'évitement ?",
+          "answer": "Organizations use risk avoidance when a particular risk exceeds their acceptable risk tolerance, but complete avoidance is often difficult to achieve without business disruption.\n\nTraduction : Les organisations utilisent l'évitement du risque quand un risque précis dépasse leur tolérance au risque acceptable, mais l'évitement complet est souvent difficile à réaliser sans perturber l'activité.",
+          "explanation": "On évite quand le risque est trop grand. La limite : arrêter une activité la perturbe.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Avoid ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-tolerance-def3",
+          "type": "cloze",
+          "question": "Organizations use risk avoidance when a particular risk [[exceeds their acceptable]] risk tolerance, but [[complete avoidance]] is often difficult to achieve without [[business disruption]].",
+          "answer": "Organizations use risk avoidance when a particular risk exceeds their acceptable risk tolerance, but complete avoidance is often difficult to achieve without business disruption.",
+          "explanation": "Le risque dépasse la tolérance, mais l'évitement complet perturbe l'activité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-eviter-1",
+          "type": "duel",
+          "question": "Supprimer le logiciel qui crée le risque : est-ce éviter ou atténuer ?",
+          "options": ["Éviter", "Atténuer"],
+          "answer": "Éviter",
+          "explanation": "On supprime l'activité qui crée le risque. Atténuer garderait le logiciel et le protégerait mieux."
+        },
+        {
+          "id": "d1-trait-eviter-2",
+          "type": "qcm",
+          "question": "Un magasin vend des jeux en ligne mais ne peut pas protéger les paiements. Il arrête la vente en ligne. Quelle réponse choisit-il ?",
+          "options": ["Atténuer", "Transférer", "Éviter", "Accepter"],
+          "options_why": [
+            "Atténuer voudrait dire continuer à vendre, en rendant le risque plus petit.",
+            "Transférer voudrait dire faire porter la perte à un tiers, comme un assureur.",
+            "",
+            "Accepter voudrait dire continuer à vendre sans rien changer."
+          ],
+          "answer": "Éviter",
+          "explanation": "Le magasin arrête l'activité qui cause le risque : c'est de l'évitement."
+        },
+        {
+          "id": "d1-trait-eviter-3",
+          "type": "qcm",
+          "question": "Quand une organisation choisit-elle d'éviter un risque ?",
+          "options": [
+            "Quand le risque est minuscule",
+            "Quand le risque dépasse ce qu'elle accepte",
+            "Quand elle a déjà une assurance",
+            "Quand la protection est gratuite"
+          ],
+          "options_why": [
+            "Un risque minuscule se laisse plutôt accepter.",
+            "",
+            "Une assurance est un transfert, pas un évitement.",
+            "Une protection gratuite serait plutôt une façon d'atténuer."
+          ],
+          "answer": "Quand le risque dépasse ce qu'elle accepte",
+          "explanation": "Quand le risque dépasse la tolérance de l'organisation, supprimer l'activité devient une option."
+        },
+        {
+          "id": "d1-trait-eviter-4",
+          "type": "flash",
+          "question": "Quelle est la principale limite de l'évitement ?",
+          "answer": "Il est souvent difficile à réaliser sans perturber l'activité de l'entreprise (business disruption).",
+          "explanation": "Arrêter l'activité qui crée le risque peut aussi arrêter ce qui fait gagner de l'argent."
+        },
+        {
+          "id": "d1-trait-eviter-5",
+          "type": "why",
+          "question": "Pourquoi interdire les clés USB est-il un évitement qui demande un investissement ?",
+          "answer": "Parce qu'il faut acheter d'autres outils, former les employés et faire respecter la règle. Éviter n'est donc pas toujours gratuit.",
+          "explanation": "Le manuel dit que ces politiques demandent un investissement et une action au départ."
+        },
+        {
+          "id": "d1-trait-eviter-6",
+          "type": "whatif",
+          "question": "Et si une entreprise voulait éviter tous ses risques ?",
+          "answer": "Elle devrait arrêter presque toute son activité. Éviter tout est impossible : c'est pourquoi il existe trois autres réponses.",
+          "explanation": "Chaque activité porte un peu de risque. On ne peut pas toutes les supprimer."
+        },
+        {
+          "id": "d1-trait-eviter-7",
+          "type": "problem",
+          "question": "Un club de sport garde les photos des élèves sur un vieux site mal protégé. Comment pourrait-il éviter ce risque, et que cela lui coûterait-il ?",
+          "answer": "Il retire les photos du vieux site, ou ferme ce site. Cela coûte du temps, et le club ne peut plus montrer les photos sur ce site.",
+          "explanation": "Éviter supprime la cause du risque, mais fait aussi perdre l'usage de ce qu'on supprime."
+        },
+        {
+          "id": "d1-trait-eviter-8",
+          "type": "flash",
+          "question": "Qui décide finalement du traitement d'un risque ?",
+          "answer": "La direction (leadership et management), avec l'avis et la connaissance d'un expert comme un CISSP.",
+          "explanation": "L'expert conseille. Les dirigeants choisissent, car c'est leur argent et leur activité.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Response/Treatment » : ce sont des décisions de direction qui devraient avoir l'avis d'un CISSP."
+        }
+      ]
+    },
+    {
+      "id": "d1-trait-attenuer",
+      "name": "Atténuer le risque (mitigate)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le casque",
+          "paragraphes": [
+            "Tu adores le vélo et tu ne veux pas arrêter. Tu ne peux donc pas éviter le risque de chute.",
+            "Alors tu mets un casque, tu règles tes freins et tu roules moins vite en ville.",
+            "Tu n'as pas supprimé le danger. Tu l'as rendu moins probable et moins grave. Cette réponse s'appelle atténuer (mitigate)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Deux boutons à tourner",
+          "comme": "Rouler moins vite rend la chute moins probable. Le casque rend la chute moins grave. Tu peux tourner l'un des boutons, ou les deux.",
+          "enVrai": "Atténuer un risque (risk mitigation), c'est baisser sa probabilité, son impact, ou les deux. L'activité continue, mais le danger est plus petit. C'est la réponse la plus courante."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise ajoute un code envoyé sur le téléphone en plus du mot de passe. Quelle réponse au risque est-ce ?",
+          "options": ["Atténuer", "Éviter", "Transférer"],
+          "answer": "Atténuer",
+          "explanation": "Elle garde l'activité, mais le vol de compte devient plus difficile : la probabilité baisse. Éviter aurait supprimé l'activité."
+        },
+        {
+          "type": "exemple",
+          "titre": "Passer au multifacteur",
+          "texte": "Avant : un simple mot de passe suffit pour ouvrir le dossier des salaires. Après : mot de passe et code sur le téléphone. C'est l'authentification multifacteur : un second contrôle en plus du mot de passe. Un pirate qui devine le mot de passe ne peut plus entrer. Le risque est réduit, pas supprimé."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-trait-attenuer-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « risk mitigation »",
+          "answer": "Risk mitigation (sometimes called risk reduction or risk modification) is a strategy that involves reducing the likelihood of a threat being realized or lessening the impact that the realized threat would have on the organization.\n\nTraduction : L'atténuation du risque (parfois appelée réduction du risque ou modification du risque) est une stratégie qui consiste à réduire la probabilité qu'une menace se réalise ou à diminuer l'impact que la menace réalisée aurait sur l'organisation.",
+          "explanation": "Deux boutons : moins de chances que ça arrive, ou moins de dégâts si ça arrive.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Mitigate ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-attenuer-def2",
+          "type": "cloze",
+          "question": "Risk mitigation (sometimes called risk reduction or risk modification) is a strategy that involves [[reducing]] the likelihood of a threat being realized or [[lessening]] the impact that the realized threat would have on the organization.",
+          "answer": "Risk mitigation (sometimes called risk reduction or risk modification) is a strategy that involves reducing the likelihood of a threat being realized or lessening the impact that the realized threat would have on the organization.",
+          "explanation": "Réduire la probabilité, ou diminuer l'impact.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-attenuer-def3",
+          "type": "cloze",
+          "question": "Risk mitigation (sometimes called risk reduction or risk modification) is a strategy that involves [[reducing the likelihood]] of a threat being realized or [[lessening the impact]] that the [[realized threat]] would have on the organization.",
+          "answer": "Risk mitigation (sometimes called risk reduction or risk modification) is a strategy that involves reducing the likelihood of a threat being realized or lessening the impact that the realized threat would have on the organization.",
+          "explanation": "Les deux boutons de l'atténuation, et la menace réalisée.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-attenuer-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « risk mitigation » (en anglais).",
+          "answer": "Risk mitigation (sometimes called risk reduction or risk modification) is a strategy that involves reducing the likelihood of a threat being realized or lessening the impact that the realized threat would have on the organization.\n\nTraduction : L'atténuation du risque (parfois appelée réduction du risque ou modification du risque) est une stratégie qui consiste à réduire la probabilité qu'une menace se réalise ou à diminuer l'impact que la menace réalisée aurait sur l'organisation.",
+          "explanation": "Pense au casque et à la vitesse : likelihood d'un côté, impact de l'autre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-attenuer-courant-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : pourquoi l'atténuation est la plus courante",
+          "answer": "Risk mitigation is the most common treatment option for identified risks and involves implementing policies and technologies to reduce the harm that a risk might cause.\n\nTraduction : L'atténuation du risque est l'option de traitement la plus courante pour les risques identifiés ; elle consiste à mettre en œuvre des politiques et des technologies pour réduire le mal qu'un risque pourrait causer.",
+          "explanation": "Des règles et des outils pour réduire le mal possible : c'est le quotidien de la sécurité.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Mitigate ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-attenuer-courant-def3",
+          "type": "cloze",
+          "question": "Risk mitigation is [[the most common]] treatment option for identified risks and involves [[implementing policies and technologies]] to [[reduce the harm]] that a risk might cause.",
+          "answer": "Risk mitigation is the most common treatment option for identified risks and involves implementing policies and technologies to reduce the harm that a risk might cause.",
+          "explanation": "La plus courante, avec des politiques et des technologies, pour réduire le mal.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-attenuer-1",
+          "type": "duel",
+          "question": "Mettre un casque pour continuer à faire du vélo : est-ce éviter ou atténuer ?",
+          "options": ["Éviter", "Atténuer"],
+          "answer": "Atténuer",
+          "explanation": "L'activité continue, mais la chute fait moins mal : le danger est réduit, pas supprimé."
+        },
+        {
+          "id": "d1-trait-attenuer-2",
+          "type": "sort",
+          "question": "Chaque mesure réduit-elle la probabilité ou l'impact ?",
+          "answer": "Probabilité : les mises à jour régulières, des mots de passe plus solides, la formation aux mails piégés. Impact : la sauvegarde chaque nuit, l'isolement d'un ordinateur infecté, un plan pour rétablir le site en une heure.",
+          "explanation": "Une mesure qui empêche baisse la probabilité. Une mesure qui limite les dégâts baisse l'impact.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Réduit la probabilité", "Réduit l'impact"],
+            "items": [
+              { "text": "Des mises à jour régulières des logiciels", "category": "Réduit la probabilité" },
+              { "text": "Des mots de passe plus solides", "category": "Réduit la probabilité" },
+              { "text": "Former les employés à repérer les mails piégés", "category": "Réduit la probabilité" },
+              { "text": "Une sauvegarde chaque nuit", "category": "Réduit l'impact" },
+              { "text": "Isoler vite un ordinateur infecté du réseau", "category": "Réduit l'impact" },
+              { "text": "Un plan pour rétablir le site en une heure", "category": "Réduit l'impact" }
+            ]
+          }
+        },
+        {
+          "id": "d1-trait-attenuer-3",
+          "type": "qcm",
+          "question": "Une école ne peut pas se passer d'internet. Elle installe un pare-feu et forme les élèves aux mails piégés. Quelle réponse choisit-elle ?",
+          "options": ["Éviter", "Atténuer", "Transférer", "Accepter"],
+          "options_why": [
+            "Éviter voudrait dire se passer d'internet, ce que l'école ne peut pas faire.",
+            "",
+            "Transférer voudrait dire faire porter une partie de la perte à un tiers.",
+            "Accepter voudrait dire ne rien changer : or l'école ajoute des protections."
+          ],
+          "answer": "Atténuer",
+          "explanation": "Elle garde l'activité et réduit le danger avec un outil et de la formation."
+        },
+        {
+          "id": "d1-trait-attenuer-4",
+          "type": "flash",
+          "question": "Quels autres noms donne-t-on à l'atténuation du risque ?",
+          "answer": "Réduction du risque (risk reduction) et modification du risque (risk modification).",
+          "explanation": "Trois noms pour la même réponse : atténuer, réduire, modifier.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Mitigate »."
+        },
+        {
+          "id": "d1-trait-attenuer-5",
+          "type": "qcm",
+          "question": "Une sauvegarde chaque nuit n'empêche pas une panne. Quel effet a-t-elle sur le risque ?",
+          "options": [
+            "Elle réduit la probabilité de la panne",
+            "Elle réduit l'impact de la panne",
+            "Elle supprime l'activité qui crée le risque",
+            "Elle transfère la perte à un tiers"
+          ],
+          "options_why": [
+            "La panne arrive toujours aussi souvent. La sauvegarde n'agit pas sur elle.",
+            "",
+            "L'activité continue : rien n'est supprimé.",
+            "Personne d'autre ne porte la perte : c'est l'entreprise qui restaure ses données."
+          ],
+          "answer": "Elle réduit l'impact de la panne",
+          "explanation": "Après la panne, on récupère les données : les dégâts sont plus petits."
+        },
+        {
+          "id": "d1-trait-attenuer-6",
+          "type": "why",
+          "question": "Pourquoi l'atténuation est-elle la réponse la plus courante ?",
+          "answer": "Parce que l'entreprise garde son activité et réduit le danger avec des règles et des outils. Éviter coûte souvent trop cher, et on ne peut pas tout transférer.",
+          "explanation": "Atténuer permet de continuer à travailler tout en étant plus sûr.",
+          "explanation_more": "Le manuel dit seulement « most common ». L'explication donnée ici est un raisonnement pédagogique (hors manuel)."
+        },
+        {
+          "id": "d1-trait-attenuer-7",
+          "type": "cloze",
+          "question": "L'atténuation réduit la [[probabilité|likelihood|chance]] d'une menace ou son [[impact]] sur l'organisation.",
+          "answer": "L'atténuation réduit la probabilité d'une menace ou son impact sur l'organisation.",
+          "explanation": "Deux boutons : moins de chances, ou moins de dégâts."
+        },
+        {
+          "id": "d1-trait-attenuer-8",
+          "type": "problem",
+          "question": "Un magasin craint le vol des comptes de ses clients. Propose deux mesures d'atténuation et dis si chacune réduit la probabilité ou l'impact.",
+          "answer": "Un second contrôle à la connexion, comme un code sur le téléphone, réduit la probabilité. Un plan de réaction rapide pour prévenir les clients réduit l'impact.",
+          "explanation": "Une mesure peut empêcher l'incident, ou limiter ses dégâts."
+        },
+        {
+          "id": "d1-trait-attenuer-9",
+          "type": "whatif",
+          "question": "Et si on met des protections partout sans regarder les risques ?",
+          "answer": "On dépense trop pour de petits risques et on oublie les grands. L'atténuation doit viser un risque précis.",
+          "explanation": "Une protection sans risque visé est de l'argent dépensé au hasard."
+        }
+      ]
+    },
+    {
+      "id": "d1-trait-transferer",
+      "name": "Transférer le risque (transfer)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le vélo volé",
+          "paragraphes": [
+            "Ton vélo est volé devant le collège. Tu avais une assurance. Tu ne paies pas un vélo neuf : l'assureur te rembourse.",
+            "En échange, tu paies une petite somme chaque année.",
+            "Tu as déplacé une partie du dommage vers quelqu'un d'autre. Cela s'appelle transférer le risque (risk transference)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le sac lourd à deux",
+          "comme": "Quand tu portes un sac lourd avec un ami, chacun porte la moitié. Mais le sac est toujours là, et il est toujours lourd.",
+          "enVrai": "Transférer, c'est faire porter la responsabilité et une partie de la perte à un tiers (third party). Un tiers est une autre entreprise, comme un assureur ou un prestataire. Le risque ne disparaît pas tout à fait : tu en gardes une part. Où l'image s'arrête : un assureur ne répare pas ta réputation."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise perd les données de ses clients. Son assurance paie les pertes d'argent. Que reste-t-il à gérer pour elle ?",
+          "options": [
+            "Rien : tout est transféré",
+            "La confiance des clients, qui baisse",
+            "Rien, mais elle doit une amende à l'assureur"
+          ],
+          "answer": "La confiance des clients, qui baisse",
+          "explanation": "L'assurance couvre l'argent. La confiance des clients reste le problème de l'entreprise. La première réponse est tentante, car on croit que l'assurance règle tout."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le cloud, un risque partagé",
+          "texte": "Un magasin met son site chez un hébergeur cloud. L'hébergeur protège les serveurs. Le magasin protège ses comptes et ses mots de passe. Le risque est partagé entre les deux : on parle de partage du risque (risk sharing)."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-trait-transferer-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « risk transference »",
+          "answer": "Risk transference (also known as risk assignment) involves shifting the responsibility and potential loss associated with a risk onto a third party.\n\nTraduction : Le transfert du risque (aussi appelé affectation du risque) consiste à déplacer la responsabilité et la perte potentielle liées à un risque vers un tiers.",
+          "explanation": "On déplace la responsabilité et la perte vers quelqu'un d'autre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Transfer ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-transferer-def2",
+          "type": "cloze",
+          "question": "Risk transference (also known as risk assignment) involves [[shifting]] the [[responsibility]] and potential loss associated with a risk onto a third party.",
+          "answer": "Risk transference (also known as risk assignment) involves shifting the responsibility and potential loss associated with a risk onto a third party.",
+          "explanation": "On déplace (shifting) la responsabilité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-transferer-def3",
+          "type": "cloze",
+          "question": "Risk transference (also known as risk assignment) involves [[shifting the responsibility]] and [[potential loss]] associated with a risk onto [[a third party]].",
+          "answer": "Risk transference (also known as risk assignment) involves shifting the responsibility and potential loss associated with a risk onto a third party.",
+          "explanation": "Ce qu'on déplace : la responsabilité et la perte, vers un tiers.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-transferer-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « risk transference » (en anglais).",
+          "answer": "Risk transference (also known as risk assignment) involves shifting the responsibility and potential loss associated with a risk onto a third party.\n\nTraduction : Le transfert du risque (aussi appelé affectation du risque) consiste à déplacer la responsabilité et la perte potentielle liées à un risque vers un tiers.",
+          "explanation": "Pense à l'assurance du vélo : on déplace la perte vers l'assureur.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-transferer-assurance-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « insurance » et le transfert du risque",
+          "answer": "Insurance is the most common form of risk transference.\n\nTraduction : L'assurance est la forme la plus courante de transfert du risque.",
+          "explanation": "Quand on pense « transférer », on pense d'abord à l'assurance.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Transfer ». Exemple du manuel : l'assurance contre les cyberattaques (cyber insurance) couvre les pertes d'argent d'une fuite de données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-transferer-assurance-def3",
+          "type": "cloze",
+          "question": "[[Insurance]] is the [[most common form]] of [[risk transference]].",
+          "answer": "Insurance is the most common form of risk transference.",
+          "explanation": "L'assurance, la forme la plus courante, du transfert du risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-transferer-partage-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « risk sharing »",
+          "answer": "It's hard to completely transfer all risk, so many people instead use the term risk sharing.\n\nTraduction : Il est difficile de transférer complètement tout le risque, c'est pourquoi beaucoup de gens utilisent plutôt le terme partage du risque.",
+          "explanation": "On garde presque toujours une part du risque : on le partage.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Transfer ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-transferer-partage-def3",
+          "type": "cloze",
+          "question": "It's hard to [[completely transfer]] all risk, so [[many people]] instead use the [[term risk sharing]].",
+          "answer": "It's hard to completely transfer all risk, so many people instead use the term risk sharing.",
+          "explanation": "Un transfert complet est difficile, donc on parle de partage.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-transferer-1",
+          "type": "duel",
+          "question": "Un magasin prend une assurance contre le piratage de ses comptes. Est-ce atténuer ou transférer ?",
+          "options": ["Atténuer", "Transférer"],
+          "answer": "Transférer",
+          "explanation": "L'assurance ne rend pas le piratage moins probable ni moins grave. Elle déplace la perte d'argent vers l'assureur."
+        },
+        {
+          "id": "d1-trait-transferer-2",
+          "type": "qcm",
+          "question": "Lequel de ces choix est un exemple de transfert ou de partage du risque ?",
+          "options": [
+            "Interdire les clés USB aux employés",
+            "Ajouter un code sur le téléphone à la connexion",
+            "Ne rien faire, car la perte coûterait peu",
+            "Confier la surveillance de ses serveurs à un prestataire spécialisé"
+          ],
+          "options_why": [
+            "Interdire une activité, c'est l'éviter.",
+            "Rendre le vol de compte plus difficile, c'est atténuer.",
+            "Ne rien faire parce que c'est peu coûteux, c'est accepter.",
+            ""
+          ],
+          "answer": "Confier la surveillance de ses serveurs à un prestataire spécialisé",
+          "explanation": "Une partie de la responsabilité passe à un tiers : c'est du partage du risque.",
+          "explanation_more": "Le manuel cite les services de sécurité gérés (managed security services) : un prestataire surveille la sécurité à ta place."
+        },
+        {
+          "id": "d1-trait-transferer-3",
+          "type": "flash",
+          "question": "Pourquoi dit-on souvent « partage du risque » plutôt que « transfert » ?",
+          "answer": "Parce qu'on ne peut presque jamais transférer tout le risque : on en garde une part, comme la réputation.",
+          "explanation": "Le tiers prend une partie du risque, rarement tout."
+        },
+        {
+          "id": "d1-trait-transferer-4",
+          "type": "why",
+          "question": "Pourquoi une assurance ne transfère-t-elle pas toute la perte d'une attaque ?",
+          "answer": "Elle paie l'argent perdu, mais pas la confiance perdue des clients. Cette part de risque, la réputation, reste à l'entreprise.",
+          "explanation": "On peut déplacer une somme d'argent, pas le regard des clients.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : l'entreprise « still must manage through some level of reputational risk »."
+        },
+        {
+          "id": "d1-trait-transferer-5",
+          "type": "problem",
+          "question": "Un club de sport héberge son site chez un prestataire cloud. Explique le partage du risque entre le club et le prestataire.",
+          "answer": "Le prestataire protège les serveurs. Le club protège ses comptes et ses mots de passe. Le risque est partagé, il n'a pas disparu.",
+          "explanation": "Chacun garde la part du risque qu'il contrôle.",
+          "explanation_more": "Le manuel dit que le risque est réparti entre le client et le prestataire. Le détail de qui protège quoi est un exemple pédagogique."
+        },
+        {
+          "id": "d1-trait-transferer-6",
+          "type": "whatif",
+          "question": "Et si l'entreprise croit que l'assurance règle tout ?",
+          "answer": "Elle risque de négliger la protection et de découvrir, après une attaque, que sa réputation est abîmée. L'assurance ne remplace pas les contrôles.",
+          "explanation": "L'assurance paie après l'incident. Elle ne l'empêche pas."
+        },
+        {
+          "id": "d1-trait-transferer-7",
+          "type": "cloze",
+          "question": "Transférer un risque, c'est déplacer la [[responsabilité]] et la [[perte]] possible vers un tiers.",
+          "answer": "Transférer un risque, c'est déplacer la responsabilité et la perte possible vers un tiers.",
+          "explanation": "Les deux choses déplacées : la responsabilité et la perte."
+        },
+        {
+          "id": "d1-trait-transferer-8",
+          "type": "flash",
+          "question": "Quel autre nom donne-t-on au transfert du risque (risk transference) ?",
+          "answer": "L'affectation du risque (risk assignment).",
+          "explanation": "On affecte la responsabilité à un tiers, comme on assigne une tâche."
+        }
+      ]
+    },
+    {
+      "id": "d1-trait-accepter",
+      "name": "Accepter le risque (accept)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La rue calme",
+          "paragraphes": [
+            "Tu traverses la petite rue devant chez toi, sans casque, sans rien faire de spécial. Il y passe une voiture par heure, à 20 km/h.",
+            "En faire plus coûterait du temps pour rien. Tu as décidé de vivre avec ce petit danger.",
+            "Cela s'appelle accepter le risque (risk acceptance)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le cadenas trop cher",
+          "comme": "Tu n'achètes pas un cadenas de 100 $ pour un cahier qui coûte 2 $. Le cadenas coûterait plus que la perte.",
+          "enVrai": "Accepter est raisonnable quand éviter, atténuer ou transférer coûterait plus cher que les pertes attendues. Où l'image s'arrête : accepter est un choix conscient, pas un oubli."
+        },
+        {
+          "type": "predire",
+          "question": "Une alarme coûte 5 000 $ par an pour protéger un objet qui vaut 200 $. Que dit la raison ?",
+          "options": [
+            "Accepter le risque",
+            "Acheter l'alarme quand même",
+            "Détruire l'objet pour éviter le risque"
+          ],
+          "answer": "Accepter le risque",
+          "explanation": "L'alarme coûterait bien plus que la perte possible. Les deux autres choix dépensent beaucoup pour presque rien."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un risque qui fait partie du métier",
+          "texte": "Un magasin en ligne sait que certains paiements seront frauduleux. Il ne peut pas les empêcher tous sans perdre des clients honnêtes. Il accepte ce risque, car il fait partie de la vente en ligne."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-trait-accepter-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « risk acceptance »",
+          "answer": "Risk acceptance is the way to go if avoiding, mitigating, or transferring the risk would cost more than the expected losses of the realized threat.\n\nTraduction : L'acceptation du risque est la voie à suivre si éviter, atténuer ou transférer le risque coûterait plus cher que les pertes attendues de la menace réalisée.",
+          "explanation": "On accepte quand les trois autres réponses coûteraient plus que la perte attendue.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Accept ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-accepter-def2",
+          "type": "cloze",
+          "question": "Risk acceptance is the way to go if avoiding, mitigating, or transferring the risk would [[cost]] more than the [[expected]] losses of the realized threat.",
+          "answer": "Risk acceptance is the way to go if avoiding, mitigating, or transferring the risk would cost more than the expected losses of the realized threat.",
+          "explanation": "Un coût plus grand que les pertes attendues.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-accepter-def3",
+          "type": "cloze",
+          "question": "Risk acceptance is the way to go if [[avoiding, mitigating, or transferring]] the risk would [[cost more than]] the [[expected losses]] of the realized threat.",
+          "answer": "Risk acceptance is the way to go if avoiding, mitigating, or transferring the risk would cost more than the expected losses of the realized threat.",
+          "explanation": "Les trois autres réponses, la comparaison de coût, et les pertes attendues.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-accepter-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « risk acceptance » (en anglais).",
+          "answer": "Risk acceptance is the way to go if avoiding, mitigating, or transferring the risk would cost more than the expected losses of the realized threat.\n\nTraduction : L'acceptation du risque est la voie à suivre si éviter, atténuer ou transférer le risque coûterait plus cher que les pertes attendues de la menace réalisée.",
+          "explanation": "Pense au cadenas de 100 $ pour un cahier de 2 $.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-accepter-theorie-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la limite de l'acceptation « in theory »",
+          "answer": "In theory, a risk should be accepted only if it is completely within an organization's risk tolerance.\n\nTraduction : En théorie, un risque ne devrait être accepté que s'il est entièrement dans les limites de la tolérance au risque de l'organisation.",
+          "explanation": "On n'accepte pas un risque qui dépasse ce que l'organisation peut supporter.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Accept ». Le manuel ajoute qu'en pratique, les organisations doivent souvent accepter des risques pénibles liés à l'activité normale.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-accepter-theorie-def3",
+          "type": "cloze",
+          "question": "In theory, a risk should be [[accepted only if]] it is [[completely within]] an organization's [[risk tolerance]].",
+          "answer": "In theory, a risk should be accepted only if it is completely within an organization's risk tolerance.",
+          "explanation": "Accepter seulement si c'est entièrement dans la tolérance au risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-accepter-1",
+          "type": "sort",
+          "question": "Quelle réponse au risque correspond à chaque action ?",
+          "answer": "Éviter : supprimer un logiciel dangereux, interdire les clés USB. Atténuer : installer un antivirus, former aux mails piégés. Transférer : prendre une cyber-assurance, confier les serveurs à un hébergeur. Accepter : garder une imprimante de 20 $ sans protection, signer pour un petit risque connu.",
+          "explanation": "Supprimer = éviter. Réduire = atténuer. Déplacer = transférer. Ne rien changer en connaissance de cause = accepter.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Éviter", "Atténuer", "Transférer", "Accepter"],
+            "items": [
+              { "text": "On supprime un logiciel dangereux", "category": "Éviter" },
+              { "text": "On interdit les clés USB", "category": "Éviter" },
+              { "text": "On installe un antivirus", "category": "Atténuer" },
+              { "text": "On forme les employés aux mails piégés", "category": "Atténuer" },
+              { "text": "On prend une cyber-assurance", "category": "Transférer" },
+              { "text": "On confie les serveurs à un hébergeur qui partage le risque", "category": "Transférer" },
+              { "text": "On garde une imprimante de 20 $ sans protection : sa perte coûterait peu", "category": "Accepter" },
+              { "text": "Le directeur signe qu'il accepte un petit risque connu", "category": "Accepter" }
+            ]
+          }
+        },
+        {
+          "id": "d1-trait-accepter-2",
+          "type": "duel",
+          "question": "L'entreprise ne fait rien, car la protection coûterait plus que la perte attendue. Est-ce accepter ou éviter ?",
+          "options": ["Accepter", "Éviter"],
+          "answer": "Accepter",
+          "explanation": "Elle garde l'activité telle quelle, en connaissance de cause. Éviter supprimerait l'activité."
+        },
+        {
+          "id": "d1-trait-accepter-3",
+          "type": "qcm",
+          "question": "Une école a un vieux projecteur de 50 $. Le protéger contre le vol coûterait 400 $ par an. Quelle réponse est la plus raisonnable ?",
+          "options": [
+            "Atténuer, avec une alarme",
+            "Transférer, avec une assurance spéciale",
+            "Accepter le risque",
+            "Éviter, en ne gardant plus de projecteur"
+          ],
+          "options_why": [
+            "L'alarme coûterait plus que le projecteur lui-même.",
+            "Une assurance coûterait aussi plus que ce que le projecteur vaut.",
+            "",
+            "Jeter le projecteur ferait perdre un outil utile pour éviter une petite perte."
+          ],
+          "answer": "Accepter le risque",
+          "explanation": "Toute protection coûterait plus cher que la perte attendue : c'est le cas typique de l'acceptation."
+        },
+        {
+          "id": "d1-trait-accepter-4",
+          "type": "qcm",
+          "question": "Une boutique en ligne ne peut pas vendre sans carte bancaire. Un risque de fraude reste malgré tous ses contrôles. Que fait-elle de ce risque restant ?",
+          "options": [
+            "Elle l'accepte, car il fait partie de l'activité normale",
+            "Elle l'évite en fermant la boutique",
+            "Elle le transfère entièrement, donc il disparaît",
+            "Elle l'ignore sans le noter nulle part"
+          ],
+          "options_why": [
+            "",
+            "Fermer la boutique ferait perdre toute l'activité.",
+            "Un transfert complet est presque impossible : une part du risque reste toujours.",
+            "Accepter est un choix conscient. Ignorer, c'est ne pas avoir regardé le risque."
+          ],
+          "answer": "Elle l'accepte, car il fait partie de l'activité normale",
+          "explanation": "Le manuel dit que les organisations doivent souvent accepter des risques liés à leur activité normale."
+        },
+        {
+          "id": "d1-trait-accepter-5",
+          "type": "why",
+          "question": "Pourquoi accepter un risque n'est-il pas la même chose qu'ignorer un risque ?",
+          "answer": "Accepter est un choix éclairé : on a mesuré le risque et jugé que les autres réponses coûtent plus cher. Ignorer, c'est ne pas l'avoir regardé.",
+          "explanation": "Dans le premier cas, quelqu'un a décidé. Dans le second, personne ne sait."
+        },
+        {
+          "id": "d1-trait-accepter-6",
+          "type": "flash",
+          "question": "Dans la pratique, pourquoi des organisations acceptent-elles parfois des risques pénibles ?",
+          "answer": "Parce qu'elles y sont forcées par le fonctionnement normal de leur activité (normal business operations).",
+          "explanation": "Certains risques viennent avec le métier : on ne peut pas les enlever sans arrêter de travailler."
+        },
+        {
+          "id": "d1-trait-accepter-7",
+          "type": "whatif",
+          "question": "Et si le risque dépasse la tolérance de l'organisation ?",
+          "answer": "En théorie, on ne doit pas l'accepter. Il faut alors éviter, atténuer ou transférer ce risque.",
+          "explanation": "La tolérance est la limite : au-delà, on agit."
+        },
+        {
+          "id": "d1-trait-accepter-8",
+          "type": "problem",
+          "question": "Choisis la réponse pour chaque cas. 1) Interdire un logiciel dangereux. 2) Souscrire une assurance. 3) Ne rien faire pour un risque minuscule. 4) Installer un antivirus.",
+          "answer": "1) éviter, 2) transférer, 3) accepter, 4) atténuer.",
+          "explanation": "Supprimer, déplacer, laisser tel quel, réduire : les quatre gestes sont différents."
+        }
+      ]
+    },
+    {
+      "id": "d1-trait-controle",
+      "name": "Les contrôles de sécurité (security controls)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Les trois rappels du matin",
+          "paragraphes": [
+            "Chaque matin, on te rappelle trois choses : « Mets ton casque. Vérifie tes freins. Prends le chemin avec le passage piéton. »",
+            "Ce sont trois protections différentes : un objet, un geste, une règle.",
+            "En sécurité, chaque protection mise en place s'appelle un contrôle de sécurité (security control), ou une contre-mesure (countermeasure)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Toi, la règle et l'objet",
+          "comme": "Pour traverser en sécurité, tu apprends à regarder des deux côtés. Tu suis une règle : le passage piéton. Tu portes du matériel : casque et lumière.",
+          "enVrai": "Les contre-mesures se rangent en trois familles. Celles liées aux personnes (personnel-related) : formation, recrutement. Celles liées aux processus (process-related) : règles et procédures. Celles liées à la technologie (technology-related) : chiffrement, réglages, matériel. Un bon plan mélange les trois."
+        },
+        {
+          "type": "predire",
+          "question": "Un pirate téléphone à un employé et lui demande son mot de passe. Quelle famille de contre-mesures aide le plus ?",
+          "options": [
+            "La technologie : un meilleur pare-feu",
+            "Les personnes : former les employés à repérer l'arnaque",
+            "Les processus : un règlement affiché au mur"
+          ],
+          "answer": "Les personnes : former les employés à repérer l'arnaque",
+          "explanation": "L'arnaque vise une personne : la former est la réponse directe. Le manuel dit même que des personnes bien formées deviennent un très grand atout."
+        },
+        {
+          "type": "exemple",
+          "titre": "Séparer les tâches",
+          "texte": "Dans une entreprise, une seule personne approuve les factures et les paie. Elle pourrait donc se payer elle-même : c'est de la fraude, une tromperie pour gagner de l'argent. Avec la séparation des tâches (separation of duties), une personne approuve et une autre paie. C'est une contre-mesure de type processus."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le portail, le gardien et le règlement",
+          "comme": "Un collège a un portail qui se ferme tout seul, un gardien qui surveille la cour, et un règlement intérieur.",
+          "enVrai": "Les contrôles se rangent aussi par nature. Technique (technical) : du matériel, du logiciel ou du firmware, le petit programme inscrit dans un appareil. Opérationnel (operational) : le travail de tous les jours, comme les gardiens. De gestion (management) : les règles écrites, comme les politiques et les procédures."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-trait-controle-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « security control »",
+          "answer": "A security control is any safeguard that is put in place to positively impact security.\n\nTraduction : Un contrôle de sécurité est toute protection mise en place pour avoir un effet positif sur la sécurité.",
+          "explanation": "Toute protection, de n'importe quelle sorte, qui améliore la sécurité.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Applicable Types of Controls ». À connaître mot pour mot. Un safeguard est une protection.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-def2",
+          "type": "cloze",
+          "question": "A security control is any [[safeguard]] that is put in place to [[positively]] impact security.",
+          "answer": "A security control is any safeguard that is put in place to positively impact security.",
+          "explanation": "N'importe quelle protection, avec un effet positif.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-def3",
+          "type": "cloze",
+          "question": "A security control is [[any safeguard]] that is [[put in place]] to [[positively impact security]].",
+          "answer": "A security control is any safeguard that is put in place to positively impact security.",
+          "explanation": "La protection, sa mise en place, et son but : un effet positif sur la sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « security control » (en anglais).",
+          "answer": "A security control is any safeguard that is put in place to positively impact security.\n\nTraduction : Un contrôle de sécurité est toute protection mise en place pour avoir un effet positif sur la sécurité.",
+          "explanation": "Une seule phrase courte : any safeguard, put in place, positively impact security.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-contremesure-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « countermeasures » et l'atténuation du risque",
+          "answer": "Risk mitigation involves the selection and implementation of one or more countermeasures (or \"security controls\") with the goal of reducing the likelihood of an adverse event or the impact of that event occurring.\n\nTraduction : L'atténuation du risque consiste à choisir et à mettre en œuvre une ou plusieurs contre-mesures (ou « contrôles de sécurité ») dans le but de réduire la probabilité d'un événement défavorable ou l'impact de cet événement s'il se produit.",
+          "explanation": "Contre-mesure et contrôle de sécurité sont deux noms pour la même chose.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Countermeasure Selection and Implementation ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-contremesure-def3",
+          "type": "cloze",
+          "question": "Risk mitigation involves [[the selection and implementation]] of one or more [[countermeasures]] (or \"security controls\") with the goal of [[reducing the likelihood]] of an adverse event or the impact of that event occurring.",
+          "answer": "Risk mitigation involves the selection and implementation of one or more countermeasures (or \"security controls\") with the goal of reducing the likelihood of an adverse event or the impact of that event occurring.",
+          "explanation": "Choisir et mettre en place des contre-mesures pour réduire la probabilité ou l'impact.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-natures-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les contrôles « technical », « operational » et « management »",
+          "answer": "Security controls may be automatic or manual, and they can be technical (i.e., implemented and executed through hardware, software, or firmware), operational (i.e., related to day-to-day operations and tangible things like security guards, gates, etc.), or management (i.e., implemented by people and related to administrative methods — things like policies, procedures, and guidelines).\n\nTraduction : Les contrôles de sécurité peuvent être automatiques ou manuels, et peuvent être techniques (mis en œuvre par du matériel, du logiciel ou du firmware), opérationnels (liés aux opérations de tous les jours et à des choses tangibles comme les gardes de sécurité ou les barrières) ou de gestion (mis en œuvre par des personnes et liés aux méthodes administratives, comme les politiques, les procédures et les guides).",
+          "explanation": "Trois natures : la machine, le terrain, le papier.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Applicable Types of Controls ». Un guide (guideline) est un conseil écrit, non obligatoire.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-natures-def3",
+          "type": "cloze",
+          "question": "Security controls may be [[automatic or manual]], and they can be technical (i.e., implemented and executed through hardware, software, or firmware), operational (i.e., related to [[day-to-day operations]] and tangible things like security guards, gates, etc.), or management (i.e., implemented by people and related to [[administrative methods]] — things like policies, procedures, and guidelines).",
+          "answer": "Security controls may be automatic or manual, and they can be technical (i.e., implemented and executed through hardware, software, or firmware), operational (i.e., related to day-to-day operations and tangible things like security guards, gates, etc.), or management (i.e., implemented by people and related to administrative methods — things like policies, procedures, and guidelines).",
+          "explanation": "Automatique ou manuel, les opérations de tous les jours, et les méthodes administratives.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-compensating-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « compensating control »",
+          "answer": "You should also be familiar with the concept of a compensating control, which is a safeguard used in addition to or in place of a primary control; compensating controls are often implemented if a primary control cannot be fully implemented for some reason.\n\nTraduction : Vous devez aussi connaître le concept de contrôle compensatoire, qui est une protection utilisée en plus d'un contrôle principal ou à sa place ; les contrôles compensatoires sont souvent mis en place quand un contrôle principal ne peut pas être entièrement mis en œuvre pour une raison quelconque.",
+          "explanation": "Le plan B : on l'utilise quand le contrôle principal est impossible.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, encadré « Tip » de la section « Applicable Types of Controls ». Le manuel cite PCI DSS pour des exemples d'usage.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-compensating-def3",
+          "type": "cloze",
+          "question": "You should also be familiar with the concept of a compensating control, which is [[a safeguard used]] in addition to or in place of [[a primary control]]; compensating controls are often implemented if a primary control [[cannot be fully implemented]] for some reason.",
+          "answer": "You should also be familiar with the concept of a compensating control, which is a safeguard used in addition to or in place of a primary control; compensating controls are often implemented if a primary control cannot be fully implemented for some reason.",
+          "explanation": "Une protection en plus ou à la place, utilisée quand le contrôle principal ne peut pas être complet.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-controle-1",
+          "type": "sort",
+          "question": "Dans quelle famille de contre-mesures va chaque action ?",
+          "answer": "Personnes : former aux mails piégés, réorganiser une équipe. Processus : séparer approbation et paiement, une procédure d'arrivée et de départ. Technologie : chiffrer les fichiers, changer un réglage de configuration.",
+          "explanation": "Une personne qui apprend, une règle de travail, ou un outil et un réglage.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Personnes", "Processus", "Technologie"],
+            "items": [
+              { "text": "Former les employés aux mails piégés", "category": "Personnes" },
+              { "text": "Réorganiser une équipe", "category": "Personnes" },
+              { "text": "Séparer l'approbation et le paiement des factures", "category": "Processus" },
+              { "text": "Une procédure écrite pour l'arrivée et le départ des employés", "category": "Processus" },
+              { "text": "Chiffrer les fichiers", "category": "Technologie" },
+              { "text": "Changer un réglage de configuration", "category": "Technologie" }
+            ]
+          }
+        },
+        {
+          "id": "d1-trait-controle-2",
+          "type": "duel",
+          "question": "Une règle d'approbation en deux étapes pour les factures : est-ce une contre-mesure de type processus ou technologie ?",
+          "options": ["Processus", "Technologie"],
+          "answer": "Processus",
+          "explanation": "C'est une règle de travail (un workflow), pas un outil ni un réglage."
+        },
+        {
+          "id": "d1-trait-controle-3",
+          "type": "qcm",
+          "question": "Selon le manuel, que peuvent devenir les personnes bien formées dans une organisation ?",
+          "options": [
+            "Un risque impossible à corriger",
+            "Un actif sans importance",
+            "Un très grand atout de sécurité",
+            "Une vulnérabilité technique"
+          ],
+          "options_why": [
+            "On croit les personnes impossibles à corriger, mais la formation les change.",
+            "Les personnes sont des actifs importants, pas des actifs sans importance.",
+            "",
+            "Une vulnérabilité technique est une faille dans un système, pas une personne."
+          ],
+          "answer": "Un très grand atout de sécurité",
+          "explanation": "On dit souvent que l'humain est le maillon faible. Bien formé, il devient un point fort.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Countermeasure Selection and Implementation »."
+        },
+        {
+          "id": "d1-trait-controle-4",
+          "type": "sort",
+          "question": "Quelle nature de contrôle correspond à chaque exemple ?",
+          "answer": "Technique : un pare-feu, un logiciel de chiffrement. Opérationnel : un gardien à l'entrée, une barrière. De gestion : une politique de mots de passe, un guide de bonnes pratiques.",
+          "explanation": "La machine, le terrain, le papier.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Technique", "Opérationnel", "De gestion"],
+            "items": [
+              { "text": "Un pare-feu", "category": "Technique" },
+              { "text": "Un logiciel de chiffrement", "category": "Technique" },
+              { "text": "Un gardien à l'entrée", "category": "Opérationnel" },
+              { "text": "Une barrière à l'entrée du parking", "category": "Opérationnel" },
+              { "text": "Une politique de mots de passe", "category": "De gestion" },
+              { "text": "Un guide de bonnes pratiques", "category": "De gestion" }
+            ]
+          }
+        },
+        {
+          "id": "d1-trait-controle-5",
+          "type": "why",
+          "question": "Pourquoi un bon plan de sécurité mélange-t-il personnes, processus et technologie ?",
+          "answer": "Parce qu'une seule famille ne suffit pas. La technologie peut être contournée, une règle peut être ignorée, une personne peut se tromper. Ensemble, elles se complètent.",
+          "explanation": "Chaque famille couvre les faiblesses des deux autres.",
+          "explanation_more": "Raisonnement pédagogique (hors manuel) à partir des trois familles du manuel."
+        },
+        {
+          "id": "d1-trait-controle-6",
+          "type": "flash",
+          "question": "Qu'est-ce qu'un contrôle compensatoire (compensating control) ? Donne un exemple.",
+          "answer": "Une protection utilisée en plus d'un contrôle principal, ou à sa place. Exemple : une règle qui encourage un comportement, quand un contrôle technique est trop cher.",
+          "explanation": "Il ne règle pas tout, mais il donne un peu de sécurité qui n'existerait pas sinon."
+        },
+        {
+          "id": "d1-trait-controle-7",
+          "type": "qcm",
+          "question": "Une petite école ne peut pas payer un système qui bloque les clés USB. Elle écrit une règle qui les déconseille. Comment appelle-t-on cette règle ?",
+          "options": [
+            "Un contrôle compensatoire",
+            "Un contrôle principal",
+            "Un risque résiduel",
+            "Une menace"
+          ],
+          "options_why": [
+            "",
+            "Le contrôle principal serait le système technique qui bloque les clés.",
+            "Le risque résiduel est ce qui reste après les contrôles, pas une mesure.",
+            "Une menace est un événement ou un acteur, pas une protection."
+          ],
+          "answer": "Un contrôle compensatoire",
+          "explanation": "C'est une protection de remplacement, utilisée parce que le contrôle principal est impossible."
+        },
+        {
+          "id": "d1-trait-controle-8",
+          "type": "problem",
+          "question": "Trouve une contre-mesure de chaque famille (personnes, processus, technologie) contre le vol de mots de passe.",
+          "answer": "Personnes : former à repérer les mails piégés. Processus : une règle pour changer ses mots de passe. Technologie : un code sur le téléphone en plus du mot de passe.",
+          "explanation": "Une même menace se combat avec les trois familles."
+        },
+        {
+          "id": "d1-trait-controle-9",
+          "type": "whatif",
+          "question": "Et si un contrôle est trop cher pour être mis en place ?",
+          "answer": "On peut utiliser un contrôle compensatoire : une règle ou une autre mesure qui donne un peu de protection.",
+          "explanation": "Mieux vaut une protection partielle qu'aucune protection."
+        },
+        {
+          "id": "d1-trait-controle-10",
+          "type": "cloze",
+          "question": "Une contre-mesure (countermeasure) est aussi appelée [[contrôle de sécurité|security control]].",
+          "answer": "Une contre-mesure (countermeasure) est aussi appelée contrôle de sécurité.",
+          "explanation": "Deux noms pour la même idée : une protection mise en place."
+        }
+      ]
+    },
+    {
+      "id": "d1-trait-types",
+      "name": "Les cinq types de contrôles",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Avant, pendant, après",
+          "paragraphes": [
+            "Pense à ta maison et au risque de cambriolage. Tu fermes les portes à clé : ça empêche l'entrée.",
+            "Tu installes une alarme : elle sonne si quelqu'un force la porte. Si la fenêtre est cassée, tu la répares, puis tu remplaces ce qu'on t'a pris.",
+            "Chaque protection a son moment. On les range en cinq types de contrôles."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Une maison, cinq protections",
+          "comme": "La serrure empêche. L'alarme révèle. La réparation de la fenêtre corrige. Le remplacement des objets volés remet la vie en marche. Le chien de garde décourage les voleurs.",
+          "enVrai": "Préventif (preventative) : il empêche. Détectif (detective) : il repère pendant ou juste après. Correctif (corrective) : il répare les dégâts et la cause. De récupération (recovery) : il remet vite le système en marche. Dissuasif (deterrent) : il décourage l'attaquant."
+        },
+        {
+          "type": "predire",
+          "question": "Une alarme de porte sonne quand quelqu'un force l'entrée. Quel type de contrôle est-ce ?",
+          "options": [
+            "Préventif : elle empêche d'entrer",
+            "Détectif : elle repère l'entrée forcée",
+            "Correctif : elle répare la porte"
+          ],
+          "answer": "Détectif : elle repère l'entrée forcée",
+          "explanation": "L'alarme ne bloque personne : elle donne l'alerte. La première réponse est tentante, car elle fait du bruit, mais le bruit n'empêche rien."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le jour d'une attaque informatique",
+          "texte": "Un pare-feu bloque la plupart des attaques : préventif. Un IDS, un système qui surveille et donne l'alerte, signale celles qui passent : détectif. Le patch qui ferme la faille est correctif. La sauvegarde remet le site en marche : récupération. Des gardes à l'entrée dissuadent."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-trait-types-prev-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « preventative controls »",
+          "answer": "Preventative: These are the first-line controls that are designed to keep adverse security events from occurring.\n\nTraduction : Préventifs : ce sont les contrôles de première ligne, conçus pour empêcher que des événements de sécurité défavorables se produisent.",
+          "explanation": "Première ligne : ils agissent avant l'incident.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Applicable Types of Controls ». Exemples du manuel : la vérification des saisies d'un logiciel, les pare-feu, les sauvegardes, la formation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-prev-def2",
+          "type": "cloze",
+          "question": "Preventative: These are the [[first-line]] controls that are designed to keep adverse security events from [[occurring]].",
+          "answer": "Preventative: These are the first-line controls that are designed to keep adverse security events from occurring.",
+          "explanation": "Première ligne, et le but : empêcher que l'événement arrive.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-prev-def3",
+          "type": "cloze",
+          "question": "Preventative: These are [[the first-line controls]] that are designed to [[keep adverse security events]] from [[occurring]].",
+          "answer": "Preventative: These are the first-line controls that are designed to keep adverse security events from occurring.",
+          "explanation": "Les contrôles de première ligne, ce qu'ils retiennent, et ce qu'ils empêchent.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-prev-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « preventative controls » (en anglais).",
+          "answer": "Preventative: These are the first-line controls that are designed to keep adverse security events from occurring.\n\nTraduction : Préventifs : ce sont les contrôles de première ligne, conçus pour empêcher que des événements de sécurité défavorables se produisent.",
+          "explanation": "Pense à la serrure de la maison : first-line, avant l'incident.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-det-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « detective controls »",
+          "answer": "Detective: These controls are designed to identify a negative security event while it is in progress or soon after it occurs.\n\nTraduction : Détectifs : ces contrôles sont conçus pour identifier un événement de sécurité négatif pendant qu'il se produit ou peu après.",
+          "explanation": "Ils repèrent l'incident, comme une alarme ou une caméra.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Applicable Types of Controls ». Exemples du manuel : audits de sécurité, alarmes de porte, IDS.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-det-def2",
+          "type": "cloze",
+          "question": "Detective: These controls are designed to [[identify]] a negative security event while it is in progress or soon after it [[occurs]].",
+          "answer": "Detective: These controls are designed to identify a negative security event while it is in progress or soon after it occurs.",
+          "explanation": "Identifier l'événement, pendant ou juste après.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-det-def3",
+          "type": "cloze",
+          "question": "Detective: These controls are designed to [[identify a negative security event]] while it is [[in progress]] or [[soon after it occurs]].",
+          "answer": "Detective: These controls are designed to identify a negative security event while it is in progress or soon after it occurs.",
+          "explanation": "Repérer l'événement, pendant qu'il se passe ou juste après.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-det-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « detective controls » (en anglais).",
+          "answer": "Detective: These controls are designed to identify a negative security event while it is in progress or soon after it occurs.\n\nTraduction : Détectifs : ces contrôles sont conçus pour identifier un événement de sécurité négatif pendant qu'il se produit ou peu après.",
+          "explanation": "Pense à l'alarme : elle repère pendant ou juste après.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-corr-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « corrective controls »",
+          "answer": "Corrective: These controls are designed to minimize and repair damages following an adverse security event; they are typically put in place after a detective control identifies a problem.\n\nTraduction : Correctifs : ces contrôles sont conçus pour limiter et réparer les dégâts après un événement de sécurité défavorable ; ils sont généralement mis en place après qu'un contrôle détectif a identifié un problème.",
+          "explanation": "On répare après l'alerte donnée par un contrôle détectif.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Applicable Types of Controls ». Exemples du manuel : patchs, modifications de fichiers de configuration, nouvelles politiques qui visent la cause.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-corr-def2",
+          "type": "cloze",
+          "question": "Corrective: These controls are designed to [[minimize]] and repair damages following an adverse security event; they are typically put in place after a [[detective]] control identifies a problem.",
+          "answer": "Corrective: These controls are designed to minimize and repair damages following an adverse security event; they are typically put in place after a detective control identifies a problem.",
+          "explanation": "Limiter et réparer, après un contrôle détectif.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-corr-def3",
+          "type": "cloze",
+          "question": "Corrective: These controls are designed to [[minimize and repair damages]] following an adverse security event; they are typically put in place [[after a detective control]] [[identifies a problem]].",
+          "answer": "Corrective: These controls are designed to minimize and repair damages following an adverse security event; they are typically put in place after a detective control identifies a problem.",
+          "explanation": "Limiter et réparer, puis le moment : après que le détectif a trouvé le problème.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-corr-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « corrective controls » (en anglais).",
+          "answer": "Corrective: These controls are designed to minimize and repair damages following an adverse security event; they are typically put in place after a detective control identifies a problem.\n\nTraduction : Correctifs : ces contrôles sont conçus pour limiter et réparer les dégâts après un événement de sécurité défavorable ; ils sont généralement mis en place après qu'un contrôle détectif a identifié un problème.",
+          "explanation": "Pense à la fenêtre réparée après l'alarme.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-rec-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « recovery controls »",
+          "answer": "Recovery: These countermeasures are designed to complement corrective controls, with the intent to get a system back to normal as quickly as possible.\n\nTraduction : Récupération : ces contre-mesures sont conçues pour compléter les contrôles correctifs, dans le but de remettre un système en état normal aussi vite que possible.",
+          "explanation": "Elles remettent le système en marche, vite : sauvegardes, site de secours.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Applicable Types of Controls ». Exemples du manuel : sauvegardes de systèmes et de données, sites de reprise après sinistre (disaster recovery sites).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-rec-def3",
+          "type": "cloze",
+          "question": "Recovery: These countermeasures are designed to [[complement corrective controls]], with the intent to [[get a system back to normal]] as [[quickly as possible]].",
+          "answer": "Recovery: These countermeasures are designed to complement corrective controls, with the intent to get a system back to normal as quickly as possible.",
+          "explanation": "Compléter les correctifs, remettre en marche, et vite.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-dis-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « deterrent controls »",
+          "answer": "Deterrent: These controls are designed to discourage attackers by making them think twice about their malicious intents.\n\nTraduction : Dissuasifs : ces contrôles sont conçus pour décourager les attaquants en leur faisant réfléchir à deux fois avant de mettre leurs intentions malveillantes en œuvre.",
+          "explanation": "Ils agissent sur la tête de l'attaquant : il renonce avant d'essayer.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Applicable Types of Controls ». Exemples du manuel : clôtures grillagées, gardes de sécurité, chiens de garde.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-dis-def3",
+          "type": "cloze",
+          "question": "Deterrent: These controls are designed to [[discourage attackers]] by making them [[think twice]] about their [[malicious intents]].",
+          "answer": "Deterrent: These controls are designed to discourage attackers by making them think twice about their malicious intents.",
+          "explanation": "Décourager, faire réfléchir à deux fois, des intentions malveillantes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-types-1",
+          "type": "duel",
+          "question": "Un pare-feu empêche une attaque d'entrer. Est-il préventif ou détectif ?",
+          "options": ["Préventif", "Détectif"],
+          "answer": "Préventif",
+          "explanation": "Il agit avant l'incident, en bloquant. Un contrôle détectif signale un incident déjà en cours."
+        },
+        {
+          "id": "d1-trait-types-2",
+          "type": "sort",
+          "question": "Quel type de contrôle correspond à chaque exemple ?",
+          "answer": "Préventif : un pare-feu, la vérification des saisies. Détectif : un audit de sécurité, une alarme de porte. Correctif : un patch, une nouvelle politique. Dissuasif : une clôture grillagée, un chien de garde.",
+          "explanation": "Empêche, repère, répare, décourage : quatre actions différentes.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Préventif", "Détectif", "Correctif", "Dissuasif"],
+            "items": [
+              { "text": "Un pare-feu", "category": "Préventif" },
+              { "text": "La vérification des saisies d'un formulaire, qui refuse les données invalides", "category": "Préventif" },
+              { "text": "Un audit de sécurité", "category": "Détectif" },
+              { "text": "Une alarme de porte", "category": "Détectif" },
+              { "text": "Un patch qui ferme la faille", "category": "Correctif" },
+              { "text": "Une nouvelle politique qui vise la cause de l'incident", "category": "Correctif" },
+              { "text": "Une clôture grillagée", "category": "Dissuasif" },
+              { "text": "Un chien de garde", "category": "Dissuasif" }
+            ]
+          }
+        },
+        {
+          "id": "d1-trait-types-3",
+          "type": "qcm",
+          "question": "Après une panne, quelle protection remet le système en marche le plus vite ?",
+          "options": [
+            "Un audit de sécurité",
+            "Une clôture autour du bâtiment",
+            "Un pare-feu plus puissant",
+            "La sauvegarde et le site de secours"
+          ],
+          "options_why": [
+            "Un audit repère des problèmes, il ne remet rien en marche.",
+            "Une clôture décourage les intrus, elle ne restaure pas un système.",
+            "Un pare-feu agit avant l'incident, pas après.",
+            ""
+          ],
+          "answer": "La sauvegarde et le site de secours",
+          "explanation": "Ce sont des contrôles de récupération : leur but est de revenir à la normale vite."
+        },
+        {
+          "id": "d1-trait-types-4",
+          "type": "qcm",
+          "question": "Un magasin installe une alarme qui sonne quand on force la porte arrière. Plus tard, le gérant remplace la porte abîmée. Quels types de contrôles voit-on, dans l'ordre ?",
+          "options": [
+            "Préventif, puis détectif",
+            "Détectif, puis correctif",
+            "Correctif, puis dissuasif",
+            "Dissuasif, puis de récupération"
+          ],
+          "options_why": [
+            "L'alarme ne bloque rien, donc elle n'est pas préventive.",
+            "",
+            "L'alarme n'est pas correctrice : elle repère, elle ne répare pas.",
+            "L'alarme ne décourage personne à l'avance, et la porte remplacée répare, elle ne récupère pas un système."
+          ],
+          "answer": "Détectif, puis correctif",
+          "explanation": "L'alarme repère l'effraction. Le remplacement de la porte répare les dégâts."
+        },
+        {
+          "id": "d1-trait-types-5",
+          "type": "why",
+          "question": "Pourquoi a-t-on besoin d'un contrôle détectif en plus d'un contrôle préventif ?",
+          "answer": "Parce qu'aucune barrière n'arrête tout. Si une attaque passe, il faut la repérer vite pour limiter les dégâts.",
+          "explanation": "Le préventif réduit les attaques qui passent. Le détectif repère celles qui passent quand même."
+        },
+        {
+          "id": "d1-trait-types-6",
+          "type": "duel",
+          "question": "Un site de secours qui reprend le travail pendant qu'on répare : est-ce correctif ou récupération ?",
+          "options": ["Correctif", "Récupération"],
+          "answer": "Récupération",
+          "explanation": "Son but est de revenir vite à un état normal. Un contrôle correctif répare les dégâts et la cause."
+        },
+        {
+          "id": "d1-trait-types-7",
+          "type": "whatif",
+          "question": "Et si un contrôle sert à plusieurs types à la fois, comme un garde de sécurité ?",
+          "answer": "C'est normal : le manuel dit que certaines contre-mesures entrent dans plusieurs catégories. Un garde peut dissuader, repérer et agir.",
+          "explanation": "Les types décrivent un rôle, pas une boîte fermée."
+        },
+        {
+          "id": "d1-trait-types-8",
+          "type": "cloze",
+          "question": "Un contrôle [[préventif]] empêche l'incident, un contrôle [[détectif]] le repère et un contrôle [[correctif]] répare les dégâts.",
+          "answer": "Un contrôle préventif empêche l'incident, un contrôle détectif le repère et un contrôle correctif répare les dégâts.",
+          "explanation": "Avant, pendant, après : empêcher, repérer, réparer."
+        },
+        {
+          "id": "d1-trait-types-9",
+          "type": "problem",
+          "question": "Pour un risque de ransomware, donne un contrôle préventif, un contrôle détectif et un contrôle de récupération.",
+          "answer": "Préventif : un antivirus et la formation aux mails piégés. Détectif : une alerte quand beaucoup de fichiers changent d'un coup. Récupération : une sauvegarde hors ligne pour tout restaurer.",
+          "explanation": "Une même menace se combat avant, pendant et après."
+        }
+      ]
+    },
+    {
+      "id": "d1-trait-choix",
+      "name": "Choisir la bonne contre-mesure",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le casque en or",
+          "paragraphes": [
+            "Ton vélo vaut 300 $. Un vendeur te propose un casque en or à 5 000 $, « le plus sûr du monde ». Tu ne l'achètes pas.",
+            "Tu ne choisis pas non plus un casque si lourd que tu le laisserais à la maison.",
+            "Pour choisir une protection, on se pose trois questions : protège-t-elle vraiment, coûte-t-elle moins que la perte, est-elle facile à utiliser ?"
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Trois questions avant d'acheter",
+          "comme": "Un casque doit protéger contre le bon danger. Il doit coûter moins cher que les dégâts. Il doit être assez confortable pour que tu le portes vraiment.",
+          "enVrai": "Efficacité de sécurité (security-effectiveness) : la mesure traite-t-elle bien le risque visé ? Efficacité de coût (cost-effectiveness) : coûte-t-elle moins que ce qu'elle évite ? Impact sur les opérations (operational impact) : gêne-t-elle le travail au point que personne ne l'utilise ?"
+        },
+        {
+          "type": "predire",
+          "question": "Un serveur risque une panne de courant. L'entreprise chiffre tous ses fichiers. Est-ce la bonne mesure ?",
+          "options": [
+            "Oui : le chiffrement protège contre tout",
+            "Non : il ne règle pas un problème d'accès",
+            "Oui, mais seulement la nuit"
+          ],
+          "answer": "Non : il ne règle pas un problème d'accès",
+          "explanation": "Chiffrer protège le secret, pas l'accès aux fichiers. Contre une panne, une sauvegarde est plus efficace. Le manuel donne cet exemple."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le calcul du prix",
+          "texte": "Les vols coûtent 18 000 $ par an : c'est l'ALE sans protection. Un antivol coûte 5 000 $ par an et ramène l'ALE à 6 000 $. Total avec l'antivol : 6 000 + 5 000 = 11 000 $. C'est moins que 18 000 $. L'antivol fait économiser 7 000 $ par an."
+        },
+        {
+          "type": "exemple",
+          "titre": "L'outil trop compliqué",
+          "texte": "Une entreprise impose un outil de mail chiffré très compliqué. Les employés trouvent cela pénible. Certains envoient donc leurs mails sensibles sans chiffrer. La protection existe, mais le risque a augmenté."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-trait-choix-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « cost-effective » (une contre-mesure rentable)",
+          "answer": "A countermeasure can be considered cost-effective if the annual loss expectancy (ALE) with the countermeasure plus the cost of countermeasure is less than ALE without the countermeasure.\n\nTraduction : Une contre-mesure peut être considérée comme rentable si l'espérance de perte annualisée (ALE) avec la contre-mesure, plus le coût de la contre-mesure, est inférieure à l'ALE sans la contre-mesure.",
+          "explanation": "ALE avec la mesure + coût de la mesure doit rester plus petit que l'ALE sans la mesure.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Cost-Effectiveness ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-choix-def2",
+          "type": "cloze",
+          "question": "A countermeasure can be considered cost-effective if the annual loss expectancy (ALE) with the countermeasure plus the [[cost]] of countermeasure is [[less]] than ALE without the countermeasure.",
+          "answer": "A countermeasure can be considered cost-effective if the annual loss expectancy (ALE) with the countermeasure plus the cost of countermeasure is less than ALE without the countermeasure.",
+          "explanation": "On ajoute le coût, et le total doit être plus petit que l'ALE de départ.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-choix-def3",
+          "type": "cloze",
+          "question": "A countermeasure can be considered [[cost-effective]] if the annual loss expectancy (ALE) [[with the countermeasure]] plus the cost of countermeasure is [[less than ALE]] without the countermeasure.",
+          "answer": "A countermeasure can be considered cost-effective if the annual loss expectancy (ALE) with the countermeasure plus the cost of countermeasure is less than ALE without the countermeasure.",
+          "explanation": "Le mot clé, l'ALE avec la mesure, puis la comparaison avec l'ALE sans la mesure.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-choix-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « cost-effective » pour une contre-mesure (en anglais).",
+          "answer": "A countermeasure can be considered cost-effective if the annual loss expectancy (ALE) with the countermeasure plus the cost of countermeasure is less than ALE without the countermeasure.\n\nTraduction : Une contre-mesure peut être considérée comme rentable si l'espérance de perte annualisée (ALE) avec la contre-mesure, plus le coût de la contre-mesure, est inférieure à l'ALE sans la contre-mesure.",
+          "explanation": "Pense à l'antivol : 6 000 + 5 000 est plus petit que 18 000.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-choix-facteurs-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les facteurs à considérer en choisissant une contre-mesure",
+          "answer": "When selecting countermeasures, you must consider factors such as security-effectiveness, cost-effectiveness, and operational impact.\n\nTraduction : Quand on choisit des contre-mesures, il faut tenir compte de facteurs comme l'efficacité de sécurité, l'efficacité de coût et l'impact sur les opérations.",
+          "explanation": "Trois questions : protège-t-elle, est-elle rentable, gêne-t-elle le travail ?",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Countermeasure Selection and Implementation ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-choix-facteurs-def3",
+          "type": "cloze",
+          "question": "When selecting countermeasures, you must consider factors such as [[security-effectiveness]], [[cost-effectiveness]], and [[operational impact]].",
+          "answer": "When selecting countermeasures, you must consider factors such as security-effectiveness, cost-effectiveness, and operational impact.",
+          "explanation": "Sécurité, coût, et impact sur les opérations.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-choix-analyse-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le calcul de la « cost-effectiveness »",
+          "answer": "Cost-effectiveness can be calculated by performing a cost-benefit analysis that compares the cost of a countermeasure (or multiple countermeasures) to the costs that would be realized by a compromise of the risks that the countermeasures are intended to mitigate.\n\nTraduction : L'efficacité de coût peut être calculée par une analyse coût-bénéfice qui compare le coût d'une contre-mesure (ou de plusieurs) aux coûts qui seraient subis si les risques que ces contre-mesures visent à atténuer se réalisaient.",
+          "explanation": "On compare ce que coûte la protection avec ce que coûterait le problème.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Cost-Effectiveness ». Analyse coût-bénéfice (cost-benefit analysis).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-choix-analyse-def3",
+          "type": "cloze",
+          "question": "Cost-effectiveness can be calculated by performing [[a cost-benefit analysis]] that compares [[the cost of a countermeasure]] (or multiple countermeasures) to [[the costs that would be realized]] by a compromise of the risks that the countermeasures are intended to mitigate.",
+          "answer": "Cost-effectiveness can be calculated by performing a cost-benefit analysis that compares the cost of a countermeasure (or multiple countermeasures) to the costs that would be realized by a compromise of the risks that the countermeasures are intended to mitigate.",
+          "explanation": "Une analyse coût-bénéfice : le coût de la mesure contre les coûts du problème.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-choix-1",
+          "type": "worked_example",
+          "question": "Les vols coûtent 18 000 $ par an (ALE sans protection). Un antivol coûte 5 000 $ par an et ramène l'ALE à 6 000 $. Est-il rentable ?",
+          "answer": "ALE avec + coût = 6 000 + 5 000 = 11 000 $, moins que 18 000 $ : rentable, avec 7 000 $ économisés par an.",
+          "explanation": "On compare le total « avec antivol » au total « sans antivol ».",
+          "data": {
+            "steps": [
+              { "prompt": "Que vaut l'ALE sans la mesure ?", "text": "ALE sans la mesure = 18 000 $." },
+              { "prompt": "Que vaut l'ALE avec la mesure ?", "text": "ALE avec la mesure = 6 000 $." },
+              { "prompt": "Quel est le coût de la mesure ?", "text": "Coût = 5 000 $ par an." },
+              { "prompt": "Que faut-il comparer ?", "text": "ALE avec + coût : 6 000 + 5 000 = 11 000 $, à comparer à 18 000 $." },
+              { "prompt": "Quel est le verdict ?", "text": "11 000 est plus petit que 18 000 : c'est rentable. Économie : 18 000 − 11 000 = 7 000 $ par an." }
+            ]
+          }
+        },
+        {
+          "id": "d1-trait-choix-2",
+          "type": "faded_example",
+          "question": "Un ransomware coûte 40 000 $ par an (ALE sans protection). Un système de sauvegarde coûte 10 000 $ par an et ramène l'ALE à 2 000 $. Est-il rentable ?",
+          "answer": "ALE avec + coût = 2 000 + 10 000 = 12 000 $, moins que 40 000 $ : rentable, avec 28 000 $ économisés par an.",
+          "explanation": "Même méthode que pour l'antivol.",
+          "data": {
+            "steps": [
+              { "prompt": "Que vaut l'ALE sans la mesure ?", "text": "ALE sans la mesure = 40 000 $." },
+              { "prompt": "Que vaut l'ALE avec la mesure, et quel est le coût ?", "text": "ALE avec = 2 000 $ ; coût = 10 000 $ par an." },
+              { "prompt": "Quel est le total « avec la mesure » ?", "text": "2 000 + 10 000 = 12 000 $." },
+              { "prompt": "Quel est le verdict ?", "text": "12 000 est plus petit que 40 000 : c'est rentable. Économie : 40 000 − 12 000 = 28 000 $ par an." }
+            ],
+            "hidden": 2
+          }
+        },
+        {
+          "id": "d1-trait-choix-3",
+          "type": "qcm",
+          "question": "Un contrôle coûte 4 000 $ par an et ramène l'ALE de 3 000 $ à 500 $. Est-il rentable ?",
+          "options": [
+            "Oui : l'ALE baisse de 2 500 $",
+            "Non : 4 500 $ au total contre 3 000 $ sans le contrôle",
+            "Oui : l'ALE devient presque nul",
+            "On ne peut pas le savoir"
+          ],
+          "options_why": [
+            "L'ALE baisse, mais on oublie de compter le coût du contrôle.",
+            "",
+            "L'ALE est presque nul, mais le contrôle coûte plus cher que la perte évitée.",
+            "On peut le savoir : il suffit de comparer le total avec l'ALE d'origine."
+          ],
+          "answer": "Non : 4 500 $ au total contre 3 000 $ sans le contrôle",
+          "explanation": "500 + 4 000 = 4 500 $, plus que 3 000 $. Le contrôle coûte plus qu'il n'évite."
+        },
+        {
+          "id": "d1-trait-choix-4",
+          "type": "problem",
+          "question": "Un magasin perd 12 000 $ par an à cause de fraudes (ALE). Une protection coûte 3 000 $ par an et ramène l'ALE à 4 000 $. Est-elle rentable ? De combien ?",
+          "answer": "4 000 + 3 000 = 7 000 $, moins que 12 000 $ : rentable, avec 5 000 $ économisés par an.",
+          "explanation": "Total avec la protection, puis comparaison avec l'ALE de départ."
+        },
+        {
+          "id": "d1-trait-choix-5",
+          "type": "qcm",
+          "question": "Dans l'exemple du manuel, quelle mesure aide le plus contre un risque de disponibilité ?",
+          "options": [
+            "Le chiffrement de tous les fichiers",
+            "Un mot de passe plus long",
+            "Une formation sur la confidentialité",
+            "Les sauvegardes"
+          ],
+          "options_why": [
+            "Le chiffrement protège la confidentialité. Il ne rend pas les fichiers plus disponibles.",
+            "Un mot de passe plus long protège l'accès, pas la disponibilité des fichiers.",
+            "Une formation sur la confidentialité vise un autre pilier de la triade.",
+            ""
+          ],
+          "answer": "Les sauvegardes",
+          "explanation": "Une sauvegarde permet de retrouver ses données : elle répond au risque de disponibilité."
+        },
+        {
+          "id": "d1-trait-choix-6",
+          "type": "why",
+          "question": "Pourquoi une protection trop difficile à utiliser peut-elle augmenter le risque ?",
+          "answer": "Parce que les gens la contournent ou ne s'en servent pas. La protection existe sur le papier, mais le danger reste.",
+          "explanation": "Une protection n'agit que si elle est utilisée."
+        },
+        {
+          "id": "d1-trait-choix-7",
+          "type": "qcm",
+          "question": "Une entreprise impose un outil de mail chiffré très compliqué. Que risque-t-il d'arriver ?",
+          "options": [
+            "Des employés enverront des mails sensibles sans chiffrer",
+            "Les mails seront protégés, même si personne ne s'en sert",
+            "Les employés apprendront vite à l'utiliser sans formation",
+            "Le coût de l'outil baissera avec le temps"
+          ],
+          "options_why": [
+            "",
+            "Une protection qu'on n'utilise pas ne protège rien.",
+            "Un outil difficile demande au contraire de la formation et de l'attention.",
+            "Le coût n'a aucun rapport avec la difficulté d'usage."
+          ],
+          "answer": "Des employés enverront des mails sensibles sans chiffrer",
+          "explanation": "Le manuel cite cet exemple : une mauvaise convivialité pousse à contourner la protection."
+        },
+        {
+          "id": "d1-trait-choix-8",
+          "type": "duel",
+          "question": "Une mesure très efficace, mais plus chère que la perte qu'elle évite : est-elle rentable ?",
+          "options": ["Oui, car elle est efficace", "Non, car elle coûte plus que ce qu'elle évite"],
+          "answer": "Non, car elle coûte plus que ce qu'elle évite",
+          "explanation": "Être efficace ne suffit pas : il faut aussi que le total coûte moins que la perte d'origine."
+        },
+        {
+          "id": "d1-trait-choix-9",
+          "type": "flash",
+          "question": "Que faut-il compter, en plus du prix d'achat d'une contre-mesure ?",
+          "answer": "Ses coûts récurrents d'exploitation et de maintenance, chaque année.",
+          "explanation": "Une protection se paie à l'installation, puis chaque année pour la faire fonctionner.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, encadré « Note » de la section « Cost-Effectiveness »."
+        },
+        {
+          "id": "d1-trait-choix-10",
+          "type": "whatif",
+          "question": "Et si on choisit toujours la mesure la plus efficace, sans regarder son prix ?",
+          "answer": "On risque de dépenser plus que la perte évitée. Le manuel dit même que le coût est une question centrale pour les directions.",
+          "explanation": "Une mesure parfaite mais ruineuse n'est pas un bon choix."
+        }
+      ]
+    },
+    {
+      "id": "d1-trait-evaluer",
+      "name": "Évaluer les contrôles (control assessments)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le contrôle technique du vélo",
+          "paragraphes": [
+            "Ton vélo a un bon casque et des freins neufs. Six mois plus tard, un frein est mou, et tu ne l'as pas remarqué.",
+            "Une protection installée un jour n'est pas bonne pour toujours. Il faut la vérifier régulièrement.",
+            "En sécurité, cette vérification s'appelle l'évaluation des contrôles (security control assessment, SCA)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le garagiste en trois gestes",
+          "comme": "Un garagiste regarde tes freins. Il te demande comment tu roules. Puis il les essaie vraiment sur une rampe.",
+          "enVrai": "Une évaluation utilise trois méthodes. Examiner (examine) : lire les documents et regarder les réglages. Interroger (interview) : parler avec les personnes concernées. Tester (test) : faire marcher la protection et comparer ce qui était prévu avec ce qui arrive vraiment."
+        },
+        {
+          "type": "predire",
+          "question": "Un évaluateur veut savoir si le pare-feu bloque vraiment les connexions interdites. Quelle méthode le prouve le mieux ?",
+          "options": [
+            "Lire la politique de sécurité",
+            "Demander à l'administrateur",
+            "Essayer d'envoyer une connexion interdite"
+          ],
+          "answer": "Essayer d'envoyer une connexion interdite",
+          "explanation": "Lire et demander donnent une version de l'histoire. Tester compare le comportement réel au comportement prévu."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une évaluation en trois temps",
+          "texte": "L'évaluateur demande d'abord les documents : politiques, fichiers de configuration. C'est examiner. Puis il rencontre les responsables pour comprendre comment ça marche. C'est interroger. Enfin il essaie la protection pour voir si elle fonctionne comme écrit. C'est tester."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-trait-evaluer-methodes-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les méthodes d'évaluation des contrôles (SCA)",
+          "answer": "There are many different SCA methodologies, but they generally include some form of the following assessment methods: examine, interview, and test.\n\nTraduction : Il existe de nombreuses méthodologies d'évaluation des contrôles de sécurité, mais elles comprennent en général une forme des méthodes d'évaluation suivantes : examiner, interroger et tester.",
+          "explanation": "Trois méthodes : examiner, interroger, tester.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Control Assessments ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-methodes-def2",
+          "type": "cloze",
+          "question": "There are many different SCA methodologies, but they generally include some form of the following assessment methods: [[examine]], interview, and [[test]].",
+          "answer": "There are many different SCA methodologies, but they generally include some form of the following assessment methods: examine, interview, and test.",
+          "explanation": "Le premier mot de la liste et le dernier.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-methodes-def3",
+          "type": "cloze",
+          "question": "There are many different SCA methodologies, but they [[generally include]] some form of the following [[assessment methods]]: [[examine, interview, and test]].",
+          "answer": "There are many different SCA methodologies, but they generally include some form of the following assessment methods: examine, interview, and test.",
+          "explanation": "En général, les méthodes d'évaluation, puis la liste des trois.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-methodes-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur les méthodes d'évaluation des contrôles (SCA), en anglais.",
+          "answer": "There are many different SCA methodologies, but they generally include some form of the following assessment methods: examine, interview, and test.\n\nTraduction : Il existe de nombreuses méthodologies d'évaluation des contrôles de sécurité, mais elles comprennent en général une forme des méthodes d'évaluation suivantes : examiner, interroger et tester.",
+          "explanation": "Pense au garagiste : il regarde, il demande, il essaie.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-sca-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les formes d'une « SCA »",
+          "answer": "SCAs may take the form of self-assessments or external assessments conducted by third parties.\n\nTraduction : Les évaluations des contrôles de sécurité peuvent prendre la forme d'auto-évaluations ou d'évaluations externes menées par des tiers.",
+          "explanation": "Soit l'organisation s'évalue elle-même, soit un tiers l'évalue de l'extérieur.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Control Assessments ». SCA = security control assessment.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-sca-def3",
+          "type": "cloze",
+          "question": "SCAs may take the form of [[self-assessments]] or [[external assessments]] conducted by [[third parties]].",
+          "answer": "SCAs may take the form of self-assessments or external assessments conducted by third parties.",
+          "explanation": "L'auto-évaluation, l'évaluation externe, et ceux qui la mènent : des tiers.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-examine-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la méthode « examine »",
+          "answer": "Examine: This method is \"the process of reviewing, inspecting, observing, studying, or analyzing one or more assessment objects (i.e., specifications, mechanisms, or activities).\"\n\nTraduction : Examiner : cette méthode est « le processus qui consiste à revoir, inspecter, observer, étudier ou analyser un ou plusieurs objets d'évaluation (c'est-à-dire des spécifications, des mécanismes ou des activités) ».",
+          "explanation": "Examiner, c'est lire et regarder : documents, réglages, activités.",
+          "explanation_more": "Définition de la norme NIST 800-53A, citée par le manuel (ISC)2, domaine 1, section « Control Assessments ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-examine-def3",
+          "type": "cloze",
+          "question": "Examine: This method is \"the process of [[reviewing, inspecting, observing]], studying, or analyzing one or more [[assessment objects]] (i.e., [[specifications, mechanisms, or activities]]).\"",
+          "answer": "Examine: This method is \"the process of reviewing, inspecting, observing, studying, or analyzing one or more assessment objects (i.e., specifications, mechanisms, or activities).\"",
+          "explanation": "Les verbes du regard, les objets d'évaluation, et leurs trois formes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-interview-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la méthode « interview »",
+          "answer": "Interview: This method is \"the process of holding discussions with individuals or groups of individuals within an organization to once again, facilitate assessor understanding, achieve clarification, or obtain evidence.\"\n\nTraduction : Interroger : cette méthode est « le processus qui consiste à discuter avec des personnes ou des groupes de personnes de l'organisation pour, une fois encore, aider l'évaluateur à comprendre, obtenir des clarifications ou recueillir des preuves ».",
+          "explanation": "Interroger, c'est parler avec les personnes de l'organisation pour comprendre.",
+          "explanation_more": "Définition de la norme NIST 800-53A, citée par le manuel (ISC)2, domaine 1, section « Control Assessments ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-interview-def3",
+          "type": "cloze",
+          "question": "Interview: This method is \"the process of [[holding discussions]] with [[individuals or groups]] of individuals within an organization to once again, facilitate assessor understanding, achieve clarification, or [[obtain evidence]].\"",
+          "answer": "Interview: This method is \"the process of holding discussions with individuals or groups of individuals within an organization to once again, facilitate assessor understanding, achieve clarification, or obtain evidence.\"",
+          "explanation": "Tenir des discussions, avec des personnes ou des groupes, pour obtenir des preuves.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-test-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la méthode « test »",
+          "answer": "Test: This method is \"the process of exercising one or more assessment objects (i.e., activities or mechanisms) under specified conditions to compare actual with expected behavior.\"\n\nTraduction : Tester : cette méthode est « le processus qui consiste à faire fonctionner un ou plusieurs objets d'évaluation (c'est-à-dire des activités ou des mécanismes) dans des conditions précises pour comparer le comportement réel au comportement attendu ».",
+          "explanation": "Tester, c'est faire marcher la protection et comparer le réel avec le prévu.",
+          "explanation_more": "Définition de la norme NIST 800-53A, citée par le manuel (ISC)2, domaine 1, section « Control Assessments ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-test-def3",
+          "type": "cloze",
+          "question": "Test: This method is \"the process of [[exercising one or more]] assessment objects (i.e., activities or mechanisms) under [[specified conditions]] to [[compare actual with expected behavior]].\"",
+          "answer": "Test: This method is \"the process of exercising one or more assessment objects (i.e., activities or mechanisms) under specified conditions to compare actual with expected behavior.\"",
+          "explanation": "Faire fonctionner, dans des conditions précises, pour comparer réel et attendu.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-evaluer-1",
+          "type": "duel",
+          "question": "Lire la politique de sécurité d'une entreprise : est-ce examiner ou interroger ?",
+          "options": ["Examiner", "Interroger"],
+          "answer": "Examiner",
+          "explanation": "Lire des documents est de l'examen. Interroger veut dire parler avec des personnes."
+        },
+        {
+          "id": "d1-trait-evaluer-2",
+          "type": "sort",
+          "question": "Quelle méthode d'évaluation correspond à chaque geste ?",
+          "answer": "Examiner : lire les fichiers de configuration, regarder les politiques. Interroger : rencontrer le responsable, poser des questions à un groupe d'employés. Tester : essayer une connexion interdite, lancer un test pour voir si la protection réagit.",
+          "explanation": "Lire, parler, essayer : trois gestes pour trois méthodes.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Examiner", "Interroger", "Tester"],
+            "items": [
+              { "text": "Lire les fichiers de configuration", "category": "Examiner" },
+              { "text": "Regarder les politiques de sécurité écrites", "category": "Examiner" },
+              { "text": "Rencontrer le responsable de la sécurité pour comprendre", "category": "Interroger" },
+              { "text": "Poser des questions à un groupe d'employés", "category": "Interroger" },
+              { "text": "Essayer de se connecter avec un mot de passe interdit", "category": "Tester" },
+              { "text": "Lancer un test pour voir si l'alarme réagit comme prévu", "category": "Tester" }
+            ]
+          }
+        },
+        {
+          "id": "d1-trait-evaluer-3",
+          "type": "qcm",
+          "question": "Un évaluateur compare le comportement réel d'une protection avec son comportement prévu. Quelle méthode utilise-t-il ?",
+          "options": [
+            "Examiner (examine)",
+            "Interroger (interview)",
+            "Tester (test)",
+            "L'auto-évaluation"
+          ],
+          "options_why": [
+            "Examiner, c'est lire et regarder, sans faire marcher la protection.",
+            "Interroger, c'est parler avec des personnes.",
+            "",
+            "L'auto-évaluation n'est pas une méthode : c'est une forme d'évaluation, faite par l'organisation elle-même."
+          ],
+          "answer": "Tester (test)",
+          "explanation": "Comparer le comportement réel et le comportement attendu, c'est la définition du test."
+        },
+        {
+          "id": "d1-trait-evaluer-4",
+          "type": "why",
+          "question": "Pourquoi évalue-t-on régulièrement les contrôles, même s'ils marchaient bien au départ ?",
+          "answer": "Parce qu'ils peuvent s'user ou se dérégler avec le temps. Seules des vérifications régulières montrent qu'ils restent efficaces.",
+          "explanation": "Comme un frein de vélo : bon un jour, mou six mois plus tard.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Control Assessments » : il faut évaluer régulièrement pour s'assurer que les contrôles de sécurité et de vie privée restent efficaces."
+        },
+        {
+          "id": "d1-trait-evaluer-5",
+          "type": "flash",
+          "question": "Quelles sont les deux formes d'une évaluation des contrôles ?",
+          "answer": "L'auto-évaluation (self-assessment), faite par l'organisation, ou l'évaluation externe, menée par des tiers.",
+          "explanation": "On peut se juger soi-même, ou être jugé par quelqu'un d'extérieur."
+        },
+        {
+          "id": "d1-trait-evaluer-6",
+          "type": "qcm",
+          "question": "Par quelle méthode un évaluateur commence-t-il souvent une évaluation ?",
+          "options": [
+            "Tester, en attaquant directement la protection",
+            "Interroger tous les employés",
+            "Examiner, en demandant une liste de documents et de preuves",
+            "Faire une auto-évaluation seulement"
+          ],
+          "options_why": [
+            "Tester demande de bien comprendre le système avant d'agir.",
+            "Interroger vient après la lecture des documents, pour clarifier.",
+            "",
+            "L'auto-évaluation est une forme d'évaluation, pas une méthode."
+          ],
+          "answer": "Examiner, en demandant une liste de documents et de preuves",
+          "explanation": "Les évaluateurs commencent souvent par demander des preuves, comme les politiques et les fichiers de configuration."
+        },
+        {
+          "id": "d1-trait-evaluer-7",
+          "type": "flash",
+          "question": "À quoi sert surtout la méthode « test » ?",
+          "answer": "À confirmer que les contrôles sont mis en place comme documentés et qu'ils fonctionnent comme prévu.",
+          "explanation": "C'est la seule méthode qui montre ce que la protection fait vraiment."
+        },
+        {
+          "id": "d1-trait-evaluer-8",
+          "type": "whatif",
+          "question": "Et si un évaluateur utilise seulement la méthode « examiner » ?",
+          "answer": "Il sait ce qui est écrit, mais pas si c'est appliqué. Sans test, un contrôle bien documenté peut ne rien faire en vrai.",
+          "explanation": "Le papier ne prouve pas que la protection marche."
+        },
+        {
+          "id": "d1-trait-evaluer-9",
+          "type": "problem",
+          "question": "Pour vérifier la sauvegarde nocturne d'une école, décris ce que ferait l'évaluateur avec chaque méthode.",
+          "answer": "Examiner : lire la procédure de sauvegarde et les journaux. Interroger : parler à l'administrateur. Tester : restaurer un fichier pour vérifier que la sauvegarde fonctionne.",
+          "explanation": "Lire, demander, essayer : la sauvegarde n'est vraiment prouvée que par la restauration."
+        },
+        {
+          "id": "d1-trait-evaluer-10",
+          "type": "cloze",
+          "question": "Les trois méthodes d'évaluation des contrôles sont [[examiner]], [[interroger]] et [[tester]].",
+          "answer": "Les trois méthodes d'évaluation des contrôles sont examiner, interroger et tester.",
+          "explanation": "Regarder, parler, essayer."
+        }
+      ]
+    },
+    {
+      "id": "d1-trait-suivre",
+      "name": "Suivre, rapporter, s'améliorer",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le carnet d'entraînement",
+          "paragraphes": [
+            "Tu veux progresser au foot. Tu notes tes entraînements, tes buts et ta vitesse sur 100 mètres.",
+            "Chaque mois, tu relis le carnet : tu vois ce qui s'améliore et ce qui stagne. Sans carnet, tu ne saurais pas si tu progresses.",
+            "Une entreprise fait pareil pour sa sécurité : elle surveille, elle rapporte, elle s'améliore."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le compteur du vélo",
+          "comme": "Le compteur du vélo montre ta vitesse et la distance. Il ne pédale pas à ta place, mais il dit si tu avances bien.",
+          "enVrai": "Surveiller et mesurer (monitoring and measurement) : suivre en continu si les contrôles marchent. Les indicateurs clés de performance (KPI, key performance indicators) sont les chiffres du compteur. Les rapports (reporting) disent à la direction ce qu'on a trouvé."
+        },
+        {
+          "type": "predire",
+          "question": "Une équipe de sécurité fait des audits et des mesures, mais ne les envoie à personne. À quoi servent-ils ?",
+          "options": [
+            "À rien : sans rapport, ils ne changent aucune décision",
+            "À protéger l'entreprise : l'audit suffit",
+            "À montrer qu'on travaille, même sans les lire"
+          ],
+          "answer": "À rien : sans rapport, ils ne changent aucune décision",
+          "explanation": "Le manuel dit que ces activités sont inutiles sans une bonne fonction de rapport. La deuxième réponse est tentante, car faire l'audit semble suffire."
+        },
+        {
+          "type": "analogie",
+          "titre": "La ceinture de judo",
+          "comme": "En judo, la ceinture montre ton niveau : blanche, jaune, orange, verte. Tu sais ce qu'il te reste à travailler pour passer à la suivante.",
+          "enVrai": "La modélisation de la maturité du risque (risk maturity modeling) place la sécurité d'une entreprise sur une échelle de niveaux. L'entreprise voit quels comportements améliorer, au lieu de courir après chaque faille. Où l'image s'arrête : on remesure régulièrement, la ceinture n'est pas acquise pour toujours."
+        },
+        {
+          "type": "exemple",
+          "titre": "Que faut-il rapporter ?",
+          "texte": "Un responsable sécurité prépare son rapport. Il y met les audits internes, faits par l'entreprise elle-même, et les audits externes, faits par des tiers. Il ajoute les changements importants du risque ou des contrôles. Il signale aussi les fuites de données soupçonnées ou confirmées."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-trait-suivre-maturite-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « risk maturity modeling »",
+          "answer": "Risk maturity modeling is a process that allows an organization to assess the strength of its security program and create a plan for continuous improvement based on their results.\n\nTraduction : La modélisation de la maturité du risque est un processus qui permet à une organisation d'évaluer la solidité de son programme de sécurité et de créer un plan d'amélioration continue fondé sur ses résultats.",
+          "explanation": "On mesure où on en est, puis on construit un plan pour progresser.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Continuous Improvement ». À connaître mot pour mot. Les modèles de maturité sont revus dans le chapitre 8 du manuel.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-maturite-def2",
+          "type": "cloze",
+          "question": "Risk maturity modeling is a process that allows an organization to [[assess]] the strength of its security program and create a plan for [[continuous]] improvement based on their results.",
+          "answer": "Risk maturity modeling is a process that allows an organization to assess the strength of its security program and create a plan for continuous improvement based on their results.",
+          "explanation": "Évaluer la solidité, et préparer une amélioration continue.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-maturite-def3",
+          "type": "cloze",
+          "question": "Risk maturity modeling is [[a process that allows]] an organization to [[assess the strength]] of its security program and [[create a plan]] for continuous improvement based on their results.",
+          "answer": "Risk maturity modeling is a process that allows an organization to assess the strength of its security program and create a plan for continuous improvement based on their results.",
+          "explanation": "Un processus, qui évalue la solidité, puis crée un plan.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-maturite-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « risk maturity modeling » (en anglais).",
+          "answer": "Risk maturity modeling is a process that allows an organization to assess the strength of its security program and create a plan for continuous improvement based on their results.\n\nTraduction : La modélisation de la maturité du risque est un processus qui permet à une organisation d'évaluer la solidité de son programme de sécurité et de créer un plan d'amélioration continue fondé sur ses résultats.",
+          "explanation": "Pense à la ceinture de judo : tu mesures ton niveau, puis tu prépares la suite.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-suivi-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : surveiller et mesurer les contrôles (« monitoring »)",
+          "answer": "In addition to conducting periodic (e.g., annual or quarterly) security and privacy control assessments, you should actively and intentionally monitor your controls to measure their effectiveness and assess the health of your overall security program.\n\nTraduction : En plus de mener des évaluations périodiques (par exemple annuelles ou trimestrielles) des contrôles de sécurité et de vie privée, vous devez surveiller activement et volontairement vos contrôles pour mesurer leur efficacité et évaluer la santé de l'ensemble de votre programme de sécurité.",
+          "explanation": "En plus des évaluations périodiques, on surveille tout le temps.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Monitoring and Measurement ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-suivi-def3",
+          "type": "cloze",
+          "question": "In addition to conducting periodic (e.g., annual or quarterly) security and privacy control assessments, you should [[actively and intentionally]] monitor your controls to [[measure their effectiveness]] and [[assess the health]] of your overall security program.",
+          "answer": "In addition to conducting periodic (e.g., annual or quarterly) security and privacy control assessments, you should actively and intentionally monitor your controls to measure their effectiveness and assess the health of your overall security program.",
+          "explanation": "Surveiller volontairement, mesurer l'efficacité, et juger la santé du programme.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-kpi-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les « KPIs »",
+          "answer": "Depending on your organization's needs, you should develop a set of key performance indicators (KPIs) that allow you to quantify and measure the long-term performance of your controls.\n\nTraduction : Selon les besoins de votre organisation, vous devez élaborer un ensemble d'indicateurs clés de performance (KPI) qui vous permettent de quantifier et de mesurer la performance à long terme de vos contrôles.",
+          "explanation": "Les KPI sont les chiffres du compteur : ils suivent la performance des contrôles dans la durée.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Monitoring and Measurement ». KPI = key performance indicator.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-kpi-def3",
+          "type": "cloze",
+          "question": "Depending on your organization's needs, you should develop a set of [[key performance indicators]] (KPIs) that allow you to [[quantify and measure]] the [[long-term performance]] of your controls.",
+          "answer": "Depending on your organization's needs, you should develop a set of key performance indicators (KPIs) that allow you to quantify and measure the long-term performance of your controls.",
+          "explanation": "Le nom complet, ce qu'ils permettent, et la durée : le long terme.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-rapport-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'importance du « reporting »",
+          "answer": "Conducting SCAs and other monitoring and measurement activities is useless without a well-managed reporting function.\n\nTraduction : Mener des évaluations des contrôles et d'autres activités de surveillance et de mesure est inutile sans une fonction de rapport bien gérée.",
+          "explanation": "Sans rapport, personne ne connaît les résultats : le travail ne sert à rien.",
+          "explanation_more": "Manuel officiel (ISC)2, domaine 1, section « Reporting ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-rapport-def3",
+          "type": "cloze",
+          "question": "Conducting SCAs and other [[monitoring and measurement]] activities is [[useless without]] a [[well-managed reporting function]].",
+          "answer": "Conducting SCAs and other monitoring and measurement activities is useless without a well-managed reporting function.",
+          "explanation": "La surveillance et la mesure sont inutiles sans une bonne fonction de rapport.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-trait-suivre-1",
+          "type": "flash",
+          "question": "Que doit rapporter un programme de sécurité bien géré ? Cite trois éléments.",
+          "answer": "Par exemple : les audits internes et externes. Les changements importants du risque ou des contrôles. Les incidents de sécurité soupçonnés ou confirmés.",
+          "explanation": "Cinq sujets au total : les audits, les changements de risque ou de contrôle, et les incidents.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Reporting ». Un audit interne est une auto-évaluation. Un audit externe est mené par un régulateur ou un tiers."
+        },
+        {
+          "id": "d1-trait-suivre-2",
+          "type": "qcm",
+          "question": "Une fuite de données est seulement soupçonnée. Faut-il la mentionner dans le rapport ?",
+          "options": [
+            "Oui : le manuel inclut les incidents soupçonnés ou confirmés",
+            "Non : seules les fuites confirmées comptent",
+            "Non : il faut attendre d'être sûr à 100 %",
+            "Seulement si un journal en parle"
+          ],
+          "options_why": [
+            "",
+            "Le manuel dit « suspected or confirmed » : le doute suffit.",
+            "Attendre la certitude retarde la réaction. Le soupçon doit déjà être rapporté.",
+            "Un article de presse n'est pas la condition. Le rapport est une décision interne."
+          ],
+          "answer": "Oui : le manuel inclut les incidents soupçonnés ou confirmés",
+          "explanation": "Un soupçon sérieux se signale tout de suite : il vaut mieux alerter trop tôt que trop tard."
+        },
+        {
+          "id": "d1-trait-suivre-3",
+          "type": "duel",
+          "question": "« Je regarde chaque semaine les chiffres qui montrent comment mes contrôles se comportent. » Est-ce une évaluation périodique ou un suivi continu ?",
+          "options": ["Une évaluation périodique", "Un suivi continu (monitoring)"],
+          "answer": "Un suivi continu (monitoring)",
+          "explanation": "Le suivi regarde tout le temps. Une évaluation périodique a lieu à dates fixes, comme chaque année."
+        },
+        {
+          "id": "d1-trait-suivre-4",
+          "type": "qcm",
+          "question": "Que montre un indicateur clé de performance (KPI) ?",
+          "options": [
+            "La liste des menaces connues",
+            "La performance des contrôles, mesurée dans la durée",
+            "La valeur de chaque actif",
+            "Le prix des assurances"
+          ],
+          "options_why": [
+            "La liste des menaces se fait pendant l'identification du risque.",
+            "",
+            "La valeur d'un actif se fait à l'analyse du risque.",
+            "Le prix d'une assurance est un coût, pas un indicateur de performance."
+          ],
+          "answer": "La performance des contrôles, mesurée dans la durée",
+          "explanation": "Un KPI est un chiffre qui montre si un contrôle fait bien son travail, mois après mois."
+        },
+        {
+          "id": "d1-trait-suivre-5",
+          "type": "why",
+          "question": "Pourquoi un rapport est-il aussi important que l'audit lui-même ?",
+          "answer": "Parce que sans rapport, la direction ne connaît pas les résultats. Elle ne peut donc ni décider, ni corriger.",
+          "explanation": "Un résultat que personne ne lit ne change rien."
+        },
+        {
+          "id": "d1-trait-suivre-6",
+          "type": "flash",
+          "question": "Que veut dire « améliorer le retour sur investissement (ROI) » de la sécurité ?",
+          "answer": "Obtenir plus de protection pour chaque dollar dépensé : ni trop peu de sécurité, ni trop d'outils inutiles.",
+          "explanation": "Le ROI (return on investment) dit ce que rapporte l'argent dépensé.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Continuous Improvement » : il y a une ligne fine entre « pas assez sécurisé » et « trop d'outils et de processus »."
+        },
+        {
+          "id": "d1-trait-suivre-7",
+          "type": "qcm",
+          "question": "Une entreprise veut savoir où elle en est et préparer son plan de progrès. Quel outil utilise-t-elle ?",
+          "options": [
+            "Un modèle de maturité du risque",
+            "Une cyber-assurance",
+            "Un antivirus",
+            "Un contrôle compensatoire"
+          ],
+          "options_why": [
+            "",
+            "Une assurance transfère un risque, elle ne mesure pas le niveau du programme.",
+            "Un antivirus est un contrôle technique, pas un outil de mesure du programme.",
+            "Un contrôle compensatoire remplace un contrôle impossible, il ne mesure rien."
+          ],
+          "answer": "Un modèle de maturité du risque",
+          "explanation": "Il place le programme sur une échelle, puis indique ce qu'il faut améliorer."
+        },
+        {
+          "id": "d1-trait-suivre-8",
+          "type": "whatif",
+          "question": "Et si une entreprise ajoute outil sur outil, sans jamais mesurer s'ils servent ?",
+          "answer": "Elle dépense plus pour moins d'efficacité. Le manuel parle d'une ligne fine entre « pas assez sécurisé » et « trop d'outils et de processus ».",
+          "explanation": "Sans mesure, on ne sait pas quels outils méritent leur coût."
+        },
+        {
+          "id": "d1-trait-suivre-9",
+          "type": "problem",
+          "question": "Tu es responsable de la sécurité d'un collège. Propose deux KPI pour mesurer tes contrôles et dis à qui tu enverrais le rapport.",
+          "answer": "Par exemple : le nombre de comptes avec un mot de passe faible, et le temps moyen pour installer les mises à jour. Rapport : au directeur du collège et aux autres responsables.",
+          "explanation": "Un bon KPI est un chiffre simple, qui montre la santé d'un contrôle dans la durée.",
+          "explanation_more": "Les deux exemples de KPI sont des idées pédagogiques (hors manuel)."
+        },
+        {
+          "id": "d1-trait-suivre-10",
+          "type": "cloze",
+          "question": "Les [[KPI]] permettent de [[mesurer]] la performance des contrôles sur la durée.",
+          "answer": "Les KPI permettent de mesurer la performance des contrôles sur la durée.",
+          "explanation": "Ce sont les chiffres du compteur de la sécurité."
+        }
+      ]
+    }
+  ]
+}

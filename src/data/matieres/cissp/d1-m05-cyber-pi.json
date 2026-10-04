@@ -1,0 +1,2538 @@
+{
+  "id": "d1-m05-cyber-pi",
+  "name": "D1.5 Cybercriminalité et propriété intellectuelle",
+  "galaxie": {
+    "teinte": 190,
+    "ambiance": "tendu"
+  },
+  "concepts": [
+    {
+      "id": "d1-cyb-crime",
+      "name": "La cybercriminalité (cybercrime)",
+      "planete": {
+        "relief": "volcanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le vélo et le compte de jeu",
+          "paragraphes": [
+            "Ton vélo est volé devant le collège. La police parle d'un crime : un acte interdit et puni par la loi.",
+            "Quelques jours plus tard, quelqu'un entre dans ton compte de jeu vidéo et vide ton inventaire. Pas de cambrioleur dans la rue : seulement un ordinateur et internet.",
+            "C'est aussi un crime. Quand un crime utilise des ordinateurs ou internet, on parle de cybercriminalité (cybercrime)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un outil ou une cible",
+          "comme": "Un voleur peut se servir d'un pied-de-biche pour forcer une porte. Il peut aussi voler le pied-de-biche lui-même. Dans le premier cas, l'objet est l'outil. Dans le second, il est la cible.",
+          "enVrai": "En cybercriminalité, l'ordinateur peut être l'outil du crime, par exemple pour envoyer une arnaque. Il peut aussi être la cible, par exemple quand on le pirate pour voler ses données. L'image s'arrête là : un même ordinateur peut être les deux à la fois."
+        },
+        {
+          "type": "predire",
+          "question": "Quelqu'un attaque le site d'un magasin pour le mettre en panne. Que subit le site dans ce crime ?",
+          "options": [
+            "Il est la cible du crime",
+            "Il est l'outil du crime",
+            "Il n'est pas concerné : seul le pirate l'est"
+          ],
+          "answer": "Il est la cible du crime",
+          "explanation": "Le site est visé par l'attaque : c'est la cible. L'outil, c'est l'ordinateur du pirate. La deuxième réponse tente, car un ordinateur est toujours présent dans un cybercrime."
+        },
+        {
+          "type": "analogie",
+          "titre": "Trois victimes possibles",
+          "comme": "Dans une ville, un voleur peut s'en prendre à un habitant, à une maison ou à la mairie. Ce sont trois victimes différentes.",
+          "enVrai": "Le manuel classe les cybercrimes en trois catégories, selon la victime : les personnes, les biens et le gouvernement. Un même acte, comme le piratage (hacking), peut se retrouver dans deux catégories."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les crimes contre les personnes",
+          "texte": "Le cyberharcèlement (cyberstalking), c'est suivre et surveiller quelqu'un en ligne sans arrêt. Le harcèlement en ligne (online harassment), c'est l'insulter ou le menacer. L'usurpation d'identité (identity theft), c'est se faire passer pour lui. La fraude à la carte bancaire (credit card fraud), c'est payer avec la carte d'un autre."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une fuite de données (data breach)",
+          "texte": "Une chaîne de magasins se fait pirater. Des inconnus copient les noms et les numéros de carte bancaire de ses clients. Personne n'a cassé de vitrine, mais des données ont été prises sans permission. C'est une fuite de données (data breach), un cybercrime précis."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cyb-crime-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « cybercrime »",
+          "answer": "A cybercrime is any criminal activity that directly involves computers or the internet.\n\nTraduction : Un cybercrime est toute activité criminelle qui implique directement des ordinateurs ou internet.",
+          "explanation": "Pense au vélo volé : si un ordinateur ou internet est au cœur du crime, c'est un cybercrime.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Cybercrimes and Data Breaches ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-def2",
+          "type": "cloze",
+          "question": "A cybercrime is any [[criminal]] activity that directly involves [[computers]] or the internet.",
+          "answer": "A cybercrime is any criminal activity that directly involves computers or the internet.",
+          "explanation": "Deux mots clés : une activité criminelle, et des ordinateurs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-def3",
+          "type": "cloze",
+          "question": "A cybercrime is [[any criminal activity]] that [[directly involves]] [[computers or the internet]].",
+          "answer": "A cybercrime is any criminal activity that directly involves computers or the internet.",
+          "explanation": "Trois blocs : toute activité criminelle, qui implique directement, des ordinateurs ou internet.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « cybercrime » (en anglais).",
+          "answer": "A cybercrime is any criminal activity that directly involves computers or the internet.\n\nTraduction : Un cybercrime est toute activité criminelle qui implique directement des ordinateurs ou internet.",
+          "explanation": "Cherche les trois idées : activité criminelle, directement, ordinateurs ou internet.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-breach-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « data breach »",
+          "answer": "A data breach is a specific cybercrime where information is accessed or stolen by a cybercriminal without authorization.\n\nTraduction : Une fuite de données est un cybercrime précis dans lequel une information est consultée ou volée par un cybercriminel, sans autorisation.",
+          "explanation": "C'est un cybercrime précis : on prend ou on regarde des informations sans en avoir le droit.",
+          "explanation_more": "Le manuel précise que la cible est le système d'information et les données qu'il contient. Source : domaine 1, section « Cybercrimes and Data Breaches ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-breach-def2",
+          "type": "cloze",
+          "question": "A data breach is a specific [[cybercrime]] where information is accessed or stolen by a cybercriminal without [[authorization]].",
+          "answer": "A data breach is a specific cybercrime where information is accessed or stolen by a cybercriminal without authorization.",
+          "explanation": "Deux mots clés : c'est un cybercrime, et il se fait sans autorisation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-breach-def3",
+          "type": "cloze",
+          "question": "A data breach is [[a specific cybercrime]] where information is [[accessed or stolen]] by a cybercriminal [[without authorization]].",
+          "answer": "A data breach is a specific cybercrime where information is accessed or stolen by a cybercriminal without authorization.",
+          "explanation": "Trois blocs : un cybercrime précis, des informations consultées ou volées, sans autorisation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-breach-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « data breach » (en anglais).",
+          "answer": "A data breach is a specific cybercrime where information is accessed or stolen by a cybercriminal without authorization.\n\nTraduction : Une fuite de données est un cybercrime précis dans lequel une information est consultée ou volée par un cybercriminel, sans autorisation.",
+          "explanation": "Les mots à ne pas oublier : specific cybercrime, accessed or stolen, without authorization.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-people-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « crimes against people »",
+          "answer": "Crimes against people: These crimes include cyberstalking, online harassment, identity theft, and credit card fraud.\n\nTraduction : Crimes contre les personnes : ces crimes comprennent le cyberharcèlement, le harcèlement en ligne, l'usurpation d'identité et la fraude à la carte bancaire.",
+          "explanation": "Ici la victime est une personne : on la suit, on l'insulte, on prend son identité ou sa carte.",
+          "explanation_more": "Première des trois catégories de cybercrimes du manuel. Source : domaine 1, section « Cybercrimes and Data Breaches ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-people-def3",
+          "type": "cloze",
+          "question": "Crimes against people: These crimes include [[cyberstalking, online harassment]], [[identity theft]], and [[credit card fraud]].",
+          "answer": "Crimes against people: These crimes include cyberstalking, online harassment, identity theft, and credit card fraud.",
+          "explanation": "Quatre exemples en trois blocs : suivre et harceler, voler l'identité, frauder avec la carte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-property-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « crimes against property »",
+          "answer": "Crimes against property: Property in this case may include information stored within a computer, or the computer itself.\n\nTraduction : Crimes contre les biens : ici, un bien peut être une information stockée dans un ordinateur, ou l'ordinateur lui-même.",
+          "explanation": "Un bien, c'est ce qui t'appartient : tes fichiers comme ta machine.",
+          "explanation_more": "Le manuel cite : piratage, diffusion de virus, vandalisme informatique, vol de propriété intellectuelle et violation du droit d'auteur. Source : domaine 1, « Cybercrimes and Data Breaches ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-property-def3",
+          "type": "cloze",
+          "question": "Crimes against property: [[Property in this case]] may include information [[stored within a computer]], or [[the computer itself]].",
+          "answer": "Crimes against property: Property in this case may include information stored within a computer, or the computer itself.",
+          "explanation": "Trois blocs : ce qu'est un bien ici, les informations dans un ordinateur, et l'ordinateur.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-gov-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « crimes against government »",
+          "answer": "Any cybercrime committed against a government organization is considered an attack on that nation's sovereignty.\n\nTraduction : Tout cybercrime commis contre une organisation du gouvernement est considéré comme une attaque contre la souveraineté de cette nation.",
+          "explanation": "La souveraineté, c'est le droit d'un pays de décider chez lui. Attaquer son gouvernement, c'est attaquer ce droit.",
+          "explanation_more": "Le manuel cite : piratage, vol d'informations confidentielles, cyberterrorisme. Source : domaine 1, « Cybercrimes and Data Breaches ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-gov-def3",
+          "type": "cloze",
+          "question": "Any cybercrime committed [[against a government organization]] is considered [[an attack]] on that [[nation's sovereignty]].",
+          "answer": "Any cybercrime committed against a government organization is considered an attack on that nation's sovereignty.",
+          "explanation": "Trois blocs : contre le gouvernement, une attaque, contre la souveraineté du pays.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-hacktiv-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « hacktivism »",
+          "answer": "Hacktivism is another cybercrime that involves hackers seeking to make a political statement with their attacks.\n\nTraduction : Le hacktivisme est un autre cybercrime dans lequel des pirates cherchent à faire passer un message politique par leurs attaques.",
+          "explanation": "Hacker + activisme : l'attaque sert à défendre une cause, pas à gagner de l'argent.",
+          "explanation_more": "Les hacktivistes visent souvent des organisations du gouvernement, mais aussi d'autres organisations avec lesquelles ils sont en désaccord.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-hacktiv-def3",
+          "type": "cloze",
+          "question": "Hacktivism is [[another cybercrime]] that involves [[hackers seeking]] to make a [[political statement]] with their attacks.",
+          "answer": "Hacktivism is another cybercrime that involves hackers seeking to make a political statement with their attacks.",
+          "explanation": "Trois blocs : un autre cybercrime, des pirates qui cherchent, un message politique.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-crime-1",
+          "type": "duel",
+          "question": "Un groupe de pirates attaque le site d'un ministère pour protester contre une décision du gouvernement. Quel mot le décrit ?",
+          "options": [
+            "Le hacktivisme (hacktivism)",
+            "La fuite de données (data breach)"
+          ],
+          "answer": "Le hacktivisme (hacktivism)",
+          "explanation": "Le but est de faire passer un message politique. Dans une fuite de données, le but est de prendre des informations.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-crime-2",
+          "type": "qcm",
+          "question": "Des inconnus entrent dans la base de données d'un hôpital et copient les dossiers des patients. De quel cybercrime précis s'agit-il ?",
+          "options": [
+            "D'une fuite de données (data breach)",
+            "Du hacktivisme (hacktivism)",
+            "Du harcèlement en ligne (online harassment)"
+          ],
+          "options_why": [
+            "",
+            "Il n'y a aucun message politique : les pirates veulent les informations.",
+            "Personne n'est insulté ni menacé : ce sont des dossiers qui sont pris."
+          ],
+          "answer": "D'une fuite de données (data breach)",
+          "explanation": "Des informations sont consultées ou volées sans autorisation : c'est la définition d'une fuite de données.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-crime-3",
+          "type": "flash",
+          "question": "Dans un cybercrime, quel rôle peut jouer l'ordinateur ?",
+          "answer": "Il peut être l'outil utilisé pour commettre le crime, ou la cible du crime.",
+          "explanation": "Comme un pied-de-biche : on peut s'en servir pour forcer une porte, ou le voler lui-même.",
+          "explanation_more": "Source : domaine 1, section « Cybercrimes and Data Breaches » : un ordinateur peut être l'outil du crime ou sa cible.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-crime-4",
+          "type": "flash",
+          "question": "C'est quoi le cyberterrorisme (cyber terrorism) ?",
+          "answer": "Une attaque informatique qui vise un pays ou ses habitants pour faire peur ou causer de gros dégâts.",
+          "explanation": "Le manuel le range parmi les cybercrimes contre le gouvernement.",
+          "explanation_more": "Le manuel cite le cyberterrorisme sans le définir. Cette explication simple est hors manuel.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-crime-5",
+          "type": "sort",
+          "question": "Dans quelle catégorie va chaque cybercrime ?",
+          "answer": "Contre des personnes : le cyberharcèlement et la fraude à la carte bancaire. Contre des biens : la diffusion de virus, le vandalisme informatique et le vol de propriété intellectuelle. Contre un gouvernement : le cyberterrorisme.",
+          "explanation": "Demande-toi qui est visé : une personne, ses fichiers ou sa machine, ou le gouvernement d'un pays.",
+          "explanation_more": "Le piratage (hacking) est cité dans les biens et dans le gouvernement : voilà pourquoi il n'est pas dans ce tri. La propriété intellectuelle (IP) est expliquée plus loin dans cette galaxie.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Contre des personnes",
+              "Contre des biens",
+              "Contre un gouvernement"
+            ],
+            "items": [
+              {
+                "text": "Le cyberharcèlement (cyberstalking)",
+                "category": "Contre des personnes"
+              },
+              {
+                "text": "La fraude à la carte bancaire",
+                "category": "Contre des personnes"
+              },
+              {
+                "text": "La diffusion de virus informatiques",
+                "category": "Contre des biens"
+              },
+              {
+                "text": "Le vandalisme informatique",
+                "category": "Contre des biens"
+              },
+              {
+                "text": "Le vol de propriété intellectuelle",
+                "category": "Contre des biens"
+              },
+              {
+                "text": "Le cyberterrorisme",
+                "category": "Contre un gouvernement"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-cyb-crime-6",
+          "type": "flash",
+          "question": "Quelle différence y a-t-il entre un cybercrime et une fuite de données (data breach) ?",
+          "answer": "Un cybercrime est tout crime qui utilise ou vise des ordinateurs. Une fuite de données est un cybercrime précis : des informations sont consultées ou volées sans autorisation.",
+          "explanation": "La fuite de données est un cas particulier, comme le vol de vélo est un cas particulier de vol.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-crime-7",
+          "type": "why",
+          "question": "Pourquoi un cybercrime contre une organisation du gouvernement est-il pris très au sérieux ?",
+          "answer": "Parce qu'il est considéré comme une attaque contre la souveraineté de la nation, c'est-à-dire contre le droit du pays de décider chez lui.",
+          "explanation": "Le gouvernement représente tout le pays, pas seulement les employés qui y travaillent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-crime-8",
+          "type": "flash",
+          "question": "Qui les hacktivistes visent-ils souvent ?",
+          "answer": "Souvent des organisations du gouvernement, mais aussi d'autres organisations avec lesquelles ils sont en désaccord.",
+          "explanation": "Leur cible dépend de la cause qu'ils défendent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-crime-9",
+          "type": "flash",
+          "question": "Quelle est la cible d'une fuite de données ?",
+          "answer": "Le système d'information et les données qui sont stockées dedans.",
+          "explanation": "Le pirate veut l'information, pas la machine. Une fuite peut toucher une personne, une entreprise ou même un pays entier.",
+          "explanation_more": "Source : domaine 1, section « Cybercrimes and Data Breaches » : les fuites de données menacent une personne, une entreprise ou une nation.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cyb-cfaa",
+      "name": "La loi CFAA (Computer Fraud and Abuse Act)",
+      "planete": {
+        "relief": "rocheuse"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Entrer sans frapper",
+          "paragraphes": [
+            "La porte d'un bureau est fermée. Tu entres quand même, juste pour regarder. Tu ne prends rien. Est-ce une faute ? Oui : entrer sans permission est une intrusion.",
+            "Dans les années 1980, les lois parlaient surtout d'objets que l'on peut toucher. Il fallait les adapter aux données d'un ordinateur.",
+            "En 1986, les États-Unis ont voté une loi pour cela. C'est le Computer Fraud and Abuse Act (CFAA), la loi sur la fraude et les abus informatiques."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La clôture du terrain",
+          "comme": "Un terrain est entouré d'une clôture. Entrer sans permission est une intrusion, même si tu ne casses rien. Un parc ouvert à tous n'a pas de clôture.",
+          "enVrai": "Le CFAA punit l'accès à un ordinateur protégé (protected computer) sans autorisation, ou au-delà de l'autorisation reçue. La permission joue le rôle de la clôture. L'image s'arrête là : on peut aussi commettre une faute en dépassant ses droits, sans forcer aucune porte."
+        },
+        {
+          "type": "predire",
+          "question": "Pour le CFAA, quel ordinateur est un ordinateur protégé (protected computer) ?",
+          "options": [
+            "Seulement un ordinateur de l'armée américaine",
+            "Un ordinateur d'État ou de banque, ou utilisé pour le commerce entre pays",
+            "Seulement un ordinateur protégé par un mot de passe"
+          ],
+          "answer": "Un ordinateur d'État ou de banque, ou utilisé pour le commerce entre pays",
+          "explanation": "Le mot « protected » veut dire que la loi le protège, pas qu'il a un antivirus. La définition est large : un ordinateur ordinaire peut être concerné."
+        },
+        {
+          "type": "exemple",
+          "titre": "Délit ou crime grave ?",
+          "texte": "En droit américain, une faute peut être un délit (misdemeanor), moins grave, ou un crime grave (felony), puni plus lourdement. Le CFAA prévoit sept infractions. Certaines sont des délits au départ, mais deviennent des crimes graves si le gain est important ou s'il y a fraude."
+        },
+        {
+          "type": "analogie",
+          "titre": "La clé du vestiaire",
+          "comme": "Trouver la clé du vestiaire d'un autre élève, ce n'est pas la même chose que la vendre à quelqu'un.",
+          "enVrai": "Le CFAA punit le trafic de mots de passe (trafficking) : les transférer, ou en prendre le contrôle pour les donner à un autre. Garder un mot de passe sans intention de le passer à quelqu'un n'est pas du trafic."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cyb-cfaa-pc-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « protected computer »",
+          "answer": "In plain English, a protected computer is a computer used by the U.S. government or financial institutions, or one used for interstate and foreign communications and financial transactions.\n\nTraduction : En langage simple, un ordinateur protégé est un ordinateur utilisé par le gouvernement américain ou par des institutions financières, ou utilisé pour les communications entre États et avec l'étranger et pour les transactions financières.",
+          "explanation": "« Protected » veut dire protégé par la loi. Pense : État, banque, ou commerce entre États et pays.",
+          "explanation_more": "Le mot « interstate » veut dire entre plusieurs États des États-Unis. Source : domaine 1, « U.S. Computer Fraud and Abuse Act of 1986 », section 1030(e)(2).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-cfaa-pc-def2",
+          "type": "cloze",
+          "question": "In plain English, a protected computer is a computer used by the U.S. [[government]] or financial institutions, or one used for [[interstate]] and foreign communications and financial transactions.",
+          "answer": "In plain English, a protected computer is a computer used by the U.S. government or financial institutions, or one used for interstate and foreign communications and financial transactions.",
+          "explanation": "Deux mots clés : le gouvernement, et interstate (entre États).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-cfaa-pc-def3",
+          "type": "cloze",
+          "question": "In plain English, a protected computer is [[a computer used by]] the U.S. government or financial institutions, or one used for [[interstate and foreign communications]] and [[financial transactions]].",
+          "answer": "In plain English, a protected computer is a computer used by the U.S. government or financial institutions, or one used for interstate and foreign communications and financial transactions.",
+          "explanation": "Trois blocs : un ordinateur utilisé par, les communications entre États et pays, les transactions financières.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-cfaa-pc-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « protected computer » (en anglais).",
+          "answer": "In plain English, a protected computer is a computer used by the U.S. government or financial institutions, or one used for interstate and foreign communications and financial transactions.\n\nTraduction : En langage simple, un ordinateur protégé est un ordinateur utilisé par le gouvernement américain ou par des institutions financières, ou utilisé pour les communications entre États et avec l'étranger et pour les transactions financières.",
+          "explanation": "Deux familles : gouvernement et finance d'un côté, communications et transactions de l'autre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-cfaa-purpose-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le but du « CFAA »",
+          "answer": "The CFAA was created to clarify definitions of computer fraud and abuse and to extend existing law to include intangible property such as computer data.\n\nTraduction : Le CFAA a été créé pour clarifier les définitions de la fraude et de l'abus informatiques, et pour étendre la loi existante aux biens immatériels comme les données informatiques.",
+          "explanation": "Deux buts : clarifier les mots, et protéger aussi ce qu'on ne peut pas toucher, comme des données.",
+          "explanation_more": "Un bien immatériel (intangible property) est un bien qu'on ne peut pas toucher. Source : domaine 1, « U.S. Computer Fraud and Abuse Act of 1986 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-cfaa-purpose-def3",
+          "type": "cloze",
+          "question": "The CFAA was created to [[clarify definitions]] of [[computer fraud and abuse]] and to [[extend existing law]] to include intangible property such as computer data.",
+          "answer": "The CFAA was created to clarify definitions of computer fraud and abuse and to extend existing law to include intangible property such as computer data.",
+          "explanation": "Trois blocs : clarifier les définitions, la fraude et l'abus informatiques, étendre la loi existante.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-cfaa-traffic-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « traffic » (dans le CFAA)",
+          "answer": "The term traffic here means to illegally transfer or obtain control of a password with the intent to transfer it to another party.\n\nTraduction : Ici, le terme « trafic » veut dire transférer illégalement un mot de passe, ou en prendre le contrôle, avec l'intention de le transférer à une autre partie.",
+          "explanation": "Clé du vestiaire : le trafic, c'est la donner ou la vendre, pas seulement la garder.",
+          "explanation_more": "Le manuel précise que posséder un mot de passe sans intention de le transférer est exclu. Source : domaine 1, CFAA, section 1030(a)(6).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-cfaa-traffic-def3",
+          "type": "cloze",
+          "question": "The term traffic here means to [[illegally transfer]] or [[obtain control]] of a password with the [[intent to transfer]] it to another party.",
+          "answer": "The term traffic here means to illegally transfer or obtain control of a password with the intent to transfer it to another party.",
+          "explanation": "Trois blocs : transférer illégalement, prendre le contrôle, avec l'intention de le passer à un autre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-cfaa-1",
+          "type": "flash",
+          "question": "Que punit le CFAA, en une phrase ?",
+          "answer": "Accéder à un ordinateur protégé sans autorisation, ou au-delà de l'autorisation reçue, et les fraudes ou dégâts qui peuvent en découler.",
+          "explanation": "C'est la plus ancienne loi américaine sur le cybercrime encore en vigueur.",
+          "explanation_more": "Source : domaine 1, « U.S. Computer Fraud and Abuse Act of 1986, 18 U.S.C. § 1030 ». Le manuel la juge toujours très importante.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-cfaa-2",
+          "type": "flash",
+          "question": "En quelle année le CFAA a-t-il été voté ?",
+          "answer": "En 1986, comme ajout à une loi de 1984, le Comprehensive Crime Control Act.",
+          "explanation": "Retiens 1986 : c'est aussi l'année de l'ECPA, vue dans la planète suivante.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-cfaa-3",
+          "type": "qcm",
+          "question": "Avant 1996, le CFAA parlait de « federal interest computers ». Quel terme utilise-t-il depuis ?",
+          "options": [
+            "Protected computers (ordinateurs protégés)",
+            "Critical computers (ordinateurs critiques)",
+            "Government computers (ordinateurs d'État)"
+          ],
+          "options_why": [
+            "",
+            "Ce terme n'est pas celui de la loi.",
+            "Trop étroit : la définition inclut aussi les institutions financières et le commerce entre États ou pays."
+          ],
+          "answer": "Protected computers (ordinateurs protégés)",
+          "explanation": "Un amendement de 1996 a remplacé « federal interest computers » par « protected computers ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-cfaa-4",
+          "type": "sort",
+          "question": "Parmi les infractions du CFAA, lesquelles sont des crimes graves au départ, et lesquelles des délits ?",
+          "answer": "Crimes graves : informations de sécurité nationale (a)(1), fraude (a)(4), menace d'extorsion (a)(7). Délits : obtenir des informations (a)(2), intrusion dans un ordinateur du gouvernement (a)(3), trafic de mots de passe (a)(6).",
+          "explanation": "Un délit peut devenir un crime grave si le gain est important, s'il y a fraude ou si les dégâts sont lourds.",
+          "explanation_more": "Le (a)(5), dommage à un ordinateur, a changé : au départ un crime grave, aujourd'hui un délit qui devient grave dans certains cas. Il n'est donc pas dans ce tri. Source : domaine 1, CFAA.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Crime grave (felony)",
+              "Délit (misdemeanor)"
+            ],
+            "items": [
+              {
+                "text": "Obtenir des informations de sécurité nationale ((a)(1))",
+                "category": "Crime grave (felony)"
+              },
+              {
+                "text": "Accéder à un ordinateur pour obtenir des informations ((a)(2))",
+                "category": "Délit (misdemeanor)"
+              },
+              {
+                "text": "Entrer sans permission dans un ordinateur du gouvernement ((a)(3))",
+                "category": "Délit (misdemeanor)"
+              },
+              {
+                "text": "Accéder à un ordinateur pour frauder et obtenir de la valeur ((a)(4))",
+                "category": "Crime grave (felony)"
+              },
+              {
+                "text": "Faire du trafic de mots de passe ((a)(6))",
+                "category": "Délit (misdemeanor)"
+              },
+              {
+                "text": "Menacer d'endommager un ordinateur pour obtenir de l'argent ((a)(7))",
+                "category": "Crime grave (felony)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-cyb-cfaa-5",
+          "type": "flash",
+          "question": "Que punit l'alinéa (a)(1) du CFAA ?",
+          "answer": "Crime grave : obtenir sans autorisation des informations de sécurité nationale, puis les garder ou les passer à un tiers non autorisé.",
+          "explanation": "C'est l'infraction la plus sensible : des secrets de l'État.",
+          "explanation_more": "Source : domaine 1, CFAA, section 1030(a)(1) : informations de sécurité nationale ou de relations étrangères.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-cfaa-6",
+          "type": "flash",
+          "question": "Pour l'alinéa (a)(2), à partir de quelle valeur d'information l'infraction devient-elle un crime grave ?",
+          "answer": "Quand les informations obtenues valent plus de 5 000 dollars. Un gain commercial ou financier la rend aussi grave.",
+          "explanation": "Au départ, c'est un délit. Un gros gain ou un autre crime le rend plus grave.",
+          "explanation_more": "Source : domaine 1, CFAA, section 1030(a)(2). Le manuel cite aussi le cas où l'acte aide à commettre un autre crime.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-cfaa-7",
+          "type": "duel",
+          "question": "Un pirate vole des informations en trompant quelqu'un pour en tirer de l'argent. Quelle infraction du CFAA en fait un crime grave ?",
+          "options": [
+            "(a)(4) : accéder pour frauder et obtenir de la valeur",
+            "(a)(3) : entrer dans un ordinateur du gouvernement"
+          ],
+          "answer": "(a)(4) : accéder pour frauder et obtenir de la valeur",
+          "explanation": "Avec une preuve de fraude, un vol d'informations du (a)(2) peut être jugé comme un crime grave grâce au (a)(4).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-cfaa-8",
+          "type": "flash",
+          "question": "Que punit l'alinéa (a)(3) du CFAA ?",
+          "answer": "Entrer volontairement, sans autorisation, dans un ordinateur protégé non public, et gêner son usage par le gouvernement américain.",
+          "explanation": "C'est l'intrusion du monde informatique : même sans rien voler.",
+          "explanation_more": "Source : domaine 1, CFAA, section 1030(a)(3) : l'intrusion dans un ordinateur du gouvernement, avec ou sans vol d'informations.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-cfaa-9",
+          "type": "flash",
+          "question": "Pour l'alinéa (a)(5), à partir de quelles pertes sur un an l'infraction devient-elle un crime grave ?",
+          "answer": "À partir de 5 000 dollars de pertes en un an. D'autres cas la rendent grave : blessure, danger pour la santé publique, ou 10 ordinateurs protégés touchés ou plus.",
+          "explanation": "Plus les dégâts sont lourds, plus la peine l'est aussi.",
+          "explanation_more": "Au départ, en 1986, le seuil était de 1 000 dollars sur un an. L'alinéa a été réécrit ensuite. Source : domaine 1, CFAA, section 1030(a)(5).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-cfaa-10",
+          "type": "qcm",
+          "question": "Une employée a le droit de lire les fichiers de la paie. Elle ouvre aussi les fichiers de la direction, qui lui sont interdits. Que dit le CFAA ?",
+          "options": [
+            "Elle peut être visée : accéder au-delà de son autorisation est dans la loi",
+            "Aucun problème : elle avait déjà un accès à cet ordinateur",
+            "Aucun problème : elle n'a rien revendu à personne"
+          ],
+          "options_why": [
+            "",
+            "Avoir un accès ne donne pas le droit de tout ouvrir. La loi parle aussi d'accès « in excess of authorization » (au-delà de l'autorisation).",
+            "Obtenir des informations suffit pour poser problème. La revente n'est pas obligatoire."
+          ],
+          "answer": "Elle peut être visée : accéder au-delà de son autorisation est dans la loi",
+          "explanation": "Dépasser les droits qu'on t'a donnés compte comme un accès sans autorisation.",
+          "explanation_more": "Le manuel dit que la définition est large : l'ordinateur n'a pas besoin d'être directement visé. Source : domaine 1, CFAA, section 1030(a)(2).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-cfaa-11",
+          "type": "why",
+          "question": "Pourquoi le CFAA ne punit-il pas le simple fait de posséder un mot de passe ?",
+          "answer": "Parce que « traffic » veut dire transférer un mot de passe, ou en prendre le contrôle, pour le donner à un autre. Sans cette intention, il n'y a pas de trafic.",
+          "explanation": "Garder un mot de passe pour toi, ce n'est pas le donner ou le vendre à quelqu'un.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-cfaa-12",
+          "type": "flash",
+          "question": "Que punit l'alinéa (a)(7) du CFAA ?",
+          "answer": "Menacer d'endommager un ordinateur protégé, ou de révéler des informations confidentielles, pour obtenir de l'argent : c'est l'extorsion version ordinateur.",
+          "explanation": "L'extorsion, c'est obtenir de l'argent par la menace. Ici la menace vise un ordinateur ou ses secrets.",
+          "explanation_more": "Source : domaine 1, CFAA, section 1030(a)(7). C'est un crime grave.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-cfaa-13",
+          "type": "flash",
+          "question": "Quelles années ont vu les grandes modifications du CFAA ?",
+          "answer": "1994, 1996 et 2001. Les modifications mineures datent de 1988, 1989 et 1999.",
+          "explanation": "Celle de 2001 vient du Patriot Act, vu dans la planète suivante.",
+          "explanation_more": "Source : domaine 1, CFAA : plusieurs lois ont modifié le CFAA, directement ou non.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "d1-cyb-usa",
+      "name": "Les autres lois américaines (ECPA, EEA, Patriot Act…)",
+      "planete": {
+        "relief": "gazeuse"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le téléphone sur écoute",
+          "paragraphes": [
+            "Autrefois, la police pouvait parfois écouter des appels téléphoniques en secret. Cela s'appelle une écoute (wiretap). La loi en fixait les limites.",
+            "Puis les gens ont écrit des messages sur des réseaux d'ordinateurs. Ces messages devaient-ils être aussi protégés ?",
+            "En 1986, une loi a dit oui : l'Electronic Communications Privacy Act (ECPA). Les États-Unis ont ensuite voté beaucoup d'autres lois. Tu les découvres ici."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un panneau par couloir",
+          "comme": "Dans un grand bâtiment, chaque couloir a son panneau : « interdit d'écouter », « interdit de copier les secrets », « interdit d'envoyer du courrier non voulu ». Chaque panneau protège une chose précise.",
+          "enVrai": "Chaque loi de cette planète protège une chose précise : les messages, les secrets des entreprises (des recettes ou méthodes gardées cachées), l'identité, la boîte mail. L'image s'arrête là : plusieurs lois peuvent s'ajouter les unes aux autres."
+        },
+        {
+          "type": "predire",
+          "question": "Quelle loi interdit d'espionner les messages envoyés sur un réseau ?",
+          "options": [
+            "Le CFAA, qui punit l'entrée sans permission",
+            "L'ECPA, qui interdit l'interception des communications",
+            "Le CAN-SPAM, qui encadre les mails publicitaires"
+          ],
+          "answer": "L'ECPA, qui interdit l'interception des communications",
+          "explanation": "Le CFAA parle d'entrer dans un ordinateur. L'ECPA parle d'écouter ce qui circule. Le CAN-SPAM parle des mails non voulus, appelés spam."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les mots de la loi",
+          "texte": "Un mandat de perquisition (search warrant) est un papier signé par un juge. Il autorise la police à fouiller. Une assignation (subpoena) oblige quelqu'un à fournir des documents. Une écoute (wiretap) enregistre des appels en secret. Tu vas les croiser dans le Patriot Act."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le facteur et le bureau de poste",
+          "comme": "Un facteur ne lit pas tes lettres. Pourtant, le bureau de poste peut vérifier ses sacs pour une bonne raison, s'il t'a prévenu avant.",
+          "enVrai": "L'ECPA interdit d'écouter les communications. Mais un fournisseur d'accès à internet (ISP) peut surveiller son réseau pour de bonnes raisons professionnelles, s'il prévient d'abord ses utilisateurs. Cette exception est critiquée depuis des années."
+        },
+        {
+          "type": "exemple",
+          "titre": "Après le 11 septembre 2001",
+          "texte": "Le USA PATRIOT Act est une loi signée en 2001, après les attaques terroristes du 11 septembre 2001 aux États-Unis. Il modifie le CFAA et l'ECPA pour donner plus de pouvoir aux enquêteurs. Il devait être temporaire, mais la plupart de ses mesures ont été prolongées en 2006."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cyb-usa-ecpa-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ECPA »",
+          "answer": "The Electronic Communications Privacy Act (ECPA) was enacted by the U.S. Congress in 1986 to extend restrictions on government wire taps to include computer and network-based communications (rather than just telephone calls).\n\nTraduction : L'Electronic Communications Privacy Act (ECPA) a été voté par le Congrès américain en 1986 pour étendre les limites des écoutes du gouvernement aux communications par ordinateur et par réseau (et pas seulement aux appels téléphoniques).",
+          "explanation": "Les limites des écoutes téléphoniques s'appliquent aussi aux messages sur les réseaux.",
+          "explanation_more": "Le Congrès est le parlement américain. Source : domaine 1, « U.S. Electronic Communications Privacy Act of 1986 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-usa-ecpa-def3",
+          "type": "cloze",
+          "question": "The Electronic Communications Privacy Act (ECPA) was enacted by the U.S. Congress in 1986 to [[extend restrictions]] on [[government wire taps]] to include [[computer and network-based communications]] (rather than just telephone calls).",
+          "answer": "The Electronic Communications Privacy Act (ECPA) was enacted by the U.S. Congress in 1986 to extend restrictions on government wire taps to include computer and network-based communications (rather than just telephone calls).",
+          "explanation": "Trois blocs : étendre les limites, des écoutes du gouvernement, aux communications par ordinateur et réseau.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-usa-eea-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Economic Espionage Act (EEA) »",
+          "answer": "The EEA was the first federal law to broadly define and establish strict penalties for theft or unauthorized use of trade secrets.\n\nTraduction : L'EEA a été la première loi fédérale à définir largement et à fixer des peines sévères pour le vol ou l'utilisation non autorisée de secrets commerciaux.",
+          "explanation": "Un secret commercial est une recette ou une méthode gardée cachée par une entreprise. Tu le revois dans la planète du brevet.",
+          "explanation_more": "Une loi fédérale vaut dans tous les États-Unis. Source : domaine 1, « U.S. Economic Espionage Act of 1996 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-usa-eea-def3",
+          "type": "cloze",
+          "question": "The EEA was the first [[federal law]] to [[broadly define]] and establish [[strict penalties]] for theft or unauthorized use of trade secrets.",
+          "answer": "The EEA was the first federal law to broadly define and establish strict penalties for theft or unauthorized use of trade secrets.",
+          "explanation": "Trois blocs : une loi fédérale, qui définit largement, avec des peines sévères.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-usa-idtheft-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « identity theft » (dans l'Identity Theft and Assumption Deterrence Act)",
+          "answer": "Under the act, identity theft is \"knowingly transfer[ring] or us[ing], without lawful authority, a means of identification of another person with the intent to commit, or to aid or abet, any unlawful activity that constitutes a violation of Federal law, or that constitutes a felony under any applicable State or local law.\"\n\nTraduction : Selon la loi, le vol d'identité consiste à transférer ou utiliser sciemment, sans autorité légale, un moyen d'identification d'une autre personne, dans l'intention de commettre ou d'aider à commettre une activité illégale qui viole la loi fédérale ou constitue un crime grave selon une loi d'État ou locale.",
+          "explanation": "Résumé : prendre ou utiliser l'identité d'un autre, sans droit, pour faire quelque chose d'illégal.",
+          "explanation_more": "Un moyen d'identification peut être un nom ou un numéro officiel. Source : domaine 1, « U.S. Identity Theft and Assumption Deterrence Act of 1998 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-usa-idtheft-def3",
+          "type": "cloze",
+          "question": "Under the act, [[identity theft]] is \"knowingly transfer[ring] or us[ing], [[without lawful authority]], a [[means of identification]] of another person with the intent to commit, or to aid or abet, any unlawful activity that constitutes a violation of Federal law, or that constitutes a felony under any applicable State or local law.\"",
+          "answer": "Under the act, identity theft is \"knowingly transfer[ring] or us[ing], without lawful authority, a means of identification of another person with the intent to commit, or to aid or abet, any unlawful activity that constitutes a violation of Federal law, or that constitutes a felony under any applicable State or local law.\"",
+          "explanation": "Trois blocs : le nom du crime, sans autorité légale, un moyen d'identification d'une autre personne.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-usa-pen-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « pen register » (Patriot Act, section 214)",
+          "answer": "A pen register is a device that shows the outgoing calls made from a phone, while a trap and trace device shows incoming numbers that called a phone; these capabilities are often consolidated into a single device called a pen/trap device.\n\nTraduction : Un pen register est un appareil qui montre les appels sortants passés depuis un téléphone, tandis qu'un trap and trace montre les numéros entrants qui ont appelé un téléphone ; ces fonctions sont souvent réunies dans un seul appareil appelé pen/trap.",
+          "explanation": "Pen register = appels sortants. Trap and trace = appels entrants. Les deux ensemble : pen/trap.",
+          "explanation_more": "Le Patriot Act (section 214) autorise ces appareils dans tout le pays et les étend aux communications sur ordinateur et internet. Source : domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-usa-pen-def3",
+          "type": "cloze",
+          "question": "A [[pen register]] is a device that shows the [[outgoing calls]] made from a phone, while a [[trap and trace]] device shows incoming numbers that called a phone; these capabilities are often consolidated into a single device called a pen/trap device.",
+          "answer": "A pen register is a device that shows the outgoing calls made from a phone, while a trap and trace device shows incoming numbers that called a phone; these capabilities are often consolidated into a single device called a pen/trap device.",
+          "explanation": "Trois blocs : pen register, appels sortants, trap and trace (pour les appels entrants).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-usa-1",
+          "type": "flash",
+          "question": "Que protège l'ECPA de 1986 ?",
+          "answer": "Les communications électroniques, y compris sur les réseaux d'ordinateurs : elle interdit l'écoute, l'interception et la surveillance sans autorisation.",
+          "explanation": "Elle complète le CFAA : le CFAA punit l'entrée dans l'ordinateur, l'ECPA punit l'écoute des messages.",
+          "explanation_more": "Source : domaine 1, « U.S. Electronic Communications Privacy Act of 1986 ». Le Patriot Act l'a modifiée en 2001.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-2",
+          "type": "duel",
+          "question": "Un inconnu lit en secret les messages qui circulent sur le réseau d'une entreprise. Quelle loi vise surtout cette écoute ?",
+          "options": [
+            "L'ECPA : l'interception des communications",
+            "Le CFAA : l'accès à un ordinateur"
+          ],
+          "answer": "L'ECPA : l'interception des communications",
+          "explanation": "L'ECPA parle d'écouter ce qui circule. Le CFAA parle d'entrer dans la machine. Les deux lois se complètent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-3",
+          "type": "flash",
+          "question": "Quelle exception l'ECPA prévoit-elle pour les fournisseurs d'accès à internet (ISP) ?",
+          "answer": "Ils peuvent surveiller leur réseau pour de bonnes raisons professionnelles, s'ils préviennent d'abord leurs utilisateurs.",
+          "explanation": "Prévenir avant : c'est la condition qui rend cette surveillance légale.",
+          "explanation_more": "Cette exception donne une base légale à la surveillance de réseau. Elle est critiquée depuis des années. Source : domaine 1.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-4",
+          "type": "cloze",
+          "question": "L'ECPA date de [[1986]], l'Economic Espionage Act de [[1996]] et l'Identity Theft and Assumption Deterrence Act de [[1998]].",
+          "answer": "L'ECPA date de 1986, l'Economic Espionage Act de 1996 et l'Identity Theft and Assumption Deterrence Act de 1998.",
+          "explanation": "Une astuce : 86, 96, 98. Les trois dates se suivent de dix ans, puis de deux ans.",
+          "explanation_more": "Source : domaine 1, liste des lois à connaître.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-usa-5",
+          "type": "flash",
+          "question": "Que punit l'Economic Espionage Act (EEA) de 1996 ?",
+          "answer": "Copier, télécharger, envoyer, modifier, voler ou transférer des secrets commerciaux au profit d'une entité étrangère.",
+          "explanation": "Un secret commercial est une recette ou une méthode gardée cachée. Ici, elle part vers l'étranger.",
+          "explanation_more": "Loi signée par le président Clinton en 1996. Source : domaine 1, « U.S. Economic Espionage Act of 1996 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-6",
+          "type": "flash",
+          "question": "Quelles sont les peines maximales de l'EEA ?",
+          "answer": "Jusqu'à 10 millions de dollars d'amende et 15 ans de prison, plus la saisie des biens utilisés ou obtenus grâce au crime.",
+          "explanation": "Des peines lourdes, car l'espionnage économique peut ruiner une entreprise.",
+          "explanation_more": "Source : domaine 1, « U.S. Economic Espionage Act of 1996 » : 10 millions de dollars et 15 ans.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-usa-7",
+          "type": "sort",
+          "question": "Quelle loi s'applique à chaque situation ?",
+          "answer": "ECPA : l'écoute des messages et la surveillance sans prévenir. EEA : les secrets envoyés à l'étranger. CAN-SPAM : les mails publicitaires sans désabonnement. Identity Theft Act : l'usage de l'identité d'un autre.",
+          "explanation": "Demande-toi ce qui est touché : les messages, les secrets, la boîte mail ou l'identité.",
+          "explanation_more": "Source : domaine 1, section sur les lois américaines.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "ECPA (écoute)",
+              "EEA (secrets)",
+              "CAN-SPAM (spam)",
+              "Identity Theft Act (identité)"
+            ],
+            "items": [
+              {
+                "text": "Un inconnu écoute en secret les messages d'un réseau",
+                "category": "ECPA (écoute)"
+              },
+              {
+                "text": "Un fournisseur surveille son réseau sans prévenir ses utilisateurs",
+                "category": "ECPA (écoute)"
+              },
+              {
+                "text": "Un employé envoie une recette secrète à une société étrangère",
+                "category": "EEA (secrets)"
+              },
+              {
+                "text": "Un ingénieur copie des plans secrets pour une entité étrangère",
+                "category": "EEA (secrets)"
+              },
+              {
+                "text": "Une boutique envoie des publicités sans lien de désabonnement",
+                "category": "CAN-SPAM (spam)"
+              },
+              {
+                "text": "Une entreprise ignore une demande de désabonnement",
+                "category": "CAN-SPAM (spam)"
+              },
+              {
+                "text": "Quelqu'un ouvre un crédit avec l'identité d'une autre personne",
+                "category": "Identity Theft Act (identité)"
+              },
+              {
+                "text": "Quelqu'un utilise les papiers d'une autre personne pour commettre un délit",
+                "category": "Identity Theft Act (identité)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-cyb-usa-8",
+          "type": "flash",
+          "question": "Que vise le Child Pornography Prevention Act de 1996 ?",
+          "answer": "Il limite et punit la production et la diffusion de pédopornographie sur internet.",
+          "explanation": "Il protège les enfants contre ces contenus en ligne.",
+          "explanation_more": "Source : domaine 1, « U.S. Child Pornography Prevention Act of 1996 ». Le manuel ne donne pas d'autre détail.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-9",
+          "type": "flash",
+          "question": "Quelle nouveauté apporte l'Identity Theft and Assumption Deterrence Act de 1998 ?",
+          "answer": "Il fait officiellement du vol d'identité un crime selon la loi fédérale américaine.",
+          "explanation": "Avant cette loi, le vol d'identité n'était pas traité comme un crime. Les poursuites étaient difficiles.",
+          "explanation_more": "Source : domaine 1, « U.S. Identity Theft and Assumption Deterrence Act of 1998 ». Le nombre de cas augmentait avec internet.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-10",
+          "type": "qcm",
+          "question": "Une boutique en ligne envoie des publicités par mail, sans aucun moyen de se désabonner. Quelle loi américaine n'est pas respectée ?",
+          "options": [
+            "Le CAN-SPAM Act de 2003",
+            "L'Economic Espionage Act de 1996",
+            "L'Electronic Communications Privacy Act de 1986"
+          ],
+          "options_why": [
+            "",
+            "Cette loi vise le vol de secrets commerciaux au profit d'une entité étrangère.",
+            "Cette loi vise l'interception des communications, pas les publicités."
+          ],
+          "answer": "Le CAN-SPAM Act de 2003",
+          "explanation": "Le CAN-SPAM fixe les premiers standards nationaux pour les mails commerciaux. Il faut laisser le choix de se désabonner.",
+          "explanation_more": "CAN-SPAM veut dire Controlling the Assault of Non-Solicited Pornography and Marketing. La Federal Trade Commission (FTC) fait respecter la loi. Source : domaine 1.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-11",
+          "type": "flash",
+          "question": "USA PATRIOT Act : quand a-t-il été signé, et pourquoi ?",
+          "answer": "En 2001, après les attaques terroristes du 11 septembre 2001. Il renforce le CFAA et l'ECPA pour donner plus de pouvoir aux enquêteurs.",
+          "explanation": "Il devait être temporaire. La plupart de ses mesures ont été prolongées en 2006.",
+          "explanation_more": "USA PATRIOT veut dire Uniting and Strengthening America by Providing Appropriate Tools Required to Intercept and Obstruct Terrorism. Certaines dispositions ont été jugées inconstitutionnelles par des tribunaux. Source : domaine 1.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-12",
+          "type": "why",
+          "question": "Pourquoi le Patriot Act modifie-t-il le CFAA et l'ECPA au lieu de les remplacer ?",
+          "answer": "Il veut renforcer des lois déjà en place : il ajoute de nouvelles définitions de crimes, de nouvelles peines et plus d'autorité pour les enquêteurs.",
+          "explanation": "Les deux lois couvraient déjà les ordinateurs et les communications : il fallait les renforcer.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-13",
+          "type": "qcm",
+          "question": "Quelle section du Patriot Act autorise des mandats de perquisition valables dans tout le pays pour les preuves électroniques, comme les mails ?",
+          "options": [
+            "Section 220",
+            "Section 209",
+            "Section 214",
+            "Section 217"
+          ],
+          "options_why": [
+            "",
+            "La section 209 permet de saisir des messages vocaux avec un mandat.",
+            "La section 214 concerne les appareils qui montrent les appels sortants et entrants.",
+            "La section 217 concerne la surveillance des intrus avec l'aide de la police."
+          ],
+          "answer": "Section 220",
+          "explanation": "Le numéro 220 : un mandat valable dans tout le pays, pour les preuves électroniques.",
+          "explanation_more": "Source : domaine 1, Patriot Act, section 220 : « Nationwide service of search warrants for electronic evidence ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-usa-14",
+          "type": "flash",
+          "question": "Section 814 du Patriot Act : que change-t-elle pour le CFAA ?",
+          "answer": "Elle renforce les peines : la peine maximale de prison passe de 10 à 20 ans.",
+          "explanation": "Elle vise la prévention du cyberterrorisme en doublant la peine maximale.",
+          "explanation_more": "Source : domaine 1, Patriot Act, section 814 : « Deterrence and prevention of cyberterrorism ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-usa-15",
+          "type": "flash",
+          "question": "Section 212 du Patriot Act : que permet-elle à un fournisseur d'accès ?",
+          "answer": "Donner des informations sur un client à la police dans une urgence, comme un crime imminent, pour protéger des vies.",
+          "explanation": "Avant, le fournisseur risquait un procès civil s'il donnait ces informations sans l'accord du client.",
+          "explanation_more": "Source : domaine 1, Patriot Act, section 212 : « Emergency disclosure of electronic communications to protect life and limb ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-usa-16",
+          "type": "qcm",
+          "question": "Avant le Patriot Act, une entreprise pouvait surveiller ses propres systèmes, mais pas laisser la police l'aider. Que change la section 217 ?",
+          "options": [
+            "Elle permet à l'entreprise d'inviter la police à surveiller ses systèmes",
+            "Elle interdit à l'entreprise de surveiller elle-même ses systèmes",
+            "Elle permet à la police de surveiller sans prévenir l'entreprise"
+          ],
+          "options_why": [
+            "",
+            "Les entreprises avaient déjà le droit de surveiller leurs systèmes : la section ne le leur retire pas.",
+            "La section 217 demande l'accord de l'entreprise : la police ne surveille pas dans son dos."
+          ],
+          "answer": "Elle permet à l'entreprise d'inviter la police à surveiller ses systèmes",
+          "explanation": "La section 217 vise les intrus (trespassers) : l'entreprise peut faire appel à la police pour les surveiller.",
+          "explanation_more": "Source : domaine 1, Patriot Act, section 217 : « Interception of computer trespasser communications ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-usa-17",
+          "type": "flash",
+          "question": "Quel grand changement le Homeland Security Act de 2002 a-t-il provoqué ?",
+          "answer": "La création du Department of Homeland Security (DHS), qui regroupe des dizaines d'agences : la plus grande réorganisation du gouvernement américain depuis 1947.",
+          "explanation": "Homeland Security veut dire sécurité intérieure du pays. Un poste de ministre a aussi été créé.",
+          "explanation_more": "Le titre X de la loi fixe des standards, des tactiques et des contrôles pour protéger l'information du gouvernement fédéral. Source : domaine 1.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-18",
+          "type": "flash",
+          "question": "Qu'a créé l'Intelligence Reform and Terrorism Prevention Act de 2004 ?",
+          "answer": "Le National Counterterrorism Center (NCTC), le poste de Director of National Intelligence (DNI) et le Privacy and Civil Liberties Oversight Board.",
+          "explanation": "La loi oblige aussi les agences américaines à partager leurs informations de renseignement.",
+          "explanation_more": "Source : domaine 1, « U.S. Intelligence Reform and Terrorism Prevention Act of 2004 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-usa-19",
+          "type": "duel",
+          "question": "Quelle loi a créé le Privacy and Civil Liberties Oversight Board, qui protège la vie privée des citoyens américains ?",
+          "options": [
+            "L'Intelligence Reform and Terrorism Prevention Act (2004)",
+            "Le Homeland Security Act (2002)"
+          ],
+          "answer": "L'Intelligence Reform and Terrorism Prevention Act (2004)",
+          "explanation": "Le Homeland Security Act de 2002 a créé le DHS. La loi de 2004 a créé ce conseil de protection de la vie privée.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cyb-monde",
+      "name": "Les lois du reste du monde (Budapest, Royaume-Uni, Inde, Australie)",
+      "planete": {
+        "relief": "oceanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Un pirate, deux pays",
+          "paragraphes": [
+            "Un pirate à Paris attaque un site situé à Londres. Quelle loi s'applique : la française ou la britannique ?",
+            "Chaque pays a ses propres lois. Et un pirate peut agir depuis un pays et frapper dans un autre. Les pays ont donc intérêt à coopérer.",
+            "Cette planète présente un traité entre pays, puis des lois du Royaume-Uni, de l'Inde et de l'Australie."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le règlement commun du tournoi",
+          "comme": "Plusieurs collèges organisent un tournoi. Chacun a ses règles, mais tous signent un règlement commun pour pouvoir jouer ensemble.",
+          "enVrai": "La Convention de Budapest est un traité (treaty), un accord officiel entre plusieurs pays. Elle les aide à coopérer et à avoir des lois plus semblables contre le cybercrime. L'image s'arrête là : chaque pays garde ses propres lois."
+        },
+        {
+          "type": "predire",
+          "question": "Quel texte est le premier traité international contre le cybercrime ?",
+          "options": [
+            "La Convention de Budapest",
+            "Le Computer Misuse Act britannique",
+            "Le Cybercrime Act australien"
+          ],
+          "answer": "La Convention de Budapest",
+          "explanation": "Les deux autres sont des lois nationales : elles ne valent que dans un seul pays. Un traité relie plusieurs pays."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les cinq infractions britanniques",
+          "texte": "Le Computer Misuse Act est une loi du Royaume-Uni, entrée en vigueur en 1990. Elle prévoit cinq infractions. La plus simple : entrer dans un ordinateur sans permission, même sans rien abîmer. Les autres vont jusqu'aux dégâts graves et à la fabrication d'outils pour attaquer."
+        },
+        {
+          "type": "exemple",
+          "titre": "L'Inde et l'Australie",
+          "texte": "L'Information Technology Act indien, voté en 2000, donne une valeur légale aux documents électroniques. Il reconnaît aussi les signatures numériques, des preuves électroniques qu'un document vient bien de son auteur. L'Australie a voté le Cybercrime Act en 2001, après les attaques du 11 septembre 2001."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cyb-monde-budapest-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Convention on Cybercrime »",
+          "answer": "The Convention on Cybercrime, also known as the Budapest Convention, is the first international treaty established to address cybercrime.\n\nTraduction : La Convention sur la cybercriminalité, aussi appelée Convention de Budapest, est le premier traité international établi pour traiter le cybercrime.",
+          "explanation": "Un traité est un accord entre pays. Budapest est le premier à viser le cybercrime.",
+          "explanation_more": "Elle vient du Conseil de l'Europe (Council of Europe). Source : domaine 1, « The Council of Europe's Convention on Cybercrime of 2001 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-monde-budapest-def3",
+          "type": "cloze",
+          "question": "The Convention on Cybercrime, also known as the [[Budapest Convention]], is the [[first international treaty]] established to [[address cybercrime]].",
+          "answer": "The Convention on Cybercrime, also known as the Budapest Convention, is the first international treaty established to address cybercrime.",
+          "explanation": "Trois blocs : le nom Budapest, le premier traité international, pour traiter le cybercrime.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cyb-monde-1",
+          "type": "flash",
+          "question": "Convention de Budapest : en quelles années a-t-elle été signée, puis entrée en vigueur ?",
+          "answer": "Signée en 2001, entrée en vigueur en 2004.",
+          "explanation": "2001 pour la signature, 2004 pour le début de son application.",
+          "explanation_more": "Plus de 65 nations l'ont signée. Source : domaine 1, « The Council of Europe's Convention on Cybercrime of 2001 ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-monde-2",
+          "type": "flash",
+          "question": "Quel est le but de la Convention de Budapest ?",
+          "answer": "Augmenter la coopération entre les pays et rendre leurs lois contre le cybercrime plus cohérentes.",
+          "explanation": "Un pirate ignore les frontières : les pays doivent travailler ensemble.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-monde-3",
+          "type": "qcm",
+          "question": "Une enquête concerne un pirate dans un pays et sa victime dans un autre. Quel texte vise justement à faciliter la coopération entre pays ?",
+          "options": [
+            "La Convention de Budapest",
+            "Le Computer Misuse Act",
+            "L'Information Technology Act"
+          ],
+          "options_why": [
+            "",
+            "C'est une loi du Royaume-Uni : elle ne s'applique qu'à ce pays.",
+            "C'est une loi de l'Inde : elle ne s'applique qu'à ce pays."
+          ],
+          "answer": "La Convention de Budapest",
+          "explanation": "Seul un traité relie plusieurs pays. Budapest est le premier traité international sur le cybercrime.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-monde-4",
+          "type": "flash",
+          "question": "Computer Misuse Act (Royaume-Uni, 1990) : combien d'infractions prévoit-il ?",
+          "answer": "Cinq infractions liées au cybercrime.",
+          "explanation": "Elles vont de l'accès sans permission aux dégâts graves, plus les outils pour attaquer.",
+          "explanation_more": "Les cinq infractions, dans l'ordre du manuel. 1. Unauthorized access to computer material. 2. Unauthorized access with intent to commit or facilitate commission of further offenses. 3. Unauthorized acts with intent to impair, or with recklessness as to impairing, operation of computer, etc. 4. Unauthorized acts causing, or creating risk of, serious damage. 5. Making, supplying, or obtaining articles for use in other offenses.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-monde-5",
+          "type": "sort",
+          "question": "À quelle infraction du Computer Misuse Act correspond chaque situation ?",
+          "answer": "Accès sans permission : l'élève qui regarde sans rien changer. Accès pour commettre d'autres infractions : entrer pour voler de l'argent. Gêner le système ou causer de graves dégâts : le serveur ralenti, l'hôpital hors service. Outils : vendre ou programmer un outil d'attaque.",
+          "explanation": "Demande-toi ce que fait la personne : elle entre seulement, elle prépare un autre crime, elle abîme, ou elle fabrique des outils.",
+          "explanation_more": "Les infractions 3 et 4 du manuel sont réunies ici : gêner le fonctionnement, ou causer de graves dégâts.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Accès sans permission",
+              "Accès pour commettre d'autres infractions",
+              "Gêner le système ou causer de graves dégâts",
+              "Outils pour d'autres infractions"
+            ],
+            "items": [
+              {
+                "text": "Un élève entre dans l'ordinateur du collège pour regarder, sans rien changer",
+                "category": "Accès sans permission"
+              },
+              {
+                "text": "Quelqu'un entre dans un compte d'entreprise pour y voler de l'argent ensuite",
+                "category": "Accès pour commettre d'autres infractions"
+              },
+              {
+                "text": "Quelqu'un lance exprès un programme qui ralentit un serveur",
+                "category": "Gêner le système ou causer de graves dégâts"
+              },
+              {
+                "text": "Une attaque met un hôpital hors service",
+                "category": "Gêner le système ou causer de graves dégâts"
+              },
+              {
+                "text": "Un pirate vend un logiciel conçu pour attaquer des sites",
+                "category": "Outils pour d'autres infractions"
+              },
+              {
+                "text": "Un pirate programme un outil pour casser des mots de passe",
+                "category": "Outils pour d'autres infractions"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-cyb-monde-6",
+          "type": "cloze",
+          "question": "La première infraction du Computer Misuse Act : [[Unauthorized]] access to [[computer material]].",
+          "answer": "La première infraction du Computer Misuse Act : Unauthorized access to computer material.",
+          "explanation": "C'est la plus simple : accéder à du matériel informatique sans autorisation.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-monde-7",
+          "type": "cloze",
+          "question": "Le Computer Misuse Act est entré en vigueur en [[1990]] et prévoit [[cinq|5]] infractions.",
+          "answer": "Le Computer Misuse Act est entré en vigueur en 1990 et prévoit cinq infractions.",
+          "explanation": "Le Royaume-Uni (1990) est bien plus ancien que la Convention de Budapest (2001).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-monde-8",
+          "type": "flash",
+          "question": "Que contient l'Information Technology Act de l'Inde (2000) ?",
+          "answer": "Il donne une valeur légale aux documents électroniques et aux signatures numériques. Il définit aussi des cybercrimes, comme le vol de données et le vol d'identité, et leurs peines.",
+          "explanation": "Deux rôles : reconnaître les documents électroniques, et punir les cybercrimes.",
+          "explanation_more": "Le manuel cite aussi la pédopornographie et le cyberterrorisme. Source : domaine 1, « Information Technology Act of 2000 (India) ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-monde-9",
+          "type": "flash",
+          "question": "Que définit le Cybercrime Act 2001 de l'Australie ?",
+          "answer": "Des infractions informatiques graves : accès non autorisé, modification non autorisée et atteinte non autorisée aux communications électroniques. Il fixe aussi des peines.",
+          "explanation": "Trois mots répétés : non autorisé. Il vise l'accès, la modification et l'atteinte.",
+          "explanation_more": "C'est la réponse de l'Australie aux attaques du 11 septembre 2001. Source : domaine 1, « Cybercrime Act 2001 (Australia) ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-monde-10",
+          "type": "duel",
+          "question": "Quelle loi est la réponse de l'Australie aux attaques terroristes du 11 septembre 2001 ?",
+          "options": [
+            "Le Cybercrime Act 2001 (Australie)",
+            "Le Computer Misuse Act 1990 (Royaume-Uni)"
+          ],
+          "answer": "Le Cybercrime Act 2001 (Australie)",
+          "explanation": "Le Computer Misuse Act date de 1990, bien avant 2001, et c'est une loi britannique.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cyb-monde-11",
+          "type": "flash",
+          "question": "Quand l'Information Technology Act indien a-t-il été voté, puis modifié ?",
+          "answer": "Voté en 2000, modifié en 2008.",
+          "explanation": "2000 pour le vote, 2008 pour la modification.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-monde-12",
+          "type": "flash",
+          "question": "Les États-Unis ont-ils adopté la Convention de Budapest ?",
+          "answer": "Oui : ils l'ont ratifiée, c'est-à-dire approuvée officiellement, en 2006.",
+          "explanation": "Ratifier un traité, c'est l'accepter officiellement pour son pays.",
+          "explanation_more": "Plus de 65 nations l'ont signée. Source : domaine 1, « The Council of Europe's Convention on Cybercrime of 2001 ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cyb-monde-13",
+          "type": "why",
+          "question": "Pourquoi les pays ont-ils besoin d'un traité comme la Convention de Budapest ?",
+          "answer": "Parce que le cybercrime traverse les frontières. Sans coopération et sans lois assez proches, il est difficile de retrouver et de poursuivre les criminels.",
+          "explanation": "Le traité aide les pays à coopérer et à avoir des lois plus cohérentes.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pi-licence",
+      "name": "La propriété intellectuelle et les licences (licensing)",
+      "planete": {
+        "relief": "glacee"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La chanson copiée",
+          "paragraphes": [
+            "Tu écris une chanson. Un ami la copie et la publie comme si elle était à lui. Tu te sens trahi : c'est ton travail.",
+            "Sur internet, copier est très facile. Les films, les jeux, les logiciels : tout peut être copié en quelques secondes.",
+            "Ces créations qui t'appartiennent, même si on ne peut pas les toucher, forment la propriété intellectuelle (intellectual property, IP)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le vélo prêté",
+          "comme": "Tu prêtes ton vélo à un ami, à une condition : il le rend et ne le vend pas. Cette permission avec des conditions ressemble à une licence.",
+          "enVrai": "Une licence (license) est une permission d'utiliser quelque chose qui appartient à quelqu'un d'autre, selon des règles. Pour un logiciel, tu paies ou tu acceptes les conditions, puis tu peux l'utiliser. L'image s'arrête là : un logiciel se copie sans que son propriétaire le perde, ce qui rend la triche tentante."
+        },
+        {
+          "type": "predire",
+          "question": "Selon une estimation citée par le manuel, quelle part des logiciels utilisés dans le monde n'est pas correctement sous licence ?",
+          "options": [
+            "Moins de 5 %",
+            "Environ 15 %",
+            "Plus de 40 %"
+          ],
+          "answer": "Plus de 40 %",
+          "explanation": "C'est beaucoup plus qu'on ne l'imagine : plus de 4 logiciels sur 10. Les deux autres réponses semblent plus raisonnables, mais elles sont trop basses."
+        },
+        {
+          "type": "exemple",
+          "titre": "WannaCry en Chine",
+          "texte": "Un logiciel sans licence ne reçoit pas les mises à jour (patches) du fabricant. Ses failles restent ouvertes. En Chine, environ 70 % des utilisateurs avaient des logiciels sans licence, selon des estimations. Plus de 40 000 institutions ont été touchées par le malware WannaCry."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les gardiens du monde et les cinq catégories",
+          "texte": "Trois organisations mondiales établissent et protègent les droits de propriété intellectuelle. Ce sont la WTO (World Trade Organization), la WCO (World Customs Organization) et la WIPO (World Intellectual Property Organization). Aux États-Unis, les lois se rangent en cinq catégories : licences, brevets, marques, droits d'auteur et secrets commerciaux. Tu verras les quatre dernières dans les planètes suivantes."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pi-licence-1",
+          "type": "flash",
+          "question": "C'est quoi la propriété intellectuelle (IP) ?",
+          "answer": "Les créations de l'esprit qui appartiennent à quelqu'un : logiciels, données, musiques, films, algorithmes, dessins et bien d'autres.",
+          "explanation": "On ne peut pas les toucher, mais elles ont de la valeur et la loi les protège.",
+          "explanation_more": "Source : domaine 1, « Licensing and Intellectual Property Requirements » : le CISSP doit protéger toutes les formes de propriété intellectuelle.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-licence-2",
+          "type": "flash",
+          "question": "C'est quoi une licence (license) ?",
+          "answer": "Une permission d'utiliser quelque chose qui appartient à quelqu'un d'autre, selon des règles fixées par le propriétaire.",
+          "explanation": "Comme prêter un vélo à des conditions. Sans la licence, l'usage est illégal.",
+          "explanation_more": "Hors manuel : cette définition est une explication simple. Le manuel présente seulement la licence comme la première des cinq catégories.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-licence-3",
+          "type": "qcm",
+          "question": "Selon le manuel, laquelle de ces choses n'est PAS l'une des cinq catégories de lois américaines sur la propriété intellectuelle ?",
+          "options": [
+            "Les brevets (patents)",
+            "Les noms de domaine (domain names)",
+            "Les droits d'auteur (copyrights)",
+            "Les secrets commerciaux (trade secrets)"
+          ],
+          "options_why": [
+            "C'est l'une des cinq catégories : elle protège les inventions.",
+            "",
+            "C'est l'une des cinq catégories : elle protège les œuvres originales.",
+            "C'est l'une des cinq catégories : elle protège les recettes et méthodes secrètes."
+          ],
+          "answer": "Les noms de domaine (domain names)",
+          "explanation": "Les cinq catégories sont : licences, brevets, marques, droits d'auteur et secrets commerciaux.",
+          "explanation_more": "Source : domaine 1, « Licensing and Intellectual Property Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-licence-4",
+          "type": "cloze",
+          "question": "Les cinq catégories sont : licences, [[brevets]], [[marques]], droits d'auteur et [[secrets commerciaux]].",
+          "answer": "Les cinq catégories sont : licences, brevets, marques, droits d'auteur et secrets commerciaux.",
+          "explanation": "Un fil rouge : permission, invention, signe, œuvre, secret.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-licence-5",
+          "type": "flash",
+          "question": "Que veut dire le sigle WIPO ?",
+          "answer": "World Intellectual Property Organization : l'organisation mondiale de la propriété intellectuelle.",
+          "explanation": "Le mot clé : Intellectual Property, la propriété intellectuelle.",
+          "explanation_more": "Le manuel cite aussi la World Trade Organization (WTO) et la World Customs Organization (WCO). Elles établissent et protègent les droits de propriété intellectuelle dans le monde.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-licence-6",
+          "type": "duel",
+          "question": "Selon le manuel, quel est l'un des plus grands obstacles pour les licences ?",
+          "options": [
+            "Le manque d'application des règles (enforcement)",
+            "Le manque de technologies pour créer des licences"
+          ],
+          "answer": "Le manque d'application des règles (enforcement)",
+          "explanation": "Des moyens existent pour mieux gérer les licences. Le problème est qu'on fait trop peu respecter les règles.",
+          "explanation_more": "Le manuel ajoute que le passage au cloud lie la licence légale au logiciel en tant que service (software as a service). Source : domaine 1, « Licensing ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-licence-7",
+          "type": "flash",
+          "question": "Selon la Business Software Alliance (BSA), quelle part des logiciels utilisés dans le monde n'est pas correctement sous licence ?",
+          "answer": "Plus de 40 %.",
+          "explanation": "Plus de 4 logiciels sur 10 sont utilisés sans licence correcte.",
+          "explanation_more": "Source : domaine 1, « Licensing » : estimation de la BSA.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-licence-8",
+          "type": "flash",
+          "question": "Combien pèse la contrefaçon (counterfeiting) chaque année, selon le manuel ?",
+          "answer": "460 milliards de dollars par an.",
+          "explanation": "La contrefaçon, c'est fabriquer de fausses copies d'un produit pour les vendre comme des vraies.",
+          "explanation_more": "Le commerce en ligne et l'expédition internationale rapide l'ont simplifiée. Source : domaine 1, « Licensing ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-licence-9",
+          "type": "qcm",
+          "question": "Une petite entreprise installe un logiciel copié pour économiser. Un an plus tard, une faille est découverte. Que se passe-t-il ?",
+          "options": [
+            "Elle ne reçoit pas le correctif et la faille reste ouverte",
+            "Le fabricant lui envoie le correctif gratuitement par mail",
+            "Son antivirus répare tout seul la faille du logiciel"
+          ],
+          "options_why": [
+            "",
+            "Les fabricants envoient les mises à jour aux clients qui ont une licence légale.",
+            "Un antivirus ne supprime pas les failles d'un logiciel : il faut la mise à jour du fabricant."
+          ],
+          "answer": "Elle ne reçoit pas le correctif et la faille reste ouverte",
+          "explanation": "Les versions légales sont corrigées. Les copies illégales ne reçoivent pas les mises à jour.",
+          "explanation_more": "Source : domaine 1, « Licensing » : le logiciel sans licence ne reçoit ni patches ni mises à jour.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-licence-10",
+          "type": "flash",
+          "question": "D'ici 2022, à combien le manuel estime-t-il le commerce mondial de produits contrefaits et piratés ?",
+          "answer": "Entre 1,9 et 2,8 mille milliards de dollars.",
+          "explanation": "Un produit piraté est une copie faite illégalement, par exemple un film ou un jeu.",
+          "explanation_more": "En anglais : between 1.9 and 2.8 trillion dollars. Source : domaine 1, « Licensing ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-licence-11",
+          "type": "why",
+          "question": "Pourquoi utiliser un logiciel sans licence augmente-t-il le risque d'être attaqué ?",
+          "answer": "Parce que ces utilisateurs ne reçoivent pas les mises à jour du fabricant. Les failles restent ouvertes et les attaquants en profitent.",
+          "explanation": "Les versions légales sont corrigées, les copies illégales ne le sont pas.",
+          "explanation_more": "Le manuel trouve cela ironique : en utilisant illégalement un logiciel, on devient une cible plus facile pour d'autres criminels.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-licence-12",
+          "type": "flash",
+          "question": "Quelle part de la bande passante (la quantité de données qui circule sur internet) sert à des activités qui violent la propriété intellectuelle ?",
+          "answer": "Environ 23 %, selon une estimation citée par le manuel.",
+          "explanation": "Près d'un quart du trafic sur internet.",
+          "explanation_more": "Source : domaine 1, « Licensing » : 23 pour cent de toute la bande passante.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-licence-13",
+          "type": "flash",
+          "question": "Quel exemple le manuel donne-t-il d'un malware qui s'est répandu vite à cause de logiciels sans licence ?",
+          "answer": "WannaCry, en Chine : environ 70 % des utilisateurs avaient des logiciels sans licence, et plus de 40 000 institutions ont été touchées.",
+          "explanation": "Pas de licence, donc pas de mises à jour : le malware a trouvé des failles ouvertes.",
+          "explanation_more": "Source : domaine 1, « Licensing » : estimations sur la Chine.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "d1-pi-brevet",
+      "name": "Le brevet (patent) et le secret commercial (trade secret)",
+      "planete": {
+        "relief": "rocheuse"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Une nouvelle sorte de ballon",
+          "paragraphes": [
+            "Tu inventes un ballon qui rebondit toujours droit. Tu es fier. Mais si ton voisin en fabrique des copies pour les vendre ? Comment protéger ton invention ?",
+            "Deux chemins existent. Soit tu demandes au gouvernement un droit exclusif pour un temps limité : c'est un brevet (patent). Soit tu gardes la méthode secrète : c'est un secret commercial (trade secret)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le ballon et la recette",
+          "comme": "Ton ballon est une invention : le gouvernement t'accorde le droit exclusif de le fabriquer pendant quelques années. La recette d'une pizzeria est un secret : personne ne la connaît, et elle vaut cher tant qu'elle reste cachée.",
+          "enVrai": "Le brevet est un droit donné par le gouvernement, pour une durée fixée. Le secret commercial est une information que l'entreprise garde pour elle. L'image s'arrête là : une recette secrète n'expire pas au bout de vingt ans, mais un brevet finit par expirer."
+        },
+        {
+          "type": "predire",
+          "question": "Combien de temps dure en général un brevet aux États-Unis ?",
+          "options": [
+            "Pour toujours",
+            "15 ou 20 ans",
+            "Un an, renouvelable"
+          ],
+          "answer": "15 ou 20 ans",
+          "explanation": "Un brevet dure un temps fixé. La première réponse tente, car on pense à une protection sans fin, comme celle de certaines marques que tu verras plus loin."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les trois conditions d'un brevet",
+          "texte": "Pour obtenir un brevet, une invention doit être nouvelle : personne ne l'a déjà faite. Elle doit être utile : elle sert à quelque chose. Elle doit être non évidente (nonobvious) : ce n'est pas une idée que n'importe qui aurait eue tout de suite."
+        },
+        {
+          "type": "analogie",
+          "titre": "Une carte valable dans un seul pays",
+          "comme": "L'abonnement de bus de ta ville ne marche pas dans la ville voisine. Il faut en acheter un autre.",
+          "enVrai": "Un brevet américain ne marche qu'aux États-Unis et dans ses territoires. Pour être protégé ailleurs, il faut déposer une demande dans chaque pays, par exemple auprès de l'Office européen des brevets (EPO)."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le secret de Coca-Cola",
+          "texte": "La recette de Coca-Cola est gardée secrète depuis 1886. Elle a de la valeur pour l'entreprise seulement parce que personne d'autre ne la connaît. Le manuel la donne comme exemple de secret commercial."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pi-brevet-patent-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « patent »",
+          "answer": "A patent is a government-issued license or grant of property rights to an inventor that prohibits another party from making, using, importing, or selling the invention for a set period of time.\n\nTraduction : Un brevet est une licence ou un octroi de droits de propriété, délivré par le gouvernement à un inventeur, qui interdit à toute autre partie de fabriquer, utiliser, importer ou vendre l'invention pendant une durée déterminée.",
+          "explanation": "Pense à ton ballon : seul l'inventeur peut le fabriquer ou le vendre, pendant un temps limité.",
+          "explanation_more": "Aux États-Unis, c'est l'USPTO qui délivre les brevets. Source : domaine 1, section « Patents ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-brevet-patent-def2",
+          "type": "cloze",
+          "question": "A patent is a government-issued license or grant of property rights to an [[inventor]] that [[prohibits]] another party from making, using, importing, or selling the invention for a set period of time.",
+          "answer": "A patent is a government-issued license or grant of property rights to an inventor that prohibits another party from making, using, importing, or selling the invention for a set period of time.",
+          "explanation": "Deux mots clés : l'inventeur reçoit le droit, et le brevet interdit aux autres de copier.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-brevet-patent-def3",
+          "type": "cloze",
+          "question": "A patent is [[a government-issued license]] or [[grant of property rights]] to an inventor that prohibits [[another party]] from making, using, importing, or selling the invention for a set period of time.",
+          "answer": "A patent is a government-issued license or grant of property rights to an inventor that prohibits another party from making, using, importing, or selling the invention for a set period of time.",
+          "explanation": "Trois blocs : une licence délivrée par le gouvernement, des droits de propriété, et l'interdiction pour les autres.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-brevet-patent-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « patent » (en anglais).",
+          "answer": "A patent is a government-issued license or grant of property rights to an inventor that prohibits another party from making, using, importing, or selling the invention for a set period of time.\n\nTraduction : Un brevet est une licence ou un octroi de droits de propriété, délivré par le gouvernement à un inventeur, qui interdit à toute autre partie de fabriquer, utiliser, importer ou vendre l'invention pendant une durée déterminée.",
+          "explanation": "Les quatre verbes à retenir : making, using, importing, selling.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-brevet-secret-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « trade secret »",
+          "answer": "A trade secret is a proprietary formula, process, practice, or combination of information that a company has exclusive rights to.\n\nTraduction : Un secret commercial est une formule, un procédé, une pratique ou un ensemble d'informations, propriétaires, sur lesquels une entreprise a des droits exclusifs.",
+          "explanation": "Pense à la recette de la pizzeria : elle appartient à l'entreprise, qui est seule à y avoir droit.",
+          "explanation_more": "« Proprietary » veut dire qui appartient à l'entreprise. Source : domaine 1, section « Trade secrets ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-brevet-secret-def2",
+          "type": "cloze",
+          "question": "A trade secret is a [[proprietary]] formula, process, practice, or combination of information that a company has [[exclusive]] rights to.",
+          "answer": "A trade secret is a proprietary formula, process, practice, or combination of information that a company has exclusive rights to.",
+          "explanation": "Deux mots clés : propriétaire, et droits exclusifs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-brevet-secret-def3",
+          "type": "cloze",
+          "question": "A trade secret is [[a proprietary formula]], process, practice, or [[combination of information]] that a company has [[exclusive rights to]].",
+          "answer": "A trade secret is a proprietary formula, process, practice, or combination of information that a company has exclusive rights to.",
+          "explanation": "Trois blocs : une formule propriétaire, un ensemble d'informations, des droits exclusifs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-brevet-secret-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « trade secret » (en anglais).",
+          "answer": "A trade secret is a proprietary formula, process, practice, or combination of information that a company has exclusive rights to.\n\nTraduction : Un secret commercial est une formule, un procédé, une pratique ou un ensemble d'informations, propriétaires, sur lesquels une entreprise a des droits exclusifs.",
+          "explanation": "Quatre sortes de secrets : formula, process, practice, combination of information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-brevet-1",
+          "type": "duel",
+          "question": "La recette secrète d'une pizzeria, que personne hors de l'équipe ne connaît : brevet ou secret commercial ?",
+          "options": [
+            "Un secret commercial (trade secret)",
+            "Un brevet (patent)"
+          ],
+          "answer": "Un secret commercial (trade secret)",
+          "explanation": "Un secret commercial reste caché. Un brevet est un droit délivré par le gouvernement.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-brevet-2",
+          "type": "flash",
+          "question": "Quelles sont les trois conditions pour obtenir un brevet ?",
+          "answer": "L'invention doit être nouvelle, utile et non évidente (new, useful, nonobvious).",
+          "explanation": "Non évidente veut dire que n'importe qui n'y aurait pas pensé tout de suite.",
+          "explanation_more": "Source : domaine 1, section « Patents ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-brevet-3",
+          "type": "cloze",
+          "question": "Pour avoir un brevet, une invention doit être [[nouvelle]], [[utile]] et [[non évidente|nonobvious]].",
+          "answer": "Pour avoir un brevet, une invention doit être nouvelle, utile et non évidente.",
+          "explanation": "Nouvelle : jamais faite. Utile : elle sert. Non évidente : pas une idée que tout le monde aurait eue.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-brevet-4",
+          "type": "flash",
+          "question": "Combien de temps dure un brevet américain en général ?",
+          "answer": "15 ou 20 ans.",
+          "explanation": "Un brevet est valable pendant une durée fixée, puis il expire.",
+          "explanation_more": "Le manuel écrit : usually valid for 15 or 20 years. Source : domaine 1, section « Patents ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-brevet-5",
+          "type": "qcm",
+          "question": "Une entreprise a inventé une nouvelle batterie. Elle veut un droit exclusif de fabrication, pour un temps limité, accordé par le gouvernement. Que choisit-elle ?",
+          "options": [
+            "Un brevet (patent)",
+            "Un secret commercial (trade secret)",
+            "Une marque (trademark)"
+          ],
+          "options_why": [
+            "",
+            "Un secret n'est accordé par personne : l'entreprise le garde simplement pour elle.",
+            "Une marque indique qui vend un produit : elle ne protège pas l'invention."
+          ],
+          "answer": "Un brevet (patent)",
+          "explanation": "Un droit exclusif accordé par le gouvernement pour une durée fixée : c'est exactement un brevet.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-brevet-6",
+          "type": "flash",
+          "question": "Quel organisme délivre les brevets aux États-Unis ?",
+          "answer": "L'United States Patent and Trademark Office (USPTO).",
+          "explanation": "Son nom contient aussi « Trademark » : les marques, que tu verras dans la planète suivante.",
+          "explanation_more": "Source : domaine 1, section « Patents ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-brevet-7",
+          "type": "duel",
+          "question": "Ton invention est brevetée aux États-Unis. Est-elle protégée en France ?",
+          "options": [
+            "Non : il faut déposer une demande dans chaque pays",
+            "Oui : un brevet américain vaut dans le monde entier"
+          ],
+          "answer": "Non : il faut déposer une demande dans chaque pays",
+          "explanation": "Un brevet américain ne vaut qu'aux États-Unis et dans ses territoires.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-brevet-8",
+          "type": "flash",
+          "question": "Cite des organismes de brevets situés hors des États-Unis.",
+          "answer": "L'Office européen des brevets (EPO), l'Eurasian Patent Organization (EAPO), l'ARIPO pour l'Afrique, et d'autres.",
+          "explanation": "Chaque grande région a le sien. Il faut connaître les lois de son propre pays.",
+          "explanation_more": "ARIPO veut dire African Regional Intellectual Property Organization. Source : domaine 1, section « Patents ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-brevet-9",
+          "type": "flash",
+          "question": "Qui fait respecter la loi des brevets aux États-Unis ?",
+          "answer": "Le système judiciaire américain (les tribunaux), pas l'USPTO.",
+          "explanation": "L'USPTO délivre les brevets. Ce sont les tribunaux qui les défendent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-brevet-10",
+          "type": "sort",
+          "question": "Brevet ou secret commercial ?",
+          "answer": "Brevet : l'invention avec un droit exclusif demandé au gouvernement, la protection de 15 ou 20 ans, le droit délivré par l'USPTO. Secret commercial : la recette secrète, l'information qui vaut de l'argent seulement si elle reste cachée, la méthode connue de la seule entreprise.",
+          "explanation": "Brevet : un droit donné par le gouvernement, pour un temps. Secret : une information que l'entreprise cache elle-même.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Brevet (patent)",
+              "Secret commercial (trade secret)"
+            ],
+            "items": [
+              {
+                "text": "La recette gardée secrète d'une pizzeria depuis des années",
+                "category": "Secret commercial (trade secret)"
+              },
+              {
+                "text": "Une invention pour laquelle l'inventeur a obtenu un droit exclusif du gouvernement",
+                "category": "Brevet (patent)"
+              },
+              {
+                "text": "Une protection qui s'arrête au bout de 15 ou 20 ans",
+                "category": "Brevet (patent)"
+              },
+              {
+                "text": "Une information qui vaut de l'argent seulement parce qu'elle reste cachée",
+                "category": "Secret commercial (trade secret)"
+              },
+              {
+                "text": "Un droit délivré par l'USPTO",
+                "category": "Brevet (patent)"
+              },
+              {
+                "text": "Une méthode de fabrication connue seulement de l'entreprise",
+                "category": "Secret commercial (trade secret)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pi-brevet-11",
+          "type": "flash",
+          "question": "Un produit qui viole un brevet américain arrive de l'étranger. Quel organisme peut agir ?",
+          "answer": "L'U.S. International Trade Commission (ITC). Elle peut ordonner d'empêcher le produit d'entrer aux États-Unis.",
+          "explanation": "Elle agit à la frontière, avant que le produit ne soit vendu.",
+          "explanation_more": "Le manuel précise que le recours le plus solide passe quand même par les tribunaux. Source : domaine 1, section « Patents ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-brevet-12",
+          "type": "why",
+          "question": "Pourquoi la recette de Coca-Cola est-elle un secret commercial ?",
+          "answer": "Parce qu'elle est propriétaire, c'est-à-dire qu'elle appartient à l'entreprise, et qu'elle a de la valeur seulement parce qu'elle reste secrète.",
+          "explanation": "Si tout le monde la connaissait, elle ne vaudrait plus rien pour l'entreprise.",
+          "explanation_more": "Le manuel dit que l'entreprise la garde depuis 1886. Source : domaine 1, section « Trade secrets ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-brevet-13",
+          "type": "flash",
+          "question": "Quelles lois fédérales américaines font du vol de secret commercial un crime ?",
+          "answer": "L'Economic Espionage Act de 1996 et le Defend Trade Secrets Act (DTSA) de 2016.",
+          "explanation": "Deux lois fédérales : 1996 puis 2016.",
+          "explanation_more": "Source : domaine 1, section « Trade secrets ». Le vol ou l'usage abusif d'un secret commercial est un crime fédéral.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-brevet-14",
+          "type": "flash",
+          "question": "Qui s'occupe surtout des lois sur les secrets commerciaux aux États-Unis ?",
+          "answer": "Les États : la plupart ont adopté le Uniform Trade Secrets Act (UTSA), modifié pour la dernière fois en 1985.",
+          "explanation": "Chaque État a ses lois, mais beaucoup se sont mis d'accord sur le même modèle.",
+          "explanation_more": "Source : domaine 1, section « Trade secrets ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-brevet-15",
+          "type": "whatif",
+          "question": "Et si une pizzeria voulait garder sa recette pour toujours ?",
+          "answer": "Un brevet ne durerait que 15 ou 20 ans. Un secret peut durer tant que personne ne le découvre : elle a donc intérêt à garder sa recette secrète.",
+          "explanation": "La durée de la protection est une grande différence entre les deux outils.",
+          "explanation_more": "Hors manuel : pour obtenir un brevet, il faut aussi décrire l'invention publiquement, ce qui rend le secret impossible.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pi-marque",
+      "name": "La marque (trademark)",
+      "planete": {
+        "relief": "volcanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Les baskets du magasin",
+          "paragraphes": [
+            "Tu vois deux paires de baskets presque identiques. L'une porte le logo de ta marque préférée, l'autre non. Le logo te dit qui a fabriqué la paire.",
+            "Si quelqu'un colle ce logo sur de fausses baskets, tu serais trompé. Pour éviter cela, la loi protège les signes qui montrent qui vend un produit.",
+            "Ce signe protégé s'appelle une marque (trademark)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le logo, c'est la signature",
+          "comme": "Une signature en bas d'un dessin montre qui l'a fait. Personne d'autre n'a le droit de signer à ta place.",
+          "enVrai": "Une marque (trademark) est un mot, une phrase, un symbole ou un dessin. Elle montre qui vend un produit et le distingue de ceux des autres. Pour un service, on parle de marque de service (service mark). L'image s'arrête là : la marque ne protège pas l'objet lui-même, seulement la preuve de qui le vend."
+        },
+        {
+          "type": "predire",
+          "question": "Une marque expire-t-elle après un temps fixé, comme un brevet ?",
+          "options": [
+            "Oui, après 20 ans comme un brevet",
+            "Non, elle dure tant qu'on l'utilise dans le commerce"
+          ],
+          "answer": "Non, elle dure tant qu'on l'utilise dans le commerce",
+          "explanation": "Un brevet a une durée fixée. Une marque peut durer pour toujours, tant qu'elle est utilisée. La première réponse tente, car on pense que toutes les protections se terminent."
+        },
+        {
+          "type": "exemple",
+          "titre": "Coca-Cola contre Pepsi",
+          "texte": "Le mot Coca-Cola est une marque. Il distingue cette boisson de Pepsi et de toutes les autres colas. Une compagnie de taxis, elle, a une marque de service : son nom montre qui rend le service. Dans la vie courante, on dit souvent « marque » pour les deux."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pi-marque-trademark-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « trademark »",
+          "answer": "According to the USPTO, a trademark is \"a word, phrase, symbol, and/or design that identifies and distinguishes the source of the goods of one party from those of others.\"\n\nTraduction : Selon l'USPTO, une marque est « un mot, une phrase, un symbole et/ou un dessin qui identifie et distingue la source des produits d'une partie de ceux des autres ».",
+          "explanation": "Le logo de tes baskets : il montre qui fabrique, et il les distingue des autres marques.",
+          "explanation_more": "USPTO veut dire United States Patent and Trademark Office. Source : domaine 1, section « Trademarks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-marque-trademark-def2",
+          "type": "cloze",
+          "question": "According to the USPTO, a trademark is \"a word, phrase, symbol, and/or design that [[identifies]] and [[distinguishes]] the source of the goods of one party from those of others.\"",
+          "answer": "According to the USPTO, a trademark is \"a word, phrase, symbol, and/or design that identifies and distinguishes the source of the goods of one party from those of others.\"",
+          "explanation": "Deux verbes clés : identifier et distinguer. Une marque dit qui vend, et le sépare des autres.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-marque-trademark-def3",
+          "type": "cloze",
+          "question": "According to the USPTO, a trademark is \"a [[word, phrase, symbol]], and/or design that [[identifies and distinguishes]] the [[source of the goods]] of one party from those of others.\"",
+          "answer": "According to the USPTO, a trademark is \"a word, phrase, symbol, and/or design that identifies and distinguishes the source of the goods of one party from those of others.\"",
+          "explanation": "Trois blocs : mot, phrase, symbole ; identifie et distingue ; la source des produits.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-marque-trademark-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « trademark » selon l'USPTO (en anglais).",
+          "answer": "According to the USPTO, a trademark is \"a word, phrase, symbol, and/or design that identifies and distinguishes the source of the goods of one party from those of others.\"\n\nTraduction : Selon l'USPTO, une marque est « un mot, une phrase, un symbole et/ou un dessin qui identifie et distingue la source des produits d'une partie de ceux des autres ».",
+          "explanation": "Cherche les quatre sortes de signes : word, phrase, symbol, design.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-marque-service-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « service mark »",
+          "answer": "A service mark is a similar legal grant that identifies and distinguishes the source of a service rather than goods.\n\nTraduction : Une marque de service est une protection légale semblable, qui identifie et distingue la source d'un service plutôt que de produits.",
+          "explanation": "Même idée que la marque, mais pour un service, comme un taxi ou une livraison.",
+          "explanation_more": "Le manuel précise que le mot trademark est couramment utilisé pour les deux. Source : domaine 1, section « Trademarks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-marque-service-def3",
+          "type": "cloze",
+          "question": "A service mark is [[a similar legal grant]] that [[identifies and distinguishes]] the source of [[a service]] rather than goods.",
+          "answer": "A service mark is a similar legal grant that identifies and distinguishes the source of a service rather than goods.",
+          "explanation": "Trois blocs : une protection semblable, identifier et distinguer, un service plutôt que des produits.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-marque-1",
+          "type": "flash",
+          "question": "C'est quoi une marque (trademark), en mots simples ?",
+          "answer": "Un signe, comme un mot, un logo ou un dessin, qui montre qui vend un produit et le distingue de ceux des autres.",
+          "explanation": "Comme une signature : elle dit qui est derrière le produit.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-marque-2",
+          "type": "duel",
+          "question": "Qu'est-ce qui protège le logo reconnu d'une marque de baskets ?",
+          "options": [
+            "Une marque (trademark)",
+            "Un brevet (patent)"
+          ],
+          "answer": "Une marque (trademark)",
+          "explanation": "Le logo montre qui vend les baskets. Un brevet protégerait une invention, pas un signe.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-marque-3",
+          "type": "duel",
+          "question": "Au sens strict, le nom d'une compagnie de taxis identifie un service. Quel terme précis s'applique ?",
+          "options": [
+            "Une marque de service (service mark)",
+            "Une marque de produit (trademark)"
+          ],
+          "answer": "Une marque de service (service mark)",
+          "explanation": "Une marque de service désigne un service. Dans la vie courante, on dit souvent « marque » pour les deux.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-marque-4",
+          "type": "flash",
+          "question": "Une marque expire-t-elle après un temps fixé ?",
+          "answer": "Non : ses droits durent tant qu'elle est utilisée dans le commerce, donc parfois pour toujours.",
+          "explanation": "C'est la différence avec le brevet, qui dure 15 ou 20 ans.",
+          "explanation_more": "Source : domaine 1, section « Trademarks » : les droits durent aussi longtemps que la marque est utilisée dans le commerce.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-marque-5",
+          "type": "qcm",
+          "question": "Une petite entreprise vend des jus et colle sur ses bouteilles un logo presque identique à celui d'une grande marque. Que veut éviter la protection par marque ?",
+          "options": [
+            "Que les clients confondent la source du produit",
+            "Que quelqu'un copie la recette du jus",
+            "Que quelqu'un invente une nouvelle bouteille"
+          ],
+          "options_why": [
+            "",
+            "Protéger une recette, c'est le rôle du secret commercial.",
+            "Protéger une invention, c'est le rôle du brevet."
+          ],
+          "answer": "Que les clients confondent la source du produit",
+          "explanation": "Une marque montre qui vend. Un logo trop proche trompe les clients sur la source.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-marque-6",
+          "type": "whatif",
+          "question": "Et si n'importe qui pouvait écrire Coca-Cola sur ses bouteilles ?",
+          "answer": "On ne pourrait plus savoir qui fabrique la boisson : la marque ne distinguerait plus la source du produit.",
+          "explanation": "C'est exactement le rôle d'une marque : distinguer la source des produits.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-marque-7",
+          "type": "flash",
+          "question": "Quelle loi américaine protège les marques, en plus du Title 35 U.S.C. ?",
+          "answer": "Le Trademark Law Treaty Implementation Act (loi publique 105-330).",
+          "explanation": "Retiens le numéro 105-330 : c'est celui de la loi publique.",
+          "explanation_more": "Source : domaine 1, section « Trademarks » : U.S. Public Law 105-330.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-marque-8",
+          "type": "sort",
+          "question": "Marque ou brevet ?",
+          "answer": "Marque : le mot Coca-Cola, le logo des baskets, le nom d'une compagnie de taxis, la protection qui dure tant que le signe est utilisé. Brevet : le mécanisme de ballon et la protection de 15 ou 20 ans.",
+          "explanation": "Marque : un signe qui montre qui vend. Brevet : une invention, pour une durée fixée.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Marque (trademark)",
+              "Brevet (patent)"
+            ],
+            "items": [
+              {
+                "text": "Le mot Coca-Cola sur une bouteille",
+                "category": "Marque (trademark)"
+              },
+              {
+                "text": "Un logo reconnu sur des baskets",
+                "category": "Marque (trademark)"
+              },
+              {
+                "text": "Le nom d'une compagnie de taxis",
+                "category": "Marque (trademark)"
+              },
+              {
+                "text": "Un nouveau mécanisme qui rend un ballon plus stable",
+                "category": "Brevet (patent)"
+              },
+              {
+                "text": "Une protection qui dure tant que le signe est utilisé",
+                "category": "Marque (trademark)"
+              },
+              {
+                "text": "Une protection de 15 ou 20 ans",
+                "category": "Brevet (patent)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pi-marque-9",
+          "type": "flash",
+          "question": "Que veut dire USPTO ?",
+          "answer": "United States Patent and Trademark Office : l'office américain des brevets et des marques.",
+          "explanation": "Le même office s'occupe des brevets et des marques.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-marque-10",
+          "type": "cloze",
+          "question": "Une marque dure tant qu'elle est [[utilisée]] dans le [[commerce]].",
+          "answer": "Une marque dure tant qu'elle est utilisée dans le commerce.",
+          "explanation": "Pas de date de fin : c'est l'usage qui garde la marque en vie.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-marque-11",
+          "type": "why",
+          "question": "Pourquoi une marque n'a-t-elle pas besoin d'expirer comme un brevet ?",
+          "answer": "Parce qu'elle sert à reconnaître qui vend un produit, et ce rôle continue tant que la marque est utilisée dans le commerce.",
+          "explanation": "Le but est différent : reconnaître le vendeur, pas protéger une invention pour un temps.",
+          "explanation_more": "Hors manuel : c'est un raisonnement. Le manuel dit seulement que les droits durent tant que la marque est utilisée dans le commerce.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pi-auteur",
+      "name": "Le droit d'auteur (copyright)",
+      "planete": {
+        "relief": "gazeuse"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La chanson et la scène",
+          "paragraphes": [
+            "Tu écris les paroles d'une chanson. Tu n'as rien déposé et rien signé. Un camarade les chante sur scène en disant qu'il les a écrites. Est-ce permis ?",
+            "Non. Dès que tu crées une œuvre originale, la loi te protège, même sans papier officiel. Cette protection s'appelle le droit d'auteur (copyright)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Les paroles de la chanson",
+          "comme": "Les paroles sont ton texte à toi. Personne ne peut les copier et les vendre sans ton accord.",
+          "enVrai": "Le droit d'auteur protège des œuvres originales : livres, films, chansons, poèmes, créations artistiques et logiciels. Un logiciel est donc protégé comme un livre. L'image s'arrête là : la protection ne concerne pas que les arts, elle couvre aussi le code d'une application."
+        },
+        {
+          "type": "predire",
+          "question": "Faut-il enregistrer une œuvre pour qu'elle soit protégée par le droit d'auteur aux États-Unis ?",
+          "options": [
+            "Oui, sinon elle n'est pas protégée",
+            "Non, la protection existe sans enregistrement"
+          ],
+          "answer": "Non, la protection existe sans enregistrement",
+          "explanation": "On peut enregistrer l'œuvre auprès du U.S. Copyright Office, mais ce n'est pas obligatoire. La première réponse tente, car on pense qu'un droit demande toujours un papier."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un logiciel est une œuvre",
+          "texte": "Une développeuse écrit une application de jeu. Son code est une œuvre originale : il est protégé par le droit d'auteur. Copier ce code et le vendre sans son accord peut violer son droit d'auteur. Pour une œuvre créée par une seule personne, la protection dure toute sa vie, plus 70 ans."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pi-auteur-copyright-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « copyright »",
+          "answer": "A copyright is a legal protection granted to the authors of \"original works of authorship\" that may include books, movies, songs, poetry, artistic creations, and computer software, among other categories.\n\nTraduction : Un droit d'auteur est une protection légale accordée aux auteurs d'« œuvres originales de l'esprit », qui peuvent comprendre des livres, des films, des chansons, de la poésie, des créations artistiques et des logiciels, entre autres catégories.",
+          "explanation": "Pense aux paroles de ta chanson : une œuvre originale, protégée dès sa création.",
+          "explanation_more": "Le manuel précise qu'une œuvre n'a pas besoin d'être enregistrée pour être protégée. Source : domaine 1, section « Copyrights ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-auteur-copyright-def2",
+          "type": "cloze",
+          "question": "A copyright is a legal protection granted to the [[authors]] of \"[[original]] works of authorship\" that may include books, movies, songs, poetry, artistic creations, and computer software, among other categories.",
+          "answer": "A copyright is a legal protection granted to the authors of \"original works of authorship\" that may include books, movies, songs, poetry, artistic creations, and computer software, among other categories.",
+          "explanation": "Deux mots clés : les auteurs sont protégés, et leurs œuvres doivent être originales.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-auteur-copyright-def3",
+          "type": "cloze",
+          "question": "A copyright is [[a legal protection]] granted to the authors of \"[[original works of authorship]]\" that may include books, movies, songs, poetry, artistic creations, and [[computer software]], among other categories.",
+          "answer": "A copyright is a legal protection granted to the authors of \"original works of authorship\" that may include books, movies, songs, poetry, artistic creations, and computer software, among other categories.",
+          "explanation": "Trois blocs : une protection légale, des œuvres originales, et les logiciels dans la liste.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-auteur-copyright-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « copyright » (en anglais).",
+          "answer": "A copyright is a legal protection granted to the authors of \"original works of authorship\" that may include books, movies, songs, poetry, artistic creations, and computer software, among other categories.\n\nTraduction : Un droit d'auteur est une protection légale accordée aux auteurs d'« œuvres originales de l'esprit », qui peuvent comprendre des livres, des films, des chansons, de la poésie, des créations artistiques et des logiciels, entre autres catégories.",
+          "explanation": "Une astuce : retiens la liste books, movies, songs, poetry, artistic creations, software.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-auteur-1",
+          "type": "duel",
+          "question": "Les paroles d'une chanson que tu as écrite : droit d'auteur ou brevet ?",
+          "options": [
+            "Le droit d'auteur (copyright)",
+            "Un brevet (patent)"
+          ],
+          "answer": "Le droit d'auteur (copyright)",
+          "explanation": "Des paroles sont une œuvre originale. Un brevet protège une invention.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-auteur-2",
+          "type": "flash",
+          "question": "Combien de temps dure le droit d'auteur d'une œuvre créée par une seule personne ?",
+          "answer": "Toute la vie de l'auteur, plus 70 ans.",
+          "explanation": "La protection continue 70 ans après la mort de l'auteur.",
+          "explanation_more": "Source : domaine 1, section « Copyrights » : life of the author plus 70 years.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-auteur-3",
+          "type": "flash",
+          "question": "Faut-il enregistrer une œuvre pour avoir le droit d'auteur ?",
+          "answer": "Non : l'enregistrement est possible, mais une œuvre originale est protégée même sans être enregistrée.",
+          "explanation": "Le U.S. Copyright Office enregistre les œuvres, mais la protection existe déjà.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-auteur-4",
+          "type": "qcm",
+          "question": "Un élève copie le code de l'application d'un camarade et la met en ligne sous son nom. Quelle protection est en jeu ?",
+          "options": [
+            "Le droit d'auteur, car un logiciel est une œuvre",
+            "Le brevet, car il a copié une invention",
+            "Le secret commercial, car il a volé une recette"
+          ],
+          "options_why": [
+            "",
+            "Un brevet protège une invention. Ici, c'est le texte du code qui est copié.",
+            "Le code est une œuvre écrite, pas une recette gardée cachée par une entreprise."
+          ],
+          "answer": "Le droit d'auteur, car un logiciel est une œuvre",
+          "explanation": "Le manuel range les logiciels parmi les œuvres protégées par le droit d'auteur.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-auteur-5",
+          "type": "flash",
+          "question": "Quelle loi a été la dernière grande révision du droit d'auteur aux États-Unis ?",
+          "answer": "Le Copyright Act de 1976, rangé dans le Title 17 du code américain (17 U.S.C.).",
+          "explanation": "Retiens 1976 pour le droit d'auteur et le Title 17.",
+          "explanation_more": "Source : domaine 1, section « Copyrights ». Le Title 35, lui, concerne les brevets.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-auteur-6",
+          "type": "sort",
+          "question": "Quelle protection s'applique à chaque exemple ?",
+          "answer": "Droit d'auteur : le texte d'une chanson et un logiciel. Marque : le logo des baskets et le mot Coca-Cola. Brevet : le nouveau ballon et la nouvelle batterie. Secret commercial : la recette de la pizzeria et la formule connue de la seule entreprise.",
+          "explanation": "Œuvre : droit d'auteur. Signe du vendeur : marque. Invention : brevet. Information cachée : secret.",
+          "explanation_more": "Source : domaine 1, section « Licensing and Intellectual Property Requirements ».",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Droit d'auteur (copyright)",
+              "Marque (trademark)",
+              "Brevet (patent)",
+              "Secret commercial (trade secret)"
+            ],
+            "items": [
+              {
+                "text": "Le texte d'une chanson",
+                "category": "Droit d'auteur (copyright)"
+              },
+              {
+                "text": "Un logiciel écrit par un développeur",
+                "category": "Droit d'auteur (copyright)"
+              },
+              {
+                "text": "Le logo d'une marque de baskets",
+                "category": "Marque (trademark)"
+              },
+              {
+                "text": "Le mot Coca-Cola sur une bouteille",
+                "category": "Marque (trademark)"
+              },
+              {
+                "text": "L'invention d'une nouvelle sorte de ballon",
+                "category": "Brevet (patent)"
+              },
+              {
+                "text": "Une nouvelle batterie, jamais vue, utile et non évidente",
+                "category": "Brevet (patent)"
+              },
+              {
+                "text": "La recette secrète d'une pizzeria",
+                "category": "Secret commercial (trade secret)"
+              },
+              {
+                "text": "Une formule connue de la seule entreprise",
+                "category": "Secret commercial (trade secret)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pi-auteur-7",
+          "type": "whatif",
+          "question": "Et si tu copiais le texte d'une chanson pour le mettre sur ton blog sans accord ?",
+          "answer": "Tu risquerais de violer le droit d'auteur de l'auteur. Le manuel range la violation du droit d'auteur parmi les cybercrimes contre les biens.",
+          "explanation": "Copier une œuvre protégée sans accord est une atteinte au droit d'auteur.",
+          "explanation_more": "Source : domaine 1, « Cybercrimes and Data Breaches » : les crimes contre les biens incluent la violation du droit d'auteur (copyright infringement).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-auteur-8",
+          "type": "flash",
+          "question": "Quel organisme américain gère l'enregistrement, l'inscription et le transfert des droits d'auteur ?",
+          "answer": "Le U.S. Copyright Office.",
+          "explanation": "Il s'occupe des papiers, mais l'enregistrement n'est pas obligatoire pour être protégé.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-auteur-9",
+          "type": "duel",
+          "question": "Quelle protection dure toute la vie de l'auteur, plus 70 ans ?",
+          "options": [
+            "Le droit d'auteur (copyright)",
+            "Le brevet (patent)"
+          ],
+          "answer": "Le droit d'auteur (copyright)",
+          "explanation": "Le brevet dure en général 15 ou 20 ans, beaucoup moins longtemps.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-auteur-10",
+          "type": "sort",
+          "question": "Quelle protection correspond à chaque durée ?",
+          "answer": "Brevet : 15 ou 20 ans. Marque : tant que le signe est utilisé dans le commerce, parfois pour toujours. Droit d'auteur : toute la vie de l'auteur, plus 70 ans.",
+          "explanation": "Brevet : durée courte et fixe. Marque : sans fin tant qu'on l'utilise. Droit d'auteur : une vie plus 70 ans.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Brevet (patent)",
+              "Marque (trademark)",
+              "Droit d'auteur (copyright)"
+            ],
+            "items": [
+              {
+                "text": "15 ou 20 ans",
+                "category": "Brevet (patent)"
+              },
+              {
+                "text": "Tant que le signe est utilisé dans le commerce",
+                "category": "Marque (trademark)"
+              },
+              {
+                "text": "Peut durer pour toujours",
+                "category": "Marque (trademark)"
+              },
+              {
+                "text": "Toute la vie de l'auteur, plus 70 ans",
+                "category": "Droit d'auteur (copyright)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pi-auteur-11",
+          "type": "cloze",
+          "question": "Le droit d'auteur d'une personne dure toute sa vie, plus [[70|soixante-dix]] ans.",
+          "answer": "Le droit d'auteur d'une personne dure toute sa vie, plus 70 ans.",
+          "explanation": "Le chiffre à retenir : 70 ans après la mort de l'auteur.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "d1-pi-export",
+      "name": "Import/export et flux de données entre pays (transborder data flow)",
+      "planete": {
+        "relief": "oceanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La valise à la douane",
+          "paragraphes": [
+            "Tu pars en voyage. À la douane, un agent regarde ce que tu transportes. Certaines choses ne peuvent pas entrer dans un pays, ou ne peuvent pas en sortir.",
+            "Maintenant, imagine que ton fichier contient les plans d'un satellite. Un simple mail peut le faire passer d'un pays à l'autre en une seconde.",
+            "Beaucoup de pays surveillent le passage des technologies à travers leurs frontières. On parle de contrôles d'import/export (import/export controls)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La douane des données",
+          "comme": "À la douane, un agent décide ce qui peut entrer ou sortir. Certains objets passent, d'autres sont refusés, selon le pays.",
+          "enVrai": "Un pays peut interdire d'importer ou d'exporter certaines technologies, comme le chiffrement. Les données traversent aussi des frontières : on parle de flux de données entre pays (transborder data flow). L'image s'arrête là : sur internet, la frontière ne se voit pas, et un mail peut déjà être un export."
+        },
+        {
+          "type": "predire",
+          "question": "Pour la règle américaine ITAR, qu'est-ce qui peut compter comme une exportation ?",
+          "options": [
+            "Envoyer par mail un plan contrôlé à l'étranger",
+            "Seulement expédier un colis par bateau",
+            "Seulement vendre un produit dans un magasin étranger"
+          ],
+          "answer": "Envoyer par mail un plan contrôlé à l'étranger",
+          "explanation": "Pour l'ITAR, même un simple mail avec des données contrôlées est une exportation. Les deux autres réponses tentent, car on pense à des objets qu'on voit voyager."
+        },
+        {
+          "type": "exemple",
+          "titre": "L'ITAR, une règle américaine",
+          "texte": "L'ITAR (International Traffic in Arms Regulations) contrôle l'exportation d'équipements et de services de défense, comme les satellites, les avions ou les missiles. Un mail avec un plan 3D contrôlé est une exportation. Ces données ne doivent pas partir vers l'Iran, la Syrie, la Corée du Nord et d'autres pays."
+        },
+        {
+          "type": "analogie",
+          "titre": "La cantine du collège",
+          "comme": "La cantine du collège exige que les repas soient préparés dans sa propre cuisine, et pas ailleurs.",
+          "enVrai": "Certains pays exigent que certaines données soient traitées à l'intérieur de leurs frontières. C'est la localisation des données (data localization). Plus de 34 pays ont une règle de ce genre."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le cloud réservé au gouvernement",
+          "texte": "Les fournisseurs de cloud ont des centres de données partout dans le monde. Pour respecter l'ITAR, plusieurs proposent un « GovCloud » : une zone du cloud limitée à une région. Les données y restent dans le pays."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pi-export-controls-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « import/export controls »",
+          "answer": "Many countries closely regulate the movement of technology through their borders.\n\nTraduction : De nombreux pays réglementent étroitement le passage des technologies à travers leurs frontières.",
+          "explanation": "Pense à la douane : le pays décide quelles technologies peuvent passer ses frontières.",
+          "explanation_more": "Raisons citées par le manuel : protéger les industries locales, limiter l'export de technologies sensibles comme le chiffrement, ou d'autres buts politiques. Source : domaine 1, « Import/Export Controls ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-controls-def2",
+          "type": "cloze",
+          "question": "Many countries closely [[regulate]] the movement of [[technology]] through their borders.",
+          "answer": "Many countries closely regulate the movement of technology through their borders.",
+          "explanation": "Deux mots clés : les pays réglementent, et ce sont les technologies qui circulent.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-controls-def3",
+          "type": "cloze",
+          "question": "Many countries [[closely regulate]] the [[movement of technology]] through [[their borders]].",
+          "answer": "Many countries closely regulate the movement of technology through their borders.",
+          "explanation": "Trois blocs : réglementer de près, le passage des technologies, à travers les frontières.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-controls-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « import/export controls » (en anglais).",
+          "answer": "Many countries closely regulate the movement of technology through their borders.\n\nTraduction : De nombreux pays réglementent étroitement le passage des technologies à travers leurs frontières.",
+          "explanation": "Une seule idée : les pays réglementent de près le passage des technologies.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-transborder-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « transborder data flow »",
+          "answer": "The concept of transborder data flow is closely related to the previously discussed topic of import/export controls. More specifically, this concept focuses on requirements around restricting certain data to or from specific geographic locations or jurisdictions.\n\nTraduction : Le concept de flux de données transfrontalier est étroitement lié aux contrôles d'import/export vus plus haut. Plus précisément, il porte sur les exigences qui limitent certaines données vers ou depuis des lieux géographiques ou des juridictions précis.",
+          "explanation": "Ce sont les contrôles d'import/export, mais appliqués aux données qui passent d'un pays à l'autre.",
+          "explanation_more": "Une juridiction est la zone où une autorité peut appliquer sa loi. Source : domaine 1, « Transborder Data Flow ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-transborder-def2",
+          "type": "cloze",
+          "question": "The concept of [[transborder]] data flow is closely related to the previously discussed topic of import/export controls. More specifically, this concept focuses on requirements around [[restricting]] certain data to or from specific geographic locations or jurisdictions.",
+          "answer": "The concept of transborder data flow is closely related to the previously discussed topic of import/export controls. More specifically, this concept focuses on requirements around restricting certain data to or from specific geographic locations or jurisdictions.",
+          "explanation": "Deux mots clés : transborder (à travers les frontières) et restricting (limiter).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-transborder-def3",
+          "type": "cloze",
+          "question": "The concept of [[transborder data flow]] is closely related to the previously discussed topic of import/export controls. More specifically, this concept focuses on [[requirements around restricting]] certain data to or from [[specific geographic locations]] or jurisdictions.",
+          "answer": "The concept of transborder data flow is closely related to the previously discussed topic of import/export controls. More specifically, this concept focuses on requirements around restricting certain data to or from specific geographic locations or jurisdictions.",
+          "explanation": "Trois blocs : le nom du concept, les exigences qui limitent, des lieux géographiques précis.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-transborder-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « transborder data flow » (en anglais).",
+          "answer": "The concept of transborder data flow is closely related to the previously discussed topic of import/export controls. More specifically, this concept focuses on requirements around restricting certain data to or from specific geographic locations or jurisdictions.\n\nTraduction : Le concept de flux de données transfrontalier est étroitement lié aux contrôles d'import/export vus plus haut. Plus précisément, il porte sur les exigences qui limitent certaines données vers ou depuis des lieux géographiques ou des juridictions précis.",
+          "explanation": "Deux phrases : le lien avec l'import/export, puis ce sur quoi le concept se concentre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-sanctions-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « sanctions »",
+          "answer": "The United States, European Union, and other jurisdictions sometimes issue sanctions (government edicts that prohibit doing business with a given person, group, organization, or country) against particular countries or particular entities.\n\nTraduction : Les États-Unis, l'Union européenne et d'autres juridictions émettent parfois des sanctions (des décrets du gouvernement qui interdisent de faire des affaires avec une personne, un groupe, une organisation ou un pays donné) contre des pays ou des entités précis.",
+          "explanation": "Une sanction dit : interdit de faire des affaires avec telle personne, tel groupe ou tel pays.",
+          "explanation_more": "Les sanctions changent bien plus souvent que les lois d'import/export. Source : domaine 1, note de la section « Import/Export Controls ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-sanctions-def3",
+          "type": "cloze",
+          "question": "The United States, European Union, and other jurisdictions sometimes issue [[sanctions]] ([[government edicts]] that [[prohibit doing business]] with a given person, group, organization, or country) against particular countries or particular entities.",
+          "answer": "The United States, European Union, and other jurisdictions sometimes issue sanctions (government edicts that prohibit doing business with a given person, group, organization, or country) against particular countries or particular entities.",
+          "explanation": "Trois blocs : sanctions, décrets du gouvernement, interdiction de faire des affaires.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-itar-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ITAR »",
+          "answer": "ITAR regulates the export of defense articles and defense services to keep those sensitive materials out of the hands of foreign nationals.\n\nTraduction : L'ITAR réglemente l'exportation d'articles et de services de défense, afin de garder ces matériels sensibles hors des mains de ressortissants étrangers.",
+          "explanation": "ITAR veut dire International Traffic in Arms Regulations : les règles sur le trafic international d'armes.",
+          "explanation_more": "L'ITAR s'applique aux agences du gouvernement, aux entreprises sous contrat et à leurs sous-traitants. Source : domaine 1, « Import/Export Controls ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-itar-def3",
+          "type": "cloze",
+          "question": "ITAR regulates [[the export]] of [[defense articles]] and defense services to keep those [[sensitive materials]] out of the hands of foreign nationals.",
+          "answer": "ITAR regulates the export of defense articles and defense services to keep those sensitive materials out of the hands of foreign nationals.",
+          "explanation": "Trois blocs : l'exportation, les articles de défense, les matériels sensibles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pi-export-1",
+          "type": "duel",
+          "question": "Un gouvernement interdit à toutes les entreprises de faire des affaires avec un pays précis. Quel mot décrit cela ?",
+          "options": [
+            "Une sanction",
+            "Un contrôle d'import/export"
+          ],
+          "answer": "Une sanction",
+          "explanation": "Une sanction vise une personne, un groupe, une organisation ou un pays précis. Un contrôle d'import/export vise le passage des technologies.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-export-2",
+          "type": "flash",
+          "question": "Pourquoi un pays contrôle-t-il les technologies qui passent ses frontières ?",
+          "answer": "Pour protéger ses industries locales, limiter l'export de technologies sensibles (comme le chiffrement), ou atteindre d'autres buts du pays.",
+          "explanation": "Trois raisons : économie, sécurité, politique.",
+          "explanation_more": "Source : domaine 1, « Import/Export Controls ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-export-3",
+          "type": "flash",
+          "question": "Quelle liste l'ITAR utilise-t-elle pour savoir ce qui est contrôlé ?",
+          "answer": "L'United States Munitions List (USML).",
+          "explanation": "Munitions List : la liste des matériels de défense contrôlés.",
+          "explanation_more": "Produits et données techniques concernés : satellites, avions, engins spatiaux, missiles et bien d'autres. Source : domaine 1.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-export-4",
+          "type": "qcm",
+          "question": "Un ingénieur envoie par mail le plan 3D d'une pièce de missile à un collègue à l'étranger. Que dit l'ITAR ?",
+          "options": [
+            "C'est une exportation, soumise à contrôle",
+            "Ce n'est pas une exportation : seul un colis compte",
+            "C'est permis si l'ingénieur n'est pas payé pour l'envoi"
+          ],
+          "options_why": [
+            "",
+            "Le manuel est clair : envoyer un mail avec des données contrôlées est déjà une exportation.",
+            "Le paiement ne change rien : c'est le contenu du mail qui est contrôlé."
+          ],
+          "answer": "C'est une exportation, soumise à contrôle",
+          "explanation": "Pour l'ITAR, un simple mail avec des données contrôlées compte comme une exportation.",
+          "explanation_more": "Le manuel conseille de garder des contrôles de sécurité qui limitent le flux des données ITAR aux personnes et aux lieux autorisés.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-export-5",
+          "type": "flash",
+          "question": "Vers quels pays l'ITAR interdit-elle d'envoyer des données réglementées ?",
+          "answer": "L'Iran, la Syrie, la Corée du Nord et d'autres pays précisés.",
+          "explanation": "Trois pays à retenir : Iran, Syrie, Corée du Nord.",
+          "explanation_more": "Source : domaine 1, « Transborder Data Flow ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-export-6",
+          "type": "flash",
+          "question": "Pourquoi l'ITAR compte-t-elle pour les clouds publics mondiaux ?",
+          "answer": "Les données ITAR doivent rester aux États-Unis, sinon c'est une exportation. Des fournisseurs ont donc créé des offres régionales, comme « GovCloud ».",
+          "explanation": "Un cloud mondial répartit les données dans plusieurs pays : il faut une zone limitée à un pays.",
+          "explanation_more": "Source : domaine 1, « Transborder Data Flow ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-export-7",
+          "type": "sort",
+          "question": "Quelle règle correspond à chaque situation ?",
+          "answer": "Contrôle d'import/export : interdire d'exporter un logiciel de chiffrement, envoyer un plan de missile sans autorisation. Localisation des données : stocker les données des citoyens dans le pays, héberger les serveurs dans le pays. Sanction : interdire les affaires avec une entreprise désignée ou avec un pays.",
+          "explanation": "Technologie qui passe la frontière : import/export. Données qui doivent rester : localisation. Interdit de faire affaire : sanction.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Contrôle d'import/export",
+              "Localisation des données",
+              "Sanction"
+            ],
+            "items": [
+              {
+                "text": "Interdire d'exporter un logiciel de chiffrement",
+                "category": "Contrôle d'import/export"
+              },
+              {
+                "text": "Exiger que les données des citoyens soient stockées dans le pays",
+                "category": "Localisation des données"
+              },
+              {
+                "text": "Interdire de faire des affaires avec une entreprise désignée",
+                "category": "Sanction"
+              },
+              {
+                "text": "Envoyer par mail un plan de missile à l'étranger sans autorisation",
+                "category": "Contrôle d'import/export"
+              },
+              {
+                "text": "Obliger un site à héberger ses serveurs dans le pays",
+                "category": "Localisation des données"
+              },
+              {
+                "text": "Interdire toute affaire avec un pays pendant un conflit",
+                "category": "Sanction"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pi-export-8",
+          "type": "flash",
+          "question": "C'est quoi la localisation des données (data localization) ?",
+          "answer": "Exiger que certaines données soient traitées à l'intérieur des frontières d'un pays.",
+          "explanation": "Les données doivent rester à la maison, dans le pays.",
+          "explanation_more": "Les pays espèrent des données plus sûres, accessibles au gouvernement sur demande légale, et des centres de données installés chez eux. Source : domaine 1, « Transborder Data Flow ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-export-9",
+          "type": "cloze",
+          "question": "Plus de [[34]] pays ont une règle de localisation des données.",
+          "answer": "Plus de 34 pays ont une règle de localisation des données.",
+          "explanation": "Le chiffre à retenir : plus de 34 pays.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-export-10",
+          "type": "why",
+          "question": "Pourquoi des pays exigent-ils que certaines données soient traitées chez eux ?",
+          "answer": "Ils pensent que les données y seront plus sûres, accessibles au gouvernement sur demande légale, et que des centres de données s'installeront dans le pays.",
+          "explanation": "Après les révélations de Snowden sur la NSA, cette idée a pris de l'importance.",
+          "explanation_more": "Le manuel nuance : la localisation coûte cher, entre 0,7 et 1,7 % du PIB (la richesse produite par un pays) selon les estimations. Source : domaine 1.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-export-11",
+          "type": "flash",
+          "question": "Russie, 2015 : quelle règle sur les données ?",
+          "answer": "Les données collectées en Russie sur des citoyens russes doivent être stockées en Russie.",
+          "explanation": "Google, Apple et Twitter ont installé des moyens de calcul en Russie. LinkedIn a résisté et son service a été bloqué ou limité.",
+          "explanation_more": "Source : domaine 1, « Transborder Data Flow », section sur la Russie.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-export-12",
+          "type": "flash",
+          "question": "Chine : que demande l'article 37 de la loi sur la cybersécurité ?",
+          "answer": "Les opérateurs de réseaux des secteurs critiques doivent stocker en Chine les données collectées ou produites en Chine.",
+          "explanation": "Les données sur des citoyens chinois ne partent pas à l'étranger sans la permission du gouvernement chinois.",
+          "explanation_more": "Source : domaine 1, « Transborder Data Flow », section sur la Chine.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-export-13",
+          "type": "whatif",
+          "question": "Et si une entreprise de cloud stockait des données ITAR dans un pays étranger ?",
+          "answer": "Ce serait considéré comme une exportation, qui peut être interdite ou soumise à autorisation.",
+          "explanation": "Sous l'ITAR, ces données doivent rester aux États-Unis.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pi-export-14",
+          "type": "flash",
+          "question": "Que demande la loi chinoise de 2016 aux fournisseurs de technologies de l'information ?",
+          "answer": "Soumettre leurs produits au ministère de la Sécurité d'État pour une analyse technique. Le ministère peut demander le code source.",
+          "explanation": "Le code source est le texte du programme, écrit par les développeurs.",
+          "explanation_more": "Le manuel dit que la Russie et d'autres pays ont des attentes semblables. Source : domaine 1, « Import/Export Controls ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-export-15",
+          "type": "qcm",
+          "question": "En 2017, l'Union européenne a mis à jour son règlement sur les biens à double usage. Qu'a-t-elle ajouté ?",
+          "options": [
+            "Des contrôles sur les cyberarmes",
+            "Une interdiction du chiffrement",
+            "Une taxe sur les logiciels"
+          ],
+          "options_why": [
+            "",
+            "Le manuel ne parle pas d'une interdiction du chiffrement pour ce règlement.",
+            "Il s'agit de contrôles à l'export, pas d'une taxe."
+          ],
+          "answer": "Des contrôles sur les cyberarmes",
+          "explanation": "Le règlement de 2009 contrôle l'export, le transfert, le courtage et le transit des biens à double usage. En 2017, il a aussi visé les cyberarmes.",
+          "explanation_more": "Hors manuel : un bien à double usage peut servir à des buts civils et militaires. Le manuel écrit « ECPA No. 428/2009 » : il s'agit sans doute d'une coquille pour le règlement (CE) n° 428/2009.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pi-export-16",
+          "type": "flash",
+          "question": "Quelle entreprise a été interdite sur les ordinateurs du gouvernement américain en 2017 ?",
+          "answer": "Kaspersky Labs, pour des raisons de sécurité.",
+          "explanation": "Une loi a décidé que ses produits ne seraient pas autorisés sur les ordinateurs du gouvernement.",
+          "explanation_more": "Source : domaine 1, « Import/Export Controls ».",
+          "retention_goal": "3m"
+        }
+      ]
+    }
+  ]
+}

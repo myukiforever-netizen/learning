@@ -1,0 +1,1682 @@
+{
+  "id": "d1-m09-continuite",
+  "name": "D1.9 La continuité d'activité",
+  "galaxie": { "teinte": 214, "ambiance": "tendu" },
+  "concepts": [
+    {
+      "id": "d1-cont-bc",
+      "name": "La continuité et la reprise (business continuity, disaster recovery)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Quand la lumière s'éteint",
+          "paragraphes": [
+            "Un matin, une panne de courant éteint tout ton collège. Plus de lumière, plus d'ordinateurs, plus de sonnerie.",
+            "Pourtant, les cours continuent dans la cour, avec des feuilles et des crayons. Pendant ce temps, des techniciens réparent le courant.",
+            "Deux choses se passent en même temps : on garde l'essentiel en marche, et on répare. En entreprise, ce sont deux plans différents : la continuité d'activité (business continuity) et la reprise après sinistre (disaster recovery)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Les profs et les techniciens",
+          "comme": "Au collège, une équipe fait la classe malgré la panne. Une autre équipe répare le courant pour revenir à la normale.",
+          "enVrai": "La continuité d'activité (BC) garde les fonctions essentielles en marche pendant la crise. La reprise après sinistre (DR) remet les systèmes en état. Un sinistre (disaster) est un événement grave qui interrompt le travail, comme un incendie. L'image s'arrête ici : une entreprise prépare ces plans avant la crise, pas pendant."
+        },
+        {
+          "type": "predire",
+          "question": "Un ransomware bloque tous les ordinateurs d'une boutique en ligne. Quel plan faut-il lancer ?",
+          "options": [
+            "Seulement le plan de reprise",
+            "Seulement le plan de continuité",
+            "Les deux, en même temps"
+          ],
+          "answer": "Les deux, en même temps",
+          "explanation": "Le manuel dit que les deux démarrent ensemble : l'un garde l'essentiel en marche, l'autre remet les systèmes d'aplomb. Chacune des deux autres réponses oublie la moitié du travail."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un hôpital et sa panne informatique",
+          "texte": "Le dossier des patients devient inaccessible. Les infirmières passent aux dossiers sur papier : c'est la continuité, les soins ne s'arrêtent pas. L'équipe informatique, elle, remet le système en marche : c'est la reprise."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cont-bc-bcp-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « business continuity plan (BCP) »",
+          "answer": "A business continuity plan (BCP) is a methodology and set of protocols that deals with allowing an organization to keep their key business functions running in the event of a crisis; this is sometimes referred to as continuity of operations (COOP).\n\nTraduction : Un plan de continuité d'activité (BCP) est une méthode et un ensemble de protocoles qui permettent à une organisation de garder ses fonctions essentielles en marche en cas de crise ; on parle parfois de continuité des opérations (COOP).",
+          "explanation": "Un protocole est une suite d'étapes écrites à suivre. Ici, elles servent à garder l'essentiel en marche.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-bcp-def2",
+          "type": "cloze",
+          "question": "A business continuity plan (BCP) is a methodology and set of protocols that deals with allowing an organization to keep their [[key]] business functions running in the event of a [[crisis]]; this is sometimes referred to as continuity of operations (COOP).",
+          "answer": "A business continuity plan (BCP) is a methodology and set of protocols that deals with allowing an organization to keep their key business functions running in the event of a crisis; this is sometimes referred to as continuity of operations (COOP).",
+          "explanation": "On protège les fonctions clés pendant une crise.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-bcp-def3",
+          "type": "cloze",
+          "question": "A business continuity plan (BCP) is a [[methodology and set of protocols]] that deals with [[allowing an organization to keep]] their key business functions running [[in the event of a crisis]]; this is sometimes referred to as continuity of operations (COOP).",
+          "answer": "A business continuity plan (BCP) is a methodology and set of protocols that deals with allowing an organization to keep their key business functions running in the event of a crisis; this is sometimes referred to as continuity of operations (COOP).",
+          "explanation": "Trois blocs : une méthode écrite, le but (garder les fonctions en marche), et le moment (en cas de crise).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-bcp-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle du « business continuity plan (BCP) » (en anglais).",
+          "answer": "A business continuity plan (BCP) is a methodology and set of protocols that deals with allowing an organization to keep their key business functions running in the event of a crisis; this is sometimes referred to as continuity of operations (COOP).\n\nTraduction : Un plan de continuité d'activité (BCP) est une méthode et un ensemble de protocoles qui permettent à une organisation de garder ses fonctions essentielles en marche en cas de crise ; on parle parfois de continuité des opérations (COOP).",
+          "explanation": "Pense au collège pendant la panne : les cours continuent. Compare, repère ce qui manque, recommence demain.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-drp-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « disaster recovery plan (DRP) »",
+          "answer": "A disaster recovery plan (DRP) is the set of processes that deal with restoring your information systems and operations, securely and efficiently, after a disruptive event occurs.\n\nTraduction : Un plan de reprise après sinistre (DRP) est l'ensemble des processus qui permettent de remettre en état les systèmes d'information et les opérations, de façon sûre et efficace, après un événement perturbateur.",
+          "explanation": "Pense à l'équipe technique qui répare : elle remet tout en état après la panne.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-drp-def2",
+          "type": "cloze",
+          "question": "A disaster recovery plan (DRP) is the set of [[processes]] that deal with [[restoring]] your information systems and operations, securely and efficiently, after a disruptive event occurs.",
+          "answer": "A disaster recovery plan (DRP) is the set of processes that deal with restoring your information systems and operations, securely and efficiently, after a disruptive event occurs.",
+          "explanation": "Des processus pour restaurer, c'est-à-dire remettre en état.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-drp-def3",
+          "type": "cloze",
+          "question": "A disaster recovery plan (DRP) is [[the set of processes]] that deal with [[restoring your information systems and operations]], securely and efficiently, [[after a disruptive event occurs]].",
+          "answer": "A disaster recovery plan (DRP) is the set of processes that deal with restoring your information systems and operations, securely and efficiently, after a disruptive event occurs.",
+          "explanation": "Trois blocs : des processus, ce qu'on remet en état (systèmes et opérations), et quand (après l'événement).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-drp-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle du « disaster recovery plan (DRP) » (en anglais).",
+          "answer": "A disaster recovery plan (DRP) is the set of processes that deal with restoring your information systems and operations, securely and efficiently, after a disruptive event occurs.\n\nTraduction : Un plan de reprise après sinistre (DRP) est l'ensemble des processus qui permettent de remettre en état les systèmes d'information et les opérations, de façon sûre et efficace, après un événement perturbateur.",
+          "explanation": "Retiens les deux adverbes : securely and efficiently, donc de façon sûre et efficace.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-sub-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « DR » par rapport à « BC »",
+          "answer": "DR is the subset of BC whose primary objective is to minimize business downtime and reclaim normal operations as soon as possible.\n\nTraduction : La reprise après sinistre (DR) est le sous-ensemble de la continuité d'activité (BC) dont l'objectif principal est de réduire l'arrêt de l'activité et de retrouver un fonctionnement normal le plus vite possible.",
+          "explanation": "La reprise est une partie de la continuité : celle qui ramène tout à la normale.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». « Downtime » veut dire temps d'arrêt.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-sub-def3",
+          "type": "cloze",
+          "question": "DR is the [[subset of BC]] whose primary objective is to [[minimize business downtime]] and [[reclaim normal operations]] as soon as possible.",
+          "answer": "DR is the subset of BC whose primary objective is to minimize business downtime and reclaim normal operations as soon as possible.",
+          "explanation": "Trois blocs : une partie de la continuité, qui réduit l'arrêt, et qui retrouve la normale.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bc-1",
+          "type": "duel",
+          "question": "Pendant une inondation, des employés travaillent depuis chez eux pendant que l'équipe technique remet le serveur en route. Le travail depuis chez eux relève de :",
+          "options": ["La continuité d'activité (BC)", "La reprise après sinistre (DR)"],
+          "answer": "La continuité d'activité (BC)",
+          "explanation": "Travailler depuis chez soi garde l'activité en marche. Remettre le serveur en route, c'est la reprise.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bc-2",
+          "type": "qcm",
+          "question": "Un incendie détruit le bureau d'une entreprise. Laquelle de ces actions fait partie de la reprise après sinistre (DR) ?",
+          "options": [
+            "Remettre en état les systèmes informatiques détruits",
+            "Installer les employés dans un bureau provisoire",
+            "Prévenir les clients que les commandes passent par téléphone",
+            "Continuer à livrer les clients depuis un autre entrepôt"
+          ],
+          "options_why": [
+            "",
+            "Cela permet aux gens de travailler pendant la crise : c'est la continuité.",
+            "Cela garde l'activité en marche pendant la crise : c'est la continuité.",
+            "Cela garde l'essentiel de l'activité en marche : c'est la continuité."
+          ],
+          "answer": "Remettre en état les systèmes informatiques détruits",
+          "explanation": "La reprise s'occupe de remettre les systèmes et les données en état.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. Le manuel cite l'abri, par exemple un autre lieu de travail, parmi les besoins des personnes dans le plan de continuité.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bc-3",
+          "type": "flash",
+          "question": "Que veut dire COOP ?",
+          "answer": "Continuity of operations : la continuité des opérations, un autre nom du plan de continuité d'activité (BCP).",
+          "explanation": "Deux noms pour la même idée : garder les opérations en marche.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bc-4",
+          "type": "why",
+          "question": "Pourquoi la continuité et la reprise démarrent-elles en même temps lors d'un sinistre ?",
+          "answer": "Parce que l'entreprise doit garder son essentiel en marche pendant qu'on répare. Attendre la fin de la réparation arrêterait l'activité trop longtemps.",
+          "explanation": "L'une protège l'activité pendant la crise, l'autre ramène à la normale. Les deux sont nécessaires tout de suite.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bc-5",
+          "type": "cloze",
+          "question": "Le plan de reprise (DRP) se concentre sur les [[systèmes]], les applications et les [[données]].",
+          "answer": "Le plan de reprise (DRP) se concentre sur les systèmes, les applications et les données.",
+          "explanation": "Une application est un programme. La reprise vise surtout la technique, pas toute l'entreprise.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bc-6",
+          "type": "sort",
+          "question": "Dans quelle boîte va chaque action ?",
+          "answer": "Continuité (BC) : caisse manuelle, bureau provisoire, prévenir les clients. Reprise (DR) : restaurer le serveur, réparer le réseau, réinstaller les applications.",
+          "explanation": "Demande-toi : est-ce que l'action garde l'activité en marche (BC), ou remet la technique en état (DR) ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Continuité (BC)", "Reprise (DR)"],
+            "items": [
+              { "text": "Les caissiers passent à la caisse manuelle", "category": "Continuité (BC)" },
+              { "text": "Les employés travaillent dans un bureau provisoire", "category": "Continuité (BC)" },
+              { "text": "On prévient tous les clients de la situation", "category": "Continuité (BC)" },
+              { "text": "Restaurer le serveur des commandes depuis une sauvegarde", "category": "Reprise (DR)" },
+              { "text": "Réparer le réseau détruit", "category": "Reprise (DR)" },
+              { "text": "Réinstaller les applications perdues", "category": "Reprise (DR)" }
+            ]
+          }
+        },
+        {
+          "id": "d1-cont-bc-7",
+          "type": "whatif",
+          "question": "Et si une entreprise n'avait qu'un plan de reprise, sans plan de continuité ?",
+          "answer": "Elle saurait réparer ses systèmes, mais personne ne saurait quoi faire en attendant. L'activité essentielle s'arrêterait pendant toute la réparation.",
+          "explanation": "La reprise ramène à la normale, mais elle prend du temps. Il faut un plan pour tenir pendant ce temps.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bc-8",
+          "type": "flash",
+          "question": "Donne deux types de crises que couvre un plan de continuité.",
+          "answer": "Des attaques, comme un ransomware ou un déni de service distribué (DDoS : lancé depuis beaucoup d'ordinateurs à la fois). Ou des catastrophes naturelles qui arrêtent un centre de données (datacenter : un grand local plein de serveurs).",
+          "explanation": "Le plan de continuité couvre toutes les crises, de l'attaque informatique à la catastrophe naturelle.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note sur BCP et DRP.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bc-9",
+          "type": "duel",
+          "question": "Quel plan couvre toutes les fonctions importantes de l'entreprise, pas seulement l'informatique ?",
+          "options": ["Le plan de continuité (BCP)", "Le plan de reprise (DRP)"],
+          "answer": "Le plan de continuité (BCP)",
+          "explanation": "Le BCP est large : toutes les fonctions critiques. Le DRP est plus étroit : systèmes, applications et données.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bc-10",
+          "type": "problem",
+          "question": "Un pirate bloque le site d'une librairie en ligne. Donne un exemple d'action de continuité et un exemple d'action de reprise.",
+          "answer": "Continuité : prendre les commandes par téléphone pendant la panne. Reprise : restaurer le site depuis une sauvegarde et remettre les serveurs en état.",
+          "explanation": "La continuité garde les ventes possibles. La reprise remet le site en route.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bc-11",
+          "type": "flash",
+          "question": "Selon le manuel, la continuité d'activité comprend les mesures préventives (prises avant le problème) et quoi d'autre ?",
+          "answer": "La gestion des employés : tout ce qui aide l'entreprise à rester en état de marche pendant un sinistre.",
+          "explanation": "Les mesures préventives s'ajoutent à la façon de gérer les personnes pendant la crise.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, définition du BCP.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cont-bia",
+      "name": "L'analyse d'impact (business impact analysis, BIA)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le camion trop petit",
+          "paragraphes": [
+            "Tu déménages, mais le camion est petit. Tout ne rentrera pas dans le premier voyage.",
+            "Tu classes tes affaires : le lit et le frigo d'abord, les cartons de décoration après. Pour chaque objet, tu te demandes ce qui se passe si tu ne l'as pas ce soir.",
+            "Une entreprise fait la même chose avant une crise. Cet exercice s'appelle l'analyse d'impact (business impact analysis, BIA)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Les affaires du déménagement",
+          "comme": "Pour chaque objet, tu notes à quel point il t'est indispensable. Sans le lit, tu dors mal. Sans les cartons de décoration, personne ne le remarque.",
+          "enVrai": "L'entreprise liste ses fonctions critiques (critical business functions, CBF) : celles sans lesquelles l'activité s'arrête vraiment. Pour chacune, elle mesure ce que coûterait une interruption. Ensuite elle décide quoi protéger en premier. L'image s'arrête ici : dans une entreprise, plusieurs personnes décident ensemble."
+        },
+        {
+          "type": "predire",
+          "question": "Qui devrait aider à trouver les fonctions critiques d'une entreprise ?",
+          "options": [
+            "Seulement l'équipe informatique",
+            "Un groupe : propriétaires des systèmes, experts, clients et fournisseurs",
+            "Seulement le directeur"
+          ],
+          "answer": "Un groupe : propriétaires des systèmes, experts, clients et fournisseurs",
+          "explanation": "Chacun voit l'entreprise sous un angle différent. L'informatique ne voit pas tout, le directeur non plus."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une pizzeria et son four",
+          "texte": "Une pizzeria liste ce dont elle a besoin. Les cuisiniers : le personnel. La prise des commandes : un processus. Le logiciel de caisse : un système. Le four : un autre actif, c'est-à-dire un objet de valeur pour l'entreprise. Sans le four, plus de pizzas : il est critique. La lettre d'information du mois ne l'est pas."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cont-bia-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « business impact analysis (BIA) »",
+          "answer": "According to the ISO, a business impact analysis is \"the process of analyzing the impact over time of a disruption on the organization.\"\n\nTraduction : Selon l'ISO, une analyse d'impact sur l'activité est « le processus qui consiste à analyser l'impact, dans le temps, d'une interruption sur l'organisation ».",
+          "explanation": "Pense au déménagement : on regarde ce que coûte chaque manque, et pendant combien de temps.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». L'ISO est l'organisation internationale de normalisation. À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bia-def2",
+          "type": "cloze",
+          "question": "According to the ISO, a business impact analysis is \"the [[process]] of analyzing the [[impact]] over time of a disruption on the organization.\"",
+          "answer": "According to the ISO, a business impact analysis is \"the process of analyzing the impact over time of a disruption on the organization.\"",
+          "explanation": "Un processus qui analyse l'impact : c'est le coeur de la BIA.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bia-def3",
+          "type": "cloze",
+          "question": "According to the ISO, a business impact analysis is \"the [[process of analyzing]] the [[impact over time]] of [[a disruption on the organization]].\"",
+          "answer": "According to the ISO, a business impact analysis is \"the process of analyzing the impact over time of a disruption on the organization.\"",
+          "explanation": "Trois blocs : analyser, l'impact dans le temps, d'une interruption sur l'organisation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bia-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de la « business impact analysis » selon l'ISO (en anglais).",
+          "answer": "According to the ISO, a business impact analysis is \"the process of analyzing the impact over time of a disruption on the organization.\"\n\nTraduction : Selon l'ISO, une analyse d'impact sur l'activité est « le processus qui consiste à analyser l'impact, dans le temps, d'une interruption sur l'organisation ».",
+          "explanation": "Les trois mots importants : process, impact over time, disruption.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bia-aide-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : à quoi sert la « BIA »",
+          "answer": "In other words, a BIA helps an organization identify its essential business functions and understand the impact that a disaster would have on each of those functions; the BIA provides the primary justification for the business continuity plan and its requirements.\n\nTraduction : Autrement dit, une BIA aide l'organisation à identifier ses fonctions essentielles et à comprendre l'impact qu'un sinistre aurait sur chacune ; la BIA est la principale justification du plan de continuité et de ses exigences.",
+          "explanation": "La BIA explique pourquoi on a besoin du plan : elle montre ce qui est en jeu.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bia-aide-def3",
+          "type": "cloze",
+          "question": "In other words, a BIA helps an organization [[identify its essential business functions]] and [[understand the impact]] that a disaster would have on each of those functions; the BIA provides [[the primary justification]] for the business continuity plan and its requirements.",
+          "answer": "In other words, a BIA helps an organization identify its essential business functions and understand the impact that a disaster would have on each of those functions; the BIA provides the primary justification for the business continuity plan and its requirements.",
+          "explanation": "Deux rôles : repérer les fonctions essentielles et leur impact, puis justifier le plan.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bia-1",
+          "type": "sort",
+          "question": "Dans quelle famille de fonctions critiques range-t-on chaque élément ?",
+          "answer": "Personnel : les infirmières. Processus : la prise de commandes par téléphone, la facturation. Systèmes : le logiciel de paie, le serveur de réservations. Autres actifs : le camion de livraison.",
+          "explanation": "Le manuel liste quatre familles : le personnel, les processus, les systèmes et applications, et les autres actifs.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « Personnel, Business processes, Information systems and applications, Other assets ».",
+          "data": {
+            "mode": "classer",
+            "categories": ["Personnel", "Processus", "Systèmes et applications", "Autres actifs"],
+            "items": [
+              { "text": "Les infirmières d'un hôpital", "category": "Personnel" },
+              { "text": "La prise de commandes par téléphone", "category": "Processus" },
+              { "text": "La façon de faire la facturation chaque mois", "category": "Processus" },
+              { "text": "Le logiciel de paie", "category": "Systèmes et applications" },
+              { "text": "Le serveur des réservations", "category": "Systèmes et applications" },
+              { "text": "Le camion de livraison", "category": "Autres actifs" }
+            ]
+          }
+        },
+        {
+          "id": "d1-cont-bia-2",
+          "type": "duel",
+          "question": "Quel document explique pourquoi l'entreprise a besoin d'un plan de continuité ?",
+          "options": ["L'analyse d'impact (BIA)", "Le plan de continuité (BCP)"],
+          "answer": "L'analyse d'impact (BIA)",
+          "explanation": "La BIA montre ce qui est en jeu. Le BCP est la réponse construite à partir d'elle.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bia-3",
+          "type": "flash",
+          "question": "Que veut dire CBF ?",
+          "answer": "Critical business function : une fonction critique de l'entreprise, sans laquelle son activité est vraiment menacée.",
+          "explanation": "Le mot clé est business : on cherche ce qui est vital pour l'activité de l'entreprise.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section sur la BIA.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-bia-4",
+          "type": "why",
+          "question": "Pourquoi faut-il l'avis des clients et des fournisseurs pour trouver les fonctions critiques ?",
+          "answer": "Chacun voit l'entreprise sous un angle différent. Un client voit tout de suite le service dont il ne peut pas se passer.",
+          "explanation": "Une seule personne oublie facilement des fonctions. Plusieurs points de vue donnent une liste plus complète.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : propriétaires des systèmes, experts, clients et fournisseurs aident à trouver les fonctions critiques.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bia-5",
+          "type": "cloze",
+          "question": "Les fonctions critiques comptent le [[personnel]], les processus, les systèmes et les autres [[actifs]].",
+          "answer": "Les fonctions critiques comptent le personnel, les processus, les systèmes et les autres actifs.",
+          "explanation": "Quatre familles : les gens, les façons de travailler, l'informatique, et tout le reste.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bia-6",
+          "type": "whatif",
+          "question": "Et si une entreprise saute l'analyse d'impact et protège tout de la même façon ?",
+          "answer": "Elle dépense trop pour des fonctions peu importantes, et pas assez pour celles qui comptent vraiment. Sans priorités, le budget est mal réparti.",
+          "explanation": "La BIA sert à choisir : on protège d'abord ce qui fait vraiment mal si on le perd.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bia-7",
+          "type": "qcm",
+          "question": "Une entreprise vient de dresser la liste de ses fonctions critiques. Que doit-elle faire ensuite pour chacune d'elles ?",
+          "options": [
+            "Chercher ce qui pourrait mal tourner et avec quelle probabilité",
+            "Acheter du matériel neuf pour chacune",
+            "Supprimer celles qui rapportent le moins",
+            "Embaucher du personnel en plus pour chacune"
+          ],
+          "options_why": [
+            "",
+            "On n'achète rien avant de savoir ce qui est vraiment menacé.",
+            "Critique ne veut pas dire rentable : une fonction peut être vitale sans rapporter beaucoup.",
+            "Embaucher ne règle pas le problème tant qu'on ne sait pas ce qui est menacé."
+          ],
+          "answer": "Chercher ce qui pourrait mal tourner et avec quelle probabilité",
+          "explanation": "Le manuel demande une analyse de risque pour chaque fonction : ses points faibles, la probabilité d'un problème et l'impact acceptable.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-bia-8",
+          "type": "sort",
+          "question": "Remets les étapes de la BIA dans l'ordre.",
+          "answer": "1 Former l'équipe et fixer la portée et le budget. 2 S'assurer du soutien de la direction. 3 Identifier les fonctions critiques. 4 Analyser leurs points faibles et l'impact acceptable.",
+          "explanation": "On prépare d'abord (équipe, budget, soutien), puis on liste les fonctions, puis on analyse chacune.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Former l'équipe du projet, fixer la portée et le budget",
+              "S'assurer du soutien de la direction",
+              "Identifier les fonctions critiques",
+              "Analyser les points faibles et l'impact acceptable de chacune"
+            ]
+          }
+        },
+        {
+          "id": "d1-cont-bia-9",
+          "type": "flash",
+          "question": "Pourquoi le soutien de la direction est-il nécessaire pour un plan de continuité ?",
+          "answer": "Le plan ne rapporte rien de visible tout de suite. Il faut donc que la direction accepte de financer l'argent, le personnel et la vision stratégique.",
+          "explanation": "Sans soutien d'en haut, personne ne paie pour un danger qui n'est pas encore arrivé.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « BCP does not yield an immediate or tangible return ».",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cont-mtd",
+      "name": "Le temps d'arrêt maximal tolérable (maximum tolerable downtime, MTD)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La console qui plante",
+          "paragraphes": [
+            "Tu joues en ligne avec trois amis. Au milieu de la partie, ta console plante. L'écran devient noir.",
+            "Tes amis t'attendent un moment. Au bout de dix minutes, ça leur semble long. Au bout d'une heure, ils lancent une autre partie sans toi et ne t'invitent plus.",
+            "Il existe donc une durée d'attente maximale, au-delà de laquelle le dommage devient durable. En entreprise, c'est le temps d'arrêt maximal tolérable (maximum tolerable downtime, MTD)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La patience de tes amis",
+          "comme": "Pendant un moment, tes amis acceptent d'attendre. Puis il arrive un moment où ils partent pour de bon.",
+          "enVrai": "Une fonction critique (CBF) peut rester arrêtée un certain temps sans grand mal. Passé la limite, le dommage devient durable : clients perdus, entreprise menacée. Cette limite est le MTD. L'image s'arrête ici : la limite est fixée par le propriétaire du système (system owner), la personne responsable de la fonction."
+        },
+        {
+          "type": "predire",
+          "question": "Une boutique en ligne est arrêtée. Que représente son MTD ?",
+          "options": [
+            "Le temps que les techniciens prévoient pour réparer",
+            "Le temps maximum avant un dommage durable pour l'entreprise",
+            "La durée de la dernière panne"
+          ],
+          "answer": "Le temps maximum avant un dommage durable pour l'entreprise",
+          "explanation": "Le temps de réparation prévu est une autre mesure, que tu verras dans la planète suivante. Le MTD est une limite, pas une prévision."
+        },
+        {
+          "type": "exemple",
+          "titre": "La caisse de la boulangerie",
+          "texte": "Une boulangerie perd sa caisse enregistreuse à sept heures du matin. Les clients attendent un peu, puis vont chez le voisin. Si la caisse reste en panne plus de deux jours, beaucoup ne reviendront jamais. Ces deux jours sont le MTD de cette fonction (exemple inventé pour comprendre)."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cont-mtd-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « maximum tolerable downtime (MTD) »",
+          "answer": "Maximum tolerable downtime (MTD), or maximum acceptable outage (MAO), expresses the total length of time a critical business function can be unavailable without causing significant, long-term harm to the business; it is the longest time a CBF can remain disabled before it threatens the organization's long-term survival.\n\nTraduction : Le temps d'arrêt maximal tolérable (MTD), ou interruption maximale acceptable (MAO), exprime la durée totale pendant laquelle une fonction critique peut être indisponible sans causer de dommage grave et durable à l'entreprise ; c'est le temps le plus long qu'elle peut rester à l'arrêt avant de menacer la survie de l'organisation à long terme.",
+          "explanation": "Pense à la patience de tes amis : au-delà de la limite, ils partent pour de bon.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-def2",
+          "type": "cloze",
+          "question": "Maximum tolerable downtime (MTD), or maximum acceptable outage (MAO), expresses the total length of time a critical business function can be [[unavailable]] without causing significant, long-term harm to the business; it is the longest time a CBF can remain disabled before it threatens the organization's long-term [[survival]].",
+          "answer": "Maximum tolerable downtime (MTD), or maximum acceptable outage (MAO), expresses the total length of time a critical business function can be unavailable without causing significant, long-term harm to the business; it is the longest time a CBF can remain disabled before it threatens the organization's long-term survival.",
+          "explanation": "Deux idées : la fonction est indisponible, et la survie de l'entreprise est en jeu.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-def3",
+          "type": "cloze",
+          "question": "Maximum tolerable downtime (MTD), or maximum acceptable outage (MAO), expresses [[the total length of time]] a critical business function can be unavailable [[without causing significant, long-term harm]] to the business; it is [[the longest time a CBF can remain disabled]] before it threatens the organization's long-term survival.",
+          "answer": "Maximum tolerable downtime (MTD), or maximum acceptable outage (MAO), expresses the total length of time a critical business function can be unavailable without causing significant, long-term harm to the business; it is the longest time a CBF can remain disabled before it threatens the organization's long-term survival.",
+          "explanation": "Trois blocs : une durée totale, sans dommage durable, et le temps le plus long à l'arrêt.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle du « maximum tolerable downtime (MTD) » (en anglais).",
+          "answer": "Maximum tolerable downtime (MTD), or maximum acceptable outage (MAO), expresses the total length of time a critical business function can be unavailable without causing significant, long-term harm to the business; it is the longest time a CBF can remain disabled before it threatens the organization's long-term survival.\n\nTraduction : Le temps d'arrêt maximal tolérable (MTD), ou interruption maximale acceptable (MAO), exprime la durée totale pendant laquelle une fonction critique peut être indisponible sans causer de dommage grave et durable à l'entreprise ; c'est le temps le plus long qu'elle peut rester à l'arrêt avant de menacer la survie de l'organisation à long terme.",
+          "explanation": "C'est une longue phrase : retiens les deux moitiés, avant le point-virgule et après.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-owner-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : qui définit le « MTD »",
+          "answer": "MTD must be defined by the system owner, who is ultimately responsible to the organization for the proper operation of the CBF.\n\nTraduction : Le MTD doit être défini par le propriétaire du système, qui est responsable en dernier ressort devant l'organisation du bon fonctionnement de la fonction critique.",
+          "explanation": "Celui qui répond de la fonction décide jusqu'où elle peut rester arrêtée.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-owner-def3",
+          "type": "cloze",
+          "question": "MTD must be defined by [[the system owner]], who is ultimately [[responsible to the organization]] for [[the proper operation of the CBF]].",
+          "answer": "MTD must be defined by the system owner, who is ultimately responsible to the organization for the proper operation of the CBF.",
+          "explanation": "Trois blocs : le propriétaire du système, sa responsabilité envers l'organisation, et le bon fonctionnement de la fonction.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-exceed-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : dépasser le « MTD »",
+          "answer": "Exceeding the MTD is an expression of unacceptable risk by the business owner.\n\nTraduction : Dépasser le MTD exprime un risque inacceptable de la part du propriétaire de l'activité.",
+          "explanation": "Dépasser la limite, c'est aller au-delà de ce que le responsable de l'activité (business owner) peut accepter.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-exceed-def3",
+          "type": "cloze",
+          "question": "[[Exceeding the MTD]] is an expression of [[unacceptable risk]] by [[the business owner]].",
+          "answer": "Exceeding the MTD is an expression of unacceptable risk by the business owner.",
+          "explanation": "Trois blocs : dépasser le MTD, un risque inacceptable, le propriétaire de l'activité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-1",
+          "type": "duel",
+          "question": "Qui fixe le MTD d'une fonction critique ?",
+          "options": ["Le propriétaire du système (system owner)", "Les techniciens qui font la réparation"],
+          "answer": "Le propriétaire du système (system owner)",
+          "explanation": "Le propriétaire répond de la fonction devant l'entreprise : il sait ce que coûte un arrêt trop long.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-mtd-2",
+          "type": "flash",
+          "question": "Quel est l'autre nom du MTD ?",
+          "answer": "MAO : maximum acceptable outage, l'interruption maximale acceptable.",
+          "explanation": "Deux sigles pour la même limite : MTD (tolerable downtime) ou MAO (acceptable outage).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-3",
+          "type": "qcm",
+          "question": "Une entreprise estime qu'après deux jours d'arrêt de sa boutique en ligne, beaucoup de clients partiront pour toujours. Que représentent ces deux jours ?",
+          "options": [
+            "Son temps d'arrêt maximal tolérable (MTD)",
+            "La durée normale d'une réparation",
+            "Le temps entre deux sauvegardes",
+            "Le délai pour prévenir les clients"
+          ],
+          "options_why": [
+            "",
+            "Une réparation dure le temps qu'elle dure. Ici, il s'agit d'une limite à ne pas dépasser.",
+            "Le temps entre deux sauvegardes concerne les données perdues, pas la durée d'arrêt.",
+            "Prévenir les clients est une action du plan, pas la limite avant le dommage durable."
+          ],
+          "answer": "Son temps d'arrêt maximal tolérable (MTD)",
+          "explanation": "Les deux jours sont la limite avant un dommage durable. C'est exactement la définition du MTD.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-mtd-4",
+          "type": "why",
+          "question": "Pourquoi le MTD est-il fixé par le propriétaire du système et pas par les techniciens ?",
+          "answer": "Le propriétaire répond du bon fonctionnement de la fonction devant l'entreprise. Il sait ce que coûte un arrêt, alors que les techniciens voient surtout la réparation.",
+          "explanation": "La limite dépend de la valeur de la fonction pour l'activité, pas de la difficulté technique.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-mtd-5",
+          "type": "cloze",
+          "question": "Le MTD est le temps le plus [[long]] d'arrêt avant de menacer la [[survie]] de l'entreprise.",
+          "answer": "Le MTD est le temps le plus long d'arrêt avant de menacer la survie de l'entreprise.",
+          "explanation": "Pense à la patience de tes amis : un maximum, pas une moyenne.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-mtd-6",
+          "type": "whatif",
+          "question": "Et si une fonction critique reste arrêtée plus longtemps que son MTD ?",
+          "answer": "Le dommage devient grave et durable, et la survie de l'entreprise est menacée. Dépasser le MTD, c'est un risque que l'entreprise n'a pas voulu accepter.",
+          "explanation": "Le MTD est la dernière frontière avant le dommage durable.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-mtd-7",
+          "type": "duel",
+          "question": "Le MTD est plutôt :",
+          "options": ["Une limite à ne pas dépasser", "Une prévision de la durée de la panne"],
+          "answer": "Une limite à ne pas dépasser",
+          "explanation": "Une prévision dit ce qu'on attend. Une limite dit ce qu'on refuse de dépasser. Le MTD est une limite.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-mtd-8",
+          "type": "problem",
+          "question": "Une pizzeria perd son système de commandes. Si l'arrêt dépasse quatre heures un samedi soir, les clients ne reviendront plus. Comment s'appelle cette limite, et qui la fixe ?",
+          "answer": "C'est le MTD (maximum tolerable downtime). C'est le propriétaire du système qui la fixe, car il est responsable du bon fonctionnement de la fonction.",
+          "explanation": "Quatre heures est la limite avant un dommage durable. Elle vient de l'activité, pas de la technique.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cont-rto",
+      "name": "Le temps de reprise visé (recovery time objective, RTO)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Je reviens dans dix minutes",
+          "paragraphes": [
+            "Ta console a planté. Tu la rallumes, tu relances le jeu, tu rejoins tes amis. Ça te prend six minutes.",
+            "Tes amis demandent : « Tu reviens dans combien de temps ? » Tu promets : « Dix minutes maximum. »",
+            "Cette promesse est le temps de reprise visé (recovery time objective, RTO) : le temps qu'on se donne pour redémarrer."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La promesse à tes amis",
+          "comme": "Tu ne promets pas le temps qui te ferait perdre tes amis. Tu promets plus court, pour rester bien en dessous de leur patience.",
+          "enVrai": "Le RTO est le temps que l'entreprise se donne pour remettre une fonction en route. Il doit rester plus court que le MTD, la limite à ne pas dépasser. Si le RTO est trop long, l'entreprise ajoute des mesures de protection (des contrôles) pour le raccourcir."
+        },
+        {
+          "type": "predire",
+          "question": "Comment le RTO d'une fonction se compare-t-il à son MTD ?",
+          "options": [
+            "Plus court ou égal au MTD",
+            "Plus long que le MTD",
+            "Sans aucun rapport avec le MTD"
+          ],
+          "answer": "Plus court ou égal au MTD",
+          "explanation": "Si le redémarrage prenait plus de temps que la limite avant le dommage durable, le dommage serait déjà fait."
+        },
+        {
+          "type": "exemple",
+          "titre": "La boutique en ligne",
+          "texte": "Une boutique en ligne a un MTD de vingt-quatre heures. Son équipe se donne un RTO de quatre heures : en quatre heures, le site doit de nouveau prendre des commandes. Elle garde ainsi une grande marge avant le point de non-retour (chiffres inventés pour comprendre)."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cont-rto-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « recovery time objective (RTO) »",
+          "answer": "Recovery time objective (RTO) is the planned time necessary to restore a system to the point where it meets the minimum service expectations of the system owner.\n\nTraduction : Le temps de reprise visé (RTO) est le temps prévu nécessaire pour remettre un système au point où il répond aux attentes minimales de service de son propriétaire.",
+          "explanation": "Pense à ta promesse : le temps prévu pour être de nouveau utilisable.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-def2",
+          "type": "cloze",
+          "question": "Recovery time objective (RTO) is the [[planned]] time necessary to [[restore]] a system to the point where it meets the minimum service expectations of the system owner.",
+          "answer": "Recovery time objective (RTO) is the planned time necessary to restore a system to the point where it meets the minimum service expectations of the system owner.",
+          "explanation": "Un temps prévu à l'avance, pour remettre le système en état.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-def3",
+          "type": "cloze",
+          "question": "Recovery time objective (RTO) is the planned time necessary to [[restore a system]] to the point where it meets [[the minimum service expectations]] of [[the system owner]].",
+          "answer": "Recovery time objective (RTO) is the planned time necessary to restore a system to the point where it meets the minimum service expectations of the system owner.",
+          "explanation": "Trois blocs : remettre le système en état, le niveau minimum de service, et la personne qui l'attend.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle du « recovery time objective (RTO) » (en anglais).",
+          "answer": "Recovery time objective (RTO) is the planned time necessary to restore a system to the point where it meets the minimum service expectations of the system owner.\n\nTraduction : Le temps de reprise visé (RTO) est le temps prévu nécessaire pour remettre un système au point où il répond aux attentes minimales de service de son propriétaire.",
+          "explanation": "Retiens : planned time, restore, minimum service expectations.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-max-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le « RTO » vu comme un maximum",
+          "answer": "In other words, RTO is the maximum period of time within which a CBF must be restored after a disruption to avoid unacceptable business consequences.\n\nTraduction : Autrement dit, le RTO est la période maximale dans laquelle une fonction critique doit être rétablie après une interruption, pour éviter des conséquences inacceptables pour l'activité.",
+          "explanation": "C'est la même idée, dite autrement : un délai maximum pour repartir.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-max-def3",
+          "type": "cloze",
+          "question": "In other words, RTO is [[the maximum period of time]] within which a CBF must be [[restored after a disruption]] to avoid [[unacceptable business consequences]].",
+          "answer": "In other words, RTO is the maximum period of time within which a CBF must be restored after a disruption to avoid unacceptable business consequences.",
+          "explanation": "Trois blocs : la période maximale, rétablir après l'interruption, et éviter les conséquences inacceptables.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-mtd-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le lien entre le « RTO » et le « MTD »",
+          "answer": "Since unacceptable disaster occurs when the MTD is exceeded, the RTO, by definition, must be less than or equal to the MTD.\n\nTraduction : Puisque le désastre inacceptable survient quand le MTD est dépassé, le RTO doit, par définition, être inférieur ou égal au MTD.",
+          "explanation": "Le RTO doit toujours finir avant la limite du MTD.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-mtd-def3",
+          "type": "cloze",
+          "question": "Since [[unacceptable disaster]] occurs when [[the MTD is exceeded]], the RTO, by definition, must be [[less than or equal]] to the MTD.",
+          "answer": "Since unacceptable disaster occurs when the MTD is exceeded, the RTO, by definition, must be less than or equal to the MTD.",
+          "explanation": "Trois blocs : le désastre inacceptable, le MTD dépassé, et la règle RTO inférieur ou égal.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-1",
+          "type": "duel",
+          "question": "Le MTD d'une fonction est de dix heures. Un RTO de douze heures est-il acceptable ?",
+          "options": ["Non", "Oui"],
+          "answer": "Non",
+          "explanation": "Le RTO doit être inférieur ou égal au MTD. Douze heures dépassent la limite de dix heures.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rto-2",
+          "type": "qcm",
+          "question": "Une entreprise prévoit six heures pour remettre sa caisse en route. Sa limite avant dommage durable est de quatre heures. Que doit-elle faire ?",
+          "options": [
+            "Ajouter des mesures pour ramener le RTO sous la limite",
+            "Garder le plan tel quel, c'est presque bon",
+            "Reculer la limite jusqu'à six heures",
+            "Faire une sauvegarde de plus"
+          ],
+          "options_why": [
+            "",
+            "Presque ne suffit pas : le RTO doit être inférieur ou égal au MTD.",
+            "La limite vient de ce que l'entreprise peut supporter. On ne la déplace pas pour arranger le plan.",
+            "Une sauvegarde de plus ne raccourcit pas forcément le temps de reprise."
+          ],
+          "answer": "Ajouter des mesures pour ramener le RTO sous la limite",
+          "explanation": "Le manuel dit que le RTO s'ajuste en appliquant des contrôles supplémentaires pour rester dans le MTD.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rto-3",
+          "type": "flash",
+          "question": "Que veut dire RTO ?",
+          "answer": "Recovery time objective : le temps de reprise visé, le temps prévu pour remettre un système au niveau de service minimum.",
+          "explanation": "Time, c'est le temps : le RTO parle de durée pour repartir.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-4",
+          "type": "why",
+          "question": "Pourquoi le RTO doit-il être plus court que le MTD, ou égal ?",
+          "answer": "Le MTD est la limite avant un dommage durable. Si la reprise prend plus de temps que cette limite, le dommage est déjà fait.",
+          "explanation": "Le RTO est le but visé, le MTD est la limite à ne jamais franchir.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rto-5",
+          "type": "cloze",
+          "question": "Le RTO doit être [[inférieur]] ou égal au [[MTD]].",
+          "answer": "Le RTO doit être inférieur ou égal au MTD.",
+          "explanation": "Le RTO sert à rester en dessous de la limite.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rto-6",
+          "type": "whatif",
+          "question": "Et si le RTO prévu est trop long par rapport au MTD ?",
+          "answer": "L'entreprise doit ajouter des mesures de protection (des contrôles) pour raccourcir la reprise. Sinon, elle accepte le risque de dépasser sa limite.",
+          "explanation": "Chaque contrôle en plus coûte de l'argent. C'est un choix de l'entreprise.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rto-7",
+          "type": "flash",
+          "question": "Que signifie le fait que le propriétaire de l'activité ne veuille plus ajouter de contrôles ?",
+          "answer": "Il accepte le risque : il choisit de vivre avec une reprise plus lente plutôt que de payer plus.",
+          "explanation": "Arrêter d'ajouter des contrôles est une décision, pas un oubli.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « they have accepted the risk of operation ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rto-8",
+          "type": "sort",
+          "question": "Remets ces moments dans l'ordre sur la frise du temps.",
+          "answer": "1 L'incident arrête la fonction. 2 Le RTO : la fonction doit être repartie. 3 Le MTD : la limite avant le dommage durable.",
+          "explanation": "Le RTO arrive avant la limite. Si on dépasse le MTD, le dommage durable commence.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "L'incident arrête la fonction",
+              "Le RTO : la fonction doit être de nouveau en marche",
+              "Le MTD : la limite avant le dommage durable"
+            ]
+          }
+        },
+        {
+          "id": "d1-cont-rto-9",
+          "type": "problem",
+          "question": "Un hôpital fixe un MTD de deux heures pour son dossier des patients. Parmi 1 h 30, 2 h 30 et 3 h, quel RTO est cohérent ? Explique.",
+          "answer": "1 h 30. Seul un RTO inférieur ou égal à deux heures reste sous la limite du MTD.",
+          "explanation": "Les deux autres durées dépassent le MTD, donc le dommage durable serait déjà arrivé.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cont-rpo",
+      "name": "Le point de reprise visé (recovery point objective, RPO)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La sauvegarde automatique",
+          "paragraphes": [
+            "Ta console plante. Tu relances ton jeu. Surprise : ta partie est là, mais tu as perdu les dix dernières minutes.",
+            "Le jeu sauvegardait tout seul toutes les dix minutes. Ce qui s'est passé depuis la dernière sauvegarde a disparu.",
+            "Combien de minutes de jeu peux-tu accepter de perdre ? Cette limite s'appelle, en entreprise, le point de reprise visé (recovery point objective, RPO)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Plus on sauvegarde, moins on perd",
+          "comme": "Si le jeu sauvegarde chaque minute, tu perds peu quand la console plante. Mais la console doit travailler beaucoup plus.",
+          "enVrai": "Le RPO mesure la quantité de données qu'on accepte de perdre, exprimée en durée. Un RPO d'une heure veut dire : on peut perdre au plus la dernière heure de travail. Plus le RPO est court, plus il faut sauvegarder souvent. L'image s'arrête ici : une entreprise perd des commandes ou des paiements, pas seulement des minutes de jeu."
+        },
+        {
+          "type": "predire",
+          "question": "Une boutique sauvegarde ses commandes toutes les 24 heures. Elle tombe en panne à 18 heures. Que peut-elle perdre au pire ?",
+          "options": [
+            "Les commandes de la dernière journée",
+            "Seulement la dernière minute",
+            "Rien : tout est déjà sauvegardé"
+          ],
+          "answer": "Les commandes de la dernière journée",
+          "explanation": "Tout ce qui est arrivé depuis la dernière sauvegarde est perdu. Plus on sauvegarde rarement, plus la perte possible est grande."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une banque et une librairie",
+          "texte": "Une banque ne peut perdre aucune opération : son RPO est presque nul. Une librairie en ligne peut accepter de perdre une heure de commandes : son RPO est d'une heure. Chaque entreprise choisit selon ce qu'elle ne peut pas se permettre de perdre."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cont-rpo-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « recovery point objective (RPO) »",
+          "answer": "Recovery Point Objective (RPO) represents the measurement of tolerable data loss, represented as a period of time.\n\nTraduction : Le point de reprise visé (RPO) représente la mesure de la perte de données tolérable, exprimée sous forme de durée.",
+          "explanation": "Pense à la sauvegarde du jeu : combien de minutes de partie tu acceptes de perdre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rpo-def2",
+          "type": "cloze",
+          "question": "Recovery Point Objective (RPO) represents the [[measurement]] of tolerable data [[loss]], represented as a period of time.",
+          "answer": "Recovery Point Objective (RPO) represents the measurement of tolerable data loss, represented as a period of time.",
+          "explanation": "Une mesure de la perte de données qu'on tolère.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rpo-def3",
+          "type": "cloze",
+          "question": "Recovery Point Objective (RPO) represents [[the measurement]] of [[tolerable data loss]], represented as [[a period of time]].",
+          "answer": "Recovery Point Objective (RPO) represents the measurement of tolerable data loss, represented as a period of time.",
+          "explanation": "Trois blocs : une mesure, la perte de données tolérable, et une durée.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rpo-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle du « recovery point objective (RPO) » (en anglais).",
+          "answer": "Recovery Point Objective (RPO) represents the measurement of tolerable data loss, represented as a period of time.\n\nTraduction : Le point de reprise visé (RPO) représente la mesure de la perte de données tolérable, exprimée sous forme de durée.",
+          "explanation": "Retiens les trois mots : measurement, tolerable data loss, period of time.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rpo-metier-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : qui définit le « RPO »",
+          "answer": "As with the MTD, this must be defined by the business, and the business is responsible for resourcing the controls to achieve the RPO.\n\nTraduction : Comme pour le MTD, il doit être défini par l'entreprise, et c'est elle qui est responsable de fournir les moyens des contrôles pour atteindre le RPO.",
+          "explanation": "C'est l'entreprise qui décide de la perte tolérable, et qui paie pour y arriver.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». « Resourcing » veut dire fournir les moyens.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rpo-metier-def3",
+          "type": "cloze",
+          "question": "As with the MTD, this must be [[defined by the business]], and the business is responsible for [[resourcing the controls]] to [[achieve the RPO]].",
+          "answer": "As with the MTD, this must be defined by the business, and the business is responsible for resourcing the controls to achieve the RPO.",
+          "explanation": "Trois blocs : défini par l'entreprise, qui fournit les moyens, pour atteindre le RPO.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rpo-1",
+          "type": "duel",
+          "question": "Le RPO mesure surtout :",
+          "options": ["La quantité de données qu'on accepte de perdre", "Le temps nécessaire pour redémarrer"],
+          "answer": "La quantité de données qu'on accepte de perdre",
+          "explanation": "Le temps pour redémarrer est un autre sigle, le RTO. Le RPO parle de données perdues.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rpo-2",
+          "type": "qcm",
+          "question": "Une entreprise accepte de perdre au plus une heure de données. À quelle fréquence doit-elle sauvegarder, au minimum ?",
+          "options": [
+            "Au moins toutes les heures",
+            "Une fois par jour",
+            "Une fois par semaine",
+            "Une fois par mois"
+          ],
+          "options_why": [
+            "",
+            "Avec une sauvegarde par jour, on peut perdre jusqu'à vingt-quatre heures de données.",
+            "Avec une sauvegarde par semaine, la perte possible est d'une semaine entière.",
+            "Avec une sauvegarde par mois, la perte possible est d'un mois entier."
+          ],
+          "answer": "Au moins toutes les heures",
+          "explanation": "La perte maximale est le temps écoulé depuis la dernière sauvegarde. Il faut donc sauvegarder au moins aussi souvent que le RPO.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rpo-3",
+          "type": "flash",
+          "question": "Que veut dire RPO ?",
+          "answer": "Recovery point objective : le point de reprise visé, la perte de données tolérable, exprimée en durée.",
+          "explanation": "Point, c'est le moment de la dernière sauvegarde où l'on revient en arrière.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rpo-4",
+          "type": "why",
+          "question": "Pourquoi un RPO très court coûte-t-il plus cher ?",
+          "answer": "Pour perdre peu de données, il faut sauvegarder très souvent. Cela demande plus de stockage, de réseau et de travail.",
+          "explanation": "Chaque sauvegarde en plus coûte des moyens. C'est l'entreprise qui doit les fournir.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rpo-5",
+          "type": "cloze",
+          "question": "Le RPO s'exprime sous forme de [[durée]] : le temps de données qu'on accepte de [[perdre]].",
+          "answer": "Le RPO s'exprime sous forme de durée : le temps de données qu'on accepte de perdre.",
+          "explanation": "On dit par exemple : on peut perdre au plus une heure de données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-rpo-6",
+          "type": "whatif",
+          "question": "Et si la dernière sauvegarde date de cinq heures, alors que le RPO est d'une heure ?",
+          "answer": "L'entreprise perdrait plus de données que ce qu'elle tolère. Il faut sauvegarder plus souvent pour respecter le RPO.",
+          "explanation": "Le RPO fixe l'écart maximal entre deux sauvegardes.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rpo-7",
+          "type": "duel",
+          "question": "Qui définit le RPO ?",
+          "options": ["Les responsables de l'activité (le business)", "Seulement l'équipe technique"],
+          "answer": "Les responsables de l'activité (le business)",
+          "explanation": "Savoir combien de données on peut perdre dépend de l'activité. Les techniciens fournissent les moyens.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rpo-8",
+          "type": "sort",
+          "question": "Range ces RPO du plus court au plus long.",
+          "answer": "Aucune donnée perdue, puis au plus 15 minutes, puis au plus 1 heure, puis au plus 24 heures.",
+          "explanation": "Un RPO court demande de sauvegarder très souvent. Un RPO long laisse plus de temps entre deux sauvegardes.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Aucune donnée perdue",
+              "Au plus 15 minutes de données perdues",
+              "Au plus 1 heure de données perdues",
+              "Au plus 24 heures de données perdues"
+            ]
+          }
+        },
+        {
+          "id": "d1-cont-rpo-9",
+          "type": "problem",
+          "question": "Une librairie en ligne fixe un RPO de deux heures. Sa dernière sauvegarde date de trois heures. Que dis-tu ?",
+          "answer": "Elle ne respecte pas son RPO : elle risque de perdre trois heures de commandes alors qu'elle n'en tolère que deux. Elle doit sauvegarder plus souvent.",
+          "explanation": "Compare l'écart depuis la dernière sauvegarde au RPO : s'il est plus grand, c'est trop.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-rpo-10",
+          "type": "flash",
+          "question": "Qui doit fournir les moyens pour atteindre le RPO ?",
+          "answer": "L'entreprise elle-même (le business), qui est responsable de fournir les moyens des contrôles pour atteindre le RPO.",
+          "explanation": "Fixer un RPO sans y mettre les moyens n'a pas de sens.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cont-frise",
+      "name": "MTD, RTO, RPO : la frise du temps",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Trois chronomètres autour d'un incident",
+          "paragraphes": [
+            "Ta console plante. Trois questions te viennent en tête, et chacune a sa propre horloge.",
+            "À quel moment étais-tu sauvegardé ? Combien de temps pour repartir ? Combien de temps tes amis t'attendront-ils ?",
+            "En entreprise, ces trois horloges s'appellent le RPO, le RTO et le MTD. Les confondre est l'erreur la plus fréquente."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La frise du temps",
+          "comme": "Tu traces une ligne. Au milieu, le plantage. À gauche, le temps depuis la dernière sauvegarde. À droite, le temps pour redémarrer, puis le moment où tes amis partent pour de bon.",
+          "enVrai": "À gauche de l'incident : le RPO, jusqu'où on a perdu des données. À droite : le RTO, le temps pour redémarrer, puis le MTD, la limite de survie de la fonction. Le RPO regarde en arrière. Le RTO et le MTD regardent en avant."
+        },
+        {
+          "type": "predire",
+          "question": "Une panne arrive à midi. La dernière sauvegarde date de neuf heures. Quelle durée illustrent ces trois heures ?",
+          "options": [
+            "Le RPO : la perte de données",
+            "Le RTO : le temps pour redémarrer",
+            "Le MTD : la limite de survie"
+          ],
+          "answer": "Le RPO : la perte de données",
+          "explanation": "Ces trois heures sont les données perdues depuis la dernière sauvegarde. Le RTO et le MTD se comptent après la panne."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une pharmacie en ligne",
+          "texte": "Une pharmacie en ligne sauvegarde ses ordonnances chaque heure : RPO d'une heure. Elle veut redémarrer en deux heures : RTO de deux heures. Après douze heures d'arrêt, trop de clients partent ailleurs : MTD de douze heures. Ces choix dépendent de sa tolérance au risque (risk tolerance) : le niveau de danger qu'elle accepte de courir (chiffres inventés)."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cont-frise-seuils-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « MTD, RTO and RPO »",
+          "answer": "MTD, RTO, and RPO are essential thresholds for business continuity planning.\n\nTraduction : Le MTD, le RTO et le RPO sont des seuils essentiels pour la planification de la continuité d'activité.",
+          "explanation": "Trois seuils à connaître : ils décident combien l'entreprise peut perdre et attendre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». Un seuil (threshold) est une limite.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-frise-seuils-def3",
+          "type": "cloze",
+          "question": "[[MTD, RTO, and RPO]] are [[essential thresholds]] for [[business continuity planning]].",
+          "answer": "MTD, RTO, and RPO are essential thresholds for business continuity planning.",
+          "explanation": "Trois blocs : les trois sigles, des seuils essentiels, pour planifier la continuité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-frise-horizons-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « MTD, RTO and RPO » et le risque",
+          "answer": "MTD, RTO, and RPO are important planning horizons and estimates that are strongly linked to an organization's risk tolerance.\n\nTraduction : Le MTD, le RTO et le RPO sont des horizons de planification et des estimations importants, fortement liés à la tolérance au risque d'une organisation.",
+          "explanation": "Ces durées dépendent du danger que l'entreprise accepte de courir.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, note après la figure 1.4.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-frise-horizons-def3",
+          "type": "cloze",
+          "question": "MTD, RTO, and RPO are [[important planning horizons]] and estimates that are [[strongly linked]] to an organization's [[risk tolerance]].",
+          "answer": "MTD, RTO, and RPO are important planning horizons and estimates that are strongly linked to an organization's risk tolerance.",
+          "explanation": "Trois blocs : des horizons de planification, fortement liés, à la tolérance au risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-frise-1",
+          "type": "duel",
+          "question": "« Jusqu'où a-t-on perdu des données ? » Quelle durée répond à cette question ?",
+          "options": ["Le RPO", "Le RTO"],
+          "answer": "Le RPO",
+          "explanation": "Le RPO regarde en arrière, vers la dernière sauvegarde. Le RTO regarde en avant, vers le redémarrage.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-frise-2",
+          "type": "sort",
+          "question": "RPO, RTO ou MTD ? Classe chaque phrase.",
+          "answer": "RPO : les données perdues depuis la dernière sauvegarde, se compte avant l'incident. RTO : le temps prévu pour remettre en marche, inférieur ou égal au MTD. MTD : la limite avant que l'entreprise soit menacée, le temps le plus long d'arrêt tolérable.",
+          "explanation": "RPO = données perdues (avant). RTO = temps pour repartir (après). MTD = limite de survie (après).",
+          "data": {
+            "mode": "classer",
+            "categories": ["RPO", "RTO", "MTD"],
+            "items": [
+              { "text": "Les données perdues depuis la dernière sauvegarde", "category": "RPO" },
+              { "text": "Se compte avant l'incident, en regardant en arrière", "category": "RPO" },
+              { "text": "Le temps prévu pour remettre le système en marche", "category": "RTO" },
+              { "text": "Doit être inférieur ou égal au MTD", "category": "RTO" },
+              { "text": "La limite avant que l'entreprise soit menacée", "category": "MTD" },
+              { "text": "Le temps d'arrêt le plus long tolérable", "category": "MTD" }
+            ]
+          }
+        },
+        {
+          "id": "d1-cont-frise-3",
+          "type": "duel",
+          "question": "« Combien de temps pour redémarrer ? » Quelle durée répond à cette question ?",
+          "options": ["Le RTO", "Le MTD"],
+          "answer": "Le RTO",
+          "explanation": "Le RTO est le temps prévu pour repartir. Le MTD est la limite à ne pas dépasser.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-frise-4",
+          "type": "why",
+          "question": "Pourquoi le RPO et le RTO ne sont-ils pas la même durée ?",
+          "answer": "Le RPO regarde en arrière : combien de données on accepte de perdre. Le RTO regarde en avant : combien de temps pour repartir.",
+          "explanation": "Une entreprise peut redémarrer vite en ayant perdu beaucoup de données, ou l'inverse.",
+          "explanation_more": "Hors manuel : on parle parfois d'un quatrième chronomètre, le WRT (work recovery time). C'est le temps de vérifier que tout marche après le redémarrage. Dans cette logique, le MTD égale le RTO plus le WRT.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-frise-5",
+          "type": "qcm",
+          "question": "Une entreprise perd trois heures de données et met cinq heures à redémarrer. Sa limite de survie est de quatre heures. Que se passe-t-il ?",
+          "options": [
+            "Le redémarrage (5 h) dépasse la limite de survie (4 h)",
+            "La perte de données (3 h) dépasse la limite de survie (4 h)",
+            "Les 3 h et les 5 h s'additionnent pour dépasser la limite",
+            "Tout va bien, car 3 h est inférieur à 4 h"
+          ],
+          "options_why": [
+            "",
+            "Trois heures sont inférieures à quatre heures. Et la perte de données se compare au RPO, pas à la limite de survie.",
+            "La perte de données est un autre compteur : on ne l'ajoute pas au temps d'arrêt.",
+            "Le temps d'arrêt compte : cinq heures sont plus longues que quatre."
+          ],
+          "answer": "Le redémarrage (5 h) dépasse la limite de survie (4 h)",
+          "explanation": "Le temps de redémarrage (RTO) doit rester sous la limite de survie (MTD). Ici, cinq heures dépassent quatre heures.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-frise-6",
+          "type": "sort",
+          "question": "Remets les moments sur la frise, de gauche à droite.",
+          "answer": "1 Dernière sauvegarde. 2 Incident. 3 Système redémarré (fin du RTO). 4 Dommage grave (le MTD est dépassé).",
+          "explanation": "La perte de données (RPO) est avant l'incident. Le redémarrage (RTO) vient après, avant la limite (MTD).",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, figure 1.4 : relation entre MTD, RTO et RPO.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Dernière sauvegarde",
+              "Incident",
+              "Système redémarré (fin du RTO)",
+              "Dommage grave : le MTD est dépassé"
+            ]
+          }
+        },
+        {
+          "id": "d1-cont-frise-7",
+          "type": "cloze",
+          "question": "Le RPO mesure la perte de données, le RTO le temps de [[reprise]], et le [[MTD]] la limite de survie.",
+          "answer": "Le RPO mesure la perte de données, le RTO le temps de reprise, et le MTD la limite de survie.",
+          "explanation": "Trois sigles, trois questions : combien perdu, combien de temps pour repartir, jusqu'où on peut attendre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-frise-8",
+          "type": "whatif",
+          "question": "Et si une entreprise fixe un MTD mais oublie de fixer un RTO ?",
+          "answer": "Elle connaît sa limite, mais personne ne sait en combien de temps il faut repartir. Sans RTO, la reprise n'est pas préparée.",
+          "explanation": "Le MTD dit où est le mur. Le RTO dit à quelle vitesse il faut courir pour ne pas le toucher.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-frise-9",
+          "type": "duel",
+          "question": "« Combien de temps l'entreprise peut-elle survivre sans cette fonction ? » Quelle durée répond ?",
+          "options": ["Le MTD", "Le RPO"],
+          "answer": "Le MTD",
+          "explanation": "La survie de l'entreprise est le sujet du MTD. Le RPO parle de données perdues.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-frise-10",
+          "type": "flash",
+          "question": "Que dit le manuel sur le respect de ces seuils pendant une vraie crise ?",
+          "answer": "Les dirigeants s'adaptent en direct. Ces seuils sont plus des repères que des limites strictes de survie.",
+          "explanation": "Les trois durées servent surtout à planifier avant la crise.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note après la figure 1.4.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cont-plan",
+      "name": "Le plan de continuité : sa portée et les personnes d'abord",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "L'exercice d'évacuation",
+          "paragraphes": [
+            "Au collège, il y a un exercice d'incendie. Avant de sauver le matériel ou les cahiers, une seule chose compte : que tout le monde sorte.",
+            "Ensuite, on prévoit où se rassembler, qui prévient les parents, et comment reprendre les cours.",
+            "Un plan de continuité fonctionne pareil : les personnes d'abord, puis les façons de travailler, puis les outils. Le manuel dit : people, processes, technologies."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "L'ordre de l'évacuation",
+          "comme": "On compte d'abord les élèves. Ensuite on organise la reprise des cours. Les ordinateurs et le matériel viennent en dernier.",
+          "enVrai": "Dans un plan de continuité (BCP), l'ordre est fixé : les personnes, puis les processus (les façons de travailler), puis les technologies. Une machine se remplace, pas une personne. L'image s'arrête ici : les trois sont nécessaires, l'ordre dit seulement quoi protéger en premier."
+        },
+        {
+          "type": "predire",
+          "question": "Un incendie touche les bureaux d'une entreprise. Que fait le plan de continuité en tout premier ?",
+          "options": [
+            "Il met les personnes en sécurité",
+            "Il sauve les sauvegardes",
+            "Il prévient les clients"
+          ],
+          "answer": "Il met les personnes en sécurité",
+          "explanation": "Les sauvegardes et les clients comptent, mais le premier but d'un plan est la sécurité des personnes."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le plan d'une chaîne de magasins",
+          "texte": "Le plan d'une chaîne de magasins couvre tous ses magasins, dans toutes les villes et tous les pays. Il liste les fonctions critiques, les menaces et les failles. Il prévoit la sauvegarde des données, les personnes du plan, la communication et les tests."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cont-plan-ordre-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'ordre d'un « BCP »",
+          "answer": "As with any good plan, a BCP involves people, processes, and technologies — in that order.\n\nTraduction : Comme tout bon plan, un plan de continuité implique des personnes, des processus et des technologies, dans cet ordre.",
+          "explanation": "Pense à l'évacuation : on compte d'abord les personnes, on pense aux machines à la fin.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-ordre-def2",
+          "type": "cloze",
+          "question": "As with any good plan, a BCP [[involves]] people, processes, and technologies — in [[that order]].",
+          "answer": "As with any good plan, a BCP involves people, processes, and technologies — in that order.",
+          "explanation": "L'ordre compte : il dit quoi protéger en premier.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-ordre-def3",
+          "type": "cloze",
+          "question": "As with any good plan, a BCP involves [[people]], [[processes]], and [[technologies]] — in that order.",
+          "answer": "As with any good plan, a BCP involves people, processes, and technologies — in that order.",
+          "explanation": "Les trois mots dans l'ordre : people, processes, technologies.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-ordre-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur ce qu'implique un BCP, et dans quel ordre (en anglais).",
+          "answer": "As with any good plan, a BCP involves people, processes, and technologies — in that order.\n\nTraduction : Comme tout bon plan, un plan de continuité implique des personnes, des processus et des technologies, dans cet ordre.",
+          "explanation": "Une phrase courte à retenir telle quelle, avec les trois mots dans l'ordre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-engagement-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « the BCP itself »",
+          "answer": "The BCP itself is the organization's commitment to maintaining the operations of the business, and the steps the organization takes to do so.\n\nTraduction : Le plan de continuité lui-même est l'engagement de l'organisation à maintenir les opérations de l'entreprise, et les mesures qu'elle prend pour y arriver.",
+          "explanation": "Le plan est une promesse de l'entreprise, avec les étapes pour la tenir.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-engagement-def3",
+          "type": "cloze",
+          "question": "The BCP itself is [[the organization's commitment]] to [[maintaining the operations]] of the business, and [[the steps the organization takes]] to do so.",
+          "answer": "The BCP itself is the organization's commitment to maintaining the operations of the business, and the steps the organization takes to do so.",
+          "explanation": "Trois blocs : l'engagement, maintenir les opérations, et les étapes pour le faire.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-portee-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la portée (scope) du « BCP »",
+          "answer": "The scope of the BCP must encompass all of the organization's operations, including each business area and within every geographic region that the organization does business.\n\nTraduction : La portée du plan de continuité doit englober toutes les opérations de l'organisation, y compris chaque domaine d'activité et chaque région géographique où l'organisation travaille.",
+          "explanation": "La portée dit jusqu'où va le plan : tout, partout.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ». « Encompass » veut dire englober.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-portee-def3",
+          "type": "cloze",
+          "question": "The scope of the BCP must encompass [[all of the organization's operations]], including [[each business area]] and within [[every geographic region]] that the organization does business.",
+          "answer": "The scope of the BCP must encompass all of the organization's operations, including each business area and within every geographic region that the organization does business.",
+          "explanation": "Trois blocs : toutes les opérations, chaque domaine d'activité, chaque région.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-actif-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les personnes dans un plan de continuité",
+          "answer": "People are always, without exception, your most valuable and critical asset.\n\nTraduction : Les personnes sont toujours, sans exception, ton actif le plus précieux et le plus critique.",
+          "explanation": "Un actif est ce qui a de la valeur pour l'entreprise. Les personnes passent avant tout le reste.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-actif-def3",
+          "type": "cloze",
+          "question": "People are [[always, without exception]], your [[most valuable]] and [[critical asset]].",
+          "answer": "People are always, without exception, your most valuable and critical asset.",
+          "explanation": "Trois blocs : toujours sans exception, le plus précieux, et critique.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-but-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le premier but d'un « BCP »",
+          "answer": "The first goal of any BCP must be to ensure the safety of your people during and after an emergency.\n\nTraduction : Le premier but de tout plan de continuité doit être d'assurer la sécurité des personnes pendant et après une urgence.",
+          "explanation": "Avant les données et les machines : la sécurité des gens.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-but-def3",
+          "type": "cloze",
+          "question": "The [[first goal]] of any BCP must be to [[ensure the safety of your people]] during and [[after an emergency]].",
+          "answer": "The first goal of any BCP must be to ensure the safety of your people during and after an emergency.",
+          "explanation": "Trois blocs : le premier but, la sécurité des personnes, et après l'urgence aussi.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-plan-1",
+          "type": "sort",
+          "question": "Remets les trois familles du plan dans l'ordre du manuel.",
+          "answer": "1 Les personnes. 2 Les processus. 3 Les technologies.",
+          "explanation": "On protège d'abord les gens, puis les façons de travailler, puis les outils.",
+          "data": {
+            "mode": "ordonner",
+            "items": ["Les personnes", "Les processus", "Les technologies"]
+          }
+        },
+        {
+          "id": "d1-cont-plan-2",
+          "type": "flash",
+          "question": "Après la sécurité des personnes, que doit-on leur fournir ?",
+          "answer": "Les ressources pour continuer à travailler presque normalement, comme un abri (un autre lieu de travail) et de la nourriture.",
+          "explanation": "Les gens en sécurité doivent aussi pouvoir faire leur travail.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section sur les personnes dans le BCP.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-plan-3",
+          "type": "qcm",
+          "question": "Quelles personnes le mot « personnes » désigne-t-il dans un plan de continuité ?",
+          "options": [
+            "Toute personne que l'événement peut toucher, comme les clients",
+            "Seulement les employés qui ont un contrat avec l'entreprise",
+            "Seulement l'équipe technique chargée de la reprise",
+            "Seulement les cadres qui prennent les décisions"
+          ],
+          "options_why": [
+            "",
+            "Le manuel cite aussi les contractors, les clients et les vendors.",
+            "L'équipe technique n'est qu'une petite partie des personnes concernées.",
+            "Les cadres ne sont qu'une partie des personnes concernées."
+          ],
+          "answer": "Toute personne que l'événement peut toucher, comme les clients",
+          "explanation": "Le manuel inclut employés, prestataires, clients, fournisseurs et toute autre personne touchée.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « employees, contractors, customers, vendors, and any other living human being ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-plan-4",
+          "type": "why",
+          "question": "Pourquoi le plan met-il les personnes avant les technologies ?",
+          "answer": "Un ordinateur détruit se remplace. Une personne blessée ne se remplace pas, et sans personnes rien ne redémarre.",
+          "explanation": "Les machines sont utiles seulement si des gens en bonne santé les font tourner.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-plan-5",
+          "type": "cloze",
+          "question": "Le plan couvre chaque domaine d'activité et chaque [[région]] où l'entreprise travaille.",
+          "answer": "Le plan couvre chaque domaine d'activité et chaque région où l'entreprise travaille.",
+          "explanation": "Une région non couverte serait un trou dans le plan.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-plan-6",
+          "type": "flash",
+          "question": "Pourquoi prévoir plusieurs moyens de prévenir les personnes pendant un sinistre ?",
+          "answer": "Si un moyen tombe en panne pendant le sinistre, un autre doit marcher. Sinon, des personnes importantes ne seraient pas prévenues.",
+          "explanation": "Un seul canal de communication est un point faible.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : plusieurs méthodes de communication pour prévenir le personnel clé.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-plan-7",
+          "type": "whatif",
+          "question": "Et si le plan ne couvrait qu'un seul pays, alors que l'entreprise travaille dans trois pays ?",
+          "answer": "Les deux autres pays resteraient sans protection. Le manuel veut que le plan couvre chaque région où l'entreprise travaille.",
+          "explanation": "La portée du plan doit être aussi large que l'entreprise.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-plan-8",
+          "type": "qcm",
+          "question": "Pendant un sinistre, la direction déclare : « On vous tiendra au courant seulement à la fin. » Que dit le manuel à ce sujet ?",
+          "options": [
+            "Les responsables clés doivent recevoir des nouvelles régulières",
+            "Le silence évite de créer de la confusion pendant la crise",
+            "Seul le service informatique a besoin de nouvelles",
+            "Les nouvelles ne servent que quand le sinistre est fini"
+          ],
+          "options_why": [
+            "",
+            "Sans nouvelles, les responsables ne peuvent pas prendre de bonnes décisions.",
+            "Tous les responsables du plan ont besoin d'être informés, pas seulement l'informatique.",
+            "Les décisions se prennent pendant le sinistre, donc les nouvelles sont utiles tout de suite."
+          ],
+          "answer": "Les responsables clés doivent recevoir des nouvelles régulières",
+          "explanation": "Des mises à jour régulières permettent des décisions bien informées.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « management and key BCP stakeholders must receive regular status updates ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-plan-9",
+          "type": "sort",
+          "question": "Dans quelle famille du plan range-t-on chaque élément ?",
+          "answer": "Personnes : prévenir les employés, prévoir un abri. Processus : approvisionnement en fournitures, choix du lieu de traitement des données. Technologies : sauvegardes, deux fournisseurs d'accès à internet.",
+          "explanation": "Les personnes sont les gens. Les processus sont les façons de travailler. Les technologies sont les systèmes.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Personnes", "Processus", "Technologies"],
+            "items": [
+              { "text": "Prévenir les employés qu'un sinistre a lieu", "category": "Personnes" },
+              { "text": "Prévoir un abri pour les employés", "category": "Personnes" },
+              { "text": "Assurer l'approvisionnement en fournitures", "category": "Processus" },
+              { "text": "Choisir où continuer le traitement des données critiques", "category": "Processus" },
+              { "text": "Faire des sauvegardes des systèmes et des données", "category": "Technologies" },
+              { "text": "Louer deux fournisseurs d'accès à internet", "category": "Technologies" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "d1-cont-ressources",
+      "name": "Les processus et les technologies du plan (sites de secours, sauvegardes, redondance)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le collège qui déménage pour une semaine",
+          "paragraphes": [
+            "Un orage inonde les salles de ton collège. Les cours ne peuvent pas s'arrêter plusieurs semaines.",
+            "La mairie prête sa salle des fêtes. Les carnets de notes existent en deux copies : une au collège, une à la mairie.",
+            "Trois choses ont sauvé l'école : un autre lieu, des copies des documents, et des fournisseurs de secours. C'est ce que prévoit un plan de continuité."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le double des clés",
+          "comme": "Tu gardes un double de tes clés chez un voisin. Si tu perds les tiennes, tu peux entrer quand même. Mais si le double est dans ta propre maison, il ne sert à rien quand la maison brûle.",
+          "enVrai": "Une sauvegarde (backup) est une copie des données. Pour qu'elle serve, il faut la garder hors du site principal (offsite). Dans le cloud, on garde des copies dans plusieurs régions. Une région est un endroit du monde où se trouvent des centres de données. L'image s'arrête ici : une entreprise garde plusieurs copies, pas une seule."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise range ses copies de sauvegarde dans la salle à côté de son serveur. Un incendie détruit le bâtiment. Que deviennent les copies ?",
+          "options": [
+            "Elles disparaissent avec le serveur",
+            "Elles survivent, car ce sont des copies",
+            "Elles sont protégées par les pompiers"
+          ],
+          "answer": "Elles disparaissent avec le serveur",
+          "explanation": "Une copie gardée au même endroit subit le même sinistre. C'est pour cela que le manuel demande des copies hors du site."
+        },
+        {
+          "type": "exemple",
+          "titre": "Deux fournisseurs d'accès",
+          "texte": "Une entreprise loue deux fournisseurs d'accès à internet (ISP, l'entreprise qui lui fournit internet), plusieurs fournisseurs d'électricité et deux banques. Si l'un tombe en panne, un autre prend le relais. Ce doublement des moyens s'appelle la redondance (redundancy)."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cont-ressources-traitement-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : un des processus essentiels d'un « BCP »",
+          "answer": "One of the most essential BCP processes assures an organization that its critical data processing facilities and capabilities remain operational during a disaster.\n\nTraduction : L'un des processus les plus essentiels du plan de continuité garantit à l'organisation que ses installations et capacités critiques de traitement des données restent opérationnelles pendant un sinistre.",
+          "explanation": "Les données critiques doivent continuer à être traitées, même quand le site principal est touché.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Identify, Analyze, and Prioritize Business Continuity Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-ressources-traitement-def3",
+          "type": "cloze",
+          "question": "One of the most essential BCP processes assures an organization that its [[critical data processing facilities]] and [[capabilities remain operational]] during [[a disaster]].",
+          "answer": "One of the most essential BCP processes assures an organization that its critical data processing facilities and capabilities remain operational during a disaster.",
+          "explanation": "Trois blocs : les installations critiques de traitement, qui restent opérationnelles, pendant un sinistre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-ressources-sites-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les types de sites de secours",
+          "answer": "The primary recover site types are hot sites, cold sites, and warm sites.\n\nTraduction : Les principaux types de sites de reprise sont les sites chauds, les sites froids et les sites tièdes.",
+          "explanation": "Trois mots à retenir : hot, cold, warm.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Le manuel détaille ces sites au chapitre 7. Hors manuel, pour t'aider : le site chaud est prêt à servir tout de suite, le site froid est un local vide, le site tiède est entre les deux.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-ressources-sites-def3",
+          "type": "cloze",
+          "question": "The primary recover site types are [[hot sites]], [[cold sites]], and [[warm sites]].",
+          "answer": "The primary recover site types are hot sites, cold sites, and warm sites.",
+          "explanation": "Chaud, froid, tiède : trois niveaux de préparation du lieu de secours.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cont-ressources-1",
+          "type": "duel",
+          "question": "Une copie de sauvegarde gardée dans le même bâtiment que le serveur protège-t-elle d'un incendie du bâtiment ?",
+          "options": ["Non", "Oui"],
+          "answer": "Non",
+          "explanation": "Le sinistre détruit les deux en même temps. Il faut une copie ailleurs.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-ressources-2",
+          "type": "qcm",
+          "question": "Une entreprise range ses données dans le cloud. Que recommande le manuel ?",
+          "options": [
+            "Garder des copies dans plusieurs régions du cloud",
+            "Garder une seule copie, dans la région la moins chère",
+            "Ne rien copier : le cloud ne tombe jamais en panne",
+            "Garder les copies seulement dans le même centre de données"
+          ],
+          "options_why": [
+            "",
+            "Une seule région est un point faible : un sinistre là-bas ferait perdre les données.",
+            "Le cloud aussi peut avoir des pannes. Il faut des copies.",
+            "Si le centre de données est touché, l'original et les copies disparaissent ensemble."
+          ],
+          "answer": "Garder des copies dans plusieurs régions du cloud",
+          "explanation": "Avec plusieurs régions, les données restent récupérables à tout moment.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Technologies ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-ressources-3",
+          "type": "flash",
+          "question": "Où doit être gardé au moins un jeu de sauvegardes, pour une entreprise qui a son propre centre de données ?",
+          "answer": "Hors du site principal : au moins une copie loin du site, au cas où un sinistre le détruirait.",
+          "explanation": "Une copie à l'extérieur survit au sinistre qui touche le site.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « one set of your backups must be stored offsite ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-ressources-4",
+          "type": "why",
+          "question": "Pourquoi une entreprise loue-t-elle deux fournisseurs d'accès à internet ?",
+          "answer": "Si l'un tombe en panne, l'autre garde l'entreprise connectée. Le sinistre peut venir du fournisseur, pas seulement de chez elle.",
+          "explanation": "Un seul fournisseur serait un point faible dont tout dépend.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-ressources-5",
+          "type": "flash",
+          "question": "Quelle méthode le manuel cite-t-il pour garder le traitement des données critiques en marche pendant un sinistre ?",
+          "answer": "Prévoir l'utilisation de sites de secours (alternate sites) pendant un sinistre.",
+          "explanation": "Un site de secours est un autre lieu où l'activité peut continuer.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Processes ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-ressources-6",
+          "type": "whatif",
+          "question": "Et si une entreprise n'a qu'un seul fournisseur d'électricité et qu'il tombe en panne ?",
+          "answer": "Tout s'arrête, même si les ordinateurs et les sauvegardes sont intacts. La redondance évite qu'un seul fournisseur arrête toute l'activité.",
+          "explanation": "Le manuel demande des fournitures doublées : électricité, eau, télécommunications et réseau.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-ressources-7",
+          "type": "sort",
+          "question": "Sauvegarde ou redondance ? Classe chaque exemple.",
+          "answer": "Sauvegarde : copie hors du site, copies dans plusieurs régions du cloud, copie quotidienne des fichiers. Redondance : deux fournisseurs d'accès, deux banques, plusieurs fournisseurs d'électricité.",
+          "explanation": "La sauvegarde copie les données. La redondance double les moyens dont l'entreprise dépend.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Sauvegarde (copie des données)", "Redondance (double des moyens)"],
+            "items": [
+              { "text": "Une copie des données gardée hors du site", "category": "Sauvegarde (copie des données)" },
+              { "text": "Des copies dans plusieurs régions du cloud", "category": "Sauvegarde (copie des données)" },
+              { "text": "Une copie des fichiers faite chaque jour", "category": "Sauvegarde (copie des données)" },
+              { "text": "Deux fournisseurs d'accès à internet", "category": "Redondance (double des moyens)" },
+              { "text": "Deux banques", "category": "Redondance (double des moyens)" },
+              { "text": "Plusieurs fournisseurs d'électricité", "category": "Redondance (double des moyens)" }
+            ]
+          }
+        },
+        {
+          "id": "d1-cont-ressources-8",
+          "type": "cloze",
+          "question": "Les sauvegardes sont la solution la plus [[éprouvée]] contre les pannes de matériel et de [[logiciel]].",
+          "answer": "Les sauvegardes sont la solution la plus éprouvée contre les pannes de matériel et de logiciel.",
+          "explanation": "Une panne de technologie fait partie de la vie normale : mieux vaut avoir des copies.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-ressources-9",
+          "type": "problem",
+          "question": "Cite trois choses qu'une entreprise peut faire pour résister à une panne de matériel, selon le manuel.",
+          "answer": "Faire des sauvegardes complètes des systèmes et des données. Garder au moins une copie hors du site. Avoir des systèmes redondants : électricité, eau, télécommunications, réseau.",
+          "explanation": "Sauvegarder, éloigner une copie, doubler les moyens.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cont-ressources-10",
+          "type": "qcm",
+          "question": "Un orage coupe l'électricité du bâtiment des serveurs. L'entreprise garde son activité grâce à un second fournisseur. Quel principe a-t-elle appliqué ?",
+          "options": [
+            "La redondance",
+            "La sauvegarde hors site",
+            "Le chiffrement (encryption)",
+            "Le moindre privilège (least privilege)"
+          ],
+          "options_why": [
+            "",
+            "Une sauvegarde hors site protège les données, pas l'alimentation électrique.",
+            "Le chiffrement protège le secret des données, pas la continuité du courant.",
+            "Le moindre privilège limite les accès des personnes, pas l'alimentation."
+          ],
+          "answer": "La redondance",
+          "explanation": "Un deuxième fournisseur double le moyen dont l'entreprise dépend.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

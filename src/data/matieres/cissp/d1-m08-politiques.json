@@ -1,0 +1,1477 @@
+{
+  "id": "d1-m08-politiques",
+  "name": "D1.8 Politiques, normes, procédures et conseils",
+  "galaxie": { "teinte": 208, "ambiance": "lumineux" },
+  "concepts": [
+    {
+      "id": "d1-pol-ensemble",
+      "name": "Les quatre documents de la sécurité",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le règlement du collège",
+          "paragraphes": [
+            "Le jour de la rentrée, tu reçois le règlement du collège. Il dit que le collège doit rester un lieu calme et sûr.",
+            "Plus loin, il précise : téléphones éteints pendant les cours. Il explique aussi les étapes pour récupérer un téléphone confisqué. Et il donne un conseil : laisse ton téléphone à la maison.",
+            "Ce sont quatre sortes de textes. Une entreprise écrit les mêmes pour sa sécurité : des politiques (policies), des normes (standards), des procédures (procedures) et des conseils (guidelines)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Quatre questions, quatre textes",
+          "comme": "Au collège, la grande règle dit pourquoi : garder le calme. La règle précise dit quoi : téléphones éteints. Le mode d'emploi dit comment : les étapes. Le conseil est une simple suggestion.",
+          "enVrai": "La politique répond à POURQUOI. La norme répond à QUOI. La procédure répond à COMMENT. Le conseil est donné FYI (for your information : pour ton information), sans obliger personne."
+        },
+        {
+          "type": "predire",
+          "titre": "À toi de deviner",
+          "question": "Le collège écrit : « Pendant les cours, les téléphones doivent être éteints. » Quel type de texte est-ce ?",
+          "options": [
+            "Une grande règle qui dit pourquoi",
+            "Une exigence précise qui dit quoi faire",
+            "Un conseil que chacun peut ignorer"
+          ],
+          "answer": "Une exigence précise qui dit quoi faire",
+          "explanation": "C'est précis et obligatoire : c'est le QUOI. La grande règle serait plutôt « le collège doit rester calme »."
+        },
+        {
+          "type": "exemple",
+          "titre": "Chez un magasin en ligne",
+          "texte": "La politique : nous protégeons les données de nos clients. La norme : les mots de passe font au moins 12 caractères. La procédure : les étapes pour créer le compte d'un nouvel employé. Le conseil : utilise un coffre numérique qui retient tes mots de passe."
+        },
+        {
+          "type": "analogie",
+          "titre": "Les fondations d'une maison",
+          "comme": "Les fondations d'une maison ne bougent presque jamais. Les meubles, eux, changent souvent.",
+          "enVrai": "La politique est la fondation : elle reste valable des années. Les normes, procédures et conseils sont plus précis. Ils complètent la politique et changent plus facilement."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pol-ensemble-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « standards, procedures, and guidelines » par rapport aux politiques",
+          "answer": "Standards, procedures, and guidelines are supporting elements that provide specific details to a complement an organization's policies.\n\nTraduction : Les normes, procédures et conseils sont des éléments de soutien. Ils apportent des détails précis pour compléter les politiques de l'organisation.",
+          "explanation": "La politique est le tronc ; les trois autres documents sont ses appuis.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Le manuel garde la faute « to a complement » : on l'apprend telle quelle.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-ensemble-def3",
+          "type": "cloze",
+          "question": "[[Standards, procedures, and guidelines]] are [[supporting elements]] that provide [[specific details]] to a complement an organization's policies.",
+          "answer": "Standards, procedures, and guidelines are supporting elements that provide specific details to a complement an organization's policies.",
+          "explanation": "Trois documents, un rôle : soutenir la politique avec des détails précis.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-ensemble-1",
+          "type": "sort",
+          "question": "Dans quelle boîte va chaque phrase ?",
+          "answer": "Politique : le collège calme, les données protégées. Norme : téléphones éteints, mots de passe de 12 caractères. Procédure : les étapes pour récupérer un téléphone ou restaurer une sauvegarde. Conseil : laisser le téléphone à la maison, utiliser un coffre à mots de passe.",
+          "explanation": "Demande-toi : est-ce un principe (pourquoi), une exigence (quoi), des étapes (comment) ou une suggestion (FYI) ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Politique (POURQUOI)", "Norme (QUOI)", "Procédure (COMMENT)", "Conseil (FYI)"],
+            "items": [
+              { "text": "Le collège doit rester un lieu calme et sûr", "category": "Politique (POURQUOI)" },
+              { "text": "Nous protégeons les données de nos clients", "category": "Politique (POURQUOI)" },
+              { "text": "Les téléphones sont éteints et rangés pendant les cours", "category": "Norme (QUOI)" },
+              { "text": "Les mots de passe font au moins 12 caractères", "category": "Norme (QUOI)" },
+              { "text": "Étape 1 : note le nom de l'élève. Étape 2 : range le téléphone dans le casier. Étape 3 : donne un reçu", "category": "Procédure (COMMENT)" },
+              { "text": "Pour restaurer une sauvegarde : ouvre l'outil, choisis la date, clique sur Restaurer", "category": "Procédure (COMMENT)" },
+              { "text": "On te conseille de laisser ton téléphone à la maison", "category": "Conseil (FYI)" },
+              { "text": "Il est recommandé d'utiliser un coffre à mots de passe", "category": "Conseil (FYI)" }
+            ]
+          }
+        },
+        {
+          "id": "d1-pol-ensemble-2",
+          "type": "duel",
+          "question": "Un texte dit : « Fais d'abord ceci, puis cela, puis cela. » Est-ce une procédure ou une norme ?",
+          "options": ["Une procédure", "Une norme"],
+          "answer": "Une procédure",
+          "explanation": "Des étapes dans l'ordre, c'est le COMMENT. Une norme dit ce qui est exigé, pas les gestes à faire."
+        },
+        {
+          "id": "d1-pol-ensemble-3",
+          "type": "qcm",
+          "question": "Une entreprise écrit : « Nous protégeons les données de nos clients. » Quel est ce document ?",
+          "options": ["Une politique", "Une procédure", "Un conseil", "Une norme"],
+          "options_why": [
+            "",
+            "Il n'y a aucune étape à suivre dans cette phrase.",
+            "Ce n'est pas facultatif : c'est un principe de l'entreprise.",
+            "Une norme donnerait une exigence précise, comme un nombre de caractères ou un réglage."
+          ],
+          "answer": "Une politique",
+          "explanation": "C'est une grande intention, large et durable. Elle dit pourquoi on agit : c'est une politique."
+        },
+        {
+          "id": "d1-pol-ensemble-4",
+          "type": "flash",
+          "question": "Associe chaque document à son mot-clé du manuel : politique, norme, procédure, conseil.",
+          "answer": "Politique : WHY (pourquoi) et WHEN (quand). Norme : WHAT (quoi). Procédure : HOW (comment) et WHO (qui). Conseil : FYI (pour information).",
+          "explanation": "Un mot-clé par document : pourquoi, quoi, comment, pour information.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, figure 1.3 « Relationship between policies, procedures, standards, and guidelines ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-ensemble-5",
+          "type": "why",
+          "question": "Pourquoi une entreprise ne met-elle pas tout dans un seul grand document ?",
+          "answer": "Les quatre documents n'ont pas la même durée de vie. La politique reste stable des années. Les normes, procédures et conseils sont plus précis et se mettent à jour plus souvent.",
+          "explanation": "Un document large et stable ne doit pas être réécrit à chaque changement d'outil.",
+          "explanation_more": "Le manuel compare les politiques à des fondations. Elles changent moins que les autres documents, mais doivent être relues de temps en temps.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-ensemble-6",
+          "type": "cloze",
+          "question": "La politique dit [[pourquoi]], la norme dit [[quoi]] et la procédure dit [[comment]].",
+          "answer": "La politique dit pourquoi, la norme dit quoi et la procédure dit comment.",
+          "explanation": "Trois questions, trois documents : retiens-les dans cet ordre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-ensemble-7",
+          "type": "whatif",
+          "question": "Et si une entreprise avait des procédures, mais aucune politique ?",
+          "answer": "Les employés suivraient des étapes sans savoir pourquoi. Face à une situation nouvelle, personne ne saurait quoi décider. La politique donne le but.",
+          "explanation": "Les étapes sans but ne servent à rien dès que la situation change.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-ensemble-8",
+          "type": "duel",
+          "question": "Lequel de ces deux documents est le plus stable dans le temps ?",
+          "options": ["La politique", "La procédure"],
+          "answer": "La politique",
+          "explanation": "La politique est large et change peu. La procédure suit les outils et les gestes, qui évoluent plus vite."
+        },
+        {
+          "id": "d1-pol-ensemble-9",
+          "type": "problem",
+          "question": "Sur le thème « les téléphones au collège », écris un exemple de politique, de norme, de procédure et de conseil.",
+          "answer": "Politique : le collège reste calme. Norme : téléphones éteints en classe. Procédure : les étapes pour rendre un téléphone confisqué. Conseil : laisse ton téléphone à la maison.",
+          "explanation": "Chaque exemple répond à une question différente : pourquoi, quoi, comment, FYI.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-ensemble-10",
+          "type": "flash",
+          "question": "Parmi les quatre documents, lequel est le seul à ne pas être obligatoire ?",
+          "answer": "Le conseil (guideline) : c'est une recommandation, pas une exigence.",
+          "explanation": "Politique, norme et procédure disent ce qu'on doit faire. Le conseil propose seulement.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pol-politique",
+      "name": "La politique (policy)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La grande règle du collège",
+          "paragraphes": [
+            "Au collège, une règle dit : « Chacun respecte les autres et le matériel. » Elle ne dit pas comment faire, ni pour chaque objet.",
+            "Pourtant, toutes les règles précises en découlent. Et elle reste la même d'une année à l'autre.",
+            "En entreprise, un texte comme celui-là s'appelle une politique (policy)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Les fondations d'une maison",
+          "comme": "On ne refait pas les fondations chaque année. Elles portent toute la maison, même si on change les meubles.",
+          "enVrai": "Une politique de sécurité est large et stable. Elle dure souvent des années. On la relit de temps en temps pour la mettre à jour, mais elle bouge peu."
+        },
+        {
+          "type": "predire",
+          "titre": "À toi de deviner",
+          "question": "Laquelle de ces phrases ressemble à une politique de sécurité ?",
+          "options": [
+            "Nous protégeons les données de nos clients",
+            "Clique sur Paramètres, puis Sécurité, puis Activer",
+            "Un mot de passe doit faire 14 caractères au minimum"
+          ],
+          "answer": "Nous protégeons les données de nos clients",
+          "explanation": "La deuxième phrase donne des étapes : c'est une procédure. La troisième fixe un chiffre précis : c'est une norme. La première pose un principe large."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les politiques courantes d'une entreprise",
+          "texte": "Une entreprise a souvent plusieurs politiques. L'usage acceptable dit ce que les employés ont le droit de faire avec les ordinateurs. Le contrôle d'accès dit qui peut ouvrir quoi. La gestion des changements dit comment modifier un système sans le casser."
+        },
+        {
+          "type": "analogie",
+          "titre": "Trois tailles de règle",
+          "comme": "Au collège, une règle peut concerner tout le monde, seulement la cantine ou un seul sujet, comme les sorties.",
+          "enVrai": "Une politique peut concerner toute l'entreprise (company-wide), un système précis (system-specific) ou un seul sujet (issue-specific). Exemple de sujet : la réaction à un incident, c'est-à-dire un événement qui menace la sécurité."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pol-politique-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « policy »",
+          "answer": "A policy is a formal set of statements that establish a system of principles to guide decisions and actions.\n\nTraduction : Une politique est un ensemble formel d'énoncés qui établissent un système de principes pour guider les décisions et les actions.",
+          "explanation": "Pense à la grande règle du collège : elle guide, sans détailler.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle est à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-def2",
+          "type": "cloze",
+          "question": "A policy is a [[formal]] set of statements that establish a system of [[principles]] to guide decisions and actions.",
+          "answer": "A policy is a formal set of statements that establish a system of principles to guide decisions and actions.",
+          "explanation": "Deux mots-clés : c'est formel, et ça repose sur des principes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-def3",
+          "type": "cloze",
+          "question": "A policy is [[a formal set of statements]] that establish [[a system of principles]] to guide [[decisions and actions]].",
+          "answer": "A policy is a formal set of statements that establish a system of principles to guide decisions and actions.",
+          "explanation": "Trois blocs : des énoncés formels, des principes, et un but : guider décisions et actions.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « policy » (en anglais).",
+          "answer": "A policy is a formal set of statements that establish a system of principles to guide decisions and actions.\n\nTraduction : Une politique est un ensemble formel d'énoncés qui établissent un système de principes pour guider les décisions et les actions.",
+          "explanation": "Compare, repère le mot oublié, recommence demain.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-secu-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « security policy »",
+          "answer": "More specifically, a security policy is a set of statements that identifies the principles and rules that govern an organization's protection of information systems and data.\n\nTraduction : Plus précisément, une politique de sécurité est un ensemble d'énoncés qui identifient les principes et les règles qui gouvernent la protection des systèmes d'information et des données par une organisation.",
+          "explanation": "C'est la politique appliquée à la protection de l'information : principes et règles.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-secu-def2",
+          "type": "cloze",
+          "question": "More specifically, a security policy is a set of [[statements]] that identifies the principles and [[rules]] that govern an organization's protection of information systems and data.",
+          "answer": "More specifically, a security policy is a set of statements that identifies the principles and rules that govern an organization's protection of information systems and data.",
+          "explanation": "Une politique de sécurité contient des énoncés, des principes et des règles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-secu-def3",
+          "type": "cloze",
+          "question": "More specifically, a security policy is [[a set of statements]] that identifies [[the principles and rules]] that govern [[an organization's protection of information systems]] and data.",
+          "answer": "More specifically, a security policy is a set of statements that identifies the principles and rules that govern an organization's protection of information systems and data.",
+          "explanation": "Trois blocs : des énoncés, des principes et règles, et ce qu'ils gouvernent : la protection des systèmes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-secu-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel qui définit une « security policy » (en anglais).",
+          "answer": "More specifically, a security policy is a set of statements that identifies the principles and rules that govern an organization's protection of information systems and data.\n\nTraduction : Plus précisément, une politique de sécurité est un ensemble d'énoncés qui identifient les principes et les règles qui gouvernent la protection des systèmes d'information et des données par une organisation.",
+          "explanation": "Structure : un ensemble d'énoncés, des principes et des règles, la protection des systèmes et des données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-portee-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les trois portées d'une politique",
+          "answer": "Policies can be company-wide, system-specific, or issue-specific (e.g., an incident response policy).\n\nTraduction : Les politiques peuvent concerner toute l'entreprise, un système précis ou un sujet précis (par exemple une politique de réponse aux incidents).",
+          "explanation": "Toute l'entreprise, un système, un sujet : trois tailles possibles.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-portee-def3",
+          "type": "cloze",
+          "question": "Policies can be [[company-wide]], [[system-specific]], or [[issue-specific]] (e.g., an incident response policy).",
+          "answer": "Policies can be company-wide, system-specific, or issue-specific (e.g., an incident response policy).",
+          "explanation": "Trois portées : toute l'entreprise, un système, un sujet.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-base-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le rôle des politiques dans un programme de sécurité",
+          "answer": "Policies set the foundation for your organization's security program and are typically written to be broad enough to be applicable and relevant for many years.\n\nTraduction : Les politiques sont la fondation du programme de sécurité de l'organisation. Elles sont en général écrites assez largement pour rester utiles pendant de nombreuses années.",
+          "explanation": "Fondation = base solide ; large = valable longtemps.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Le manuel compare la politique aux fondations d'un bâtiment.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-base-def3",
+          "type": "cloze",
+          "question": "Policies set [[the foundation for your organization's security program]] and are typically written to be [[broad enough to be applicable]] and relevant for [[many years]].",
+          "answer": "Policies set the foundation for your organization's security program and are typically written to be broad enough to be applicable and relevant for many years.",
+          "explanation": "La fondation du programme, assez large pour être utile, et durable.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-politique-1",
+          "type": "duel",
+          "question": "Une politique est-elle plutôt large ou plutôt précise ?",
+          "options": ["Large : elle pose des principes", "Précise : elle règle chaque détail"],
+          "answer": "Large : elle pose des principes",
+          "explanation": "Les détails vont dans les normes et les procédures. La politique reste générale pour durer."
+        },
+        {
+          "id": "d1-pol-politique-2",
+          "type": "sort",
+          "question": "Quelle est la portée de chacune de ces politiques ?",
+          "answer": "Toute l'entreprise : une politique pour tous les employés ou tous les départements. Système précis : le système de paie, le serveur de la boutique. Sujet précis : la réaction aux incidents, les clés USB.",
+          "explanation": "Demande-toi : qui ou quoi est concerné ? Tout le monde, une machine, ou un seul sujet ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Toute l'entreprise", "Un système précis", "Un sujet précis"],
+            "items": [
+              { "text": "Une politique valable pour tous les employés", "category": "Toute l'entreprise" },
+              { "text": "Une politique qui concerne tous les départements", "category": "Toute l'entreprise" },
+              { "text": "Une politique seulement pour le système de paie", "category": "Un système précis" },
+              { "text": "Une politique seulement pour le serveur de la boutique en ligne", "category": "Un système précis" },
+              { "text": "Une politique sur la réaction aux incidents", "category": "Un sujet précis" },
+              { "text": "Une politique sur l'usage des clés USB", "category": "Un sujet précis" }
+            ]
+          }
+        },
+        {
+          "id": "d1-pol-politique-3",
+          "type": "qcm",
+          "question": "Une entreprise veut réécrire sa politique d'accès chaque mois pour suivre les nouveautés. Est-ce une bonne idée ?",
+          "options": [
+            "Non : une politique doit rester stable des années",
+            "Oui : plus elle change, plus elle protège",
+            "Oui : elle doit suivre chaque nouvel outil"
+          ],
+          "options_why": [
+            "",
+            "Changer souvent ne protège pas mieux. Cela crée surtout de la confusion.",
+            "Les détails d'un outil vont dans les normes et les procédures. La politique, elle, reste large."
+          ],
+          "answer": "Non : une politique doit rester stable des années",
+          "explanation": "Elle est écrite large pour rester valable. On la relit de temps en temps, sans la refaire sans cesse."
+        },
+        {
+          "id": "d1-pol-politique-4",
+          "type": "flash",
+          "question": "Cite trois exemples de politiques de sécurité courantes.",
+          "answer": "La politique d'usage acceptable, la politique de contrôle d'accès, la politique de gestion des changements. Il y a aussi l'accès à distance et la reprise après sinistre.",
+          "explanation": "Chaque politique couvre un sujet : usage, accès, changements, travail à distance, catastrophe.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : acceptable use, access control, change management, remote access et disaster recovery policy.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-politique-5",
+          "type": "cloze",
+          "question": "Une politique peut concerner toute l'entreprise, un [[système]] précis ou un [[sujet]] précis.",
+          "answer": "Une politique peut concerner toute l'entreprise, un système précis ou un sujet précis.",
+          "explanation": "Trois portées possibles, de la plus large à la plus étroite.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-politique-6",
+          "type": "why",
+          "question": "Pourquoi écrit-on les politiques de façon large plutôt que très précise ?",
+          "answer": "Pour qu'elles restent valables des années, même quand les outils changent. Les détails vont dans les normes et les procédures, plus faciles à mettre à jour.",
+          "explanation": "Un texte précis devient vite dépassé. Un principe large dure.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-politique-7",
+          "type": "flash",
+          "question": "Quelle politique dit ce que les employés ont le droit de faire avec les ordinateurs de l'entreprise ?",
+          "answer": "La politique d'usage acceptable (acceptable use policy).",
+          "explanation": "Acceptable use = ce qui est acceptable : l'usage permis des outils de l'entreprise.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-politique-8",
+          "type": "problem",
+          "question": "Écris une phrase de politique sur la protection des données des clients. Elle doit être large, pas technique.",
+          "answer": "Par exemple : « Nous protégeons les données de nos clients contre tout accès non autorisé. »",
+          "explanation": "Pas de chiffre, pas d'étape : un principe qui peut durer des années.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pol-norme",
+      "name": "La norme (standard)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le téléphone en classe",
+          "paragraphes": [
+            "Le règlement dit que le collège doit rester calme. Mais ça ne dit pas ce que tu dois faire exactement.",
+            "Le professeur précise : « Pendant le cours, les téléphones sont éteints et dans le sac. » Là, tout est clair : tout le monde sait ce qui est exigé.",
+            "En entreprise, une exigence précise de ce genre s'appelle une norme (standard)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La règle précise du sport",
+          "comme": "Le règlement dit : « Jouez proprement. » La règle précise dit : « Les chaussures à crampons de métal sont interdites. » Tu la respectes ou non.",
+          "enVrai": "Une norme est une exigence précise qui soutient une politique. Elle dit QUOI faire exactement : une longueur, un réglage, un produit autorisé. Elle doit être suivie et contrôlée."
+        },
+        {
+          "type": "predire",
+          "titre": "À toi de deviner",
+          "question": "Laquelle de ces phrases est une norme ?",
+          "options": [
+            "Nous protégeons les mots de passe de nos employés",
+            "Les mots de passe font au moins 14 caractères",
+            "Pense à changer ton mot de passe de temps en temps"
+          ],
+          "answer": "Les mots de passe font au moins 14 caractères",
+          "explanation": "La première phrase pose un principe : c'est une politique. La troisième est un simple conseil. Seule la deuxième est précise et exigée."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les normes du gouvernement américain",
+          "texte": "Aux États-Unis, l'institut NIST publie des normes appelées FIPS. Elles s'adressent aux agences du gouvernement. L'une d'elles, FIPS 140-2, fixe les exigences de sécurité des modules de chiffrement, c'est-à-dire les pièces qui chiffrent les données. Elle dit quels appareils sont autorisés ou interdits."
+        },
+        {
+          "type": "analogie",
+          "titre": "Quand la norme devient obligatoire",
+          "comme": "Tu signes un contrat de location : « Le chauffage s'éteint la nuit. » Tu dois le respecter, car tu as signé.",
+          "enVrai": "Une norme peut devenir obligatoire à cause d'un contrat ou d'une loi. L'entreprise n'a plus le choix : elle doit l'appliquer."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pol-norme-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « standards »",
+          "answer": "Standards are specific and granular requirements that give direction to support broader, higher-level policies.\n\nTraduction : Les normes sont des exigences précises et détaillées qui donnent une direction pour soutenir des politiques plus larges, de plus haut niveau.",
+          "explanation": "La politique est large ; la norme la précise. Granular veut dire très détaillé.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle est à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-def2",
+          "type": "cloze",
+          "question": "Standards are [[specific]] and granular requirements that give direction to support broader, [[higher-level]] policies.",
+          "answer": "Standards are specific and granular requirements that give direction to support broader, higher-level policies.",
+          "explanation": "Une norme est précise, et elle soutient une politique de plus haut niveau.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-def3",
+          "type": "cloze",
+          "question": "Standards are [[specific and granular requirements]] that [[give direction to support]] [[broader, higher-level policies]].",
+          "answer": "Standards are specific and granular requirements that give direction to support broader, higher-level policies.",
+          "explanation": "Trois blocs : des exigences précises, qui donnent une direction, pour des politiques plus larges.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « standards » (en anglais).",
+          "answer": "Standards are specific and granular requirements that give direction to support broader, higher-level policies.\n\nTraduction : Les normes sont des exigences précises et détaillées qui donnent une direction pour soutenir des politiques plus larges, de plus haut niveau.",
+          "explanation": "Pense : précis, détaillé, exigences, soutient les politiques larges.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-act-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce que les normes établissent",
+          "answer": "Standards establish specific behavior and actions that must be followed and enforced to satisfy policies.\n\nTraduction : Les normes établissent des comportements et des actions précis qui doivent être suivis et appliqués pour satisfaire les politiques.",
+          "explanation": "Une norme se suit et se contrôle : c'est ce qui la distingue d'un conseil.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-act-def3",
+          "type": "cloze",
+          "question": "Standards establish [[specific behavior and actions]] that must be [[followed and enforced]] to [[satisfy policies]].",
+          "answer": "Standards establish specific behavior and actions that must be followed and enforced to satisfy policies.",
+          "explanation": "Des actions précises, suivies et contrôlées, pour répondre aux politiques.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-obli-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : quand une norme est-elle obligatoire ?",
+          "answer": "Standards may be mandatory for a given organization, if mandated by contract or law.\n\nTraduction : Les normes peuvent être obligatoires pour une organisation donnée, si un contrat ou une loi l'impose.",
+          "explanation": "Un contrat ou une loi peut rendre une norme obligatoire.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-obli-def3",
+          "type": "cloze",
+          "question": "Standards may be [[mandatory]] for [[a given organization]], if mandated by [[contract or law]].",
+          "answer": "Standards may be mandatory for a given organization, if mandated by contract or law.",
+          "explanation": "Obligatoire, pour une organisation donnée, à cause d'un contrat ou d'une loi.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-fips-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les « FIPS »",
+          "answer": "The Federal Information Processing Standards (FIPS), for example, are publicly announced standards that were developed by NIST to establish various security requirements for U.S. government agencies; FIPS 140-2, for example, is a standard that establishes security requirements for cryptographic modules.\n\nTraduction : Les Federal Information Processing Standards (FIPS), par exemple, sont des normes annoncées publiquement, développées par le NIST pour fixer diverses exigences de sécurité aux agences du gouvernement américain. FIPS 140-2, par exemple, fixe les exigences de sécurité des modules de chiffrement.",
+          "explanation": "FIPS : les normes du NIST pour l'État américain. FIPS 140-2 concerne le chiffrement.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Le manuel ajoute que cette norme précise quels appareils de chiffrement sont permis ou interdits dans les systèmes du gouvernement américain.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-fips-def3",
+          "type": "cloze",
+          "question": "The Federal Information Processing Standards (FIPS), for example, are [[publicly announced standards]] that were developed by [[NIST]] to establish various security requirements for [[U.S. government agencies]]; FIPS 140-2, for example, is a standard that establishes security requirements for cryptographic modules.",
+          "answer": "The Federal Information Processing Standards (FIPS), for example, are publicly announced standards that were developed by NIST to establish various security requirements for U.S. government agencies; FIPS 140-2, for example, is a standard that establishes security requirements for cryptographic modules.",
+          "explanation": "Trois repères : des normes publiques, créées par le NIST, pour les agences du gouvernement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-norme-1",
+          "type": "duel",
+          "question": "« Les mots de passe font au moins 14 caractères. » Est-ce une politique ou une norme ?",
+          "options": ["Une norme", "Une politique"],
+          "answer": "Une norme",
+          "explanation": "Un chiffre précis qu'on peut vérifier : c'est une exigence détaillée, donc une norme."
+        },
+        {
+          "id": "d1-pol-norme-2",
+          "type": "qcm",
+          "question": "Un magasin signe un contrat avec sa banque. Le contrat exige que les cartes soient chiffrées avec une méthode précise. Que devient cette exigence pour le magasin ?",
+          "options": [
+            "Une norme obligatoire",
+            "Un conseil facultatif",
+            "Une politique sans effet",
+            "Une procédure interne"
+          ],
+          "options_why": [
+            "",
+            "Un conseil se suit librement. Ici le contrat oblige.",
+            "Ce n'est pas un grand principe : l'exigence est précise.",
+            "Une procédure décrit des étapes. Ici, c'est une exigence à respecter."
+          ],
+          "answer": "Une norme obligatoire",
+          "explanation": "Une exigence précise, rendue obligatoire par un contrat : c'est une norme obligatoire."
+        },
+        {
+          "id": "d1-pol-norme-3",
+          "type": "flash",
+          "question": "Que veut dire FIPS, et qui publie ces normes ?",
+          "answer": "Federal Information Processing Standards : des normes publiées par le NIST pour les agences du gouvernement américain.",
+          "explanation": "Fédéral = l'État américain ; information processing = traitement de l'information.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Standards ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-norme-4",
+          "type": "flash",
+          "question": "Quelle norme FIPS fixe les exigences de sécurité des modules de chiffrement ?",
+          "answer": "FIPS 140-2.",
+          "explanation": "140-2 : le numéro à associer au chiffrement.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Standards ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-pol-norme-5",
+          "type": "cloze",
+          "question": "Une norme est une exigence [[précise]] qui [[soutient]] une politique.",
+          "answer": "Une norme est une exigence précise qui soutient une politique.",
+          "explanation": "Précise comme un chiffre, et reliée à une politique plus large.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-norme-6",
+          "type": "sort",
+          "question": "Politique ou norme ? Classe chaque phrase.",
+          "answer": "Politique : nous protégeons les données, nous respectons la loi, nous protégeons les systèmes. Norme : mots de passe de 14 caractères, liste d'appareils autorisés, verrouillage après 5 minutes.",
+          "explanation": "Un principe large est une politique. Un chiffre, une liste ou un réglage précis est une norme.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Politique", "Norme"],
+            "items": [
+              { "text": "Nous protégeons les données de nos clients", "category": "Politique" },
+              { "text": "Nous respectons la loi sur la vie privée", "category": "Politique" },
+              { "text": "Notre entreprise protège ses systèmes contre les pirates", "category": "Politique" },
+              { "text": "Les mots de passe font au moins 14 caractères", "category": "Norme" },
+              { "text": "Seuls les appareils de chiffrement d'une liste autorisée sont utilisés", "category": "Norme" },
+              { "text": "Les ordinateurs se verrouillent après 5 minutes d'inactivité", "category": "Norme" }
+            ]
+          }
+        },
+        {
+          "id": "d1-pol-norme-7",
+          "type": "why",
+          "question": "Pourquoi une politique a-t-elle besoin de normes pour être appliquée ?",
+          "answer": "La politique donne le but général. La norme le traduit en exigences exactes qu'on peut vérifier. Sans elle, chacun comprendrait la politique à sa façon.",
+          "explanation": "Une grande intention ne se contrôle pas. Une exigence précise, si.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-norme-8",
+          "type": "whatif",
+          "question": "Et si une norme est exigée par la loi, mais qu'un employé ne l'applique pas ?",
+          "answer": "L'entreprise risque de ne pas respecter la loi. Une norme exigée par un contrat ou une loi doit être suivie et contrôlée.",
+          "explanation": "Obligatoire veut dire que l'entreprise ne peut pas choisir.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-norme-9",
+          "type": "problem",
+          "question": "Ta politique dit : « Nous protégeons les comptes de nos employés. » Écris une norme qui la soutient.",
+          "answer": "Par exemple : « Chaque compte est protégé par un mot de passe d'au moins 14 caractères. »",
+          "explanation": "La norme est précise : un chiffre qu'on peut vérifier.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pol-baseline",
+      "name": "La référence de base (baseline)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Trente ordinateurs neufs",
+          "paragraphes": [
+            "Le collège reçoit trente ordinateurs neufs. Avant de les donner aux élèves, le technicien règle chacun d'eux de la même façon : antivirus actif, mises à jour automatiques.",
+            "Un ordinateur sans ces réglages n'est pas accepté. On peut ajouter des logiciels en plus, mais jamais en retirer ces réglages.",
+            "Ce niveau minimum commun s'appelle une référence de base (baseline)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le minimum du sac de randonnée",
+          "comme": "Pour partir en randonnée, tout le monde doit avoir de l'eau, une veste et une lampe. Tu peux emporter plus, jamais moins.",
+          "enVrai": "Une baseline fixe le niveau minimum de sécurité d'un système, d'un réseau ou d'un appareil. On peut faire mieux, jamais moins bien. Une entreprise garde souvent une baseline par système d'exploitation."
+        },
+        {
+          "type": "predire",
+          "titre": "À toi de deviner",
+          "question": "Une entreprise utilise trois systèmes d'exploitation différents. Combien de baselines peut-elle avoir ?",
+          "options": [
+            "Une seule pour tout",
+            "Une par système d'exploitation",
+            "Aucune : on décide au cas par cas"
+          ],
+          "answer": "Une par système d'exploitation",
+          "explanation": "Chaque système a ses propres réglages. Le manuel donne cet exemple : une baseline par système d'exploitation."
+        },
+        {
+          "type": "exemple",
+          "titre": "La baseline d'un serveur",
+          "texte": "Ahmed prépare un nouveau serveur. Sa baseline liste : le pare-feu actif, les comptes inutiles supprimés, les mises à jour installées. Ce sont les réglages minimums pour respecter les normes de l'entreprise."
+        },
+        {
+          "type": "analogie",
+          "titre": "Les limites de la liste",
+          "comme": "La liste de randonnée dit : « Sac de 8 kilos au maximum. » Tu choisis tes affaires dans cette limite.",
+          "enVrai": "Le cadrage (scoping guidance) dit de combien on peut s'écarter de la baseline. L'adaptation (tailoring) consiste à choisir les contrôles de sécurité qui atteignent la baseline dans ces limites."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pol-baseline-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « baselines »",
+          "answer": "Baselines are related to standards and establish a minimum level of a security for a system, network, or device.\n\nTraduction : Les références de base sont liées aux normes et établissent un niveau minimum de sécurité pour un système, un réseau ou un appareil.",
+          "explanation": "Baseline = ligne de départ : le minimum de sécurité à respecter.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Le manuel garde la faute « a security » : on l'apprend telle quelle.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-def2",
+          "type": "cloze",
+          "question": "Baselines are related to standards and establish a [[minimum]] level of a security for a system, network, or [[device]].",
+          "answer": "Baselines are related to standards and establish a minimum level of a security for a system, network, or device.",
+          "explanation": "Le mot-clé est minimum, et la liste : système, réseau ou appareil.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-def3",
+          "type": "cloze",
+          "question": "Baselines are related to [[standards]] and establish [[a minimum level of a security]] for [[a system, network, or device]].",
+          "answer": "Baselines are related to standards and establish a minimum level of a security for a system, network, or device.",
+          "explanation": "Trois blocs : lien avec les normes, niveau minimum, et ce qui est protégé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « baselines » (en anglais).",
+          "answer": "Baselines are related to standards and establish a minimum level of a security for a system, network, or device.\n\nTraduction : Les références de base sont liées aux normes et établissent un niveau minimum de sécurité pour un système, un réseau ou un appareil.",
+          "explanation": "Pense : liées aux normes, niveau minimum, système, réseau ou appareil.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-sec-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « security baselines »",
+          "answer": "As a subset of baselines, security baselines express the minimum set of security controls necessary to safeguard the CIA and other security properties for a particular configuration.\n\nTraduction : Comme sous-ensemble des baselines, les baselines de sécurité expriment l'ensemble minimal de contrôles de sécurité nécessaires pour protéger la confidentialité, l'intégrité, la disponibilité et les autres propriétés de sécurité d'une configuration donnée.",
+          "explanation": "C'est la liste minimale de contrôles qui protège la triade CIA pour un réglage précis.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. CIA : confidentialité, intégrité, disponibilité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-sec-def2",
+          "type": "cloze",
+          "question": "As a subset of baselines, security baselines express the [[minimum]] set of security [[controls]] necessary to safeguard the CIA and other security properties for a particular configuration.",
+          "answer": "As a subset of baselines, security baselines express the minimum set of security controls necessary to safeguard the CIA and other security properties for a particular configuration.",
+          "explanation": "Un ensemble minimal de contrôles de sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-sec-def3",
+          "type": "cloze",
+          "question": "As a subset of baselines, security baselines express [[the minimum set of security controls]] necessary to [[safeguard the CIA]] and [[other security properties]] for a particular configuration.",
+          "answer": "As a subset of baselines, security baselines express the minimum set of security controls necessary to safeguard the CIA and other security properties for a particular configuration.",
+          "explanation": "Les contrôles minimaux, ce qu'ils protègent (CIA), et les autres propriétés de sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-sec-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « security baselines » (en anglais).",
+          "answer": "As a subset of baselines, security baselines express the minimum set of security controls necessary to safeguard the CIA and other security properties for a particular configuration.\n\nTraduction : Comme sous-ensemble des baselines, les baselines de sécurité expriment l'ensemble minimal de contrôles de sécurité nécessaires pour protéger la confidentialité, l'intégrité, la disponibilité et les autres propriétés de sécurité d'une configuration donnée.",
+          "explanation": "Pense : sous-ensemble, ensemble minimal de contrôles, protéger le CIA, une configuration.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-cadrage-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « scoping guidance »",
+          "answer": "Scoping guidance is often published as part of a baseline, defining the range of deviation from the baseline that is acceptable for a particular baseline.\n\nTraduction : Le cadrage est souvent publié avec une baseline. Il définit l'écart par rapport à la baseline qui est acceptable pour cette baseline.",
+          "explanation": "Le cadrage fixe jusqu'où on a le droit de s'écarter.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Le manuel renvoie au chapitre 2 (Asset Security) pour plus de détails.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-cadrage-def3",
+          "type": "cloze",
+          "question": "[[Scoping guidance]] is often published as part of a baseline, defining [[the range of deviation]] from the baseline that is [[acceptable]] for a particular baseline.",
+          "answer": "Scoping guidance is often published as part of a baseline, defining the range of deviation from the baseline that is acceptable for a particular baseline.",
+          "explanation": "Le cadrage définit l'écart acceptable par rapport à la baseline.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-adapt-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « tailoring »",
+          "answer": "Once scoping guidance has been established, then tailoring is performed to apply a particular set of controls to achieve the baseline within the scoping guidance.\n\nTraduction : Une fois le cadrage établi, l'adaptation consiste à appliquer un ensemble particulier de contrôles pour atteindre la baseline dans les limites du cadrage.",
+          "explanation": "Tailoring = faire du sur-mesure, comme un tailleur, mais dans les limites du cadrage.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-adapt-def3",
+          "type": "cloze",
+          "question": "Once scoping guidance has been established, then [[tailoring]] is performed to [[apply a particular set of controls]] to achieve the baseline [[within the scoping guidance]].",
+          "answer": "Once scoping guidance has been established, then tailoring is performed to apply a particular set of controls to achieve the baseline within the scoping guidance.",
+          "explanation": "D'abord le cadrage, ensuite l'adaptation : on choisit les contrôles, dans les limites.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-baseline-1",
+          "type": "duel",
+          "question": "Quel mot décrit « le niveau minimum de sécurité à respecter pour un système » ?",
+          "options": ["Une baseline", "Un conseil"],
+          "answer": "Une baseline",
+          "explanation": "Une baseline fixe un minimum à atteindre. Un conseil propose seulement, sans obliger."
+        },
+        {
+          "id": "d1-pol-baseline-2",
+          "type": "qcm",
+          "question": "Une entreprise a une baseline pour ses ordinateurs. Un technicien en installe un sans le pare-feu exigé. Que dit la baseline ?",
+          "options": [
+            "Il manque un minimum : l'ordinateur n'est pas conforme",
+            "Le pare-feu était seulement un conseil",
+            "Le pare-feu pourra être ajouté un jour, sans urgence"
+          ],
+          "options_why": [
+            "",
+            "La baseline fixe un minimum à respecter, pas une suggestion.",
+            "Tant que le minimum manque, la machine n'atteint pas la baseline."
+          ],
+          "answer": "Il manque un minimum : l'ordinateur n'est pas conforme",
+          "explanation": "Une baseline est un seuil minimal. En dessous, la configuration n'est pas acceptée."
+        },
+        {
+          "id": "d1-pol-baseline-3",
+          "type": "sort",
+          "question": "Baseline, cadrage ou adaptation ? Classe chaque phrase.",
+          "answer": "Baseline : le minimum de sécurité. Cadrage : la limite d'écart acceptable. Adaptation : le choix des contrôles dans cette limite.",
+          "explanation": "La baseline est le but minimum. Le cadrage donne la marge. L'adaptation choisit les contrôles dans la marge.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Baseline", "Cadrage (scoping)", "Adaptation (tailoring)"],
+            "items": [
+              { "text": "Le niveau minimum de sécurité d'un ordinateur", "category": "Baseline" },
+              { "text": "La liste minimale de contrôles pour une configuration", "category": "Baseline" },
+              { "text": "Un document dit de combien tu peux t'écarter de la baseline", "category": "Cadrage (scoping)" },
+              { "text": "La marge d'écart acceptable est publiée avec la baseline", "category": "Cadrage (scoping)" },
+              { "text": "Tu choisis les contrôles qui permettent d'atteindre la baseline", "category": "Adaptation (tailoring)" },
+              { "text": "Tu règles ton système dans les limites du cadrage", "category": "Adaptation (tailoring)" }
+            ]
+          }
+        },
+        {
+          "id": "d1-pol-baseline-4",
+          "type": "flash",
+          "question": "Combien de baselines une entreprise peut-elle avoir ?",
+          "answer": "Plusieurs : par exemple une par système d'exploitation utilisé.",
+          "explanation": "Chaque système a ses réglages et ses applications. Chacun a donc sa propre liste minimale.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : l'organisation peut garder une baseline par système d'exploitation.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-baseline-5",
+          "type": "cloze",
+          "question": "Une baseline fixe un niveau [[minimum]] de sécurité pour un système, un réseau ou un [[appareil]].",
+          "answer": "Une baseline fixe un niveau minimum de sécurité pour un système, un réseau ou un appareil.",
+          "explanation": "Minimum : on peut faire mieux, jamais moins bien.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-baseline-6",
+          "type": "why",
+          "question": "Pourquoi avoir une baseline pour chaque système d'exploitation ?",
+          "answer": "Chaque système a ses propres réglages et applications. Une baseline par système liste exactement ce qui doit être en place pour respecter les normes de l'entreprise.",
+          "explanation": "Une liste unique ne conviendrait à aucun système en particulier.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-baseline-7",
+          "type": "flash",
+          "question": "Le manuel cite-t-il les baselines dans le programme officiel de l'examen CISSP ?",
+          "answer": "Non, pas explicitement. Mais le manuel dit qu'il faut les connaître et savoir où elles se placent dans l'ensemble.",
+          "explanation": "Pas dans le programme officiel ne veut pas dire inutile.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « While not specifically called out in the CISSP CBK, you should be familiar with baselines ». CBK : le programme officiel de l'examen.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-baseline-8",
+          "type": "whatif",
+          "question": "Et si une baseline est publiée sans aucun cadrage ?",
+          "answer": "On ne saurait pas de combien on peut s'écarter de la baseline. Chaque équipe jugerait les écarts à sa façon, sans règle commune.",
+          "explanation": "Le cadrage donne la marge de manœuvre qui évite les désaccords.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-baseline-9",
+          "type": "problem",
+          "question": "Écris trois réglages qu'une baseline pour un nouveau serveur pourrait exiger.",
+          "answer": "Par exemple : pare-feu actif, mises à jour installées, comptes inutiles supprimés.",
+          "explanation": "Ce sont des minimums de sécurité, vérifiables un par un.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pol-procedure",
+      "name": "La procédure (procedure)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La recette des crêpes",
+          "paragraphes": [
+            "Ta famille veut faire des crêpes. La règle de la maison dit : « On cuisine proprement et sans gaspiller. »",
+            "Mais ton petit frère ne sait pas faire. Tu lui donnes la recette : 1. mélanger, 2. laisser reposer, 3. cuire.",
+            "Cette recette étape par étape, c'est ce qu'on appelle une procédure (procedure)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme une recette de cuisine",
+          "comme": "Une recette donne les étapes dans l'ordre. Si tu la suis, tu obtiens le résultat attendu.",
+          "enVrai": "Une procédure est un guide détaillé, étape par étape, pour atteindre un but. Elle dit COMMENT faire, et aussi QUI s'en charge (WHO). L'image s'arrête là : rater une crêpe est sans gravité, rater une procédure de sécurité peut coûter des données."
+        },
+        {
+          "type": "predire",
+          "titre": "À toi de deviner",
+          "question": "Laquelle de ces phrases est une procédure ?",
+          "options": [
+            "Les sauvegardes sont chiffrées",
+            "Étape 1 : branche le disque. Étape 2 : lance l'outil. Étape 3 : choisis la date",
+            "Nous protégeons nos données"
+          ],
+          "answer": "Étape 1 : branche le disque. Étape 2 : lance l'outil. Étape 3 : choisis la date",
+          "explanation": "La première phrase est une exigence (norme). La troisième est un principe (politique). Seule la deuxième donne des étapes."
+        },
+        {
+          "type": "exemple",
+          "titre": "Créer le compte d'un nouvel employé",
+          "texte": "Chaque nouvel employé a besoin d'un compte. La procédure liste : 1. recevoir la demande du manager, 2. créer le compte, 3. donner seulement les accès nécessaires, 4. noter l'action dans le journal. Les gestes sont écrits à l'avance, pour que personne n'oublie une étape."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pol-procedure-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « procedure »",
+          "answer": "A procedure is a detailed step-by-step guide to achieve a particular goal or requirement.\n\nTraduction : Une procédure est un guide détaillé, étape par étape, pour atteindre un but ou une exigence particulière.",
+          "explanation": "Pense à une recette : des étapes dans l'ordre pour atteindre un résultat.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle est à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-procedure-def2",
+          "type": "cloze",
+          "question": "A procedure is a [[detailed]] step-by-step guide to achieve a particular goal or [[requirement]].",
+          "answer": "A procedure is a detailed step-by-step guide to achieve a particular goal or requirement.",
+          "explanation": "Détaillé, étape par étape, pour un but ou une exigence.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-procedure-def3",
+          "type": "cloze",
+          "question": "[[A procedure]] is [[a detailed step-by-step guide]] to achieve [[a particular goal or requirement]].",
+          "answer": "A procedure is a detailed step-by-step guide to achieve a particular goal or requirement.",
+          "explanation": "Le nom, ce que c'est (un guide détaillé), et à quoi ça sert (atteindre un but).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-procedure-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « procedure » (en anglais).",
+          "answer": "A procedure is a detailed step-by-step guide to achieve a particular goal or requirement.\n\nTraduction : Une procédure est un guide détaillé, étape par étape, pour atteindre un but ou une exigence particulière.",
+          "explanation": "Pense : détaillée, étape par étape, un but ou une exigence.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-procedure-mise-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : à quoi servent les procédures ?",
+          "answer": "Procedures tell you how to implement your policies and how to meet your standards and baselines.\n\nTraduction : Les procédures te disent comment mettre en œuvre tes politiques et comment respecter tes normes et tes baselines.",
+          "explanation": "La procédure répond à COMMENT : comment appliquer politiques, normes et baselines.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-procedure-mise-def2",
+          "type": "cloze",
+          "question": "Procedures tell you [[how]] to implement your policies and how to meet your [[standards]] and baselines.",
+          "answer": "Procedures tell you how to implement your policies and how to meet your standards and baselines.",
+          "explanation": "Le mot « how » est l'identité de la procédure.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-procedure-mise-def3",
+          "type": "cloze",
+          "question": "Procedures tell you [[how to implement]] your [[policies]] and [[how to meet your standards and baselines]].",
+          "answer": "Procedures tell you how to implement your policies and how to meet your standards and baselines.",
+          "explanation": "Deux usages : appliquer les politiques, et respecter les normes et baselines.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-procedure-mise-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel qui dit à quoi servent les « procedures » (en anglais).",
+          "answer": "Procedures tell you how to implement your policies and how to meet your standards and baselines.\n\nTraduction : Les procédures te disent comment mettre en œuvre tes politiques et comment respecter tes normes et tes baselines.",
+          "explanation": "Pense : how, policies, standards, baselines.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-procedure-1",
+          "type": "flash",
+          "question": "Cite trois exemples de procédures de sécurité.",
+          "answer": "Procédure de sauvegarde et de restauration, de création de comptes, d'analyse des failles (vulnerability scanning) ou de mise à jour des logiciels (patch management).",
+          "explanation": "Chaque exemple est une tâche répétée, qu'on fait mieux avec des étapes écrites.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : vulnerability scanning, backup and restore, account provisioning et patch management procedures.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-procedure-2",
+          "type": "duel",
+          "question": "« Pour restaurer une sauvegarde : ouvre l'outil, choisis la date, clique sur Restaurer. » Est-ce une procédure ou une politique ?",
+          "options": ["Une procédure", "Une politique"],
+          "answer": "Une procédure",
+          "explanation": "Ce sont des gestes dans l'ordre : le COMMENT. Une politique pose des principes, sans gestes."
+        },
+        {
+          "id": "d1-pol-procedure-3",
+          "type": "sort",
+          "question": "Remets dans l'ordre les étapes de la procédure de création d'un compte employé.",
+          "answer": "1. Le manager envoie la demande. 2. Le service informatique crée le compte. 3. On donne seulement les accès nécessaires. 4. L'action est notée dans le journal.",
+          "explanation": "On ne crée pas le compte avant la demande, et on note l'action en dernier pour garder une trace complète.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Le manager envoie la demande de compte",
+              "Le service informatique crée le compte",
+              "On donne seulement les accès nécessaires",
+              "L'action est notée dans le journal"
+            ]
+          }
+        },
+        {
+          "id": "d1-pol-procedure-4",
+          "type": "qcm",
+          "question": "Une entreprise veut que chacun sache restaurer une sauvegarde après une panne. Quel document doit-elle écrire ?",
+          "options": [
+            "Une procédure étape par étape",
+            "Une politique générale",
+            "Un conseil facultatif",
+            "Une norme chiffrée"
+          ],
+          "options_why": [
+            "",
+            "Une politique pose un principe. Elle ne dit pas comment restaurer.",
+            "Un conseil ne garantit pas que tout le monde fasse pareil.",
+            "Une norme dit ce qui est exigé, pas les gestes à faire."
+          ],
+          "answer": "Une procédure étape par étape",
+          "explanation": "On veut des gestes précis et ordonnés : c'est exactement une procédure."
+        },
+        {
+          "id": "d1-pol-procedure-5",
+          "type": "cloze",
+          "question": "Une procédure dit [[comment]] appliquer une politique et respecter une [[norme]].",
+          "answer": "Une procédure dit comment appliquer une politique et respecter une norme.",
+          "explanation": "Comment : le mot-clé qui sépare la procédure des autres documents.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-procedure-6",
+          "type": "why",
+          "question": "Pourquoi écrit-on une procédure même quand les employés sont compétents ?",
+          "answer": "Pour que la tâche soit faite de la même façon par tous, même par un nouveau ou sous le stress. On évite les oublis et les erreurs.",
+          "explanation": "Une étape oubliée, c'est parfois une porte laissée ouverte.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-procedure-7",
+          "type": "whatif",
+          "question": "Et si personne n'a écrit la procédure de restauration des sauvegardes ?",
+          "answer": "Après une panne, chacun improvise sous pression. On peut oublier une étape ou perdre des données. La procédure prépare ces moments à l'avance.",
+          "explanation": "On écrit la procédure quand tout va bien, pour le jour où tout va mal.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-procedure-8",
+          "type": "flash",
+          "question": "À quelles questions répond la procédure dans la figure du manuel ?",
+          "answer": "HOW (comment) et WHO (qui).",
+          "explanation": "Comment on fait, et qui le fait.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, figure 1.3 : « Procedures (HOW, WHO) ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-procedure-9",
+          "type": "problem",
+          "question": "Écris une procédure en trois étapes pour installer une mise à jour de sécurité.",
+          "answer": "Par exemple : 1. Sauvegarder les données. 2. Lancer la mise à jour. 3. Vérifier que tout fonctionne et noter l'action dans le journal.",
+          "explanation": "Des étapes dans l'ordre, avec une vérification à la fin.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pol-conseil",
+      "name": "Le conseil (guideline)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le conseil de la prof",
+          "paragraphes": [
+            "La prof de maths dit : « Si tu as du mal, fais les exercices en plus. » Personne ne t'y oblige.",
+            "Le règlement, lui, dit : « Les devoirs sont obligatoires. » Si tu n'en fais pas, tu as une punition.",
+            "Le conseil de la prof est une recommandation. En sécurité, on l'appelle un conseil (guideline)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Une vitesse conseillée sur la route",
+          "comme": "Sur certains panneaux, une vitesse est seulement conseillée. Tu peux ne pas la suivre. Une limite de vitesse, elle, est obligatoire.",
+          "enVrai": "Un conseil ressemble à une norme, mais il recommande au lieu d'obliger. Il offre des suggestions souples pour atteindre le but de la politique."
+        },
+        {
+          "type": "predire",
+          "titre": "À toi de deviner",
+          "question": "Un document dit : « Il est recommandé de chiffrer ses clés USB. » Que se passe-t-il si un employé ne le fait pas ?",
+          "options": [
+            "Il enfreint une norme obligatoire",
+            "Il ne suit pas une recommandation, ce n'est pas obligatoire",
+            "Il est automatiquement sanctionné"
+          ],
+          "answer": "Il ne suit pas une recommandation, ce n'est pas obligatoire",
+          "explanation": "« Recommandé » veut dire suggéré, pas exigé. C'est la différence avec la norme. Plus tard, une entreprise peut décider de rendre un conseil obligatoire."
+        },
+        {
+          "type": "exemple",
+          "titre": "D'où viennent les conseils ?",
+          "texte": "Les cadres ISO, NIST et ITIL servent souvent de conseils. ITIL est un ensemble de bonnes pratiques pour gérer l'informatique. Les fabricants donnent aussi des réglages par défaut. Des groupes comme OWASP, une organisation indépendante, publient des conseils pour écrire des logiciels sûrs."
+        },
+        {
+          "type": "analogie",
+          "titre": "Quand le conseil devient obligatoire",
+          "comme": "La prof conseille d'apprendre la leçon. Un jour, le règlement du collège l'impose : ça devient une règle.",
+          "enVrai": "Un cadre comme l'ISO ou le NIST est d'abord un conseil. Si l'entreprise a une exigence de conformité, il peut devenir une politique ou une norme."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pol-conseil-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « guideline »",
+          "answer": "A guideline is similar to a standard but is a recommendation rather than a mandatory requirement.\n\nTraduction : Un conseil ressemble à une norme, mais c'est une recommandation plutôt qu'une exigence obligatoire.",
+          "explanation": "Même idée qu'une norme, mais sans obligation : on recommande.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle est à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-def2",
+          "type": "cloze",
+          "question": "A guideline is similar to a standard but is a [[recommendation]] rather than a [[mandatory]] requirement.",
+          "answer": "A guideline is similar to a standard but is a recommendation rather than a mandatory requirement.",
+          "explanation": "Recommandation d'un côté, obligatoire de l'autre : c'est le piège de l'examen.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-def3",
+          "type": "cloze",
+          "question": "A guideline is [[similar to a standard]] but is [[a recommendation]] rather than [[a mandatory requirement]].",
+          "answer": "A guideline is similar to a standard but is a recommendation rather than a mandatory requirement.",
+          "explanation": "Trois blocs : proche d'une norme, une recommandation, pas obligatoire.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « guideline » (en anglais).",
+          "answer": "A guideline is similar to a standard but is a recommendation rather than a mandatory requirement.\n\nTraduction : Un conseil ressemble à une norme, mais c'est une recommandation plutôt qu'une exigence obligatoire.",
+          "explanation": "Pense : proche d'une norme, recommandation, pas obligatoire.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-souple-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce que font les guidelines",
+          "answer": "Guidelines refer to policy statements and offer flexible suggestions for meeting the intent of the policy or recommendations to implement the requirements in standards and baselines.\n\nTraduction : Les conseils renvoient aux énoncés de la politique et offrent des suggestions souples pour atteindre l'intention de la politique, ou des recommandations pour appliquer les exigences des normes et des baselines.",
+          "explanation": "Le conseil aide à atteindre le but d'une politique, avec de la souplesse.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-souple-def2",
+          "type": "cloze",
+          "question": "Guidelines refer to policy statements and offer [[flexible]] suggestions for meeting the [[intent]] of the policy or recommendations to implement the requirements in standards and baselines.",
+          "answer": "Guidelines refer to policy statements and offer flexible suggestions for meeting the intent of the policy or recommendations to implement the requirements in standards and baselines.",
+          "explanation": "Souples (flexible), et au service de l'intention de la politique.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-souple-def3",
+          "type": "cloze",
+          "question": "Guidelines refer to [[policy statements]] and offer [[flexible suggestions]] for meeting the intent of the policy or [[recommendations to implement the requirements]] in standards and baselines.",
+          "answer": "Guidelines refer to policy statements and offer flexible suggestions for meeting the intent of the policy or recommendations to implement the requirements in standards and baselines.",
+          "explanation": "Trois blocs : renvoi à la politique, suggestions souples, aide pour appliquer normes et baselines.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-souple-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur ce que font les « guidelines » (en anglais).",
+          "answer": "Guidelines refer to policy statements and offer flexible suggestions for meeting the intent of the policy or recommendations to implement the requirements in standards and baselines.\n\nTraduction : Les conseils renvoient aux énoncés de la politique et offrent des suggestions souples pour atteindre l'intention de la politique, ou des recommandations pour appliquer les exigences des normes et des baselines.",
+          "explanation": "Pense : policy statements, flexible suggestions, intent, standards and baselines.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-cadres-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les cadres ISO, NIST et ITIL",
+          "answer": "The ISO/NIST/ITIL frameworks are often leveraged as guidelines; however, they may become policies or standards if the organization has a compliance expectation.\n\nTraduction : Les cadres ISO, NIST et ITIL sont souvent utilisés comme conseils. Cependant, ils peuvent devenir des politiques ou des normes si l'organisation a une exigence de conformité.",
+          "explanation": "Un cadre est un conseil, sauf si une exigence de conformité le rend obligatoire.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. ITIL est un ensemble de bonnes pratiques de gestion informatique (précision hors manuel).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-cadres-def3",
+          "type": "cloze",
+          "question": "The ISO/NIST/ITIL frameworks are often [[leveraged as guidelines]]; however, they may [[become policies or standards]] if the organization has [[a compliance expectation]].",
+          "answer": "The ISO/NIST/ITIL frameworks are often leveraged as guidelines; however, they may become policies or standards if the organization has a compliance expectation.",
+          "explanation": "Conseils d'abord, politiques ou normes si l'exigence de conformité l'impose.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pol-conseil-1",
+          "type": "duel",
+          "question": "Un document dit : « Les écrans se verrouillent après 5 minutes. » Est-ce un conseil ou une norme ?",
+          "options": ["Une norme", "Un conseil"],
+          "answer": "Une norme",
+          "explanation": "C'est un chiffre exigé, sans « il est conseillé ». Un conseil emploierait des mots comme recommandé ou suggéré."
+        },
+        {
+          "id": "d1-pol-conseil-2",
+          "type": "qcm",
+          "question": "Une entreprise lit le cadre NIST, sans aucune obligation de contrat ni de loi. Que représente ce cadre pour elle ?",
+          "options": [
+            "Un conseil",
+            "Une loi",
+            "Une norme obligatoire",
+            "Une procédure interne"
+          ],
+          "options_why": [
+            "",
+            "Le NIST publie des cadres, pas des lois pour les entreprises privées.",
+            "Il devient obligatoire seulement si l'entreprise a une exigence de conformité.",
+            "Une procédure est écrite par l'entreprise elle-même, avec des étapes."
+          ],
+          "answer": "Un conseil",
+          "explanation": "Sans exigence de conformité, le cadre reste une source de conseils."
+        },
+        {
+          "id": "d1-pol-conseil-3",
+          "type": "sort",
+          "question": "Conseil ou norme ? Classe chaque phrase.",
+          "answer": "Conseil : le coffre à mots de passe recommandé, le réglage suggéré par le fabricant, les bonnes pratiques d'OWASP. Norme : mots de passe de 14 caractères, disques chiffrés, second contrôle d'identité à distance.",
+          "explanation": "Les mots recommandé ou suggéré annoncent un conseil. Les mots doit ou exige annoncent une norme.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Conseil", "Norme"],
+            "items": [
+              { "text": "Il est recommandé d'utiliser un coffre à mots de passe", "category": "Conseil" },
+              { "text": "Le fabricant suggère un réglage par défaut", "category": "Conseil" },
+              { "text": "OWASP propose des bonnes pratiques de programmation", "category": "Conseil" },
+              { "text": "Les mots de passe font au moins 14 caractères", "category": "Norme" },
+              { "text": "Tous les disques durs doivent être chiffrés", "category": "Norme" },
+              { "text": "L'accès à distance exige un second contrôle d'identité", "category": "Norme" }
+            ]
+          }
+        },
+        {
+          "id": "d1-pol-conseil-4",
+          "type": "flash",
+          "question": "Cite trois sources de conseils (guidelines) évoquées par le manuel.",
+          "answer": "Les cadres ISO, NIST et ITIL, les réglages par défaut des fabricants, et des organisations comme OWASP.",
+          "explanation": "Ces sources donnent des idées reconnues, sans obliger une entreprise à les suivre.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : le CBK, les cadres ISO/NIST/ITIL, les configurations par défaut des fabricants, les guides par secteur et OWASP.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-conseil-5",
+          "type": "cloze",
+          "question": "Un conseil est une [[recommandation]], pas une exigence [[obligatoire]].",
+          "answer": "Un conseil est une recommandation, pas une exigence obligatoire.",
+          "explanation": "C'est la seule différence avec la norme, mais elle est essentielle.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-conseil-6",
+          "type": "why",
+          "question": "Pourquoi un conseil peut-il devenir une norme dans une entreprise ?",
+          "answer": "Si l'entreprise a une exigence de conformité, comme un contrat ou une loi, elle peut rendre obligatoire un cadre comme l'ISO ou le NIST. Il passe alors de conseil à politique ou norme.",
+          "explanation": "Ce qui change, c'est l'obligation, pas le contenu.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-conseil-7",
+          "type": "flash",
+          "question": "Que veut dire FYI, le mot-clé des conseils dans la figure du manuel ?",
+          "answer": "« For your information » : pour ton information. C'est une suggestion, pas un ordre.",
+          "explanation": "FYI sert à informer, pas à imposer.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, figure 1.3 : « Guidelines (FYI) ». La traduction de FYI vient d'ailleurs (hors manuel).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-conseil-8",
+          "type": "whatif",
+          "question": "Et si une entreprise traitait tous les conseils comme des règles obligatoires ?",
+          "answer": "Les employés auraient moins de liberté et il faudrait contrôler chaque suggestion. Ce qui doit vraiment être exigé va dans la politique ou la norme.",
+          "explanation": "Le conseil garde de la souplesse. Les obligations sont réservées au reste.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-conseil-9",
+          "type": "problem",
+          "question": "Écris un conseil et une norme sur le même sujet : les mots de passe.",
+          "answer": "Norme : les mots de passe font au moins 14 caractères. Conseil : utilise un coffre numérique pour retenir tes mots de passe.",
+          "explanation": "La norme est obligatoire et précise. Le conseil aide, sans contraindre.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pol-synthese",
+      "name": "Politique, norme, procédure, conseil : les comparer",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Pizza Express est piratée",
+          "paragraphes": [
+            "L'entreprise Pizza Express vient de subir un piratage : des adresses de clients ont fuité.",
+            "Le patron veut tout remettre en ordre. Il lui faut un texte de principe, des exigences précises, des étapes et quelques conseils.",
+            "À chaque besoin, il doit choisir le bon document. C'est ce que tu vas apprendre à faire."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le collège et l'entreprise, côte à côte",
+          "comme": "Collège : « Le collège reste calme et sûr » (pourquoi). « Téléphones éteints en classe » (quoi). « Pour récupérer un téléphone : étapes 1, 2, 3 » (comment). « Laisse-le à la maison » (conseil).",
+          "enVrai": "Entreprise : « Nous protégeons les données de nos clients » est une politique. « Les mots de passe font 14 caractères » est une norme. « Pour créer un compte : étapes 1, 2, 3 » est une procédure. « Utilise un coffre à mots de passe » est un conseil."
+        },
+        {
+          "type": "predire",
+          "titre": "À toi de deviner",
+          "question": "Le patron veut que chacun sache quoi faire, étape par étape, quand un mail suspect arrive. De quel document a-t-il besoin ?",
+          "options": ["Une politique", "Une procédure", "Un conseil"],
+          "answer": "Une procédure",
+          "explanation": "Il veut des étapes à suivre : le COMMENT. La politique donnerait le principe, et le conseil serait facultatif."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un même sujet, quatre textes",
+          "texte": "Sujet : les sauvegardes. Politique : les données de l'entreprise doivent pouvoir être restaurées. Norme : une sauvegarde est faite chaque nuit. Procédure : pour restaurer, ouvre l'outil, choisis la date, lance. Conseil : garde une copie dans un autre bâtiment."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pol-synthese-1",
+          "type": "sort",
+          "question": "Dans quelle boîte va chaque phrase sur les sauvegardes ?",
+          "answer": "Politique : données restaurables, loi respectée. Norme : sauvegarde chaque nuit, sauvegardes chiffrées. Procédure : les étapes de restauration ou d'appel du service informatique. Conseil : copie hors du bâtiment, test de restauration.",
+          "explanation": "Principe, exigence précise, étapes, ou suggestion : retrouve la question à laquelle chaque phrase répond.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Politique", "Norme", "Procédure", "Conseil"],
+            "items": [
+              { "text": "Les données de l'entreprise doivent pouvoir être restaurées", "category": "Politique" },
+              { "text": "Nous respectons la loi sur la vie privée", "category": "Politique" },
+              { "text": "Une sauvegarde est faite chaque nuit à 2 heures", "category": "Norme" },
+              { "text": "Les sauvegardes sont chiffrées avec la méthode choisie", "category": "Norme" },
+              { "text": "Ouvre l'outil, choisis la date, clique sur Restaurer", "category": "Procédure" },
+              { "text": "Étape 1 : appelle le service informatique. Étape 2 : note l'heure de la panne", "category": "Procédure" },
+              { "text": "Il est conseillé de garder une copie hors du bâtiment", "category": "Conseil" },
+              { "text": "On recommande de tester la restauration de temps en temps", "category": "Conseil" }
+            ]
+          }
+        },
+        {
+          "id": "d1-pol-synthese-2",
+          "type": "duel",
+          "question": "« Les ordinateurs se verrouillent après 5 minutes. » Est-ce une norme ou une politique ?",
+          "options": ["Une norme", "Une politique"],
+          "answer": "Une norme",
+          "explanation": "Une durée précise se vérifie : c'est une exigence détaillée. Une politique serait plus large."
+        },
+        {
+          "id": "d1-pol-synthese-3",
+          "type": "qcm",
+          "question": "Pizza Express veut expliquer en quelques phrases larges pourquoi la sécurité compte pour l'entreprise. Quel document écrire ?",
+          "options": ["Une politique", "Une norme", "Une procédure", "Un conseil"],
+          "options_why": [
+            "",
+            "Une norme donnerait des exigences précises, pas une explication générale.",
+            "Une procédure donnerait des étapes, pas un principe.",
+            "Un conseil est facultatif. Ici, c'est un choix de direction de l'entreprise."
+          ],
+          "answer": "Une politique",
+          "explanation": "Un principe large qui guide les décisions : c'est la fonction de la politique."
+        },
+        {
+          "id": "d1-pol-synthese-4",
+          "type": "qcm",
+          "question": "Pizza Express veut exiger que tous les ordinateurs aient un antivirus à jour. Quel document donne cette exigence précise ?",
+          "options": ["Une norme", "Une politique", "Un conseil", "Une procédure"],
+          "options_why": [
+            "",
+            "Une politique serait plus générale, comme « nous protégeons nos ordinateurs ».",
+            "Un conseil ne rend rien obligatoire.",
+            "Une procédure décrit comment faire, pas ce qui est exigé."
+          ],
+          "answer": "Une norme",
+          "explanation": "Une exigence précise, qu'on peut contrôler machine par machine, est une norme."
+        },
+        {
+          "id": "d1-pol-synthese-5",
+          "type": "why",
+          "question": "Pourquoi la politique ne peut-elle pas remplacer les trois autres documents ?",
+          "answer": "La politique dit le but, mais pas les exigences précises, les gestes ni les conseils. Les trois autres documents la complètent avec des détails.",
+          "explanation": "Un principe seul ne dit ni quoi exiger, ni comment faire.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-synthese-6",
+          "type": "flash",
+          "question": "Un cadre comme le NIST est-il toujours un conseil ?",
+          "answer": "Non. Il devient une politique ou une norme si l'entreprise a une exigence de conformité.",
+          "explanation": "L'obligation vient du contexte : contrat, loi ou décision de l'entreprise.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Guidelines ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-synthese-7",
+          "type": "cloze",
+          "question": "La [[politique]] dit pourquoi, la [[norme]] dit quoi, la procédure dit comment et le [[conseil]] est facultatif.",
+          "answer": "La politique dit pourquoi, la norme dit quoi, la procédure dit comment et le conseil est facultatif.",
+          "explanation": "Quatre documents, quatre rôles : à retenir par coeur.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-synthese-8",
+          "type": "whatif",
+          "question": "Et si une entreprise n'avait que des conseils, sans politique ni norme ?",
+          "answer": "Rien ne serait obligatoire. Chacun ferait comme il veut. L'entreprise ne pourrait pas prouver qu'elle respecte la loi.",
+          "explanation": "Sans obligations, la sécurité dépend de la bonne volonté de chacun.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-synthese-9",
+          "type": "duel",
+          "question": "Lequel de ces documents peut être ignoré sans enfreindre une obligation ?",
+          "options": ["Le conseil", "La norme"],
+          "answer": "Le conseil",
+          "explanation": "Un conseil recommande. Une norme doit être suivie et contrôlée."
+        },
+        {
+          "id": "d1-pol-synthese-10",
+          "type": "problem",
+          "question": "Sur le sujet « ordinateurs portables volés », écris une phrase de politique, de norme, de procédure et de conseil.",
+          "answer": "Politique : nous protégeons les données même si un portable est volé. Norme : tous les disques sont chiffrés. Procédure : en cas de vol, préviens le service informatique, qui bloque le compte. Conseil : ne laisse pas ton portable dans la voiture.",
+          "explanation": "Vérifie que chaque phrase répond à la bonne question : pourquoi, quoi, comment, FYI.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-synthese-11",
+          "type": "flash",
+          "question": "Dans la figure du manuel, quel mot-clé accompagne les normes ?",
+          "answer": "WHAT (quoi).",
+          "explanation": "La norme dit ce qui est exigé, précisément.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, figure 1.3 : « Standards (WHAT) ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pol-synthese-12",
+          "type": "flash",
+          "question": "Quels sont les trois documents qui soutiennent la politique en ajoutant des détails ?",
+          "answer": "Les normes, les procédures et les conseils.",
+          "explanation": "La politique est la base. Les trois autres documents la précisent.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Policies » : « supporting elements ».",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

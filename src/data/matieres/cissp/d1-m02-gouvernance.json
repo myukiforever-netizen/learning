@@ -1,0 +1,2091 @@
+{
+  "id": "d1-m02-gouvernance",
+  "name": "D1.2 La gouvernance de la sécurité",
+  "galaxie": { "teinte": 172, "ambiance": "lumineux" },
+  "concepts": [
+    {
+      "id": "d1-gouv",
+      "name": "La gouvernance de la sécurité (security governance)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Qui décide, au collège ?",
+          "paragraphes": [
+            "Au collège, il y a un règlement. Quelqu'un l'écrit, quelqu'un vérifie qu'on le suit, quelqu'un décide quand le changer.",
+            "Personne ne dit que le règlement est l'affaire du seul surveillant. Toute l'équipe de direction est concernée.",
+            "Dans une entreprise, protéger les données marche pareil. Cela s'appelle la gouvernance de la sécurité (security governance)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le règlement du collège",
+          "comme": "Le règlement dit ce qu'on a le droit de faire. La direction vérifie qu'il est suivi. Chacun a un rôle.",
+          "enVrai": "Une politique (policy) est une règle écrite par l'entreprise. Une procédure (procedure) explique pas à pas comment faire une tâche. La gouvernance de la sécurité, c'est l'ensemble des responsabilités, des politiques et des procédures qui dirigent la protection. L'image s'arrête ici : le règlement du collège ne parle pas de données."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise se fait voler ses fichiers clients. À qui est-ce d'abord le problème ?",
+          "options": [
+            "Seulement au service informatique (IT, pour information technology)",
+            "À toute l'entreprise, direction comprise",
+            "Seulement aux clients touchés"
+          ],
+          "answer": "À toute l'entreprise, direction comprise",
+          "explanation": "Beaucoup pensent que la sécurité est l'affaire des informaticiens. En vrai, c'est un enjeu d'entreprise (business issue)."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les outils ne suffisent pas",
+          "texte": "Une boutique de jouets en ligne achète un excellent pare-feu. Mais personne ne décide qui peut voir les fichiers des clients. Personne ne vérifie que les règles sont suivies. Les outils ne suffisent pas : il faut aussi des décisions, des rôles et un contrôle."
+        },
+        {
+          "type": "analogie",
+          "titre": "Qui dirige ?",
+          "comme": "Au collège, le principal et le conseil d'administration décident des grandes règles. Les profs les appliquent.",
+          "enVrai": "Dans une entreprise, la direction (executive management) dirige la gouvernance, souvent avec le conseil d'administration (board of directors). Ce conseil surveille la direction au nom des propriétaires. La gouvernance de la sécurité recoupe souvent deux autres. La gouvernance d'entreprise (corporate governance) dirige toute l'entreprise. La gouvernance informatique (IT governance) dirige l'informatique."
+        },
+        {
+          "type": "analogie",
+          "titre": "Un processus, comme rendre un devoir",
+          "comme": "Pour rendre un devoir, tu suis toujours la même routine : écrire, relire, rendre à temps, recevoir la note.",
+          "enVrai": "Un processus (process) est une suite d'actions qu'on répète de la même façon. La gouvernance englobe tous les processus qui définissent et gèrent les règles de sécurité. Elle inclut un contrôle (oversight) pour vérifier qu'on suit la mission et la stratégie de l'entreprise. Tu les verras dans la planète suivante."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-gouv-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « security governance »",
+          "answer": "Security governance is the set of responsibilities, policies, and procedures related to defining, managing, and overseeing security practices at an organization.\n\nTraduction : La gouvernance de la sécurité est l'ensemble des responsabilités, des politiques et des procédures qui servent à définir, gérer et superviser les pratiques de sécurité dans une organisation.",
+          "explanation": "Pense au règlement du collège : qui décide, qui applique, qui contrôle.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-gouv-def2",
+          "type": "cloze",
+          "question": "Security governance is the set of [[responsibilities]], policies, and procedures related to defining, managing, and [[overseeing]] security practices at an organization.",
+          "answer": "Security governance is the set of responsibilities, policies, and procedures related to defining, managing, and overseeing security practices at an organization.",
+          "explanation": "La gouvernance commence par des responsabilités et finit par la supervision : elle dirige et contrôle.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-gouv-def3",
+          "type": "cloze",
+          "question": "Security governance is the set of [[responsibilities, policies, and procedures]] related to [[defining, managing, and overseeing]] [[security practices]] at an organization.",
+          "answer": "Security governance is the set of responsibilities, policies, and procedures related to defining, managing, and overseeing security practices at an organization.",
+          "explanation": "Trois blocs : les règles et les rôles, les trois actions, et les pratiques de sécurité visées.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-gouv-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « security governance » (en anglais).",
+          "answer": "Security governance is the set of responsibilities, policies, and procedures related to defining, managing, and overseeing security practices at an organization.\n\nTraduction : La gouvernance de la sécurité est l'ensemble des responsabilités, des politiques et des procédures qui servent à définir, gérer et superviser les pratiques de sécurité dans une organisation.",
+          "explanation": "Pas besoin d'être parfait du premier coup : compare, repère ce qui manque, recommence demain.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-gouv-proc-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « security governance » comme ensemble de processus",
+          "answer": "Security governance is the set of all organizational processes involved in defining and managing information security policies and procedures, including the oversight to ensure that those policies and procedures follow the direction of the organization's strategy and mission.\n\nTraduction : La gouvernance de la sécurité est l'ensemble de tous les processus de l'organisation qui servent à définir et gérer les politiques et procédures de sécurité de l'information. Elle inclut la supervision, pour s'assurer qu'elles suivent la direction de la stratégie et de la mission de l'organisation.",
+          "explanation": "Deuxième définition du manuel : cette fois, on insiste sur les processus et sur la supervision.",
+          "explanation_more": "Section « Organizational Processes », manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-gouv-proc-def2",
+          "type": "cloze",
+          "question": "Security governance is the set of all organizational [[processes]] involved in defining and managing information security policies and procedures, including the [[oversight]] to ensure that those policies and procedures follow the direction of the organization's strategy and mission.",
+          "answer": "Security governance is the set of all organizational processes involved in defining and managing information security policies and procedures, including the oversight to ensure that those policies and procedures follow the direction of the organization's strategy and mission.",
+          "explanation": "Deux mots à retenir : les processus qui font fonctionner la sécurité, et la supervision qui les contrôle.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-gouv-proc-def3",
+          "type": "cloze",
+          "question": "Security governance is [[the set of all organizational processes]] involved in [[defining and managing information security policies]] and procedures, including the oversight to ensure that those policies and procedures follow [[the direction of the organization's strategy]] and mission.",
+          "answer": "Security governance is the set of all organizational processes involved in defining and managing information security policies and procedures, including the oversight to ensure that those policies and procedures follow the direction of the organization's strategy and mission.",
+          "explanation": "Les processus, ce qu'ils gèrent, et la direction à suivre : celle de l'entreprise.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-gouv-proc-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « security governance » comme ensemble de processus (en anglais).",
+          "answer": "Security governance is the set of all organizational processes involved in defining and managing information security policies and procedures, including the oversight to ensure that those policies and procedures follow the direction of the organization's strategy and mission.\n\nTraduction : La gouvernance de la sécurité est l'ensemble de tous les processus de l'organisation qui servent à définir et gérer les politiques et procédures de sécurité de l'information. Elle inclut la supervision, pour s'assurer qu'elles suivent la direction de la stratégie et de la mission de l'organisation.",
+          "explanation": "Phrase longue : retiens d'abord les processus, puis la supervision, puis la direction à suivre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-gouv-1",
+          "type": "duel",
+          "question": "La sécurité d'une entreprise est avant tout : un sujet d'informatique ou un enjeu d'entreprise (business issue) ?",
+          "options": ["Un sujet d'informatique seulement", "Un enjeu d'entreprise"],
+          "answer": "Un enjeu d'entreprise",
+          "explanation": "Protéger les données demande de la planification et du contrôle dans toute l'entreprise, pas seulement chez les informaticiens.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-gouv-2",
+          "type": "why",
+          "question": "Pourquoi la direction de l'entreprise doit-elle diriger la gouvernance de la sécurité ?",
+          "answer": "Parce que la sécurité touche toute l'entreprise. Elle demande de la planification et de la supervision de la part de personnes de tous les services.",
+          "explanation": "Un problème qui touche tout le monde ne peut pas rester dans un seul service.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-gouv-3",
+          "type": "flash",
+          "question": "Avec quelles deux autres gouvernances celle de la sécurité se recoupe-t-elle souvent ?",
+          "answer": "La gouvernance d'entreprise (corporate governance) et la gouvernance informatique (IT governance).",
+          "explanation": "La sécurité touche toute l'entreprise, donc elle croise la façon dont l'entreprise et l'informatique sont dirigées.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Evaluate and Apply Security Governance Principles ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-gouv-4",
+          "type": "qcm",
+          "question": "Laquelle de ces actions fait partie de la gouvernance de la sécurité ?",
+          "options": [
+            "Installer le plus d'outils de sécurité possible",
+            "Laisser chaque employé écrire ses propres règles",
+            "Définir les rôles et les responsabilités de sécurité",
+            "Confier toutes les décisions au service informatique"
+          ],
+          "options_why": [
+            "Les outils seuls ne suffisent pas : il faut aussi des rôles, des règles et un contrôle.",
+            "Sans règles communes, chacun protège à sa façon et personne ne contrôle.",
+            "",
+            "La sécurité est un enjeu d'entreprise : la direction et d'autres services participent."
+          ],
+          "answer": "Définir les rôles et les responsabilités de sécurité",
+          "explanation": "La gouvernance organise qui fait quoi, selon quelles règles et avec quel contrôle.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-gouv-5",
+          "type": "flash",
+          "question": "Un cadre de contrôle de sécurité (security control framework), c'est quoi ?",
+          "answer": "Une liste toute prête de bonnes pratiques de protection. L'entreprise en choisit une ou plusieurs pour s'y aligner.",
+          "explanation": "C'est comme choisir un livre de règles déjà écrit, plutôt que d'inventer toutes les règles toi-même.",
+          "explanation_more": "Tu verras les principaux cadres dans une galaxie suivante. Source : manuel (ISC)2, domaine 1.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-gouv-6",
+          "type": "whatif",
+          "question": "Et si une entreprise laisse la sécurité à un seul technicien, sans en parler à la direction ?",
+          "answer": "Personne ne fixe la direction à suivre ni ne contrôle le travail. La sécurité risque de ne pas servir l'entreprise.",
+          "explanation": "Sans direction ni contrôle, même un bon technicien travaille un peu dans le vide.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-gouv-7",
+          "type": "qcm",
+          "question": "Le patron dit : « La sécurité, c'est le travail de Karim, notre informaticien. » Que peut-on lui répondre ?",
+          "options": [
+            "C'est l'affaire de toute l'entreprise, direction comprise",
+            "Tu as raison : c'est un sujet purement technique",
+            "Seul le conseil d'administration doit s'en occuper",
+            "Karim doit tout décider sans consulter personne"
+          ],
+          "options_why": [
+            "",
+            "La sécurité est un enjeu d'entreprise, pas seulement technique.",
+            "Le conseil dirige, mais tout le monde a un rôle à jouer.",
+            "Une seule personne ne peut ni tout décider ni tout contrôler."
+          ],
+          "answer": "C'est l'affaire de toute l'entreprise, direction comprise",
+          "explanation": "La gouvernance de la sécurité est menée par la direction, avec des rôles pour tous.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-gouv-8",
+          "type": "flash",
+          "question": "Qui dirige en général la gouvernance de la sécurité dans une entreprise ?",
+          "answer": "La direction de l'entreprise (executive management), souvent avec le conseil d'administration (board of directors).",
+          "explanation": "Comme le principal et le conseil du collège : ce sont eux qui décident des grandes règles.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Evaluate and Apply Security Governance Principles ».",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-align",
+      "name": "Mission, stratégie et alignement (business alignment)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le contrôle d'entrée du club",
+          "paragraphes": [
+            "Ton club de basket existe pour faire jouer les jeunes du quartier. Un jour, un nouveau règlement impose un très long contrôle à l'entrée de chaque entraînement.",
+            "Résultat : plus personne ne vient. La règle protège, mais elle empêche le club d'atteindre sa raison d'exister.",
+            "Les entreprises vivent la même chose avec la sécurité. Pour l'éviter, elles partent de leur mission (mission statement) et de leur stratégie (business strategy)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme un voyage en voiture",
+          "comme": "Pour un voyage, la mission est la destination : où tu veux aller et pourquoi. La stratégie est l'itinéraire : par où tu passes.",
+          "enVrai": "La mission dit ce que l'entreprise est, ce qu'elle fait et pourquoi elle existe. La stratégie dit comment elle y arrive. L'image s'arrête ici : la destination change rarement, mais l'itinéraire s'adapte aux embouteillages."
+        },
+        {
+          "type": "predire",
+          "question": "Une règle de sécurité empêche les vendeurs de travailler. Qu'est-ce que cela montre ?",
+          "options": [
+            "Que la sécurité freine toujours une entreprise",
+            "Que la règle n'est pas alignée avec ce que l'entreprise veut faire",
+            "Que les vendeurs refusent de faire des efforts"
+          ],
+          "answer": "Que la règle n'est pas alignée avec ce que l'entreprise veut faire",
+          "explanation": "On pourrait croire que la sécurité est un frein par nature. En vrai, c'est une règle mal alignée qui bloque."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une boutique de baskets",
+          "texte": "Mission : vendre des baskets abordables aux jeunes. Stratégie : vendre surtout sur téléphone, avec des promotions chaque mois. La sécurité alignée protège le paiement sans compliquer l'achat. Elle aide l'entreprise à vendre. Pour avancer, l'entreprise se donne aussi des buts (goals) et des objectifs (objectives). Tu les verras dans la planète suivante."
+        },
+        {
+          "type": "analogie",
+          "titre": "Frein ou moteur ?",
+          "comme": "Une voiture a des freins. Mal réglés, ils bloquent tout. Bien réglés, ils te laissent rouler vite en sécurité.",
+          "enVrai": "Une sécurité mal alignée devient un bloqueur (business blocker) : un obstacle à franchir pour travailler. Une sécurité alignée devient un facilitateur (business enabler) : elle aide l'entreprise à réussir."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-align-mission-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « mission statement »",
+          "answer": "A mission statement is a simple declaration that defines a company's function and purpose; a mission statement summarizes what the company is, what it does, and why the company exists to do those things.\n\nTraduction : Une mission statement est une déclaration simple qui définit la fonction et la raison d'être d'une entreprise. Elle résume ce qu'est l'entreprise, ce qu'elle fait et pourquoi elle existe pour le faire.",
+          "explanation": "Pense à la destination du voyage : ce que l'on est, ce que l'on fait, pourquoi.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-mission-def2",
+          "type": "cloze",
+          "question": "A mission statement is a simple [[declaration]] that defines a company's function and purpose; a mission statement summarizes what the company is, what it does, and why the company [[exists]] to do those things.",
+          "answer": "A mission statement is a simple declaration that defines a company's function and purpose; a mission statement summarizes what the company is, what it does, and why the company exists to do those things.",
+          "explanation": "Une déclaration simple, et une raison d'exister : voilà l'essentiel.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-mission-def3",
+          "type": "cloze",
+          "question": "A mission statement is a [[simple declaration]] that defines a company's [[function and purpose]]; a mission statement summarizes [[what the company is, what it does]], and why the company exists to do those things.",
+          "answer": "A mission statement is a simple declaration that defines a company's function and purpose; a mission statement summarizes what the company is, what it does, and why the company exists to do those things.",
+          "explanation": "La nature de la phrase, ce qu'elle définit, et ce qu'elle résume : qui on est et ce qu'on fait.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-mission-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « mission statement » (en anglais).",
+          "answer": "A mission statement is a simple declaration that defines a company's function and purpose; a mission statement summarizes what the company is, what it does, and why the company exists to do those things.\n\nTraduction : Une mission statement est une déclaration simple qui définit la fonction et la raison d'être d'une entreprise. Elle résume ce qu'est l'entreprise, ce qu'elle fait et pourquoi elle existe pour le faire.",
+          "explanation": "Repère les trois idées : ce qu'elle est, ce qu'elle fait, pourquoi elle existe.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-strat-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « business strategy »",
+          "answer": "A business strategy describes the actions that a company takes to achieve its goals and objectives.\n\nTraduction : Une stratégie d'entreprise décrit les actions qu'une entreprise mène pour atteindre ses buts et ses objectifs.",
+          "explanation": "Pense à l'itinéraire du voyage : les actions concrètes pour arriver.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Buts et objectifs : planète suivante.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-strat-def2",
+          "type": "cloze",
+          "question": "A business strategy [[describes]] the actions that a company takes to [[achieve]] its goals and objectives.",
+          "answer": "A business strategy describes the actions that a company takes to achieve its goals and objectives.",
+          "explanation": "La stratégie décrit des actions, et ces actions servent à atteindre quelque chose.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-strat-def3",
+          "type": "cloze",
+          "question": "A [[business strategy]] describes [[the actions that a company takes]] to achieve [[its goals and objectives]].",
+          "answer": "A business strategy describes the actions that a company takes to achieve its goals and objectives.",
+          "explanation": "Le nom, ce qu'elle décrit (des actions), et ce qu'elle vise : les buts et les objectifs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-strat-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « business strategy » (en anglais).",
+          "answer": "A business strategy describes the actions that a company takes to achieve its goals and objectives.\n\nTraduction : Une stratégie d'entreprise décrit les actions qu'une entreprise mène pour atteindre ses buts et ses objectifs.",
+          "explanation": "Une seule phrase, trois blocs : stratégie, actions, buts et objectifs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-enabler-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « business enabler » (la sécurité qui aide la mission)",
+          "answer": "In other words, a company should achieve its mission thanks in part to security, not despite security.\n\nTraduction : En d'autres termes, une entreprise doit accomplir sa mission en partie grâce à la sécurité, et non malgré elle.",
+          "explanation": "Une sécurité alignée est un moteur : l'entreprise réussit grâce à elle.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, à propos de la sécurité vue comme un facilitateur (business enabler).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-enabler-def3",
+          "type": "cloze",
+          "question": "In other words, a company should [[achieve its mission]] [[thanks in part to security]], not [[despite security]].",
+          "answer": "In other words, a company should achieve its mission thanks in part to security, not despite security.",
+          "explanation": "Atteindre la mission, grâce à la sécurité, et non malgré elle.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-align-1",
+          "type": "duel",
+          "question": "Une règle de sécurité rend le travail des vendeurs presque impossible. La sécurité joue alors le rôle d'un… ?",
+          "options": ["Bloqueur (business blocker)", "Facilitateur (business enabler)"],
+          "answer": "Bloqueur (business blocker)",
+          "explanation": "Une sécurité mal alignée devient un obstacle à franchir pour travailler.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-align-2",
+          "type": "qcm",
+          "question": "Une entreprise de livraison de repas décide de livrer aussi le soir, avec de nouveaux livreurs. Qu'est-ce qui change ?",
+          "options": [
+            "La mission : l'entreprise existe pour autre chose",
+            "La stratégie : la façon d'atteindre sa mission",
+            "Rien, car la stratégie ne change jamais",
+            "La mission et la stratégie changent toujours ensemble"
+          ],
+          "options_why": [
+            "La mission reste la même : livrer des repas. Seule la manière change.",
+            "",
+            "C'est l'inverse : la stratégie doit pouvoir changer avec le contexte.",
+            "La mission change rarement. La stratégie, elle, s'adapte."
+          ],
+          "answer": "La stratégie : la façon d'atteindre sa mission",
+          "explanation": "La destination reste la même, mais on change d'itinéraire.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-align-3",
+          "type": "flash",
+          "question": "Qu'est-ce qui change le plus souvent : la mission ou la stratégie ?",
+          "answer": "La stratégie. La mission change rarement ; la stratégie doit s'adapter quand le contexte de l'entreprise change.",
+          "explanation": "On garde la destination et on change d'itinéraire.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Alignment of the Security Function to Business Strategy, Goals, Mission, and Objectives ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-align-4",
+          "type": "why",
+          "question": "Pourquoi une entreprise doit-elle réussir sa mission grâce à la sécurité et non malgré elle ?",
+          "answer": "Parce que la sécurité doit faire partie du fonctionnement de l'entreprise. Elle aide à avancer au lieu de gêner.",
+          "explanation": "Une sécurité intégrée est un moteur, pas un frein.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-align-5",
+          "type": "duel",
+          "question": "« Elle dit exactement comment la mission sera accomplie. » De quoi parle-t-on ?",
+          "options": ["De la mission", "De la stratégie"],
+          "answer": "De la stratégie",
+          "explanation": "La mission dit quoi et pourquoi. La stratégie dit comment.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-align-6",
+          "type": "flash",
+          "question": "La mission dit ce que l'entreprise veut accomplir. Que dit la stratégie ?",
+          "answer": "Comment : la stratégie dit exactement de quelle façon la mission sera accomplie.",
+          "explanation": "Pense à l'itinéraire du voyage.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-align-7",
+          "type": "whatif",
+          "question": "Et si l'on écrit les règles de sécurité sans connaître la mission de l'entreprise ?",
+          "answer": "Les règles risquent de gêner ce que l'entreprise veut faire. La sécurité devient alors un bloqueur.",
+          "explanation": "Les règles doivent partir de la destination, pas l'ignorer.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-align-8",
+          "type": "qcm",
+          "question": "Une entreprise voit la sécurité comme un obstacle à franchir pour travailler. Quelle est la cause la plus probable ?",
+          "options": [
+            "Les outils de sécurité utilisés sont trop anciens et lents",
+            "L'équipe de sécurité compte trop peu de personnes",
+            "Elle n'est pas alignée avec la mission et la stratégie",
+            "Les employés lisent trop peu leurs mails internes"
+          ],
+          "options_why": [
+            "Même de vieux outils peuvent aider l'entreprise s'ils servent sa mission.",
+            "Plus de personnel ne règle pas des règles mal pensées.",
+            "",
+            "Lire ses mails n'a pas de lien direct avec cette impression d'obstacle."
+          ],
+          "answer": "Elle n'est pas alignée avec la mission et la stratégie",
+          "explanation": "Une sécurité qui ignore ce que fait l'entreprise devient un obstacle.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-buts",
+      "name": "Les buts et les objectifs (goals, objectives)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Réussir son année",
+          "paragraphes": [
+            "Tu veux réussir ton année scolaire. C'est ton grand projet.",
+            "Pour y arriver, tu te fixes de petites étapes : réviser chaque soir, avoir 12 au prochain contrôle.",
+            "En entreprise, le grand projet et les petites étapes ont deux noms : le but (goal) et les objectifs (objectives)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme une randonnée",
+          "comme": "Le sommet de la montagne est ton but. Chaque étape de la journée, jusqu'au refuge, est un objectif.",
+          "enVrai": "Un but (goal) est quelque chose que l'entreprise espère atteindre. Un objectif (objective) est une étape précise et plus courte qui mène au but. Les deux servent la mission. L'image s'arrête ici : une entreprise a souvent plusieurs buts à la fois."
+        },
+        {
+          "type": "predire",
+          "question": "Une boutique veut avoir 10 000 clients dans deux ans. Ouvrir un site pour téléphone dans trois mois, c'est…",
+          "options": ["Un but (goal)", "Un objectif (objective)", "Une mission"],
+          "answer": "Un objectif (objective)",
+          "explanation": "Ouvrir le site est une étape courte vers le grand but : 10 000 clients. On confond souvent les deux mots."
+        },
+        {
+          "type": "exemple",
+          "titre": "En sécurité",
+          "texte": "But : protéger les données des clients pendant toute l'année. Objectifs : former tous les employés au hameçonnage avant mars, puis mettre à jour tous les ordinateurs chaque mois. Chaque objectif est une étape vers le but."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-buts-goal-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « goal »",
+          "answer": "A goal, in business, is something that an organization expects to achieve or accomplish.\n\nTraduction : Un but, en entreprise, est quelque chose qu'une organisation s'attend à atteindre ou à accomplir.",
+          "explanation": "Pense au sommet de la montagne : le résultat qu'on veut atteindre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-goal-def2",
+          "type": "cloze",
+          "question": "A goal, in business, is something that an organization [[expects]] to achieve or [[accomplish]].",
+          "answer": "A goal, in business, is something that an organization expects to achieve or accomplish.",
+          "explanation": "Un but, c'est ce qu'on attend d'atteindre ou d'accomplir.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-goal-def3",
+          "type": "cloze",
+          "question": "A [[goal]], in business, is [[something that an organization expects]] to [[achieve or accomplish]].",
+          "answer": "A goal, in business, is something that an organization expects to achieve or accomplish.",
+          "explanation": "Le nom, ce que l'organisation attend, et ce qu'elle veut en faire : atteindre ou accomplir.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-goal-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « goal » (en anglais).",
+          "answer": "A goal, in business, is something that an organization expects to achieve or accomplish.\n\nTraduction : Un but, en entreprise, est quelque chose qu'une organisation s'attend à atteindre ou à accomplir.",
+          "explanation": "Phrase courte : un but est quelque chose qu'on s'attend à atteindre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-obj-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « objective »",
+          "answer": "An objective is a milestone or a specific step that contributes to an organization reaching its goals and achieving its mission.\n\nTraduction : Un objectif est une étape clé ou une étape précise qui aide une organisation à atteindre ses buts et à accomplir sa mission.",
+          "explanation": "Pense à une étape de la randonnée : elle te rapproche du sommet.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Milestone = étape clé, comme une borne sur la route.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-obj-def2",
+          "type": "cloze",
+          "question": "An objective is a [[milestone]] or a specific [[step]] that contributes to an organization reaching its goals and achieving its mission.",
+          "answer": "An objective is a milestone or a specific step that contributes to an organization reaching its goals and achieving its mission.",
+          "explanation": "Deux mots pour une étape : une borne (milestone) ou un pas précis (step).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-obj-def3",
+          "type": "cloze",
+          "question": "An objective is [[a milestone or a specific step]] that [[contributes to an organization reaching its goals]] and [[achieving its mission]].",
+          "answer": "An objective is a milestone or a specific step that contributes to an organization reaching its goals and achieving its mission.",
+          "explanation": "Ce qu'est un objectif, à quoi il sert, et ce qu'il permet à la fin : la mission.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-obj-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « objective » (en anglais).",
+          "answer": "An objective is a milestone or a specific step that contributes to an organization reaching its goals and achieving its mission.\n\nTraduction : Un objectif est une étape clé ou une étape précise qui aide une organisation à atteindre ses buts et à accomplir sa mission.",
+          "explanation": "Retiens : étape, qui aide à atteindre les buts, et la mission au bout.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-incr-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : à quoi servent les « objectives » ?",
+          "answer": "Objectives are used to define incremental steps toward achieving a broader goal.\n\nTraduction : Les objectifs servent à définir des étapes progressives vers un but plus large.",
+          "explanation": "Un grand but se découpe en petites marches, une à la fois.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Incremental = qui avance petit à petit.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-incr-def3",
+          "type": "cloze",
+          "question": "[[Objectives]] are used to define [[incremental steps]] toward achieving [[a broader goal]].",
+          "answer": "Objectives are used to define incremental steps toward achieving a broader goal.",
+          "explanation": "Les objectifs, des étapes progressives, vers un but plus large.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-buts-1",
+          "type": "duel",
+          "question": "« Une étape courte qui mène vers un résultat plus grand. » But ou objectif ?",
+          "options": ["Un but (goal)", "Un objectif (objective)"],
+          "answer": "Un objectif (objective)",
+          "explanation": "L'objectif est une étape courte. Le but est le résultat plus lointain.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-buts-2",
+          "type": "qcm",
+          "question": "Une entreprise veut devenir très connue. Lequel de ces éléments est un objectif et non un but ?",
+          "options": [
+            "Devenir la marque préférée des jeunes",
+            "Gagner 500 nouveaux clients ce mois-ci",
+            "Être connue dans tous les pays",
+            "Avoir la meilleure réputation partout"
+          ],
+          "options_why": [
+            "C'est un grand résultat final : un but, pas une étape.",
+            "",
+            "C'est un résultat de long terme : un but.",
+            "C'est une ambition générale, sans étape précise : un but."
+          ],
+          "answer": "Gagner 500 nouveaux clients ce mois-ci",
+          "explanation": "Un objectif est une étape courte : ce mois-ci, pas dans dix ans.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-buts-3",
+          "type": "flash",
+          "question": "Quelle est la différence entre un objectif et un but ?",
+          "answer": "Un objectif est une étape à court terme qui aide à atteindre un but à plus long terme.",
+          "explanation": "On utilise souvent les deux mots l'un pour l'autre, mais ils n'ont pas la même durée.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Alignment of the Security Function to Business Strategy, Goals, Mission, and Objectives ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-buts-4",
+          "type": "why",
+          "question": "Pourquoi découper un but en plusieurs objectifs ?",
+          "answer": "Parce que de petites étapes sont plus faciles à suivre. On voit si on avance vers le but.",
+          "explanation": "On gravit une montagne étape par étape.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-buts-5",
+          "type": "flash",
+          "question": "Les buts d'une entreprise doivent contribuer à quoi ?",
+          "answer": "À sa mission.",
+          "explanation": "Les buts viennent de la mission : ils disent concrètement comment avancer vers la raison d'être.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-buts-6",
+          "type": "qcm",
+          "question": "Une responsable écrit : « Notre but est de n'avoir aucune fuite de données cette année. » Que doit-elle ajouter ?",
+          "options": [
+            "Une mission, comme protéger les clients",
+            "Des objectifs, comme former le personnel avant mars",
+            "Un deuxième but, comme éviter toute panne",
+            "Rien : le but est déjà assez précis"
+          ],
+          "options_why": [
+            "La mission existe déjà ; elle ne s'écrit pas à chaque but.",
+            "",
+            "Un autre but ajoute un résultat, mais ne donne pas d'étape.",
+            "Un but seul ne dit pas par quelles étapes passer."
+          ],
+          "answer": "Des objectifs, comme former le personnel avant mars",
+          "explanation": "Les objectifs sont les étapes qui mènent au but.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-buts-7",
+          "type": "cloze",
+          "question": "Un but est un résultat à [[long terme]] ; un objectif est une étape à [[court terme]].",
+          "answer": "Un but est un résultat à long terme ; un objectif est une étape à court terme.",
+          "explanation": "Le sommet de la montagne est le but. Chaque étape du jour est un objectif.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-buts-8",
+          "type": "whatif",
+          "question": "Et si une entreprise fixe un but sans aucun objectif ?",
+          "answer": "Personne ne sait quelles étapes suivre ni si on avance. Le but reste un vœu sans plan.",
+          "explanation": "Un sommet sans chemin balisé, c'est difficile à atteindre.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-smart",
+      "name": "Les buts SMART (SMART goals)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "« Je vais être en forme »",
+          "paragraphes": [
+            "Tu dis : cette année, je vais être en forme. Six mois plus tard, tu ne sais même pas si tu as réussi.",
+            "Comment le savoir ? Ton but était flou : pas de chiffre, pas de date.",
+            "Un bon but a des qualités précises. Les entreprises utilisent un moyen de s'en souvenir : SMART."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un but flou et un but net",
+          "comme": "« Je vais courir plus » ne dit rien. « Je cours 5 kilomètres en 30 minutes avant le 1er juin » dit tout.",
+          "enVrai": "SMART est un sigle mnémotechnique (mnemonic acronym) : un mot fait avec les premières lettres de plusieurs mots, pour s'en souvenir. Chaque lettre rappelle une qualité d'un bon but : Spécifique, Mesurable, Atteignable, Pertinent, limité dans le Temps."
+        },
+        {
+          "type": "predire",
+          "question": "Lequel de ces buts de sécurité est SMART ?",
+          "options": [
+            "Mieux protéger les données",
+            "Former 100 % des employés au hameçonnage avant le 30 juin",
+            "Faire moins d'erreurs un jour"
+          ],
+          "answer": "Former 100 % des employés au hameçonnage avant le 30 juin",
+          "explanation": "Le premier est flou. Le troisième n'a ni chiffre ni date. Le deuxième dit quoi, combien et quand."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les cinq lettres",
+          "texte": "S, Specific : dire quoi, avec des chiffres et des dates. M, Measurable : pouvoir mesurer les progrès. A, Achievable : exigeant, mais possible. R, Relevant : lié à la mission. T, Time-bound : avoir une date limite."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un but flou, un but SMART",
+          "texte": "Flou : être plus en sécurité. SMART : passer de 20 % à 5 % d'employés qui cliquent sur un faux mail d'hameçonnage de test, avant le 31 décembre. On voit quoi, combien et quand."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-smart-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « SMART »",
+          "answer": "SMART is a mnemonic acronym that defines criteria for creating quality goals.\n\nTraduction : SMART est un sigle mnémotechnique qui définit des critères pour créer des buts de qualité.",
+          "explanation": "Un truc pour se souvenir des qualités d'un bon but.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Mnemonic = qui aide à retenir.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-def2",
+          "type": "cloze",
+          "question": "SMART is a [[mnemonic]] acronym that defines [[criteria]] for creating quality goals.",
+          "answer": "SMART is a mnemonic acronym that defines criteria for creating quality goals.",
+          "explanation": "Un sigle pour retenir, et des critères pour juger un but.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-def3",
+          "type": "cloze",
+          "question": "SMART is a [[mnemonic acronym]] that defines [[criteria]] for creating [[quality goals]].",
+          "answer": "SMART is a mnemonic acronym that defines criteria for creating quality goals.",
+          "explanation": "Ce que c'est, ce que ça définit, et pour quoi faire : des buts de qualité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « SMART » (en anglais).",
+          "answer": "SMART is a mnemonic acronym that defines criteria for creating quality goals.\n\nTraduction : SMART est un sigle mnémotechnique qui définit des critères pour créer des buts de qualité.",
+          "explanation": "Courte phrase : un sigle pour retenir des critères de bons buts.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-s-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Specific » (le S de SMART)",
+          "answer": "Specific: State what you will do using real numbers and real deadlines.\n\nTraduction : Spécifique : dis ce que tu feras, avec de vrais chiffres et de vraies dates limites.",
+          "explanation": "Spécifique veut dire précis : on sait exactement quoi faire.",
+          "explanation_more": "Critère du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-s-def3",
+          "type": "cloze",
+          "question": "Specific: [[State what you will do]] using [[real numbers]] and [[real deadlines]].",
+          "answer": "Specific: State what you will do using real numbers and real deadlines.",
+          "explanation": "Dire quoi, avec des chiffres, avec des dates.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-m-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Measurable » (le M de SMART)",
+          "answer": "Measurable: Identify a way to evaluate progress and measure success (or failure). Use metrics or data targets to ensure that the goal is trackable.\n\nTraduction : Mesurable : trouve un moyen d'évaluer les progrès et de mesurer la réussite (ou l'échec). Utilise des indicateurs ou des cibles chiffrées pour pouvoir suivre le but.",
+          "explanation": "Mesurable veut dire qu'on peut suivre les progrès avec des chiffres.",
+          "explanation_more": "Critère du manuel officiel (ISC)2, domaine 1. Une metric est un indicateur chiffré.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-m-def3",
+          "type": "cloze",
+          "question": "Measurable: Identify a way to [[evaluate progress]] and measure success (or failure). Use [[metrics or data targets]] to ensure that the goal is [[trackable]].",
+          "answer": "Measurable: Identify a way to evaluate progress and measure success (or failure). Use metrics or data targets to ensure that the goal is trackable.",
+          "explanation": "Évaluer les progrès, avec des indicateurs, pour pouvoir suivre le but.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-a-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Achievable or Attainable » (le A de SMART)",
+          "answer": "Achievable or Attainable: Establish challenging, but possible, goals that are within your scope.\n\nTraduction : Atteignable : fixe des buts exigeants, mais possibles, dans ton domaine d'action.",
+          "explanation": "Ni trop facile, ni impossible : un défi réaliste.",
+          "explanation_more": "Critère du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-a-def3",
+          "type": "cloze",
+          "question": "[[Achievable or Attainable]]: Establish [[challenging, but possible, goals]] that are [[within your scope]].",
+          "answer": "Achievable or Attainable: Establish challenging, but possible, goals that are within your scope.",
+          "explanation": "Le nom du critère, un défi possible, et dans ton domaine d'action.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-r-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Relevant » (le R de SMART)",
+          "answer": "Relevant: Establish a goal that is pertinent to your overall mission and vision and aligned with your organization's values and strategy.\n\nTraduction : Pertinent : fixe un but lié à ta mission et à ta vision d'ensemble, et aligné sur les valeurs et la stratégie de ton organisation.",
+          "explanation": "Pertinent veut dire que le but sert vraiment la mission de l'entreprise.",
+          "explanation_more": "Critère du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-r-def3",
+          "type": "cloze",
+          "question": "[[Relevant]]: Establish a goal that is [[pertinent to your overall mission]] and vision and aligned with your [[organization's values and strategy]].",
+          "answer": "Relevant: Establish a goal that is pertinent to your overall mission and vision and aligned with your organization's values and strategy.",
+          "explanation": "Le nom du critère, le lien avec la mission, et le lien avec les valeurs et la stratégie.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-t-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Time-bound » (le T de SMART)",
+          "answer": "Time-bound: State when you will get the goal done, using specific dates or timeframes.\n\nTraduction : Limité dans le temps : dis quand tu auras fini, avec des dates ou des délais précis.",
+          "explanation": "Un but sans date limite risque de rester toujours pour plus tard.",
+          "explanation_more": "Critère du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-t-def3",
+          "type": "cloze",
+          "question": "Time-bound: State [[when you will get the goal done]], using [[specific dates]] or [[timeframes]].",
+          "answer": "Time-bound: State when you will get the goal done, using specific dates or timeframes.",
+          "explanation": "Dire quand, avec des dates ou des délais.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-smart-1",
+          "type": "duel",
+          "question": "Quelle lettre de SMART demande une date limite : A ou T ?",
+          "options": ["A (Achievable)", "T (Time-bound)"],
+          "answer": "T (Time-bound)",
+          "explanation": "Time-bound veut dire limité dans le temps : on donne une date ou un délai.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-smart-2",
+          "type": "sort",
+          "question": "À quelle lettre de SMART correspond chaque exigence ?",
+          "answer": "S : écrire précisément ce qu'on fait. M : pouvoir suivre les progrès. A : viser difficile mais possible. T : donner une date.",
+          "explanation": "Demande-toi : précis, mesurable, réaliste ou daté ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["S (Specific)", "M (Measurable)", "A (Achievable)", "T (Time-bound)"],
+            "items": [
+              { "text": "Écrire précisément ce que l'on va faire", "category": "S (Specific)" },
+              { "text": "Prévoir un moyen de suivre les progrès", "category": "M (Measurable)" },
+              { "text": "Choisir des indicateurs pour savoir si ça marche", "category": "M (Measurable)" },
+              { "text": "Viser un but difficile mais possible", "category": "A (Achievable)" },
+              { "text": "Rester dans ce qu'on peut vraiment faire", "category": "A (Achievable)" },
+              { "text": "Donner une date pour finir", "category": "T (Time-bound)" }
+            ]
+          }
+        },
+        {
+          "id": "d1-smart-3",
+          "type": "qcm",
+          "question": "Un but dit : « Éliminer tous les risques de sécurité d'ici demain. » Quelle qualité SMART lui manque ?",
+          "options": [
+            "Mesurable (measurable)",
+            "Limité dans le temps (time-bound)",
+            "Atteignable (achievable)",
+            "Pertinent (relevant)"
+          ],
+          "options_why": [
+            "On peut compter les risques restants : ce n'est pas le problème.",
+            "Il y a bien une date : demain.",
+            "",
+            "Protéger l'entreprise est lié à sa mission : ce n'est pas le problème."
+          ],
+          "answer": "Atteignable (achievable)",
+          "explanation": "Éliminer tous les risques en un jour est impossible. Un bon but est exigeant, mais possible.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-smart-4",
+          "type": "flash",
+          "question": "Que veut dire la lettre R de SMART (Relevant) ?",
+          "answer": "Pertinent : le but est lié à la mission et à la stratégie de l'entreprise.",
+          "explanation": "Un but pertinent sert la mission, il ne s'en éloigne pas.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-smart-5",
+          "type": "why",
+          "question": "Pourquoi un but doit-il être mesurable ?",
+          "answer": "Pour savoir à tout moment si on avance, et si on a réussi ou pas à la fin.",
+          "explanation": "Sans mesure, impossible de dire si on progresse.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-smart-6",
+          "type": "problem",
+          "question": "Réécris ce but flou pour qu'il soit SMART : « Protéger le site web ».",
+          "answer": "Par exemple : réparer les 10 failles connues du site web avant le 30 septembre. On dit quoi, combien et quand.",
+          "explanation": "Ajoute un chiffre, une action précise et une date.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-smart-7",
+          "type": "cloze",
+          "question": "SMART veut dire [[Spécifique]], Mesurable, Atteignable, [[Pertinent]] et limité dans le [[Temps]].",
+          "answer": "SMART veut dire Spécifique, Mesurable, Atteignable, Pertinent et limité dans le Temps.",
+          "explanation": "Cinq qualités, une lettre chacune.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-smart-8",
+          "type": "duel",
+          "question": "« Choisir un but exigeant, mais possible. » Mesurable ou atteignable ?",
+          "options": ["Mesurable (measurable)", "Atteignable (achievable)"],
+          "answer": "Atteignable (achievable)",
+          "explanation": "Mesurable parle des chiffres pour suivre. Atteignable parle de ce qui est réaliste.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-comite",
+      "name": "Le comité de gouvernance (governance committee)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le conseil de classe",
+          "paragraphes": [
+            "Trois fois par an, le conseil de classe se réunit. La direction, les profs et les délégués regardent comment va la classe.",
+            "Personne n'y fait les devoirs à la place des élèves. Le conseil regarde, guide et décide de la direction.",
+            "Dans une entreprise, un groupe fait la même chose pour la sécurité : le comité de gouvernance (governance committee)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le conseil de classe et le comité",
+          "comme": "Au conseil de classe, des adultes responsables se retrouvent régulièrement. Ils regardent les résultats et discutent des problèmes.",
+          "enVrai": "Un comité de gouvernance est un groupe de dirigeants (executives). Il se réunit régulièrement pour fixer la direction de la sécurité. Il regarde les projets et les chiffres de suivi. L'image s'arrête ici : le comité ne fait pas le travail technique lui-même."
+        },
+        {
+          "type": "predire",
+          "question": "Qui fait partie d'un comité de gouvernance de la sécurité ?",
+          "options": [
+            "Seulement les techniciens qui installent les outils",
+            "Des dirigeants et des responsables de l'entreprise",
+            "Les clients de l'entreprise"
+          ],
+          "answer": "Des dirigeants et des responsables de l'entreprise",
+          "explanation": "On pense souvent aux techniciens. Mais le comité réunit des dirigeants, qui dirigent et surveillent. Les clients ne dirigent pas la sécurité."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une réunion de comité",
+          "texte": "Chaque trimestre, le comité d'une banque en ligne regarde la liste des projets de sécurité. Il lit les chiffres : combien d'attaques bloquées, combien de failles réparées. Puis il demande : est-ce que cela sert la mission de la banque ?"
+        },
+        {
+          "type": "analogie",
+          "titre": "Les parties prenantes",
+          "comme": "Pour la cantine du collège, sont concernés : les élèves, les parents, le personnel.",
+          "enVrai": "Les parties prenantes (stakeholders) sont toutes les personnes ou groupes concernés par l'entreprise : clients, employés, propriétaires, partenaires. Le comité vérifie que la sécurité répond à leurs besoins."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-comite-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « governance committee »",
+          "answer": "A governance committee is a group of executives and leaders who regularly meet to set the direction of the company's security function and provide guidance to help the security function align with the company's overall mission and business strategy.\n\nTraduction : Un comité de gouvernance est un groupe de dirigeants et de responsables qui se réunissent régulièrement pour fixer la direction de la fonction de sécurité de l'entreprise. Il la guide pour qu'elle s'aligne sur la mission globale et la stratégie de l'entreprise.",
+          "explanation": "Pense au conseil de classe : des responsables qui se réunissent pour donner la direction.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-comite-def2",
+          "type": "cloze",
+          "question": "A governance committee is a group of [[executives]] and leaders who regularly meet to set the [[direction]] of the company's security function and provide guidance to help the security function align with the company's overall mission and business strategy.",
+          "answer": "A governance committee is a group of executives and leaders who regularly meet to set the direction of the company's security function and provide guidance to help the security function align with the company's overall mission and business strategy.",
+          "explanation": "Des dirigeants, qui donnent la direction à la sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-comite-def3",
+          "type": "cloze",
+          "question": "A governance committee is [[a group of executives and leaders]] who regularly meet to [[set the direction of the company's security function]] and provide guidance to help the security function [[align with the company's overall mission]] and business strategy.",
+          "answer": "A governance committee is a group of executives and leaders who regularly meet to set the direction of the company's security function and provide guidance to help the security function align with the company's overall mission and business strategy.",
+          "explanation": "Qui se réunit, pour fixer quoi, et pour aligner sur quoi : la mission.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-comite-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « governance committee » (en anglais).",
+          "answer": "A governance committee is a group of executives and leaders who regularly meet to set the direction of the company's security function and provide guidance to help the security function align with the company's overall mission and business strategy.\n\nTraduction : Un comité de gouvernance est un groupe de dirigeants et de responsables qui se réunissent régulièrement pour fixer la direction de la fonction de sécurité de l'entreprise. Il la guide pour qu'elle s'aligne sur la mission globale et la stratégie de l'entreprise.",
+          "explanation": "Phrase longue : retiens qui (dirigeants), quoi (la direction) et pour quoi (l'alignement).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-comite-obj-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'objectif principal d'un « governance committee »",
+          "answer": "The primary objective of a governance committee is to provide oversight for the company's security function, while ensuring that the security function continues to meet the needs of the organization and its stakeholders.\n\nTraduction : L'objectif principal d'un comité de gouvernance est de superviser la fonction de sécurité de l'entreprise, tout en s'assurant qu'elle continue de répondre aux besoins de l'organisation et de ses parties prenantes.",
+          "explanation": "Le comité supervise, et vérifie que la sécurité répond toujours aux besoins.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-comite-obj-def3",
+          "type": "cloze",
+          "question": "The primary objective of a governance committee is to [[provide oversight]] for the company's security function, while [[ensuring that the security function continues to meet]] the needs of the organization and [[its stakeholders]].",
+          "answer": "The primary objective of a governance committee is to provide oversight for the company's security function, while ensuring that the security function continues to meet the needs of the organization and its stakeholders.",
+          "explanation": "Superviser, s'assurer que ça continue de répondre aux besoins, et les parties prenantes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-comite-1",
+          "type": "duel",
+          "question": "Le comité de gouvernance sert surtout à… ?",
+          "options": ["Installer les outils de sécurité", "Superviser la fonction de sécurité (oversight)"],
+          "answer": "Superviser la fonction de sécurité (oversight)",
+          "explanation": "Le comité dirige et contrôle. Les techniciens installent les outils.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-comite-2",
+          "type": "qcm",
+          "question": "Quelle réunion ressemble à un comité de gouvernance de la sécurité ?",
+          "options": [
+            "Des techniciens qui installent un nouveau pare-feu sur le réseau",
+            "Des dirigeants qui examinent régulièrement les projets et les chiffres de sécurité",
+            "Une formation donnée à tous les nouveaux employés de l'entreprise",
+            "Un client qui écrit au service d'aide pour un problème"
+          ],
+          "options_why": [
+            "C'est un travail technique, pas de la supervision par des dirigeants.",
+            "",
+            "C'est de la formation, pas une réunion de direction.",
+            "C'est du service client, pas de la gouvernance."
+          ],
+          "answer": "Des dirigeants qui examinent régulièrement les projets et les chiffres de sécurité",
+          "explanation": "Un comité réunit des dirigeants qui regardent les projets et les chiffres de suivi.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-comite-3",
+          "type": "flash",
+          "question": "Aux besoins de qui le comité de gouvernance doit-il s'assurer que la sécurité répond ?",
+          "answer": "Aux besoins de l'entreprise et de ses parties prenantes (stakeholders).",
+          "explanation": "La sécurité sert tous ceux qui sont concernés par l'entreprise.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-comite-4",
+          "type": "why",
+          "question": "Pourquoi une entreprise a-t-elle besoin d'un comité en plus de ses outils de sécurité ?",
+          "answer": "Les outils seuls ne suffisent pas. Il faut aussi des dirigeants qui supervisent, donnent la direction et vérifient que tout suit la mission.",
+          "explanation": "Sans comité, les outils travaillent sans direction commune.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-comite-5",
+          "type": "flash",
+          "question": "Que regarde un comité de gouvernance pendant ses réunions ?",
+          "answer": "Les projets en cours et prévus, les chiffres de suivi (operational metrics) et tout sujet de sécurité de l'entreprise entière.",
+          "explanation": "Il a une vue d'ensemble, pas seulement technique.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Organizational Processes ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-comite-6",
+          "type": "duel",
+          "question": "« L'ensemble des processus qui définissent et gèrent les règles de sécurité, avec leur supervision. » De quoi s'agit-il ?",
+          "options": ["De la gouvernance de la sécurité", "D'un comité de gouvernance"],
+          "answer": "De la gouvernance de la sécurité",
+          "explanation": "La gouvernance est l'ensemble des processus. Le comité est un groupe de personnes qui y participe.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-comite-7",
+          "type": "whatif",
+          "question": "Et si le comité de gouvernance ne se réunit jamais ?",
+          "answer": "Personne ne vérifie que la sécurité suit la mission. Les projets peuvent partir dans tous les sens, sans direction commune.",
+          "explanation": "Le comité se réunit régulièrement pour garder le cap.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-comite-8",
+          "type": "cloze",
+          "question": "Un comité de gouvernance regroupe des [[dirigeants]] qui se réunissent [[régulièrement]] pour superviser la sécurité.",
+          "answer": "Un comité de gouvernance regroupe des dirigeants qui se réunissent régulièrement pour superviser la sécurité.",
+          "explanation": "Deux mots clés : dirigeants et régulièrement.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-fusac",
+      "name": "Fusions et acquisitions (mergers and acquisitions, M&A)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Deux clubs de foot",
+          "paragraphes": [
+            "Le club de ton quartier et celui d'à côté sont petits. Un jour, les deux n'en font plus qu'un, avec un nouveau nom.",
+            "Une autre fois, un gros club rachète un petit club. Le petit disparaît dans le gros.",
+            "Dans les deux cas, il faut mélanger les joueurs, les règles et les clés des vestiaires. Les entreprises vivent cela : on parle de fusion (merger) et d'acquisition (acquisition)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Deux familles sous un même toit",
+          "comme": "Deux familles emménagent ensemble. Chacune a ses habitudes, ses clés et son mot de passe wifi. Il faut tout vérifier avant de mélanger.",
+          "enVrai": "Dans une fusion, deux entreprises forment une nouvelle entreprise commune. Dans une acquisition, une entreprise en rachète une autre. Dans les deux cas, on absorbe tous les systèmes informatiques de l'autre, bons ou mauvais."
+        },
+        {
+          "type": "predire",
+          "question": "Ton entreprise rachète une petite société. Que risque-t-on en reliant tout de suite les deux réseaux ?",
+          "options": [
+            "Rien : une petite société est forcément sûre",
+            "D'ouvrir la porte aux problèmes de sécurité de l'autre société",
+            "De perdre la mission de l'entreprise"
+          ],
+          "answer": "D'ouvrir la porte aux problèmes de sécurité de l'autre société",
+          "explanation": "Une petite société n'est pas forcément sûre. Ses systèmes peuvent avoir des défauts que tu hérites."
+        },
+        {
+          "type": "exemple",
+          "titre": "Windows, macOS et Linux",
+          "texte": "Ton entreprise utilise Windows et macOS. Elle rachète une société avec des dizaines d'ordinateurs sous Linux. Ton équipe doit protéger un troisième système d'exploitation. Un système de plus, c'est un chemin de plus pour les attaquants : un vecteur d'attaque (attack vector)."
+        },
+        {
+          "type": "exemple",
+          "titre": "Des employés mécontents",
+          "texte": "Léa était heureuse dans sa petite société. Après le rachat, elle craint pour son poste. Un employé très mécontent peut devenir une menace de l'intérieur (insider threat) : une personne de l'entreprise qui peut lui nuire."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les vérifications avant l'achat",
+          "texte": "Avant d'acheter, l'équipe de sécurité lit les règles de l'autre société et regarde quelles lois protègent ses données. Elle demande un test d'intrusion (pentest) : des experts autorisés essaient de pénétrer dans les systèmes pour trouver les failles. Elle vérifie aussi les logiciels libres (open source) utilisés. Leur code est public. Leur licence dit ce qu'on a le droit d'en faire."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-fusac-merger-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « merger »",
+          "answer": "A merger is the combining of two separate organizations that creates a new, joint organization.\n\nTraduction : Une fusion est la réunion de deux organisations distinctes qui crée une nouvelle organisation commune.",
+          "explanation": "Deux entreprises se mélangent pour n'en faire qu'une, nouvelle.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Merger = fusion.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-fusac-merger-def2",
+          "type": "cloze",
+          "question": "A merger is the [[combining]] of two separate organizations that creates a new, [[joint]] organization.",
+          "answer": "A merger is the combining of two separate organizations that creates a new, joint organization.",
+          "explanation": "On combine, et on obtient une organisation commune.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-fusac-merger-def3",
+          "type": "cloze",
+          "question": "A merger is [[the combining]] of [[two separate organizations]] that creates [[a new, joint organization]].",
+          "answer": "A merger is the combining of two separate organizations that creates a new, joint organization.",
+          "explanation": "Combiner, deux organisations distinctes, et un résultat nouveau et commun.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-fusac-merger-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « merger » (en anglais).",
+          "answer": "A merger is the combining of two separate organizations that creates a new, joint organization.\n\nTraduction : Une fusion est la réunion de deux organisations distinctes qui crée une nouvelle organisation commune.",
+          "explanation": "Deux organisations distinctes donnent une organisation nouvelle et commune.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-fusac-acq-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « acquisition »",
+          "answer": "An acquisition is the takeover of one organization by another.\n\nTraduction : Une acquisition est la prise de contrôle d'une organisation par une autre.",
+          "explanation": "Le gros club rachète le petit : l'un prend le contrôle de l'autre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Acquisition = rachat.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-fusac-acq-def2",
+          "type": "cloze",
+          "question": "An acquisition is the [[takeover]] of one organization by [[another]].",
+          "answer": "An acquisition is the takeover of one organization by another.",
+          "explanation": "Une prise de contrôle, d'une organisation par une autre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-fusac-acq-def3",
+          "type": "cloze",
+          "question": "An acquisition is [[the takeover]] of [[one organization]] by [[another]].",
+          "answer": "An acquisition is the takeover of one organization by another.",
+          "explanation": "La prise de contrôle, l'organisation rachetée, et celle qui rachète.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-fusac-acq-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « acquisition » (en anglais).",
+          "answer": "An acquisition is the takeover of one organization by another.\n\nTraduction : Une acquisition est la prise de contrôle d'une organisation par une autre.",
+          "explanation": "Une phrase courte : une organisation en reprend une autre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-fusac-1",
+          "type": "duel",
+          "question": "« Deux entreprises forment une nouvelle entreprise commune. » Fusion ou acquisition ?",
+          "options": ["Une fusion (merger)", "Une acquisition (acquisition)"],
+          "answer": "Une fusion (merger)",
+          "explanation": "Dans une fusion, il y a une entreprise nouvelle. Dans une acquisition, une entreprise en reprend une autre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-fusac-2",
+          "type": "sort",
+          "question": "Dans quelle boîte va chaque situation de fusion ou d'acquisition ?",
+          "answer": "Inconnu : outils différents. Vecteurs d'attaque : un nouveau système. Ressources : équipe débordée. Employés : personne mécontente.",
+          "explanation": "Quatre risques du manuel : absorber l'inconnu, de nouveaux chemins d'attaque, des équipes surchargées, des employés mécontents.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Absorber l'inconnu", "Nouveaux vecteurs d'attaque", "Ressources en tension", "Employés mécontents"],
+            "items": [
+              { "text": "Les outils de l'autre société sont gérés très différemment des tiens", "category": "Absorber l'inconnu" },
+              { "text": "Linux apparaît dans une entreprise qui n'avait que Windows et macOS", "category": "Nouveaux vecteurs d'attaque" },
+              { "text": "L'équipe informatique est débordée par les nouveaux systèmes", "category": "Ressources en tension" },
+              { "text": "Un employé inquiet pour son poste pourrait nuire à l'entreprise", "category": "Employés mécontents" }
+            ]
+          }
+        },
+        {
+          "id": "d1-fusac-3",
+          "type": "qcm",
+          "question": "Une entreprise veut racheter une société dont la sécurité est très différente de la sienne. Que faire avant de relier les réseaux ?",
+          "options": [
+            "Relier les deux réseaux tout de suite pour aller plus vite",
+            "Vérifier ses règles et ses failles, puis réparer l'essentiel",
+            "Remplacer tous les ordinateurs de l'autre société dès le premier jour",
+            "Attendre un an après l'achat avant de regarder"
+          ],
+          "options_why": [
+            "Tu importerais toutes leurs failles dans ton réseau.",
+            "",
+            "C'est cher et inutile sans avoir d'abord regardé ce qui existe.",
+            "Les risques doivent être étudiés avant la signature, pas après."
+          ],
+          "answer": "Vérifier ses règles et ses failles, puis réparer l'essentiel",
+          "explanation": "On regarde et on répare avant de connecter.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-fusac-4",
+          "type": "flash",
+          "question": "Que faire si les deux sécurités sont très différentes ?",
+          "answer": "Revoir l'accord ou, au minimum, combler les failles importantes avant de relier les deux réseaux.",
+          "explanation": "On ne branche pas un réseau fragile sur un réseau solide sans l'avoir réparé.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Mergers and Acquisitions ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-fusac-5",
+          "type": "why",
+          "question": "Pourquoi l'équipe de sécurité doit-elle participer dès les premières discussions d'une acquisition ?",
+          "answer": "Pour repérer les problèmes de sécurité de l'autre société avant la signature. On peut alors encore changer d'avis ou prévoir des réparations.",
+          "explanation": "Plus on regarde tôt, plus on a de choix.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-fusac-6",
+          "type": "flash",
+          "question": "Quelle preuve récente demander sur la solidité des réseaux, systèmes et bases de données de l'autre société ?",
+          "answer": "Les résultats d'un test d'intrusion (pentest) récent. Les problèmes graves doivent avoir un plan de réparation.",
+          "explanation": "Un pentest, ce sont des experts autorisés qui essaient de pénétrer dans les systèmes pour trouver les failles.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Mergers and Acquisitions ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-fusac-7",
+          "type": "flash",
+          "question": "Pourquoi regarder quelles lois s'appliquent aux données de l'autre société ?",
+          "answer": "Elle peut devoir respecter des lois sur la protection des données que ton entreprise ne connaît pas encore.",
+          "explanation": "En rachetant la société, tu hérites aussi de ses obligations.",
+          "explanation_more": "Le manuel cite des exemples de règles (PCI, HIPAA, GDPR) que tu verras plus loin dans le cours.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-fusac-8",
+          "type": "whatif",
+          "question": "Et si l'équipe de sécurité n'est jamais invitée aux discussions d'achat ?",
+          "answer": "L'entreprise risque d'acheter des problèmes cachés et de relier des réseaux fragiles sans le savoir.",
+          "explanation": "La sécurité doit être là de la première discussion jusqu'à la fin de l'intégration.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-fusac-9",
+          "type": "cloze",
+          "question": "Une [[fusion]] crée une nouvelle entreprise commune. Dans une [[acquisition]], une entreprise en prend une autre sous son contrôle.",
+          "answer": "Une fusion crée une nouvelle entreprise commune. Dans une acquisition, une entreprise en prend une autre sous son contrôle.",
+          "explanation": "Fusion = une nouvelle entreprise. Acquisition = un rachat.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cession",
+      "name": "Les cessions (divestiture)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le vieux téléphone",
+          "paragraphes": [
+            "Tu vends ton vieux téléphone. Tu l'as rempli de photos, de messages et de mots de passe.",
+            "Si tu le vends sans l'effacer, l'acheteur peut tout lire.",
+            "Une entreprise qui vend une partie de ses activités vit la même chose. Cela s'appelle une cession (divestiture)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Vider sa chambre avant de la donner",
+          "comme": "Avant de donner ta chambre à ton frère, tu enlèves tes affaires personnelles et tu gardes ce que tu veux.",
+          "enVrai": "Une cession, c'est vendre ou se séparer d'une partie de l'entreprise ou de ses biens. Avant, il faut trier ce qui part et ce qui reste. L'information part souvent avec les ordinateurs et les locaux."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise vend son magasin de jeux. Quel est le plus grand souci de sécurité ?",
+          "options": [
+            "Que le magasin soit vendu trop cher",
+            "Que des informations secrètes partent avec les ordinateurs vendus",
+            "Que les clients soient déçus"
+          ],
+          "answer": "Que des informations secrètes partent avec les ordinateurs vendus",
+          "explanation": "Le prix et les clients comptent. Mais en sécurité, le plus grand souci est de garder confidentielles les données qui partent."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les étapes avant la vente",
+          "texte": "Une société vend son service de logistique. Son équipe de sécurité dresse la liste de tout ce qui part : ordinateurs, logiciels, données. Elle sépare ces systèmes du reste de l'entreprise. Elle retire les accès inutiles. Elle demande l'avis des juristes."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cession-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « divestiture »",
+          "answer": "A divestiture is the act of selling off or disposing of a subset of business interests or assets.\n\nTraduction : Une cession est l'acte de vendre ou de se débarrasser d'une partie des intérêts ou des biens de l'entreprise.",
+          "explanation": "Pense à vider et donner une pièce de la maison : on se sépare d'une partie.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Divestiture = cession.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cession-def2",
+          "type": "cloze",
+          "question": "A divestiture is the act of [[selling off]] or disposing of a subset of business interests or [[assets]].",
+          "answer": "A divestiture is the act of selling off or disposing of a subset of business interests or assets.",
+          "explanation": "On vend, ou on se débarrasse, d'une partie des biens.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cession-def3",
+          "type": "cloze",
+          "question": "A [[divestiture]] is the act of [[selling off or disposing of]] a subset of [[business interests or assets]].",
+          "answer": "A divestiture is the act of selling off or disposing of a subset of business interests or assets.",
+          "explanation": "Le nom, l'action (vendre ou se débarrasser), et ce qui part : une partie des biens.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cession-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « divestiture » (en anglais).",
+          "answer": "A divestiture is the act of selling off or disposing of a subset of business interests or assets.\n\nTraduction : Une cession est l'acte de vendre ou de se débarrasser d'une partie des intérêts ou des biens de l'entreprise.",
+          "explanation": "Retiens : vendre ou se débarrasser, d'une partie seulement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cession-1",
+          "type": "duel",
+          "question": "« Vendre ou se débarrasser d'une partie de l'entreprise. » De quoi s'agit-il ?",
+          "options": ["D'une acquisition", "D'une cession (divestiture)"],
+          "answer": "D'une cession (divestiture)",
+          "explanation": "Dans une acquisition, on rachète. Dans une cession, on vend ou on se sépare.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cession-2",
+          "type": "qcm",
+          "question": "Quelle est la première étape à faire avant une cession ?",
+          "options": [
+            "Couper l'accès de tous les employés",
+            "Faire l'inventaire de tous les biens concernés",
+            "Effacer toutes les données de l'entreprise",
+            "Prévenir tous les clients par mail"
+          ],
+          "options_why": [
+            "Tu pourrais bloquer des employés qui en ont encore besoin. On trie d'abord.",
+            "",
+            "Beaucoup de données restent nécessaires à l'entreprise.",
+            "Ce n'est pas la priorité de sécurité à ce stade."
+          ],
+          "answer": "Faire l'inventaire de tous les biens concernés",
+          "explanation": "On ne peut pas protéger ce qu'on ne connaît pas : on dresse d'abord la liste de tout ce qui part.",
+          "explanation_more": "Le manuel appelle cet inventaire des biens (matériel, logiciels, informations) une première étape essentielle.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cession-3",
+          "type": "flash",
+          "question": "Quel est le plus gros souci de sécurité d'une cession ?",
+          "answer": "Garder la confidentialité des informations sensibles qui se trouvent sur les biens dont l'entreprise se sépare.",
+          "explanation": "L'information voyage souvent avec les ordinateurs et les locaux.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Divestitures ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cession-4",
+          "type": "flash",
+          "question": "Pourquoi sépare-t-on les systèmes vendus du reste de l'entreprise ?",
+          "answer": "Parce que l'entreprise partage souvent des systèmes communs : ressources humaines, comptabilité, messagerie. Ce qui est vendu doit en sortir.",
+          "explanation": "Le nouveau propriétaire gère ses propres systèmes, sans accès aux tiens.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Divestitures ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cession-5",
+          "type": "why",
+          "question": "Pourquoi revoir tous les droits d'accès pendant une cession ?",
+          "answer": "Pour savoir qui accède aux biens vendus, retirer les accès devenus inutiles et garder ceux qui restent nécessaires.",
+          "explanation": "Certains employés partent avec les biens vendus : leurs accès ne doivent pas rester ouverts pour rien.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cession-6",
+          "type": "qcm",
+          "question": "Une société vend son service photo. Dix employés partent avec ce service. Que faire de leurs accès ?",
+          "options": [
+            "Laisser tous les accès ouverts, au cas où",
+            "Retirer les accès devenus inutiles, garder les autres",
+            "Retirer les accès de tous les employés de l'entreprise",
+            "Laisser les accès jusqu'à la fin de l'année"
+          ],
+          "options_why": [
+            "Un accès inutile est une porte ouverte pour rien.",
+            "",
+            "Les employés qui restent ont encore besoin de leurs accès.",
+            "Les accès devenus inutiles doivent être retirés rapidement."
+          ],
+          "answer": "Retirer les accès devenus inutiles, garder les autres",
+          "explanation": "On retire ce qui n'est plus nécessaire et on garde ce qui l'est : c'est le moindre privilège.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cession-7",
+          "type": "whatif",
+          "question": "Et si une cession crée une toute nouvelle entreprise ?",
+          "answer": "Elle doit créer sa propre fonction de sécurité, avec ses politiques, ses procédures et sa gouvernance.",
+          "explanation": "Sans l'ancienne entreprise, plus personne ne protège à sa place.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Divestitures ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cession-8",
+          "type": "flash",
+          "question": "Pourquoi une entreprise décide-t-elle de vendre une de ses activités ?",
+          "answer": "Souvent parce que cette activité ne correspond plus à sa stratégie ou à sa mission. Ou parce qu'une fusion a créé des doublons.",
+          "explanation": "Une partie de l'entreprise ne sert plus le chemin choisi.",
+          "explanation_more": "Le manuel cite des raisons politiques, sociales ou financières.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cession-9",
+          "type": "duel",
+          "question": "Dans une cession, qui doit revoir sa sécurité ?",
+          "options": ["Seulement l'entreprise qui vend", "Les deux entreprises"],
+          "answer": "Les deux entreprises",
+          "explanation": "Celle qui vend et celle qui devient autonome ou qui achète doivent adapter leur sécurité.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cession-10",
+          "type": "cloze",
+          "question": "Le plus gros souci d'une cession est de garder la [[confidentialité]] des informations qui partent avec les [[biens]].",
+          "answer": "Le plus gros souci d'une cession est de garder la confidentialité des informations qui partent avec les biens.",
+          "explanation": "Pense au vieux téléphone : on efface avant de vendre.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-roles",
+      "name": "Les rôles et responsabilités de sécurité (CISO, CSO, analyste, utilisateur)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Qui fait quoi dans un club ?",
+          "paragraphes": [
+            "Dans ton club de sport, la présidente fixe la direction. Le directeur sportif supervise toutes les équipes. Les entraîneurs font le travail de tous les jours.",
+            "Mais le règlement concerne chaque joueur. Si un seul joueur l'ignore, tout le club peut avoir des problèmes.",
+            "En sécurité, c'est pareil : chaque personne a un rôle, du directeur général au stagiaire."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le club et l'entreprise",
+          "comme": "Le directeur sportif supervise toutes les équipes. Les entraîneurs font le travail de tous les jours. Chaque joueur respecte le règlement.",
+          "enVrai": "Le CISO (chief information security officer) supervise tout le programme de sécurité. Un analyste de sécurité (security analyst) fait le travail de tous les jours. Chaque utilisateur (user) respecte les règles. Un programme de sécurité (security program) est l'ensemble des actions et règles qui protègent l'entreprise."
+        },
+        {
+          "type": "predire",
+          "question": "Qui est responsable de la sécurité de l'information dans une entreprise ?",
+          "options": [
+            "Seulement le chef de la sécurité",
+            "Seulement le service informatique",
+            "Tout le monde, du directeur général au stagiaire"
+          ],
+          "answer": "Tout le monde, du directeur général au stagiaire",
+          "explanation": "Le chef de la sécurité dirige, mais chaque personne doit respecter les règles et signaler les problèmes."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les rôles dans une petite banque",
+          "texte": "Sara est CISO : elle fixe la stratégie de sécurité. Omar est directeur : il guide plusieurs programmes de sécurité. Inès gère le programme de formation. Karim est analyste : il règle le pare-feu. Les utilisateurs incluent aussi les prestataires. Un contractant (contractor) est engagé pour une mission. Un fournisseur (vendor) vend ses produits ou services."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le CISO et le CSO",
+          "comme": "Un collège a besoin de quelqu'un pour les portes, les badges et les caméras. Il a aussi besoin de quelqu'un pour protéger les fichiers.",
+          "enVrai": "Le CSO (chief security officer) s'occupe de la sécurité physique et du personnel. Le CISO s'occupe de l'information. Souvent le CISO a repris les deux rôles, et certaines entreprises appellent leur chef de la sécurité CSO. Il faut regarder le contexte."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-roles-ciso-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « CISO »",
+          "answer": "A CISO is the senior-level executive within an organization who is responsible for the overall management and supervision of the information security program.\n\nTraduction : Le CISO est le cadre dirigeant de plus haut niveau d'une organisation, responsable de la gestion et de la supervision d'ensemble du programme de sécurité de l'information.",
+          "explanation": "Pense au directeur sportif : il supervise tout le programme.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. CISO = chief information security officer.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-ciso-def2",
+          "type": "cloze",
+          "question": "A CISO is the senior-level [[executive]] within an organization who is responsible for the overall [[management]] and supervision of the information security program.",
+          "answer": "A CISO is the senior-level executive within an organization who is responsible for the overall management and supervision of the information security program.",
+          "explanation": "Un dirigeant de haut niveau, qui gère et supervise.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-ciso-def3",
+          "type": "cloze",
+          "question": "A CISO is [[the senior-level executive]] within an organization who is responsible for [[the overall management and supervision]] of [[the information security program]].",
+          "answer": "A CISO is the senior-level executive within an organization who is responsible for the overall management and supervision of the information security program.",
+          "explanation": "Qui il est, ce dont il répond, et sur quoi : le programme de sécurité de l'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-ciso-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « CISO » (en anglais).",
+          "answer": "A CISO is the senior-level executive within an organization who is responsible for the overall management and supervision of the information security program.\n\nTraduction : Le CISO est le cadre dirigeant de plus haut niveau d'une organisation, responsable de la gestion et de la supervision d'ensemble du programme de sécurité de l'information.",
+          "explanation": "Trois blocs : dirigeant de haut niveau, gestion et supervision, programme de sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-cso-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « CSO »",
+          "answer": "A CSO is a senior-level executive within an organization who is generally responsible for all physical security and personnel security matters.\n\nTraduction : Un CSO est un cadre dirigeant de haut niveau d'une organisation, généralement responsable de toutes les questions de sécurité physique et de sécurité du personnel.",
+          "explanation": "Le CSO s'occupe des portes, des badges et des personnes, pas seulement des fichiers.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. CSO = chief security officer.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-cso-def3",
+          "type": "cloze",
+          "question": "A [[CSO]] is a [[senior-level executive]] within an organization who is generally responsible for [[all physical security and personnel security matters]].",
+          "answer": "A CSO is a senior-level executive within an organization who is generally responsible for all physical security and personnel security matters.",
+          "explanation": "Le titre, le niveau, et le domaine : sécurité physique et du personnel.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-analyst-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « security analyst »",
+          "answer": "A security analyst is someone with technical expertise in one or more security domains who executes the day-to-day security work.\n\nTraduction : Un analyste de sécurité est une personne qui a une expertise technique dans un ou plusieurs domaines de la sécurité et qui exécute le travail de sécurité de tous les jours.",
+          "explanation": "L'analyste, c'est l'entraîneur : il fait le travail de tous les jours.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Le manuel cite l'analyse de données, les règles du pare-feu et la gestion des incidents.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-analyst-def3",
+          "type": "cloze",
+          "question": "A [[security analyst]] is someone with [[technical expertise]] in one or more security domains who [[executes the day-to-day security work]].",
+          "answer": "A security analyst is someone with technical expertise in one or more security domains who executes the day-to-day security work.",
+          "explanation": "Le titre, la compétence technique, et le travail de tous les jours.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-manager-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « manager » (ou program manager) en sécurité",
+          "answer": "In security, a manager (or program manager) is someone who owns one or more processes related to information security.\n\nTraduction : En sécurité, un manager (ou responsable de programme) est quelqu'un qui est responsable d'un ou de plusieurs processus liés à la sécurité de l'information.",
+          "explanation": "Le manager est le propriétaire de processus : il en répond.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Le manuel cite la conformité (compliance) et la gestion des vulnérabilités, vues plus loin.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-manager-def3",
+          "type": "cloze",
+          "question": "In security, a [[manager]] (or program manager) is someone who [[owns one or more processes]] related to [[information security]].",
+          "answer": "In security, a manager (or program manager) is someone who owns one or more processes related to information security.",
+          "explanation": "Le titre, ce qu'il possède (des processus), et le domaine.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-director-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « director » en sécurité",
+          "answer": "In security, a director is generally a manager of managers who is responsible for the overall strategic guidance of a group of security programs.\n\nTraduction : En sécurité, un directeur est généralement un manager de managers, responsable de l'orientation stratégique d'ensemble d'un groupe de programmes de sécurité.",
+          "explanation": "Le directeur est un manager de managers : il guide la stratégie.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-director-def3",
+          "type": "cloze",
+          "question": "In security, a [[director]] is generally [[a manager of managers]] who is responsible for [[the overall strategic guidance]] of a group of security programs.",
+          "answer": "In security, a director is generally a manager of managers who is responsible for the overall strategic guidance of a group of security programs.",
+          "explanation": "Le titre, le niveau (manager de managers), et le rôle : guider la stratégie.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-user-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « user » (ou end user)",
+          "answer": "A user (or end user) includes any person who accesses or handles an organization's information systems or data.\n\nTraduction : Un utilisateur (ou utilisateur final) comprend toute personne qui accède aux systèmes d'information ou aux données d'une organisation, ou qui les manipule.",
+          "explanation": "Un utilisateur, c'est n'importe qui qui touche aux systèmes ou aux données.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Cela inclut employés, stagiaires, prestataires, consultants, fournisseurs et partenaires.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-user-def3",
+          "type": "cloze",
+          "question": "A [[user]] (or end user) includes [[any person who accesses or handles]] an organization's [[information systems or data]].",
+          "answer": "A user (or end user) includes any person who accesses or handles an organization's information systems or data.",
+          "explanation": "Le titre, la personne qui accède ou manipule, et ce qu'elle touche : systèmes ou données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-roles-1",
+          "type": "duel",
+          "question": "En principe, qui s'occupe surtout de la sécurité physique et du personnel ?",
+          "options": ["Le CISO", "Le CSO"],
+          "answer": "Le CSO",
+          "explanation": "Le CSO s'occupe des portes, des badges et des personnes. Le CISO s'occupe de l'information.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-roles-2",
+          "type": "qcm",
+          "question": "Qui exécute le travail de sécurité de tous les jours, comme gérer les règles du pare-feu ?",
+          "options": [
+            "Le CISO",
+            "Un directeur",
+            "Un analyste de sécurité (security analyst)",
+            "Un utilisateur"
+          ],
+          "options_why": [
+            "Il dirige le programme : il ne fait pas le travail de tous les jours.",
+            "Il guide la stratégie de plusieurs programmes.",
+            "",
+            "Il applique les règles, mais ce n'est pas son travail quotidien en sécurité."
+          ],
+          "answer": "Un analyste de sécurité (security analyst)",
+          "explanation": "L'analyste est l'entraîneur : il fait le travail de tous les jours.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-roles-3",
+          "type": "sort",
+          "question": "Qui est responsable de quoi ?",
+          "answer": "CISO : stratégie. Analyste : travail quotidien. Directeur : groupe de programmes. Utilisateur : respecter les règles et signaler.",
+          "explanation": "Pense au club : direction, entraîneurs, directeur sportif et joueurs.",
+          "data": {
+            "mode": "classer",
+            "categories": ["CISO", "Analyste", "Directeur", "Utilisateur"],
+            "items": [
+              { "text": "Fixer la stratégie et la vision de sécurité de l'entreprise", "category": "CISO" },
+              { "text": "Gérer au quotidien les règles du pare-feu", "category": "Analyste" },
+              { "text": "Analyser des données et traiter les problèmes de sécurité", "category": "Analyste" },
+              { "text": "Diriger des managers qui gèrent des programmes de sécurité", "category": "Directeur" },
+              { "text": "Signaler un mail suspect à la sécurité", "category": "Utilisateur" },
+              { "text": "Suivre la formation obligatoire de sécurité", "category": "Utilisateur" }
+            ]
+          }
+        },
+        {
+          "id": "d1-roles-4",
+          "type": "flash",
+          "question": "À qui le CISO rend-il compte, le plus souvent ?",
+          "answer": "Au directeur informatique (CIO, chief information officer) ou au directeur général (CEO, chief executive officer). Beaucoup pensent qu'il devrait rendre compte directement au CEO.",
+          "explanation": "La sécurité est vue de plus en plus comme un enjeu d'entreprise, pas seulement d'informatique.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Organizational Roles and Responsibilities ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-roles-5",
+          "type": "why",
+          "question": "Pourquoi le manuel dit-il que la sécurité est le travail de tout le monde ?",
+          "answer": "Parce que chaque personne qui utilise les systèmes ou les données peut causer ou éviter un problème. Cela va du directeur général au stagiaire.",
+          "explanation": "Un seul maillon faible peut mettre toute l'entreprise en danger.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-roles-6",
+          "type": "flash",
+          "question": "Que doit faire un utilisateur quand il voit quelque chose de suspect ?",
+          "answer": "Le signaler rapidement aux bonnes personnes : toute violation de la sécurité ou tout incident, réel ou soupçonné.",
+          "explanation": "Plus on prévient tôt, plus on limite les dégâts.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Organizational Roles and Responsibilities ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-roles-7",
+          "type": "flash",
+          "question": "Que doit faire un utilisateur avec les règles de sécurité de l'entreprise ?",
+          "answer": "Les comprendre, les accepter et les respecter. Il doit aussi tenir ses engagements. Exemple : un accord de confidentialité (nondisclosure agreement), un contrat pour ne pas révéler des secrets.",
+          "explanation": "Une règle n'a de valeur que si chacun la connaît et la suit.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Organizational Roles and Responsibilities ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-roles-8",
+          "type": "qcm",
+          "question": "Dans une entreprise, le chef de la sécurité s'appelle « CSO ». Que peut-on en conclure ?",
+          "options": [
+            "C'est toujours le chef de la sécurité physique seulement",
+            "Il faut regarder le contexte : le titre n'a pas toujours le même sens",
+            "C'est forcément un autre nom du CISO dans toutes les entreprises",
+            "L'entreprise n'a aucune protection des données"
+          ],
+          "options_why": [
+            "Parfois oui, mais certaines entreprises l'utilisent pour leur chef de toute la sécurité.",
+            "",
+            "Parfois oui, mais pas toujours : certaines entreprises ont un CSO et un CISO.",
+            "Le titre ne dit rien du niveau de protection des données."
+          ],
+          "answer": "Il faut regarder le contexte : le titre n'a pas toujours le même sens",
+          "explanation": "Le manuel conseille de s'appuyer sur le contexte quand on voit ces titres.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-roles-9",
+          "type": "duel",
+          "question": "Qui est « un manager de managers » qui guide la stratégie d'un groupe de programmes ?",
+          "options": ["Un manager de programme", "Un directeur"],
+          "answer": "Un directeur",
+          "explanation": "Le manager possède des processus. Le directeur guide un groupe de programmes.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-roles-10",
+          "type": "whatif",
+          "question": "Et si les rôles de sécurité ne sont pas définis pour les prestataires extérieurs ?",
+          "answer": "Ils ne sauront pas ce qu'on attend d'eux. Les rôles doivent être définis et compris aussi par les contractants et les fournisseurs.",
+          "explanation": "Les prestataires touchent aux données : ce sont aussi des utilisateurs.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Organizational Roles and Responsibilities ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-roles-11",
+          "type": "cloze",
+          "question": "Un utilisateur doit terminer toutes les [[formations]] de sécurité avant leur [[date limite]].",
+          "answer": "Un utilisateur doit terminer toutes les formations de sécurité avant leur date limite.",
+          "explanation": "C'est l'une des trois responsabilités générales : suivre les formations.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-diligence",
+      "name": "Due care et due diligence (la prudence raisonnable)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le vélo et l'antivol",
+          "paragraphes": [
+            "Tu laisses ton vélo devant le collège. Avec un antivol, personne ne te reprochera le vol. Sans antivol, on te dira : tu n'as pas fait attention.",
+            "On juge ta conduite par rapport à ce que ferait une personne raisonnable dans la même situation.",
+            "En entreprise, cette idée a deux noms anglais : la due care et la due diligence."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "L'antivol et la vérification",
+          "comme": "Mettre l'antivol est le geste de départ. Vérifier chaque matin qu'il est toujours en bon état, c'est le suivi.",
+          "enVrai": "La due care, c'est faire ce qu'une personne raisonnable ferait pour protéger les biens de l'entreprise. La due diligence, c'est vérifier en continu qu'on continue à le faire. L'image s'arrête ici : en justice, on compare avec une personne de même métier et de même expérience."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise active le journal de sécurité (logs) de ses serveurs. Puis personne ne le lit jamais. Qu'est-ce qui manque ?",
+          "options": [
+            "La due care : elle n'a rien fait",
+            "La due diligence : elle ne vérifie pas dans la durée",
+            "Rien : l'activation suffit"
+          ],
+          "answer": "La due diligence : elle ne vérifie pas dans la durée",
+          "explanation": "Activer le journal est de la due care. Le lire régulièrement est de la due diligence."
+        },
+        {
+          "type": "exemple",
+          "titre": "Des gestes de due care",
+          "texte": "Exemples de due care : chercher et réparer les failles. Activer les journaux de sécurité. Écrire des règles de pare-feu strictes qui respectent le moindre privilège. Une personne raisonnable ferait ces gestes."
+        },
+        {
+          "type": "exemple",
+          "titre": "Des gestes de due diligence",
+          "texte": "Exemples de due diligence : lire les journaux de sécurité pour repérer ce qui est suspect. Faire des tests d'intrusion pour vérifier que les règles du pare-feu sont assez strictes. Ces vérifications se répètent."
+        },
+        {
+          "type": "exemple",
+          "titre": "Au tribunal",
+          "texte": "Si quelqu'un porte plainte contre une entreprise, le juge se demande : une personne raisonnable aurait-elle agi pareil ? Si oui, il n'y a pas de négligence (negligence), c'est-à-dire un manque de soin qui cause un dommage."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-diligence-dc-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « due care »",
+          "answer": "Due care is a legal term used to describe the conduct that a reasonable person would exercise in a given situation.\n\nTraduction : La due care est un terme juridique qui décrit la conduite qu'une personne raisonnable adopterait dans une situation donnée.",
+          "explanation": "Pense à l'antivol : ce que ferait toute personne raisonnable.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dc-def2",
+          "type": "cloze",
+          "question": "Due care is a [[legal]] term used to describe the [[conduct]] that a reasonable person would exercise in a given situation.",
+          "answer": "Due care is a legal term used to describe the conduct that a reasonable person would exercise in a given situation.",
+          "explanation": "Un terme juridique, qui décrit une conduite.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dc-def3",
+          "type": "cloze",
+          "question": "Due care is [[a legal term]] used to describe [[the conduct that a reasonable person]] would exercise in [[a given situation]].",
+          "answer": "Due care is a legal term used to describe the conduct that a reasonable person would exercise in a given situation.",
+          "explanation": "Un terme juridique, la conduite d'une personne raisonnable, dans une situation donnée.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dc-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « due care » (en anglais).",
+          "answer": "Due care is a legal term used to describe the conduct that a reasonable person would exercise in a given situation.\n\nTraduction : La due care est un terme juridique qui décrit la conduite qu'une personne raisonnable adopterait dans une situation donnée.",
+          "explanation": "Trois mots clés : légal, conduite, personne raisonnable.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dcsec-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « due care » en sécurité de l'information",
+          "answer": "More specifically, in regard to information security, due care relates to the conduct that a reasonable person would exercise to maintain the confidentiality, integrity, and availability of their organization's assets.\n\nTraduction : Plus précisément, pour la sécurité de l'information, la due care concerne la conduite qu'une personne raisonnable adopterait pour maintenir la confidentialité, l'intégrité et la disponibilité des biens de son organisation.",
+          "explanation": "C'est la même idée, appliquée aux trois piliers : confidentialité, intégrité, disponibilité.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dcsec-def2",
+          "type": "cloze",
+          "question": "More specifically, in regard to information security, due care relates to the [[conduct]] that a reasonable person would exercise to maintain the confidentiality, integrity, and [[availability]] of their organization's assets.",
+          "answer": "More specifically, in regard to information security, due care relates to the conduct that a reasonable person would exercise to maintain the confidentiality, integrity, and availability of their organization's assets.",
+          "explanation": "Une conduite raisonnable, pour garder les trois piliers : le dernier est la disponibilité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dcsec-def3",
+          "type": "cloze",
+          "question": "More specifically, in regard to information security, due care relates to [[the conduct that a reasonable person would exercise]] to maintain [[the confidentiality, integrity, and availability]] of [[their organization's assets]].",
+          "answer": "More specifically, in regard to information security, due care relates to the conduct that a reasonable person would exercise to maintain the confidentiality, integrity, and availability of their organization's assets.",
+          "explanation": "La conduite raisonnable, les trois piliers, et les biens à protéger.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dcsec-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « due care » en sécurité de l'information (en anglais).",
+          "answer": "More specifically, in regard to information security, due care relates to the conduct that a reasonable person would exercise to maintain the confidentiality, integrity, and availability of their organization's assets.\n\nTraduction : Plus précisément, pour la sécurité de l'information, la due care concerne la conduite qu'une personne raisonnable adopterait pour maintenir la confidentialité, l'intégrité et la disponibilité des biens de son organisation.",
+          "explanation": "Phrase longue : conduite raisonnable, puis les trois piliers, puis les biens.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dd-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « due diligence »",
+          "answer": "In other words, due diligence is the ongoing execution and monitoring of due care.\n\nTraduction : En d'autres termes, la due diligence est l'exécution et la surveillance continues de la due care.",
+          "explanation": "C'est la vérification chaque matin que l'antivol est toujours là.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dd-def2",
+          "type": "cloze",
+          "question": "In other words, due diligence is the [[ongoing]] execution and [[monitoring]] of due care.",
+          "answer": "In other words, due diligence is the ongoing execution and monitoring of due care.",
+          "explanation": "En continu (ongoing), et on surveille (monitoring).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dd-def3",
+          "type": "cloze",
+          "question": "In other words, [[due diligence]] is [[the ongoing execution]] and [[monitoring of due care]].",
+          "answer": "In other words, due diligence is the ongoing execution and monitoring of due care.",
+          "explanation": "Le nom, l'exécution continue, et la surveillance de la due care.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dd-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « due diligence » (en anglais).",
+          "answer": "In other words, due diligence is the ongoing execution and monitoring of due care.\n\nTraduction : En d'autres termes, la due diligence est l'exécution et la surveillance continues de la due care.",
+          "explanation": "Une phrase courte : continu, exécuter, surveiller la due care.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dcbiz-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « due care » en affaires",
+          "answer": "In business, due care is using reasonable care to protect the interests of your organization.\n\nTraduction : En entreprise, la due care consiste à prendre un soin raisonnable pour protéger les intérêts de ton organisation.",
+          "explanation": "Protéger son entreprise comme le ferait une personne raisonnable.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dcbiz-def3",
+          "type": "cloze",
+          "question": "In business, due care is [[using reasonable care]] to [[protect the interests]] of [[your organization]].",
+          "answer": "In business, due care is using reasonable care to protect the interests of your organization.",
+          "explanation": "Un soin raisonnable, pour protéger les intérêts, ceux de l'organisation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dd2-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la « due diligence », un autre concept juridique",
+          "answer": "Due diligence is another legal concept that relates to continually ensuring that behavior maintains due care.\n\nTraduction : La due diligence est un autre concept juridique qui consiste à s'assurer en permanence que le comportement maintient la due care.",
+          "explanation": "La due diligence vérifie que la due care reste en place.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-dd2-def3",
+          "type": "cloze",
+          "question": "Due diligence is [[another legal concept]] that relates to [[continually ensuring]] that [[behavior maintains due care]].",
+          "answer": "Due diligence is another legal concept that relates to continually ensuring that behavior maintains due care.",
+          "explanation": "Un autre concept juridique, vérifier sans cesse, que la due care reste en place.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-ddsec-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « due diligence » en sécurité de l'information",
+          "answer": "In relation to information security, due diligence relates to the ongoing actions that an organization and its personnel conduct to ensure organizational assets are reasonably protected.\n\nTraduction : Pour la sécurité de l'information, la due diligence concerne les actions continues qu'une organisation et son personnel mènent pour s'assurer que ses biens sont raisonnablement protégés.",
+          "explanation": "Ce sont les vérifications qui se répètent pour garder les biens protégés.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-ddsec-def3",
+          "type": "cloze",
+          "question": "In relation to information security, due diligence relates to [[the ongoing actions]] that [[an organization and its personnel conduct]] to ensure [[organizational assets are reasonably protected]].",
+          "answer": "In relation to information security, due diligence relates to the ongoing actions that an organization and its personnel conduct to ensure organizational assets are reasonably protected.",
+          "explanation": "Des actions continues, menées par l'organisation, pour que les biens restent protégés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-diligence-1",
+          "type": "duel",
+          "question": "Activer les journaux de sécurité d'un serveur : due care ou due diligence ?",
+          "options": ["Due care", "Due diligence"],
+          "answer": "Due care",
+          "explanation": "Activer, c'est un geste de départ. Lire les journaux ensuite, c'est de la due diligence.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-diligence-2",
+          "type": "sort",
+          "question": "Due care ou due diligence : où va chaque geste ?",
+          "answer": "Due care : réparer les failles, écrire des règles strictes, activer les journaux. Due diligence : lire les journaux, tester les règles.",
+          "explanation": "Le geste de départ est la due care. La vérification qui se répète est la due diligence.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Due care", "Due diligence"],
+            "items": [
+              { "text": "Réparer une faille connue avec une mise à jour", "category": "Due care" },
+              { "text": "Écrire des règles de pare-feu très strictes", "category": "Due care" },
+              { "text": "Activer les journaux de sécurité", "category": "Due care" },
+              { "text": "Lire les journaux pour repérer ce qui est suspect", "category": "Due diligence" },
+              { "text": "Faire un test d'intrusion pour vérifier que les règles du pare-feu sont assez strictes", "category": "Due diligence" }
+            ]
+          }
+        },
+        {
+          "id": "d1-diligence-3",
+          "type": "qcm",
+          "question": "Une entreprise a installé un pare-feu strict il y a trois ans. Depuis, personne ne l'a revu. Que lui manque-t-il ?",
+          "options": [
+            "Le soin de départ : la due care",
+            "Le suivi continu : la due diligence",
+            "Un nouveau pare-feu plus cher",
+            "Une assurance contre le vol"
+          ],
+          "options_why": [
+            "Elle a bien posé le pare-feu : c'est de la due care.",
+            "",
+            "Un pare-feu plus cher ne règle pas le manque de vérification.",
+            "Une assurance ne remplace pas la vérification régulière."
+          ],
+          "answer": "Le suivi continu : la due diligence",
+          "explanation": "Poser la protection est la due care. La vérifier dans le temps est la due diligence.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-diligence-4",
+          "type": "flash",
+          "question": "Qu'est-ce qui rend une conduite « raisonnable » aux yeux d'un tribunal ?",
+          "answer": "Une personne avec le même parcours et la même expérience, dans la même situation, aurait agi pareil ou presque.",
+          "explanation": "On compare avec ce que ferait une personne comparable.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Due Care and Due Diligence ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-diligence-5",
+          "type": "why",
+          "question": "Pourquoi les dirigeants d'une entreprise doivent-ils agir avec due care ?",
+          "answer": "C'est le minimum attendu d'eux : agir pour les parties prenantes comme une personne raisonnable. Cela les protège aussi d'accusations de négligence.",
+          "explanation": "Ils dirigent au nom des autres : leur conduite doit être raisonnable.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-diligence-6",
+          "type": "flash",
+          "question": "Quel risque évite-t-on en exerçant la due care et la due diligence ?",
+          "answer": "Les accusations de négligence (negligence) devant un tribunal.",
+          "explanation": "Agir raisonnablement et le vérifier protège l'entreprise devant la loi.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Due Care and Due Diligence ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-diligence-7",
+          "type": "whatif",
+          "question": "Et si une entreprise ne fait aucune vérification après avoir installé ses protections ?",
+          "answer": "Elle manque de due diligence : elle ne sait plus si ses protections tiennent. Elle risque d'être jugée négligente.",
+          "explanation": "Une protection non vérifiée peut tomber en panne sans que personne le sache.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-diligence-8",
+          "type": "flash",
+          "question": "En une phrase : quelle différence entre due care et due diligence ?",
+          "answer": "La due care, c'est agir raisonnablement. La due diligence, c'est vérifier en continu qu'on continue à agir ainsi.",
+          "explanation": "Pense à l'antivol, puis à la vérification chaque matin.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-diligence-9",
+          "type": "cloze",
+          "question": "La due care consiste à [[agir]] raisonnablement. La due diligence consiste à [[vérifier]] en [[continu]].",
+          "answer": "La due care consiste à agir raisonnablement. La due diligence consiste à vérifier en continu.",
+          "explanation": "Agir d'abord, vérifier ensuite et sans cesse.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

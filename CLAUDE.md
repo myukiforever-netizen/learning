@@ -60,6 +60,7 @@ docs/               les 2 documents de référence
 - Animations CSS uniquement (transform + opacity), ease-out : 150ms micro-feedback, 250ms transitions, 600ms fin de session (seule célébration). Respecter `prefers-reduced-motion`.
 - Raccourcis clavier : 1-4 = choix, Espace = révéler, Entrée = valider, E = en savoir plus.
 - Simple avant élégant. Corriger la cause racine d'un bug, jamais une rustine.
+- **Univers CISSP : lire aussi `docs/GUIDE_CISSP.md`** (définitions officielles en anglais apprises mot pour mot, suites `-def1` à `-def4`, contrôle `node scripts/verifier-definitions.mjs <domaine> <fichier>`).
 - **Contenu (univers, galaxies, planètes, cartes, découvertes) : lire et respecter `docs/GUIDE_UNIVERS.md`** avant toute écriture ou modification. Ids stables, version augmentée, découverte avant les cartes, analogies fidèles, vocabulaire dès 13 ans.
 
 ## Les 10 règles produit v2 « Odyssée » (13/09/2026, remplacent les règles v1)
@@ -127,6 +128,8 @@ Déblocage : planètes dans l'ordre (mission ≥ 80 %), galaxie suivante après 
   - Résumé complet de la matière pour le product owner : `docs/psychologie_resume.md`.
   - S5 (son) : terminé le 19/09/2026. Sons de retour partout (choix, confiance, révélation, bonne réponse, « pas encore », carte suivante, page de découverte, décollage, arrivée, XP, niveau, déblocage, soleil, échec, profil, trou noir, fin de patrouille), ambiance par galaxie, réglages et silence radio. 10 tests sur le catalogue.
   - S3 direction artistique (fond canvas, transitions), S4 motivation, S6 adaptation, S7 polissage : à faire.
+- **Univers CISSP (04/10/2026)** : manuel officiel (ISC)2, 8 domaines, PDF dans `Univers Informatique a Renommer/` (ignoré par git, droits d'auteur ; texte propre dans `_texte/` via `scripts/extraire-source.mjs` ; `domaine8.pdf` contient en réalité le domaine 7). Matière `cissp` : un JSON par galaxie dans `src/data/matieres/cissp/` (`d<N>-mNN-slug.json`), assemblés par `cissp/index.ts`. Règles dans `docs/GUIDE_CISSP.md`, plan du domaine 1 dans `docs/cissp/domaine1_plan.md`, planète modèle `docs/cissp/exemple_planete.json`. Principe : comprendre d'abord (découverte + analogies), puis définitions officielles EN, mot pour mot, en 4 cartes (lecture avec traduction → 2 trous → 3 groupes → écriture de mémoire). `tests/cissp.test.ts` contrôle format, structure, suites de définitions, phrases courtes (≤ 25 mots) ; `scripts/verifier-definitions.mjs` contrôle le mot pour mot contre le PDF (hors CI, car les PDF ne sont pas dans le dépôt).
+  - Domaine 1 : terminé (17 galaxies, 143 planètes, 2585 cartes dont 1156 de définition officielle, 652 écrans de découverte). **À faire : domaines 2, 3, 4, 5, 6, 7, 8** (même méthode : une galaxie par grande section, un agent rédacteur par galaxie ou paire de galaxies, contrôles automatiques avant import).
 - Clés Supabase : en place dans `.env.local` depuis le 13/09/2026 (URL + anon). Migrations 0001→0004 exécutées par le product owner ; **0005_noms_uniques.sql à exécuter** (index d'unicité des noms, doublons supprimés le 21/09/2026).
 
 <!-- BEGIN:nextjs-agent-rules -->

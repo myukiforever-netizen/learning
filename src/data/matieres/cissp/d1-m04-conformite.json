@@ -1,0 +1,2047 @@
+{
+  "id": "d1-m04-conformite",
+  "name": "D1.4 Conformité et normes de l'industrie",
+  "galaxie": { "teinte": 184, "ambiance": "tendu" },
+  "concepts": [
+    {
+      "id": "d1-conf-conformite",
+      "name": "La conformité (compliance)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le règlement, toujours le règlement",
+          "paragraphes": [
+            "Au collège, tu dois suivre un règlement. Pas de téléphone en classe, arriver à l'heure, rendre les devoirs.",
+            "Mais ce n'est pas la seule liste de règles. Ton club de sport a la sienne. Ta famille aussi.",
+            "Pour savoir ce qu'on attend de toi, il faut connaître toutes ces règles, puis les suivre. Pour une entreprise, ça s'appelle la conformité (compliance)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un sac de règlements",
+          "comme": "Chaque endroit a ses règles : le collège, le club, la maison. Être en règle, c'est savoir lesquelles te concernent et les respecter.",
+          "enVrai": "Une entreprise doit suivre plusieurs sortes de règles : des lois, des règlements, des normes de son secteur et des contrats. La conformité, c'est faire le nécessaire pour toutes les connaître et toutes les satisfaire. L'image s'arrête là : au collège, quelqu'un te rappelle le règlement. Dans une entreprise, c'est à elle de chercher quelles règles s'appliquent."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise respecte toutes les règles de sécurité qui la concernent. Est-elle forcément bien protégée ?",
+          "options": [
+            "Oui, être en règle suffit",
+            "Non, c'est une bonne base mais seulement un début",
+            "Seulement si un inspecteur l'a vérifiée"
+          ],
+          "answer": "Non, c'est une bonne base mais seulement un début",
+          "explanation": "Le manuel dit que la conformité est une base solide, mais seulement le premier pas. Être en règle ne veut pas dire être à l'abri. Les deux autres réponses sont tentantes."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une boutique en ligne",
+          "texte": "Une boutique en ligne vend des vêtements. Elle suit la loi sur les données de ses clients, comme leurs noms et leurs adresses. Elle respecte les règles des paiements par carte. Elle tient aussi les promesses de ses contrats avec ses fournisseurs. Trois sortes de règles, une seule boutique."
+        },
+        {
+          "type": "analogie",
+          "titre": "La note minimale",
+          "comme": "Avoir la moyenne, c'est le minimum pour passer. Ça ne veut pas dire que tu maîtrises tout le cours.",
+          "enVrai": "Être conforme, c'est atteindre le minimum demandé. Être vraiment protégé demande souvent de faire plus. La conformité est un point de départ, pas la ligne d'arrivée."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-conf-conformite-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « compliance »",
+          "answer": "(ISC)2 defines compliance as adherence to a mandate; it includes the set of activities that an organization conducts to understand and satisfy all applicable laws, regulatory requirements, industry standards, and contractual agreements.\n\nTraduction : (ISC)2 définit la conformité comme le respect d'un mandat (une obligation) ; elle comprend l'ensemble des activités qu'une organisation mène pour comprendre et satisfaire toutes les lois, exigences réglementaires, normes de l'industrie et accords contractuels qui s'appliquent à elle.",
+          "explanation": "Pense au règlement du collège : connaître les règles, puis les suivre vraiment.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Determine Compliance and Other Requirements ». (ISC)2 est l'organisation qui délivre le diplôme CISSP. Elle est à connaître mot pour mot : les cartes suivantes t'aident pas à pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-conformite-def2",
+          "type": "cloze",
+          "question": "(ISC)2 defines compliance as [[adherence]] to a mandate; it includes the set of activities that an organization conducts to understand and satisfy all applicable laws, regulatory requirements, industry standards, and [[contractual]] agreements.",
+          "answer": "(ISC)2 defines compliance as adherence to a mandate; it includes the set of activities that an organization conducts to understand and satisfy all applicable laws, regulatory requirements, industry standards, and contractual agreements.",
+          "explanation": "Deux idées : respecter une obligation (adherence), et satisfaire tous les types de règles, même celles des contrats.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-conformite-def3",
+          "type": "cloze",
+          "question": "(ISC)2 defines compliance as [[adherence to a mandate]]; it includes the set of activities that an organization conducts to [[understand and satisfy]] all applicable laws, regulatory requirements, [[industry standards]], and contractual agreements.",
+          "answer": "(ISC)2 defines compliance as adherence to a mandate; it includes the set of activities that an organization conducts to understand and satisfy all applicable laws, regulatory requirements, industry standards, and contractual agreements.",
+          "explanation": "Trois blocs : respecter une obligation, comprendre puis satisfaire les règles, et les normes de l'industrie.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-conformite-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « compliance » selon (ISC)2 (en anglais).",
+          "answer": "(ISC)2 defines compliance as adherence to a mandate; it includes the set of activities that an organization conducts to understand and satisfy all applicable laws, regulatory requirements, industry standards, and contractual agreements.\n\nTraduction : (ISC)2 définit la conformité comme le respect d'un mandat (une obligation) ; elle comprend l'ensemble des activités qu'une organisation mène pour comprendre et satisfaire toutes les lois, exigences réglementaires, normes de l'industrie et accords contractuels qui s'appliquent à elle.",
+          "explanation": "Pas besoin d'être parfait du premier coup : compare, repère ce qui manque, recommence demain.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-conformite-1",
+          "type": "qcm",
+          "question": "Une entreprise a coché toutes les cases de ses règlements. Que dit le manuel de sa sécurité ?",
+          "options": [
+            "Elle a une base solide, mais ce n'est qu'un début",
+            "Elle est maintenant protégée contre toutes les attaques",
+            "Elle peut arrêter ses contrôles de sécurité"
+          ],
+          "options_why": [
+            "",
+            "Les pirates ne lisent pas les règlements : une faille peut rester même quand toutes les cases sont cochées.",
+            "Les règles changent et les attaques aussi : il faut continuer à vérifier."
+          ],
+          "answer": "Elle a une base solide, mais ce n'est qu'un début",
+          "explanation": "La conformité est un bon point de départ. La sécurité demande d'aller plus loin.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note de la section « Legislative and Regulatory Requirements ». Le manuel parle d'une base solide (solid baseline) et d'un premier pas seulement.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-conformite-2",
+          "type": "flash",
+          "question": "D'où viennent les attentes de conformité ?",
+          "answer": "De lois et de règlements qui s'appliquent à tous les secteurs. D'autres sont propres à certains secteurs ou produits.",
+          "explanation": "Certaines règles sont pour tout le monde, d'autres seulement pour ton domaine.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Legislative and Regulatory Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-conformite-3",
+          "type": "sort",
+          "question": "Qui impose chaque obligation ?",
+          "answer": "L'État : la loi votée, le règlement de l'agence et la loi sur les données. Contrat ou secteur : le contrat de paiement, la règle des marques de cartes et l'accord avec le client.",
+          "explanation": "Une loi ou un règlement vient d'une autorité publique. Un contrat ou une norme de secteur vient d'un accord entre entreprises.",
+          "data": {
+            "mode": "classer",
+            "categories": ["L'État", "Un contrat ou un secteur"],
+            "items": [
+              { "text": "Une loi votée par les représentants du pays", "category": "L'État" },
+              { "text": "Un règlement écrit par une agence publique", "category": "L'État" },
+              { "text": "Une loi sur la protection des données des clients", "category": "L'État" },
+              { "text": "Le contrat signé avec le service qui gère les paiements", "category": "Un contrat ou un secteur" },
+              { "text": "Une règle imposée par les grandes marques de cartes bancaires", "category": "Un contrat ou un secteur" },
+              { "text": "Un accord de sécurité signé avec un gros client", "category": "Un contrat ou un secteur" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-conformite-4",
+          "type": "why",
+          "question": "Pourquoi une entreprise doit-elle revoir régulièrement sa conformité ?",
+          "answer": "Parce que les attentes changent sans cesse. Il faut vérifier en continu que l'information est protégée selon toutes les règles en vigueur.",
+          "explanation": "Ce qui était en règle hier peut ne plus l'être demain.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Legislative and Regulatory Requirements » : un ensemble d'attentes en évolution constante, qui demande une révision continue.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-conformite-5",
+          "type": "cloze",
+          "question": "Être conforme, c'est seulement le [[premier]] pas vers la [[sécurité]].",
+          "answer": "Être conforme, c'est seulement le premier pas vers la sécurité.",
+          "explanation": "On respecte les règles, puis on va plus loin.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-conformite-6",
+          "type": "duel",
+          "question": "On te dit : « Notre entreprise est conforme. » Que sais-tu vraiment ?",
+          "options": [
+            "Qu'elle respecte les règles qui s'appliquent à elle",
+            "Qu'elle ne peut pas être attaquée"
+          ],
+          "answer": "Qu'elle respecte les règles qui s'appliquent à elle",
+          "explanation": "Conforme veut dire en règle. Ça ne garantit pas qu'aucune faille n'existe.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-conformite-7",
+          "type": "flash",
+          "question": "Dans la définition, que veut dire « adherence to a mandate » ?",
+          "answer": "Respecter une obligation (un mandat) : pas seulement la connaître, mais la suivre vraiment.",
+          "explanation": "Adherence, c'est coller à la règle, la respecter.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-conformite-8",
+          "type": "problem",
+          "question": "Un collègue dit : « On est conforme, donc on est en sécurité. » Que lui réponds-tu ?",
+          "answer": "La conformité est une base solide, mais seulement la première étape. On peut respecter toutes les règles et garder des failles. Il faut aller plus loin.",
+          "explanation": "Pense à la moyenne : elle te fait passer, mais elle ne prouve pas que tu maîtrises tout.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-conformite-9",
+          "type": "whatif",
+          "question": "Et si une entreprise ignore une règle qui la concerne ?",
+          "answer": "Elle n'est plus conforme : elle ne satisfait plus toutes les règles applicables. La définition demande de comprendre puis de satisfaire chacune d'elles.",
+          "explanation": "Une seule règle oubliée suffit à sortir de la conformité.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-conformite-10",
+          "type": "why",
+          "question": "Pourquoi un CISSP doit-il connaître les lois de son secteur et de sa région ?",
+          "answer": "Parce qu'il doit protéger l'information en respectant ces lois. Elles couvrent les crimes informatiques, les fuites de données et la vie privée. Elles couvrent aussi les licences, les droits sur les idées, les règles d'import et d'export, et les échanges de données entre pays.",
+          "explanation": "Les règles dépendent d'où tu travailles et de ce que fait ton entreprise.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Understand legal and regulatory issues ». Le manuel cite : cybercrimes et fuites de données. Il cite aussi : licences et propriété intellectuelle, contrôles d'import/export, flux de données transfrontaliers (transborder data flow) et vie privée. Ces sujets arrivent dans les galaxies suivantes.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-conf-juridiction",
+      "name": "La juridiction (jurisdiction)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le portable à l'étranger",
+          "paragraphes": [
+            "Julie passe une semaine dans un collège à l'étranger. Elle sort son téléphone en classe, comme chez elle.",
+            "Le surveillant le lui prend. Dans ce collège, c'est interdit. Le règlement de son collège n'a aucun pouvoir ici.",
+            "Savoir qui a le droit de fixer les règles à un endroit, c'est la question de la juridiction (jurisdiction)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Chacun son directeur",
+          "comme": "Chaque collège a son directeur. Il décide chez lui, pas chez le voisin. Le club de foot a son entraîneur, qui décide pour le club.",
+          "enVrai": "Une juridiction, c'est le pouvoir officiel de prendre des décisions et de rendre des jugements dans un domaine précis. Une entreprise peut dépendre de plusieurs juridictions à la fois. L'image s'arrête là : un élève n'a qu'un seul directeur."
+        },
+        {
+          "type": "predire",
+          "question": "Une boutique en ligne installée dans un pays vend à des clients d'un autre pays. Qui peut avoir son mot à dire sur ses règles ?",
+          "options": [
+            "Seulement le pays de la boutique",
+            "Peut-être les deux pays, selon les accords entre eux",
+            "Seulement le pays des clients"
+          ],
+          "answer": "Peut-être les deux pays, selon les accords entre eux",
+          "explanation": "La géographie ne suffit pas. Les accords officiels entre pays (les traités) et l'activité de l'entreprise comptent aussi."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une entreprise de paiement",
+          "texte": "Une entreprise de paiement a son siège, c'est-à-dire son bureau principal, dans un pays. Ses serveurs sont dans un deuxième pays. Ses clients vivent dans dix autres pays. Plusieurs autorités peuvent dire : « Chez nous, tu suis nos règles. » Voilà pourquoi les experts ne regardent pas seulement la carte."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-conf-juridiction-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « jurisdiction »",
+          "answer": "Jurisdiction is a legal concept that establishes the official power to make legal decisions and judgments.\n\nTraduction : La juridiction est un concept juridique qui établit le pouvoir officiel de prendre des décisions et des jugements en matière de droit.",
+          "explanation": "Pense au directeur de ton collège : il a le pouvoir de décider chez lui.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Legislative and Regulatory Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-juridiction-def2",
+          "type": "cloze",
+          "question": "Jurisdiction is a legal concept that establishes the [[official]] power to make legal decisions and [[judgments]].",
+          "answer": "Jurisdiction is a legal concept that establishes the official power to make legal decisions and judgments.",
+          "explanation": "Les mots clés : un pouvoir officiel, et des décisions et jugements.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-juridiction-def3",
+          "type": "cloze",
+          "question": "Jurisdiction is a [[legal concept]] that establishes the [[official power]] to make [[legal decisions]] and judgments.",
+          "answer": "Jurisdiction is a legal concept that establishes the official power to make legal decisions and judgments.",
+          "explanation": "Trois blocs : un concept de droit, un pouvoir officiel, et des décisions légales.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-juridiction-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « jurisdiction » (en anglais).",
+          "answer": "Jurisdiction is a legal concept that establishes the official power to make legal decisions and judgments.\n\nTraduction : La juridiction est un concept juridique qui établit le pouvoir officiel de prendre des décisions et des jugements en matière de droit.",
+          "explanation": "Retiens le trio : pouvoir, officiel, décisions et jugements.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-juridiction-1",
+          "type": "qcm",
+          "question": "Une entreprise vend à des clients de plusieurs pays. Pour savoir quelles règles s'appliquent, que doit-elle regarder ?",
+          "options": [
+            "La géographie, les traités et son type d'activité",
+            "Seulement le pays où se trouve son siège",
+            "Seulement la langue parlée par ses clients"
+          ],
+          "options_why": [
+            "",
+            "La géographie compte, mais le manuel dit qu'elle ne suffit pas.",
+            "La langue n'a aucun pouvoir légal. Ce sont les autorités qui comptent."
+          ],
+          "answer": "La géographie, les traités et son type d'activité",
+          "explanation": "Le manuel dit qu'il ne suffit pas de connaître la géographie ou les frontières politiques.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. La juridiction peut aussi être influencée par les traités et accords internationaux, l'activité de l'organisation, ou d'autres facteurs.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-juridiction-2",
+          "type": "duel",
+          "question": "Connaître le pays d'une entreprise suffit-il pour connaître sa juridiction ?",
+          "options": [
+            "Non : les traités et l'activité comptent aussi",
+            "Oui : la géographie décide de tout"
+          ],
+          "answer": "Non : les traités et l'activité comptent aussi",
+          "explanation": "Le manuel dit que la géographie ne suffit pas à elle seule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-juridiction-3",
+          "type": "why",
+          "question": "Pourquoi un professionnel de la sécurité doit-il connaître les nuances des juridictions où il travaille ?",
+          "answer": "Parce que la juridiction dit qui a le pouvoir de fixer les règles. Les règles changent d'un endroit à l'autre. Se tromper de juridiction, c'est appliquer les mauvaises règles.",
+          "explanation": "Mêmes faits, autre lieu : autre règle.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : les praticiens doivent connaître les nuances des juridictions où ils opèrent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-juridiction-4",
+          "type": "flash",
+          "question": "Quelle est la première difficulté pour trouver les exigences de conformité ?",
+          "answer": "Savoir quelle juridiction a le pouvoir légal de fixer ces exigences.",
+          "explanation": "Avant de lire les règles, il faut savoir qui a le droit de les écrire.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Legislative and Regulatory Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-juridiction-5",
+          "type": "flash",
+          "question": "Hormis la géographie, nomme deux éléments qui peuvent influencer la juridiction.",
+          "answer": "Les traités et accords internationaux, et l'activité de l'organisation.",
+          "explanation": "Le manuel ajoute que d'autres facteurs peuvent aussi jouer.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « international treaties and agreements, the activity of your organization, or any number of other factors ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-juridiction-6",
+          "type": "cloze",
+          "question": "La juridiction ne dépend pas que de la [[géographie]]. Elle dépend aussi des [[traités]] entre pays.",
+          "answer": "La juridiction ne dépend pas que de la géographie. Elle dépend aussi des traités entre pays.",
+          "explanation": "Une carte ne suffit pas pour savoir qui décide.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-juridiction-7",
+          "type": "sort",
+          "question": "Pour savoir quelle juridiction s'applique, dans quelle boîte va chaque élément ?",
+          "answer": "Géographie : le pays des bureaux et la frontière entre deux régions. Autre facteur : l'accord entre deux pays et ce que fait l'entreprise.",
+          "explanation": "La géographie, c'est le lieu. Les autres facteurs, ce sont les accords et l'activité.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Géographie", "Autre facteur"],
+            "items": [
+              { "text": "Le pays où l'entreprise a ses bureaux", "category": "Géographie" },
+              { "text": "La frontière entre deux régions", "category": "Géographie" },
+              { "text": "Un accord signé entre deux pays", "category": "Autre facteur" },
+              { "text": "Ce que fait l'entreprise : vendre, soigner, héberger", "category": "Autre facteur" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-juridiction-8",
+          "type": "whatif",
+          "question": "Et si une entreprise ignore sa juridiction ?",
+          "answer": "Elle ne sait pas qui a le pouvoir de lui imposer des règles. Elle risque d'ignorer des obligations ou d'appliquer de mauvaises règles.",
+          "explanation": "C'est la première difficulté de la conformité.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-juridiction-9",
+          "type": "problem",
+          "question": "Une start-up a des clients dans trois pays. Explique à ton chef pourquoi il faut se renseigner sur la juridiction de chacun.",
+          "answer": "Chaque pays peut avoir le pouvoir de fixer des règles. Il faut regarder la géographie, mais aussi les traités et l'activité de la start-up.",
+          "explanation": "Une carte ne suffit pas.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-conf-lois",
+      "name": "La loi (law) : statutes et regulations",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La règle du portable, version détaillée",
+          "paragraphes": [
+            "Les profs votent une règle : pas de téléphone en classe. C'est le grand principe.",
+            "Ensuite, le directeur écrit une note plus précise : les téléphones restent éteints au fond du sac. Cette note explique comment appliquer la règle.",
+            "Les deux comptent. Mais si la note contredisait la règle votée, la règle votée gagnerait. Le droit marche pareil : il a deux étages."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Deux étages de règles",
+          "comme": "Le principe voté par les profs est la règle de base. La note du directeur la détaille, mais elle reste en dessous : elle ne peut pas la contredire.",
+          "enVrai": "Une loi (law) est une règle dont la violation a des conséquences. Soit une punition pénale, comme une amende ou la prison. Soit une responsabilité civile : devoir réparer le tort fait à quelqu'un. Les lois ont deux parties : les statutes, écrits par le parlement, et les regulations, plus détaillées. L'image s'arrête là : une note de collège n'envoie personne devant un juge."
+        },
+        {
+          "type": "predire",
+          "question": "Un texte voté par le parlement et un texte détaillé d'une agence se contredisent. Lequel l'emporte ?",
+          "options": [
+            "Le texte voté par le parlement",
+            "Le texte détaillé de l'agence",
+            "Celui qui est le plus récent"
+          ],
+          "answer": "Le texte voté par le parlement",
+          "explanation": "Les deux sont obligatoires. Mais le texte détaillé est subordonné au texte voté : il est là pour l'appliquer, pas pour le contredire."
+        },
+        {
+          "type": "exemple",
+          "titre": "Lire une citation de loi",
+          "texte": "Tu lis « 18 U.S.C. § 1030 ». Cela veut dire : section 1030 du titre 18 du Code des États-Unis (United States Code). « C.F.R. » désigne le Code des règlements fédéraux. Au Royaume-Uni, on écrit le nom de la loi, l'année, puis le chapitre : « Computer Misuse Act 1990, c. 18 »."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-conf-lois-law-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « law » (en droit américain)",
+          "answer": "In U.S. law, the word law refers to any rule that, if broken, subjects a party to criminal punishment or civil liability.\n\nTraduction : En droit américain, le mot « loi » désigne toute règle qui, si elle est enfreinte, expose une partie à une peine pénale ou à une responsabilité civile.",
+          "explanation": "Une loi a des conséquences : une punition de la justice pénale, ou le devoir de réparer un tort.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Legislative and Regulatory Requirements ». Responsabilité civile (civil liability) : devoir de réparer le tort fait à quelqu'un.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-law-def2",
+          "type": "cloze",
+          "question": "In U.S. law, the word law refers to any [[rule]] that, if broken, subjects a party to criminal punishment or civil [[liability]].",
+          "answer": "In U.S. law, the word law refers to any rule that, if broken, subjects a party to criminal punishment or civil liability.",
+          "explanation": "Une loi est une règle, et enfreindre cette règle a un prix : une peine ou une responsabilité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-law-def3",
+          "type": "cloze",
+          "question": "In U.S. law, [[the word law]] refers to any rule that, [[if broken]], subjects a party to [[criminal punishment]] or civil liability.",
+          "answer": "In U.S. law, the word law refers to any rule that, if broken, subjects a party to criminal punishment or civil liability.",
+          "explanation": "Trois blocs : le mot, la condition (si elle est enfreinte), et la conséquence pénale.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-law-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « law » en droit américain (en anglais).",
+          "answer": "In U.S. law, the word law refers to any rule that, if broken, subjects a party to criminal punishment or civil liability.\n\nTraduction : En droit américain, le mot « loi » désigne toute règle qui, si elle est enfreinte, expose une partie à une peine pénale ou à une responsabilité civile.",
+          "explanation": "Pense à la suite : une règle, si elle est enfreinte, a deux conséquences possibles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-statutes-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « statutes » et « regulations »",
+          "answer": "Laws may be generally categorized into two parts: statutes and regulations. Statutes are written and adopted by the jurisdiction's legislative body (e.g., U.S. Congress), while regulations are more detailed rules on how the execution of a statute will be performed.\n\nTraduction : Les lois peuvent être classées en deux parties : les statutes et les regulations. Les statutes sont rédigés et adoptés par l'organe législatif de la juridiction (par exemple le Congrès américain), tandis que les regulations sont des règles plus détaillées sur la façon dont un statute sera mis en œuvre.",
+          "explanation": "Pense aux deux étages : le principe voté en haut, le détail pour l'appliquer en dessous.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Legislative and Regulatory Requirements ». L'organe législatif (legislative body) est celui qui vote les lois, comme le Congrès aux États-Unis.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-statutes-def2",
+          "type": "cloze",
+          "question": "Laws may be generally categorized into two parts: [[statutes]] and regulations. Statutes are written and adopted by the jurisdiction's legislative body (e.g., U.S. Congress), while regulations are more [[detailed]] rules on how the execution of a statute will be performed.",
+          "answer": "Laws may be generally categorized into two parts: statutes and regulations. Statutes are written and adopted by the jurisdiction's legislative body (e.g., U.S. Congress), while regulations are more detailed rules on how the execution of a statute will be performed.",
+          "explanation": "Deux mots à retenir : statutes (le principe voté) et detailed (les regulations donnent le détail).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-statutes-def3",
+          "type": "cloze",
+          "question": "Laws may be generally categorized into [[two parts]]: statutes and regulations. Statutes are written and adopted by the jurisdiction's [[legislative body]] (e.g., U.S. Congress), while regulations are more detailed rules on [[how the execution]] of a statute will be performed.",
+          "answer": "Laws may be generally categorized into two parts: statutes and regulations. Statutes are written and adopted by the jurisdiction's legislative body (e.g., U.S. Congress), while regulations are more detailed rules on how the execution of a statute will be performed.",
+          "explanation": "Trois blocs : deux parties, qui adopte les statutes, et à quoi servent les regulations (l'exécution).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-statutes-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « statutes » et « regulations » (en anglais).",
+          "answer": "Laws may be generally categorized into two parts: statutes and regulations. Statutes are written and adopted by the jurisdiction's legislative body (e.g., U.S. Congress), while regulations are more detailed rules on how the execution of a statute will be performed.\n\nTraduction : Les lois peuvent être classées en deux parties : les statutes et les regulations. Les statutes sont rédigés et adoptés par l'organe législatif de la juridiction (par exemple le Congrès américain), tandis que les regulations sont des règles plus détaillées sur la façon dont un statute sera mis en œuvre.",
+          "explanation": "Deux phrases : d'abord les deux parties, puis qui fait quoi.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-subordinate-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le lien entre « statutes » et « regulations »",
+          "answer": "Both statutes and regulations are legally enforceable, but regulations are subordinate to statutes.\n\nTraduction : Les statutes comme les regulations sont juridiquement applicables, mais les regulations sont subordonnées aux statutes.",
+          "explanation": "Subordonné veut dire placé en dessous : la note du directeur ne peut pas contredire la règle votée.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Legislative and Regulatory Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-subordinate-def3",
+          "type": "cloze",
+          "question": "Both [[statutes and regulations]] are [[legally enforceable]], but regulations are [[subordinate to statutes]].",
+          "answer": "Both statutes and regulations are legally enforceable, but regulations are subordinate to statutes.",
+          "explanation": "Les deux sont obligatoires, mais l'un est placé sous l'autre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-lois-1",
+          "type": "qcm",
+          "question": "Le parlement américain vote un texte général. Une agence écrit ensuite un texte plus détaillé pour l'appliquer. Lequel est la regulation ?",
+          "options": [
+            "Le texte détaillé de l'agence",
+            "Le texte général voté par le parlement",
+            "Les deux sont des regulations"
+          ],
+          "options_why": [
+            "",
+            "Ce texte général est un statute : il est adopté par l'organe législatif.",
+            "Ce sont deux sortes différentes : un statute et une regulation."
+          ],
+          "answer": "Le texte détaillé de l'agence",
+          "explanation": "Une regulation donne le détail de l'exécution d'un statute.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-lois-2",
+          "type": "duel",
+          "question": "Si un statute et une regulation se contredisent, lequel l'emporte ?",
+          "options": ["Le statute", "La regulation"],
+          "answer": "Le statute",
+          "explanation": "Les regulations sont subordonnées aux statutes : elles sont placées en dessous.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-lois-3",
+          "type": "sort",
+          "question": "Statute ou regulation ? Dans quelle boîte va chaque phrase ?",
+          "answer": "Statute : adopté par le parlement, au sommet, et la loi votée par le Congrès. Regulation : donne le détail, subordonnée, et le texte d'agence qui précise l'application.",
+          "explanation": "Le statute pose le principe. La regulation le détaille et reste en dessous.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Statute", "Regulation"],
+            "items": [
+              { "text": "Adopté par le parlement du pays", "category": "Statute" },
+              { "text": "Il est au sommet : l'autre texte ne peut pas le contredire", "category": "Statute" },
+              { "text": "Exemple : une loi votée par le Congrès", "category": "Statute" },
+              { "text": "Donne le détail pour appliquer un statute", "category": "Regulation" },
+              { "text": "Il est subordonné à l'autre texte", "category": "Regulation" },
+              { "text": "Exemple : un texte d'agence qui précise comment appliquer la loi", "category": "Regulation" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-lois-4",
+          "type": "why",
+          "question": "Pourquoi existe-t-il des regulations en plus des statutes ?",
+          "answer": "Un statute pose le principe général. Les regulations donnent les détails sur la façon de l'appliquer.",
+          "explanation": "Sans détails, il serait difficile de savoir quoi faire concrètement.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : les regulations sont des règles plus détaillées sur l'exécution d'un statute.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-lois-5",
+          "type": "flash",
+          "question": "À quoi servent les lois, d'après le manuel ?",
+          "answer": "À définir ce qui est permis et ce qui ne l'est pas.",
+          "explanation": "Une loi trace la limite entre ce qu'on peut faire et ce qu'on ne peut pas faire.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Legislative and Regulatory Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-lois-6",
+          "type": "flash",
+          "question": "Que signifie la citation « 18 U.S.C. § 1030 » ?",
+          "answer": "La section 1030 du titre 18 du Code des États-Unis (United States Code).",
+          "explanation": "Le chiffre avant « U.S.C. » est le titre. Le chiffre après le signe § est la section.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, astuce (Tip) de la section « Legislative and Regulatory Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-lois-7",
+          "type": "duel",
+          "question": "Que désigne l'abréviation « C.F.R. » dans une citation américaine ?",
+          "options": [
+            "Le recueil des règlements fédéraux (Code of Federal Regulations)",
+            "Le recueil des lois votées par le Congrès (United States Code)"
+          ],
+          "answer": "Le recueil des règlements fédéraux (Code of Federal Regulations)",
+          "explanation": "C.F.R. contient des regulations. U.S.C. contient des lois votées.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, astuce (Tip) de la section « Legislative and Regulatory Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-lois-8",
+          "type": "flash",
+          "question": "Comment cite-t-on une loi du Royaume-Uni ? Donne l'exemple du manuel.",
+          "answer": "Titre de la loi, année, puis numéro de chapitre (facultatif) : « Computer Misuse Act 1990, c. 18 ».",
+          "explanation": "Le chapitre est facultatif : il peut manquer dans la citation.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, astuce (Tip) de la section « Legislative and Regulatory Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-lois-9",
+          "type": "cloze",
+          "question": "Un statute est écrit par l'organe [[législatif]] ; une regulation est [[subordonnée]] au statute.",
+          "answer": "Un statute est écrit par l'organe législatif ; une regulation est subordonnée au statute.",
+          "explanation": "Qui écrit le statute, et quelle place a la regulation.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-lois-10",
+          "type": "problem",
+          "question": "Ton collègue dit : « Une regulation, c'est juste un conseil. » Que réponds-tu ?",
+          "answer": "Non. Une regulation est une règle détaillée qui a force légale. Elle est applicable comme un statute, mais elle lui est subordonnée.",
+          "explanation": "Un conseil n'oblige personne. Une regulation, si.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-conf-delit",
+      "name": "Infraction légère ou grave (misdemeanor, felony)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Deux élèves, deux punitions",
+          "paragraphes": [
+            "Karim arrive en retard. Il a une retenue d'une heure.",
+            "Lina falsifie son bulletin. Elle passe devant le conseil de discipline.",
+            "Le collège classe les fautes selon leur gravité. Le droit fait pareil. Aux États-Unis, deux mots reviennent tout le temps : misdemeanor et felony."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "L'échelle des punitions",
+          "comme": "Une retenue pour un petit écart. Une exclusion pour une faute grave. Plus la faute est lourde, plus la punition l'est aussi.",
+          "enVrai": "Le droit américain classe les infractions criminelles de la même façon. Un misdemeanor est une infraction plus légère. Un felony est une infraction plus grave, avec des peines plus lourdes. L'image s'arrête là : ce ne sont pas des punitions de collège, mais des catégories de la justice."
+        },
+        {
+          "type": "predire",
+          "question": "Aux États-Unis, à partir de combien de mois de prison possible parle-t-on d'infraction grave (felony) ?",
+          "options": ["Plus de 6 mois", "Plus de 12 mois", "Plus de 5 ans"],
+          "answer": "Plus de 12 mois",
+          "explanation": "Le manuel fixe la limite à 12 mois. En dessous, c'est un misdemeanor. Au-dessus, c'est un felony."
+        },
+        {
+          "type": "exemple",
+          "titre": "Même acte, autre mot",
+          "texte": "Un même type d'infraction ne porte pas le même nom partout. En France, en Allemagne et en Suisse, les infractions graves sont appelées crimes. Les moins graves sont appelées délits. Au Brésil, on parle de contravention."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-conf-delit-misdemeanor-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « misdemeanor »",
+          "answer": "In U.S. law, a misdemeanor is any \"lesser\" criminal act that is punishable by less than 12 months in prison.\n\nTraduction : En droit américain, un misdemeanor est tout acte criminel « moindre » passible de moins de 12 mois de prison.",
+          "explanation": "Pense à la retenue : une faute légère, une punition légère.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, note à la fin de la section sur la conformité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-delit-misdemeanor-def2",
+          "type": "cloze",
+          "question": "In U.S. law, a [[misdemeanor]] is any \"lesser\" criminal act that is punishable by [[less]] than 12 months in prison.",
+          "answer": "In U.S. law, a misdemeanor is any \"lesser\" criminal act that is punishable by less than 12 months in prison.",
+          "explanation": "Le mot, et la limite : moins de 12 mois.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-delit-misdemeanor-def3",
+          "type": "cloze",
+          "question": "In U.S. law, a [[misdemeanor is any]] \"lesser\" criminal act that is [[punishable by less than]] [[12 months in prison]].",
+          "answer": "In U.S. law, a misdemeanor is any \"lesser\" criminal act that is punishable by less than 12 months in prison.",
+          "explanation": "Trois blocs : le nom, la limite (moins de), et la durée de prison.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-delit-misdemeanor-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « misdemeanor » en droit américain (en anglais).",
+          "answer": "In U.S. law, a misdemeanor is any \"lesser\" criminal act that is punishable by less than 12 months in prison.\n\nTraduction : En droit américain, un misdemeanor est tout acte criminel « moindre » passible de moins de 12 mois de prison.",
+          "explanation": "Repère le mot « lesser » (moindre) et la limite de 12 mois.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-delit-felony-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « felony »",
+          "answer": "A felony, under U.S. law, is a more serious criminal offense that carries more serious penalties, including jail time over 12 months (and as high as one's lifetime).\n\nTraduction : Un felony, selon le droit américain, est une infraction criminelle plus grave, qui entraîne des peines plus lourdes, y compris plus de 12 mois de prison (jusqu'à la perpétuité).",
+          "explanation": "Pense à l'exclusion du collège : une faute grave, une punition lourde.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, note à la fin de la section sur la conformité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-delit-felony-def2",
+          "type": "cloze",
+          "question": "A [[felony]], under U.S. law, is a more serious criminal offense that carries more serious penalties, including jail time [[over]] 12 months (and as high as one's lifetime).",
+          "answer": "A felony, under U.S. law, is a more serious criminal offense that carries more serious penalties, including jail time over 12 months (and as high as one's lifetime).",
+          "explanation": "Le mot, et la limite vers le haut : plus de 12 mois.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-delit-felony-def3",
+          "type": "cloze",
+          "question": "A felony, under U.S. law, is a [[more serious criminal offense]] that carries [[more serious penalties]], including jail time [[over 12 months]] (and as high as one's lifetime).",
+          "answer": "A felony, under U.S. law, is a more serious criminal offense that carries more serious penalties, including jail time over 12 months (and as high as one's lifetime).",
+          "explanation": "Trois blocs : l'infraction plus grave, les peines plus lourdes, et la durée au-delà de 12 mois.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-delit-felony-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « felony » en droit américain (en anglais).",
+          "answer": "A felony, under U.S. law, is a more serious criminal offense that carries more serious penalties, including jail time over 12 months (and as high as one's lifetime).\n\nTraduction : Un felony, selon le droit américain, est une infraction criminelle plus grave, qui entraîne des peines plus lourdes, y compris plus de 12 mois de prison (jusqu'à la perpétuité).",
+          "explanation": "Retiens : plus grave, peines plus lourdes, plus de 12 mois, jusqu'à la perpétuité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-delit-1",
+          "type": "sort",
+          "question": "Misdemeanor ou felony ? Dans quelle boîte va chaque phrase ?",
+          "answer": "Misdemeanor : moins de 12 mois, souvent une amende, et appelé délit dans certains pays. Felony : plus de 12 mois, infraction plus grave, et appelé crime en France.",
+          "explanation": "Le seuil est de 12 mois de prison. En dessous, misdemeanor. Au-dessus, felony.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Misdemeanor", "Felony"],
+            "items": [
+              { "text": "Moins de 12 mois de prison possibles", "category": "Misdemeanor" },
+              { "text": "Souvent remplacé par une amende ou des travaux d'intérêt général", "category": "Misdemeanor" },
+              { "text": "Appelé « délit » dans certains pays", "category": "Misdemeanor" },
+              { "text": "Plus de 12 mois de prison, jusqu'à la perpétuité", "category": "Felony" },
+              { "text": "Infraction plus grave aux peines plus lourdes", "category": "Felony" },
+              { "text": "Appelé « crime » en France, en Allemagne et en Suisse", "category": "Felony" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-delit-2",
+          "type": "qcm",
+          "question": "Une infraction pénale est punissable de 8 mois de prison, souvent remplacés par une amende. De quoi s'agit-il ?",
+          "options": ["Un misdemeanor", "Un felony", "Une responsabilité civile"],
+          "options_why": [
+            "",
+            "Un felony dépasse 12 mois de prison, jusqu'à la perpétuité.",
+            "Ce n'est pas une infraction pénale : c'est devoir réparer un tort envers quelqu'un."
+          ],
+          "answer": "Un misdemeanor",
+          "explanation": "Moins de 12 mois de prison, souvent remplacés par une amende : c'est un misdemeanor.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-delit-3",
+          "type": "duel",
+          "question": "En France, comment appelle-t-on l'équivalent du felony américain ?",
+          "options": ["Un crime", "Un délit"],
+          "answer": "Un crime",
+          "explanation": "Dans des pays comme la France, les infractions graves sont des crimes. Les moins graves sont des délits.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note sur misdemeanor et felony. Le manuel cite la France, l'Allemagne et la Suisse. Au Brésil, il parle de contravention. Hors manuel : en droit français, la contravention est la catégorie la plus légère.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-delit-4",
+          "type": "flash",
+          "question": "À partir de combien de mois de prison possible une infraction devient-elle un felony ?",
+          "answer": "Plus de 12 mois, et jusqu'à la perpétuité.",
+          "explanation": "Moins de 12 mois : misdemeanor. Plus de 12 mois : felony.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note sur misdemeanor et felony.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-conf-delit-5",
+          "type": "flash",
+          "question": "Par quoi la prison est-elle souvent remplacée pour un misdemeanor ?",
+          "answer": "Par des amendes, une mise à l'épreuve (rester libre mais sous surveillance) ou des travaux d'intérêt général.",
+          "explanation": "C'est fréquent, mais pas systématique.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note sur misdemeanor et felony : « often (but not always) ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-delit-6",
+          "type": "why",
+          "question": "Pourquoi le CISSP doit-il connaître les mots misdemeanor et felony ?",
+          "answer": "Parce qu'ils reviennent dans tous les textes sur les crimes informatiques. Ils indiquent la gravité d'un acte, donc la sévérité de la peine.",
+          "explanation": "Un même acte peut être léger ou grave selon la loi.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : ces deux termes juridiques reviennent tout au long de la section.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-delit-7",
+          "type": "cloze",
+          "question": "Au-delà de [[12]] mois de prison possible, on parle de [[felony]].",
+          "answer": "Au-delà de 12 mois de prison possible, on parle de felony.",
+          "explanation": "Douze mois : c'est la limite entre les deux.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-conf-delit-8",
+          "type": "problem",
+          "question": "Un collègue américain dit : « Il a juste commis un misdemeanor. » Que sais-tu de cette infraction ?",
+          "answer": "C'est une infraction criminelle plus légère. Elle est punissable de moins de 12 mois de prison, souvent remplacés par une amende ou d'autres sanctions.",
+          "explanation": "Moins de 12 mois : c'est le côté léger de l'échelle.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-delit-9",
+          "type": "whatif",
+          "question": "Et si une infraction peut coûter 5 ans de prison ?",
+          "answer": "C'est un felony : une infraction plus grave. Elle dépasse 12 mois de prison et entraîne des peines plus lourdes.",
+          "explanation": "Cinq ans est bien au-dessus de la limite de 12 mois.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-conf-fisma",
+      "name": "Computer Security Act (1987) et FISMA (2002)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Un règlement commun pour tous les bureaux",
+          "paragraphes": [
+            "L'État possède des milliers d'ordinateurs. Ils contiennent des informations sensibles : des dossiers de citoyens, des documents officiels.",
+            "Si chaque bureau invente ses propres règles de protection, certains seront bien protégés et d'autres pas.",
+            "Alors une loi fixe un minimum pour tous. Aux États-Unis, la première s'appelle Computer Security Act (1987). Elle a été remplacée en 2002 par FISMA."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le minimum de tous les collèges",
+          "comme": "Le ministère impose à tous les collèges un minimum de sécurité : portes fermées à clé, registre des visiteurs. Un collège peut faire mieux, jamais moins.",
+          "enVrai": "Le Computer Security Act demande des pratiques de sécurité minimales pour les ordinateurs de l'État fédéral. C'est le gouvernement central américain. Il demande aussi des politiques pour que chaque agence respecte ce minimum. FISMA, en 2002, reprend l'idée et l'étend. L'image s'arrête là : le texte de 1987 vise l'État, pas les entreprises."
+        },
+        {
+          "type": "predire",
+          "question": "Un ordinateur de l'État contient des informations ordinaires : ni secrètes, ni militaires. Qui fixe ses normes de sécurité selon cette loi ?",
+          "options": [
+            "Le NIST (l'institut américain des normes)",
+            "La NSA (l'agence nationale de sécurité)",
+            "Le Congrès (le parlement)"
+          ],
+          "answer": "Le NIST (l'institut américain des normes)",
+          "explanation": "Le NIST fixe les normes pour les systèmes ni secrets ni militaires. La NSA s'occupe des systèmes secrets et militaires."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une entreprise qui travaille pour l'État",
+          "texte": "Une entreprise privée gère le site web d'une agence fédérale. Elle n'est pas elle-même une agence de l'État. FISMA s'applique pourtant à elle, car elle fournit des services d'information à l'agence. Elle doit évaluer ses risques de sécurité avec la méthode du NIST."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-conf-fisma-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « FISMA »",
+          "answer": "The Federal Information Security Management Act, commonly referred to as FISMA (pronounced \"fizz-muh\"), is a U.S. law enacted in 2002 that greatly extends the Computer Security Act of 1987.\n\nTraduction : Le Federal Information Security Management Act, couramment appelé FISMA (prononcé « fizz-muh »), est une loi américaine adoptée en 2002 qui étend considérablement le Computer Security Act de 1987.",
+          "explanation": "FISMA, c'est la grande sœur de la loi de 1987 : elle reprend l'idée et va plus loin.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « U.S. Federal Information Security Management Act (FISMA) of 2002 ». Federal veut dire : du gouvernement central des États-Unis.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-def2",
+          "type": "cloze",
+          "question": "The Federal Information Security Management Act, commonly referred to as FISMA (pronounced \"fizz-muh\"), is a U.S. law enacted in [[2002]] that greatly [[extends]] the Computer Security Act of 1987.",
+          "answer": "The Federal Information Security Management Act, commonly referred to as FISMA (pronounced \"fizz-muh\"), is a U.S. law enacted in 2002 that greatly extends the Computer Security Act of 1987.",
+          "explanation": "L'année de FISMA, et son lien avec la loi précédente : elle l'étend.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-def3",
+          "type": "cloze",
+          "question": "The Federal [[Information Security Management Act]], commonly referred to as FISMA (pronounced \"fizz-muh\"), is a U.S. [[law enacted in 2002]] that [[greatly extends]] the Computer Security Act of 1987.",
+          "answer": "The Federal Information Security Management Act, commonly referred to as FISMA (pronounced \"fizz-muh\"), is a U.S. law enacted in 2002 that greatly extends the Computer Security Act of 1987.",
+          "explanation": "Trois blocs : le nom de la loi, son année, et le fait qu'elle étend la loi de 1987.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « FISMA » (en anglais).",
+          "answer": "The Federal Information Security Management Act, commonly referred to as FISMA (pronounced \"fizz-muh\"), is a U.S. law enacted in 2002 that greatly extends the Computer Security Act of 1987.\n\nTraduction : Le Federal Information Security Management Act, couramment appelé FISMA (prononcé « fizz-muh »), est une loi américaine adoptée en 2002 qui étend considérablement le Computer Security Act de 1987.",
+          "explanation": "Retiens : nom complet, sigle, loi américaine de 2002, étend la loi de 1987.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-agences-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce que FISMA exige",
+          "answer": "FISMA acknowledges the importance of information security to the United States' economic and national security interests and requires that all U.S. federal government agencies and nongovernment organizations that provide information services to these agencies conduct risk-based security assessments that align with the NIST Risk Management Framework (RMF).\n\nTraduction : FISMA reconnaît l'importance de la sécurité de l'information pour les intérêts économiques et de sécurité nationale des États-Unis. Elle exige que toutes les agences du gouvernement fédéral américain, et les organisations non gouvernementales qui leur fournissent des services d'information, réalisent des évaluations de sécurité fondées sur les risques, alignées sur le cadre de gestion des risques (RMF) du NIST.",
+          "explanation": "Qui est concerné : les agences, mais aussi les entreprises qui travaillent pour elles.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. RMF veut dire Risk Management Framework : le cadre de gestion des risques du NIST, détaillé plus loin dans le cours.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-agences-def3",
+          "type": "cloze",
+          "question": "FISMA acknowledges the importance of information security to the United States' economic and national security interests and requires that all U.S. [[federal government agencies]] and [[nongovernment organizations]] that provide information services to these agencies conduct [[risk-based security assessments]] that align with the NIST Risk Management Framework (RMF).",
+          "answer": "FISMA acknowledges the importance of information security to the United States' economic and national security interests and requires that all U.S. federal government agencies and nongovernment organizations that provide information services to these agencies conduct risk-based security assessments that align with the NIST Risk Management Framework (RMF).",
+          "explanation": "Les agences, les organisations privées qui les servent, et le type d'évaluation demandé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-csa-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le « Computer Security Act »",
+          "answer": "The Computer Security Act was enacted by the U.S. Congress in 1987 with the objective of improving the security and privacy of sensitive information stored on U.S. federal government computers.\n\nTraduction : Le Computer Security Act a été adopté par le Congrès américain en 1987 dans le but d'améliorer la sécurité et la confidentialité des informations sensibles stockées sur les ordinateurs du gouvernement fédéral américain.",
+          "explanation": "L'objectif : mieux protéger les informations sensibles sur les ordinateurs de l'État.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « U.S. Computer Security Act of 1987 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-csa-def3",
+          "type": "cloze",
+          "question": "The Computer Security Act was enacted by [[the U.S. Congress]] in 1987 with the objective of [[improving the security]] and privacy of sensitive information stored on U.S. [[federal government computers]].",
+          "answer": "The Computer Security Act was enacted by the U.S. Congress in 1987 with the objective of improving the security and privacy of sensitive information stored on U.S. federal government computers.",
+          "explanation": "Qui l'a adoptée, son objectif, et les ordinateurs visés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-nist-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le rôle du NIST et de la NSA selon le Computer Security Act",
+          "answer": "The Computer Security Act establishes that the National Institute for Standards and Technology, an agency within the U.S. Department of Commerce, is responsible for setting computer security standards for unclassified, nonmilitary government computer systems, while the National Security Agency (NSA) is responsible for setting security guidance for classified government and military systems and applications.\n\nTraduction : Le Computer Security Act établit que le National Institute for Standards and Technology, une agence du département du Commerce américain, est responsable de fixer les normes de sécurité informatique pour les systèmes gouvernementaux non classifiés et non militaires, tandis que la National Security Agency (NSA) est responsable de fixer les consignes de sécurité pour les systèmes et applications gouvernementaux et militaires classifiés.",
+          "explanation": "NIST : tout ce qui n'est ni secret ni militaire. NSA : le secret et le militaire.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Classifié (classified) veut dire : déclaré secret par l'État.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-nist-def3",
+          "type": "cloze",
+          "question": "The Computer Security Act establishes that the [[National Institute for Standards]] and Technology, an agency within the U.S. Department of Commerce, is responsible for setting computer security standards for unclassified, [[nonmilitary government computer]] systems, while the National Security Agency (NSA) is responsible for setting security guidance for [[classified government and military]] systems and applications.",
+          "answer": "The Computer Security Act establishes that the National Institute for Standards and Technology, an agency within the U.S. Department of Commerce, is responsible for setting computer security standards for unclassified, nonmilitary government computer systems, while the National Security Agency (NSA) is responsible for setting security guidance for classified government and military systems and applications.",
+          "explanation": "Le NIST pour le non classifié, la NSA pour le classifié et le militaire.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-fisma-1",
+          "type": "duel",
+          "question": "Qui fixe les normes pour les systèmes de l'État qui ne sont ni secrets ni militaires ?",
+          "options": ["Le NIST", "La NSA"],
+          "answer": "Le NIST",
+          "explanation": "La NSA s'occupe des systèmes classifiés (secrets) et militaires.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-fisma-2",
+          "type": "qcm",
+          "question": "Une entreprise privée héberge le site d'une agence fédérale américaine. Est-elle concernée par FISMA ?",
+          "options": [
+            "Oui, car elle fournit des services d'information à l'agence",
+            "Non, FISMA ne concerne que les agences elles-mêmes",
+            "Oui, mais seulement si elle est cotée en bourse"
+          ],
+          "options_why": [
+            "",
+            "FISMA vise aussi les organisations non gouvernementales qui servent les agences.",
+            "La bourse n'a rien à voir avec FISMA. Tu confonds peut-être avec la loi SOX, vue plus loin."
+          ],
+          "answer": "Oui, car elle fournit des services d'information à l'agence",
+          "explanation": "FISMA s'applique aux agences et aux organisations qui leur fournissent des services d'information.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-fisma-3",
+          "type": "sort",
+          "question": "NIST ou NSA ? Dans quelle boîte va chaque phrase ?",
+          "answer": "NIST : les normes pour les systèmes non classifiés et non militaires, et l'agence du département du Commerce. NSA : les consignes pour les systèmes classifiés et les systèmes militaires.",
+          "explanation": "Le NIST s'occupe du civil ordinaire. La NSA s'occupe du secret et du militaire.",
+          "data": {
+            "mode": "classer",
+            "categories": ["NIST", "NSA"],
+            "items": [
+              { "text": "Fixe les normes pour les systèmes non classifiés et non militaires", "category": "NIST" },
+              { "text": "C'est une agence du département du Commerce", "category": "NIST" },
+              { "text": "Fixe les consignes pour les systèmes classifiés", "category": "NSA" },
+              { "text": "Fixe les consignes pour les systèmes militaires", "category": "NSA" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-fisma-4",
+          "type": "flash",
+          "question": "Que le Computer Security Act impose-t-il aux employés fédéraux qui utilisent les ordinateurs du gouvernement ?",
+          "answer": "Une formation de sensibilisation à la sécurité (security awareness training).",
+          "explanation": "Chaque employé doit apprendre les bons réflexes avant d'utiliser ces ordinateurs.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « U.S. Computer Security Act of 1987 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-fisma-5",
+          "type": "flash",
+          "question": "Que demande le Computer Security Act pour les ordinateurs du gouvernement fédéral ?",
+          "answer": "Des pratiques de sécurité minimales acceptables, et des politiques pour que les agences respectent ces pratiques.",
+          "explanation": "Un minimum pour tous, comme le règlement commun à tous les collèges.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « U.S. Computer Security Act of 1987 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-fisma-6",
+          "type": "flash",
+          "question": "En quelles années ont été adoptés le Computer Security Act et FISMA ?",
+          "answer": "1987 pour le Computer Security Act, 2002 pour FISMA.",
+          "explanation": "FISMA est la plus récente : elle a remplacé la loi de 1987.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. Le manuel dit que le Computer Security Act a été abrogé (repealed) par FISMA.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-conf-fisma-7",
+          "type": "why",
+          "question": "Pourquoi FISMA s'applique-t-elle aussi à des entreprises qui ne sont pas des agences ?",
+          "answer": "Parce qu'elles fournissent des services d'information à des agences fédérales. Si elles sont mal protégées, les informations de l'État le sont aussi.",
+          "explanation": "Une chaîne n'est pas plus solide que son maillon le plus faible.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : FISMA vise les agences et les organisations non gouvernementales qui leur fournissent des services d'information. Le second argument est un raisonnement, hors manuel.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-fisma-8",
+          "type": "cloze",
+          "question": "FISMA demande des évaluations de sécurité fondées sur le [[risque]], alignées sur le cadre [[RMF]] du NIST.",
+          "answer": "FISMA demande des évaluations de sécurité fondées sur le risque, alignées sur le cadre RMF du NIST.",
+          "explanation": "RMF veut dire Risk Management Framework : le cadre de gestion des risques du NIST.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-conf-fisma-9",
+          "type": "problem",
+          "question": "Un collègue dit : « Le Computer Security Act de 1987 est toujours la loi actuelle. » Corrige-le.",
+          "answer": "Il a été remplacé (abrogé) par FISMA en 2002. FISMA reprend l'idée de la loi de 1987 et l'étend.",
+          "explanation": "La loi de 1987 est l'ancêtre. FISMA est la loi qui s'applique aujourd'hui.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « repealed by FISMA of 2002 », et FISMA « greatly extends » la loi de 1987.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-fisma-10",
+          "type": "whatif",
+          "question": "Et si une agence fédérale ne fait aucune évaluation des risques de sécurité ?",
+          "answer": "Elle ne respecte pas FISMA. La loi exige des évaluations de sécurité fondées sur les risques, alignées sur le cadre RMF du NIST.",
+          "explanation": "FISMA rend ces évaluations obligatoires.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-conf-sox",
+      "name": "La loi Sarbanes-Oxley (SOX)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Les comptes du club",
+          "paragraphes": [
+            "Ton club de sport vend des parts à ses supporters. Le trésorier affirme que tout va bien.",
+            "En réalité, il cache des pertes pour que les gens continuent à acheter. Quand la vérité éclate, plus personne ne fait confiance au club.",
+            "Aux États-Unis, plusieurs grands scandales de comptabilité ont éclaté dans des entreprises. En 2002, une loi a été votée pour rétablir la confiance : la loi Sarbanes-Oxley (SOX)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le trésorier sous contrôle",
+          "comme": "Pour que les supporters gardent confiance, le club doit être clair. Le trésorier ne peut pas décider de dépenses qui l'avantagent lui-même : c'est un conflit d'intérêts. Les comptes sont vérifiés. S'il ment, il est puni. Qui découvre une triche peut la signaler sans risque.",
+          "enVrai": "SOX demande la même chose aux entreprises cotées en bourse, c'est-à-dire celles dont n'importe qui peut acheter une petite part. Elles doivent installer des contrôles, informer les investisseurs des risques et sanctionner les dirigeants qui mentent. Elles doivent aussi protéger les lanceurs d'alerte (whistleblowers). Ce sont ceux qui signalent une faute aux régulateurs, les autorités qui surveillent un secteur. L'image s'arrête là : SOX vise de grandes entreprises, pas ton club."
+        },
+        {
+          "type": "predire",
+          "question": "SOX est une loi sur l'argent des entreprises. A-t-elle un lien avec l'informatique ?",
+          "options": [
+            "Non, aucun lien",
+            "Oui, un lien réel et de plus en plus fort",
+            "Oui, mais seulement pour les entreprises du secteur informatique"
+          ],
+          "answer": "Oui, un lien réel et de plus en plus fort",
+          "explanation": "Le manuel dit que SOX est surtout une loi financière. Mais son impact sur l'informatique et la sécurité est réel et croissant."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les chiffres de la chaîne de magasins",
+          "texte": "Une grande chaîne de magasins est cotée en bourse. Ses chiffres de vente passent par un logiciel de comptabilité. Si un employé pouvait les modifier sans laisser de trace, les comptes officiels (les états financiers) ne seraient plus fiables. Les auditeurs, ces contrôleurs extérieurs, regardent donc aussi qui a accès à ce logiciel."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-conf-sox-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : pourquoi la loi « SOX » a été adoptée",
+          "answer": "Following several high-profile corporate and accounting scandals, the SOX was enacted in the United States to reestablish public trust in publicly traded companies and public accounting firms.\n\nTraduction : À la suite de plusieurs scandales d'entreprise et de comptabilité très médiatisés, SOX a été adoptée aux États-Unis pour rétablir la confiance du public dans les sociétés cotées en bourse et les cabinets de comptabilité publique.",
+          "explanation": "Pense au club : après le mensonge du trésorier, il faut rétablir la confiance.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « U.S. Sarbanes-Oxley Act of 2002 ». Une société cotée en bourse (publicly traded company) est une entreprise dont tout le monde peut acheter des parts.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-def2",
+          "type": "cloze",
+          "question": "Following several high-profile corporate and accounting [[scandals]], the SOX was enacted in the United States to reestablish public [[trust]] in publicly traded companies and public accounting firms.",
+          "answer": "Following several high-profile corporate and accounting scandals, the SOX was enacted in the United States to reestablish public trust in publicly traded companies and public accounting firms.",
+          "explanation": "La cause (des scandales) et le but (rétablir la confiance du public).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-def3",
+          "type": "cloze",
+          "question": "Following several [[high-profile corporate and accounting]] scandals, the SOX was enacted in the United States to [[reestablish public trust]] in [[publicly traded companies]] and public accounting firms.",
+          "answer": "Following several high-profile corporate and accounting scandals, the SOX was enacted in the United States to reestablish public trust in publicly traded companies and public accounting firms.",
+          "explanation": "Trois blocs : les scandales, le but, et les entreprises cotées en bourse.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel qui explique pourquoi SOX a été adoptée (en anglais).",
+          "answer": "Following several high-profile corporate and accounting scandals, the SOX was enacted in the United States to reestablish public trust in publicly traded companies and public accounting firms.\n\nTraduction : À la suite de plusieurs scandales d'entreprise et de comptabilité très médiatisés, SOX a été adoptée aux États-Unis pour rétablir la confiance du public dans les sociétés cotées en bourse et les cabinets de comptabilité publique.",
+          "explanation": "Retiens la suite : scandales, puis loi, puis confiance rétablie.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-controles-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce que SOX a exigé des entreprises",
+          "answer": "SOX required companies to implement a wide range of controls intended to minimize conflicts of interest, provide investors with appropriate risk information, place civil and criminal penalties on executives for providing false financial disclosures, and provide protections for whistleblowers who report inappropriate actions to regulators.\n\nTraduction : SOX a obligé les entreprises à mettre en place un large éventail de contrôles destinés à réduire les conflits d'intérêts, à donner aux investisseurs des informations appropriées sur les risques, à prévoir des sanctions civiles et pénales contre les dirigeants qui font de fausses déclarations financières, et à protéger les lanceurs d'alerte qui signalent aux régulateurs des actes inappropriés.",
+          "explanation": "Quatre idées : conflits d'intérêts, information sur les risques, sanctions des dirigeants, protection des lanceurs d'alerte.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « U.S. Sarbanes-Oxley Act of 2002 ». Les executives sont les dirigeants. Les investors sont ceux qui achètent des parts de l'entreprise.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-controles-def2",
+          "type": "cloze",
+          "question": "SOX required companies to implement a wide range of [[controls]] intended to minimize conflicts of interest, provide investors with appropriate risk information, place civil and criminal penalties on executives for providing false financial disclosures, and provide protections for [[whistleblowers]] who report inappropriate actions to regulators.",
+          "answer": "SOX required companies to implement a wide range of controls intended to minimize conflicts of interest, provide investors with appropriate risk information, place civil and criminal penalties on executives for providing false financial disclosures, and provide protections for whistleblowers who report inappropriate actions to regulators.",
+          "explanation": "Le début (des contrôles) et la fin (les lanceurs d'alerte).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-controles-def3",
+          "type": "cloze",
+          "question": "SOX required companies to implement a wide range of controls intended to [[minimize conflicts of interest]], provide investors with [[appropriate risk information]], place [[civil and criminal penalties]] on executives for providing false financial disclosures, and provide protections for whistleblowers who report inappropriate actions to regulators.",
+          "answer": "SOX required companies to implement a wide range of controls intended to minimize conflicts of interest, provide investors with appropriate risk information, place civil and criminal penalties on executives for providing false financial disclosures, and provide protections for whistleblowers who report inappropriate actions to regulators.",
+          "explanation": "Trois des quatre idées : conflits d'intérêts, risques, sanctions.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-controles-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur les contrôles que SOX a exigés (en anglais).",
+          "answer": "SOX required companies to implement a wide range of controls intended to minimize conflicts of interest, provide investors with appropriate risk information, place civil and criminal penalties on executives for providing false financial disclosures, and provide protections for whistleblowers who report inappropriate actions to regulators.\n\nTraduction : SOX a obligé les entreprises à mettre en place un large éventail de contrôles destinés à réduire les conflits d'intérêts, à donner aux investisseurs des informations appropriées sur les risques, à prévoir des sanctions civiles et pénales contre les dirigeants qui font de fausses déclarations financières, et à protéger les lanceurs d'alerte qui signalent aux régulateurs des actes inappropriés.",
+          "explanation": "Retiens les quatre idées dans l'ordre : conflits, risques, sanctions, lanceurs d'alerte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-pcaob-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le « PCAOB »",
+          "answer": "Under SOX, the Public Company Accounting Oversight Board (PCAOB) was established as a nonprofit organization responsible for overseeing the implementation of SOX.\n\nTraduction : Dans le cadre de SOX, le Public Company Accounting Oversight Board (PCAOB) a été créé comme organisation à but non lucratif chargée de superviser la mise en œuvre de SOX.",
+          "explanation": "Le PCAOB est l'arbitre : il surveille que SOX soit bien appliquée.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « U.S. Sarbanes-Oxley Act of 2002 ». À but non lucratif (nonprofit) : elle ne cherche pas à faire des bénéfices.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-pcaob-def3",
+          "type": "cloze",
+          "question": "Under SOX, the [[Public Company Accounting Oversight]] Board (PCAOB) was established as a [[nonprofit organization]] responsible for [[overseeing the implementation]] of SOX.",
+          "answer": "Under SOX, the Public Company Accounting Oversight Board (PCAOB) was established as a nonprofit organization responsible for overseeing the implementation of SOX.",
+          "explanation": "Son nom, sa nature (sans but lucratif) et sa mission (superviser).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-audit-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les « Auditing Standards » du PCAOB",
+          "answer": "PCAOB's \"Auditing Standards\" identify the role that information systems play in maintaining financial records and requires auditors to assess the use of IT as it relates to maintaining and preparing financial statements.\n\nTraduction : Les « Auditing Standards » du PCAOB définissent le rôle que jouent les systèmes d'information dans la tenue des documents financiers et exigent que les auditeurs évaluent l'usage de l'informatique dans la tenue et la préparation des états financiers.",
+          "explanation": "C'est le pont entre la finance et l'informatique : les auditeurs doivent regarder les systèmes.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « U.S. Sarbanes-Oxley Act of 2002 ». IT veut dire information technology : les technologies de l'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-audit-def3",
+          "type": "cloze",
+          "question": "PCAOB's \"Auditing Standards\" identify the role that [[information systems play]] in maintaining [[financial records]] and requires [[auditors to assess]] the use of IT as it relates to maintaining and preparing financial statements.",
+          "answer": "PCAOB's \"Auditing Standards\" identify the role that information systems play in maintaining financial records and requires auditors to assess the use of IT as it relates to maintaining and preparing financial statements.",
+          "explanation": "Le rôle des systèmes, les documents financiers, et le travail des auditeurs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-sox-1",
+          "type": "duel",
+          "question": "SOX est-elle d'abord une loi financière ou une loi d'informatique ?",
+          "options": ["Financière", "D'informatique"],
+          "answer": "Financière",
+          "explanation": "Elle est surtout financière, mais son impact sur l'informatique et la sécurité est réel et croissant.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « U.S. Sarbanes-Oxley Act of 2002 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-sox-2",
+          "type": "qcm",
+          "question": "Un comptable signale une fraude aux autorités. Quelle protection SOX prévoit-elle pour lui ?",
+          "options": [
+            "Une protection pour les lanceurs d'alerte",
+            "Une prime payée par l'entreprise",
+            "Un nouvel emploi dans une autre société"
+          ],
+          "options_why": [
+            "",
+            "Le manuel ne parle pas de prime. Il parle de protection contre les mauvais traitements.",
+            "Le manuel ne parle pas de nouvel emploi. Il parle de protection des lanceurs d'alerte."
+          ],
+          "answer": "Une protection pour les lanceurs d'alerte",
+          "explanation": "SOX protège ceux qui signalent des actes inappropriés aux régulateurs.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-sox-3",
+          "type": "sort",
+          "question": "Quel contrôle de SOX correspond à chaque situation ?",
+          "answer": "Conflits d'intérêts : le cousin fournisseur et le comptable qui valide ses dépenses. Risques : le rapport aux investisseurs et les informations claires. Sanctions : les dirigeants qui signent de faux chiffres. Lanceurs d'alerte : les employés qui signalent une faute.",
+          "explanation": "Chaque contrôle répond à un risque : tricher, cacher, mentir, ou faire taire.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Conflits d'intérêts", "Informer sur les risques", "Sanctions des dirigeants", "Lanceurs d'alerte"],
+            "items": [
+              { "text": "Un directeur choisit en secret l'entreprise de son cousin comme fournisseur", "category": "Conflits d'intérêts" },
+              { "text": "Un responsable de la comptabilité valide ses propres dépenses", "category": "Conflits d'intérêts" },
+              { "text": "Les investisseurs reçoivent un rapport sur les dangers qui menacent l'entreprise", "category": "Informer sur les risques" },
+              { "text": "L'entreprise donne aux acheteurs de parts des informations claires sur ses risques", "category": "Informer sur les risques" },
+              { "text": "Un dirigeant qui signe de fausses déclarations risque des peines civiles et pénales", "category": "Sanctions des dirigeants" },
+              { "text": "Un directeur financier est puni s'il présente de faux chiffres", "category": "Sanctions des dirigeants" },
+              { "text": "Un employé signale une fraude aux régulateurs et il est protégé", "category": "Lanceurs d'alerte" },
+              { "text": "Une salariée alerte les autorités et l'entreprise ne peut pas la punir pour cela", "category": "Lanceurs d'alerte" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-sox-4",
+          "type": "why",
+          "question": "Pourquoi les auditeurs s'intéressent-ils à l'informatique, alors que SOX parle de finances ?",
+          "answer": "Parce que les comptes sont tenus et préparés avec des systèmes informatiques. Une faille ou une modification non contrôlée peut fausser les états financiers.",
+          "explanation": "Des chiffres faux peuvent venir d'un système mal protégé.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : les auditeurs doivent évaluer l'usage de l'informatique pour la tenue et la préparation des états financiers.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-sox-5",
+          "type": "flash",
+          "question": "Que veut dire PCAOB ?",
+          "answer": "Public Company Accounting Oversight Board : l'organisation à but non lucratif qui supervise la mise en œuvre de SOX.",
+          "explanation": "Oversight veut dire surveillance : c'est le surveillant de SOX.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « U.S. Sarbanes-Oxley Act of 2002 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-sox-6",
+          "type": "flash",
+          "question": "En quelle année SOX a-t-elle été adoptée ?",
+          "answer": "En 2002 (Sarbanes-Oxley Act of 2002).",
+          "explanation": "Elle date de la même année que FISMA.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, titre de la section « U.S. Sarbanes-Oxley Act of 2002 ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-conf-sox-7",
+          "type": "cloze",
+          "question": "SOX est surtout une loi [[financière]], mais elle a un impact réel et croissant sur l'[[informatique]].",
+          "answer": "SOX est surtout une loi financière, mais elle a un impact réel et croissant sur l'informatique.",
+          "explanation": "Les chiffres vivent dans des systèmes informatiques.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-sox-8",
+          "type": "problem",
+          "question": "Le directeur informatique d'une entreprise cotée dit : « SOX ne me concerne pas, c'est une loi de comptables. » Que lui réponds-tu ?",
+          "answer": "SOX est surtout financière, mais les auditeurs examinent aussi l'usage de l'informatique pour les comptes. Son impact sur l'informatique est réel et croissant.",
+          "explanation": "Si les systèmes ne sont pas fiables, les comptes ne le sont pas non plus.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-sox-9",
+          "type": "whatif",
+          "question": "Et si un dirigeant présente de faux chiffres financiers ?",
+          "answer": "Il s'expose à des sanctions civiles et pénales, d'après SOX. La loi vise justement les fausses déclarations financières.",
+          "explanation": "C'est l'un des quatre contrôles que SOX a rendus obligatoires.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-conf-soc",
+      "name": "Les rapports SOC (System and Organization Controls)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Dis-moi que c'est sûr",
+          "paragraphes": [
+            "Ton club veut utiliser le service de paiement d'une petite société. Tu demandes : « Votre service est-il sûr ? »",
+            "Elle répond : « Oui, fais-nous confiance. » Ça ne te suffit pas. Tu voudrais la preuve d'un contrôleur extérieur.",
+            "Dans le monde professionnel, cette preuve existe : le rapport d'audit SOC. Un audit est un contrôle fait par un spécialiste, qui écrit ensuite un rapport."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Bulletin détaillé et certificat affiché",
+          "comme": "À la fin de l'année, tes parents reçoivent un bulletin détaillé avec toutes les remarques. Le collège affiche seulement un certificat résumé à l'entrée, sans les détails.",
+          "enVrai": "Le rapport SOC 2 est le bulletin détaillé : il va aux clients et aux autorités de confiance. Le rapport SOC 3 est le certificat résumé : il est public et cache les détails sensibles. Le rapport SOC 1 est un autre document, centré sur les comptes. L'image s'arrête là : un bulletin note un élève, un rapport SOC contrôle une organisation."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise veut montrer à tout le monde, sur son site, qu'elle est sérieuse. Elle ne veut pas révéler ses secrets. Quel rapport publie-t-elle ?",
+          "options": ["Un rapport SOC 1", "Un rapport SOC 2", "Un rapport SOC 3"],
+          "answer": "Un rapport SOC 3",
+          "explanation": "Le SOC 3 est une version allégée, sans détails sensibles. Le SOC 2 est réservé aux parties de confiance."
+        },
+        {
+          "type": "exemple",
+          "titre": "Qui demande quoi ?",
+          "texte": "Une société traite les paiements par carte pour des centaines de boutiques. Ses chiffres influencent les comptes officiels (les états financiers) de ses clients. Elle aura probablement besoin d'un rapport SOC 1. Elle peut aussi montrer un rapport SOC 2 à ses clients et aux régulateurs."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-conf-soc-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « SOC »",
+          "answer": "Often confused with SOX (discussed previously), SOC stands for System and Organization Controls and is an auditing framework that gives organizations the flexibility to be audited based on their own needs.\n\nTraduction : Souvent confondu avec SOX (vu précédemment), SOC signifie System and Organization Controls et est un cadre d'audit qui donne aux organisations la flexibilité d'être auditées selon leurs propres besoins.",
+          "explanation": "SOC se prononce comme un mot à part de SOX : l'un est un cadre d'audit, l'autre une loi.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « System and Organization Controls ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-def2",
+          "type": "cloze",
+          "question": "Often confused with SOX (discussed previously), SOC stands for System and Organization Controls and is an [[auditing]] framework that gives organizations the [[flexibility]] to be audited based on their own needs.",
+          "answer": "Often confused with SOX (discussed previously), SOC stands for System and Organization Controls and is an auditing framework that gives organizations the flexibility to be audited based on their own needs.",
+          "explanation": "Un cadre d'audit, et sa qualité principale : la flexibilité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-def3",
+          "type": "cloze",
+          "question": "Often confused with SOX (discussed previously), SOC stands for [[System and Organization Controls]] and is an [[auditing framework]] that gives organizations [[the flexibility]] to be audited based on their own needs.",
+          "answer": "Often confused with SOX (discussed previously), SOC stands for System and Organization Controls and is an auditing framework that gives organizations the flexibility to be audited based on their own needs.",
+          "explanation": "Trois blocs : le nom complet, la nature (cadre d'audit), et la flexibilité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « SOC » (en anglais).",
+          "answer": "Often confused with SOX (discussed previously), SOC stands for System and Organization Controls and is an auditing framework that gives organizations the flexibility to be audited based on their own needs.\n\nTraduction : Souvent confondu avec SOX (vu précédemment), SOC signifie System and Organization Controls et est un cadre d'audit qui donne aux organisations la flexibilité d'être auditées selon leurs propres besoins.",
+          "explanation": "Retiens : confondu avec SOX, nom complet, cadre d'audit, flexibilité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-soc1-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « SOC 1 »",
+          "answer": "SOC 1: An audit and compliance report that focuses strictly on a company's financial statements and controls that can impact a customer's financial statements.\n\nTraduction : SOC 1 : un rapport d'audit et de conformité qui se concentre strictement sur les états financiers d'une entreprise et sur les contrôles qui peuvent avoir un impact sur les états financiers d'un client.",
+          "explanation": "SOC 1, c'est le « 1 » des comptes : tout tourne autour des états financiers.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Le manuel ajoute qu'une société qui traite des paiements par carte a probablement besoin d'un rapport SOC 1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-soc1-def3",
+          "type": "cloze",
+          "question": "SOC 1: An audit and compliance report that [[focuses strictly on]] a company's [[financial statements]] and controls that can [[impact a customer's]] financial statements.",
+          "answer": "SOC 1: An audit and compliance report that focuses strictly on a company's financial statements and controls that can impact a customer's financial statements.",
+          "explanation": "Strictement sur les comptes de l'entreprise, et sur leur effet chez le client.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-soc2-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « SOC 2 »",
+          "answer": "SOC 2: An audit and compliance report that evaluates an organization based on AICPA's five \"Trust Services principles\": privacy, security, availability, processing integrity, and confidentiality.\n\nTraduction : SOC 2 : un rapport d'audit et de conformité qui évalue une organisation selon les cinq « Trust Services principles » de l'AICPA : vie privée, sécurité, disponibilité, intégrité du traitement et confidentialité.",
+          "explanation": "SOC 2 couvre cinq principes de confiance : c'est le bulletin détaillé de la sécurité.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. AICPA veut dire American Institute of Certified Public Accountants, l'institut américain des experts-comptables.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-soc2-def2",
+          "type": "cloze",
+          "question": "SOC 2: An audit and compliance report that [[evaluates]] an organization based on AICPA's five \"Trust Services principles\": privacy, security, availability, processing integrity, and [[confidentiality]].",
+          "answer": "SOC 2: An audit and compliance report that evaluates an organization based on AICPA's five \"Trust Services principles\": privacy, security, availability, processing integrity, and confidentiality.",
+          "explanation": "Le verbe (évaluer) et le dernier des cinq principes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-soc2-def3",
+          "type": "cloze",
+          "question": "SOC 2: An audit and compliance report that evaluates an organization based on [[AICPA's five]] \"Trust Services principles\": [[privacy, security, availability]], [[processing integrity, and confidentiality]].",
+          "answer": "SOC 2: An audit and compliance report that evaluates an organization based on AICPA's five \"Trust Services principles\": privacy, security, availability, processing integrity, and confidentiality.",
+          "explanation": "Trois blocs : l'AICPA et ses cinq principes, coupés en deux listes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-soc2-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « SOC 2 » (en anglais).",
+          "answer": "SOC 2: An audit and compliance report that evaluates an organization based on AICPA's five \"Trust Services principles\": privacy, security, availability, processing integrity, and confidentiality.\n\nTraduction : SOC 2 : un rapport d'audit et de conformité qui évalue une organisation selon les cinq « Trust Services principles » de l'AICPA : vie privée, sécurité, disponibilité, intégrité du traitement et confidentialité.",
+          "explanation": "Retiens les cinq principes dans l'ordre : privacy, security, availability, processing integrity, confidentiality.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-soc3-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « SOC 3 »",
+          "answer": "SOC 3: This is a \"lite\" version of a SOC 2 report and abstracts or removes all sensitive details.\n\nTraduction : SOC 3 : c'est une version « allégée » (lite) d'un rapport SOC 2, qui résume ou retire tous les détails sensibles.",
+          "explanation": "SOC 3, c'est le certificat affiché à l'entrée : un résumé que tout le monde peut voir.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Le manuel précise que les entreprises rendent les rapports SOC 3 publics et réservent les rapports SOC 2 aux parties de confiance.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-soc3-def3",
+          "type": "cloze",
+          "question": "SOC 3: This is a \"lite\" version of a [[SOC 2 report]] and [[abstracts or removes]] all [[sensitive details]].",
+          "answer": "SOC 3: This is a \"lite\" version of a SOC 2 report and abstracts or removes all sensitive details.",
+          "explanation": "Une version allégée du SOC 2, qui retire les détails sensibles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-soc-1",
+          "type": "sort",
+          "question": "Quel rapport SOC correspond à chaque description ?",
+          "answer": "SOC 1 : les états financiers et la société de paiement par carte. SOC 2 : les cinq principes et les clients et régulateurs. SOC 3 : la version allégée et l'accès public.",
+          "explanation": "Le 1 pour les comptes, le 2 pour le détail de la sécurité, le 3 pour le résumé public.",
+          "data": {
+            "mode": "classer",
+            "categories": ["SOC 1", "SOC 2", "SOC 3"],
+            "items": [
+              { "text": "Se concentre strictement sur les états financiers", "category": "SOC 1" },
+              { "text": "Utile à une société qui traite des paiements par carte", "category": "SOC 1" },
+              { "text": "Évalue la vie privée, la sécurité, la disponibilité, l'intégrité du traitement et la confidentialité", "category": "SOC 2" },
+              { "text": "Présenté aux régulateurs et aux clients de confiance", "category": "SOC 2" },
+              { "text": "Version « allégée » sans détails sensibles", "category": "SOC 3" },
+              { "text": "Rendu accessible au public", "category": "SOC 3" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-soc-2",
+          "type": "duel",
+          "question": "Quel rapport peut-on rendre public sans révéler de détails sensibles ?",
+          "options": ["SOC 3", "SOC 2"],
+          "answer": "SOC 3",
+          "explanation": "Le SOC 3 est la version allégée. Le SOC 2 est réservé aux parties de confiance.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-soc-3",
+          "type": "duel",
+          "question": "« Un cadre d'audit souple, adapté aux besoins de chaque organisation. » C'est SOC ou SOX ?",
+          "options": ["SOC", "SOX"],
+          "answer": "SOC",
+          "explanation": "SOX est une loi. SOC est un cadre d'audit : on ne les confond pas.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-soc-4",
+          "type": "qcm",
+          "question": "Une entreprise veut montrer à ses clients de confiance le détail de ses contrôles de sécurité, de disponibilité et de confidentialité. Quel rapport choisir ?",
+          "options": ["Un rapport SOC 2", "Un rapport SOC 1", "Un rapport SOC 3"],
+          "options_why": [
+            "",
+            "Le SOC 1 se concentre sur les états financiers, pas sur la sécurité.",
+            "Le SOC 3 cache les détails : ce n'est pas ce que veulent ces clients."
+          ],
+          "answer": "Un rapport SOC 2",
+          "explanation": "Le SOC 2 évalue les cinq principes de confiance avec le détail des contrôles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-soc-5",
+          "type": "qcm",
+          "question": "Lequel de ces critères n'est PAS l'un des cinq Trust Services principles ?",
+          "options": [
+            "La non-répudiation (ne pas pouvoir nier ses actes)",
+            "La vie privée (privacy)",
+            "La disponibilité (availability)",
+            "L'intégrité du traitement (processing integrity)"
+          ],
+          "options_why": [
+            "",
+            "La vie privée fait partie des cinq principes.",
+            "La disponibilité fait partie des cinq principes.",
+            "L'intégrité du traitement fait partie des cinq principes."
+          ],
+          "answer": "La non-répudiation (ne pas pouvoir nier ses actes)",
+          "explanation": "Les cinq sont : privacy, security, availability, processing integrity, confidentiality.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-soc-6",
+          "type": "flash",
+          "question": "Quel organisme a publié le standard SSAE 18 sur lequel reposent les rapports SOC, et en quelle année ?",
+          "answer": "L'AICPA (American Institute of Certified Public Accountants), en 2017. SSAE 20 l'a modifié en 2019.",
+          "explanation": "SSAE veut dire Statement on Standards for Attestation Engagements.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « System and Organization Controls ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-conf-soc-7",
+          "type": "why",
+          "question": "Pourquoi un rapport SOC 3 peut-il être public, alors qu'un SOC 2 est réservé aux parties de confiance ?",
+          "answer": "Le SOC 3 est une version allégée : il enlève tous les détails sensibles. Il dit si les cinq principes sont démontrés, sans dire précisément ce que fait l'entreprise.",
+          "explanation": "Un résumé ne révèle pas de secrets. Un rapport détaillé, si.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : le SOC 3 indique si chaque principe est démontré sans divulguer les détails.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-soc-8",
+          "type": "cloze",
+          "question": "Un rapport [[SOC 3]] est une version « allégée » d'un rapport [[SOC 2]].",
+          "answer": "Un rapport SOC 3 est une version « allégée » d'un rapport SOC 2.",
+          "explanation": "Le résumé public, et le rapport détaillé dont il est tiré.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-soc-9",
+          "type": "problem",
+          "question": "Un client demande à ton entreprise un rapport d'audit. Explique la différence entre un rapport SOC 2 et un rapport SOC 3.",
+          "answer": "Le SOC 2 est détaillé : il évalue les cinq principes de confiance et va aux parties de confiance. Le SOC 3 en est une version allégée, sans détails sensibles, qu'on peut publier.",
+          "explanation": "Pense au bulletin détaillé et au certificat affiché à l'entrée.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-soc-10",
+          "type": "flash",
+          "question": "Quel rapport SOC convient à une société qui traite des paiements par carte ?",
+          "answer": "Probablement un rapport SOC 1 : ses contrôles peuvent avoir un impact sur les états financiers de ses clients.",
+          "explanation": "Les chiffres de cette société influencent les comptes de ses clients.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « System and Organization Controls ».",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-conf-pcidss",
+      "name": "La norme PCI DSS (Payment Card Industry Data Security Standard)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Un paiement, plein de secrets",
+          "paragraphes": [
+            "Quand tu paies en ligne avec une carte, des informations voyagent. Il y a le numéro de carte, le nom, la date de fin et le code au dos.",
+            "Si un voleur les attrape, il peut dépenser à ta place. Les entreprises de cartes bancaires ne veulent pas que ça arrive.",
+            "Elles ont écrit des règles communes pour tous ceux qui acceptent les cartes. Ces règles s'appellent PCI DSS."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le règlement du centre commercial",
+          "comme": "Un centre commercial impose les mêmes règles de sécurité à toutes ses boutiques : caisse verrouillée, accès au stock réservé. Ce n'est pas une loi. Mais si une boutique refuse, elle perd sa place.",
+          "enVrai": "PCI DSS, c'est le règlement des marques de cartes bancaires. Il vaut pour tous ceux qui prennent, gardent ou traitent des paiements par carte. Ce n'est pas une loi : c'est un standard exigé par contrat. L'image s'arrête là : PCI DSS vaut presque partout dans le monde, pas dans un seul centre."
+        },
+        {
+          "type": "predire",
+          "question": "Un commerçant ne respecte pas PCI DSS. Qui peut le sanctionner ?",
+          "options": [
+            "La police, car c'est une loi",
+            "Les compagnies de cartes bancaires",
+            "Le gouvernement, par un contrôle officiel"
+          ],
+          "answer": "Les compagnies de cartes bancaires",
+          "explanation": "PCI DSS n'est pas une loi. Ce sont les compagnies de cartes qui évaluent la conformité et la font respecter."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une boutique qui garde des numéros de carte",
+          "texte": "Une boutique garde les numéros de carte de ses clients dans un fichier. PCI DSS lui demande de protéger ces données. Elle doit chiffrer leur envoi sur internet. Elle doit donner un identifiant unique à chaque personne qui utilise un ordinateur. Aucun policier ne la contrôlera. Mais les compagnies de cartes peuvent lui retirer le droit d'accepter les cartes."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-conf-pcidss-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « PCI DSS »",
+          "answer": "PCI DSS is a proprietary security standard established in 2004. PCI DSS establishes technical and operational requirements for merchants and service providers that accept or process cardholder data and/or sensitive authentication data, as well as for software developers and manufacturers of the applications and devices used in payment card transactions.\n\nTraduction : PCI DSS est un standard de sécurité propriétaire établi en 2004. PCI DSS établit des exigences techniques et opérationnelles pour les commerçants et les prestataires de services qui acceptent ou traitent des données de titulaires de carte et/ou des données d'authentification sensibles, ainsi que pour les développeurs de logiciels et les fabricants des applications et appareils utilisés dans les transactions par carte de paiement.",
+          "explanation": "Pense au règlement du centre commercial : des règles pour tous ceux qui touchent aux paiements par carte.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Payment Card Industry Data Security Standard ». Un commerçant (merchant) vend des produits. Les données du titulaire de carte (cardholder data) sont, par exemple, le numéro de carte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-def2",
+          "type": "cloze",
+          "question": "PCI DSS is a [[proprietary]] security standard established in 2004. PCI DSS establishes technical and operational requirements for [[merchants]] and service providers that accept or process cardholder data and/or sensitive authentication data, as well as for software developers and manufacturers of the applications and devices used in payment card transactions.",
+          "answer": "PCI DSS is a proprietary security standard established in 2004. PCI DSS establishes technical and operational requirements for merchants and service providers that accept or process cardholder data and/or sensitive authentication data, as well as for software developers and manufacturers of the applications and devices used in payment card transactions.",
+          "explanation": "Un standard propriétaire, et des règles qui visent d'abord les commerçants.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-def3",
+          "type": "cloze",
+          "question": "PCI DSS is a proprietary security standard [[established in 2004]]. PCI DSS establishes [[technical and operational requirements]] for merchants and service providers that accept or process [[cardholder data]] and/or sensitive authentication data, as well as for software developers and manufacturers of the applications and devices used in payment card transactions.",
+          "answer": "PCI DSS is a proprietary security standard established in 2004. PCI DSS establishes technical and operational requirements for merchants and service providers that accept or process cardholder data and/or sensitive authentication data, as well as for software developers and manufacturers of the applications and devices used in payment card transactions.",
+          "explanation": "Trois blocs : l'année, le type d'exigences, et les données visées.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « PCI DSS » (en anglais).",
+          "answer": "PCI DSS is a proprietary security standard established in 2004. PCI DSS establishes technical and operational requirements for merchants and service providers that accept or process cardholder data and/or sensitive authentication data, as well as for software developers and manufacturers of the applications and devices used in payment card transactions.\n\nTraduction : PCI DSS est un standard de sécurité propriétaire établi en 2004. PCI DSS établit des exigences techniques et opérationnelles pour les commerçants et les prestataires de services qui acceptent ou traitent des données de titulaires de carte et/ou des données d'authentification sensibles, ainsi que pour les développeurs de logiciels et les fabricants des applications et appareils utilisés dans les transactions par carte de paiement.",
+          "explanation": "Deux phrases : le standard et son année, puis qui il vise (commerçants, développeurs, fabricants).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-contrat-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le statut de PCI DSS (loi ou contrat ?)",
+          "answer": "Although PCI DSS is not yet a legal requirement, it is often a contractual requirement, and a prime example of an industry standard that is used to mandate, enforce, and audit security standards for applicable organizations across almost all jurisdictions.\n\nTraduction : Bien que PCI DSS ne soit pas encore une obligation légale, c'est souvent une obligation contractuelle, et un exemple type de norme de l'industrie utilisée pour imposer, faire appliquer et auditer des normes de sécurité auprès des organisations concernées dans presque toutes les juridictions.",
+          "explanation": "Pas une loi, mais souvent écrite dans un contrat : un standard de l'industrie.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Payment Card Industry Data Security Standard ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-contrat-def2",
+          "type": "cloze",
+          "question": "Although PCI DSS is not yet a [[legal]] requirement, it is often a [[contractual]] requirement, and a prime example of an industry standard that is used to mandate, enforce, and audit security standards for applicable organizations across almost all jurisdictions.",
+          "answer": "Although PCI DSS is not yet a legal requirement, it is often a contractual requirement, and a prime example of an industry standard that is used to mandate, enforce, and audit security standards for applicable organizations across almost all jurisdictions.",
+          "explanation": "Pas légale, mais contractuelle : voilà l'opposition clé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-contrat-def3",
+          "type": "cloze",
+          "question": "Although PCI DSS is not yet a [[legal requirement]], it is often a [[contractual requirement]], and a prime example of an industry standard that is used to [[mandate, enforce, and audit]] security standards for applicable organizations across almost all jurisdictions.",
+          "answer": "Although PCI DSS is not yet a legal requirement, it is often a contractual requirement, and a prime example of an industry standard that is used to mandate, enforce, and audit security standards for applicable organizations across almost all jurisdictions.",
+          "explanation": "Trois blocs : pas légale, souvent contractuelle, et sert à imposer, faire appliquer et auditer.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-contrat-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel qui dit si PCI DSS est une loi ou un contrat (en anglais).",
+          "answer": "Although PCI DSS is not yet a legal requirement, it is often a contractual requirement, and a prime example of an industry standard that is used to mandate, enforce, and audit security standards for applicable organizations across almost all jurisdictions.\n\nTraduction : Bien que PCI DSS ne soit pas encore une obligation légale, c'est souvent une obligation contractuelle, et un exemple type de norme de l'industrie utilisée pour imposer, faire appliquer et auditer des normes de sécurité auprès des organisations concernées dans presque toutes les juridictions.",
+          "explanation": "Retiens : pas encore légale, souvent contractuelle, presque toutes les juridictions.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-gouv-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : qui fait respecter PCI DSS",
+          "answer": "Because it is not a legislation, PCI DSS is not governed by or enforced by any government body. Instead, compliance with PCI DSS is assessed and enforced by the payment card companies (e.g., Visa, Mastercard, American Express, etc.) mentioned earlier in this section.\n\nTraduction : Comme ce n'est pas une législation, PCI DSS n'est ni régie ni appliquée par un organisme gouvernemental. À la place, la conformité à PCI DSS est évaluée et imposée par les compagnies de cartes de paiement (par exemple Visa, Mastercard, American Express, etc.) mentionnées plus tôt dans cette section.",
+          "explanation": "Pas de police : ce sont les compagnies de cartes qui contrôlent.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Payment Card Industry Data Security Standard ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-gouv-def3",
+          "type": "cloze",
+          "question": "Because it is not a legislation, PCI DSS is [[not governed by]] or enforced by [[any government body]]. Instead, compliance with PCI DSS is assessed and enforced by [[the payment card companies]] (e.g., Visa, Mastercard, American Express, etc.) mentioned earlier in this section.",
+          "answer": "Because it is not a legislation, PCI DSS is not governed by or enforced by any government body. Instead, compliance with PCI DSS is assessed and enforced by the payment card companies (e.g., Visa, Mastercard, American Express, etc.) mentioned earlier in this section.",
+          "explanation": "Aucun organisme public, mais les compagnies de cartes de paiement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-12-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la taille de PCI DSS (contrôles, exigences, objectifs)",
+          "answer": "The PCI DSS includes more than 200 security controls organized into 12 requirements, further categorized into 6 goals that generally align with security best practices.\n\nTraduction : PCI DSS comprend plus de 200 contrôles de sécurité organisés en 12 exigences, elles-mêmes classées en 6 objectifs qui correspondent en général aux bonnes pratiques de sécurité.",
+          "explanation": "Trois chiffres à retenir : plus de 200, puis 12, puis 6.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Payment Card Industry Data Security Standard ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-12-def3",
+          "type": "cloze",
+          "question": "The PCI DSS includes [[more than 200]] security controls organized into [[12 requirements]], further categorized into [[6 goals]] that generally align with security best practices.",
+          "answer": "The PCI DSS includes more than 200 security controls organized into 12 requirements, further categorized into 6 goals that generally align with security best practices.",
+          "explanation": "De plus de 200 contrôles, à 12 exigences, puis 6 objectifs : on regroupe de plus en plus.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-pcidss-1",
+          "type": "sort",
+          "question": "Dans quel objectif de PCI DSS range-t-on chaque exigence ?",
+          "answer": "Protéger les données : exigences 3 et 4. Contrôler les accès : exigences 7, 8 et 9. Surveiller et tester : exigences 10 et 11.",
+          "explanation": "Protéger les données stockées et envoyées. Contrôler qui entre. Surveiller et tester.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, liste des 6 objectifs et 12 exigences de PCI DSS. Les noms officiels sont : Protect Cardholder Data, Implement Strong Access Control Measures, Regularly Monitor and Test Networks.",
+          "retention_goal": "3m",
+          "data": {
+            "mode": "classer",
+            "categories": ["Protéger les données des cartes", "Contrôler fortement les accès", "Surveiller et tester les réseaux"],
+            "items": [
+              { "text": "Protéger les données de carte qui sont stockées", "category": "Protéger les données des cartes" },
+              { "text": "Chiffrer l'envoi des données sur les réseaux publics ouverts", "category": "Protéger les données des cartes" },
+              { "text": "Limiter l'accès selon le besoin d'en connaître", "category": "Contrôler fortement les accès" },
+              { "text": "Donner un identifiant unique à chaque personne qui utilise un ordinateur", "category": "Contrôler fortement les accès" },
+              { "text": "Limiter l'accès physique aux données de carte", "category": "Contrôler fortement les accès" },
+              { "text": "Suivre et surveiller tous les accès aux réseaux et aux données", "category": "Surveiller et tester les réseaux" },
+              { "text": "Tester régulièrement les systèmes et les processus de sécurité", "category": "Surveiller et tester les réseaux" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-pcidss-2",
+          "type": "duel",
+          "question": "PCI DSS est-elle une loi ?",
+          "options": [
+            "Non : une norme souvent exigée par contrat",
+            "Oui : le gouvernement l'impose"
+          ],
+          "answer": "Non : une norme souvent exigée par contrat",
+          "explanation": "Le manuel dit : pas encore une obligation légale, mais souvent une obligation contractuelle.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-pcidss-3",
+          "type": "sort",
+          "question": "Dans quel objectif de PCI DSS range-t-on chacune de ces exigences ?",
+          "answer": "Réseau sûr : le pare-feu et les mots de passe par défaut. Failles : l'antivirus et les systèmes sûrs. Politique : une politique pour les employés et les personnes extérieures.",
+          "explanation": "Construire la défense, réparer les failles, écrire la politique.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, liste des 6 objectifs de PCI DSS : exigences 1 et 2, 5 et 6, puis 12.",
+          "retention_goal": "3m",
+          "data": {
+            "mode": "classer",
+            "categories": ["Construire un réseau sûr", "Gérer les failles", "Avoir une politique de sécurité"],
+            "items": [
+              { "text": "Installer et maintenir un pare-feu", "category": "Construire un réseau sûr" },
+              { "text": "Ne pas garder les mots de passe par défaut du fournisseur", "category": "Construire un réseau sûr" },
+              { "text": "Utiliser un antivirus et le mettre à jour", "category": "Gérer les failles" },
+              { "text": "Développer et maintenir des systèmes et des applications sûrs", "category": "Gérer les failles" },
+              { "text": "Avoir une politique de sécurité pour les employés et les personnes extérieures qui travaillent pour l'entreprise", "category": "Avoir une politique de sécurité" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-pcidss-4",
+          "type": "qcm",
+          "question": "Un commerçant traite des paiements par carte et ignore PCI DSS. Quelle conséquence le manuel cite-t-il ?",
+          "options": [
+            "Il peut perdre le droit de recevoir et de traiter les paiements par carte",
+            "Il est jugé automatiquement par un tribunal pénal",
+            "Il doit payer une taxe au gouvernement"
+          ],
+          "options_why": [
+            "",
+            "PCI DSS n'est pas une loi : aucun tribunal pénal n'est concerné.",
+            "Aucun organisme public n'impose PCI DSS : ce sont les compagnies de cartes."
+          ],
+          "answer": "Il peut perdre le droit de recevoir et de traiter les paiements par carte",
+          "explanation": "Les compagnies de cartes peuvent retirer ce droit à celui qui ne respecte pas PCI DSS.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-pcidss-5",
+          "type": "flash",
+          "question": "Combien de contrôles, d'exigences et d'objectifs compte PCI DSS ?",
+          "answer": "Plus de 200 contrôles, 12 exigences et 6 objectifs.",
+          "explanation": "On regroupe les contrôles en exigences, puis les exigences en objectifs.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Payment Card Industry Data Security Standard ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-conf-pcidss-6",
+          "type": "why",
+          "question": "Pourquoi le gouvernement ne surveille-t-il pas PCI DSS ?",
+          "answer": "Parce que ce n'est pas une loi. Ce sont les compagnies de cartes de paiement qui évaluent et imposent la conformité.",
+          "explanation": "Pas de législation, donc pas d'organisme public.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : PCI DSS n'est ni régie ni appliquée par un organisme gouvernemental.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-pcidss-7",
+          "type": "flash",
+          "question": "Qui gère PCI DSS aujourd'hui ?",
+          "answer": "Le PCI SSC (Payment Card Industry Security Standards Council), formé fin 2006 par MasterCard, Visa, American Express, Discover et JCB.",
+          "explanation": "C'est le conseil des grandes marques de cartes.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note de la section « Payment Card Industry Data Security Standard ». JCB veut dire Japan Credit Bureau.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-conf-pcidss-8",
+          "type": "cloze",
+          "question": "PCI DSS demande de [[chiffrer]] l'envoi des données de carte sur les réseaux [[publics]] ouverts.",
+          "answer": "PCI DSS demande de chiffrer l'envoi des données de carte sur les réseaux publics ouverts.",
+          "explanation": "Sur un réseau ouvert, tout le monde peut écouter : il faut chiffrer.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, exigence 4 de PCI DSS.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-conf-pcidss-9",
+          "type": "flash",
+          "question": "Qui doit respecter PCI DSS ?",
+          "answer": "Les commerçants et prestataires qui acceptent ou traitent des données de cartes. Aussi les développeurs de logiciels et les fabricants des appareils de paiement.",
+          "explanation": "Toute la chaîne du paiement par carte est concernée.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Payment Card Industry Data Security Standard ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-pcidss-10",
+          "type": "sort",
+          "question": "SOX, SOC ou PCI DSS ? Dans quelle boîte va chaque phrase ?",
+          "answer": "SOX : née de scandales de comptabilité, et sanctions pour les dirigeants. SOC : cadre d'audit souple, et rapport allégé public. PCI DSS : règles pour les paiements par carte, et exigée par contrat.",
+          "explanation": "SOX est une loi, SOC est un cadre d'audit, PCI DSS est un standard contractuel.",
+          "data": {
+            "mode": "classer",
+            "categories": ["SOX", "SOC", "PCI DSS"],
+            "items": [
+              { "text": "Née de scandales de comptabilité", "category": "SOX" },
+              { "text": "Loi qui prévoit des peines pour les dirigeants", "category": "SOX" },
+              { "text": "Cadre d'audit souple avec des rapports 1, 2 et 3", "category": "SOC" },
+              { "text": "Rapport allégé que l'on peut rendre public", "category": "SOC" },
+              { "text": "Règles de sécurité des paiements par carte", "category": "PCI DSS" },
+              { "text": "Exigée par contrat, surveillée par les compagnies de cartes", "category": "PCI DSS" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-pcidss-11",
+          "type": "problem",
+          "question": "Ta boutique garde des numéros de carte. Cite deux règles de PCI DSS à appliquer.",
+          "answer": "Par exemple : protéger les données stockées, chiffrer leur envoi sur les réseaux publics. Ou encore : limiter l'accès au besoin d'en connaître, donner un identifiant unique à chaque personne.",
+          "explanation": "Chaque règle protège une étape : stocker, envoyer, ouvrir l'accès.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-conf-vie-privee",
+      "name": "La vie privée (privacy) et les données personnelles (PII)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le carnet d'adresses",
+          "paragraphes": [
+            "Tu as un carnet avec les noms, adresses et numéros de tes amis. Tu ne le montres pas à n'importe qui.",
+            "Si quelqu'un le photocopiait et le donnait à des inconnus, tes amis seraient en danger. Leurs informations personnelles seraient exposées.",
+            "Dans une entreprise, c'est pareil avec les données de ses clients. Protéger leurs informations personnelles, c'est protéger leur vie privée (privacy)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un tiroir dans le coffre",
+          "comme": "Une entreprise a un grand coffre pour tous ses secrets : plans, prix, mots de passe. Dans ce coffre, un petit tiroir contient seulement les informations sur des personnes : noms, adresses.",
+          "enVrai": "Le grand coffre, c'est la confidentialité : elle protège toutes les données sensibles. Le petit tiroir, c'est la vie privée : elle protège seulement les données personnelles. On les appelle les PII (personally identifiable information). L'image s'arrête là : le tiroir fait partie du coffre, il n'est pas à côté."
+        },
+        {
+          "type": "predire",
+          "question": "Laquelle de ces informations est une donnée personnelle ?",
+          "options": [
+            "Le numéro de sécurité sociale d'un client",
+            "Le prix d'un produit en magasin",
+            "Le nom du logiciel de caisse"
+          ],
+          "answer": "Le numéro de sécurité sociale d'un client",
+          "explanation": "Un numéro de sécurité sociale désigne une seule personne. Un prix ou un nom de logiciel ne désigne personne."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un mail mal envoyé",
+          "texte": "Une clinique envoie par erreur la liste de ses patients, avec leurs adresses, à des inconnus. Rien n'est cassé ni modifié. Pourtant la vie privée des patients est touchée. La clinique doit connaître les règles, les contrats et les lois qui protègent ces informations."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-conf-vie-privee-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « privacy »",
+          "answer": "Privacy entails limiting access to personal information to authorized parties for authorized uses; in essence, privacy is maintaining the confidentiality of personal information specifically (as opposed to all sensitive data, in general).\n\nTraduction : La vie privée consiste à limiter l'accès aux informations personnelles aux parties autorisées pour des usages autorisés ; en substance, c'est maintenir la confidentialité des informations personnelles en particulier (par opposition à toutes les données sensibles en général).",
+          "explanation": "C'est le petit tiroir du coffre : la confidentialité, mais seulement pour les informations sur des personnes.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Privacy Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-def2",
+          "type": "cloze",
+          "question": "Privacy entails [[limiting]] access to personal information to authorized parties for authorized uses; in essence, privacy is maintaining the [[confidentiality]] of personal information specifically (as opposed to all sensitive data, in general).",
+          "answer": "Privacy entails limiting access to personal information to authorized parties for authorized uses; in essence, privacy is maintaining the confidentiality of personal information specifically (as opposed to all sensitive data, in general).",
+          "explanation": "On limite l'accès, et on garde la confidentialité des informations personnelles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-def3",
+          "type": "cloze",
+          "question": "Privacy entails limiting access to [[personal information]] to [[authorized parties]] for [[authorized uses]]; in essence, privacy is maintaining the confidentiality of personal information specifically (as opposed to all sensitive data, in general).",
+          "answer": "Privacy entails limiting access to personal information to authorized parties for authorized uses; in essence, privacy is maintaining the confidentiality of personal information specifically (as opposed to all sensitive data, in general).",
+          "explanation": "Trois blocs : quelles données, pour qui, et pour quels usages.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « privacy » (en anglais).",
+          "answer": "Privacy entails limiting access to personal information to authorized parties for authorized uses; in essence, privacy is maintaining the confidentiality of personal information specifically (as opposed to all sensitive data, in general).\n\nTraduction : La vie privée consiste à limiter l'accès aux informations personnelles aux parties autorisées pour des usages autorisés ; en substance, c'est maintenir la confidentialité des informations personnelles en particulier (par opposition à toutes les données sensibles en général).",
+          "explanation": "Retiens : parties autorisées, usages autorisés, informations personnelles seulement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-pii-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les « PII » (dans la section sur la vie privée)",
+          "answer": "Personal information such as your name, address, and Social Security number is considered personally identifiable information, which must be kept confidential.\n\nTraduction : Les informations personnelles comme ton nom, ton adresse et ton numéro de sécurité sociale sont considérées comme des informations personnelles identifiables (PII), qui doivent rester confidentielles.",
+          "explanation": "PII : ce qui permet de reconnaître une personne précise. Ça reste secret.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Privacy Requirements ». PII veut dire personally identifiable information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-pii-def2",
+          "type": "cloze",
+          "question": "Personal information such as your name, address, and Social Security number is considered personally [[identifiable]] information, which must be kept [[confidential]].",
+          "answer": "Personal information such as your name, address, and Social Security number is considered personally identifiable information, which must be kept confidential.",
+          "explanation": "Identifiable : on peut reconnaître la personne. Confidential : on doit garder secret.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-pii-def3",
+          "type": "cloze",
+          "question": "[[Personal information]] such as your name, address, and [[Social Security number]] is considered [[personally identifiable information]], which must be kept confidential.",
+          "answer": "Personal information such as your name, address, and Social Security number is considered personally identifiable information, which must be kept confidential.",
+          "explanation": "Trois blocs : les informations personnelles, l'exemple du numéro, et le nom officiel PII.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-pii-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur les informations personnelles et les PII (en anglais).",
+          "answer": "Personal information such as your name, address, and Social Security number is considered personally identifiable information, which must be kept confidential.\n\nTraduction : Les informations personnelles comme ton nom, ton adresse et ton numéro de sécurité sociale sont considérées comme des informations personnelles identifiables (PII), qui doivent rester confidentielles.",
+          "explanation": "Retiens : name, address, Social Security number, puis kept confidential.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-exigences-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : d'où viennent les exigences sur les PII",
+          "answer": "PII is often subject to some combination of contractual and regulatory privacy requirements.\n\nTraduction : Les PII sont souvent soumises à une combinaison d'exigences de vie privée contractuelles et réglementaires.",
+          "explanation": "Un mélange de contrats et de règlements : les deux protègent les données personnelles.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Privacy Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-exigences-def3",
+          "type": "cloze",
+          "question": "PII is often [[subject to some combination]] of [[contractual and regulatory]] [[privacy requirements]].",
+          "answer": "PII is often subject to some combination of contractual and regulatory privacy requirements.",
+          "explanation": "Une combinaison, deux sources (contrats et règlements), un sujet (la vie privée).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-conf-vie-privee-1",
+          "type": "duel",
+          "question": "« Protéger tous les plans secrets et toutes les données sensibles de l'entreprise. » C'est la confidentialité ou la vie privée ?",
+          "options": ["La confidentialité", "La vie privée"],
+          "answer": "La confidentialité",
+          "explanation": "La vie privée ne protège que les informations sur des personnes. La confidentialité couvre toutes les données sensibles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-vie-privee-2",
+          "type": "sort",
+          "question": "Cette information est-elle une PII (elle permet d'identifier une personne) ?",
+          "answer": "PII : le nom, l'adresse, le numéro de sécurité sociale et la date de naissance. Pas une PII : le prix, la couleur du logo et le nombre total de clients.",
+          "explanation": "Une PII désigne une personne précise. Un chiffre global ou un prix ne désigne personne.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Une PII", "Pas une PII"],
+            "items": [
+              { "text": "Le nom d'une cliente", "category": "Une PII" },
+              { "text": "L'adresse d'un patient", "category": "Une PII" },
+              { "text": "Un numéro de sécurité sociale", "category": "Une PII" },
+              { "text": "La date de naissance d'un employé", "category": "Une PII" },
+              { "text": "Le prix d'un produit", "category": "Pas une PII" },
+              { "text": "La couleur du logo de l'entreprise", "category": "Pas une PII" },
+              { "text": "Le nombre total de clients", "category": "Pas une PII" }
+            ]
+          }
+        },
+        {
+          "id": "d1-conf-vie-privee-3",
+          "type": "qcm",
+          "question": "Un employé envoie par erreur la liste des numéros de sécurité sociale des clients à des inconnus. Qu'est-ce qui est surtout touché ?",
+          "options": [
+            "La vie privée de ces personnes",
+            "La disponibilité du système",
+            "L'intégrité des numéros"
+          ],
+          "options_why": [
+            "",
+            "Rien n'est en panne : le système fonctionne toujours.",
+            "Rien n'a été modifié : les numéros sont restés les mêmes."
+          ],
+          "answer": "La vie privée de ces personnes",
+          "explanation": "Des informations personnelles ont été vues par des gens qui n'y avaient pas droit.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-vie-privee-4",
+          "type": "why",
+          "question": "Pourquoi la vie privée est-elle devenue l'une des plus grandes préoccupations de sécurité ?",
+          "answer": "Parce que de plus en plus de nos données personnelles passent en ligne. Les régulateurs, les organisations et les utilisateurs s'en inquiètent.",
+          "explanation": "Plus il y a de données en ligne, plus il y a de fuites possibles.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Privacy Requirements ». Les régulateurs sont les autorités qui surveillent un secteur.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-vie-privee-5",
+          "type": "flash",
+          "question": "Que doit savoir un CISSP à propos des PII de son organisation ?",
+          "answer": "Quelles PII et autres données personnelles elle traite. Il doit aussi connaître toutes les exigences légales, contractuelles et réglementaires qui protègent leur vie privée.",
+          "explanation": "On ne peut pas protéger ce qu'on ne connaît pas.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Privacy Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-vie-privee-6",
+          "type": "cloze",
+          "question": "La vie privée consiste à garder [[confidentielles]] les informations [[personnelles]] en particulier.",
+          "answer": "La vie privée consiste à garder confidentielles les informations personnelles en particulier.",
+          "explanation": "C'est la confidentialité, mais seulement pour les données sur des personnes.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-vie-privee-7",
+          "type": "problem",
+          "question": "Explique avec tes mots la différence entre la confidentialité et la vie privée, avec un exemple.",
+          "answer": "La confidentialité protège toutes les données sensibles. La vie privée protège seulement les informations personnelles. Un plan secret relève de la confidentialité. L'adresse d'un client relève aussi de la vie privée.",
+          "explanation": "La vie privée est un cas particulier de la confidentialité.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-vie-privee-8",
+          "type": "whatif",
+          "question": "Et si une entreprise ne sait pas quelles PII elle détient ?",
+          "answer": "Elle ne peut pas savoir quelles règles s'appliquent, ni les respecter. C'est pourquoi le manuel demande de savoir quelles PII l'organisation traite.",
+          "explanation": "Sans inventaire des données, impossible d'être conforme.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-conf-vie-privee-9",
+          "type": "flash",
+          "question": "Donne trois exemples de PII cités par le manuel.",
+          "answer": "Le nom, l'adresse et le numéro de sécurité sociale.",
+          "explanation": "Ce sont des informations qui désignent une personne précise.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Privacy Requirements ».",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

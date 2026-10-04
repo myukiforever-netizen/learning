@@ -1,0 +1,1919 @@
+{
+  "id": "d1-m01-ethique-cia",
+  "name": "D1.1 Éthique et les trois piliers (CIA)",
+  "galaxie": { "teinte": 166, "ambiance": "calme" },
+  "concepts": [
+    {
+      "id": "d1-ethique",
+      "name": "L'éthique professionnelle (professional ethics)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Les clés du voisin",
+          "paragraphes": [
+            "Ton voisin part en vacances. Il te confie les clés de sa maison pour arroser ses plantes.",
+            "Tu pourrais entrer quand tu veux et regarder partout. Personne ne te surveille. Pourtant, tu ne le fais pas.",
+            "Ce qui te retient, c'est ton honnêteté. Un professionnel de la cybersécurité a lui aussi beaucoup de clés. Son honnêteté est écrite dans un code d'éthique (code of ethics) : des règles de conduite qu'il s'engage à respecter."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le règlement d'un club de sport",
+          "comme": "Un joueur signe le règlement de son club : respecter l'arbitre, ne pas tricher, soigner l'image du club. Le règlement ne dit pas quoi faire à chaque seconde du match. Le joueur doit réfléchir.",
+          "enVrai": "Le code d'éthique de (ISC)2 marche pareil. (ISC)2 est l'organisation qui délivre le CISSP. Son code contient quatre grandes règles, les canons (canons). Elles guident ton jugement sans le remplacer. Un membre qui les viole en le sachant peut perdre sa certification."
+        },
+        {
+          "type": "predire",
+          "question": "Tu es membre (ISC)2. Tu vois un autre membre briser le code d'éthique. Que doit faire un membre dans ce cas ?",
+          "options": [
+            "Rien : ce n'est pas ton affaire",
+            "Suivre la procédure de plainte publiée",
+            "Régler ça en secret avec lui"
+          ],
+          "answer": "Suivre la procédure de plainte publiée",
+          "explanation": "(ISC)2 demande de suivre la procédure de plainte officielle. Se taire peut être vu comme une faute contre le code. Les deux autres choix semblent gentils, mais ils ne protègent pas la profession."
+        },
+        {
+          "type": "exemple",
+          "titre": "Entrer parce que tu le peux",
+          "texte": "Tu travailles dans une entreprise. Un collègue te demande de lire les messages d'une personne qu'il n'aime pas. Techniquement, tu as l'accès. Mais le code demande d'agir honnêtement et de protéger la confiance du public. Pouvoir faire une chose ne veut pas dire avoir le droit de la faire."
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme choisir un plombier",
+          "comme": "Tu fais appel à un plombier. Il entre chez toi et voit tes affaires. Tu le choisis parce que sa réputation est bonne. Un seul doute sur lui, et tu en appelles un autre.",
+          "enVrai": "Le préambule dit pareil : un membre doit suivre le code et aussi être vu en train de le suivre. Même un doute sur sa conduite peut remettre en cause sa place. Ceux pour qui tu travailles (ton employeur, tes clients) s'appellent les principals."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-ethique-preambule-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « (ISC)2 Code of Ethics Preamble »",
+          "answer": "The safety and welfare of society and the common good, duty to our principals, and to each other, requires that we adhere, and be seen to adhere, to the highest ethical standards of behavior. Therefore, strict adherence to this Code of Ethics is a condition of certification.\n\nTraduction : La sécurité et le bien-être de la société et le bien commun, le devoir envers ceux pour qui nous travaillons (nos principals) et envers les autres membres, exigent que nous respections, et que l'on nous voie respecter, les plus hauts standards éthiques de comportement. Par conséquent, le respect strict de ce code d'éthique est une condition de la certification.",
+          "explanation": "Deux idées à retenir : bien agir, et être vu en train de bien agir.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Understand, Adhere to, and Promote Professional Ethics ». Elle est à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-preambule-def2",
+          "type": "cloze",
+          "question": "The safety and welfare of society and the common good, duty to our principals, and to each other, requires that we [[adhere]], and be seen to adhere, to the highest ethical standards of behavior. Therefore, strict adherence to this Code of Ethics is a condition of [[certification]].",
+          "answer": "The safety and welfare of society and the common good, duty to our principals, and to each other, requires that we adhere, and be seen to adhere, to the highest ethical standards of behavior. Therefore, strict adherence to this Code of Ethics is a condition of certification.",
+          "explanation": "Deux mots clés : adhere (respecter le code) et certification (sans respect du code, pas de certificat).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-preambule-def3",
+          "type": "cloze",
+          "question": "The [[safety and welfare of society]] and the common good, duty to our principals, and to each other, requires that we adhere, and [[be seen to adhere]], to the [[highest ethical standards]] of behavior. Therefore, strict adherence to this Code of Ethics is a condition of certification.",
+          "answer": "The safety and welfare of society and the common good, duty to our principals, and to each other, requires that we adhere, and be seen to adhere, to the highest ethical standards of behavior. Therefore, strict adherence to this Code of Ethics is a condition of certification.",
+          "explanation": "Trois blocs : le bien de la société, être vu en train de respecter le code, et des standards très élevés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-preambule-def4",
+          "type": "problem",
+          "question": "Écris de mémoire le préambule du code d'éthique (ISC)2 (en anglais).",
+          "answer": "The safety and welfare of society and the common good, duty to our principals, and to each other, requires that we adhere, and be seen to adhere, to the highest ethical standards of behavior. Therefore, strict adherence to this Code of Ethics is a condition of certification.\n\nTraduction : La sécurité et le bien-être de la société et le bien commun, le devoir envers ceux pour qui nous travaillons (nos principals) et envers les autres membres, exigent que nous respections, et que l'on nous voie respecter, les plus hauts standards éthiques de comportement. Par conséquent, le respect strict de ce code d'éthique est une condition de la certification.",
+          "explanation": "Pas besoin d'être parfait du premier coup : compare, repère ce qui manque, recommence demain.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-canons-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le rôle des quatre canons du code d'éthique",
+          "answer": "The (ISC)2 Code of Ethics includes four canons that are intended to serve as high-level guidelines to augment, not replace, members' professional judgment.\n\nTraduction : Le code d'éthique (ISC)2 comprend quatre canons, conçus comme des lignes directrices de haut niveau qui complètent, sans les remplacer, le jugement professionnel des membres.",
+          "explanation": "Les canons sont des repères généraux : ils aident à réfléchir, ils ne pensent pas à ta place.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « (ISC)2 Code of Professional Ethics ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-canons-def3",
+          "type": "cloze",
+          "question": "The (ISC)2 Code of Ethics includes [[four canons]] that are intended to serve as [[high-level guidelines]] to [[augment, not replace]], members' professional judgment.",
+          "answer": "The (ISC)2 Code of Ethics includes four canons that are intended to serve as high-level guidelines to augment, not replace, members' professional judgment.",
+          "explanation": "Trois blocs : le nombre de canons, leur rôle de guide, et le fait qu'ils complètent le jugement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-c1-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Canon I »",
+          "answer": "Canon I: Protect society, the common good, necessary public trust and confidence, and the infrastructure.\n\nTraduction : Canon I : Protéger la société, le bien commun, la confiance et la crédibilité nécessaires du public, et l'infrastructure.",
+          "explanation": "Canon I : la société d'abord. L'infrastructure, ce sont les réseaux et services dont tout le monde dépend.",
+          "explanation_more": "Manuel (ISC)2, domaine 1. Les quatre canons dans l'ordre : société, honnêteté, clients, profession.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-c1-def3",
+          "type": "cloze",
+          "question": "Canon I: [[Protect society]], the common good, necessary [[public trust and confidence]], and [[the infrastructure]].",
+          "answer": "Canon I: Protect society, the common good, necessary public trust and confidence, and the infrastructure.",
+          "explanation": "Trois blocs : protéger la société, garder la confiance du public, protéger l'infrastructure.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-c2-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Canon II »",
+          "answer": "Canon II: Act honorably, honestly, justly, responsibly, and legally.\n\nTraduction : Canon II : Agir avec honneur, honnêteté, justice, responsabilité et dans le respect de la loi.",
+          "explanation": "Canon II : l'honnêteté et la loi. Cinq adverbes, qui finissent presque tous en -ly.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-c2-def3",
+          "type": "cloze",
+          "question": "Canon II: [[Act honorably]], [[honestly]], justly, responsibly, and [[legally]].",
+          "answer": "Canon II: Act honorably, honestly, justly, responsibly, and legally.",
+          "explanation": "Le début, le deuxième mot et la fin de la liste : honorably, honestly, legally.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-c3-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Canon III »",
+          "answer": "Canon III: Provide diligent and competent service to principals.\n\nTraduction : Canon III : Fournir un service sérieux et compétent à ceux pour qui l'on travaille (les principals).",
+          "explanation": "Canon III : ton travail pour ton employeur ou tes clients doit être sérieux et compétent.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-c3-def3",
+          "type": "cloze",
+          "question": "Canon III: [[Provide diligent]] and [[competent service]] to [[principals]].",
+          "answer": "Canon III: Provide diligent and competent service to principals.",
+          "explanation": "Trois blocs : un service sérieux, compétent, pour les principals.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-c4-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « Canon IV »",
+          "answer": "Canon IV: Advance and protect the profession.\n\nTraduction : Canon IV : Faire progresser et protéger la profession.",
+          "explanation": "Canon IV : la profession. Chaque membre aide à garder sa bonne image.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-c4-def3",
+          "type": "cloze",
+          "question": "Canon IV: [[Advance]] and [[protect]] the [[profession]].",
+          "answer": "Canon IV: Advance and protect the profession.",
+          "explanation": "Deux verbes, un nom : faire progresser, protéger, la profession.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-ethique-1",
+          "type": "duel",
+          "question": "Tu vois un membre (ISC)2 enfreindre le code d'éthique. Quelle est la bonne réaction ?",
+          "options": ["Attendre : ça ne te regarde pas", "Suivre la procédure de plainte publiée"],
+          "answer": "Suivre la procédure de plainte publiée",
+          "explanation": "(ISC)2 demande de suivre la procédure de plainte officielle.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Code of Professional Ethics ». Ne pas le faire peut être vu comme un manquement au canon IV.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ethique-2",
+          "type": "qcm",
+          "question": "Tu es certifié. Tu postes une blague où tu dis entrer dans les comptes de ton école. Tu ne l'as jamais fait. Pourquoi est-ce quand même un problème ?",
+          "options": [
+            "Il n'y a aucun problème : tu n'as rien fait de mal",
+            "Les gens peuvent douter de ton sérieux, même sans faute réelle",
+            "Seuls les actes comptent, jamais l'image qu'on donne",
+            "Le code interdit toute forme d'humour aux membres"
+          ],
+          "options_why": [
+            "Le préambule demande d'être vu en train de suivre le code : l'image compte aussi.",
+            "",
+            "Au contraire : même l'apparence d'une faute peut remettre en cause ta place.",
+            "Le code ne parle pas d'humour : il parle d'honnêteté, de service et de réputation."
+          ],
+          "answer": "Les gens peuvent douter de ton sérieux, même sans faute réelle",
+          "explanation": "Le manuel dit que même la perception d'une faute peut remettre en cause la place d'un membre.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, explication du préambule : les membres doivent être des leaders éthiques visibles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ethique-3",
+          "type": "sort",
+          "question": "Dans quel canon range-t-on chaque comportement ?",
+          "answer": "Canon I : le système dangereux et les réseaux de la ville. Canon II : l'erreur avouée et la loi. Canon III : le travail soigné et la formation. Canon IV : le signalement et l'aide aux débutants.",
+          "explanation": "Demande-toi qui tu protèges : la société, la vérité, le client ou la profession.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Canon I : la société", "Canon II : honnêteté et loi", "Canon III : service aux clients", "Canon IV : la profession"],
+            "items": [
+              { "text": "Refuser de livrer un système qui mettrait le public en danger", "category": "Canon I : la société" },
+              { "text": "Protéger les réseaux dont dépend toute une ville", "category": "Canon I : la société" },
+              { "text": "Avouer honnêtement une erreur que tu as faite", "category": "Canon II : honnêteté et loi" },
+              { "text": "Respecter la loi même quand elle ralentit ton travail", "category": "Canon II : honnêteté et loi" },
+              { "text": "Livrer à ton client un travail soigné et compétent", "category": "Canon III : service aux clients" },
+              { "text": "Te former pour mieux servir ton employeur", "category": "Canon III : service aux clients" },
+              { "text": "Signaler un membre qui enfreint le code", "category": "Canon IV : la profession" },
+              { "text": "Aider les débutants pour que la profession reste respectée", "category": "Canon IV : la profession" }
+            ]
+          }
+        },
+        {
+          "id": "d1-ethique-4",
+          "type": "why",
+          "question": "Pourquoi le code d'éthique ne remplace-t-il pas ton jugement professionnel ?",
+          "answer": "Les quatre canons sont de grandes lignes. Aucune liste ne prévoit chaque situation, donc tu dois réfléchir toi-même.",
+          "explanation": "Les canons guident ta réflexion, ils ne la remplacent pas.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : les canons servent à augmenter, pas à remplacer, le jugement professionnel (« augment, not replace »).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ethique-5",
+          "type": "flash",
+          "question": "Que risque un membre (ISC)2 qui viole le code en le sachant ?",
+          "answer": "Une revue par ses pairs (peer review) et des sanctions possibles, jusqu'au retrait de sa certification.",
+          "explanation": "Le code n'est pas un simple conseil : il a des conséquences.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Understand, Adhere to, and Promote Professional Ethics ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ethique-6",
+          "type": "cloze",
+          "question": "Un membre doit suivre le code d'éthique et aussi être [[vu|visible]] en train de le suivre.",
+          "answer": "Un membre doit suivre le code d'éthique et aussi être vu en train de le suivre.",
+          "explanation": "C'est l'idée du préambule : « be seen to adhere ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ethique-7",
+          "type": "flash",
+          "question": "En plus du code (ISC)2, quel autre code d'éthique dois-tu connaître ?",
+          "answer": "Celui que ton employeur ou ton secteur d'activité t'impose.",
+          "explanation": "Il ne remplace ni ton bon sens ni ta morale.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Organizational Code of Ethics ». Un CISSP doit aussi montrer l'exemple en le respectant.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cia",
+      "name": "La sécurité de l'information et la triade CIA (CIA Triad)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le registre du collège",
+          "paragraphes": [
+            "Ton collège garde les notes de tous les élèves dans un grand registre. Ces notes sont de l'information : des choses précieuses à savoir.",
+            "Imagine tout ce qui pourrait mal tourner avec ce registre. Protéger l'information, c'est la mission de la sécurité de l'information (information security).",
+            "Pour s'y retrouver, les experts résument cette mission en trois piliers, qu'on appelle la triade CIA."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme ton journal intime",
+          "comme": "Ton journal a un cadenas. Premier problème : un curieux le lit. Deuxième : quelqu'un gribouille tes pages. Troisième : tu perds la clé et tu ne peux plus l'ouvrir.",
+          "enVrai": "Le curieux, c'est la perte de confidentialité (confidentiality). Les gribouillis, c'est la perte d'intégrité (integrity). La clé perdue, c'est la perte de disponibilité (availability). Tu garderas ce journal en tête dans toute la galaxie."
+        },
+        {
+          "type": "predire",
+          "question": "Sur un site de vente en ligne, un pirate copie les adresses des clients. Un autre change les prix à un euro. Un troisième fait tomber le site le jour des soldes. Combien de piliers sont touchés ?",
+          "options": ["Un seul", "Deux", "Les trois, un par attaque"],
+          "answer": "Les trois, un par attaque",
+          "explanation": "Copier des adresses touche le secret. Changer des prix touche l'exactitude. Faire tomber le site touche l'accès. Chaque attaque vise un pilier différent."
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme un trépied",
+          "comme": "Un trépied tient debout grâce à ses trois pieds. S'il en manque un seul, l'appareil photo tombe.",
+          "enVrai": "La triade CIA a trois piliers qui travaillent ensemble. Les initiales viennent des mots anglais, et n'ont rien à voir avec les services secrets. L'image s'arrête là : un trépied n'a pas de pied préféré. Mais en sécurité, un pilier peut compter plus qu'un autre selon l'entreprise."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un hôpital",
+          "texte": "Un hôpital garde le dossier de chaque patient. Seuls les soignants du patient doivent le lire. Une dose de médicament ne doit jamais être changée par erreur. Et le dossier doit s'ouvrir tout de suite aux urgences. Trois besoins, trois piliers."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cia-infosec-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « information security »",
+          "answer": "Information security refers to the processes and methodologies involved in safeguarding information and underlying systems from inappropriate access, use, modification, or disturbance.\n\nTraduction : La sécurité de l'information désigne les processus et les méthodes qui servent à protéger l'information et les systèmes sous-jacents contre l'accès, l'usage, la modification ou la perturbation inappropriés.",
+          "explanation": "Retiens le verbe : safeguarding, c'est protéger.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Understand and Apply Security Concepts ». Elle est à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-infosec-def2",
+          "type": "cloze",
+          "question": "Information security refers to the processes and methodologies involved in [[safeguarding]] information and underlying systems from inappropriate access, use, modification, or [[disturbance]].",
+          "answer": "Information security refers to the processes and methodologies involved in safeguarding information and underlying systems from inappropriate access, use, modification, or disturbance.",
+          "explanation": "Les deux mots clés : protéger (safeguarding) et perturbation (disturbance).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-infosec-def3",
+          "type": "cloze",
+          "question": "Information security refers to the [[processes and methodologies]] involved in [[safeguarding information]] and underlying systems from [[inappropriate access]], use, modification, or disturbance.",
+          "answer": "Information security refers to the processes and methodologies involved in safeguarding information and underlying systems from inappropriate access, use, modification, or disturbance.",
+          "explanation": "Trois blocs : les méthodes, protéger l'information, et les accès inappropriés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-infosec-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « information security » (en anglais).",
+          "answer": "Information security refers to the processes and methodologies involved in safeguarding information and underlying systems from inappropriate access, use, modification, or disturbance.\n\nTraduction : La sécurité de l'information désigne les processus et les méthodes qui servent à protéger l'information et les systèmes sous-jacents contre l'accès, l'usage, la modification ou la perturbation inappropriés.",
+          "explanation": "Compare : as-tu cité les quatre dangers, accès, usage, modification et perturbation ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-triade-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « CIA Triad »",
+          "answer": "This is most often described by three critical security concepts: confidentiality, integrity, and availability. Together, these three principles form the pillars of information security known as the CIA Triad.\n\nTraduction : Elle est le plus souvent décrite par trois concepts de sécurité essentiels : la confidentialité, l'intégrité et la disponibilité. Ensemble, ces trois principes forment les piliers de la sécurité de l'information, connus sous le nom de triade CIA.",
+          "explanation": "Trois mots, trois initiales : C, I, A.",
+          "explanation_more": "Manuel (ISC)2, domaine 1. Le « This » du début désigne la sécurité de l'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-triade-def2",
+          "type": "cloze",
+          "question": "This is most often described by three critical security concepts: confidentiality, [[integrity]], and availability. Together, these three principles form the [[pillars]] of information security known as the CIA Triad.",
+          "answer": "This is most often described by three critical security concepts: confidentiality, integrity, and availability. Together, these three principles form the pillars of information security known as the CIA Triad.",
+          "explanation": "Deux mots à retenir : integrity au milieu de la liste, et pillars (piliers).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-triade-def3",
+          "type": "cloze",
+          "question": "This is most often described by [[three critical security concepts]]: confidentiality, integrity, and availability. Together, these three principles form the [[pillars of information security]] known as the [[CIA Triad]].",
+          "answer": "This is most often described by three critical security concepts: confidentiality, integrity, and availability. Together, these three principles form the pillars of information security known as the CIA Triad.",
+          "explanation": "Trois blocs : les trois concepts, les piliers de la sécurité, et le nom de la triade.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-triade-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur la « CIA Triad » (en anglais).",
+          "answer": "This is most often described by three critical security concepts: confidentiality, integrity, and availability. Together, these three principles form the pillars of information security known as the CIA Triad.\n\nTraduction : Elle est le plus souvent décrite par trois concepts de sécurité essentiels : la confidentialité, l'intégrité et la disponibilité. Ensemble, ces trois principes forment les piliers de la sécurité de l'information, connus sous le nom de triade CIA.",
+          "explanation": "Vérifie que tu as les trois mots, dans le bon ordre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-1",
+          "type": "duel",
+          "question": "Un pirate change le prix d'un article à un euro sur un site. Quel pilier est touché ?",
+          "options": ["La confidentialité", "L'intégrité"],
+          "answer": "L'intégrité",
+          "explanation": "Rien n'a été lu en secret : une donnée a été changée. Changer, c'est l'intégrité.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cia-2",
+          "type": "qcm",
+          "question": "Dans le mot CIA, que veut dire le A ?",
+          "options": [
+            "Authenticité (authenticity)",
+            "Disponibilité (availability)",
+            "Accessibilité (accessibility)",
+            "Anonymat (anonymity)"
+          ],
+          "options_why": [
+            "Ce mot existe en sécurité, mais ce n'est pas le A de la triade.",
+            "",
+            "Ce mot est voisin de la disponibilité, mais ce n'est pas le A de la triade.",
+            "Ce n'est pas un pilier de la triade."
+          ],
+          "answer": "Disponibilité (availability)",
+          "explanation": "Le A vient de availability : les personnes autorisées accèdent aux données quand il le faut.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-3",
+          "type": "sort",
+          "question": "Dans quelle boîte va chaque situation ?",
+          "answer": "Confidentialité : les dossiers photographiés et le mot de passe lu. Intégrité : les notes changées et la faute de frappe. Disponibilité : la boutique inaccessible et la salle des serveurs inondée.",
+          "explanation": "Demande-toi : quelqu'un a-t-il vu ce qu'il ne devait pas, changé quelque chose, ou bloqué l'accès ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Confidentialité", "Intégrité", "Disponibilité"],
+            "items": [
+              { "text": "Un inconnu photographie des dossiers de clients laissés sur un bureau", "category": "Confidentialité" },
+              { "text": "Le mot de passe d'un élève est lu par un camarade", "category": "Confidentialité" },
+              { "text": "Un pirate change les notes d'un registre", "category": "Intégrité" },
+              { "text": "Une faute de frappe transforme 100 euros en 1000 euros", "category": "Intégrité" },
+              { "text": "La boutique en ligne est inaccessible pendant les soldes", "category": "Disponibilité" },
+              { "text": "Une inondation détruit la salle des serveurs", "category": "Disponibilité" }
+            ]
+          }
+        },
+        {
+          "id": "d1-cia-4",
+          "type": "why",
+          "question": "Pourquoi dit-on que les trois piliers dépendent les uns des autres ?",
+          "answer": "Un seul pilier ne suffit pas. Des données secrètes mais fausses, ou exactes mais impossibles à ouvrir, ne servent à rien.",
+          "explanation": "Les trois travaillent ensemble pour garder l'information protégée.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. Les trois concepts travaillent ensemble et dépendent les uns des autres. Un type de système peut en privilégier un.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cia-5",
+          "type": "qcm",
+          "question": "Aux urgences, les médecins ne peuvent plus ouvrir les dossiers des patients. Personne n'a lu ni changé ces dossiers. Quel pilier est touché ?",
+          "options": ["La confidentialité", "La disponibilité", "L'intégrité"],
+          "options_why": [
+            "Personne n'a lu ces dossiers sans en avoir le droit.",
+            "",
+            "Les dossiers n'ont pas été modifiés : ils sont seulement inaccessibles."
+          ],
+          "answer": "La disponibilité",
+          "explanation": "Les personnes autorisées ne peuvent plus accéder aux données au moment voulu.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cia-6",
+          "type": "flash",
+          "question": "Quels sont les trois piliers de la triade CIA ?",
+          "answer": "La confidentialité (confidentiality), l'intégrité (integrity) et la disponibilité (availability).",
+          "explanation": "Une initiale par pilier : C, I, A.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-7",
+          "type": "cloze",
+          "question": "La triade [[CIA]] regroupe la confidentialité, l'[[intégrité]] et la disponibilité.",
+          "answer": "La triade CIA regroupe la confidentialité, l'intégrité et la disponibilité.",
+          "explanation": "Le mot CIA vient des trois initiales anglaises.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cia-8",
+          "type": "problem",
+          "question": "Explique la triade CIA à un ami de 13 ans, avec un exemple de ton choix.",
+          "answer": "Trois protections de l'information. Confidentialité : seuls les bons lecteurs y accèdent. Intégrité : personne ne la change sans droit. Disponibilité : les personnes autorisées l'ouvrent quand elles en ont besoin.",
+          "explanation": "Un bon exemple vaut mieux qu'une définition apprise par cœur.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-confid",
+      "name": "La confidentialité (confidentiality)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le journal et le cadenas",
+          "paragraphes": [
+            "Tu écris tes secrets dans un journal. Tu mets un cadenas dessus.",
+            "Un jour, quelqu'un l'ouvre en cachette, le lit, puis le referme. Rien n'a bougé : les pages sont intactes et le journal est toujours là.",
+            "Pourtant, quelque chose est cassé : ce qui devait rester secret ne l'est plus. En cybersécurité, ça s'appelle perdre la confidentialité (confidentiality)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le cadenas du journal",
+          "comme": "Le cadenas n'empêche pas le journal d'exister. Il décide qui a le droit de le lire.",
+          "enVrai": "La confidentialité, c'est décider qui a le droit de voir une information, et empêcher tous les autres d'y accéder. Pour une entreprise, le journal, ce sont ses données : fichiers clients, mots de passe, plans secrets."
+        },
+        {
+          "type": "predire",
+          "question": "Un cambrioleur photographie ton journal sans rien déplacer. Qu'est-ce qui est cassé ?",
+          "options": [
+            "L'exactitude : le texte a changé",
+            "L'accès : tu ne peux plus ouvrir ton journal",
+            "Le secret : quelqu'un l'a lu"
+          ],
+          "answer": "Le secret : quelqu'un l'a lu",
+          "explanation": "Le texte est intact et tu peux toujours l'ouvrir. Mais quelqu'un a vu ce qu'il ne devait pas voir. Les deux autres réponses sont tentantes : ce sont deux autres piliers de la sécurité, qu'on voit dans les planètes suivantes."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un mail envoyé à la mauvaise personne",
+          "texte": "Une employée veut envoyer la liste des salaires aux ressources humaines. Elle clique sur le mauvais nom et tout le monde la reçoit. Aucun pirate, aucun fichier abîmé. Pourtant la confidentialité est perdue. Une simple erreur suffit."
+        },
+        {
+          "type": "analogie",
+          "titre": "Les clés du collège",
+          "comme": "Au collège, le surveillant a la clé de la salle des profs, mais pas celle du bureau du directeur. Chacun a seulement les clés dont il a besoin.",
+          "enVrai": "C'est le principe du moindre privilège (least privilege) : chaque personne reçoit juste l'accès qu'il lui faut pour son travail. Moins il y a de clés en circulation, moins il y a de risques de fuite."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-confid-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « confidentiality »",
+          "answer": "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.\n\nTraduction : La confidentialité est le concept qui consiste à limiter l'accès aux données aux utilisateurs et systèmes autorisés, et à empêcher l'accès aux parties non autorisées.",
+          "explanation": "Relis-la en pensant au cadenas : seuls les bons lecteurs ont la clé.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot : les cartes suivantes t'aident à la mémoriser pas à pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-def2",
+          "type": "cloze",
+          "question": "Confidentiality is the concept of [[limiting]] access to data to authorized users and systems and restricting access from [[unauthorized]] parties.",
+          "answer": "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.",
+          "explanation": "Deux idées : on limite l'accès pour les gens autorisés, on bloque ceux qui ne le sont pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-def3",
+          "type": "cloze",
+          "question": "Confidentiality is the concept of [[limiting access to data]] to [[authorized users and systems]] and [[restricting access from unauthorized parties]].",
+          "answer": "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.",
+          "explanation": "Trois blocs : limiter l'accès aux données, pour les utilisateurs et systèmes autorisés, et bloquer les autres.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « confidentiality » (en anglais).",
+          "answer": "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.\n\nTraduction : La confidentialité est le concept qui consiste à limiter l'accès aux données aux utilisateurs et systèmes autorisés, et à empêcher l'accès aux parties non autorisées.",
+          "explanation": "Pas besoin d'être parfait du premier coup : compare, repère le mot qui manque, recommence demain.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-lp-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « least privilege »",
+          "answer": "Under least privilege, users are only given enough access to do their jobs — no more and no less.\n\nTraduction : Avec le moindre privilège, les utilisateurs reçoivent seulement assez d'accès pour faire leur travail, ni plus, ni moins.",
+          "explanation": "Pense aux clés du collège : chacun a seulement celles dont il a besoin.",
+          "explanation_more": "Le manuel le relie à la confidentialité : l'accès à l'information n'est donné que selon le besoin d'en connaître (need-to-know).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-lp-def2",
+          "type": "cloze",
+          "question": "Under least privilege, users are only given [[enough]] access to do their jobs — no more and [[no less]].",
+          "answer": "Under least privilege, users are only given enough access to do their jobs — no more and no less.",
+          "explanation": "Ni trop (risque de fuite), ni trop peu (le travail ne se fait plus).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-lp-def3",
+          "type": "cloze",
+          "question": "Under [[least privilege]], users are only given [[enough access]] to [[do their jobs]] — no more and no less.",
+          "answer": "Under least privilege, users are only given enough access to do their jobs — no more and no less.",
+          "explanation": "Le nom du principe, la quantité d'accès, et la raison : le travail à faire.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-lp-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur le « least privilege » (en anglais).",
+          "answer": "Under least privilege, users are only given enough access to do their jobs — no more and no less.\n\nTraduction : Avec le moindre privilège, les utilisateurs reçoivent seulement assez d'accès pour faire leur travail, ni plus, ni moins.",
+          "explanation": "Repère les trois idées : seulement, assez d'accès, ni plus ni moins.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-pii-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les « PII »",
+          "answer": "Information that can be used to uniquely identify a person, such as names, birthdates, and Social Security numbers, are considered personally identifiable information (PII), which is usually required by law to be kept highly confidential.\n\nTraduction : Les informations qui permettent d'identifier une personne de façon unique, comme les noms, les dates de naissance et les numéros de sécurité sociale, sont des informations personnelles identifiables (PII), que la loi oblige en général à garder très confidentielles.",
+          "explanation": "PII = tout ce qui permet de reconnaître une personne précise.",
+          "explanation_more": "En anglais : personally identifiable information. Le livre précise que la loi impose en général de les garder très confidentielles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-pii-def3",
+          "type": "cloze",
+          "question": "Information that can be used to [[uniquely identify a person]], such as names, birthdates, and Social Security numbers, are considered [[personally identifiable information]] (PII), which is usually required by law to be kept [[highly confidential]].",
+          "answer": "Information that can be used to uniquely identify a person, such as names, birthdates, and Social Security numbers, are considered personally identifiable information (PII), which is usually required by law to be kept highly confidential.",
+          "explanation": "L'idée : identifier quelqu'un, le nom officiel (PII), et l'obligation de secret.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-confid-1",
+          "type": "duel",
+          "question": "Un employé envoie par erreur la liste des clients à la mauvaise personne. Quel pilier est touché ?",
+          "options": ["La confidentialité", "L'intégrité"],
+          "answer": "La confidentialité",
+          "explanation": "Personne n'a modifié la liste : elle a seulement été vue par quelqu'un qui n'y avait pas droit.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-confid-2",
+          "type": "qcm",
+          "question": "Lequel de ces cas fait perdre la confidentialité, sans aucun pirate ?",
+          "options": [
+            "Un écran avec des données sensibles visible par des inconnus",
+            "Une panne de courant qui éteint le serveur",
+            "Une faute de frappe qui change un chiffre dans une base de données",
+            "Un disque dur qui tombe en panne"
+          ],
+          "options_why": [
+            "",
+            "Là, ce sont les gens autorisés qui ne peuvent plus accéder aux données : c'est la disponibilité.",
+            "Là, une donnée est devenue fausse : c'est l'intégrité.",
+            "Là, les données ne sont plus accessibles : c'est la disponibilité."
+          ],
+          "answer": "Un écran avec des données sensibles visible par des inconnus",
+          "explanation": "Des gens non autorisés peuvent voir l'information : c'est exactement ce que la confidentialité doit empêcher.",
+          "explanation_more": "Le manuel cite aussi comme erreurs humaines : ne pas chiffrer des données sensibles et envoyer un mail à la mauvaise adresse.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-confid-3",
+          "type": "sort",
+          "question": "Dans quelle boîte va chaque situation ?",
+          "answer": "Confidentialité : le mail mal envoyé et l'écran visible. Intégrité : la ligne modifiée par erreur et le virus. Disponibilité : le site en panne et le ransomware.",
+          "explanation": "Pose-toi une question : est-ce que quelqu'un a vu ce qu'il ne devait pas (confidentialité), changé quelque chose (intégrité), ou bloqué l'accès (disponibilité) ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Confidentialité", "Intégrité", "Disponibilité"],
+            "items": [
+              { "text": "Un mail confidentiel part à la mauvaise personne", "category": "Confidentialité" },
+              { "text": "Un inconnu lit un écran sensible par-dessus ton épaule", "category": "Confidentialité" },
+              { "text": "Quelqu'un change par erreur une ligne dans un fichier de configuration", "category": "Intégrité" },
+              { "text": "Un virus modifie des données", "category": "Intégrité" },
+              { "text": "Le site du magasin est en panne tout le samedi", "category": "Disponibilité" },
+              { "text": "Un ransomware bloque tous les fichiers", "category": "Disponibilité" }
+            ]
+          }
+        },
+        {
+          "id": "d1-confid-4",
+          "type": "why",
+          "question": "Pourquoi ne donne-t-on pas à chaque employé accès à tous les fichiers de l'entreprise ?",
+          "answer": "Plus il y a de personnes qui ont accès à une information, plus elle risque de fuiter, par erreur ou par malveillance. On donne seulement l'accès nécessaire au travail : c'est le moindre privilège.",
+          "explanation": "Chaque accès en trop est une porte ouverte inutile.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-confid-5",
+          "type": "flash",
+          "question": "Cite trois mesures qui aident à protéger la confidentialité.",
+          "answer": "Le chiffrement (encryption), l'authentification multifacteur (un second contrôle en plus du mot de passe) et les accès selon le rôle de chacun. La formation du personnel aide aussi, car beaucoup de fuites viennent d'erreurs.",
+          "explanation": "Les trois protègent l'accès ; la formation réduit les erreurs humaines.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Confidentiality » : chiffrement, authentification multifacteur et contrôles d'accès basés sur les rôles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-confid-6",
+          "type": "flash",
+          "question": "Quelle est la différence entre la vie privée (privacy) et la confidentialité ?",
+          "answer": "La confidentialité protège toutes les données sensibles. La vie privée est le domaine proche qui s'occupe seulement de la confidentialité des données personnelles.",
+          "explanation": "La vie privée est un cas particulier : celui où les données parlent de personnes.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-integ",
+      "name": "L'intégrité (integrity)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le journal gribouillé",
+          "paragraphes": [
+            "Tu retrouves ton journal. Le cadenas est fermé et rien n'a disparu. Mais en lisant, tu vois que des phrases ont changé.",
+            "Quelqu'un a gribouillé tes pages, puis a refermé le cadenas. Personne n'a rien volé, et le journal s'ouvre toujours.",
+            "Pourtant tu ne peux plus lui faire confiance : tu ne sais plus quelles phrases sont les tiennes. En cybersécurité, ça s'appelle perdre l'intégrité (integrity)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme un journal écrit à l'encre",
+          "comme": "Imagine ton journal écrit à l'encre. Si quelqu'un barre ou ajoute un mot, tu le vois tout de suite. Et si tu gardes une photocopie, tu peux retrouver la bonne version.",
+          "enVrai": "L'intégrité, c'est garder les données exactes, complètes et fiables. Seule une personne autorisée peut les changer. Si quelqu'un les change quand même, on doit le repérer facilement. La photocopie ressemble à une sauvegarde (backup)."
+        },
+        {
+          "type": "predire",
+          "question": "Un administrateur (la personne qui gère les ordinateurs de l'entreprise) se trompe de ligne et change le mauvais réglage. Aucun pirate. L'intégrité est-elle touchée ?",
+          "options": [
+            "Non : sans pirate, ce n'est pas une attaque",
+            "Oui : une donnée a été changée par erreur",
+            "Non : seuls les virus cassent l'intégrité"
+          ],
+          "answer": "Oui : une donnée a été changée par erreur",
+          "explanation": "L'intégrité se perd aussi par erreur ou par oubli, pas seulement par attaque. Croire que seule une attaque compte est une erreur courante."
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme la signature de tes parents",
+          "comme": "Tes parents signent ton carnet de correspondance. La signature prouve que ce sont bien eux. Et ils ne peuvent plus dire « je n'ai rien vu ».",
+          "enVrai": "La signature numérique (digital signature) joue ce rôle. Elle prouve qui a écrit le document : c'est l'authenticité (authenticity). Elle empêche aussi de nier : c'est la non-répudiation (nonrepudiation). L'image s'arrête là : une signature à la main s'imite plus facilement."
+        },
+        {
+          "type": "exemple",
+          "titre": "L'empreinte d'un fichier",
+          "texte": "Tu télécharges un jeu. Le site donne aussi une empreinte (hash) : un résumé court du fichier, comme une empreinte digitale. Ton ordinateur la recalcule après le téléchargement. Si elle est différente, le fichier a changé en route. Ne l'installe surtout pas."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-integ-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « integrity »",
+          "answer": "Integrity is the concept of maintaining the accuracy, validity, and completeness of data and systems.\n\nTraduction : L'intégrité est le concept qui consiste à maintenir l'exactitude, la validité et l'exhaustivité des données et des systèmes.",
+          "explanation": "Pense au journal à l'encre : rien n'est changé ni oublié.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Integrity ». Elle est à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-def2",
+          "type": "cloze",
+          "question": "Integrity is the concept of maintaining the [[accuracy]], validity, and [[completeness]] of data and systems.",
+          "answer": "Integrity is the concept of maintaining the accuracy, validity, and completeness of data and systems.",
+          "explanation": "Trois qualités : accuracy (exact), validity (valable), completeness (complet).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-def3",
+          "type": "cloze",
+          "question": "Integrity is the concept of [[maintaining the accuracy]], [[validity]], and [[completeness of data and systems]].",
+          "answer": "Integrity is the concept of maintaining the accuracy, validity, and completeness of data and systems.",
+          "explanation": "Trois blocs : garder l'exactitude, la validité, et l'exhaustivité des données et des systèmes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « integrity » (en anglais).",
+          "answer": "Integrity is the concept of maintaining the accuracy, validity, and completeness of data and systems.\n\nTraduction : L'intégrité est le concept qui consiste à maintenir l'exactitude, la validité et l'exhaustivité des données et des systèmes.",
+          "explanation": "Compare : as-tu les trois qualités, exactitude, validité et exhaustivité ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-garantie-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce que garantit l'intégrité (« It ensures that data is not manipulated… »)",
+          "answer": "It ensures that data is not manipulated by anyone other than an authorized party with an authorized purpose, and that any unauthorized manipulation is easily identifiable as such.\n\nTraduction : Elle garantit que les données ne sont manipulées que par une partie autorisée, dans un but autorisé, et que toute manipulation non autorisée est facilement repérable comme telle.",
+          "explanation": "Deux protections : seuls les autorisés changent les données, et tout changement illégitime se voit.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Integrity » : c'est la phrase qui suit la définition de l'intégrité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-garantie-def3",
+          "type": "cloze",
+          "question": "It ensures that data is [[not manipulated]] by anyone other than [[an authorized party with an authorized purpose]], and that any [[unauthorized manipulation]] is easily identifiable as such.",
+          "answer": "It ensures that data is not manipulated by anyone other than an authorized party with an authorized purpose, and that any unauthorized manipulation is easily identifiable as such.",
+          "explanation": "Trois blocs : pas de manipulation, seulement par un autorisé, et le changement illégitime doit se voir.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-auth-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « authenticity »",
+          "answer": "Authenticity refers to ensuring that data is genuine and that all parties are who they say they are.\n\nTraduction : L'authenticité consiste à s'assurer que les données sont authentiques et que toutes les parties sont bien celles qu'elles prétendent être.",
+          "explanation": "Deux vérités à vérifier : le document est vrai, et les personnes sont bien celles qu'elles disent.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. L'authenticité est une notion proche de l'intégrité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-auth-def2",
+          "type": "cloze",
+          "question": "Authenticity refers to ensuring that data is [[genuine]] and that all [[parties]] are who they say they are.",
+          "answer": "Authenticity refers to ensuring that data is genuine and that all parties are who they say they are.",
+          "explanation": "Genuine veut dire authentique, vrai. Parties désigne les personnes ou systèmes concernés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-auth-def3",
+          "type": "cloze",
+          "question": "Authenticity refers to ensuring that [[data is genuine]] and that [[all parties]] are [[who they say they are]].",
+          "answer": "Authenticity refers to ensuring that data is genuine and that all parties are who they say they are.",
+          "explanation": "Trois blocs : des données vraies, toutes les parties, et elles sont bien qui elles prétendent.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-auth-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « authenticity » (en anglais).",
+          "answer": "Authenticity refers to ensuring that data is genuine and that all parties are who they say they are.\n\nTraduction : L'authenticité consiste à s'assurer que les données sont authentiques et que toutes les parties sont bien celles qu'elles prétendent être.",
+          "explanation": "Repère les deux moitiés de la phrase : les données, puis les personnes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-nonrep-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « nonrepudiation »",
+          "answer": "Nonrepudiation is a legal principle that has a strong parallel in the information security world; this concept requires ensuring that no party is able to deny their actions (e.g., creating, modifying, or deleting data).\n\nTraduction : La non-répudiation est un principe juridique qui a un fort parallèle dans le monde de la sécurité de l'information ; ce concept exige de s'assurer qu'aucune partie ne puisse nier ses actions (par exemple créer, modifier ou supprimer des données).",
+          "explanation": "Pense au carnet signé : on ne peut plus dire « ce n'est pas moi ».",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Répudier veut dire renier, nier.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-nonrep-def2",
+          "type": "cloze",
+          "question": "Nonrepudiation is a [[legal]] principle that has a strong parallel in the information security world; this concept requires ensuring that no party is able to [[deny]] their actions (e.g., creating, modifying, or deleting data).",
+          "answer": "Nonrepudiation is a legal principle that has a strong parallel in the information security world; this concept requires ensuring that no party is able to deny their actions (e.g., creating, modifying, or deleting data).",
+          "explanation": "Deux mots clés : legal (c'est d'abord un principe de droit) et deny (nier).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-nonrep-def3",
+          "type": "cloze",
+          "question": "Nonrepudiation is a [[legal principle]] that has a strong parallel in the information security world; this concept requires ensuring that [[no party is able]] to [[deny their actions]] (e.g., creating, modifying, or deleting data).",
+          "answer": "Nonrepudiation is a legal principle that has a strong parallel in the information security world; this concept requires ensuring that no party is able to deny their actions (e.g., creating, modifying, or deleting data).",
+          "explanation": "Trois blocs : un principe juridique, aucune partie ne peut, nier ses actions.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-nonrep-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « nonrepudiation » (en anglais).",
+          "answer": "Nonrepudiation is a legal principle that has a strong parallel in the information security world; this concept requires ensuring that no party is able to deny their actions (e.g., creating, modifying, or deleting data).\n\nTraduction : La non-répudiation est un principe juridique qui a un fort parallèle dans le monde de la sécurité de l'information ; ce concept exige de s'assurer qu'aucune partie ne puisse nier ses actions (par exemple créer, modifier ou supprimer des données).",
+          "explanation": "N'oublie pas les trois actions entre parenthèses : créer, modifier, supprimer.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-signature-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les « digital signatures »",
+          "answer": "Digital signatures are the most common mechanisms used to establish authenticity and nonrepudiation in information systems.\n\nTraduction : Les signatures numériques sont les mécanismes les plus courants pour établir l'authenticité et la non-répudiation dans les systèmes d'information.",
+          "explanation": "Une seule signature numérique donne deux preuves : qui a signé, et qu'il ne peut pas nier.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Integrity ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-signature-def3",
+          "type": "cloze",
+          "question": "Digital signatures are the [[most common mechanisms]] used to establish [[authenticity and nonrepudiation]] in [[information systems]].",
+          "answer": "Digital signatures are the most common mechanisms used to establish authenticity and nonrepudiation in information systems.",
+          "explanation": "Trois blocs : les mécanismes les plus courants, les deux preuves obtenues, et le cadre des systèmes d'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-integ-1",
+          "type": "duel",
+          "question": "Un client dit « je n'ai jamais passé cette commande », alors qu'il l'a signée. Quelle idée la signature numérique protège-t-elle ?",
+          "options": ["L'authenticité", "La non-répudiation"],
+          "answer": "La non-répudiation",
+          "explanation": "L'authenticité prouve qui a écrit. La non-répudiation empêche ensuite de nier.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-integ-2",
+          "type": "qcm",
+          "question": "Un employé de banque tape 1000 au lieu de 100 sur un virement. Personne ne l'a voulu. Que se passe-t-il pour la sécurité ?",
+          "options": [
+            "Aucune perte : sans attaque, il n'y a pas de problème",
+            "On perd l'intégrité : une donnée est devenue fausse",
+            "On perd la confidentialité : quelqu'un a vu le montant",
+            "On perd la disponibilité : le virement est bloqué"
+          ],
+          "options_why": [
+            "L'intégrité se perd aussi par simple erreur, sans aucun pirate.",
+            "",
+            "Personne n'a lu quoi que ce soit sans droit : la donnée a seulement changé.",
+            "Le virement part bien : c'est son montant qui est faux."
+          ],
+          "answer": "On perd l'intégrité : une donnée est devenue fausse",
+          "explanation": "Une donnée exacte est devenue fausse, même sans mauvaise intention.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : l'intégrité peut être touchée par des actes malveillants, une erreur humaine, un oubli ou de la négligence.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-integ-3",
+          "type": "sort",
+          "question": "Authenticité ou non-répudiation ? Range chaque situation.",
+          "answer": "Authenticité : vérifier l'expéditeur et vérifier que le fichier n'est pas un faux. Non-répudiation : empêcher un client de nier sa commande et garder la preuve d'une suppression.",
+          "explanation": "Authenticité : est-ce vrai, est-ce bien lui ? Non-répudiation : peut-il nier plus tard ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Authenticité", "Non-répudiation"],
+            "items": [
+              { "text": "Vérifier que le message vient bien de la personne annoncée", "category": "Authenticité" },
+              { "text": "Vérifier que le fichier reçu n'est pas un faux", "category": "Authenticité" },
+              { "text": "Empêcher un client de dire « je n'ai jamais passé cette commande »", "category": "Non-répudiation" },
+              { "text": "Garder la preuve qu'un employé a bien supprimé un fichier", "category": "Non-répudiation" }
+            ]
+          }
+        },
+        {
+          "id": "d1-integ-4",
+          "type": "why",
+          "question": "Pourquoi une donnée fausse mais bien protégée reste-t-elle dangereuse ?",
+          "answer": "Des personnes prennent des décisions avec cette donnée. Si elle est fausse, elles peuvent faire de mauvais choix ou des gestes dangereux.",
+          "explanation": "L'intégrité sert à pouvoir faire confiance à ce qu'on lit.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : sans intégrité, le personnel peut prendre de mauvaises décisions, car l'information est incorrecte.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-integ-5",
+          "type": "flash",
+          "question": "Quel est le but principal de l'intégrité ?",
+          "answer": "Que les données restent intactes, correctes et fiables.",
+          "explanation": "Trois mots à retenir : intact, correct, reliable.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « all data remains intact, correct, and reliable ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-integ-6",
+          "type": "whatif",
+          "question": "Et si quelqu'un modifie un fichier, mais qu'on le repère tout de suite et qu'on remet la bonne version ?",
+          "answer": "L'intégrité a été attaquée, mais elle est rétablie. L'important est de repérer facilement le changement et de revenir à un état sain.",
+          "explanation": "Protéger l'intégrité, c'est aussi savoir réparer vite.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : restaurer les données altérées vers un état sain connu (known-good state).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-integ-7",
+          "type": "cloze",
+          "question": "Les [[signatures numériques|signatures]] servent à établir l'authenticité et la non-répudiation.",
+          "answer": "Les signatures numériques servent à établir l'authenticité et la non-répudiation.",
+          "explanation": "Une signature prouve qui a écrit et empêche de le nier.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-integ-8",
+          "type": "flash",
+          "question": "Cite deux mesures qui aident à protéger l'intégrité.",
+          "answer": "Par exemple : les sauvegardes (backups) et le contrôle d'accès strict. Aussi : le suivi des versions d'un fichier, pour revenir en arrière, et les empreintes cryptographiques (hashes).",
+          "explanation": "Elles empêchent un changement non autorisé, ou permettent de revenir à une version saine.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : sauvegardes, gestion des versions (version control), contrôle d'accès strict et hachages cryptographiques. La formation à la sécurité aide contre les erreurs non malveillantes.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-dispo",
+      "name": "La disponibilité (availability)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La clé perdue",
+          "paragraphes": [
+            "Ton journal est intact : personne ne l'a lu, personne ne l'a gribouillé. Mais tu as perdu la clé du cadenas.",
+            "Ce soir, tu en as besoin, et tu ne peux pas l'ouvrir. Il est parfaitement protégé, mais il ne te sert à rien.",
+            "En cybersécurité, ça s'appelle perdre la disponibilité (availability)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme un distributeur de billets",
+          "comme": "Un distributeur peut être parfaitement sûr. S'il est en panne le samedi soir, il ne sert à personne.",
+          "enVrai": "La disponibilité, c'est faire en sorte que les personnes autorisées accèdent aux données quand elles en ont besoin. Une panne longue peut faire perdre des clients et de l'argent. L'image s'arrête là : un distributeur tombe en panne tout seul, alors qu'une attaque peut aussi provoquer la panne."
+        },
+        {
+          "type": "predire",
+          "question": "Un fichier est sur le disque partagé de l'entreprise. Le disque marche et le fichier est intact. Tu essaies de l'ouvrir : « accès refusé ». Le fichier est-il disponible ?",
+          "options": [
+            "Non : si tu ne peux pas l'ouvrir, il n'existe plus",
+            "Oui, il est disponible, mais il n'est pas accessible pour toi",
+            "Oui, et tout est parfait"
+          ],
+          "answer": "Oui, il est disponible, mais il n'est pas accessible pour toi",
+          "explanation": "Le fichier existe et le disque marche : il est disponible. Mais tu n'as pas la permission : il n'est pas accessible. Ces deux mots sont voisins, mais différents."
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme un devoir en ligne",
+          "comme": "Ton prof publie un devoir en ligne. Si tu n'as pas le droit d'ouvrir le dossier, tu ne peux pas y accéder. Si tu l'ouvres en lecture seule, tu ne peux pas écrire ta réponse. S'il s'ouvre après la date limite, c'est trop tard.",
+          "enVrai": "Ce sont trois idées voisines de la disponibilité. L'accessibilité (accessibility) : pouvoir y accéder. L'utilisabilité (usability) : pouvoir faire ce dont on a besoin. La rapidité (timeliness) : l'avoir dans un délai acceptable."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un contrat avec le cloud",
+          "texte": "Une entreprise range ses fichiers chez un fournisseur de cloud. Un contrat fixe par écrit ce que le fournisseur promet. Par exemple : un service qui marche presque tout le temps et répond vite. Ce contrat s'appelle un accord de niveau de service (SLA, service level agreement)."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-dispo-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « availability »",
+          "answer": "Availability is the concept focused on ensuring that authorized users can access data when they need it.\n\nTraduction : La disponibilité est le concept qui consiste à s'assurer que les utilisateurs autorisés peuvent accéder aux données quand ils en ont besoin.",
+          "explanation": "Pense à la clé du journal : tu dois pouvoir ouvrir au bon moment.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Availability ». Elle est à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-def2",
+          "type": "cloze",
+          "question": "Availability is the concept focused on ensuring that [[authorized]] users can access data when they [[need]] it.",
+          "answer": "Availability is the concept focused on ensuring that authorized users can access data when they need it.",
+          "explanation": "Deux mots clés : authorized (les bonnes personnes) et need (au moment du besoin).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-def3",
+          "type": "cloze",
+          "question": "Availability is the concept focused on [[ensuring that authorized users]] can [[access data]] [[when they need it]].",
+          "answer": "Availability is the concept focused on ensuring that authorized users can access data when they need it.",
+          "explanation": "Trois blocs : les utilisateurs autorisés, accéder aux données, au moment du besoin.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « availability » (en anglais).",
+          "answer": "Availability is the concept focused on ensuring that authorized users can access data when they need it.\n\nTraduction : La disponibilité est le concept qui consiste à s'assurer que les utilisateurs autorisés peuvent accéder aux données quand ils en ont besoin.",
+          "explanation": "Compare : as-tu pensé à authorized et à when they need it ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-entreprise-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la disponibilité en entreprise (« In enterprise environments… »)",
+          "answer": "In enterprise environments, the concept of availability entails providing assurance that legitimate parties have timely and uninterrupted access to the systems and data that they need to do their jobs.\n\nTraduction : Dans les entreprises, la disponibilité consiste à garantir que les parties légitimes ont un accès rapide et ininterrompu aux systèmes et aux données dont elles ont besoin pour faire leur travail.",
+          "explanation": "En entreprise, deux mots s'ajoutent : timely (à temps) et uninterrupted (sans coupure).",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Availability ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-entreprise-def3",
+          "type": "cloze",
+          "question": "In enterprise environments, the concept of availability entails providing [[assurance that legitimate parties]] have [[timely and uninterrupted access]] to the [[systems and data]] that they need to do their jobs.",
+          "answer": "In enterprise environments, the concept of availability entails providing assurance that legitimate parties have timely and uninterrupted access to the systems and data that they need to do their jobs.",
+          "explanation": "Trois blocs : la garantie pour les parties légitimes, l'accès rapide et continu, les systèmes et données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-access-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « accessibility »",
+          "answer": "Accessibility refers to the ability and ease of a user to use a resource or access data when needed.\n\nTraduction : L'accessibilité désigne la capacité et la facilité qu'a un utilisateur d'utiliser une ressource ou d'accéder aux données quand il en a besoin.",
+          "explanation": "Accessibility, c'est pouvoir entrer : pas de barrière pour les personnes autorisées.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Availability » : le manuel donne l'exemple d'un fichier déplacé dans un dossier protégé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-access-def3",
+          "type": "cloze",
+          "question": "Accessibility refers to the [[ability and ease]] of a user to [[use a resource]] or [[access data when needed]].",
+          "answer": "Accessibility refers to the ability and ease of a user to use a resource or access data when needed.",
+          "explanation": "Trois blocs : capacité et facilité, utiliser une ressource, accéder aux données au besoin.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-usab-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « usability »",
+          "answer": "Usability refers to the ability of a user to meet their needs with available data.\n\nTraduction : L'utilisabilité désigne la capacité d'un utilisateur à répondre à ses besoins avec les données disponibles.",
+          "explanation": "Usability, c'est pouvoir s'en servir : un fichier en lecture seule est disponible mais peu utilisable.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Availability » : exemple d'un document en lecture seule.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-usab-def3",
+          "type": "cloze",
+          "question": "Usability refers to the [[ability of a user]] to [[meet their needs]] with [[available data]].",
+          "answer": "Usability refers to the ability of a user to meet their needs with available data.",
+          "explanation": "Trois blocs : la capacité de l'utilisateur, répondre à ses besoins, avec les données disponibles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-time-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « timeliness »",
+          "answer": "Timeliness refers to the time expectation for availability of information and resources and is the measure of the time between when information is expected and when it is available for use.\n\nTraduction : La rapidité (timeliness) désigne le délai attendu pour la disponibilité des informations et des ressources ; c'est la mesure du temps entre le moment où l'information est attendue et celui où elle est disponible.",
+          "explanation": "Timeliness, c'est le temps d'attente : entre le moment où tu attends et celui où tu reçois.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Availability » : ce délai se fixe dans un accord de niveau de service (SLA).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-time-def3",
+          "type": "cloze",
+          "question": "Timeliness refers to the [[time expectation]] for availability of information and resources and is the [[measure of the time]] between when information is [[expected and when it is available]] for use.",
+          "answer": "Timeliness refers to the time expectation for availability of information and resources and is the measure of the time between when information is expected and when it is available for use.",
+          "explanation": "Trois blocs : le délai attendu, la mesure du temps, entre l'attente et la disponibilité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-dispo-1",
+          "type": "duel",
+          "question": "Le fichier existe, mais tu n'as pas la permission de l'ouvrir. Que peut-on dire ?",
+          "options": ["Disponible, mais pas accessible", "Accessible, mais pas disponible"],
+          "answer": "Disponible, mais pas accessible",
+          "explanation": "Le fichier existe et le disque marche : il est disponible. Sans permission, il n'est pas accessible.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-dispo-2",
+          "type": "qcm",
+          "question": "Le jour des soldes, le site d'une boutique répond, mais met cinq minutes à afficher chaque page. Quelle notion est surtout touchée ?",
+          "options": [
+            "L'accessibilité (accessibility)",
+            "La rapidité (timeliness)",
+            "L'utilisabilité (usability)",
+            "La confidentialité (confidentiality)"
+          ],
+          "options_why": [
+            "Les clients peuvent entrer sur le site : rien ne les en empêche.",
+            "",
+            "Les clients peuvent faire leurs achats, mais bien trop lentement.",
+            "Personne n'a lu de données en secret."
+          ],
+          "answer": "La rapidité (timeliness)",
+          "explanation": "Le site fonctionne, mais l'information arrive trop tard par rapport à ce qu'on attend.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-dispo-3",
+          "type": "sort",
+          "question": "Cette menace pour la disponibilité est-elle malveillante ou non ?",
+          "answer": "Malveillantes : le déni de service, le ransomware, la suppression volontaire de fichiers. Non malveillantes : la panne de disque, l'erreur de logiciel, la coupure de courant, l'inondation, la chaleur excessive.",
+          "explanation": "Demande-toi : quelqu'un l'a-t-il fait exprès pour nuire ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Malveillante", "Non malveillante"],
+            "items": [
+              { "text": "Une attaque par déni de service (DoS)", "category": "Malveillante" },
+              { "text": "Un ransomware bloque les fichiers", "category": "Malveillante" },
+              { "text": "Un employé malveillant supprime des fichiers", "category": "Malveillante" },
+              { "text": "Un disque dur tombe en panne", "category": "Non malveillante" },
+              { "text": "Une erreur dans un logiciel", "category": "Non malveillante" },
+              { "text": "Une coupure de courant", "category": "Non malveillante" },
+              { "text": "Une inondation de la salle des serveurs", "category": "Non malveillante" },
+              { "text": "Une chaleur excessive dans la salle des machines", "category": "Non malveillante" }
+            ]
+          }
+        },
+        {
+          "id": "d1-dispo-4",
+          "type": "why",
+          "question": "Pourquoi une entreprise doit-elle se protéger des pannes naturelles, pas seulement des pirates ?",
+          "answer": "Une inondation ou une coupure de courant bloque l'accès autant qu'une attaque. Le résultat est le même : les gens ne peuvent plus travailler.",
+          "explanation": "La disponibilité se perd par des causes humaines ou naturelles.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : il faut prévoir les menaces humaines et naturelles, malveillantes ou non.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-dispo-5",
+          "type": "flash",
+          "question": "Cite deux mesures qui aident à garder la disponibilité.",
+          "answer": "Par exemple : les sauvegardes (data backups) et le stockage redondant (des copies sur plusieurs disques). Aussi : l'alimentation de secours et les WAF (pare-feux qui protègent les sites web).",
+          "explanation": "Elles servent à continuer de fonctionner même quand quelque chose tombe en panne.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : sauvegardes, stockage redondant, alimentation de secours et web application firewalls (WAF). Le cloud ajoute de la redondance.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-dispo-6",
+          "type": "cloze",
+          "question": "Le délai acceptable d'un service cloud est écrit dans l'[[SLA|accord de niveau de service]].",
+          "answer": "Le délai acceptable d'un service cloud est écrit dans l'accord de niveau de service (SLA).",
+          "explanation": "SLA veut dire service level agreement : c'est le contrat des promesses du fournisseur.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Availability ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-dispo-7",
+          "type": "whatif",
+          "question": "Et si des données sont parfaitement protégées par un mot de passe, mais que tout le monde l'a oublié ?",
+          "answer": "Les données gardent leur confidentialité, mais la disponibilité est perdue : les personnes autorisées ne peuvent plus y accéder.",
+          "explanation": "Une protection trop forte, sans accès pour les bonnes personnes, casse un autre pilier.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-dispo-8",
+          "type": "duel",
+          "question": "Tu ouvres un document, mais seulement en lecture seule : tu ne peux pas le modifier. Quelle notion manque ?",
+          "options": ["L'utilisabilité (usability)", "La rapidité (timeliness)"],
+          "answer": "L'utilisabilité (usability)",
+          "explanation": "Le document est disponible et arrive à temps, mais tu ne peux pas faire ce dont tu as besoin.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-rfc1087",
+      "name": "L'éthique sur internet (RFC 1087)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Internet au berceau",
+          "paragraphes": [
+            "En 1989, internet est tout jeune. Peu de gens l'utilisent, surtout des chercheurs.",
+            "Un groupe d'experts, l'Internet Activities Board (IAB), se demande comment bien se comporter sur ce nouveau terrain.",
+            "Il publie un court texte de règles : la RFC 1087, intitulée « Ethics and the Internet ». Une RFC est un document public qui décrit une règle ou une idée sur internet."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme les règles de la piscine",
+          "comme": "À la piscine, personne ne te dit tout. Mais il y a des règles de bon sens : ne pas gêner les nageurs, ne pas gaspiller l'eau.",
+          "enVrai": "Le texte de 1989 fait pareil pour internet. Il liste cinq actes volontaires inacceptables. Entrer sans droit. Perturber l'usage. Gaspiller des ressources. Détruire l'intégrité de l'information. Violer la vie privée. L'image s'arrête là : internet n'a pas de maître-nageur."
+        },
+        {
+          "type": "predire",
+          "question": "Tu lances volontairement un programme qui gaspille la capacité du réseau de ton école. Tu ne voles rien. Est-ce contraire à l'éthique selon la RFC 1087 ?",
+          "options": [
+            "Non : tu n'as rien volé",
+            "Oui : gaspiller des ressources est inacceptable",
+            "Seulement si tu te fais prendre"
+          ],
+          "answer": "Oui : gaspiller des ressources est inacceptable",
+          "explanation": "Le texte cite le gaspillage des ressources : les personnes, la capacité et les ordinateurs. Voler n'est pas la seule faute."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un vieux texte, trois piliers",
+          "texte": "Le manuel remarque que ce texte de 1989 colle déjà à la triade CIA et à la vie privée. Par exemple, entrer sans droit menace la confidentialité. Détruire l'intégrité de l'information parle d'intégrité. Perturber l'usage d'internet touche la disponibilité."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rfc1087-acces-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : RFC 1087, activité inacceptable n°1 (l'accès, « seeks to… »)",
+          "answer": "seeks to gain unauthorized access to the resources of the Internet\n\nTraduction : Cherche à obtenir un accès non autorisé aux ressources d'internet.",
+          "explanation": "Le texte vise toute activité volontaire (purposely) qui cherche à entrer sans droit.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Ethics and the Internet ». La phrase de départ est : « RFC 1087 characterizes as unethical and unacceptable any activity that purposely ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-acces-def3",
+          "type": "cloze",
+          "question": "[[seeks to gain]] [[unauthorized access]] to the [[resources of the Internet]]",
+          "answer": "seeks to gain unauthorized access to the resources of the Internet",
+          "explanation": "Activité n°1 : l'accès non autorisé aux ressources d'internet.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-usage-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : RFC 1087, activité inacceptable n°2 (l'usage, « disrupts… »)",
+          "answer": "disrupts the intended use of the Internet\n\nTraduction : Perturbe l'usage prévu d'internet.",
+          "explanation": "Pense à quelqu'un qui bloque un service que les autres veulent utiliser.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Ethics and the Internet ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-usage-def3",
+          "type": "cloze",
+          "question": "[[disrupts]] the [[intended use]] of the [[Internet]]",
+          "answer": "disrupts the intended use of the Internet",
+          "explanation": "Activité n°2 : perturber l'usage prévu d'internet.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-gaspille-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : RFC 1087, activité inacceptable n°3 (le gaspillage, « wastes… »)",
+          "answer": "wastes resources (people, capacity, computer) through such actions\n\nTraduction : Gaspille des ressources (personnes, capacité, ordinateurs) par de telles actions.",
+          "explanation": "Les trois ressources entre parenthèses : les personnes, la capacité, les ordinateurs.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Ethics and the Internet ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-gaspille-def3",
+          "type": "cloze",
+          "question": "[[wastes resources]] ([[people, capacity, computer]]) through [[such actions]]",
+          "answer": "wastes resources (people, capacity, computer) through such actions",
+          "explanation": "Activité n°3 : gaspiller des ressources, les personnes, la capacité et les ordinateurs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-integ-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : RFC 1087, activité inacceptable n°4 (l'intégrité, « destroys… »)",
+          "answer": "destroys the integrity of computer-based information\n\nTraduction : Détruit l'intégrité des informations stockées sur ordinateur.",
+          "explanation": "Ici on retrouve l'intégrité de la triade CIA.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Ethics and the Internet ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-integ-def3",
+          "type": "cloze",
+          "question": "[[destroys]] the [[integrity]] of [[computer-based information]]",
+          "answer": "destroys the integrity of computer-based information",
+          "explanation": "Activité n°4 : détruire l'intégrité de l'information stockée sur ordinateur.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-privacy-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : RFC 1087, activité inacceptable n°5 (la vie privée, « compromises… »)",
+          "answer": "compromises the privacy of users\n\nTraduction : Compromet la vie privée des utilisateurs.",
+          "explanation": "C'est la plus courte des cinq : compromettre la vie privée des utilisateurs.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Ethics and the Internet ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-privacy-def3",
+          "type": "cloze",
+          "question": "[[compromises]] the [[privacy]] of [[users]]",
+          "answer": "compromises the privacy of users",
+          "explanation": "Activité n°5 : compromettre la vie privée des utilisateurs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rfc1087-1",
+          "type": "flash",
+          "question": "Quand l'Internet Activities Board a-t-il publié « Ethics and the Internet » (RFC 1087) ?",
+          "answer": "En janvier 1989.",
+          "explanation": "C'était aux débuts d'internet.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Ethics and the Internet ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-rfc1087-2",
+          "type": "duel",
+          "question": "Qui a publié le mémo « Ethics and the Internet » (RFC 1087) ?",
+          "options": ["(ISC)2", "L'Internet Activities Board (IAB)"],
+          "answer": "L'Internet Activities Board (IAB)",
+          "explanation": "(ISC)2 a écrit le code d'éthique du CISSP. Le mémo de 1989 vient de l'IAB.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-rfc1087-3",
+          "type": "qcm",
+          "question": "Un élève fait tomber volontairement le réseau du collège : personne ne peut plus se connecter. Quel acte de la RFC 1087 est en cause ?",
+          "options": [
+            "Il compromet la vie privée des utilisateurs",
+            "Il détruit l'intégrité des informations",
+            "Il perturbe l'usage prévu d'internet",
+            "Il cherche à obtenir un accès non autorisé"
+          ],
+          "options_why": [
+            "Personne n'a regardé de données personnelles : le service est seulement bloqué.",
+            "Aucune information n'a été détruite ni modifiée.",
+            "",
+            "L'élève n'a pas cherché à entrer quelque part où il n'avait pas le droit."
+          ],
+          "answer": "Il perturbe l'usage prévu d'internet",
+          "explanation": "Un service que les autres veulent utiliser est bloqué volontairement : c'est une perturbation de l'usage.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rfc1087-4",
+          "type": "sort",
+          "question": "Quelle activité inacceptable de la RFC 1087 correspond à chaque situation ?",
+          "answer": "Accès non autorisé : entrer dans un serveur d'école et deviner un mot de passe. Vie privée : diffuser des messages privés ou des données personnelles. Intégrité : abîmer ou falsifier des données. Usage : faire tomber ou bloquer un service.",
+          "explanation": "Demande-toi ce qui est touché : l'entrée, le secret des personnes, l'exactitude, ou le service.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Accès non autorisé", "Atteinte à la vie privée", "Destruction de l'intégrité", "Perturbation de l'usage"],
+            "items": [
+              { "text": "Entrer sans autorisation dans le serveur d'une école", "category": "Accès non autorisé" },
+              { "text": "Deviner le mot de passe d'un camarade pour ouvrir son compte", "category": "Accès non autorisé" },
+              { "text": "Diffuser les messages privés d'un camarade", "category": "Atteinte à la vie privée" },
+              { "text": "Montrer à des inconnus les données personnelles d'utilisateurs", "category": "Atteinte à la vie privée" },
+              { "text": "Abîmer volontairement les données d'une autre personne", "category": "Destruction de l'intégrité" },
+              { "text": "Falsifier volontairement un fichier partagé", "category": "Destruction de l'intégrité" },
+              { "text": "Faire tomber volontairement un site pour que personne ne l'utilise", "category": "Perturbation de l'usage" },
+              { "text": "Empêcher volontairement un service de fonctionner normalement", "category": "Perturbation de l'usage" }
+            ]
+          }
+        },
+        {
+          "id": "d1-rfc1087-5",
+          "type": "why",
+          "question": "Pourquoi un texte de 1989 reste-t-il utile à un professionnel d'aujourd'hui ?",
+          "answer": "Ses règles visent des principes qui ne changent pas : accès, intégrité, usage et vie privée. Elles collent encore à la triade CIA.",
+          "explanation": "Les outils changent, mais les principes restent les mêmes.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : le mémo est ancien à l'échelle de la technologie, mais ses principes sont toujours pertinents.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rfc1087-6",
+          "type": "cloze",
+          "question": "La RFC 1087 parle de l'éthique sur [[internet]] et date de [[1989]].",
+          "answer": "La RFC 1087 parle de l'éthique sur internet et date de 1989.",
+          "explanation": "Un texte des tout débuts d'internet, toujours d'actualité.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-rfc1087-7",
+          "type": "whatif",
+          "question": "Et si quelqu'un gaspille des ressources par erreur, sans le vouloir ? La RFC 1087 le juge-t-elle inacceptable ?",
+          "answer": "Le mot clé est « purposely » : le texte vise les actes volontaires. Une erreur reste un problème de sécurité, mais ce n'est pas ce que la RFC décrit.",
+          "explanation": "La RFC 1087 parle d'actes faits exprès, pas d'accidents.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rfc1087-8",
+          "type": "flash",
+          "question": "Selon la RFC 1087, une activité est inacceptable si elle gaspille quoi ?",
+          "answer": "Des ressources : les personnes, la capacité et les ordinateurs.",
+          "explanation": "Trois ressources : people, capacity, computer.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "d1-limites",
+      "name": "Les limites de la triade (NIST, vie privée)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le faux message",
+          "paragraphes": [
+            "Tu reçois un message de ton meilleur ami : « Envoie-moi vite ton mot de passe ! ».",
+            "Le message est arrivé à temps, intact, et personne d'autre ne l'a lu. Pourtant, ce n'est pas ton ami qui l'a écrit.",
+            "Les trois piliers de la triade ne voient pas ce problème. C'est l'une de ses limites, que des experts ont cherché à corriger."
+          ]
+        },
+        {
+          "type": "predire",
+          "question": "Un message secret, intact et arrivé à temps vient d'un faux ami. Quelle idée manque à la triade CIA ?",
+          "options": [
+            "La disponibilité",
+            "L'authenticité : savoir qui est vraiment l'auteur",
+            "La confidentialité"
+          ],
+          "answer": "L'authenticité : savoir qui est vraiment l'auteur",
+          "explanation": "Le manuel dit que la triade ne traite pas directement l'authenticité ni la non-répudiation. Les deux autres piliers étaient bien respectés ici."
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme un jeu à trois règles",
+          "comme": "Un jeu a trois règles simples. Plus il y a de joueurs et de situations nouvelles, plus on découvre des cas non prévus. On ajoute alors des règles.",
+          "enVrai": "La triade est simple, et c'est sa force. Elle date du milieu des années 1960. Le NIST (National Institute of Standards and Technology) est un organisme américain de normes. Il a ajouté deux idées dans un document appelé SP 800-33."
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le cahier d'appel",
+          "comme": "À l'école, le cahier d'appel note qui est présent. Si un cahier disparaît, on peut remonter jusqu'à la personne qui l'a pris.",
+          "enVrai": "C'est la responsabilité (accountability) : les actions d'une personne ou d'un système peuvent être reliées à lui seul. Sans elle, impossible de savoir qui a fait quoi."
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme tester l'alarme incendie",
+          "comme": "Une alarme incendie, on la teste chaque mois. Ce n'est pas pour l'allumer, c'est pour être sûr qu'elle marchera le jour où il y aura de la fumée.",
+          "enVrai": "C'est la garantie (assurance) : la confiance que les protections marchent vraiment comme prévu. Une entreprise ne doit pas seulement installer des protections, elle doit pouvoir s'y fier."
+        },
+        {
+          "type": "exemple",
+          "titre": "Tes photos sur ton téléphone",
+          "texte": "Tu as des photos privées sur ton téléphone. Toi seul décides qui peut les voir et les partager. C'est l'idée de la vie privée (privacy). Pour une entreprise, ce sont les données de ses clients et de ses employés. La vie privée est proche de la confidentialité, mais elle ne parle que de données sur des personnes."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-limites-account-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « accountability » (NIST)",
+          "answer": "accountability (that actions of an entity may be traced uniquely to that entity)\n\nTraduction : La responsabilité (accountability) : le fait que les actions d'une entité puissent être reliées de façon unique à cette entité.",
+          "explanation": "Pense au cahier d'appel : une action, un seul responsable.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Limitations of the CIA Triad » : NIST SP 800-33 ajoute accountability et assurance à la triade.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-account-def2",
+          "type": "cloze",
+          "question": "accountability (that [[actions]] of an entity may be [[traced]] uniquely to that entity)",
+          "answer": "accountability (that actions of an entity may be traced uniquely to that entity)",
+          "explanation": "Deux mots clés : actions (ce qu'on fait) et traced (on peut remonter jusqu'à l'auteur).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-account-def3",
+          "type": "cloze",
+          "question": "accountability (that [[actions of an entity]] may be [[traced uniquely]] to [[that entity]])",
+          "answer": "accountability (that actions of an entity may be traced uniquely to that entity)",
+          "explanation": "Trois blocs : les actions d'une entité, reliées de façon unique, à cette même entité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-account-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « accountability » selon le NIST (en anglais).",
+          "answer": "accountability (that actions of an entity may be traced uniquely to that entity)\n\nTraduction : La responsabilité (accountability) : le fait que les actions d'une entité puissent être reliées de façon unique à cette entité.",
+          "explanation": "Vérifie le mot uniquely : une action ne doit mener qu'à une seule entité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-assur-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « assurance » (NIST)",
+          "answer": "assurance (the basis for confidence that the security measures, both technical and operational, work as intended to protect the system and the information it processes)\n\nTraduction : La garantie (assurance) : la base de confiance permettant de croire que les mesures de sécurité, techniques et opérationnelles, fonctionnent comme prévu pour protéger le système et l'information qu'il traite.",
+          "explanation": "Pense au test de l'alarme : la confiance que les protections marchent vraiment.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Limitations of the CIA Triad ». Technique veut dire les outils ; opérationnel veut dire la façon de les utiliser.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-assur-def2",
+          "type": "cloze",
+          "question": "assurance (the basis for [[confidence]] that the security measures, both technical and [[operational]], work as intended to protect the system and the information it processes)",
+          "answer": "assurance (the basis for confidence that the security measures, both technical and operational, work as intended to protect the system and the information it processes)",
+          "explanation": "Deux mots clés : confidence (la confiance) et operational (la façon d'utiliser les mesures).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-assur-def3",
+          "type": "cloze",
+          "question": "assurance (the [[basis for confidence]] that the [[security measures]], both technical and operational, [[work as intended]] to protect the system and the information it processes)",
+          "answer": "assurance (the basis for confidence that the security measures, both technical and operational, work as intended to protect the system and the information it processes)",
+          "explanation": "Trois blocs : la base de confiance, les mesures de sécurité, elles marchent comme prévu.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-assur-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « assurance » selon le NIST (en anglais).",
+          "answer": "assurance (the basis for confidence that the security measures, both technical and operational, work as intended to protect the system and the information it processes)\n\nTraduction : La garantie (assurance) : la base de confiance permettant de croire que les mesures de sécurité, techniques et opérationnelles, fonctionnent comme prévu pour protéger le système et l'information qu'il traite.",
+          "explanation": "Découpe en trois : la confiance, les mesures techniques et opérationnelles, protéger système et information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-privacy-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « privacy »",
+          "answer": "Privacy, as defined in the (ISC)2 glossary, is the right of human individuals to control the distribution of information about themselves.\n\nTraduction : La vie privée, telle que la définit le glossaire (ISC)2, est le droit des personnes de contrôler la diffusion des informations qui les concernent.",
+          "explanation": "Pense à tes photos : c'est toi qui décides qui les voit.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Limitations of the CIA Triad ». La vie privée est souvent gérée hors de l'équipe de sécurité, mais elle est proche de la confidentialité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-privacy-def2",
+          "type": "cloze",
+          "question": "Privacy, as defined in the (ISC)2 glossary, is the [[right]] of human individuals to control the [[distribution]] of information about themselves.",
+          "answer": "Privacy, as defined in the (ISC)2 glossary, is the right of human individuals to control the distribution of information about themselves.",
+          "explanation": "Deux mots clés : right (un droit) et distribution (la diffusion).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-privacy-def3",
+          "type": "cloze",
+          "question": "Privacy, as defined in the (ISC)2 glossary, is the [[right of human individuals]] to [[control the distribution]] of [[information about themselves]].",
+          "answer": "Privacy, as defined in the (ISC)2 glossary, is the right of human individuals to control the distribution of information about themselves.",
+          "explanation": "Trois blocs : le droit des personnes, contrôler la diffusion, les informations sur elles-mêmes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-privacy-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « privacy » (en anglais).",
+          "answer": "Privacy, as defined in the (ISC)2 glossary, is the right of human individuals to control the distribution of information about themselves.\n\nTraduction : La vie privée, telle que la définit le glossaire (ISC)2, est le droit des personnes de contrôler la diffusion des informations qui les concernent.",
+          "explanation": "N'oublie pas le début : as defined in the (ISC)2 glossary.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-limites-1",
+          "type": "duel",
+          "question": "On peut retrouver quel employé a effacé un fichier. De quelle idée s'agit-il ?",
+          "options": ["La responsabilité (accountability)", "La garantie (assurance)"],
+          "answer": "La responsabilité (accountability)",
+          "explanation": "On relie l'action à une seule personne : accountability. L'assurance, c'est la confiance que les protections marchent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-limites-2",
+          "type": "qcm",
+          "question": "Le NIST SP 800-33 reprend la triade CIA comme trois de ses cinq objectifs. Quels sont les deux autres ?",
+          "options": [
+            "L'authenticité et la non-répudiation (authenticity, nonrepudiation)",
+            "La responsabilité et la garantie (accountability, assurance)",
+            "L'utilité et la possession (utility, possession)",
+            "Le chiffrement et la sauvegarde (encryption, backup)"
+          ],
+          "options_why": [
+            "Ces deux idées sont citées comme des limites de la triade, mais ce ne sont pas les deux ajouts du NIST.",
+            "",
+            "Ces notions viennent de l'hexade de Parker, pas du NIST.",
+            "Ce sont des mesures de protection, pas des objectifs de sécurité."
+          ],
+          "answer": "La responsabilité et la garantie (accountability, assurance)",
+          "explanation": "Le NIST a gardé les trois piliers et ajouté accountability et assurance.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Limitations of the CIA Triad » (NIST Special Publication 800-33).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-limites-3",
+          "type": "sort",
+          "question": "Cette idée est-elle dans la triade CIA, ou ajoutée par le NIST ?",
+          "answer": "Dans la triade CIA : confidentialité, intégrité, disponibilité. Ajoutées par le NIST : responsabilité et garantie.",
+          "explanation": "Le NIST garde les trois piliers et ajoute deux idées pour arriver à cinq objectifs.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Dans la triade CIA", "Ajoutée par le NIST"],
+            "items": [
+              { "text": "Confidentialité", "category": "Dans la triade CIA" },
+              { "text": "Intégrité", "category": "Dans la triade CIA" },
+              { "text": "Disponibilité", "category": "Dans la triade CIA" },
+              { "text": "Responsabilité (accountability)", "category": "Ajoutée par le NIST" },
+              { "text": "Garantie (assurance)", "category": "Ajoutée par le NIST" }
+            ]
+          }
+        },
+        {
+          "id": "d1-limites-4",
+          "type": "why",
+          "question": "Pourquoi la triade CIA ne suffit-elle plus toute seule ?",
+          "answer": "Elle est très simple et date des années 1960. Avec les systèmes répartis et les nouvelles technologies, elle ne traite pas directement l'authenticité ni la non-répudiation.",
+          "explanation": "Sa simplicité est sa force, mais aussi sa limite.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Limitations of the CIA Triad » : la triade vient de travaux théoriques du milieu des années 1960.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-limites-5",
+          "type": "qcm",
+          "question": "Une entreprise teste régulièrement ses protections pour être sûre qu'elles marchent. Quelle idée du NIST cela illustre-t-il ?",
+          "options": ["La responsabilité (accountability)", "La garantie (assurance)", "La vie privée (privacy)"],
+          "options_why": [
+            "La responsabilité relie une action à son auteur, elle ne vérifie pas les protections.",
+            "",
+            "La vie privée parle des données sur des personnes, pas du bon fonctionnement des protections."
+          ],
+          "answer": "La garantie (assurance)",
+          "explanation": "Tester, c'est se donner une base de confiance que les mesures fonctionnent comme prévu.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-limites-6",
+          "type": "flash",
+          "question": "Qu'est-ce que le NIST ?",
+          "answer": "Le National Institute of Standards and Technology : un organisme américain de normes. Son travail reste une référence en bonnes pratiques de sécurité.",
+          "explanation": "Retiens le sigle : NIST, et son rôle de référence.",
+          "explanation_more": "Le manuel dit que le travail du NIST reste influent pour codifier les bonnes pratiques de sécurité des systèmes. Que ce soit un organisme américain est hors manuel.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-limites-7",
+          "type": "cloze",
+          "question": "Le NIST ajoute à la triade la [[responsabilité|accountability]] et la [[garantie|assurance]].",
+          "answer": "Le NIST ajoute à la triade la responsabilité et la garantie.",
+          "explanation": "Deux ajouts : les actions reliées à leur auteur, et la confiance dans les protections.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-limites-8",
+          "type": "whatif",
+          "question": "Et si une entreprise ne pouvait pas savoir qui a modifié un fichier ?",
+          "answer": "Elle perdrait la responsabilité (accountability) : impossible de relier l'action à son auteur. Elle ne pourrait ni corriger l'erreur ni repérer un abus.",
+          "explanation": "Savoir qui a fait quoi est la base pour corriger et prévenir.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-limites-9",
+          "type": "flash",
+          "question": "Quel est le titre du document du NIST (SP 800-33) qui reprend la triade CIA ?",
+          "answer": "Underlying Technical Models for Information Technology Security.",
+          "explanation": "Un titre à reconnaître, avec le numéro 800-33.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Limitations of the CIA Triad ».",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "d1-hexad",
+      "name": "L'hexade de Parker (Parkerian Hexad)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La clé USB perdue",
+          "paragraphes": [
+            "Ton ami perd sa clé USB dans le bus. Elle contient son devoir, mais le devoir est chiffré : personne ne peut le lire. Le devoir est intact.",
+            "Pourtant, quelqu'un d'autre a maintenant la clé dans sa poche. Ton ami a perdu le contrôle de l'endroit où se trouve son information.",
+            "Un pionnier de la sécurité, Donn B. Parker, a ajouté de nouvelles idées à la triade pour couvrir ce genre de cas."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme un dé à six faces",
+          "comme": "Un dé a six faces bien séparées. Aucune n'est la copie d'une autre, et chacune a son propre chiffre.",
+          "enVrai": "L'hexade de Parker (Parkerian Hexad) a six idées : les trois piliers de la triade, plus trois autres. Parker voulait qu'elles soient atomiques (impossibles à découper davantage) et sans recouvrement (chacune est différente des autres)."
+        },
+        {
+          "type": "predire",
+          "question": "Tu perds dans le bus une clé USB chiffrée et sans virus. Quelle idée de Parker est la plus touchée ?",
+          "options": [
+            "La possession ou le contrôle (possession or control)",
+            "L'utilité (utility)",
+            "L'authenticité (authenticity)"
+          ],
+          "answer": "La possession ou le contrôle (possession or control)",
+          "explanation": "Les données ne sont ni lues ni changées, mais tu ne sais plus où se trouve la clé. Les deux autres idées sont tentantes, mais elles parlent d'autre chose."
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme une recette en langue inconnue",
+          "comme": "Tu as une recette de gâteau, intacte et complète. Mais elle est écrite dans une langue que tu ne comprends pas. Tu l'as, et pourtant elle ne te sert à rien.",
+          "enVrai": "C'est l'utilité (utility) : l'information est-elle utile pour celui qui la reçoit ? Une information peut être disponible et pourtant inutilisable."
+        },
+        {
+          "type": "exemple",
+          "titre": "Trois ajouts en situation",
+          "texte": "Un mail arrive au nom de ton directeur. L'authenticité demande : qui l'a vraiment écrit ? Un fichier est chiffré et sa clé est perdue : l'utilité est perdue. Une clé USB est volée : la possession ou le contrôle est perdu."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-hexad-conf-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : Parkerian Hexad, « Confidentiality »",
+          "answer": "Confidentiality: The limits on who has access to information\n\nTraduction : Confidentialité : les limites de qui a accès à l'information.",
+          "explanation": "Le même pilier que dans la triade, dit autrement : qui a le droit d'y accéder.",
+          "explanation_more": "Manuel (ISC)2, domaine 1, section « Limitations of the CIA Triad » : première des six idées de l'hexade de Parker.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-conf-def3",
+          "type": "cloze",
+          "question": "Confidentiality: The [[limits]] on [[who has access]] to [[information]]",
+          "answer": "Confidentiality: The limits on who has access to information",
+          "explanation": "Trois blocs : les limites, qui a accès, à l'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-integ-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : Parkerian Hexad, « Integrity »",
+          "answer": "Integrity: Whether the information is in its intended state\n\nTraduction : Intégrité : l'information est-elle dans son état prévu ?",
+          "explanation": "Dans l'état prévu : ni abîmée, ni changée par erreur.",
+          "explanation_more": "Manuel (ISC)2, domaine 1 : deuxième idée de l'hexade.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-integ-def3",
+          "type": "cloze",
+          "question": "Integrity: [[Whether]] the [[information]] is in its [[intended state]]",
+          "answer": "Integrity: Whether the information is in its intended state",
+          "explanation": "Trois blocs : la question Whether, l'information, son état prévu.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-dispo-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : Parkerian Hexad, « Availability »",
+          "answer": "Availability: Whether the information can be accessed in a timely manner\n\nTraduction : Disponibilité : l'information peut-elle être consultée en temps voulu ?",
+          "explanation": "Le mot clé est timely : à temps, quand on en a besoin.",
+          "explanation_more": "Manuel (ISC)2, domaine 1 : troisième idée de l'hexade.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-dispo-def3",
+          "type": "cloze",
+          "question": "Availability: [[Whether the information]] can be [[accessed]] in a [[timely manner]]",
+          "answer": "Availability: Whether the information can be accessed in a timely manner",
+          "explanation": "Trois blocs : la question, accéder à l'information, en temps voulu.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-auth-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : Parkerian Hexad, « Authenticity »",
+          "answer": "Authenticity: The proper attribution of the person who created the information\n\nTraduction : Authenticité : l'attribution correcte de la personne qui a créé l'information.",
+          "explanation": "Attribuer, c'est dire qui est l'auteur : la bonne personne, pas un imposteur.",
+          "explanation_more": "Manuel (ISC)2, domaine 1 : quatrième idée de l'hexade, la première qui s'ajoute à la triade.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-auth-def3",
+          "type": "cloze",
+          "question": "Authenticity: The [[proper attribution]] of the [[person who created]] the [[information]]",
+          "answer": "Authenticity: The proper attribution of the person who created the information",
+          "explanation": "Trois blocs : la bonne attribution, la personne qui a créé, l'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-util-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : Parkerian Hexad, « Utility »",
+          "answer": "Utility: The usefulness of the information\n\nTraduction : Utilité : le caractère utile de l'information.",
+          "explanation": "Pense à la recette en langue inconnue : intacte, mais inutile.",
+          "explanation_more": "Manuel (ISC)2, domaine 1 : cinquième idée de l'hexade.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-util-def3",
+          "type": "cloze",
+          "question": "[[Utility]]: The [[usefulness]] of the [[information]]",
+          "answer": "Utility: The usefulness of the information",
+          "explanation": "Trois blocs : le nom, utility, usefulness (le caractère utile), et l'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-poss-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : Parkerian Hexad, « Possession or control »",
+          "answer": "Possession or control: The physical state where the information is maintained\n\nTraduction : Possession ou contrôle : l'état physique dans lequel l'information est conservée.",
+          "explanation": "C'est l'endroit réel où se trouve l'information : la clé USB est-elle encore avec toi ?",
+          "explanation_more": "Manuel (ISC)2, domaine 1 : sixième idée de l'hexade.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-poss-def3",
+          "type": "cloze",
+          "question": "Possession or control: The [[physical state]] where the [[information]] is [[maintained]]",
+          "answer": "Possession or control: The physical state where the information is maintained",
+          "explanation": "Trois blocs : l'état physique, l'information, où elle est conservée.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-hexad-1",
+          "type": "duel",
+          "question": "Une clé USB chiffrée est perdue dans le bus. Quelle idée de Parker est la plus touchée ?",
+          "options": ["La possession ou le contrôle", "L'utilité"],
+          "answer": "La possession ou le contrôle",
+          "explanation": "L'information n'est ni lue ni changée, mais tu ne contrôles plus où elle est.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-hexad-2",
+          "type": "qcm",
+          "question": "Parker garde la triade CIA et ajoute trois idées. Lesquelles ?",
+          "options": [
+            "Responsabilité, garantie, vie privée",
+            "Authenticité, utilité, possession ou contrôle",
+            "Authenticité, non-répudiation, vie privée",
+            "Chiffrement, sauvegarde, pare-feu"
+          ],
+          "options_why": [
+            "Ces notions viennent du NIST et du manuel, pas de l'hexade de Parker.",
+            "",
+            "L'authenticité est bien chez Parker, mais pas la non-répudiation ni la vie privée.",
+            "Ce sont des mesures de protection, pas des idées du modèle."
+          ],
+          "answer": "Authenticité, utilité, possession ou contrôle",
+          "explanation": "Ces trois ajouts, avec la triade, font six idées : c'est l'hexade.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-hexad-3",
+          "type": "sort",
+          "question": "Cette idée est-elle déjà dans la triade CIA, ou ajoutée par Parker ?",
+          "answer": "Déjà dans la triade : confidentialité, intégrité, disponibilité. Ajoutées par Parker : authenticité, utilité, possession ou contrôle.",
+          "explanation": "Les trois premières, tu les connais déjà. Les trois autres sont les nouveautés de Parker.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Déjà dans la triade CIA", "Ajoutée par Parker"],
+            "items": [
+              { "text": "Confidentialité", "category": "Déjà dans la triade CIA" },
+              { "text": "Intégrité", "category": "Déjà dans la triade CIA" },
+              { "text": "Disponibilité", "category": "Déjà dans la triade CIA" },
+              { "text": "Authenticité", "category": "Ajoutée par Parker" },
+              { "text": "Utilité", "category": "Ajoutée par Parker" },
+              { "text": "Possession ou contrôle", "category": "Ajoutée par Parker" }
+            ]
+          }
+        },
+        {
+          "id": "d1-hexad-4",
+          "type": "why",
+          "question": "Pourquoi Parker voulait-il des idées « atomiques » et sans recouvrement ?",
+          "answer": "Atomique : on ne peut plus la découper. Sans recouvrement : chaque idée est différente des autres. Ainsi, aucune n'en répète une autre.",
+          "explanation": "Six idées bien séparées décrivent plus clairement les risques.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Limitations of the CIA Triad » : concepts « atomic » et « nonoverlapping ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-hexad-5",
+          "type": "flash",
+          "question": "Qui a proposé l'extension la plus répandue de la triade CIA ?",
+          "answer": "Donn B. Parker, un pionnier de la sécurité de l'information. Son modèle s'appelle la Parkerian Hexad, l'hexade de Parker.",
+          "explanation": "Hexad veut dire un groupe de six.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. Le manuel ajoute que d'autres travaux ont produit des dizaines de modèles de sécurité de l'information.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-hexad-6",
+          "type": "problem",
+          "question": "Une entreprise perd un ordinateur portable chiffré dans un taxi. Quelle idée de l'hexade est surtout en jeu, et pourquoi ?",
+          "answer": "La possession ou le contrôle : l'entreprise ne sait plus où est l'information. Le chiffrement peut protéger le secret, mais le contrôle physique est perdu.",
+          "explanation": "Le secret peut rester protégé alors que le contrôle de l'objet est perdu.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-hexad-7",
+          "type": "cloze",
+          "question": "L'hexade de Parker ajoute à la triade l'authenticité, l'utilité et la [[possession]] ou le [[contrôle]].",
+          "answer": "L'hexade de Parker ajoute à la triade l'authenticité, l'utilité et la possession ou le contrôle.",
+          "explanation": "Trois ajouts, qui donnent avec la triade les six idées de l'hexade.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-hexad-8",
+          "type": "duel",
+          "question": "Un fichier arrive à temps, mais il est illisible pour toi. Quelle idée de Parker est touchée ?",
+          "options": ["La disponibilité", "L'utilité"],
+          "answer": "L'utilité",
+          "explanation": "Il arrive à temps : la disponibilité est respectée. Mais il ne te sert à rien : l'utilité manque.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

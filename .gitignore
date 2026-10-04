@@ -47,3 +47,6 @@ next-env.d.ts
 # Fichiers sensibles déposés dans le dossier : jamais publiés
 *.key
 *.rdp
+
+# Manuels sources (livres sous droits) : jamais publiés
+/Univers Informatique a Renommer/

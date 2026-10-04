@@ -1,0 +1,1650 @@
+{
+  "id": "d1-m10-personnel",
+  "name": "D1.10 La sécurité du personnel",
+  "galaxie": {
+    "teinte": 220,
+    "ambiance": "calme"
+  },
+  "concepts": [
+    {
+      "id": "d1-pers-recrut",
+      "name": "Le recrutement sécurisé (candidate screening)",
+      "planete": {
+        "relief": "glacee"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le nouveau du club de robotique",
+          "paragraphes": [
+            "Ton club de robotique cherche un nouveau membre. Il recevra la clé de la salle où dort le matériel cher.",
+            "Le club ne choisit pas au hasard. Il écrit d'abord ce que le membre devra faire. Il se demande aussi quels dégâts une bêtise pourrait causer.",
+            "Pour une entreprise, c'est le recrutement sécurisé (candidate screening) : on vérifie avant de donner l'accès."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Plus la clé est puissante, plus on vérifie",
+          "comme": "Pour prêter la clé du placard à balais, on ne vérifie presque rien. Pour la clé du coffre, on prend beaucoup plus de précautions.",
+          "enVrai": "Chaque poste reçoit un niveau de sensibilité, selon les dégâts qu'une personne pourrait causer, exprès ou par négligence. Le NIST appelle cela la désignation de risque (risk designation). Plus le niveau est élevé, plus la vérification est poussée."
+        },
+        {
+          "type": "predire",
+          "question": "Quel poste mérite la vérification la plus poussée ?",
+          "options": [
+            "Une personne qui accueille les visiteurs",
+            "Un administrateur qui peut ouvrir toutes les bases de données",
+            "Un stagiaire qui range les fournitures"
+          ],
+          "answer": "Un administrateur qui peut ouvrir toutes les bases de données",
+          "explanation": "Plus un poste donne de pouvoir sur les données, plus une erreur ou une trahison fait de dégâts. La vérification doit suivre ce niveau."
+        },
+        {
+          "type": "exemple",
+          "titre": "La vérification d'un comptable",
+          "texte": "Une banque veut embaucher un comptable. Elle fait une vérification des antécédents (background check). Elle contrôle ses diplômes, ses anciens emplois, son casier judiciaire et ses références. Le poste touche l'argent des clients, donc elle regarde aussi sa situation financière."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les réseaux sociaux du candidat",
+          "texte": "Un recruteur regarde les profils en ligne d'un candidat. Pour que ce soit juste, l'entreprise a des règles écrites. Elles disent ce qu'on a le droit de regarder, quelles informations on retient, et le candidat en est informé."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-recrut-1",
+          "type": "qcm",
+          "question": "À quoi sert une fiche de poste claire, en plus de trouver la bonne personne ?",
+          "options": [
+            "À mesurer ensuite l'employé par rapport à ce qui était attendu",
+            "À remplacer le contrat de travail",
+            "À fixer le salaire de l'employé",
+            "À décider tout seul de ses accès aux données"
+          ],
+          "options_why": [
+            "",
+            "Le contrat de travail est un autre document, signé par les deux parties.",
+            "Le salaire se décide à part, ce n'est pas le rôle de la fiche.",
+            "Les accès dépendent de la sensibilité du poste, pas seulement de la fiche."
+          ],
+          "answer": "À mesurer ensuite l'employé par rapport à ce qui était attendu",
+          "explanation": "La fiche sert de mètre : on compare plus tard ce que fait l'employé à ce qui avait été annoncé.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Candidate Screening and Hiring ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-2",
+          "type": "duel",
+          "question": "Qui rédige la fiche de poste ?",
+          "options": [
+            "Le responsable du recrutement avec les ressources humaines (RH)",
+            "L'équipe de sécurité, toute seule"
+          ],
+          "answer": "Le responsable du recrutement avec les ressources humaines (RH)",
+          "explanation": "Les RH sont le service qui gère les employés. Le responsable connaît le poste, les RH connaissent les règles d'embauche.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « the hiring manager should work with HR to clearly and concisely document the job description ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-3",
+          "type": "flash",
+          "question": "Sur quoi se base le niveau de sensibilité d'un poste ?",
+          "answer": "Sur les dégâts qu'une personne à ce poste pourrait causer en violant les règles de sécurité, exprès ou par négligence.",
+          "explanation": "Plus les dégâts possibles sont grands, plus le poste est sensible.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. Le NIST appelle ce niveau la « risk designation ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-4",
+          "type": "why",
+          "question": "Pourquoi la vérification doit-elle être plus poussée pour un poste sensible ?",
+          "answer": "Plus le poste donne de pouvoir, plus une erreur ou une trahison peut faire de dégâts. La vérification doit correspondre à ce niveau de danger.",
+          "explanation": "On vérifie davantage celui à qui on confie la clé du coffre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-5",
+          "type": "qcm",
+          "question": "Laquelle de ces vérifications ne figure pas dans la liste du manuel ?",
+          "options": [
+            "Les opinions politiques",
+            "Les antécédents judiciaires (criminal record)",
+            "Les références",
+            "Les études (education)"
+          ],
+          "options_why": [
+            "",
+            "Le casier judiciaire est bien dans la liste du manuel.",
+            "Les références sont bien dans la liste du manuel.",
+            "Les études sont bien dans la liste du manuel."
+          ],
+          "answer": "Les opinions politiques",
+          "explanation": "La liste du manuel : études, emplois passés, citoyenneté, casier judiciaire, finances et références.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « Education, Work history, Citizenship, Criminal record, Credit and financial history, References ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-6",
+          "type": "cloze",
+          "question": "Une vérification peut couvrir les études, le travail passé, la [[citoyenneté]], le [[casier judiciaire]], les finances et les références.",
+          "answer": "Une vérification peut couvrir les études, le travail passé, la citoyenneté, le casier judiciaire, les finances et les références.",
+          "explanation": "Six points de contrôle pour confirmer la candidature.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-7",
+          "type": "sort",
+          "question": "Vérification de base ou vérification renforcée ?",
+          "answer": "De base : diplômes, références, historique de travail. Renforcée : test de dépistage de drogue, enquête approfondie, habilitation de sécurité.",
+          "explanation": "Le manuel réserve les contrôles supplémentaires aux postes très sensibles ou qui demandent une habilitation spéciale.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. Drug testing et enquête en plus pour les rôles très sensibles. Ou une « special security clearance », surtout pour l'État.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Vérification de base",
+              "Vérification renforcée"
+            ],
+            "items": [
+              {
+                "text": "Contrôler les diplômes",
+                "category": "Vérification de base"
+              },
+              {
+                "text": "Contacter les références",
+                "category": "Vérification de base"
+              },
+              {
+                "text": "Contrôler l'historique de travail",
+                "category": "Vérification de base"
+              },
+              {
+                "text": "Faire un test de dépistage de drogue",
+                "category": "Vérification renforcée"
+              },
+              {
+                "text": "Mener une enquête approfondie pour un poste très sensible",
+                "category": "Vérification renforcée"
+              },
+              {
+                "text": "Demander une habilitation : un accès officiel à des informations très secrètes",
+                "category": "Vérification renforcée"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-recrut-8",
+          "type": "qcm",
+          "question": "Une entreprise regarde les réseaux sociaux d'un candidat, sans le lui dire et sans règles. Que dit le manuel ?",
+          "options": [
+            "Il faut des règles claires et prévenir les candidats",
+            "C'est normal, les profils sont publics",
+            "C'est interdit dans tous les pays",
+            "Il faut seulement regarder les photos"
+          ],
+          "options_why": [
+            "",
+            "Le manuel demande des règles claires, même si les profils sont publics.",
+            "Le manuel ne dit pas que c'est interdit partout. Il demande un cadre précis.",
+            "Le manuel parle d'informations choisies à l'avance, pas seulement de photos."
+          ],
+          "answer": "Il faut des règles claires et prévenir les candidats",
+          "explanation": "Les règles évitent les abus et rendent la méthode juste pour tous les candidats.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note sur les recherches en ligne.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-9",
+          "type": "flash",
+          "question": "Que doit prévoir une entreprise qui regarde les réseaux sociaux d'un candidat ?",
+          "answer": "Quels usages sont appropriés, quelles informations on retient, comment on vérifie qu'elles sont exactes, et le fait de prévenir les candidats.",
+          "explanation": "Quatre idées : usage, informations, exactitude, information du candidat.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note sur les recherches en ligne.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-10",
+          "type": "whatif",
+          "question": "Et si on donne à un nouvel administrateur tous les accès sans rien vérifier de son passé ?",
+          "answer": "S'il est malhonnête ou imprudent, il peut faire énormément de dégâts. On aurait dû vérifier avant de lui faire confiance.",
+          "explanation": "Un accès puissant demande une confiance vérifiée.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-11",
+          "type": "flash",
+          "question": "En tant que CISSP, que dois-tu vérifier à propos du recrutement ?",
+          "answer": "Que l'entreprise a des politiques et des procédures pour vérifier et embaucher selon les règlements de sa juridiction.",
+          "explanation": "Chaque pays ou région a ses propres règles sur ce qu'on peut contrôler.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Candidate Screening and Hiring ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-12",
+          "type": "problem",
+          "question": "Un hôpital recrute un technicien qui gérera les dossiers des patients. Quelles vérifications proposes-tu ?",
+          "answer": "Vérifier ses diplômes et son historique de travail, contrôler son casier judiciaire et contacter ses références. Le poste est sensible, donc la vérification doit être sérieuse.",
+          "explanation": "Des données de santé sont très sensibles : on adapte la vérification à ce niveau.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-recrut-13",
+          "type": "flash",
+          "question": "Qu'est-ce qu'une vérification des antécédents (background check) ?",
+          "answer": "Une vérification où l'entreprise confirme les informations de la candidature et la capacité du candidat à occuper le poste.",
+          "explanation": "On vérifie que le candidat est bien celui qu'il dit être.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Candidate Screening and Hiring ».",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-accords",
+      "name": "Les accords signés par l'employé (NDA, noncompete)",
+      "planete": {
+        "relief": "rocheuse"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Les tactiques secrètes de l'équipe",
+          "paragraphes": [
+            "Tu rejoins une équipe de jeu vidéo en ligne. Le capitaine te donne ses tactiques secrètes. Avant, il te demande une promesse : ne jamais les raconter.",
+            "Il ajoute une deuxième demande : si tu pars, ne pas rejoindre l'équipe rivale pendant un moment.",
+            "Dans une entreprise, ces deux promesses sont écrites et signées. Elles s'appellent l'accord de confidentialité (NDA) et l'accord de non-concurrence (noncompete)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Deux promesses différentes",
+          "comme": "La première promesse dit : tu ne répéteras pas nos secrets. La seconde dit : tu ne joueras pas pour nos rivaux pendant un temps.",
+          "enVrai": "Le NDA protège les informations sensibles : secrets de fabrication (trade secrets), fichiers clients. Il dure souvent toute la vie. Le noncompete protège l'entreprise contre la concurrence déloyale d'un ancien employé, pendant un temps fixé. L'image s'arrête ici : ce sont des contrats signés, pas de simples promesses."
+        },
+        {
+          "type": "predire",
+          "question": "Un ingénieur quitte une entreprise de téléphones. Il révèle les plans secrets d'un futur modèle. Quel accord a-t-il violé ?",
+          "options": [
+            "Le noncompete",
+            "Le NDA",
+            "Aucun des deux"
+          ],
+          "answer": "Le NDA",
+          "explanation": "Révéler des informations secrètes, c'est ce que le NDA interdit. Le noncompete, lui, interdit de travailler pour un concurrent."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le contrat d'un ingénieur",
+          "texte": "Un ingénieur en matériel est embauché par un fabricant de téléphones. Il signe un NDA : il ne dira rien de ses plans. Il signe aussi un noncompete : il ne travaillera pas pour un concurrent pendant dix-huit mois après son départ."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les autres règles à signer",
+          "texte": "L'employé signe souvent d'autres règles. La politique d'utilisation acceptable (acceptable use policy) dit ce qu'on peut faire avec le matériel de l'entreprise. Le code de conduite (code of conduct) dit comment bien se comporter. La politique de conflit d'intérêts (conflict of interest) dit comment ne pas mélanger intérêt personnel et intérêt de l'entreprise."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-accords-nda-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « nondisclosure agreement (NDA) »",
+          "answer": "A nondisclosure agreement (NDA) is an agreement that restricts an employee or contractor (or anyone else with access to sensitive information) from disclosing sensitive information they obtain through the course of their employment or relationship with an organization.\n\nTraduction : Un accord de confidentialité (NDA) est un accord qui interdit à un employé ou à un prestataire (ou à toute autre personne ayant accès à des informations sensibles) de révéler les informations sensibles obtenues au cours de son emploi ou de sa relation avec une organisation.",
+          "explanation": "Pense à la promesse de ne pas raconter les tactiques secrètes de l'équipe.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Employment Agreements and Policies ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-nda-def2",
+          "type": "cloze",
+          "question": "A nondisclosure agreement (NDA) is an agreement that [[restricts]] an employee or contractor (or anyone else with access to sensitive information) from [[disclosing]] sensitive information they obtain through the course of their employment or relationship with an organization.",
+          "answer": "A nondisclosure agreement (NDA) is an agreement that restricts an employee or contractor (or anyone else with access to sensitive information) from disclosing sensitive information they obtain through the course of their employment or relationship with an organization.",
+          "explanation": "Un accord qui interdit (restricts) de révéler (disclosing).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-nda-def3",
+          "type": "cloze",
+          "question": "A nondisclosure agreement (NDA) is an agreement that [[restricts an employee or contractor]] (or anyone else with access to sensitive information) from [[disclosing sensitive information]] they obtain through [[the course of their employment]] or relationship with an organization.",
+          "answer": "A nondisclosure agreement (NDA) is an agreement that restricts an employee or contractor (or anyone else with access to sensitive information) from disclosing sensitive information they obtain through the course of their employment or relationship with an organization.",
+          "explanation": "Trois blocs : qui est limité, ce qu'il ne doit pas révéler, et d'où viennent les informations.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-nda-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle d'un « nondisclosure agreement (NDA) » (en anglais).",
+          "answer": "A nondisclosure agreement (NDA) is an agreement that restricts an employee or contractor (or anyone else with access to sensitive information) from disclosing sensitive information they obtain through the course of their employment or relationship with an organization.\n\nTraduction : Un accord de confidentialité (NDA) est un accord qui interdit à un employé ou à un prestataire (ou à toute autre personne ayant accès à des informations sensibles) de révéler les informations sensibles obtenues au cours de son emploi ou de sa relation avec une organisation.",
+          "explanation": "Phrase longue : retiens qui est visé, ce qui est interdit, et d'où viennent les informations.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-nc-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « noncompete agreement »",
+          "answer": "A noncompete agreement is an agreement that restricts an employee from directly competing with the organization during their employment and, in most cases, for a fixed time after employment.\n\nTraduction : Un accord de non-concurrence est un accord qui interdit à un employé de faire directement concurrence à l'organisation pendant son emploi et, dans la plupart des cas, pendant une durée fixe après son départ.",
+          "explanation": "Pense à la promesse de ne pas jouer pour l'équipe rivale pendant un temps.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Employment Agreements and Policies ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-nc-def2",
+          "type": "cloze",
+          "question": "A noncompete agreement is an agreement that restricts an employee from directly [[competing]] with the organization during their employment and, in most cases, for a [[fixed]] time after employment.",
+          "answer": "A noncompete agreement is an agreement that restricts an employee from directly competing with the organization during their employment and, in most cases, for a fixed time after employment.",
+          "explanation": "Interdit de faire concurrence, pendant un temps fixé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-nc-def3",
+          "type": "cloze",
+          "question": "A noncompete agreement is an agreement that restricts an employee from [[directly competing with the organization]] during [[their employment]] and, in most cases, for [[a fixed time after employment]].",
+          "answer": "A noncompete agreement is an agreement that restricts an employee from directly competing with the organization during their employment and, in most cases, for a fixed time after employment.",
+          "explanation": "Trois blocs : faire concurrence directement, pendant l'emploi, et un temps fixé après.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-nc-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle d'un « noncompete agreement » (en anglais).",
+          "answer": "A noncompete agreement is an agreement that restricts an employee from directly competing with the organization during their employment and, in most cases, for a fixed time after employment.\n\nTraduction : Un accord de non-concurrence est un accord qui interdit à un employé de faire directement concurrence à l'organisation pendant son emploi et, dans la plupart des cas, pendant une durée fixe après son départ.",
+          "explanation": "Compare avec le NDA : ici on parle de concurrence et d'un temps fixé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-ncsens-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le sens du « noncompete »",
+          "answer": "Noncompetes are one-way agreements that are designed to protect organizations from unfair competition by former employees or contractors.\n\nTraduction : Les accords de non-concurrence sont des accords à sens unique, conçus pour protéger les organisations contre la concurrence déloyale d'anciens employés ou prestataires.",
+          "explanation": "À sens unique : seule l'entreprise est protégée.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Employment Agreements and Policies ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-ncsens-def3",
+          "type": "cloze",
+          "question": "Noncompetes are [[one-way agreements]] that are designed to [[protect organizations]] from [[unfair competition]] by former employees or contractors.",
+          "answer": "Noncompetes are one-way agreements that are designed to protect organizations from unfair competition by former employees or contractors.",
+          "explanation": "Trois blocs : à sens unique, protéger les organisations, contre la concurrence déloyale.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-ndabut-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : à quoi sert un « NDA » et combien de temps dure-t-il",
+          "answer": "An NDA is designed to protect the confidentiality of the organization's data (such as trade secrets or customer information) and is often a lifetime agreement (even after the employee leaves the company).\n\nTraduction : Un NDA est conçu pour protéger la confidentialité des données de l'organisation (comme les secrets de fabrication ou les informations sur les clients) et c'est souvent un accord à vie (même après le départ de l'employé).",
+          "explanation": "Il protège les secrets, et il dure souvent toute la vie.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Employment Agreements and Policies ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-ndabut-def3",
+          "type": "cloze",
+          "question": "An NDA is designed to [[protect the confidentiality]] of the organization's data (such as trade secrets or customer information) and is often [[a lifetime agreement]] (even after [[the employee leaves the company]]).",
+          "answer": "An NDA is designed to protect the confidentiality of the organization's data (such as trade secrets or customer information) and is often a lifetime agreement (even after the employee leaves the company).",
+          "explanation": "Trois blocs : protéger la confidentialité, un accord à vie, même après le départ.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-accords-1",
+          "type": "duel",
+          "question": "Un ancien employé raconte la recette secrète de l'entreprise à un journal. Quel accord est en cause ?",
+          "options": [
+            "Le NDA",
+            "Le noncompete"
+          ],
+          "answer": "Le NDA",
+          "explanation": "Il a révélé une information secrète. C'est le NDA qui l'interdit.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-accords-2",
+          "type": "qcm",
+          "question": "Combien de temps dure souvent un NDA ?",
+          "options": [
+            "Souvent toute la vie, même après le départ",
+            "Seulement tant que l'employé travaille là",
+            "Un an après le départ, comme un noncompete",
+            "Jusqu'à la fin de l'année en cours"
+          ],
+          "options_why": [
+            "",
+            "Après le départ, l'employé connaît toujours les secrets : l'accord continue.",
+            "La durée fixée après le départ est le propre du noncompete.",
+            "Un NDA ne s'arrête pas à une date de calendrier."
+          ],
+          "answer": "Souvent toute la vie, même après le départ",
+          "explanation": "Les secrets restent des secrets, même quand la personne a quitté l'entreprise.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « often a lifetime agreement ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-accords-3",
+          "type": "flash",
+          "question": "Qui protège un noncompete : l'entreprise ou l'employé ?",
+          "answer": "L'entreprise : c'est un accord à sens unique qui la protège contre la concurrence déloyale d'anciens employés.",
+          "explanation": "L'employé promet, l'entreprise ne promet rien en échange dans cet accord.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-accords-4",
+          "type": "duel",
+          "question": "Un ancien employé rejoint directement un concurrent le mois suivant son départ. Quel accord est en cause ?",
+          "options": [
+            "Le noncompete",
+            "Le NDA"
+          ],
+          "answer": "Le noncompete",
+          "explanation": "Il travaille pour un concurrent. Le NDA concerne les secrets révélés, pas l'employeur suivant.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-accords-5",
+          "type": "why",
+          "question": "Pourquoi un NDA continue-t-il souvent après le départ de l'employé ?",
+          "answer": "L'employé connaît encore les secrets après son départ. Sans cet accord, il pourrait les révéler sans conséquence.",
+          "explanation": "Le départ ne fait pas oublier les secrets, donc la promesse reste.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-accords-6",
+          "type": "cloze",
+          "question": "Un NDA protège la [[confidentialité]] des données : secrets de fabrication, informations sur les [[clients]].",
+          "answer": "Un NDA protège la confidentialité des données : secrets de fabrication, informations sur les clients.",
+          "explanation": "Le NDA est un outil de confidentialité, le premier pilier de la sécurité.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-accords-7",
+          "type": "sort",
+          "question": "NDA ou noncompete ? Classe chaque phrase.",
+          "answer": "NDA : interdit de révéler des secrets, dure souvent toute la vie, protège les informations clients. Noncompete : interdit de travailler pour un concurrent direct, dure une période fixée après le départ, protège contre la concurrence déloyale.",
+          "explanation": "Le NDA parle de ce qu'on dit. Le noncompete parle de pour qui on travaille.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "NDA",
+              "Noncompete"
+            ],
+            "items": [
+              {
+                "text": "Interdit de révéler les secrets de l'entreprise",
+                "category": "NDA"
+              },
+              {
+                "text": "Dure souvent toute la vie",
+                "category": "NDA"
+              },
+              {
+                "text": "Protège les informations sur les clients",
+                "category": "NDA"
+              },
+              {
+                "text": "Interdit de travailler pour un concurrent direct",
+                "category": "Noncompete"
+              },
+              {
+                "text": "Dure une période fixée après le départ",
+                "category": "Noncompete"
+              },
+              {
+                "text": "Protège contre la concurrence déloyale d'anciens employés",
+                "category": "Noncompete"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-accords-8",
+          "type": "whatif",
+          "question": "Et si une entreprise n'a pas de noncompete, et que son meilleur ingénieur rejoint un rival ?",
+          "answer": "Le rival profite de ce que l'ingénieur sait sur l'entreprise, sans que rien l'en empêche. L'entreprise subit une concurrence qu'elle juge déloyale.",
+          "explanation": "Le noncompete donne du temps à l'entreprise avant que ce savoir serve un rival.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-accords-9",
+          "type": "flash",
+          "question": "Cite trois règles qu'un employé peut devoir signer, en plus du NDA et du noncompete.",
+          "answer": "Une politique d'utilisation acceptable (acceptable use). Un code de conduite (code of conduct). Une politique sur les conflits d'intérêts (conflict of interest).",
+          "explanation": "Trois règles de bonne conduite que l'employé lit et accepte.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Employment Agreements and Policies ». Les explications simples de chaque politique viennent de nous, hors manuel.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-accords-10",
+          "type": "qcm",
+          "question": "Un employé utilise l'ordinateur de l'entreprise pour télécharger des jeux. Quelle règle signée est visée ?",
+          "options": [
+            "La politique d'utilisation acceptable",
+            "Le noncompete",
+            "Le NDA",
+            "La politique de conflit d'intérêts"
+          ],
+          "options_why": [
+            "",
+            "Il ne travaille pas pour un concurrent, donc le noncompete n'est pas en cause.",
+            "Il ne révèle pas de secret, donc le NDA n'est pas en cause.",
+            "Il ne mélange pas intérêt personnel et intérêt de l'entreprise de façon à la concurrencer."
+          ],
+          "answer": "La politique d'utilisation acceptable",
+          "explanation": "Cette politique dit ce qu'on peut faire avec le matériel de l'entreprise.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-arrivee",
+      "name": "L'arrivée et la mutation d'un employé (onboarding, transfers)",
+      "planete": {
+        "relief": "oceanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Ton premier jour au collège",
+          "paragraphes": [
+            "À la rentrée, on te donne ton emploi du temps, ton casier et le règlement. On t'explique à qui parler si quelque chose ne va pas.",
+            "Quelques mois plus tard, tu changes de classe. Ta vieille clé de la salle de sciences ne devrait plus ouvrir cette porte.",
+            "En entreprise, ces deux moments s'appellent l'arrivée (onboarding) et la mutation (transfer). Chacun a ses règles de sécurité."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le règlement de la rentrée",
+          "comme": "On t'explique le règlement dès le premier jour. Tu sais ce que tu dois faire, et ce qui est surveillé, comme les caméras de la cour.",
+          "enVrai": "L'accueil (onboarding) apprend au nouvel employé ses obligations de protéger l'information. Il apprend comment signaler un incident. Il apprend à reconnaître le niveau de sensibilité (classification) d'une information. On l'informe aussi que ses actions peuvent être surveillées. L'image s'arrête ici : on ne donne pas les détails techniques de cette surveillance."
+        },
+        {
+          "type": "predire",
+          "question": "Une employée change de service. Que faut-il faire de ses anciens accès ?",
+          "options": [
+            "Les garder, au cas où",
+            "Retirer ceux qui ne servent plus",
+            "Les doubler"
+          ],
+          "answer": "Retirer ceux qui ne servent plus",
+          "explanation": "Garder des accès inutiles ouvre des portes pour rien. C'est le moindre privilège (least privilege) qu'on applique."
+        },
+        {
+          "type": "exemple",
+          "titre": "De la comptabilité aux ventes",
+          "texte": "Karim travaillait en comptabilité et voyait les salaires. Il passe aux ventes. Son accès aux salaires ne sert plus : on le retire. Avant la mutation, il suit une formation sur le logiciel de ventes et sur les données des clients."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-arrivee-etapes-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les trois étapes de l'emploi",
+          "answer": "Onboarding, transfers, and termination are three stages of employment that each comes with its own security considerations.\n\nTraduction : L'arrivée, les mutations et le départ sont trois étapes de l'emploi, et chacune a ses propres questions de sécurité.",
+          "explanation": "Trois moments de la vie d'un employé : il arrive, il change de rôle, il part.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Onboarding, Transfers, and Termination Processes ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-arrivee-etapes-def3",
+          "type": "cloze",
+          "question": "[[Onboarding]], [[transfers]], and [[termination]] are three stages of employment that each comes with its own security considerations.",
+          "answer": "Onboarding, transfers, and termination are three stages of employment that each comes with its own security considerations.",
+          "explanation": "Dans l'ordre : l'arrivée, les mutations, le départ.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-arrivee-orient-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le programme d'accueil (orientation)",
+          "answer": "Part of the employee orientation program should address information security expectations and requirements.\n\nTraduction : Une partie du programme d'accueil des employés doit traiter des attentes et des exigences en matière de sécurité de l'information.",
+          "explanation": "Dès l'accueil, on explique ce que l'entreprise attend pour la sécurité.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Onboarding ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-arrivee-orient-def3",
+          "type": "cloze",
+          "question": "Part of the [[employee orientation program]] should address [[information security expectations]] and [[requirements]].",
+          "answer": "Part of the employee orientation program should address information security expectations and requirements.",
+          "explanation": "Trois blocs : le programme d'accueil, les attentes de sécurité, et les exigences.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-arrivee-1",
+          "type": "duel",
+          "question": "On explique à un nouvel employé comment signaler un incident, dès son arrivée. De quelle étape s'agit-il ?",
+          "options": [
+            "L'arrivée (onboarding)",
+            "La mutation (transfer)"
+          ],
+          "answer": "L'arrivée (onboarding)",
+          "explanation": "L'accueil sert à donner les bons réflexes dès le début.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-arrivee-2",
+          "type": "qcm",
+          "question": "Que recommande le manuel de dire au nouvel employé à propos de la surveillance ?",
+          "options": [
+            "Qu'il existe des contrôles qui surveillent l'usage des ressources",
+            "Le détail technique pour qu'il comprenne ces contrôles",
+            "Rien : mieux vaut que la surveillance reste secrète",
+            "Seulement les caméras, pas les outils informatiques"
+          ],
+          "options_why": [
+            "",
+            "Le but n'est pas de donner assez de détails pour contourner les contrôles.",
+            "Savoir qu'on peut être observé rassure et décourage les mauvais comportements.",
+            "Il s'agit de tous les contrôles sur les ressources de l'entreprise, pas seulement des caméras."
+          ],
+          "answer": "Qu'il existe des contrôles qui surveillent l'usage des ressources",
+          "explanation": "L'employé doit savoir que ses actions peuvent être examinées, sans connaître les détails techniques.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Onboarding ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-arrivee-3",
+          "type": "flash",
+          "question": "Cite des sujets que l'accueil doit couvrir sur la sécurité de l'information.",
+          "answer": "Ses obligations de protéger l'information et les menaces actuelles. Comment signaler un incident. Son rôle pour sa zone de travail. Comment reconnaître le niveau de sensibilité des informations.",
+          "explanation": "Le nouvel employé apprend les gestes de base de la sécurité.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Onboarding ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-arrivee-4",
+          "type": "why",
+          "question": "Pourquoi prévenir les employés qu'ils peuvent être surveillés ?",
+          "answer": "Cela les rassure sur la protection de l'information. Savoir qu'on peut être observé décourage aussi les comportements inappropriés.",
+          "explanation": "L'information seule joue déjà un rôle de dissuasion.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-arrivee-5",
+          "type": "cloze",
+          "question": "Lors d'une mutation, on retire les accès qui ne sont plus [[nécessaires]] dans le nouveau rôle : c'est le moindre [[privilège]].",
+          "answer": "Lors d'une mutation, on retire les accès qui ne sont plus nécessaires dans le nouveau rôle : c'est le moindre privilège.",
+          "explanation": "Chaque accès en trop est une porte ouverte pour rien.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-arrivee-6",
+          "type": "whatif",
+          "question": "Et si on ne retire pas les anciens accès d'un employé qui change de poste ?",
+          "answer": "Il garde accès à des informations dont il n'a plus besoin. Après plusieurs mutations, il peut accumuler beaucoup trop de droits.",
+          "explanation": "Le moindre privilège demande de réviser les accès à chaque changement.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-arrivee-7",
+          "type": "qcm",
+          "question": "Une employée passe du support à un poste d'administratrice de bases de données, avec des données plus sensibles. Que faire avant la mutation ?",
+          "options": [
+            "Identifier la formation liée au rôle dont elle a besoin",
+            "La laisser apprendre toute seule en travaillant",
+            "Lui donner tous les accès de l'équipe",
+            "Reporter la formation d'un an"
+          ],
+          "options_why": [
+            "",
+            "Avec des données plus sensibles, il vaut mieux se former avant, pas pendant.",
+            "Donner tous les accès va contre le moindre privilège.",
+            "Reporter la formation laisse l'employée sans préparation avec des données sensibles."
+          ],
+          "answer": "Identifier la formation liée au rôle dont elle a besoin",
+          "explanation": "Le manuel veut une formation liée au rôle avant la mutation, surtout si les données sont plus sensibles.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Transfers ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-arrivee-8",
+          "type": "sort",
+          "question": "Arrivée (onboarding) ou mutation (transfer) ? Classe chaque action.",
+          "answer": "Arrivée : présenter comment signaler un incident, informer sur les contrôles, présenter les niveaux de sensibilité. Mutation : réviser les accès, retirer les accès inutiles, prévoir une formation du nouveau rôle.",
+          "explanation": "L'arrivée donne les bases à quelqu'un de nouveau. La mutation ajuste les accès et la formation de quelqu'un qui change de rôle.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Arrivée (onboarding)",
+              "Mutation (transfer)"
+            ],
+            "items": [
+              {
+                "text": "Présenter comment signaler un incident",
+                "category": "Arrivée (onboarding)"
+              },
+              {
+                "text": "Informer sur les contrôles qui surveillent l'usage",
+                "category": "Arrivée (onboarding)"
+              },
+              {
+                "text": "Présenter les niveaux de sensibilité des informations",
+                "category": "Arrivée (onboarding)"
+              },
+              {
+                "text": "Réviser les accès que l'employé a déjà",
+                "category": "Mutation (transfer)"
+              },
+              {
+                "text": "Retirer les accès devenus inutiles",
+                "category": "Mutation (transfer)"
+              },
+              {
+                "text": "Prévoir la formation du nouveau rôle",
+                "category": "Mutation (transfer)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-arrivee-9",
+          "type": "flash",
+          "question": "Quand la sécurité commence-t-elle à être abordée avec un nouvel employé ?",
+          "answer": "Avant même son premier jour : on fixe de bonnes attentes sur son comportement avant qu'il arrive.",
+          "explanation": "Les premières attentes donnent le ton pour la suite.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Onboarding ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-arrivee-10",
+          "type": "problem",
+          "question": "Décris ce que tu ferais pour la sécurité d'une employée qui change de service.",
+          "answer": "Réviser ses accès actuels. Retirer ceux dont elle n'a plus besoin. Prévoir la formation liée à son nouveau rôle avant la mutation.",
+          "explanation": "Trois gestes : réviser, retirer, former.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-depart",
+      "name": "Le départ d'un employé (termination)",
+      "planete": {
+        "relief": "volcanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Rendre les clés",
+          "paragraphes": [
+            "Tu quittes un club de sport. Tu rends ton badge et la clé du vestiaire. Le club coupe ton accès à l'application de réservation.",
+            "Si tu pars en bons termes, tout va vite. Si tu es renvoyé après une dispute, le club veut surtout être sûr que tu ne feras rien contre lui.",
+            "Une entreprise suit les mêmes réflexes à chaque départ (termination), choisi ou non."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La liste du départ",
+          "comme": "Le club a une liste : badge rendu, clé rendue, accès coupé, code de la porte changé.",
+          "enVrai": "Pour un départ, l'entreprise suspend les accès électroniques, récupère badges et équipements, compte les clés et change les codes des serrures. Un ancien employé reste un ancien insider : une personne qui connaissait l'intérieur et en sait beaucoup. L'image s'arrête ici : un départ forcé demande plus de prudence qu'un départ calme."
+        },
+        {
+          "type": "predire",
+          "question": "Un employé est renvoyé un vendredi à 15 heures. Quand faut-il désactiver ses accès ?",
+          "options": [
+            "Lundi, quand il aurait repris le travail",
+            "Tout de suite, en lien avec l'annonce",
+            "Après une semaine, le temps de transférer son travail"
+          ],
+          "answer": "Tout de suite, en lien avec l'annonce",
+          "explanation": "L'entreprise doit supposer qu'une personne renvoyée peut être une menace. Des accès gardés plus longtemps sont une porte ouverte."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le technicien qui part en colère",
+          "texte": "Un technicien est renvoyé. Avant de partir, il copie des fichiers clients. Il veut les revendre à un concurrent, ou bloquer l'entreprise avec un ransomware pour demander de l'argent. Un outil d'analyse du comportement (UEBA) repère les gestes inhabituels des utilisateurs : il aurait pu le signaler."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-depart-types-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : départ volontaire et involontaire",
+          "answer": "Terminations may be voluntary (i.e., an employee retires or finds a new job) or involuntary (i.e., an employee is fired, furloughed, or otherwise \"let go\").\n\nTraduction : Les départs peuvent être volontaires (l'employé prend sa retraite ou trouve un nouveau travail) ou involontaires (l'employé est renvoyé, mis en congé forcé ou autrement « laissé partir »).",
+          "explanation": "Volontaire : c'est l'employé qui choisit. Involontaire : c'est l'entreprise qui décide.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Termination ». « Furloughed » veut dire mis en congé forcé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-depart-types-def3",
+          "type": "cloze",
+          "question": "Terminations may be [[voluntary]] (i.e., an employee [[retires or finds a new job]]) or [[involuntary]] (i.e., an employee is fired, furloughed, or otherwise \"let go\").",
+          "answer": "Terminations may be voluntary (i.e., an employee retires or finds a new job) or involuntary (i.e., an employee is fired, furloughed, or otherwise \"let go\").",
+          "explanation": "Deux familles : voluntary avec retraite ou nouveau travail, involuntary avec renvoi.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-depart-menace-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : un départ involontaire",
+          "answer": "In virtually all cases, an involuntary termination forces the employer to assume the terminated individual is a threat to the organization, and appropriate action should be taken to protect organizational assets.\n\nTraduction : Dans presque tous les cas, un départ involontaire oblige l'employeur à supposer que la personne renvoyée est une menace pour l'organisation, et des mesures appropriées doivent être prises pour protéger les actifs de l'organisation.",
+          "explanation": "On suppose le pire pour protéger l'entreprise, sans juger la personne.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Termination ». Les actifs sont ce qui a de la valeur pour l'entreprise.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-depart-menace-def3",
+          "type": "cloze",
+          "question": "In virtually all cases, an involuntary termination forces the employer to assume the terminated individual is [[a threat to the organization]], and [[appropriate action]] should be taken to [[protect organizational assets]].",
+          "answer": "In virtually all cases, an involuntary termination forces the employer to assume the terminated individual is a threat to the organization, and appropriate action should be taken to protect organizational assets.",
+          "explanation": "Trois blocs : une menace possible, des mesures appropriées, protéger les actifs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-depart-1",
+          "type": "duel",
+          "question": "Un employé prend sa retraite. Ce départ est-il volontaire ou involontaire ?",
+          "options": [
+            "Volontaire",
+            "Involontaire"
+          ],
+          "answer": "Volontaire",
+          "explanation": "Le manuel cite la retraite et le nouveau travail comme des départs volontaires.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-depart-2",
+          "type": "sort",
+          "question": "Départ volontaire ou involontaire ? Classe chaque situation.",
+          "answer": "Volontaire : prendre sa retraite, partir pour un autre emploi. Involontaire : être renvoyé, être licencié.",
+          "explanation": "Volontaire : l'employé choisit de partir. Involontaire : l'entreprise décide.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Volontaire",
+              "Involontaire"
+            ],
+            "items": [
+              {
+                "text": "Prendre sa retraite",
+                "category": "Volontaire"
+              },
+              {
+                "text": "Partir pour un autre emploi",
+                "category": "Volontaire"
+              },
+              {
+                "text": "Être renvoyé",
+                "category": "Involontaire"
+              },
+              {
+                "text": "Être licencié par l'entreprise",
+                "category": "Involontaire"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-depart-3",
+          "type": "qcm",
+          "question": "Quelle action fait partie de la liste standard d'un départ en bons termes ?",
+          "options": [
+            "Suspendre les accès électroniques et récupérer badges et équipements",
+            "Laisser les accès actifs une semaine par politesse",
+            "Garder les codes des serrures inchangés",
+            "Laisser l'employé garder son ordinateur"
+          ],
+          "options_why": [
+            "",
+            "Des accès actifs après le départ sont une porte ouverte inutile.",
+            "Il faut changer les codes des serrures que la personne utilisait.",
+            "Le matériel de l'entreprise doit être récupéré."
+          ],
+          "answer": "Suspendre les accès électroniques et récupérer badges et équipements",
+          "explanation": "Le manuel liste : accès coupés, badges et matériel récupérés, clés comptées, codes de serrures changés.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Termination ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-depart-4",
+          "type": "why",
+          "question": "Pourquoi traite-t-on un employé renvoyé comme une menace possible ?",
+          "answer": "Il connaît l'intérieur de l'entreprise et peut être en colère. Il pourrait voler des données ou nuire, par exemple pour les revendre.",
+          "explanation": "La prudence protège l'entreprise sans accuser la personne.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-depart-5",
+          "type": "flash",
+          "question": "Que faire du matériel récupéré chez un employé renvoyé, quand c'est approprié ?",
+          "answer": "Le suivre comme preuve et le garder, pour une analyse en informatique légale (forensics) : chercher des preuves dans les appareils.",
+          "explanation": "Le matériel peut contenir des traces utiles si quelque chose s'est mal passé.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Termination ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-depart-6",
+          "type": "cloze",
+          "question": "On désactive ses accès électroniques et ses accès [[physiques]], puis on récupère les [[badges]] et le matériel.",
+          "answer": "On désactive ses accès électroniques et ses accès physiques, puis on récupère les badges et le matériel.",
+          "explanation": "Les accès à des locaux et les accès aux systèmes se coupent ensemble.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-depart-7",
+          "type": "whatif",
+          "question": "Et si l'entreprise oublie de prévenir l'équipe de sécurité lors d'un renvoi ?",
+          "answer": "Les accès de la personne restent actifs. Elle peut encore entrer dans les systèmes ou les locaux et faire du mal.",
+          "explanation": "Le processus de départ doit prévenir l'équipe de sécurité pour couper les accès.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-depart-8",
+          "type": "qcm",
+          "question": "Après un renvoi, que doit-on dire au reste du personnel ?",
+          "options": [
+            "Que la personne n'a plus accès et de signaler toute tentative d'accès",
+            "Rien, pour ne pas faire de bruit",
+            "Les raisons détaillées du renvoi",
+            "Qu'elle peut revenir chercher ses affaires quand elle veut"
+          ],
+          "options_why": [
+            "",
+            "Sans information, personne ne remarque une tentative d'accès de l'ancien employé.",
+            "Détailler les raisons n'est pas utile pour la sécurité.",
+            "Un accès libre aux locaux va contre la protection des actifs."
+          ],
+          "answer": "Que la personne n'a plus accès et de signaler toute tentative d'accès",
+          "explanation": "Le personnel devient un relais de sécurité : il signale tout accès inhabituel.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Termination ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-depart-9",
+          "type": "flash",
+          "question": "À quoi sert un outil UEBA ?",
+          "answer": "Il analyse le comportement des utilisateurs (User and Entity Behavior Analytics) pour repérer un employé mécontent qui prépare un mauvais coup.",
+          "explanation": "Il cherche les comportements inhabituels, par exemple copier beaucoup de fichiers avant de partir.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, encadré « Tip » dans la section « Termination ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-depart-10",
+          "type": "flash",
+          "question": "Quelles mauvaises actions un employé renvoyé peut-il tenter, selon le manuel ?",
+          "answer": "Voler des données pour les revendre (comme avec un ransomware). S'en servir pour lancer ou rejoindre un concurrent. Ou les révéler pour nuire à l'entreprise.",
+          "explanation": "Trois buts : de l'argent, un avantage concurrentiel, ou une vengeance.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, encadré « Tip » dans la section « Termination ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-depart-11",
+          "type": "problem",
+          "question": "Écris ce qu'il faut faire quand un employé quitte l'entreprise en bons termes.",
+          "answer": "Suspendre ses accès électroniques, récupérer ses badges et son matériel, compter les clés et changer les codes des serrures qu'il utilisait.",
+          "explanation": "Quatre gestes : couper, récupérer, compter, changer.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-tiers",
+      "name": "Fournisseurs, consultants et prestataires (third parties)",
+      "planete": {
+        "relief": "gazeuse"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le plombier chez toi",
+          "paragraphes": [
+            "Un plombier vient réparer ta salle de bains. Tu lui ouvres la porte, et il passe une heure chez toi.",
+            "Tu ne lui donnes pas la clé du coffre ni l'accès à tes photos. Tu lui montres seulement la salle de bains.",
+            "Une entreprise reçoit aussi des personnes de l'extérieur : fournisseurs, consultants, prestataires. Comme toi, elle doit décider ce qu'elles ont le droit de voir."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "L'expert qu'on ne peut pas remplacer",
+          "comme": "Le plombier est un expert que tu ne peux pas remplacer. Il rend service, mais il peut aussi voir ou abîmer ce qu'il ne devrait pas.",
+          "enVrai": "Un fournisseur (vendor) vend des produits ou des services. Un consultant (consultant) donne des conseils d'expert pendant un temps. Un prestataire (contractor) fait un travail précis sans être salarié. Tous reçoivent de l'accès, donc tous ajoutent un risque."
+        },
+        {
+          "type": "predire",
+          "question": "Un consultant externe doit installer un logiciel. Qu'est-ce qui est le plus utile avant qu'il commence ?",
+          "options": [
+            "Un accord de confidentialité (NDA)",
+            "Rien, car il n'est pas salarié",
+            "Un badge d'accès à tout le bâtiment"
+          ],
+          "answer": "Un accord de confidentialité (NDA)",
+          "explanation": "Même sans être salarié, il verra des informations sensibles. Le NDA fixe les attentes avant qu'il commence."
+        },
+        {
+          "type": "exemple",
+          "titre": "La société de nettoyage de nuit",
+          "texte": "Une entreprise engage une société de nettoyage de nuit. Ses employés ont les clés des bureaux. Ils peuvent croiser des documents sur les tables et des écrans allumés. L'entreprise leur fait signer un accord de confidentialité et limite les pièces où ils entrent."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-tiers-risque-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les relations avec des tiers et la sécurité",
+          "answer": "Information security policies should be in place to ensure that these relationships do not expose the organization's sensitive information to an unreasonable amount of risk.\n\nTraduction : Des politiques de sécurité de l'information doivent exister pour garantir que ces relations n'exposent pas les informations sensibles de l'organisation à un niveau de risque déraisonnable.",
+          "explanation": "Des règles écrites évitent que les relations avec l'extérieur mettent les secrets en danger.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Vendor, Consultant, and Contractor Agreements and Controls ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-tiers-risque-def3",
+          "type": "cloze",
+          "question": "[[Information security policies]] should be in place to ensure that these relationships do not [[expose the organization's sensitive information]] to [[an unreasonable amount of risk]].",
+          "answer": "Information security policies should be in place to ensure that these relationships do not expose the organization's sensitive information to an unreasonable amount of risk.",
+          "explanation": "Trois blocs : les politiques de sécurité, les informations sensibles, et un risque déraisonnable.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-tiers-nda-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les accords et les tiers",
+          "answer": "NDAs and other employment agreement policies play a big part in establishing expectations with third parties and can lead to additional compliance burden on the organization who must enforce them.\n\nTraduction : Les NDA et les autres politiques d'accords d'emploi jouent un grand rôle pour fixer les attentes avec les tiers, et peuvent créer une charge de conformité supplémentaire pour l'organisation qui doit les faire respecter.",
+          "explanation": "Ces accords posent les règles, mais l'entreprise doit ensuite les faire respecter.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Vendor, Consultant, and Contractor Agreements and Controls ». « Burden » veut dire charge de travail.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-tiers-nda-def3",
+          "type": "cloze",
+          "question": "NDAs and other employment agreement policies play a big part in [[establishing expectations]] with [[third parties]] and can lead to [[additional compliance burden]] on the organization who must enforce them.",
+          "answer": "NDAs and other employment agreement policies play a big part in establishing expectations with third parties and can lead to additional compliance burden on the organization who must enforce them.",
+          "explanation": "Trois blocs : fixer les attentes, les tiers, et une charge de conformité en plus.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-tiers-1",
+          "type": "duel",
+          "question": "Une société de nettoyage entre la nuit dans les bureaux. Est-elle un risque pour la confidentialité ?",
+          "options": [
+            "Oui, elle a accès aux locaux",
+            "Non, elle n'est pas dans l'entreprise"
+          ],
+          "answer": "Oui, elle a accès aux locaux",
+          "explanation": "Toute personne qui a accès à des lieux ou des données peut voir ce qu'elle ne devrait pas voir.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-tiers-2",
+          "type": "qcm",
+          "question": "Pourquoi une entreprise fait-elle appel à des consultants ou à des fournisseurs ?",
+          "options": [
+            "Elle a besoin de compétences ou de produits qu'elle n'a pas en interne",
+            "Parce que les personnes de l'extérieur sont toujours plus sûres",
+            "Pour ne pas avoir besoin de politique de sécurité",
+            "Pour éviter d'avoir à protéger ses données"
+          ],
+          "options_why": [
+            "",
+            "Elles ont aussi accès à des informations et ajoutent donc un risque.",
+            "Au contraire : ces relations demandent des politiques de sécurité.",
+            "Les données restent à protéger, même quand des externes y accèdent."
+          ],
+          "answer": "Elle a besoin de compétences ou de produits qu'elle n'a pas en interne",
+          "explanation": "Ces relations sont utiles, mais elles ouvrent l'entreprise à un risque supplémentaire.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Vendor, Consultant, and Contractor Agreements and Controls ». Les explications simples de vendor, consultant et contractor viennent de nous, hors manuel.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-tiers-3",
+          "type": "flash",
+          "question": "Quels types de relations avec l'extérieur ouvrent l'entreprise à un risque ?",
+          "answer": "Celles pour des produits et celles pour des services : les deux types d'achat exposent l'organisation à un risque.",
+          "explanation": "Acheter un produit ou un service donne des accès à quelqu'un d'extérieur.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « both types of acquisition open the organization to risk ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-tiers-4",
+          "type": "why",
+          "question": "Pourquoi un NDA aide-t-il aussi avec des prestataires externes ?",
+          "answer": "Il fixe dès le début ce que le prestataire a le droit de dire. Il protège les informations sensibles même s'il n'est pas salarié.",
+          "explanation": "Le NDA ne dépend pas du statut : il suit l'information.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-tiers-5",
+          "type": "cloze",
+          "question": "Les accords comme le NDA fixent des [[attentes]] avec les tiers, mais l'entreprise doit les faire [[respecter]].",
+          "answer": "Les accords comme le NDA fixent des attentes avec les tiers, mais l'entreprise doit les faire respecter.",
+          "explanation": "Signer ne suffit pas : l'entreprise doit vérifier que l'accord est respecté.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-tiers-6",
+          "type": "whatif",
+          "question": "Et si l'entreprise donne à un consultant les mêmes accès qu'à un employé ?",
+          "answer": "Il peut voir bien plus que nécessaire. Cela va contre le moindre privilège et augmente le risque de fuite.",
+          "explanation": "Un accès doit correspondre à la mission, pas au statut.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-tiers-7",
+          "type": "qcm",
+          "question": "Un prestataire de maintenance arrive lundi. Que doit-on prévoir avant son premier jour ?",
+          "options": [
+            "Un accord de confidentialité et des accès limités à sa mission",
+            "Des accès larges, pour qu'il ne soit jamais bloqué",
+            "Un simple accord oral, pour aller vite",
+            "Rien avant la fin de sa première journée"
+          ],
+          "options_why": [
+            "",
+            "Des accès larges vont contre le moindre privilège.",
+            "Un accord oral ne laisse aucune preuve de ce qui a été promis.",
+            "Le risque existe dès qu'il entre : mieux vaut agir avant."
+          ],
+          "answer": "Un accord de confidentialité et des accès limités à sa mission",
+          "explanation": "Un NDA fixe les attentes. Des accès limités réduisent les risques.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-tiers-8",
+          "type": "sort",
+          "question": "Personnel interne ou externe ? Classe chaque personne.",
+          "answer": "Externe : consultant engagé pour un mois, société de nettoyage de nuit, fournisseur de logiciels. Interne : comptable salarié, directrice des ressources humaines, technicien salarié.",
+          "explanation": "Les personnes externes ne sont pas salariées de l'entreprise mais ont tout de même des accès.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Personnel externe",
+              "Personnel interne"
+            ],
+            "items": [
+              {
+                "text": "Un consultant engagé pour un mois",
+                "category": "Personnel externe"
+              },
+              {
+                "text": "Une société de nettoyage de nuit",
+                "category": "Personnel externe"
+              },
+              {
+                "text": "Un fournisseur de logiciels",
+                "category": "Personnel externe"
+              },
+              {
+                "text": "Le comptable salarié de l'entreprise",
+                "category": "Personnel interne"
+              },
+              {
+                "text": "La directrice des ressources humaines",
+                "category": "Personnel interne"
+              },
+              {
+                "text": "Un technicien salarié du service informatique",
+                "category": "Personnel interne"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-tiers-9",
+          "type": "problem",
+          "question": "Écris trois règles de sécurité que tu demanderais avant de laisser un prestataire entrer dans les locaux.",
+          "answer": "Un accord de confidentialité signé. Des accès limités à ce dont il a besoin. La fin de ses accès dès que sa mission est terminée.",
+          "explanation": "Fixer les attentes, limiter l'accès, couper l'accès à la fin.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-conformite",
+      "name": "La conformité du personnel (compliance policy requirements)",
+      "planete": {
+        "relief": "glacee"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le règlement signé",
+          "paragraphes": [
+            "À la rentrée, tu signes une page : « J'ai lu le règlement et je m'engage à le respecter. » Ce papier ne change pas le règlement. Il prouve que tu l'as lu.",
+            "Chaque année, il y a un rappel : une réunion, un petit quiz.",
+            "En entreprise, la signature s'appelle une attestation (attestation), et le rappel annuel une recertification."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La page signée",
+          "comme": "En signant, tu ne peux plus dire : je ne savais pas. Chaque année, tu relis pour ne pas oublier.",
+          "enVrai": "L'attestation est un document signé où l'employé dit qu'il a lu les politiques et qu'il s'engage à les respecter. La formation de départ et les rappels réguliers gardent ses connaissances à jour. L'image s'arrête ici : signer ne suffit pas, il faut aussi comprendre."
+        },
+        {
+          "type": "predire",
+          "question": "Quelle est une bonne façon de rester conforme, selon le manuel ?",
+          "options": [
+            "Une recertification chaque année",
+            "Une seule formation, à l'embauche",
+            "Une formation seulement après un incident"
+          ],
+          "answer": "Une recertification chaque année",
+          "explanation": "Une formation unique s'oublie vite. Attendre un incident, c'est réagir trop tard."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le module de sécurité annuel",
+          "texte": "Chaque année en janvier, tous les employés d'une banque suivent un module de sécurité et signent qu'ils respectent les politiques. Les caissiers ont en plus une formation sur la fraude, car c'est leur métier."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-conformite-resp-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les responsabilités de conformité",
+          "answer": "Responsibilities for compliance with applicable policies and regulations should be clearly documented and understood by all employees within an organization.\n\nTraduction : Les responsabilités de conformité aux politiques et aux règlements applicables doivent être clairement documentées et comprises par tous les employés de l'organisation.",
+          "explanation": "Les règles doivent être écrites, et chacun doit les comprendre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Compliance Policy Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-conformite-resp-def3",
+          "type": "cloze",
+          "question": "Responsibilities for compliance with applicable policies and regulations should be [[clearly documented]] and [[understood by all employees]] within [[an organization]].",
+          "answer": "Responsibilities for compliance with applicable policies and regulations should be clearly documented and understood by all employees within an organization.",
+          "explanation": "Trois blocs : bien documentées, comprises par tous, dans toute l'organisation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-conformite-attest-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'attestation (attestation)",
+          "answer": "In many cases, employees may be required to sign an attestation stating that they have reviewed and agree to comply with all company policies and applicable regulations.\n\nTraduction : Dans de nombreux cas, les employés peuvent devoir signer une attestation déclarant qu'ils ont lu et acceptent de respecter toutes les politiques de l'entreprise et les règlements applicables.",
+          "explanation": "L'attestation prouve que l'employé a lu les règles et accepte de les suivre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Compliance Policy Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-conformite-attest-def3",
+          "type": "cloze",
+          "question": "In many cases, employees may be required to [[sign an attestation]] stating that they have [[reviewed and agree to comply]] with all [[company policies and applicable regulations]].",
+          "answer": "In many cases, employees may be required to sign an attestation stating that they have reviewed and agree to comply with all company policies and applicable regulations.",
+          "explanation": "Trois blocs : signer une attestation, avoir lu et accepter, toutes les politiques et règlements.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-conformite-form-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la formation des personnes ayant accès",
+          "answer": "Employees and other parties with access to systems and information must undergo initial and periodic training that includes security awareness and job-based training.\n\nTraduction : Les employés et les autres personnes qui ont accès aux systèmes et aux informations doivent suivre une formation initiale puis périodique, qui comprend la sensibilisation à la sécurité et une formation liée au poste.",
+          "explanation": "Deux types de formation, au début puis régulièrement : sensibilisation et formation du poste.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Compliance Policy Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-conformite-form-def3",
+          "type": "cloze",
+          "question": "Employees and other parties with access to systems and information must undergo [[initial and periodic training]] that includes [[security awareness]] and [[job-based training]].",
+          "answer": "Employees and other parties with access to systems and information must undergo initial and periodic training that includes security awareness and job-based training.",
+          "explanation": "Trois blocs : formation au début et régulière, sensibilisation à la sécurité, formation du poste.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-conformite-1",
+          "type": "duel",
+          "question": "Un employé signe qu'il a lu et accepte les politiques de l'entreprise. Comment s'appelle ce document ?",
+          "options": [
+            "Une attestation",
+            "Un NDA"
+          ],
+          "answer": "Une attestation",
+          "explanation": "Le NDA interdit de révéler des secrets. L'attestation prouve qu'on a lu et accepté les règles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-conformite-2",
+          "type": "qcm",
+          "question": "Quels types de formations un employé doit-il suivre, selon le manuel ?",
+          "options": [
+            "Une sensibilisation à la sécurité et une formation liée à son poste",
+            "Seulement une formation technique d'informatique",
+            "Seulement une formation le jour de l'embauche",
+            "Une formation réservée aux cadres"
+          ],
+          "options_why": [
+            "",
+            "Le manuel demande aussi la sensibilisation à la sécurité.",
+            "Le manuel parle d'une formation initiale puis périodique.",
+            "Le manuel parle des employés et de toute personne qui a accès."
+          ],
+          "answer": "Une sensibilisation à la sécurité et une formation liée à son poste",
+          "explanation": "La première apprend les réflexes de sécurité. La seconde apprend les risques propres au métier.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-conformite-3",
+          "type": "flash",
+          "question": "Que veut dire recertification annuelle ?",
+          "answer": "Chaque année, les personnes avec accès refont la formation et confirment qu'elles respectent les politiques.",
+          "explanation": "Un rappel chaque année garde les bons réflexes.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « annual recertification is a good way to ensure that all parties remain in compliance ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-conformite-4",
+          "type": "why",
+          "question": "Pourquoi répéter les formations chaque année ?",
+          "answer": "Les menaces et les règles changent, et on oublie vite. Un rappel régulier garde les bons réflexes.",
+          "explanation": "Une formation faite une seule fois s'efface avec le temps.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-conformite-5",
+          "type": "cloze",
+          "question": "Les formations ont lieu au début puis de façon [[périodique]], pour tous ceux qui ont [[accès]] aux systèmes.",
+          "answer": "Les formations ont lieu au début puis de façon périodique, pour tous ceux qui ont accès aux systèmes.",
+          "explanation": "Initiale puis périodique : deux temps.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-conformite-6",
+          "type": "whatif",
+          "question": "Et si l'entreprise ne fait signer aucune attestation ?",
+          "answer": "Un employé peut dire qu'il ne connaissait pas les règles. L'entreprise n'a pas de preuve qu'il les a lues et acceptées.",
+          "explanation": "L'attestation sert de preuve et rappelle l'engagement.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-conformite-7",
+          "type": "qcm",
+          "question": "Une employée dit : « Je ne savais pas qu'on ne pouvait pas brancher ma clé USB perso. » Qu'est-ce qui aurait évité cela ?",
+          "options": [
+            "Une attestation signée après lecture des politiques",
+            "Un second ordinateur",
+            "Un mot de passe plus long",
+            "Un pare-feu plus récent"
+          ],
+          "options_why": [
+            "",
+            "Un second ordinateur ne fait pas connaître les règles.",
+            "Un mot de passe plus long protège un compte, pas la connaissance des règles.",
+            "Un pare-feu filtre le réseau, il n'informe pas les personnes."
+          ],
+          "answer": "Une attestation signée après lecture des politiques",
+          "explanation": "Les règles doivent être documentées, comprises et acceptées par écrit.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-conformite-8",
+          "type": "sort",
+          "question": "Attestation ou formation ? Classe chaque action.",
+          "answer": "Attestation : signer qu'on a lu les politiques, s'engager par écrit à respecter les règles. Formation : apprendre à repérer un message d'hameçonnage, suivre un cours sur les règles de son métier.",
+          "explanation": "L'attestation est une promesse écrite. La formation apprend quelque chose de nouveau.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Attestation",
+              "Formation"
+            ],
+            "items": [
+              {
+                "text": "Signer pour dire qu'on a lu les politiques",
+                "category": "Attestation"
+              },
+              {
+                "text": "S'engager par écrit à respecter les règles",
+                "category": "Attestation"
+              },
+              {
+                "text": "Apprendre à repérer un message d'hameçonnage",
+                "category": "Formation"
+              },
+              {
+                "text": "Suivre un cours sur les règles de son métier",
+                "category": "Formation"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-conformite-9",
+          "type": "problem",
+          "question": "Que mettrais-tu en place pour être sûr que chaque employé respecte les politiques ?",
+          "answer": "Documenter clairement les responsabilités, faire signer une attestation, et donner des formations au début puis régulièrement.",
+          "explanation": "Documenter, faire signer, former.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-vieprivee",
+      "name": "La politique de vie privée (privacy policy)",
+      "planete": {
+        "relief": "oceanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "J'accepte, sans lire",
+          "paragraphes": [
+            "Tu installes une application. Elle te demande ton nom, ta position, tes photos. Tu cliques sur « J'accepte » sans lire.",
+            "Pourtant, un texte expliquait quelles données elle prenait, pourquoi, et comment elle les protégeait.",
+            "Ce texte s'appelle la politique de vie privée (privacy policy)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "L'étiquette sur la boîte",
+          "comme": "Sur un paquet de biscuits, l'étiquette dit ce qu'il y a dedans. Tu peux choisir en connaissance de cause.",
+          "enVrai": "La politique de vie privée est l'étiquette des données personnelles. Elle dit lesquelles sont prises, comment on les utilise et comment on les protège. Elle renvoie aux lois sur la vie privée, comme HIPAA aux États-Unis ou GDPR en Europe."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise gère des informations de personnes qui vivent dans l'Union européenne. Quelle loi sa politique doit-elle citer ?",
+          "options": [
+            "HIPAA",
+            "GDPR",
+            "Aucune"
+          ],
+          "answer": "GDPR",
+          "explanation": "HIPAA est américaine et concerne la santé. Le manuel cite GDPR pour les entreprises qui gèrent des informations d'habitants de l'Union européenne."
+        },
+        {
+          "type": "exemple",
+          "titre": "La politique d'une application de sport",
+          "texte": "Une application de sport écrit : « Nous prenons ton nom et ton rythme cardiaque. Nous les utilisons pour tes statistiques. Nous ne les vendons pas. Ils sont chiffrés sur nos serveurs. » Ces quatre phrases montrent ce qui est pris, l'usage et la protection."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-vieprivee-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « privacy policy »",
+          "answer": "Your organization's privacy policy is an explanation of your company's personal data collection and use practices.\n\nTraduction : La politique de vie privée de ton organisation est une explication des pratiques de ton entreprise pour collecter et utiliser les données personnelles.",
+          "explanation": "Pense à l'étiquette de la boîte : elle explique ce qu'il y a dedans.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Privacy Policy Requirements ». À connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-vieprivee-def2",
+          "type": "cloze",
+          "question": "Your organization's privacy policy is an [[explanation]] of your company's personal data [[collection]] and use practices.",
+          "answer": "Your organization's privacy policy is an explanation of your company's personal data collection and use practices.",
+          "explanation": "Une explication : la collecte et l'usage des données personnelles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-vieprivee-def3",
+          "type": "cloze",
+          "question": "Your organization's [[privacy policy]] is [[an explanation]] of your company's personal data [[collection and use practices]].",
+          "answer": "Your organization's privacy policy is an explanation of your company's personal data collection and use practices.",
+          "explanation": "Trois blocs : la politique de vie privée, une explication, la collecte et l'usage.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-vieprivee-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de la « privacy policy » (en anglais).",
+          "answer": "Your organization's privacy policy is an explanation of your company's personal data collection and use practices.\n\nTraduction : La politique de vie privée de ton organisation est une explication des pratiques de ton entreprise pour collecter et utiliser les données personnelles.",
+          "explanation": "Une phrase courte, avec les trois mots importants : explanation, collection, use.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-vieprivee-contenu-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce que doit expliquer la « privacy policy »",
+          "answer": "Your privacy policy should explain what kind of personal data is collected, how your organization will or won't use it, and how the personal data will be stored, maintained, and secured.\n\nTraduction : Ta politique de vie privée doit expliquer quel type de données personnelles est collecté, comment ton organisation les utilisera ou ne les utilisera pas, et comment elles seront stockées, conservées et sécurisées.",
+          "explanation": "Trois questions : qu'est-ce qui est pris, à quoi ça sert, comment c'est protégé.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Privacy Policy Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-vieprivee-contenu-def3",
+          "type": "cloze",
+          "question": "Your privacy policy should explain [[what kind of personal data is collected]], [[how your organization will or won't use it]], and how the personal data will be [[stored, maintained, and secured]].",
+          "answer": "Your privacy policy should explain what kind of personal data is collected, how your organization will or won't use it, and how the personal data will be stored, maintained, and secured.",
+          "explanation": "Trois blocs : ce qui est collecté, l'usage, et le stockage avec la sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-vieprivee-dispo-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : qui doit pouvoir lire la « privacy policy »",
+          "answer": "The privacy policy should be made available to all personnel, and many organizations require a signed acknowledgment from each employee.\n\nTraduction : La politique de vie privée doit être mise à disposition de tout le personnel, et de nombreuses organisations exigent un accusé de réception signé de chaque employé.",
+          "explanation": "Tout le monde doit pouvoir la lire, et souvent chacun signe pour dire qu'il l'a reçue.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Privacy Policy Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-vieprivee-dispo-def3",
+          "type": "cloze",
+          "question": "The privacy policy should be [[made available to all personnel]], and many organizations require [[a signed acknowledgment]] from [[each employee]].",
+          "answer": "The privacy policy should be made available to all personnel, and many organizations require a signed acknowledgment from each employee.",
+          "explanation": "Trois blocs : disponible pour tout le personnel, un accusé signé, de chaque employé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-pers-vieprivee-1",
+          "type": "duel",
+          "question": "Un texte qui explique quelles données personnelles une entreprise collecte, c'est :",
+          "options": [
+            "Une politique de vie privée",
+            "Un NDA"
+          ],
+          "answer": "Une politique de vie privée",
+          "explanation": "Le NDA interdit de révéler des secrets. La politique de vie privée explique les pratiques sur les données personnelles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-vieprivee-2",
+          "type": "qcm",
+          "question": "Parmi ces informations, laquelle doit figurer dans une politique de vie privée ?",
+          "options": [
+            "La façon dont les données personnelles sont stockées et protégées",
+            "La liste des clients les plus rentables",
+            "Le détail des contrats avec les fournisseurs",
+            "Les identifiants des administrateurs"
+          ],
+          "options_why": [
+            "",
+            "C'est une information interne, pas une explication sur les données personnelles collectées.",
+            "Les contrats ne concernent pas les pratiques sur les données personnelles.",
+            "Des identifiants ne doivent jamais être publiés dans un document lu par tout le personnel."
+          ],
+          "answer": "La façon dont les données personnelles sont stockées et protégées",
+          "explanation": "La politique explique ce qui est collecté, l'usage, et la façon de stocker et de protéger.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Privacy Policy Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-vieprivee-3",
+          "type": "flash",
+          "question": "Vers quelles lois la politique de vie privée doit-elle renvoyer ?",
+          "answer": "Vers les lois et règlements sur la vie privée qui s'appliquent. Par exemple HIPAA aux États-Unis, ou GDPR pour les entreprises qui gèrent des informations d'habitants de l'Union européenne.",
+          "explanation": "La politique montre sur quelles lois elle s'appuie.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Privacy Policy Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-vieprivee-4",
+          "type": "why",
+          "question": "Pourquoi une politique de vie privée doit-elle dire comment les données sont protégées ?",
+          "answer": "Les personnes confient leurs données et ont le droit de savoir comment elles sont gardées. Cela montre aussi que l'entreprise respecte les lois.",
+          "explanation": "La transparence crée la confiance.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-vieprivee-5",
+          "type": "cloze",
+          "question": "La politique de vie privée dit quelles données sont [[collectées]], comment elles sont [[utilisées]] et comment elles sont protégées.",
+          "answer": "La politique de vie privée dit quelles données sont collectées, comment elles sont utilisées et comment elles sont protégées.",
+          "explanation": "Trois idées : collecte, usage, protection.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-vieprivee-6",
+          "type": "whatif",
+          "question": "Et si une entreprise collecte des données de personnes de l'Union européenne sans citer le GDPR ?",
+          "answer": "Elle risque de ne pas respecter la loi qui s'applique à elle. La politique doit renvoyer aux lois concernées.",
+          "explanation": "Le manuel veut un lien clair entre la politique et les lois applicables.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-vieprivee-7",
+          "type": "sort",
+          "question": "Remets dans l'ordre les trois choses que la politique explique.",
+          "answer": "1 Quelles données sont collectées. 2 Comment elles sont utilisées. 3 Comment elles sont stockées et protégées.",
+          "explanation": "On suit le chemin de la donnée : elle est prise, utilisée, puis gardée.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Quelles données sont collectées",
+              "Comment elles sont utilisées",
+              "Comment elles sont stockées et protégées"
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-vieprivee-8",
+          "type": "qcm",
+          "question": "Une entreprise garde sa politique de vie privée dans un tiroir fermé de la direction. Quel est le problème ?",
+          "options": [
+            "Elle doit être disponible pour tout le personnel",
+            "Elle doit être chiffrée",
+            "Elle doit rester confidentielle, comme un secret de fabrication",
+            "Elle doit être envoyée chaque mois aux clients"
+          ],
+          "options_why": [
+            "",
+            "Le chiffrement n'est pas le sujet : le problème est l'accès pour le personnel.",
+            "La politique explique des pratiques : elle n'a pas à rester secrète.",
+            "Le manuel ne demande pas d'envoi mensuel aux clients."
+          ],
+          "answer": "Elle doit être disponible pour tout le personnel",
+          "explanation": "Le manuel demande que tout le personnel puisse la lire, et souvent signer un accusé de réception.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-vieprivee-9",
+          "type": "problem",
+          "question": "Écris en trois points ce que doit expliquer une politique de vie privée.",
+          "answer": "Quel type de données personnelles est collecté. Comment l'entreprise les utilise ou ne les utilise pas. Comment elles sont stockées, conservées et protégées.",
+          "explanation": "Collecte, usage, protection.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-pers-vieprivee-10",
+          "type": "duel",
+          "question": "Le manuel cite HIPAA pour quelle région ?",
+          "options": [
+            "Les États-Unis",
+            "L'Union européenne"
+          ],
+          "answer": "Les États-Unis",
+          "explanation": "HIPAA est une loi américaine. Pour l'Union européenne, le manuel cite le GDPR.",
+          "retention_goal": "3m"
+        }
+      ]
+    }
+  ]
+}

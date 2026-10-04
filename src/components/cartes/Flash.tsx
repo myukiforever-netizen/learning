@@ -53,7 +53,7 @@ export function Flash({
         <div className="flex flex-col gap-5 anim-deplie">
           <div className="border-t border-bordure pt-5">
             <p className="texte-2 text-sm mb-1">Réponse</p>
-            <p className="question">{carte.answer}</p>
+            <p className="question whitespace-pre-line">{carte.answer}</p>
           </div>
 
           {!termine && (

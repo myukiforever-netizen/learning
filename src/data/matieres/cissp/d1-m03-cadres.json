@@ -1,0 +1,2205 @@
+{
+  "id": "d1-m03-cadres",
+  "name": "D1.3 Les cadres de contrôle de sécurité",
+  "galaxie": { "teinte": 178, "ambiance": "mysterieux" },
+  "concepts": [
+    {
+      "id": "d1-haut-bas",
+      "name": "Du haut vers le bas, ou du bas vers le haut (top-down, bottom-up)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Les vols dans les vestiaires",
+          "paragraphes": [
+            "Au collège, des affaires disparaissent dans les vestiaires. Ce sont les surveillants qui le remarquent les premiers.",
+            "Ils préviennent la direction. Elle finit par acheter des casiers, mais c'est long et le budget est petit.",
+            "En entreprise, ces deux chemins existent aussi. Quand l'idée monte des équipes vers la direction, on dit bottom-up (du bas vers le haut). Quand elle descend de la direction vers les équipes, on dit top-down (du haut vers le bas)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le règlement du collège",
+          "comme": "Dans un cas, la direction écrit le règlement puis l'explique à tous les élèves. Dans l'autre, ce sont les élèves qui signalent un problème et la direction réagit.",
+          "enVrai": "Top-down : la direction de l'entreprise (senior leadership) comprend les lois et les menaces, puis impose des plans à tout le monde. Bottom-up : le service informatique (IT department) repère les problèmes et les remonte à la direction pour obtenir de l'aide et de l'argent. L'image s'arrête là : une entreprise peut aussi mélanger les deux manières."
+        },
+        {
+          "type": "predire",
+          "question": "Le service informatique voit un danger, mais la direction n'en sait rien. Que se passe-t-il le plus souvent ?",
+          "options": [
+            "L'entreprise est prête avant toute attaque",
+            "Le budget arrive tard, après les problèmes",
+            "Chacun applique les règles dès le premier jour"
+          ],
+          "answer": "Le budget arrive tard, après les problèmes",
+          "explanation": "Sans décision d'en haut, on réagit après coup et l'argent manque. Les deux autres réponses décrivent plutôt le top-down."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une banque et un technicien",
+          "texte": "Le directeur d'une banque lit les lois qui protègent les clients. Il demande un plan de sécurité pour toute la banque, avec un budget. Les équipes appliquent ce plan : c'est du top-down. Un technicien voit des courriels piégés et écrit à son chef pour obtenir des outils : c'est du bottom-up."
+        },
+        {
+          "type": "analogie",
+          "titre": "Prévenir ou réagir",
+          "comme": "Mettre un casque avant de monter à vélo, c'est prévenir. Acheter un casque après une chute, c'est réagir.",
+          "enVrai": "Une mesure proactive (proactive) prépare avant le problème. Une mesure réactive (reactive) répond après. Le top-down est plutôt proactif. Le bottom-up est plutôt réactif, et il arrive souvent trop tard."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-haut-bas-td-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « top-down approach »",
+          "answer": "In a top-down approach, senior leadership starts by understanding the regulations and security threats faced by the organization, and initiates strategies, policies, and guidelines that are pushed down throughout the rest of the organization.\n\nTraduction : Dans une approche top-down, la direction commence par comprendre les réglementations et les menaces de sécurité auxquelles l'organisation fait face, puis lance des stratégies, des politiques et des consignes qui descendent dans le reste de l'organisation.",
+          "explanation": "Pense au règlement du collège : la direction décide, puis tout le monde applique.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Security Control Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-haut-bas-td-def3",
+          "type": "cloze",
+          "question": "In a top-down approach, [[senior leadership]] starts by [[understanding the regulations]] and security threats faced by the organization, and initiates [[strategies, policies, and guidelines]] that are pushed down throughout the rest of the organization.",
+          "answer": "In a top-down approach, senior leadership starts by understanding the regulations and security threats faced by the organization, and initiates strategies, policies, and guidelines that are pushed down throughout the rest of the organization.",
+          "explanation": "Trois blocs : la direction, ce qu'elle comprend, et ce qu'elle lance vers le bas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-haut-bas-bu-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « bottom-up approach »",
+          "answer": "Historically, enterprises have utilized more of a bottom-up approach to security, in which the IT department takes security seriously and attempts to develop a security function for the company.\n\nTraduction : Historiquement, les entreprises ont plutôt utilisé une approche bottom-up de la sécurité, dans laquelle le service informatique prend la sécurité au sérieux et essaie de créer une fonction de sécurité pour l'entreprise.",
+          "explanation": "Pense aux surveillants qui remontent un problème : l'idée part du bas, d'où bottom-up.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Security Control Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-haut-bas-bu-def3",
+          "type": "cloze",
+          "question": "Historically, enterprises have utilized more of a [[bottom-up approach]] to security, in which [[the IT department]] takes security seriously and attempts to [[develop a security function]] for the company.",
+          "answer": "Historically, enterprises have utilized more of a bottom-up approach to security, in which the IT department takes security seriously and attempts to develop a security function for the company.",
+          "explanation": "Trois blocs : le type d'approche, qui agit (le service informatique) et ce qu'il essaie de créer.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-haut-bas-1",
+          "type": "duel",
+          "question": "La direction d'une entreprise lit les lois, puis impose un plan de sécurité à tous. Quelle approche est-ce ?",
+          "options": ["Top-down", "Bottom-up"],
+          "answer": "Top-down",
+          "explanation": "La décision part de la direction et descend dans l'entreprise. C'est le sens de top-down.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-haut-bas-2",
+          "type": "qcm",
+          "question": "Une technicienne voit passer des courriels piégés. Elle en parle à son chef pour obtenir un budget. Quelle approche est-ce ?",
+          "options": [
+            "Bottom-up : l'idée part du service informatique",
+            "Top-down : la direction a déjà décidé",
+            "Un mélange des deux depuis le début"
+          ],
+          "options_why": [
+            "",
+            "Ici la direction n'a encore rien décidé : elle n'est même pas au courant.",
+            "Le mélange viendrait plus tard. Ici, l'idée vient seulement du bas."
+          ],
+          "answer": "Bottom-up : l'idée part du service informatique",
+          "explanation": "Le constat monte du terrain vers la direction. C'est du bas vers le haut.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-haut-bas-3",
+          "type": "flash",
+          "question": "Quel avantage le top-down apporte-t-il à la sécurité de l'entreprise ?",
+          "answer": "Elle est portée par les plus hauts dirigeants. Elle devient donc une priorité et reste alignée avec la stratégie de l'entreprise.",
+          "explanation": "Quand la direction s'en occupe, les budgets et les décisions suivent.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Security Control Frameworks ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-haut-bas-4",
+          "type": "why",
+          "question": "Pourquoi l'approche bottom-up conduit-elle souvent à des programmes de sécurité sous-financés ?",
+          "answer": "Parce que la direction n'a pas décidé que la sécurité était une priorité. Le service informatique doit d'abord la convaincre de donner de l'aide et de l'argent.",
+          "explanation": "Sans décision d'en haut, l'argent arrive tard, souvent après un problème.",
+          "explanation_more": "Le manuel dit que cette approche donne souvent des mesures réactives et des programmes sous-financés.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-haut-bas-5",
+          "type": "sort",
+          "question": "Dans quelle approche range-t-on chaque phrase ?",
+          "answer": "Top-down : la direction décide et la sécurité suit la stratégie. Bottom-up : les équipes remontent les problèmes et demandent de l'aide.",
+          "explanation": "Demande-toi qui commence : la direction (top-down) ou les équipes techniques (bottom-up) ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Top-down", "Bottom-up"],
+            "items": [
+              { "text": "La direction étudie les lois et lance des règles pour toute l'entreprise", "category": "Top-down" },
+              { "text": "Le service informatique remonte ses constats à la direction", "category": "Bottom-up" },
+              { "text": "On agit surtout après que les problèmes sont arrivés", "category": "Bottom-up" },
+              { "text": "La sécurité suit la stratégie générale de l'entreprise", "category": "Top-down" },
+              { "text": "Les équipes demandent de l'argent pour leur programme de sécurité", "category": "Bottom-up" },
+              { "text": "Les plus hauts dirigeants portent le message de sécurité", "category": "Top-down" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-haut-bas-6",
+          "type": "cloze",
+          "question": "Le bottom-up donne souvent des mesures [[réactives]] plutôt que des politiques [[proactives]].",
+          "answer": "Le bottom-up donne souvent des mesures réactives plutôt que des politiques proactives.",
+          "explanation": "Réactive : on répond après le problème. Proactive : on prépare avant.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Security Control Frameworks ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-haut-bas-7",
+          "type": "duel",
+          "question": "Quelle approche prépare plutôt la sécurité avant les problèmes ?",
+          "options": ["Top-down", "Bottom-up"],
+          "answer": "Top-down",
+          "explanation": "La direction anticipe les lois et les menaces et lance des plans à l'avance. Le bottom-up réagit plus souvent après.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-haut-bas-8",
+          "type": "whatif",
+          "question": "Et si la direction décide tout, mais que le service informatique ne remonte jamais ce qu'il voit ?",
+          "answer": "La direction déciderait sans connaître le terrain. Un mélange des deux approches aide : des décisions venues d'en haut et des informations venues d'en bas.",
+          "explanation": "Le manuel dit que les deux approches peuvent se combiner.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : la sécurité peut se gérer en top-down, en bottom-up ou avec un mélange des deux.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-controle",
+      "name": "Le contrôle de sécurité (security control)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La maison et ses protections",
+          "paragraphes": [
+            "Chez toi, plusieurs choses protègent la maison. Il y a une serrure, une alarme et un voisin qui surveille. Il y a aussi une règle : on ferme à clé le soir.",
+            "Certaines protections sont des objets. D'autres sont des personnes. D'autres sont des règles écrites.",
+            "En cybersécurité, chacune de ces protections s'appelle un contrôle de sécurité (security control)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Machine, personne ou règle",
+          "comme": "La serrure et l'alarme sont des machines. Le voisin qui surveille est une personne. La règle « on ferme à clé » est écrite pour tout le monde.",
+          "enVrai": "Contrôle technique (technical control) : un système qui protège, comme un pare-feu (firewall). Contrôle opérationnel (operational control) : des personnes qui protègent, comme un agent de sécurité. Contrôle de gestion (management control) : des règles écrites, comme une politique (policy), c'est-à-dire une règle officielle de l'entreprise."
+        },
+        {
+          "type": "predire",
+          "question": "Un agent de sécurité garde l'entrée du bâtiment. Quel type de contrôle est-ce ?",
+          "options": ["Technique", "Opérationnel", "De gestion"],
+          "answer": "Opérationnel",
+          "explanation": "Le manuel cite justement les agents de sécurité : ce sont des personnes, pas un système. Technique veut dire machine. De gestion veut dire règle."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une banque, trois protections",
+          "texte": "Une banque a un pare-feu pour filtrer son réseau. Elle a un gardien à l'entrée. Elle a aussi une règle qui interdit de prêter son badge. Ce sont trois contrôles de trois types : technique, opérationnel et de gestion. Ensemble, ils protègent mieux qu'un seul."
+        },
+        {
+          "type": "analogie",
+          "titre": "Quatre rôles possibles",
+          "comme": "Dans un bâtiment, le détecteur de fumée repère le feu. L'extincteur le combat. L'interdiction de fumer l'empêche de naître.",
+          "enVrai": "Un contrôle sert à prévenir (prevent), détecter (detect), réduire (minimize) ou contrer (counteract) une menace de sécurité. Un même contrôle peut jouer plusieurs rôles à la fois."
+        },
+        {
+          "type": "exemple",
+          "titre": "Trois outils techniques du manuel",
+          "texte": "Un IDS repère une intrusion et prévient. Un IPS la repère et la bloque. Un DLP (data loss prevention) empêche des données sensibles de quitter l'entreprise. Ces trois outils sont des systèmes : ce sont des contrôles techniques."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-controle-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « security control »",
+          "answer": "A security control is a technical, operational, or management safeguard used to prevent, detect, minimize, or counteract security threats.\n\nTraduction : Un contrôle de sécurité est une protection technique, opérationnelle ou de gestion, utilisée pour prévenir, détecter, réduire ou contrer les menaces de sécurité.",
+          "explanation": "Retiens les quatre verbes : prévenir, détecter, réduire, contrer.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot : les cartes suivantes t'aident à la mémoriser pas à pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-def2",
+          "type": "cloze",
+          "question": "A security control is a [[technical]], operational, or management [[safeguard]] used to prevent, detect, minimize, or counteract security threats.",
+          "answer": "A security control is a technical, operational, or management safeguard used to prevent, detect, minimize, or counteract security threats.",
+          "explanation": "Le premier type de contrôle, et le mot safeguard : une protection, un garde-fou.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-def3",
+          "type": "cloze",
+          "question": "A security control is a [[technical, operational, or management]] safeguard used to [[prevent, detect, minimize]], or [[counteract security threats]].",
+          "answer": "A security control is a technical, operational, or management safeguard used to prevent, detect, minimize, or counteract security threats.",
+          "explanation": "Trois blocs : les trois types, les verbes d'action, et la cible : les menaces.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « security control » (en anglais).",
+          "answer": "A security control is a technical, operational, or management safeguard used to prevent, detect, minimize, or counteract security threats.\n\nTraduction : Un contrôle de sécurité est une protection technique, opérationnelle ou de gestion, utilisée pour prévenir, détecter, réduire ou contrer les menaces de sécurité.",
+          "explanation": "Compare : as-tu pensé aux trois types et aux quatre verbes ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-tech-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « technical controls »",
+          "answer": "Technical controls are system-based safeguards and countermeasures — things like firewalls, IDS/IPS, and data loss prevention (DLP).\n\nTraduction : Les contrôles techniques sont des protections et des contre-mesures fondées sur les systèmes, comme les pare-feu, les IDS/IPS et la prévention des pertes de données (DLP).",
+          "explanation": "Pense à une machine qui protège : pare-feu, IDS/IPS, DLP.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Security Control Frameworks ». En anglais : IDS = intrusion detection system, IPS = intrusion prevention system (hors manuel : le livre ne donne que les sigles).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-tech-def3",
+          "type": "cloze",
+          "question": "Technical controls are [[system-based safeguards and countermeasures]] — things like [[firewalls, IDS/IPS]], and [[data loss prevention]] (DLP).",
+          "answer": "Technical controls are system-based safeguards and countermeasures — things like firewalls, IDS/IPS, and data loss prevention (DLP).",
+          "explanation": "Retiens : un système, puis trois exemples de machines qui protègent.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-oper-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « operational controls »",
+          "answer": "Operational controls are safeguards and countermeasures that are primarily implemented and executed by people (as opposed to systems); security guards are a common example.\n\nTraduction : Les contrôles opérationnels sont des protections et des contre-mesures surtout mises en œuvre et exécutées par des personnes (et non par des systèmes) ; les agents de sécurité en sont un exemple courant.",
+          "explanation": "Pense à une personne qui protège : le gardien est l'exemple du manuel.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Security Control Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-oper-def3",
+          "type": "cloze",
+          "question": "Operational controls are safeguards and countermeasures that are [[primarily implemented and executed]] by people ([[as opposed to systems]]); [[security guards]] are a common example.",
+          "answer": "Operational controls are safeguards and countermeasures that are primarily implemented and executed by people (as opposed to systems); security guards are a common example.",
+          "explanation": "Retiens : exécuté par des personnes, pas par des systèmes, avec le gardien en exemple.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-gest-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « management controls »",
+          "answer": "Management controls include policies, procedures, and other countermeasures that control (or manage) the information security risk.\n\nTraduction : Les contrôles de gestion comprennent les politiques, les procédures et d'autres contre-mesures qui contrôlent (ou gèrent) le risque de sécurité de l'information.",
+          "explanation": "Pense aux règles écrites : les politiques et les procédures.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Security Control Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-gest-def3",
+          "type": "cloze",
+          "question": "Management controls include [[policies, procedures]], and [[other countermeasures]] that [[control (or manage)]] the information security risk.",
+          "answer": "Management controls include policies, procedures, and other countermeasures that control (or manage) the information security risk.",
+          "explanation": "Retiens : des règles et des procédures qui servent à gérer le risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-controle-1",
+          "type": "duel",
+          "question": "Un pare-feu est-il un contrôle technique ou un contrôle opérationnel ?",
+          "options": ["Technique", "Opérationnel"],
+          "answer": "Technique",
+          "explanation": "Un pare-feu est un système. Un contrôle opérationnel est surtout exécuté par des personnes.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-controle-2",
+          "type": "qcm",
+          "question": "Une entreprise écrit une règle : « personne ne prête son badge ». Quel type de contrôle est-ce ?",
+          "options": ["De gestion", "Technique", "Opérationnel"],
+          "options_why": [
+            "",
+            "Aucune machine n'est en jeu : c'est une règle écrite, pas un système.",
+            "Un contrôle opérationnel est surtout exécuté par des personnes, comme un gardien. Ici, c'est la règle qui compte."
+          ],
+          "answer": "De gestion",
+          "explanation": "Les politiques et les procédures sont des contrôles de gestion (management controls).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-controle-3",
+          "type": "sort",
+          "question": "Dans quelle boîte va chaque protection ?",
+          "answer": "Technique : pare-feu, outil anti-fuite, système de détection. Opérationnel : agent, vigile. De gestion : politique, procédure.",
+          "explanation": "Machine, personne ou règle : demande-toi qui ou quoi protège.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Technique", "Opérationnel", "De gestion"],
+            "items": [
+              { "text": "Un pare-feu", "category": "Technique" },
+              { "text": "Un outil qui empêche des données sensibles de quitter l'entreprise", "category": "Technique" },
+              { "text": "Un système qui détecte les intrusions", "category": "Technique" },
+              { "text": "Un agent de sécurité à l'entrée", "category": "Opérationnel" },
+              { "text": "Un vigile qui fait sa ronde le soir", "category": "Opérationnel" },
+              { "text": "Une politique de sécurité écrite", "category": "De gestion" },
+              { "text": "Une procédure écrite pour accueillir un nouvel employé", "category": "De gestion" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-controle-4",
+          "type": "why",
+          "question": "Pourquoi les trois catégories de contrôles sont-elles parfois difficiles à séparer ?",
+          "answer": "Parce que beaucoup de contrôles entrent dans plusieurs catégories. Une règle peut être appliquée par des personnes et aidée par un outil.",
+          "explanation": "Un même contrôle peut être une règle, une action humaine et un outil à la fois.",
+          "explanation_more": "Le manuel ajoute que beaucoup d'organisations n'utilisent plus ces trois termes, pour éviter la confusion.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-controle-5",
+          "type": "flash",
+          "question": "Les contrôles de gestion s'appellent parfois « contrôles administratifs ». Avec quoi ne faut-il pas les confondre ?",
+          "answer": "Avec le travail de l'administrateur système (sysadmin), la personne qui gère les ordinateurs d'une entreprise.",
+          "explanation": "Ici, « administratif » veut dire règles et gestion, pas le travail d'un technicien.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Security Control Frameworks ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-controle-6",
+          "type": "cloze",
+          "question": "Un contrôle de sécurité sert à [[prévenir]], [[détecter]], réduire ou contrer une menace.",
+          "answer": "Un contrôle de sécurité sert à prévenir, détecter, réduire ou contrer une menace.",
+          "explanation": "Quatre verbes d'action : on empêche, on repère, on diminue, on combat.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-controle-7",
+          "type": "whatif",
+          "question": "Et si une entreprise n'avait que des outils techniques, sans aucune règle écrite ?",
+          "answer": "Les outils existeraient, mais personne ne saurait quoi faire avec eux. Les trois types de contrôles se complètent.",
+          "explanation": "Une bonne protection mélange machines, personnes et règles.",
+          "explanation_more": "Raisonnement hors manuel, à partir des trois types décrits dans le livre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-controle-8",
+          "type": "duel",
+          "question": "Une procédure écrite pour recruter du personnel est un contrôle…",
+          "options": ["De gestion", "Opérationnel"],
+          "answer": "De gestion",
+          "explanation": "Les procédures font partie des contrôles de gestion, avec les politiques.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cadre",
+      "name": "Le cadre de contrôle de sécurité (security control framework)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Un tournoi sans plan",
+          "paragraphes": [
+            "Un club de sport organise un grand tournoi. Chacun propose ses idées : les arbitres, le trésorier, les parents. Personne n'a de liste commune.",
+            "Résultat : on oublie les premiers secours et on achète deux fois les mêmes ballons.",
+            "Une entreprise qui protège ses données sans plan commun fait la même erreur. Le plan commun existe : on l'appelle un cadre de contrôle de sécurité (security control framework)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le manuel d'un jeu",
+          "comme": "Le manuel d'un jeu de société dit quelles pièces il faut, comment jouer et comment gagner. Tout le monde suit le même manuel.",
+          "enVrai": "Un cadre de contrôle de sécurité est le manuel de la sécurité. Il liste les processus (les façons de faire), les procédures (les étapes) et les solutions (les outils) de l'entreprise. L'image s'arrête là : un cadre ne joue pas à ta place, il faut l'appliquer."
+        },
+        {
+          "type": "predire",
+          "question": "Pourquoi une entreprise adopte-t-elle un cadre de contrôle de sécurité ?",
+          "options": [
+            "Pour ne plus avoir besoin de son service informatique",
+            "Pour suivre les lois et mieux protéger ses données",
+            "Pour être sûre de ne jamais être attaquée"
+          ],
+          "answer": "Pour suivre les lois et mieux protéger ses données",
+          "explanation": "Le cadre aide à respecter les lois et les règles (la conformité, ou compliance) et à bâtir une sécurité solide. Aucun cadre ne garantit zéro attaque."
+        },
+        {
+          "type": "analogie",
+          "titre": "Un règlement par établissement",
+          "comme": "Un collège et un club de natation n'ont pas le même règlement. Le club parle de bonnets et de piscines.",
+          "enVrai": "Les entreprises choisissent souvent leur cadre selon leur secteur. Les paiements par carte bancaire ont le cadre PCI. Les hôpitaux américains ont le cadre HIPAA."
+        },
+        {
+          "type": "exemple",
+          "titre": "Trois secteurs, trois choix",
+          "texte": "Un magasin en ligne qui garde des numéros de carte bancaire suit le cadre PCI. Un hôpital américain garde des informations de santé protégées (PHI) : il suit HIPAA. Toute entreprise peut aussi choisir un cadre général. Il vient d'ISO/IEC (des organismes de normes), du NIST (une agence américaine) ou du CIS (une association, le Center for Internet Security)."
+        },
+        {
+          "type": "exemple",
+          "titre": "Deux notes du manuel",
+          "texte": "HITRUST est né pour les acteurs de la santé qui subissent beaucoup de règles différentes. COBIT est un cadre pour gouverner toute l'informatique d'une entreprise, pas seulement sa sécurité. Gouverner, c'est décider qui décide et comment on contrôle."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cadre-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « security control framework »",
+          "answer": "(ISC)2 defines a security control framework as \"a notional construct outlining the organization's approach to security, including a list of specific security processes, procedures, and solutions used by the organization.\"\n\nTraduction : (ISC)2 définit un cadre de contrôle de sécurité comme « une construction théorique qui décrit l'approche de l'organisation en matière de sécurité, avec une liste de processus, de procédures et de solutions de sécurité précis utilisés par l'organisation ».",
+          "explanation": "Pense au manuel d'un jeu : il liste les façons de faire, les étapes et les outils.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot : les cartes suivantes t'aident à la mémoriser pas à pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-def2",
+          "type": "cloze",
+          "question": "(ISC)2 defines a security control framework as \"a [[notional]] construct outlining the organization's approach to security, including a list of specific security processes, procedures, and [[solutions]] used by the organization.\"",
+          "answer": "(ISC)2 defines a security control framework as \"a notional construct outlining the organization's approach to security, including a list of specific security processes, procedures, and solutions used by the organization.\"",
+          "explanation": "Deux mots à retenir : notional (une construction d'idées) et solutions (les outils).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-def3",
+          "type": "cloze",
+          "question": "(ISC)2 defines a security control framework as \"a notional construct [[outlining the organization's approach]] to security, including a list of [[specific security processes, procedures]], and [[solutions used by the organization]].\"",
+          "answer": "(ISC)2 defines a security control framework as \"a notional construct outlining the organization's approach to security, including a list of specific security processes, procedures, and solutions used by the organization.\"",
+          "explanation": "Trois blocs : l'approche décrite, la liste des façons de faire, et les outils utilisés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « security control framework » (en anglais).",
+          "answer": "(ISC)2 defines a security control framework as \"a notional construct outlining the organization's approach to security, including a list of specific security processes, procedures, and solutions used by the organization.\"\n\nTraduction : (ISC)2 définit un cadre de contrôle de sécurité comme « une construction théorique qui décrit l'approche de l'organisation en matière de sécurité, avec une liste de processus, de procédures et de solutions de sécurité précis utilisés par l'organisation ».",
+          "explanation": "Compare : as-tu pensé à l'approche, aux processus, aux procédures et aux solutions ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-pci-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le cadre « PCI »",
+          "answer": "For example, the Payment Card Industry (PCI) control framework is a global framework used by financial services organizations and companies that handle cardholder data.\n\nTraduction : Par exemple, le cadre de contrôle de l'industrie des cartes de paiement (PCI) est un cadre mondial utilisé par les organisations de services financiers et les entreprises qui traitent des données de titulaires de cartes.",
+          "explanation": "PCI = les cartes de paiement. Pense à une boutique en ligne.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Le manuel y revient plus loin dans le chapitre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-pci-def3",
+          "type": "cloze",
+          "question": "For example, the [[Payment Card Industry]] (PCI) control framework is a [[global framework]] used by financial services organizations and companies that [[handle cardholder data]].",
+          "answer": "For example, the Payment Card Industry (PCI) control framework is a global framework used by financial services organizations and companies that handle cardholder data.",
+          "explanation": "Trois blocs : le nom, sa portée mondiale, et les données de cartes qu'il vise.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-hipaa-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le cadre « HIPAA »",
+          "answer": "In the United States, the Health Insurance Portability and Accountability Act (HIPAA) offers a control framework for healthcare organizations and companies that handle protected health information (PHI).\n\nTraduction : Aux États-Unis, la loi HIPAA (Health Insurance Portability and Accountability Act) offre un cadre de contrôle aux organisations de santé et aux entreprises qui traitent des informations de santé protégées (PHI).",
+          "explanation": "HIPAA = la santé aux États-Unis. Pense à un hôpital.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Le manuel y revient plus loin dans le chapitre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-hipaa-def3",
+          "type": "cloze",
+          "question": "[[In the United States]], the Health Insurance Portability and Accountability Act (HIPAA) offers a [[control framework]] for [[healthcare organizations]] and companies that handle protected health information (PHI).",
+          "answer": "In the United States, the Health Insurance Portability and Accountability Act (HIPAA) offers a control framework for healthcare organizations and companies that handle protected health information (PHI).",
+          "explanation": "Trois blocs : le pays, la nature du cadre, et le secteur de la santé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-hitrust-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « HITRUST »",
+          "answer": "The HITRUST (originally known as the Health Information Trust Alliance) Common Security Framework (CSF) was originally developed to address the overlapping regulatory environment in which many healthcare providers operate.\n\nTraduction : Le HITRUST Common Security Framework (CSF) (HITRUST signifiait à l'origine Health Information Trust Alliance) a été développé à l'origine pour répondre à l'environnement réglementaire qui se chevauche dans lequel travaillent de nombreux fournisseurs de santé.",
+          "explanation": "HITRUST est né pour les acteurs de la santé qui ont beaucoup de règles à suivre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1 (note). Il sert aujourd'hui à toute organisation qui échange des données sensibles ou réglementées.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-hitrust-def3",
+          "type": "cloze",
+          "question": "The HITRUST (originally known as the Health Information Trust Alliance) [[Common Security Framework]] (CSF) was originally developed to address the [[overlapping regulatory environment]] in which [[many healthcare providers]] operate.",
+          "answer": "The HITRUST (originally known as the Health Information Trust Alliance) Common Security Framework (CSF) was originally developed to address the overlapping regulatory environment in which many healthcare providers operate.",
+          "explanation": "Trois blocs : le cadre commun, le problème visé (des règles qui se chevauchent) et ceux qui l'utilisent.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-cobit-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « COBIT »",
+          "answer": "Control Objectives for Information Technologies (COBIT) is a framework developed by ISACA (previously known as the Information Systems Audit and Control Association) for overall information technology management and governance and is perhaps the most popular IT governance framework used in industry.\n\nTraduction : Control Objectives for Information Technologies (COBIT) est un cadre développé par l'ISACA (anciennement Information Systems Audit and Control Association) pour la gestion et la gouvernance globales des technologies de l'information ; c'est peut-être le cadre de gouvernance informatique le plus populaire dans l'industrie.",
+          "explanation": "COBIT organise toute la gouvernance informatique, pas seulement la sécurité.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1 (note).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-cobit-def3",
+          "type": "cloze",
+          "question": "[[Control Objectives]] for Information Technologies (COBIT) is a [[framework developed by ISACA]] (previously known as the Information Systems Audit and Control Association) for overall information technology management and governance and is perhaps the most [[popular IT governance framework]] used in industry.",
+          "answer": "Control Objectives for Information Technologies (COBIT) is a framework developed by ISACA (previously known as the Information Systems Audit and Control Association) for overall information technology management and governance and is perhaps the most popular IT governance framework used in industry.",
+          "explanation": "Trois blocs : le nom, qui l'a créé, et sa popularité en gouvernance informatique.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cadre-1",
+          "type": "duel",
+          "question": "Un cadre de contrôle de sécurité est d'abord un outil ou un plan ?",
+          "options": ["Un outil qui bloque les attaques", "Un plan qui organise les protections"],
+          "answer": "Un plan qui organise les protections",
+          "explanation": "Le cadre est une construction d'idées. Il liste processus, procédures et solutions. Un pare-feu n'est qu'une solution.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cadre-2",
+          "type": "why",
+          "question": "Pourquoi une entreprise adopte-t-elle souvent un cadre de contrôle de sécurité ?",
+          "answer": "Pour mieux respecter les lois et les règles (la conformité). Et pour bâtir un programme qui protège la confidentialité, l'intégrité et la disponibilité de ses ressources.",
+          "explanation": "Un cadre donne un plan commun et aide à montrer qu'on respecte les règles.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Security Control Frameworks ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cadre-3",
+          "type": "qcm",
+          "question": "Un hôpital américain garde des dossiers médicaux. Quel cadre le manuel cite-t-il pour son secteur ?",
+          "options": ["HIPAA", "PCI", "COBIT"],
+          "options_why": [
+            "",
+            "PCI vise les données de cartes de paiement, pas les dossiers médicaux.",
+            "COBIT n'est lié à aucun secteur : c'est un cadre de gouvernance informatique."
+          ],
+          "answer": "HIPAA",
+          "explanation": "HIPAA offre un cadre de contrôle pour la santé aux États-Unis.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cadre-4",
+          "type": "duel",
+          "question": "Un site de vente garde les numéros de carte bancaire de ses clients. Quel cadre vise ce secteur ?",
+          "options": ["PCI", "HIPAA"],
+          "answer": "PCI",
+          "explanation": "PCI vise les services financiers et les entreprises qui traitent des données de cartes.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cadre-5",
+          "type": "sort",
+          "question": "Ce cadre est-il l'un des cinq à connaître au minimum, ou cité à part ?",
+          "answer": "À connaître au minimum : ISO/IEC 27002, NIST Cybersecurity Framework, CIS. Cités à part : PCI, HIPAA, COBIT.",
+          "explanation": "Les cinq du manuel : ISO 27001, ISO 27002, NIST 800-53, NIST Cybersecurity Framework et CIS.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. PCI et HIPAA sont cités en exemple, HITRUST et COBIT dans des notes.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Un des cinq cadres à connaître au minimum", "Cité comme exemple ou en note"],
+            "items": [
+              { "text": "ISO/IEC 27002", "category": "Un des cinq cadres à connaître au minimum" },
+              { "text": "NIST Cybersecurity Framework", "category": "Un des cinq cadres à connaître au minimum" },
+              { "text": "CIS Critical Security Controls", "category": "Un des cinq cadres à connaître au minimum" },
+              { "text": "PCI", "category": "Cité comme exemple ou en note" },
+              { "text": "HIPAA", "category": "Cité comme exemple ou en note" },
+              { "text": "COBIT", "category": "Cité comme exemple ou en note" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cadre-6",
+          "type": "flash",
+          "question": "Selon le manuel, par quoi commence une gouvernance forte, utile à une approche top-down efficace ?",
+          "answer": "Par l'alignement avec un ou plusieurs cadres de contrôle de sécurité (security control frameworks).",
+          "explanation": "La direction choisit un cadre, puis les plans et les règles s'en inspirent.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Security Control Frameworks ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cadre-7",
+          "type": "cloze",
+          "question": "Le manuel dit de connaître au minimum ISO/IEC [[27001]], ISO/IEC [[27002]], NIST [[800-53]], le NIST Cybersecurity Framework et les CIS Controls.",
+          "answer": "Le manuel dit de connaître au minimum ISO/IEC 27001, ISO/IEC 27002, NIST 800-53, le NIST Cybersecurity Framework et les CIS Controls.",
+          "explanation": "Cinq cadres reviennent dans toutes les entreprises : on les voit un par un dans les planètes suivantes.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cadre-8",
+          "type": "flash",
+          "question": "Le cadre COBIT est-il propre à la sécurité ?",
+          "answer": "Non. COBIT décrit la gouvernance de toute l'informatique, avec de nombreux points de sécurité dedans.",
+          "explanation": "COBIT est large : la sécurité n'en est qu'une partie.",
+          "explanation_more": "Le manuel précise que ce n'est pas un cadre spécifique à la sécurité.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-iso27001",
+      "name": "La norme ISO/IEC 27001",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La cantine du collège",
+          "paragraphes": [
+            "La cantine du collège sert des centaines de repas par jour. Pour que personne ne tombe malade, il faut des règles d'hygiène, des gens formés et des contrôles réguliers.",
+            "Ces règles ne sont pas inventées par chaque cuisinier. Elles viennent d'une norme : une règle commune écrite par des experts et appliquée partout.",
+            "En sécurité de l'information, la norme la plus connue s'appelle ISO/IEC 27001."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le système d'hygiène de la cantine",
+          "comme": "Dans la cantine, il y a des personnes (les cuisiniers), des façons de faire (se laver les mains) et des outils (les frigos). Ensemble, ils protègent la nourriture.",
+          "enVrai": "Un ISMS (information security management system) fait la même chose pour l'information. C'est un ensemble de personnes, de processus et de technologies qui gère la sécurité des systèmes et des données de l'entreprise. ISO 27001 décrit les composants d'un ISMS. L'image s'arrête là : la norme ne fournit pas les outils."
+        },
+        {
+          "type": "predire",
+          "question": "ISO 27001 est une norme. Que décrit-elle surtout ?",
+          "options": [
+            "Quels pare-feu acheter pour son réseau",
+            "Comment organiser un système de gestion de la sécurité",
+            "Quelles lois s'appliquent dans chaque pays"
+          ],
+          "answer": "Comment organiser un système de gestion de la sécurité",
+          "explanation": "ISO 27001 décrit les composants d'un ISMS, le système qui gère la sécurité. Elle ne choisit pas les marques d'outils et elle n'est pas une loi."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les chiffres du manuel",
+          "texte": "ISO 27001 a été révisée en 2013 pour la dernière fois, selon le manuel. Elle contient 114 contrôles, rangés en 14 domaines. Un domaine est un grand thème, comme le contrôle d'accès ou le chiffrement. Sa norme parente, ISO/IEC 27000, a été révisée en 2018."
+        },
+        {
+          "type": "analogie",
+          "titre": "14 matières, 14 domaines",
+          "comme": "Ton bulletin a plusieurs matières : maths, sport, langues. Chacune a ses propres règles et ses propres notes.",
+          "enVrai": "ISO 27001 range ses 114 contrôles en 14 domaines, comme un bulletin range les notes par matière. Un domaine, c'est un grand thème de la sécurité."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-iso27001-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ISO/IEC 27001 »",
+          "answer": "ISO/IEC 27001 (sometimes referred to as just ISO 27001) is an information security standard published by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).\n\nTraduction : ISO/IEC 27001 (parfois appelée simplement ISO 27001) est une norme de sécurité de l'information publiée par l'Organisation internationale de normalisation (ISO) et la Commission électrotechnique internationale (IEC).",
+          "explanation": "Retiens les deux éditeurs : ISO et IEC. C'est une norme de sécurité de l'information.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot : les cartes suivantes t'aident à la mémoriser pas à pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-def2",
+          "type": "cloze",
+          "question": "ISO/IEC 27001 (sometimes referred to as just ISO 27001) is an information [[security]] standard published by the International Organization for Standardization (ISO) and the International [[Electrotechnical]] Commission (IEC).",
+          "answer": "ISO/IEC 27001 (sometimes referred to as just ISO 27001) is an information security standard published by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).",
+          "explanation": "Deux mots clés : security (norme de sécurité) et Electrotechnical (le nom de l'IEC).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-def3",
+          "type": "cloze",
+          "question": "ISO/IEC 27001 (sometimes referred to as just ISO 27001) is an [[information security standard]] published by the [[International Organization for Standardization]] (ISO) and the [[International Electrotechnical Commission]] (IEC).",
+          "answer": "ISO/IEC 27001 (sometimes referred to as just ISO 27001) is an information security standard published by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).",
+          "explanation": "Trois blocs : le type de norme et les deux organisations qui la publient.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « ISO/IEC 27001 » (en anglais).",
+          "answer": "ISO/IEC 27001 (sometimes referred to as just ISO 27001) is an information security standard published by the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC).\n\nTraduction : ISO/IEC 27001 (parfois appelée simplement ISO 27001) est une norme de sécurité de l'information publiée par l'Organisation internationale de normalisation (ISO) et la Commission électrotechnique internationale (IEC).",
+          "explanation": "Compare : as-tu cité la norme, son sujet et ses deux éditeurs ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-isms-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ISO 27001 et ISMS »",
+          "answer": "ISO 27001 is the most popular standard within the ISO/IEC 27000 family of standards and is focused on the creation and maintenance of an information security management system (ISMS), which ISO defines as \"a systematic approach to managing sensitive company information so that it remains secure.\"\n\nTraduction : ISO 27001 est la norme la plus populaire de la famille ISO/IEC 27000 et se concentre sur la création et la maintenance d'un système de management de la sécurité de l'information (ISMS), que l'ISO définit comme « une approche systématique pour gérer les informations sensibles de l'entreprise afin qu'elles restent protégées ».",
+          "explanation": "Retiens : la plus populaire de la famille, centrée sur un ISMS.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « ISO/IEC 27001 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-isms-def2",
+          "type": "cloze",
+          "question": "ISO 27001 is the most [[popular]] standard within the ISO/IEC 27000 family of standards and is focused on the creation and maintenance of an information security management system (ISMS), which ISO defines as \"a [[systematic]] approach to managing sensitive company information so that it remains secure.\"",
+          "answer": "ISO 27001 is the most popular standard within the ISO/IEC 27000 family of standards and is focused on the creation and maintenance of an information security management system (ISMS), which ISO defines as \"a systematic approach to managing sensitive company information so that it remains secure.\"",
+          "explanation": "Deux mots clés : popular (la plus connue) et systematic (une approche organisée).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-isms-def3",
+          "type": "cloze",
+          "question": "ISO 27001 is the [[most popular standard]] within the ISO/IEC 27000 family of standards and is focused on the creation and maintenance of an [[information security management system]] (ISMS), which ISO defines as \"a systematic approach to [[managing sensitive company information]] so that it remains secure.\"",
+          "answer": "ISO 27001 is the most popular standard within the ISO/IEC 27000 family of standards and is focused on the creation and maintenance of an information security management system (ISMS), which ISO defines as \"a systematic approach to managing sensitive company information so that it remains secure.\"",
+          "explanation": "Trois blocs : la norme la plus populaire, le système qu'elle crée, et le but : protéger l'information sensible.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-isms-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur « ISO 27001 et l'ISMS » (en anglais).",
+          "answer": "ISO 27001 is the most popular standard within the ISO/IEC 27000 family of standards and is focused on the creation and maintenance of an information security management system (ISMS), which ISO defines as \"a systematic approach to managing sensitive company information so that it remains secure.\"\n\nTraduction : ISO 27001 est la norme la plus populaire de la famille ISO/IEC 27000 et se concentre sur la création et la maintenance d'un système de management de la sécurité de l'information (ISMS), que l'ISO définit comme « une approche systématique pour gérer les informations sensibles de l'entreprise afin qu'elles restent protégées ».",
+          "explanation": "Compare : as-tu cité la famille 27000, l'ISMS et la définition donnée par l'ISO ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-simple-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ISMS », en termes simples",
+          "answer": "In plain English, an ISMS is a set of people, processes, and technologies that manages the overall security of a company's systems and data.\n\nTraduction : En termes simples, un ISMS est un ensemble de personnes, de processus et de technologies qui gère la sécurité globale des systèmes et des données d'une entreprise.",
+          "explanation": "En clair : l'ISMS rassemble des gens, des façons de faire et des outils.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « ISO/IEC 27001 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-simple-def3",
+          "type": "cloze",
+          "question": "In plain English, an ISMS is a [[set of people, processes]], and technologies that manages the [[overall security]] of a company's [[systems and data]].",
+          "answer": "In plain English, an ISMS is a set of people, processes, and technologies that manages the overall security of a company's systems and data.",
+          "explanation": "Trois blocs : l'ensemble de gens et d'outils, la sécurité globale, et ce qu'il protège.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27001-1",
+          "type": "duel",
+          "question": "Un ISMS est-il surtout un logiciel ou un ensemble de personnes, de processus et de technologies ?",
+          "options": [
+            "Un logiciel qui protège tous les ordinateurs de l'entreprise",
+            "Un ensemble de personnes, de processus et de technologies"
+          ],
+          "answer": "Un ensemble de personnes, de processus et de technologies",
+          "explanation": "Un ISMS mélange des gens, des façons de faire et des outils. Un logiciel n'en est qu'une partie.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27001-2",
+          "type": "qcm",
+          "question": "Une entreprise veut construire un ISMS avec la norme la plus populaire de la famille ISO/IEC 27000. Laquelle choisit-elle ?",
+          "options": ["ISO/IEC 27001", "ISO/IEC 27002", "Aucune : chaque entreprise invente son système"],
+          "options_why": [
+            "",
+            "La 27002 donne des bonnes pratiques pour les contrôles. Elle s'appuie sur la 27001, qu'on voit dans la planète suivante.",
+            "Une norme existe justement pour éviter que chacun parte de zéro."
+          ],
+          "answer": "ISO/IEC 27001",
+          "explanation": "Le manuel la présente comme la plus populaire de sa famille, centrée sur la création et la maintenance d'un ISMS.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27001-3",
+          "type": "why",
+          "question": "Pourquoi dit-on qu'ISO 27001 est la base de nombreux programmes de sécurité ?",
+          "answer": "Parce qu'elle décrit les composants d'un ISMS. Beaucoup d'entreprises s'en servent comme point de départ pour construire leur programme de sécurité.",
+          "explanation": "Quand on connaît les composants d'un ISMS, on sait quoi mettre en place.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « ISO/IEC 27001 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27001-4",
+          "type": "sort",
+          "question": "Quel domaine ISO 27001 correspond à chaque activité ?",
+          "answer": "Politiques : écrire les règles. Ressources humaines : le personnel. Gestion des biens : la liste de ce qu'on protège. Contrôle d'accès : qui entre où.",
+          "explanation": "Chaque nom de domaine annonce son sujet : lis-le comme un titre de chapitre.",
+          "explanation_more": "Les domaines viennent du manuel (ISC)2, domaine 1. Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": ["Information security policies", "Human resource security", "Asset management", "Access control"],
+            "items": [
+              { "text": "Écrire les règles générales de sécurité que tout le monde doit suivre", "category": "Information security policies" },
+              { "text": "Vérifier le passé d'un candidat avant de l'embaucher", "category": "Human resource security" },
+              { "text": "Faire la liste de tous les ordinateurs et fichiers importants", "category": "Asset management" },
+              { "text": "Décider qui a le droit d'ouvrir quel dossier", "category": "Access control" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-iso27001-5",
+          "type": "cloze",
+          "question": "ISO 27001 contient [[114]] contrôles répartis en [[14]] domaines.",
+          "answer": "ISO 27001 contient 114 contrôles répartis en 14 domaines.",
+          "explanation": "Retiens deux chiffres : 114 contrôles, 14 domaines.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « ISO/IEC 27001 » (version de 2013).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-iso27001-6",
+          "type": "sort",
+          "question": "Quel domaine ISO 27001 correspond à chaque activité ?",
+          "answer": "Cryptographie : chiffrer. Sécurité physique : les locaux. Sécurité des opérations : le fonctionnement au jour le jour. Sécurité des communications : les données qui circulent.",
+          "explanation": "Pose-toi la question : de quoi parle le titre du domaine ?",
+          "explanation_more": "Les domaines viennent du manuel (ISC)2, domaine 1. Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": ["Cryptography", "Physical and environmental security", "Operations security", "Communications security"],
+            "items": [
+              { "text": "Chiffrer un disque dur pour que les données soient illisibles sans clé", "category": "Cryptography" },
+              { "text": "Mettre un badge à la porte et un détecteur de fumée dans la salle des serveurs", "category": "Physical and environmental security" },
+              { "text": "Appliquer les mises à jour et lire les journaux des machines au quotidien", "category": "Operations security" },
+              { "text": "Protéger les messages qui voyagent sur le réseau de l'entreprise", "category": "Communications security" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-iso27001-7",
+          "type": "flash",
+          "question": "En quelle année a eu lieu la dernière révision d'ISO 27001 citée par le manuel ?",
+          "answer": "En 2013. Sa norme parente, ISO/IEC 27000, a été révisée en 2018.",
+          "explanation": "Deux années à ne pas mélanger : 2013 pour la 27001, 2018 pour la 27000.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « ISO/IEC 27001 ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-iso27001-8",
+          "type": "sort",
+          "question": "Quel domaine ISO 27001 correspond à chaque activité ?",
+          "answer": "Acquisition de systèmes : choisir un logiciel sûr. Fournisseurs : les sociétés tierces. Incidents : réagir à une attaque. Conformité : respecter les lois.",
+          "explanation": "Chaque activité répond à une question : quoi acheter, avec qui, que faire en cas d'attaque, que dit la loi.",
+          "explanation_more": "Les domaines viennent du manuel (ISC)2, domaine 1. Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "System acquisition, development, and maintenance",
+              "Supplier relationships",
+              "Information security incident management",
+              "Compliance"
+            ],
+            "items": [
+              { "text": "Vérifier la sécurité d'un logiciel avant de l'acheter ou de le créer", "category": "System acquisition, development, and maintenance" },
+              { "text": "Faire signer des règles de sécurité à l'entreprise qui héberge les données", "category": "Supplier relationships" },
+              { "text": "Suivre un plan précis quand une attaque est détectée", "category": "Information security incident management" },
+              { "text": "Contrôler que l'entreprise respecte les lois et ses propres règles", "category": "Compliance" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-iso27001-9",
+          "type": "whatif",
+          "question": "Et si deux entreprises suivent la même norme ISO 27001, ont-elles exactement les mêmes outils ?",
+          "answer": "Pas forcément. La norme décrit les composants d'un ISMS. Chaque entreprise choisit ensuite comment les mettre en place.",
+          "explanation": "Une norme dit quoi organiser, pas quelle marque d'outil acheter.",
+          "explanation_more": "Raisonnement hors manuel, à partir de la description d'ISO 27001 comme norme des composants d'un ISMS.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27001-10",
+          "type": "sort",
+          "question": "Quel domaine ISO 27001 correspond à chaque activité ?",
+          "answer": "Organisation : répartir les responsabilités. Continuité : continuer malgré une catastrophe. Ressources humaines : former le personnel.",
+          "explanation": "La continuité d'activité (business continuity), c'est continuer à travailler malgré un grave incident.",
+          "explanation_more": "Les domaines viennent du manuel (ISC)2, domaine 1. Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Organization of information security",
+              "Information security aspects of business continuity management",
+              "Human resource security"
+            ],
+            "items": [
+              { "text": "Décider qui est responsable de quelle partie de la sécurité", "category": "Organization of information security" },
+              { "text": "Désigner un responsable sécurité et définir son rôle", "category": "Organization of information security" },
+              { "text": "Prévoir comment continuer à travailler malgré une grande panne ou une catastrophe", "category": "Information security aspects of business continuity management" },
+              { "text": "Garder un plan de secours pour que les services restent disponibles", "category": "Information security aspects of business continuity management" },
+              { "text": "Former le personnel et lui rappeler ses obligations de sécurité", "category": "Human resource security" }
+            ]
+          },
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "d1-iso27002",
+      "name": "La norme ISO/IEC 27002",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le mode d'emploi",
+          "paragraphes": [
+            "Ton collège a décidé d'avoir un règlement. Bonne idée. Mais chaque professeur se demande : concrètement, que dois-je faire dans ma classe ?",
+            "Il faut un deuxième document, plus précis, avec des conseils pas à pas.",
+            "En sécurité de l'information, la norme ISO 27001 dit quoi organiser : un ISMS, c'est-à-dire les personnes, les règles et les outils qui gèrent la sécurité. Le deuxième document s'appelle ISO/IEC 27002."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le plan du repas et la recette",
+          "comme": "Le plan d'un repas dit : une entrée, un plat, un dessert. La recette dit combien de farine il faut et combien de minutes au four.",
+          "enVrai": "ISO 27001 donne le plan : les composants d'un ISMS. ISO 27002 donne la recette : des bonnes pratiques (best practices) pour choisir, mettre en place et gérer les contrôles. On dit qu'elle est plus prescriptive (prescriptive), car elle dit plus précisément quoi faire."
+        },
+        {
+          "type": "predire",
+          "question": "Laquelle de ces deux normes te dit le plus précisément quels contrôles choisir et comment les gérer ?",
+          "options": ["ISO/IEC 27001", "ISO/IEC 27002"],
+          "answer": "ISO/IEC 27002",
+          "explanation": "La 27001 décrit le système (l'ISMS). La 27002 donne les conseils de bonnes pratiques pour les contrôles. Les deux vont ensemble."
+        },
+        {
+          "type": "exemple",
+          "titre": "Son titre officiel",
+          "texte": "En anglais, ISO/IEC 27002 s'appelle Security Techniques, Code of practice for information security controls. Code of practice veut dire recueil de bonnes pratiques. Le mot controls renvoie aux contrôles de sécurité : les protections de l'entreprise."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le profil de risque",
+          "texte": "Une petite école et une grande banque n'ont pas les mêmes dangers. ISO 27002 aide chacune à choisir ses contrôles selon son profil de risque (risk profile). C'est la nature et la taille de ses dangers."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-iso27002-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ISO/IEC 27002 »",
+          "answer": "ISO/IEC 27002 (again, often referred to as just ISO 27002) is titled \"Security Techniques — Code of practice for information security controls.\"\n\nTraduction : ISO/IEC 27002 (encore une fois, souvent appelée simplement ISO 27002) a pour titre « Techniques de sécurité — Code de bonnes pratiques pour les contrôles de sécurité de l'information ».",
+          "explanation": "Retiens le titre : Security Techniques, puis Code of practice.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot : les cartes suivantes t'aident à la mémoriser pas à pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-def2",
+          "type": "cloze",
+          "question": "ISO/IEC 27002 (again, often referred to as just ISO 27002) is titled \"Security [[Techniques]] — Code of [[practice]] for information security controls.\"",
+          "answer": "ISO/IEC 27002 (again, often referred to as just ISO 27002) is titled \"Security Techniques — Code of practice for information security controls.\"",
+          "explanation": "Deux mots clés du titre : Techniques et practice.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-def3",
+          "type": "cloze",
+          "question": "ISO/IEC 27002 (again, often referred to as just ISO 27002) is titled \"[[Security Techniques]] — [[Code of practice]] for [[information security controls]].\"",
+          "answer": "ISO/IEC 27002 (again, often referred to as just ISO 27002) is titled \"Security Techniques — Code of practice for information security controls.\"",
+          "explanation": "Trois blocs du titre : les techniques de sécurité, le code de bonnes pratiques, et son sujet : les contrôles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « ISO/IEC 27002 » (en anglais).",
+          "answer": "ISO/IEC 27002 (again, often referred to as just ISO 27002) is titled \"Security Techniques — Code of practice for information security controls.\"\n\nTraduction : ISO/IEC 27002 (encore une fois, souvent appelée simplement ISO 27002) a pour titre « Techniques de sécurité — Code de bonnes pratiques pour les contrôles de sécurité de l'information ».",
+          "explanation": "Compare : as-tu écrit les trois parties du titre dans l'ordre ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-pratique-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ISO/IEC 27002 », ce que la norme apporte",
+          "answer": "This standard builds on ISO 27001 by providing guidelines for organizations to select, implement, and manage security controls based on their own security risk profile.\n\nTraduction : Cette norme s'appuie sur ISO 27001 en fournissant des lignes directrices pour aider les organisations à sélectionner, mettre en œuvre et gérer des contrôles de sécurité selon leur propre profil de risque de sécurité.",
+          "explanation": "ISO 27002 s'appuie sur ISO 27001 et aide à choisir les contrôles.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « ISO/IEC 27002 ». La phrase suit directement celle qui donne le titre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-pratique-def2",
+          "type": "cloze",
+          "question": "This standard builds on ISO 27001 by providing [[guidelines]] for organizations to select, implement, and manage security controls based on their own security [[risk]] profile.",
+          "answer": "This standard builds on ISO 27001 by providing guidelines for organizations to select, implement, and manage security controls based on their own security risk profile.",
+          "explanation": "Deux mots clés : guidelines (des conseils) et risk (le profil de risque de chacun).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-pratique-def3",
+          "type": "cloze",
+          "question": "This standard [[builds on ISO 27001]] by providing guidelines for organizations to [[select, implement, and manage]] security controls based on their [[own security risk profile]].",
+          "answer": "This standard builds on ISO 27001 by providing guidelines for organizations to select, implement, and manage security controls based on their own security risk profile.",
+          "explanation": "Trois blocs : ce sur quoi elle s'appuie, les trois verbes, et le profil de risque propre à chacun.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-pratique-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur ce qu'ISO 27002 apporte à ISO 27001 (en anglais).",
+          "answer": "This standard builds on ISO 27001 by providing guidelines for organizations to select, implement, and manage security controls based on their own security risk profile.\n\nTraduction : Cette norme s'appuie sur ISO 27001 en fournissant des lignes directrices pour aider les organisations à sélectionner, mettre en œuvre et gérer des contrôles de sécurité selon leur propre profil de risque de sécurité.",
+          "explanation": "Compare : as-tu pensé aux trois verbes et au profil de risque ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-presc-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ISO 27002 », plus prescriptive",
+          "answer": "In other words, ISO 27002 is a bit more prescriptive than ISO 27001, as it provides best-practice recommendations for organizations to build and maintain their ISMSs.\n\nTraduction : Autrement dit, ISO 27002 est un peu plus prescriptive qu'ISO 27001, car elle fournit des recommandations de bonnes pratiques pour aider les organisations à construire et maintenir leurs ISMS.",
+          "explanation": "Prescriptive : elle dit plus précisément quoi faire. La 27001 reste plus générale.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « ISO/IEC 27002 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-presc-def3",
+          "type": "cloze",
+          "question": "In other words, ISO 27002 is a [[bit more prescriptive]] than ISO 27001, as it provides [[best-practice recommendations]] for organizations to [[build and maintain]] their ISMSs.",
+          "answer": "In other words, ISO 27002 is a bit more prescriptive than ISO 27001, as it provides best-practice recommendations for organizations to build and maintain their ISMSs.",
+          "explanation": "Trois blocs : un peu plus précise, des recommandations de bonnes pratiques, et construire puis maintenir l'ISMS.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-iso27002-1",
+          "type": "duel",
+          "question": "Laquelle des deux normes est la plus prescriptive ?",
+          "options": ["ISO/IEC 27001", "ISO/IEC 27002"],
+          "answer": "ISO/IEC 27002",
+          "explanation": "Le manuel dit que la 27002 est un peu plus prescriptive : elle donne des recommandations de bonnes pratiques.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27002-2",
+          "type": "qcm",
+          "question": "Une entreprise a déjà un ISMS. Elle veut savoir comment choisir et gérer ses contrôles selon ses dangers. Quelle norme consulte-t-elle ?",
+          "options": ["ISO/IEC 27002", "ISO/IEC 27001", "Aucune : un ISMS suffit à tout"],
+          "options_why": [
+            "",
+            "La 27001 décrit l'ISMS que l'entreprise a déjà mis en place. Elle ne donne pas le détail des contrôles.",
+            "Un ISMS organise la sécurité, mais il faut encore choisir des contrôles adaptés."
+          ],
+          "answer": "ISO/IEC 27002",
+          "explanation": "Elle fournit des lignes directrices pour sélectionner, mettre en œuvre et gérer les contrôles selon le profil de risque.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27002-3",
+          "type": "why",
+          "question": "Pourquoi ISO 27002 tient-elle compte du profil de risque de chaque entreprise ?",
+          "answer": "Parce que deux entreprises n'ont pas les mêmes dangers. Chacune doit choisir les contrôles qui correspondent à ses propres risques.",
+          "explanation": "Une petite école n'a pas besoin des mêmes protections qu'une grande banque.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « ISO/IEC 27002 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27002-4",
+          "type": "cloze",
+          "question": "ISO 27002 est un guide de [[bonnes pratiques]] pour [[choisir]], mettre en place et gérer des contrôles.",
+          "answer": "ISO 27002 est un guide de bonnes pratiques pour choisir, mettre en place et gérer des contrôles.",
+          "explanation": "Trois verbes à retenir : choisir, mettre en place, gérer.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27002-5",
+          "type": "flash",
+          "question": "ISO 27002 remplace-t-elle ISO 27001 ?",
+          "answer": "Non. Elle s'appuie dessus : la 27001 décrit l'ISMS, la 27002 donne des conseils pour les contrôles.",
+          "explanation": "Les deux normes se complètent, comme le plan et la recette.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « This standard builds on ISO 27001 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27002-6",
+          "type": "sort",
+          "question": "À quelle norme correspond chaque phrase ?",
+          "answer": "ISO 27001 : composants de l'ISMS, la plus populaire, 114 contrôles. ISO 27002 : sélection des contrôles, un peu plus prescriptive, Code of practice.",
+          "explanation": "27001 = le système (ISMS). 27002 = les conseils pour les contrôles.",
+          "data": {
+            "mode": "classer",
+            "categories": ["ISO/IEC 27001", "ISO/IEC 27002"],
+            "items": [
+              { "text": "Décrit les composants d'un ISMS", "category": "ISO/IEC 27001" },
+              { "text": "Donne des bonnes pratiques pour sélectionner les contrôles", "category": "ISO/IEC 27002" },
+              { "text": "Norme la plus populaire de la famille ISO/IEC 27000", "category": "ISO/IEC 27001" },
+              { "text": "Un peu plus prescriptive", "category": "ISO/IEC 27002" },
+              { "text": "Contient 114 contrôles dans 14 domaines", "category": "ISO/IEC 27001" },
+              { "text": "A pour titre Code of practice for information security controls", "category": "ISO/IEC 27002" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27002-7",
+          "type": "whatif",
+          "question": "Et si une entreprise applique les conseils de la 27002 sans avoir d'ISMS ?",
+          "answer": "Elle aurait de bons conseils, mais pas de système pour les organiser. La 27002 s'appuie sur la 27001 : les deux se complètent.",
+          "explanation": "Des conseils sans organisation se perdent vite.",
+          "explanation_more": "Raisonnement hors manuel, à partir de la phrase « builds on ISO 27001 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-iso27002-8",
+          "type": "qcm",
+          "question": "Dans le titre d'ISO 27002, que veut dire « Code of practice » ?",
+          "options": ["Un recueil de bonnes pratiques", "Un code secret pour chiffrer", "Un règlement obligatoire pour tous"],
+          "options_why": [
+            "",
+            "Ici, « code » ne veut pas dire message chiffré.",
+            "La norme donne des recommandations de bonnes pratiques, pas une loi."
+          ],
+          "answer": "Un recueil de bonnes pratiques",
+          "explanation": "C'est un guide : il recommande des façons de faire éprouvées.",
+          "explanation_more": "Le manuel parle de lignes directrices et de recommandations de bonnes pratiques.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-nist80053",
+      "name": "NIST 800-53 : le gros catalogue de contrôles",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Un manuel écrit pour l'État",
+          "paragraphes": [
+            "Une grande ville doit protéger ses écoles, ses hôpitaux et ses bureaux. Elle demande à un institut public d'écrire un énorme manuel de sécurité.",
+            "Le manuel est si complet que des entreprises privées, partout dans le monde, finissent par s'en servir aussi.",
+            "Aux États-Unis, un manuel de ce genre existe vraiment. Il s'appelle NIST 800-53. Le NIST est un institut américain qui publie des normes."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme une encyclopédie",
+          "comme": "Une encyclopédie range tous les sujets par grandes catégories. Chaque catégorie contient beaucoup d'articles.",
+          "enVrai": "NIST 800-53 définit des centaines de contrôles de sécurité. Ils sont rangés en 18 familles (control families), comme des chapitres. Chaque famille a un code de deux lettres, par exemple AC pour Access control."
+        },
+        {
+          "type": "predire",
+          "question": "Le manuel NIST 800-53 a été écrit à l'origine pour qui ? Un système fédéral est un système de l'État américain.",
+          "options": [
+            "Les agences du gouvernement américain",
+            "Les petits magasins en ligne",
+            "Les écoles européennes"
+          ],
+          "answer": "Les agences du gouvernement américain",
+          "explanation": "Il est né pour aider l'État américain à gérer sa sécurité. Ensuite, il est devenu une référence dans beaucoup de secteurs, partout dans le monde."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les chiffres du manuel",
+          "texte": "NIST 800-53 propose des centaines de contrôles, répartis en 18 familles. La dernière révision citée est la révision 5, publiée en septembre 2020. Une révision est une nouvelle version mise à jour du texte."
+        },
+        {
+          "type": "analogie",
+          "titre": "Un code à deux lettres",
+          "comme": "Au collège, EPS veut dire éducation physique et SVT veut dire sciences de la vie. Un code court remplace un long nom.",
+          "enVrai": "Chez le NIST aussi : AC veut dire Access control et IR veut dire Incident response. Retenir le code aide à retenir la famille."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-nist80053-nist-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le « NIST »",
+          "answer": "The National Institute of Standards and Technology is a nonregulatory agency of the U.S. Department of Commerce, whose mission is to promote innovation and industrial competitiveness by advancing standards and technologies.\n\nTraduction : Le National Institute of Standards and Technology est une agence sans pouvoir de réglementation du département du Commerce des États-Unis, dont la mission est de promouvoir l'innovation et la compétitivité industrielle en faisant progresser les normes et les technologies.",
+          "explanation": "Le NIST aide les entreprises avec des normes. Il ne fait pas les lois.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST 800-53 ». Nonregulatory veut dire qu'elle ne réglemente pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nist80053-nist-def3",
+          "type": "cloze",
+          "question": "The National Institute of Standards and Technology is a [[nonregulatory agency]] of the [[U.S. Department of Commerce]], whose mission is to promote [[innovation and industrial competitiveness]] by advancing standards and technologies.",
+          "answer": "The National Institute of Standards and Technology is a nonregulatory agency of the U.S. Department of Commerce, whose mission is to promote innovation and industrial competitiveness by advancing standards and technologies.",
+          "explanation": "Trois blocs : une agence sans pouvoir de réglementation, son ministère, et sa mission.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nist80053-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « NIST 800-53 »",
+          "answer": "NIST 800-53, \"Security and Privacy Controls for Federal Information Systems and Organizations,\" is NIST's massive security control framework.\n\nTraduction : NIST 800-53, « Contrôles de sécurité et de vie privée pour les systèmes d'information et organisations fédéraux », est le gigantesque cadre de contrôle de sécurité du NIST.",
+          "explanation": "Retiens l'adjectif massive : c'est un très gros catalogue de contrôles.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot : les cartes suivantes t'aident à la mémoriser pas à pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nist80053-def2",
+          "type": "cloze",
+          "question": "NIST 800-53, \"Security and Privacy Controls for Federal Information Systems and Organizations,\" is NIST's [[massive]] security control [[framework]].",
+          "answer": "NIST 800-53, \"Security and Privacy Controls for Federal Information Systems and Organizations,\" is NIST's massive security control framework.",
+          "explanation": "Deux mots clés : massive (énorme) et framework (cadre).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nist80053-def3",
+          "type": "cloze",
+          "question": "NIST 800-53, \"[[Security and Privacy Controls]] for [[Federal Information Systems]] and Organizations,\" is NIST's [[massive security control framework]].",
+          "answer": "NIST 800-53, \"Security and Privacy Controls for Federal Information Systems and Organizations,\" is NIST's massive security control framework.",
+          "explanation": "Trois blocs : les contrôles de sécurité et de vie privée, les systèmes fédéraux, et le gros cadre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nist80053-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « NIST 800-53 » (en anglais).",
+          "answer": "NIST 800-53, \"Security and Privacy Controls for Federal Information Systems and Organizations,\" is NIST's massive security control framework.\n\nTraduction : NIST 800-53, « Contrôles de sécurité et de vie privée pour les systèmes d'information et organisations fédéraux », est le gigantesque cadre de contrôle de sécurité du NIST.",
+          "explanation": "Compare : as-tu écrit le titre entre guillemets, puis massive security control framework ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nist80053-familles-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les « control families » de NIST 800-53",
+          "answer": "NIST 800-53 defines hundreds of security controls across the following 18 control families.\n\nTraduction : NIST 800-53 définit des centaines de contrôles de sécurité répartis dans les 18 familles de contrôles suivantes.",
+          "explanation": "Retiens deux chiffres : des centaines de contrôles, 18 familles.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST 800-53 ». Le livre énumère ensuite les 18 familles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nist80053-familles-def3",
+          "type": "cloze",
+          "question": "[[NIST 800-53]] defines [[hundreds of security controls]] across the [[following 18 control families]].",
+          "answer": "NIST 800-53 defines hundreds of security controls across the following 18 control families.",
+          "explanation": "Trois blocs : le nom du cadre, le nombre de contrôles, et les 18 familles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nist80053-1",
+          "type": "duel",
+          "question": "Le NIST est-il une agence qui aide par des normes, ou une agence qui contrôle et punit les entreprises ?",
+          "options": ["Il aide par des normes et des technologies", "Il contrôle et punit les entreprises"],
+          "answer": "Il aide par des normes et des technologies",
+          "explanation": "Le manuel le décrit comme une agence sans pouvoir de réglementation, dont la mission est de faire progresser les normes.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-nist80053-2",
+          "type": "qcm",
+          "question": "Une entreprise de livraison veut un très grand catalogue de contrôles. Quel cadre américain peut-elle prendre, même si elle est privée ?",
+          "options": ["NIST 800-53", "HIPAA", "PCI"],
+          "options_why": [
+            "",
+            "HIPAA vise la santé, pas les entreprises de livraison.",
+            "PCI vise les données de cartes de paiement, pas toute la sécurité."
+          ],
+          "answer": "NIST 800-53",
+          "explanation": "Il est considéré comme l'une des bases de contrôles les plus complètes, et beaucoup de secteurs s'y réfèrent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-nist80053-3",
+          "type": "sort",
+          "question": "Dans quelle famille NIST 800-53 range-t-on chaque activité ?",
+          "answer": "AC : qui entre où. AT : former le personnel. AU : garder des traces. CA : tester et autoriser un système.",
+          "explanation": "Retiens le code de chaque famille : AC, AT, AU et CA.",
+          "explanation_more": "Familles : manuel (ISC)2, domaine 1, section « NIST 800-53 ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Access control (AC)",
+              "Awareness and training (AT)",
+              "Audit and accountability (AU)",
+              "Security assessment and authorization (CA)"
+            ],
+            "items": [
+              { "text": "Décider qui a le droit d'entrer dans quel système", "category": "Access control (AC)" },
+              { "text": "Former et sensibiliser le personnel à la sécurité", "category": "Awareness and training (AT)" },
+              { "text": "Garder des traces pour savoir qui a fait quoi", "category": "Audit and accountability (AU)" },
+              { "text": "Tester un système et donner l'autorisation officielle de l'utiliser", "category": "Security assessment and authorization (CA)" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-nist80053-4",
+          "type": "sort",
+          "question": "Dans quelle famille NIST 800-53 range-t-on chaque activité ?",
+          "answer": "CM : suivre les réglages. CP : prévoir la reprise après un arrêt grave. IA : vérifier qui se connecte. IR : réagir à une attaque.",
+          "explanation": "Retiens le code de chaque famille : CM, CP, IA et IR.",
+          "explanation_more": "Familles : manuel (ISC)2, domaine 1, section « NIST 800-53 ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Configuration management (CM)",
+              "Contingency planning (CP)",
+              "Identification and authentication (IA)",
+              "Incident response (IR)"
+            ],
+            "items": [
+              { "text": "Noter les réglages de chaque machine et suivre chaque changement", "category": "Configuration management (CM)" },
+              { "text": "Prévoir comment remettre les services en marche après un arrêt grave", "category": "Contingency planning (CP)" },
+              { "text": "Vérifier qui est la personne qui se connecte", "category": "Identification and authentication (IA)" },
+              { "text": "Savoir qui appeler et quoi faire dès qu'une attaque est détectée", "category": "Incident response (IR)" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-nist80053-5",
+          "type": "why",
+          "question": "Pourquoi NIST 800-53, écrit pour l'État américain, est-il utilisé dans le monde entier ?",
+          "answer": "Parce qu'il est considéré comme l'une des bases de contrôles de sécurité les plus complètes. Beaucoup d'industries s'y réfèrent.",
+          "explanation": "Un catalogue très complet sert à tous, pas seulement à l'État.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST 800-53 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-nist80053-6",
+          "type": "sort",
+          "question": "Dans quelle famille NIST 800-53 range-t-on chaque activité ?",
+          "answer": "MA : entretenir le matériel. MP : protéger les supports. PE : protéger les locaux. PL : écrire le plan de sécurité.",
+          "explanation": "Retiens le code de chaque famille : MA, MP, PE et PL.",
+          "explanation_more": "Familles : manuel (ISC)2, domaine 1, section « NIST 800-53 ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Maintenance (MA)",
+              "Media protection (MP)",
+              "Physical and environmental protection (PE)",
+              "Planning (PL)"
+            ],
+            "items": [
+              { "text": "Réparer et entretenir le matériel de façon encadrée", "category": "Maintenance (MA)" },
+              { "text": "Protéger et détruire proprement les clés USB, les disques et les papiers", "category": "Media protection (MP)" },
+              { "text": "Protéger les locaux contre les intrusions, le feu ou l'eau", "category": "Physical and environmental protection (PE)" },
+              { "text": "Écrire le plan de sécurité d'un système", "category": "Planning (PL)" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-nist80053-7",
+          "type": "sort",
+          "question": "Dans quelle famille NIST 800-53 range-t-on chaque activité ?",
+          "answer": "PS : suivre le personnel. RA : repérer et mesurer les dangers. SA : penser sécurité à l'achat.",
+          "explanation": "Retiens le code de chaque famille : PS, RA et SA.",
+          "explanation_more": "Familles : manuel (ISC)2, domaine 1, section « NIST 800-53 ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Personnel security (PS)",
+              "Risk assessment (RA)",
+              "System and services acquisition (SA)"
+            ],
+            "items": [
+              { "text": "Contrôler et suivre les gens qui travaillent pour l'entreprise", "category": "Personnel security (PS)" },
+              { "text": "Repérer et mesurer les dangers qui menacent l'entreprise", "category": "Risk assessment (RA)" },
+              { "text": "Penser à la sécurité en achetant ou en créant un système", "category": "System and services acquisition (SA)" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-nist80053-8",
+          "type": "cloze",
+          "question": "NIST 800-53 compte [[18]] familles de contrôles. La révision [[5]] date de septembre 2020.",
+          "answer": "NIST 800-53 compte 18 familles de contrôles. La révision 5 date de septembre 2020.",
+          "explanation": "Deux chiffres à retenir : 18 familles, révision 5.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST 800-53 » : Rev. 5 publiée en septembre 2020.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-nist80053-9",
+          "type": "sort",
+          "question": "Dans quelle famille NIST 800-53 range-t-on chaque activité ?",
+          "answer": "SC : protéger les données qui circulent. SI : corriger les failles et les virus. PM : piloter tout le programme de sécurité.",
+          "explanation": "Retiens le code de chaque famille : SC, SI et PM.",
+          "explanation_more": "Familles : manuel (ISC)2, domaine 1, section « NIST 800-53 ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "System and communications protection (SC)",
+              "System and information integrity (SI)",
+              "Program management (PM)"
+            ],
+            "items": [
+              { "text": "Protéger les données qui circulent et séparer les zones du réseau", "category": "System and communications protection (SC)" },
+              { "text": "Repérer et corriger les failles et les virus", "category": "System and information integrity (SI)" },
+              { "text": "Piloter le programme de sécurité de toute l'entreprise", "category": "Program management (PM)" }
+            ]
+          },
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "d1-nistcsf",
+      "name": "Le cadre de cybersécurité du NIST (NIST Cybersecurity Framework)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le plan incendie du collège",
+          "paragraphes": [
+            "Un collège veut se préparer aux incendies. Il fait la liste de ses salles, installe des détecteurs et organise des exercices. Il sait aussi comment réparer après un sinistre.",
+            "Ces actions ne s'arrêtent jamais. Elles se font toute l'année, en même temps.",
+            "Le cadre de cybersécurité du NIST (NIST Cybersecurity Framework, ou CSF) organise la sécurité informatique de cette façon."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Cinq grandes habitudes",
+          "comme": "Face à un incendie, on sait ce qu'on doit protéger, on met des protections, on détecte la fumée, on réagit, puis on remet en état.",
+          "enVrai": "Le NIST CSF a cinq fonctions principales (core functions) : Identify (identifier), Protect (protéger), Detect (détecter), Respond (répondre) et Recover (récupérer). Elles sont faites en même temps et sans arrêt. L'image s'arrête là : ce n'est pas une liste à cocher une seule fois."
+        },
+        {
+          "type": "predire",
+          "question": "Un service vital pour la société, comme l'électricité, est dit critique. Pour quels secteurs le NIST CSF a-t-il d'abord été pensé ?",
+          "options": [
+            "Les jeux vidéo, les réseaux sociaux et les films",
+            "Ceux jugés critiques : banque, énergie, communications",
+            "Les écoles, les clubs de sport et les musées"
+          ],
+          "answer": "Ceux jugés critiques : banque, énergie, communications",
+          "explanation": "Il visait d'abord les industries critiques. Puis il est devenu un cadre prisé par des entreprises de toutes tailles."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les chiffres du manuel",
+          "texte": "Le NIST CSF a été publié pour la première fois en 2014. La version 1.1 date de 2018. Ses cinq fonctions sont découpées en 23 catégories, puis en 108 sous-catégories. Chaque sous-catégorie décrit un contrôle de sécurité précis ou un résultat voulu."
+        },
+        {
+          "type": "analogie",
+          "titre": "Un guide de poche",
+          "comme": "Un règlement de 300 pages et un guide de poche d'une page : le second est plus facile à adapter à ton club.",
+          "enVrai": "Le NIST CSF reprend les idées de NIST 800-53 et d'autres cadres. Mais il est plus flexible et plus facile à comprendre pour les entreprises privées."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-nistcsf-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « NIST Cybersecurity Framework »",
+          "answer": "The NIST Cybersecurity Framework (CSF), first published in 2014, is a collection of standards, guidelines, and best practices to manage cybersecurity risk.\n\nTraduction : Le NIST Cybersecurity Framework (CSF), publié pour la première fois en 2014, est un ensemble de normes, de lignes directrices et de bonnes pratiques pour gérer le risque de cybersécurité.",
+          "explanation": "Pense à un guide de poche : normes, conseils et bonnes pratiques réunis.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot : les cartes suivantes t'aident à la mémoriser pas à pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-def2",
+          "type": "cloze",
+          "question": "The NIST Cybersecurity Framework (CSF), first published in 2014, is a [[collection]] of standards, guidelines, and best practices to manage [[cybersecurity]] risk.",
+          "answer": "The NIST Cybersecurity Framework (CSF), first published in 2014, is a collection of standards, guidelines, and best practices to manage cybersecurity risk.",
+          "explanation": "Deux mots clés : collection (un ensemble) et cybersecurity (le sujet).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-def3",
+          "type": "cloze",
+          "question": "The NIST Cybersecurity Framework (CSF), [[first published in 2014]], is a [[collection of standards]], guidelines, and best practices to [[manage cybersecurity risk]].",
+          "answer": "The NIST Cybersecurity Framework (CSF), first published in 2014, is a collection of standards, guidelines, and best practices to manage cybersecurity risk.",
+          "explanation": "Trois blocs : la date de première publication, ce qu'il contient, et son but.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « NIST Cybersecurity Framework » (en anglais).",
+          "answer": "The NIST Cybersecurity Framework (CSF), first published in 2014, is a collection of standards, guidelines, and best practices to manage cybersecurity risk.\n\nTraduction : Le NIST Cybersecurity Framework (CSF), publié pour la première fois en 2014, est un ensemble de normes, de lignes directrices et de bonnes pratiques pour gérer le risque de cybersécurité.",
+          "explanation": "Compare : as-tu pensé à la date, aux trois ingrédients et au but ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-cinq-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les « five core functions » du NIST CSF",
+          "answer": "The NIST Cybersecurity Framework consists of five core functions, each with multiple subdivisions NIST calls categories.\n\nTraduction : Le NIST Cybersecurity Framework se compose de cinq fonctions principales, chacune avec plusieurs subdivisions que le NIST appelle catégories.",
+          "explanation": "Cinq fonctions, et chacune se découpe en catégories.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-cinq-def3",
+          "type": "cloze",
+          "question": "The NIST Cybersecurity Framework consists of [[five core functions]], each with [[multiple subdivisions]] [[NIST calls categories]].",
+          "answer": "The NIST Cybersecurity Framework consists of five core functions, each with multiple subdivisions NIST calls categories.",
+          "explanation": "Trois blocs : cinq fonctions, plusieurs subdivisions, et le mot « categories ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-ensemble-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : comment faire les cinq fonctions du NIST CSF",
+          "answer": "The five core functions within NIST CSF are intended to be performed simultaneously and continuously to form a culture of assessing and addressing cybersecurity risk.\n\nTraduction : Les cinq fonctions principales du NIST CSF sont destinées à être exécutées simultanément et en continu, pour former une culture d'évaluation et de traitement du risque de cybersécurité.",
+          "explanation": "Retiens deux adverbes : simultanément et en continu. Ce n'est pas une suite d'étapes.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-ensemble-def3",
+          "type": "cloze",
+          "question": "The five core functions within NIST CSF are intended to be [[performed simultaneously and continuously]] to form a [[culture of assessing]] and [[addressing cybersecurity risk]].",
+          "answer": "The five core functions within NIST CSF are intended to be performed simultaneously and continuously to form a culture of assessing and addressing cybersecurity risk.",
+          "explanation": "Trois blocs : en même temps et sans arrêt, une culture d'évaluation, et le traitement du risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-sscat-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : une « subcategory » du NIST CSF",
+          "answer": "Each subcategory describes a specific security control or desired outcome.\n\nTraduction : Chaque sous-catégorie décrit un contrôle de sécurité précis ou un résultat souhaité.",
+          "explanation": "Une sous-catégorie est la plus petite pièce : un contrôle ou un résultat voulu.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-sscat-def3",
+          "type": "cloze",
+          "question": "[[Each subcategory]] describes a [[specific security control]] or [[desired outcome]].",
+          "answer": "Each subcategory describes a specific security control or desired outcome.",
+          "explanation": "Trois blocs : la sous-catégorie, un contrôle précis, ou un résultat voulu.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-nistcsf-1",
+          "type": "duel",
+          "question": "Les cinq fonctions du NIST CSF se font-elles l'une après l'autre ou en même temps et en continu ?",
+          "options": ["L'une après l'autre, une seule fois", "En même temps et en continu"],
+          "answer": "En même temps et en continu",
+          "explanation": "Le manuel dit qu'elles sont faites simultanément et continuellement, pour créer une culture de la sécurité.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-nistcsf-2",
+          "type": "qcm",
+          "question": "Une banque cherche un cadre souple et facile à comprendre pour une entreprise privée. Lequel lui convient le mieux ?",
+          "options": ["NIST Cybersecurity Framework", "NIST 800-53", "PCI"],
+          "options_why": [
+            "",
+            "Il est très complet, mais le NIST CSF a été conçu pour être plus flexible et plus facile à comprendre.",
+            "PCI vise les données de cartes de paiement, pas toute la sécurité de l'entreprise."
+          ],
+          "answer": "NIST Cybersecurity Framework",
+          "explanation": "Il a été pensé pour être flexible et compréhensible par les entreprises privées.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-nistcsf-3",
+          "type": "cloze",
+          "question": "Le NIST CSF compte [[5]] fonctions, [[23]] catégories et [[108]] sous-catégories.",
+          "answer": "Le NIST CSF compte 5 fonctions, 23 catégories et 108 sous-catégories.",
+          "explanation": "Trois chiffres, du plus grand au plus petit niveau : 5, 23, 108.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-nistcsf-4",
+          "type": "flash",
+          "question": "En quelle année le NIST CSF a-t-il été publié pour la première fois ?",
+          "answer": "En 2014. La version 1.1, citée par le manuel comme version actuelle, date de 2018.",
+          "explanation": "Deux dates : 2014 pour la première version, 2018 pour la 1.1.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-nistcsf-5",
+          "type": "why",
+          "question": "Pourquoi le NIST CSF est-il devenu une référence pour des entreprises de toutes tailles ?",
+          "answer": "Il a été conçu pour être plus flexible et plus facile à comprendre. Il s'aligne aussi sur NIST 800-53 et sur d'autres cadres.",
+          "explanation": "Un cadre simple à adapter est utile aussi aux petites entreprises.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-nistcsf-6",
+          "type": "sort",
+          "question": "À quel cadre du NIST correspond chaque phrase ?",
+          "answer": "NIST 800-53 : des centaines de contrôles, 18 familles. NIST CSF : cinq fonctions, plus flexible, pensé pour les infrastructures critiques.",
+          "explanation": "800-53 est le gros catalogue. Le CSF est le guide plus souple en cinq fonctions.",
+          "data": {
+            "mode": "classer",
+            "categories": ["NIST 800-53", "NIST Cybersecurity Framework"],
+            "items": [
+              { "text": "Des centaines de contrôles rangés en 18 familles", "category": "NIST 800-53" },
+              { "text": "Cinq fonctions, 23 catégories et 108 sous-catégories", "category": "NIST Cybersecurity Framework" },
+              { "text": "Créé au départ pour aider les agences américaines", "category": "NIST 800-53" },
+              { "text": "Pensé au départ pour les infrastructures critiques", "category": "NIST Cybersecurity Framework" },
+              { "text": "Plus flexible et plus facile à comprendre pour le privé", "category": "NIST Cybersecurity Framework" },
+              { "text": "Dernière révision citée : la révision 5 de septembre 2020", "category": "NIST 800-53" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-nistcsf-7",
+          "type": "whatif",
+          "question": "Et si une entreprise utilisait le NIST CSF une seule fois, puis rangeait le document ?",
+          "answer": "Ce ne serait pas assez. Les fonctions doivent être faites en même temps et en continu pour créer une culture de la sécurité.",
+          "explanation": "Une culture de sécurité, c'est une habitude qui dure, pas un contrôle unique.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-csf-fonctions",
+      "name": "Les cinq fonctions du NIST CSF (Identify, Protect, Detect, Respond, Recover)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le château fort",
+          "paragraphes": [
+            "Imagine un château fort. Les gardiens connaissent chaque salle et chaque trésor. Ils ferment les portes et guettent depuis les tours. Ils réagissent à une attaque, puis réparent les murs.",
+            "Chacune de ces tâches a un nom en sécurité informatique.",
+            "Le cadre de cybersécurité du NIST (le NIST CSF) en compte cinq : Identify, Protect, Detect, Respond et Recover."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Les cinq tâches du château",
+          "comme": "Connaître ses trésors, fermer les portes, guetter, répondre à l'attaque, puis réparer les dégâts.",
+          "enVrai": "Identify : comprendre ce qu'on doit protéger. Protect : mettre des protections. Detect : repérer qu'il se passe quelque chose. Respond : agir quand un incident est détecté. Recover : remettre en marche après l'incident. Attention : dans l'entreprise, ces tâches tournent en même temps, pas à la file."
+        },
+        {
+          "type": "predire",
+          "question": "Une alarme sonne : un intrus a été repéré dans le bâtiment. Quelle fonction a repéré le problème ?",
+          "options": ["Protect", "Detect", "Recover"],
+          "answer": "Detect",
+          "explanation": "Detect, c'est repérer qu'un événement de cybersécurité a lieu. Protect met des protections avant. Recover remet en état après."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une attaque de ransomware",
+          "texte": "Un ransomware bloque les fichiers d'une entreprise. Elle savait où étaient ses données (Identify) et avait des sauvegardes (Protect). Son système a donné l'alerte tout de suite (Detect). L'équipe a isolé les machines (Respond), puis restauré les fichiers (Recover)."
+        },
+        {
+          "type": "analogie",
+          "titre": "Événement ou incident",
+          "comme": "Une alarme qui sonne peut venir d'un chat ou d'un cambrioleur. Au début, on ne sait pas.",
+          "enVrai": "Un événement (event) est quelque chose qui se passe dans les systèmes. Un incident (incident) est un événement qui pose vraiment problème. Detect repère les événements. Respond s'occupe des incidents détectés."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-csf-fonctions-id-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la fonction « Identify »",
+          "answer": "Identify (ID): Develop an organizational understanding to manage cybersecurity risk to systems, people, assets, data, and capabilities.\n\nTraduction : Identify (ID) : développer une compréhension de l'organisation pour gérer le risque de cybersécurité qui pèse sur les systèmes, les personnes, les ressources, les données et les capacités.",
+          "explanation": "Identify : savoir ce qu'on a à protéger, comme le gardien qui connaît chaque salle.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-id-def3",
+          "type": "cloze",
+          "question": "Identify (ID): Develop an [[organizational understanding]] to [[manage cybersecurity risk]] to [[systems, people, assets]], data, and capabilities.",
+          "answer": "Identify (ID): Develop an organizational understanding to manage cybersecurity risk to systems, people, assets, data, and capabilities.",
+          "explanation": "Trois blocs : comprendre l'organisation, gérer le risque, et ce qu'il faut protéger.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-pr-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la fonction « Protect »",
+          "answer": "Protect (PR): Develop and implement appropriate safeguards to ensure delivery of critical services.\n\nTraduction : Protect (PR) : développer et mettre en place les mesures de protection appropriées pour assurer la fourniture des services critiques.",
+          "explanation": "Protect : fermer les portes pour que les services importants continuent.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-pr-def3",
+          "type": "cloze",
+          "question": "Protect (PR): [[Develop and implement]] [[appropriate safeguards]] to ensure [[delivery of critical services]].",
+          "answer": "Protect (PR): Develop and implement appropriate safeguards to ensure delivery of critical services.",
+          "explanation": "Trois blocs : développer et mettre en place, les protections, et le but : les services critiques.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-de-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la fonction « Detect »",
+          "answer": "Detect (DE): Develop and implement appropriate activities to identify the occurrence of a cybersecurity event.\n\nTraduction : Detect (DE) : développer et mettre en place les activités appropriées pour repérer la survenue d'un événement de cybersécurité.",
+          "explanation": "Detect : guetter depuis la tour et repérer qu'il se passe quelque chose.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-de-def3",
+          "type": "cloze",
+          "question": "Detect (DE): Develop and implement [[appropriate activities]] to [[identify the occurrence]] of a [[cybersecurity event]].",
+          "answer": "Detect (DE): Develop and implement appropriate activities to identify the occurrence of a cybersecurity event.",
+          "explanation": "Trois blocs : les activités, repérer la survenue, et un événement de cybersécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-rs-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la fonction « Respond »",
+          "answer": "Respond (RS): Develop and implement appropriate activities to take action regarding a detected cybersecurity incident.\n\nTraduction : Respond (RS) : développer et mettre en place les activités appropriées pour agir face à un incident de cybersécurité détecté.",
+          "explanation": "Respond : agir dès que l'incident est détecté, comme le gardien qui court vers l'attaque.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-rs-def3",
+          "type": "cloze",
+          "question": "Respond (RS): Develop and implement [[appropriate activities]] to [[take action regarding]] a [[detected cybersecurity incident]].",
+          "answer": "Respond (RS): Develop and implement appropriate activities to take action regarding a detected cybersecurity incident.",
+          "explanation": "Trois blocs : les activités, agir face à, et un incident déjà détecté.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-rc-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la fonction « Recover »",
+          "answer": "Recover (RC): Develop and implement appropriate activities to maintain plans for resilience and restore any capabilities or services that were impaired due to a cybersecurity incident.\n\nTraduction : Recover (RC) : développer et mettre en place les activités appropriées pour maintenir des plans de résilience et rétablir les capacités ou services qui ont été affectés par un incident de cybersécurité.",
+          "explanation": "Recover : réparer les murs et reprendre. La résilience, c'est la capacité à se relever après un choc.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-rc-def3",
+          "type": "cloze",
+          "question": "Recover (RC): Develop and implement appropriate activities to [[maintain plans for resilience]] and [[restore any capabilities]] or services that were [[impaired due to]] a cybersecurity incident.",
+          "answer": "Recover (RC): Develop and implement appropriate activities to maintain plans for resilience and restore any capabilities or services that were impaired due to a cybersecurity incident.",
+          "explanation": "Trois blocs : des plans de résilience, rétablir les capacités, et ce qui a été touché par l'incident.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-csf-fonctions-1",
+          "type": "qcm",
+          "question": "Une équipe installe des filtres sur le réseau et impose des mots de passe forts. Quelle fonction travaille-t-elle ?",
+          "options": ["Protect", "Identify", "Detect"],
+          "options_why": [
+            "",
+            "Identify consiste à comprendre ce qu'on doit protéger, pas à installer des protections.",
+            "Detect consiste à repérer qu'un événement a lieu, pas à poser des protections."
+          ],
+          "answer": "Protect",
+          "explanation": "Mettre en place des protections appropriées, c'est la fonction Protect.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-csf-fonctions-2",
+          "type": "duel",
+          "question": "Faire la liste des systèmes et des données à protéger, c'est Identify ou Protect ?",
+          "options": ["Identify", "Protect"],
+          "answer": "Identify",
+          "explanation": "On commence par comprendre ce qu'on a (Identify). Les protections viennent ensuite.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-csf-fonctions-3",
+          "type": "qcm",
+          "question": "Après une panne causée par un virus, l'équipe remet les services en marche et restaure les fichiers. Quelle fonction est-ce ?",
+          "options": ["Recover", "Respond", "Protect"],
+          "options_why": [
+            "",
+            "Respond, c'est agir au moment de l'incident détecté. Ici, on remet déjà en état.",
+            "Protect met des protections avant l'incident, pas après."
+          ],
+          "answer": "Recover",
+          "explanation": "Restaurer les services touchés par un incident, c'est la fonction Recover.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-csf-fonctions-4",
+          "type": "duel",
+          "question": "Repérer qu'un événement suspect vient d'avoir lieu, c'est Detect ou Respond ?",
+          "options": ["Detect", "Respond"],
+          "answer": "Detect",
+          "explanation": "Repérer, c'est Detect. Agir une fois l'incident détecté, c'est Respond.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-csf-fonctions-5",
+          "type": "sort",
+          "question": "Remets les cinq fonctions dans l'ordre où le manuel les présente.",
+          "answer": "Identify, Protect, Detect, Respond, puis Recover.",
+          "explanation": "L'ordre aide à retenir. En vrai, les fonctions se font en même temps et en continu.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "phase": "entrainement",
+          "data": {
+            "mode": "ordonner",
+            "items": ["Identify (ID)", "Protect (PR)", "Detect (DE)", "Respond (RS)", "Recover (RC)"]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-csf-fonctions-6",
+          "type": "why",
+          "question": "Pourquoi la fonction Recover reste-t-elle importante même quand les autres fonctions sont bien faites ?",
+          "answer": "Parce qu'aucune protection n'est parfaite. Il faut savoir restaurer les services touchés par un incident et garder des plans de résilience.",
+          "explanation": "Un bon gardien prévoit aussi comment réparer les murs.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST Cybersecurity Framework ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-csf-fonctions-7",
+          "type": "sort",
+          "question": "Quelle fonction correspond à chaque activité ?",
+          "answer": "Identify : connaître ses systèmes et ses dangers. Protect : poser des protections. Detect : repérer et surveiller. Respond : agir face à l'incident.",
+          "explanation": "Demande-toi : on comprend, on protège, on repère, ou on agit ?",
+          "explanation_more": "Les exemples d'activités sont une lecture simple des définitions officielles (hors manuel).",
+          "data": {
+            "mode": "classer",
+            "categories": ["Identify", "Protect", "Detect", "Respond"],
+            "items": [
+              { "text": "Dresser la liste des systèmes, des personnes et des données", "category": "Identify" },
+              { "text": "Comprendre quels dangers pèsent sur l'entreprise", "category": "Identify" },
+              { "text": "Mettre en place des mesures de protection comme le chiffrement", "category": "Protect" },
+              { "text": "Former le personnel aux bons réflexes", "category": "Protect" },
+              { "text": "Repérer qu'un événement de cybersécurité vient d'avoir lieu", "category": "Detect" },
+              { "text": "Surveiller en continu pour voir un comportement anormal", "category": "Detect" },
+              { "text": "Agir dès qu'un incident est détecté", "category": "Respond" },
+              { "text": "Isoler les machines infectées pour arrêter l'attaque", "category": "Respond" }
+            ]
+          },
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-csf-fonctions-8",
+          "type": "whatif",
+          "question": "Et si une entreprise ne faisait que Protect, sans jamais Detect ?",
+          "answer": "Elle ne verrait pas une attaque qui passe malgré les protections. Les fonctions se complètent : chacune couvre un moment différent.",
+          "explanation": "Une porte fermée à clé n'empêche pas de savoir si quelqu'un force la serrure.",
+          "explanation_more": "Raisonnement hors manuel, à partir des définitions de Protect et de Detect.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-cis",
+      "name": "Les contrôles critiques du CIS (CIS Critical Security Controls)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La checklist du chantier",
+          "paragraphes": [
+            "Sur un chantier, avant d'ouvrir, le chef vérifie une liste de vingt points : casques, échafaudages, câbles, extincteurs. Pas besoin d'être expert pour suivre la liste.",
+            "Ces gestes de base évitent beaucoup d'accidents.",
+            "En cybersécurité, il existe une liste de ce genre : les CIS Critical Security Controls."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Une checklist de vingt points",
+          "comme": "Une checklist te dit quoi vérifier, sans t'obliger à tout inventer. Elle aide, mais elle ne remplace pas un plan complet.",
+          "enVrai": "Les CIS Controls sont 20 bonnes pratiques (best-practice guidelines). Elles servent à réduire les attaques les plus courantes contre les réseaux et les systèmes. Le CIS est le Center for Internet Security, une organisation qui publie cette liste."
+        },
+        {
+          "type": "predire",
+          "question": "Qui a créé cette liste à l'origine ?",
+          "options": ["Le SANS Institute", "Le NIST", "L'ISO"],
+          "answer": "Le SANS Institute",
+          "explanation": "Le SANS Institute l'a créée. Elle a été transférée au CIS en 2015, d'où le nom « SANS Top 20 » qu'on voit parfois."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les noms et les trois sortes",
+          "texte": "Tu peux voir ces vingt contrôles sous plusieurs noms : CIS CSC, CIS 20 ou SANS Top 20. La version 7.1 est sortie en avril 2019. Les contrôles sont de base (basic), fondamentaux (foundational) ou d'organisation (organizational)."
+        },
+        {
+          "type": "analogie",
+          "titre": "Un programme par niveau",
+          "comme": "Un élève de sixième et un élève de troisième n'ont pas le même programme. On adapte à chacun.",
+          "enVrai": "Les Implementation Groups (groupes de mise en œuvre) aident les organisations de tailles différentes à concentrer leurs moyens. Chacune choisit les sous-contrôles (subcontrols) raisonnables pour son niveau d'expertise et son profil de risque."
+        },
+        {
+          "type": "exemple",
+          "titre": "Quatre mots utiles pour la liste",
+          "texte": "Un port est une porte numérique par laquelle un service reçoit des visiteurs. Un routeur dirige les données entre des réseaux. Un commutateur (switch) relie les appareils d'un même réseau. Un test d'intrusion (penetration test) est une attaque autorisée, faite pour trouver des faiblesses. Une équipe rouge (red team) joue le rôle de l'attaquant."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-cis-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « CIS Critical Security Controls »",
+          "answer": "The CIS Critical Security Controls (or CIS Controls) is a publication of 20 best-practice guidelines for information security.\n\nTraduction : Les CIS Critical Security Controls (ou CIS Controls) sont une publication de 20 lignes directrices de bonnes pratiques pour la sécurité de l'information.",
+          "explanation": "Pense à une checklist de 20 points de bonnes pratiques.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot : les cartes suivantes t'aident à la mémoriser pas à pas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-def2",
+          "type": "cloze",
+          "question": "The CIS Critical Security Controls (or CIS Controls) is a [[publication]] of 20 best-practice [[guidelines]] for information security.",
+          "answer": "The CIS Critical Security Controls (or CIS Controls) is a publication of 20 best-practice guidelines for information security.",
+          "explanation": "Deux mots clés : publication (un document publié) et guidelines (des conseils).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-def3",
+          "type": "cloze",
+          "question": "The CIS Critical Security Controls (or CIS Controls) is a [[publication of 20]] [[best-practice guidelines]] for [[information security]].",
+          "answer": "The CIS Critical Security Controls (or CIS Controls) is a publication of 20 best-practice guidelines for information security.",
+          "explanation": "Trois blocs : une publication de 20, des conseils de bonnes pratiques, et la sécurité de l'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « CIS Critical Security Controls » (en anglais).",
+          "answer": "The CIS Critical Security Controls (or CIS Controls) is a publication of 20 best-practice guidelines for information security.\n\nTraduction : Les CIS Critical Security Controls (ou CIS Controls) sont une publication de 20 lignes directrices de bonnes pratiques pour la sécurité de l'information.",
+          "explanation": "Compare : as-tu pensé au chiffre 20 et aux bonnes pratiques ?",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-ident-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la version 7.1 des « CIS Controls »",
+          "answer": "CIS Controls v7.1 was released in April 2019, and identifies the basic, foundational, and organizational controls that CIS recommends mitigating the most common attacks against networks and systems.\n\nTraduction : Les CIS Controls v7.1 ont été publiés en avril 2019 et identifient les contrôles de base, fondamentaux et organisationnels que le CIS recommande pour atténuer les attaques les plus courantes contre les réseaux et les systèmes.",
+          "explanation": "Retiens les trois sortes de contrôles : de base, fondamentaux, d'organisation.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « CIS Critical Security Controls ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-ident-def3",
+          "type": "cloze",
+          "question": "CIS Controls v7.1 was released in [[April 2019]], and identifies the [[basic, foundational, and organizational]] controls that CIS recommends mitigating the [[most common attacks]] against networks and systems.",
+          "answer": "CIS Controls v7.1 was released in April 2019, and identifies the basic, foundational, and organizational controls that CIS recommends mitigating the most common attacks against networks and systems.",
+          "explanation": "Trois blocs : la date, les trois sortes de contrôles, et les attaques les plus courantes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-gi-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les « Implementation Groups »",
+          "answer": "The controls and subcontrols within the CIS CSC break down into what are known as Implementation Groups.\n\nTraduction : Les contrôles et sous-contrôles du CIS CSC se répartissent en ce qu'on appelle des Implementation Groups (groupes de mise en œuvre).",
+          "explanation": "Les contrôles sont rangés en groupes, comme des niveaux de programme.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « CIS Critical Security Controls » (note).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-gi-def3",
+          "type": "cloze",
+          "question": "The [[controls and subcontrols]] within the CIS CSC [[break down into]] what are known as [[Implementation Groups]].",
+          "answer": "The controls and subcontrols within the CIS CSC break down into what are known as Implementation Groups.",
+          "explanation": "Trois blocs : les contrôles et sous-contrôles, se répartissent en, et le nom : Implementation Groups.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-ess-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : à quoi servent les « Implementation Groups »",
+          "answer": "In essence, these Implementation Groups help organizations prioritize controls and identify the subcontrols that are most reasonable for level of expertise and their risk profile.\n\nTraduction : En substance, ces Implementation Groups aident les organisations à prioriser les contrôles et à identifier les sous-contrôles les plus raisonnables pour leur niveau d'expertise et leur profil de risque.",
+          "explanation": "Les groupes servent à choisir par où commencer, selon son niveau et ses dangers.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « CIS Critical Security Controls » (note).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-ess-def3",
+          "type": "cloze",
+          "question": "In essence, these Implementation Groups help organizations [[prioritize controls]] and [[identify the subcontrols]] that are most reasonable for [[level of expertise]] and their risk profile.",
+          "answer": "In essence, these Implementation Groups help organizations prioritize controls and identify the subcontrols that are most reasonable for level of expertise and their risk profile.",
+          "explanation": "Trois blocs : classer les contrôles, trouver les sous-contrôles, et le niveau d'expertise.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-cis-1",
+          "type": "duel",
+          "question": "Laquelle de ces publications est une liste courte de 20 bonnes pratiques ?",
+          "options": ["CIS Critical Security Controls", "NIST 800-53"],
+          "answer": "CIS Critical Security Controls",
+          "explanation": "NIST 800-53 compte des centaines de contrôles. Les CIS Controls sont une liste de 20.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cis-2",
+          "type": "sort",
+          "question": "Quel contrôle CIS correspond à chaque activité ?",
+          "answer": "1 : inventaire du matériel. 2 : inventaire des logiciels. 3 : gestion continue des failles. 4 : usage contrôlé des droits d'administrateur.",
+          "explanation": "Retiens le numéro de chaque contrôle : de 1 à 4.",
+          "explanation_more": "Noms des contrôles : manuel (ISC)2, domaine 1, section « CIS Critical Security Controls ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "CIS 1 : Inventory and Control of Hardware Assets",
+              "CIS 2 : Inventory and Control of Software Assets",
+              "CIS 3 : Continuous Vulnerability Management",
+              "CIS 4 : Controlled Use of Administrative Privileges"
+            ],
+            "items": [
+              { "text": "Faire la liste de tous les ordinateurs et appareils du réseau", "category": "CIS 1 : Inventory and Control of Hardware Assets" },
+              { "text": "Faire la liste de tous les logiciels installés", "category": "CIS 2 : Inventory and Control of Software Assets" },
+              { "text": "Chercher les failles en continu et les corriger", "category": "CIS 3 : Continuous Vulnerability Management" },
+              { "text": "Limiter et surveiller les comptes administrateur, qui peuvent tout modifier", "category": "CIS 4 : Controlled Use of Administrative Privileges" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cis-3",
+          "type": "qcm",
+          "question": "Une petite entreprise veut commencer par des gestes de base contre les attaques courantes. Quel cadre peut-elle consulter ?",
+          "options": ["CIS Critical Security Controls", "NIST 800-53", "HITRUST"],
+          "options_why": [
+            "",
+            "C'est un très grand catalogue de centaines de contrôles : trop lourd pour débuter.",
+            "Il a d'abord été développé pour les acteurs de la santé."
+          ],
+          "answer": "CIS Critical Security Controls",
+          "explanation": "Ces 20 contrôles visent les attaques les plus courantes, avec des niveaux adaptés à chaque organisation.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cis-4",
+          "type": "sort",
+          "question": "Quel contrôle CIS correspond à chaque activité ?",
+          "answer": "5 : régler chaque machine de façon sûre. 6 : lire les journaux. 7 : protéger courriels et navigateur. 8 : se défendre contre les logiciels malveillants.",
+          "explanation": "Retiens le numéro de chaque contrôle : de 5 à 8.",
+          "explanation_more": "Noms des contrôles : manuel (ISC)2, domaine 1, section « CIS Critical Security Controls ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "CIS 5 : Secure Configuration for Hardware and Software on Mobile Devices, Laptops, Workstations, and Servers",
+              "CIS 6 : Maintenance, Monitoring, and Analysis of Audit Logs",
+              "CIS 7 : Email and Web Browser Protections",
+              "CIS 8 : Malware Defenses"
+            ],
+            "items": [
+              { "text": "Régler chaque nouvel ordinateur ou serveur de façon sûre dès le départ", "category": "CIS 5 : Secure Configuration for Hardware and Software on Mobile Devices, Laptops, Workstations, and Servers" },
+              { "text": "Garder et relire les journaux qui racontent ce qui s'est passé", "category": "CIS 6 : Maintenance, Monitoring, and Analysis of Audit Logs" },
+              { "text": "Filtrer les courriels douteux et bloquer les sites dangereux dans le navigateur", "category": "CIS 7 : Email and Web Browser Protections" },
+              { "text": "Installer un antivirus qui arrête les virus et les ransomwares", "category": "CIS 8 : Malware Defenses" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cis-5",
+          "type": "flash",
+          "question": "En quelle année les CIS Controls sont-ils passés du SANS Institute au CIS ?",
+          "answer": "En 2015. Le SANS Institute les avait créés au départ.",
+          "explanation": "Ce passage explique le nom SANS Top 20 qu'on voit encore parfois.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « CIS Critical Security Controls ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cis-6",
+          "type": "sort",
+          "question": "Quel contrôle CIS correspond à chaque activité ?",
+          "answer": "9 : fermer les ports inutiles. 10 : sauvegarder et restaurer. 11 : régler les appareils réseau. 12 : défendre la frontière du réseau.",
+          "explanation": "11 règle les appareils eux-mêmes. 12 surveille la frontière avec l'extérieur.",
+          "explanation_more": "Noms des contrôles : manuel (ISC)2, domaine 1, section « CIS Critical Security Controls ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "CIS 9 : Limitation and Control of Network Ports, Protocols, and Services",
+              "CIS 10 : Data Recovery Capabilities",
+              "CIS 11 : Secure Configuration for Network Devices, such as Firewalls, Routers, and Switches",
+              "CIS 12 : Boundary Defense"
+            ],
+            "items": [
+              { "text": "Fermer les ports réseau et les services dont personne n'a besoin", "category": "CIS 9 : Limitation and Control of Network Ports, Protocols, and Services" },
+              { "text": "Faire des sauvegardes et savoir restaurer les données", "category": "CIS 10 : Data Recovery Capabilities" },
+              { "text": "Régler de façon sûre chaque routeur, commutateur et pare-feu", "category": "CIS 11 : Secure Configuration for Network Devices, such as Firewalls, Routers, and Switches" },
+              { "text": "Surveiller la frontière entre le réseau interne et Internet pour repérer les intrusions", "category": "CIS 12 : Boundary Defense" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cis-7",
+          "type": "why",
+          "question": "Pourquoi les Implementation Groups sont-ils utiles aux organisations ?",
+          "answer": "Ils aident chaque organisation à choisir les sous-contrôles les plus raisonnables pour son niveau d'expertise et son profil de risque. Elle évite ainsi de tout faire d'un coup.",
+          "explanation": "Chacun avance à son rythme, comme un programme adapté à chaque niveau scolaire.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « CIS Critical Security Controls » (note).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cis-8",
+          "type": "sort",
+          "question": "Quel contrôle CIS correspond à chaque activité ?",
+          "answer": "13 : protéger les données. 14 : accès selon le besoin de savoir. 15 : contrôler le Wi-Fi. 16 : surveiller les comptes.",
+          "explanation": "Retiens le numéro de chaque contrôle : de 13 à 16.",
+          "explanation_more": "Noms des contrôles : manuel (ISC)2, domaine 1, section « CIS Critical Security Controls ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "CIS 13 : Data Protection",
+              "CIS 14 : Controlled Access Based on the Need to Know",
+              "CIS 15 : Wireless Access Control",
+              "CIS 16 : Account Monitoring and Control"
+            ],
+            "items": [
+              { "text": "Protéger les données sensibles, par exemple en les chiffrant", "category": "CIS 13 : Data Protection" },
+              { "text": "Donner l'accès seulement aux personnes qui en ont besoin pour leur travail", "category": "CIS 14 : Controlled Access Based on the Need to Know" },
+              { "text": "Contrôler qui peut se connecter au Wi-Fi de l'entreprise", "category": "CIS 15 : Wireless Access Control" },
+              { "text": "Surveiller les comptes et fermer ceux qui ne servent plus", "category": "CIS 16 : Account Monitoring and Control" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cis-9",
+          "type": "cloze",
+          "question": "Les CIS Controls v7.1 comptent [[20]] contrôles et sont sortis en [[avril 2019]].",
+          "answer": "Les CIS Controls v7.1 comptent 20 contrôles et sont sortis en avril 2019.",
+          "explanation": "Un chiffre et une date : 20 contrôles, avril 2019.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « CIS Critical Security Controls ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cis-10",
+          "type": "sort",
+          "question": "Quel contrôle CIS correspond à chaque activité ?",
+          "answer": "17 : former le personnel. 18 : sécuriser les logiciels. 19 : gérer les incidents. 20 : tests d'intrusion et exercices d'équipe rouge.",
+          "explanation": "Retiens le numéro de chaque contrôle : de 17 à 20.",
+          "explanation_more": "Noms des contrôles : manuel (ISC)2, domaine 1, section « CIS Critical Security Controls ». Les exemples d'activités sont une lecture simple des noms (hors manuel).",
+          "phase": "entrainement",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "CIS 17 : Implement a Security Awareness and Training Program",
+              "CIS 18 : Application Software Security",
+              "CIS 19 : Incident Response and Management",
+              "CIS 20 : Penetration Tests and Red Team Exercises"
+            ],
+            "items": [
+              { "text": "Former tous les employés aux bons réflexes de sécurité", "category": "CIS 17 : Implement a Security Awareness and Training Program" },
+              { "text": "Vérifier la sécurité des logiciels que l'entreprise utilise ou crée", "category": "CIS 18 : Application Software Security" },
+              { "text": "Avoir un plan et une équipe pour réagir à un incident", "category": "CIS 19 : Incident Response and Management" },
+              { "text": "Faire attaquer son entreprise pour de faux afin de trouver ses faiblesses", "category": "CIS 20 : Penetration Tests and Red Team Exercises" }
+            ]
+          },
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-cis-11",
+          "type": "whatif",
+          "question": "Et si une entreprise de dix personnes essayait d'appliquer tous les sous-contrôles du premier coup ?",
+          "answer": "Ce serait trop lourd. Les Implementation Groups servent à choisir ce qui est raisonnable pour son niveau d'expertise et ses dangers.",
+          "explanation": "Mieux vaut commencer par l'essentiel et avancer par étapes.",
+          "explanation_more": "Raisonnement hors manuel, à partir du rôle des Implementation Groups décrit dans le livre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-cis-12",
+          "type": "flash",
+          "question": "Sous quels autres noms voit-on les CIS Controls ?",
+          "answer": "CIS CSC, CIS 20 ou SANS Top 20.",
+          "explanation": "Trois étiquettes pour la même liste de 20 contrôles.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « CIS Critical Security Controls ».",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

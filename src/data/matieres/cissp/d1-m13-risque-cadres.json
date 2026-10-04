@@ -1,0 +1,1889 @@
+{
+  "id": "d1-m13-risque-cadres",
+  "name": "D1.13 Les cadres de gestion du risque",
+  "galaxie": { "teinte": 238, "ambiance": "lumineux" },
+  "concepts": [
+    {
+      "id": "d1-rcad-cadre",
+      "name": "Le cadre de gestion du risque (risk framework)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le collège sans méthode",
+          "paragraphes": [
+            "Dans un collège, chaque professeur vérifie la sécurité à sa façon. L'un compte les extincteurs. Un autre regarde seulement les portes.",
+            "Personne ne note rien et personne ne compare. Le directeur ne sait pas si le collège est plus sûr qu'avant.",
+            "Une entreprise a le même souci avec ses risques. Un risque, c'est ce qui peut mal tourner et coûter cher. Pour s'y retrouver, elle choisit une méthode commune : un cadre de gestion du risque (risk framework)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le plan d'évacuation",
+          "comme": "Un exercice d'incendie suit toujours les mêmes étapes : repérer les dangers, mesurer leur gravité, agir, puis vérifier. Tout le monde sait quoi faire.",
+          "enVrai": "Un cadre de gestion du risque est une méthode écrite, en étapes. Elle sert à repérer les risques, à les évaluer et à les gérer, de la même façon partout dans l'entreprise. L'image s'arrête là : un plan d'évacuation vise un seul danger, alors que le cadre couvre tous les risques."
+        },
+        {
+          "type": "predire",
+          "question": "Trois équipes d'une entreprise évaluent les risques, chacune à sa manière. Que manque-t-il le plus ?",
+          "options": [
+            "Une méthode commune pour comparer les résultats",
+            "Un pare-feu plus puissant",
+            "Un mot de passe plus long"
+          ],
+          "answer": "Une méthode commune pour comparer les résultats",
+          "explanation": "Sans méthode commune, les résultats ne se comparent pas. Le pare-feu et le mot de passe sont des défenses, pas une façon d'organiser la gestion des risques."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une banque et une clinique",
+          "texte": "Une banque et une clinique choisissent chacune un cadre. La banque pense aux lois sur l'argent. La clinique pense aux lois sur la santé. Il existe des dizaines de cadres : certains pour tout le monde, d'autres pour un seul secteur. Tous visent le même but : ramener le risque à un niveau acceptable."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rcad-cadre-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « risk framework »",
+          "answer": "A risk framework is a structured process for identifying, assessing, and managing an organization's risks.\n\nTraduction : Un cadre de gestion du risque est un processus structuré pour identifier, évaluer et gérer les risques d'une organisation.",
+          "explanation": "Retiens trois verbes : identifier, évaluer, gérer. C'est un mode d'emploi pour les risques.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ». Elle sera à connaître mot pour mot.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cadre-def2",
+          "type": "cloze",
+          "question": "A risk framework is a [[structured]] process for identifying, assessing, and [[managing]] an organization's risks.",
+          "answer": "A risk framework is a structured process for identifying, assessing, and managing an organization's risks.",
+          "explanation": "Un processus structuré : des étapes, pas de l'improvisation. Et le dernier verbe est gérer.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cadre-def3",
+          "type": "cloze",
+          "question": "A [[risk framework]] is a [[structured process]] for [[identifying, assessing, and managing]] an organization's risks.",
+          "answer": "A risk framework is a structured process for identifying, assessing, and managing an organization's risks.",
+          "explanation": "Le nom, ce que c'est (un processus structuré) et ce qu'il fait (trois verbes).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cadre-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « risk framework » (en anglais).",
+          "answer": "A risk framework is a structured process for identifying, assessing, and managing an organization's risks.\n\nTraduction : Un cadre de gestion du risque est un processus structuré pour identifier, évaluer et gérer les risques d'une organisation.",
+          "explanation": "Pas besoin d'être parfait du premier coup : compare, repère le mot qui manque, recommence demain.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cadre-but-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le but commun de tous les cadres de risque",
+          "answer": "Individually, these frameworks address assessment, control, monitoring, and audit of information systems in different ways, but all strive to provide internal controls to bring risk to an acceptable level.\n\nTraduction : Chacun de ces cadres traite l'évaluation, le contrôle, la surveillance et l'audit des systèmes d'information à sa façon, mais tous cherchent à fournir des contrôles internes pour ramener le risque à un niveau acceptable.",
+          "explanation": "Les chemins sont différents, mais le but est le même : un risque acceptable.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cadre-but-def3",
+          "type": "cloze",
+          "question": "Individually, these frameworks address [[assessment, control, monitoring, and audit]] of information systems in different ways, but all strive to [[provide internal controls]] to [[bring risk to an acceptable level]].",
+          "answer": "Individually, these frameworks address assessment, control, monitoring, and audit of information systems in different ways, but all strive to provide internal controls to bring risk to an acceptable level.",
+          "explanation": "Quatre domaines traités, puis le but : des contrôles pour ramener le risque à un niveau acceptable.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cadre-1",
+          "type": "qcm",
+          "question": "Deux équipes évaluent le même risque avec deux méthodes différentes. L'une trouve « faible », l'autre « élevé ». Quel est le vrai problème ?",
+          "options": [
+            "Les résultats ne peuvent pas être comparés",
+            "Une des deux équipes a forcément tort",
+            "Le risque est trop grave pour être évalué",
+            "L'entreprise doit supprimer tous ses risques"
+          ],
+          "options_why": [
+            "",
+            "Pas forcément : leurs méthodes sont simplement différentes, donc leurs notes ne se comparent pas.",
+            "Rien ne dit que le risque est grave. C'est la méthode qui pose problème.",
+            "On ne supprime pas tous les risques. On les ramène à un niveau acceptable."
+          ],
+          "answer": "Les résultats ne peuvent pas être comparés",
+          "explanation": "Un cadre commun donne les mêmes étapes à tous. Sans lui, deux notes ne veulent pas dire la même chose.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cadre-2",
+          "type": "duel",
+          "question": "Un cadre de gestion du risque, c'est plutôt…",
+          "options": [
+            "Une méthode en étapes pour gérer les risques",
+            "Un logiciel qui bloque les attaques"
+          ],
+          "answer": "Une méthode en étapes pour gérer les risques",
+          "explanation": "Un cadre est un processus, pas un outil. Les logiciels de défense viennent ensuite, comme contrôles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cadre-3",
+          "type": "cloze",
+          "question": "Évaluer un risque, c'est regarder la menace qui [[change]], les vulnérabilités, la [[probabilité]] et l'[[impact]].",
+          "answer": "Évaluer un risque, c'est regarder la menace qui change, les vulnérabilités, la probabilité et l'impact.",
+          "explanation": "Quatre points : le danger, les faiblesses, la chance que ça arrive et les dégâts possibles.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks ». Le livre parle des vulnérabilités réelles et possibles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cadre-4",
+          "type": "why",
+          "question": "Pourquoi une entreprise gagne-t-elle à suivre un cadre plutôt qu'à improviser ?",
+          "answer": "Un cadre donne les mêmes étapes à tout le monde. Les résultats se comparent, on voit les progrès, et rien d'important n'est oublié.",
+          "explanation": "L'improvisation donne des résultats différents à chaque fois, donc impossibles à comparer.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cadre-5",
+          "type": "flash",
+          "question": "Pourquoi existe-t-il des dizaines de cadres de gestion du risque ?",
+          "answer": "Chaque industrie et chaque loi a des besoins propres. Il y a des cadres reconnus partout dans le monde et des cadres propres à un secteur.",
+          "explanation": "Un cadre pensé pour une banque ne convient pas toujours à un hôpital.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks » : plusieurs cadres internationaux et des cadres propres à une industrie.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cadre-6",
+          "type": "whatif",
+          "question": "Et si une entreprise n'utilisait aucun cadre pour ses risques ?",
+          "answer": "Chaque équipe évaluerait les risques à sa manière. Les résultats seraient impossibles à comparer, et des risques importants pourraient être oubliés.",
+          "explanation": "Le cadre garantit que les mêmes questions sont posées partout.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-rcad-qualites",
+      "name": "Les cinq qualités d'un bon cadre",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le jeu dont les règles changent",
+          "paragraphes": [
+            "Tu joues à un jeu de société avec des amis. À chaque partie, les règles changent un peu.",
+            "Impossible de savoir qui progresse. Impossible de comparer deux parties.",
+            "Pour un cadre de gestion du risque, c'est pareil. Le livre cite cinq qualités qu'un bon cadre doit avoir pour créer un bon environnement de contrôles."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Les règles d'un bon jeu",
+          "comme": "Un bon jeu a les mêmes règles à chaque partie. Il a un score pour savoir qui gagne. Ses règles sont identiques chez tous les joueurs.",
+          "enVrai": "Cohérent (consistent) : le cadre s'applique de la même façon à chaque fois. Mesurable (measurable) : on voit les progrès. Standardisé (standardized) : on peut comparer les résultats de deux organisations."
+        },
+        {
+          "type": "analogie",
+          "titre": "L'extension du jeu",
+          "comme": "Un bon jeu couvre tous les cas d'une partie. Si tu ajoutes une extension, tu ne réécris pas tout le livret de règles.",
+          "enVrai": "Complet (comprehensive) : le cadre couvre au minimum les lois obligatoires et accepte des règles en plus. Modulaire (modular) : on met à jour seulement la partie qui change."
+        },
+        {
+          "type": "predire",
+          "question": "Un cadre est appliqué différemment à chaque évaluation. Quelle qualité lui manque ?",
+          "options": [
+            "Cohérent (consistent)",
+            "Modulaire (modular)",
+            "Complet (comprehensive)"
+          ],
+          "answer": "Cohérent (consistent)",
+          "explanation": "Quand les règles changent d'une fois à l'autre, le cadre n'est pas cohérent. Les deux autres qualités parlent de la couverture et de la mise à jour."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une nouvelle loi arrive",
+          "texte": "Une entreprise suit un cadre modulaire. Une nouvelle loi arrive. L'équipe revoit seulement les deux contrôles concernés. Le reste du cadre ne bouge pas. Avec un cadre non modulaire, elle devrait tout revoir."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rcad-qualites-consistent-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la qualité « consistent »",
+          "answer": "Consistent: A governance program must be consistent in how information security and privacy are approached and applied.\n\nTraduction : Cohérent : un programme de gouvernance doit être cohérent dans la façon dont la sécurité de l'information et la vie privée sont abordées et appliquées.",
+          "explanation": "Même méthode pour la sécurité et la vie privée, partout et à chaque fois.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-consistent-def3",
+          "type": "cloze",
+          "question": "Consistent: A [[governance program]] must be [[consistent in how]] [[information security and privacy]] are approached and applied.",
+          "answer": "Consistent: A governance program must be consistent in how information security and privacy are approached and applied.",
+          "explanation": "Le programme, l'obligation de cohérence, et les deux sujets : sécurité de l'information et vie privée.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-measurable-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la qualité « measurable »",
+          "answer": "Measurable: The governance program must provide a way to determine progress and set goals.\n\nTraduction : Mesurable : le programme de gouvernance doit offrir un moyen de déterminer les progrès et de fixer des objectifs.",
+          "explanation": "Pense au score d'un jeu : il montre où tu en es et ce que tu vises.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ». Le livre ajoute que la plupart des cadres contiennent une procédure d'évaluation de la conformité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-measurable-def3",
+          "type": "cloze",
+          "question": "Measurable: The [[governance program]] must provide [[a way to determine]] [[progress and set goals]].",
+          "answer": "Measurable: The governance program must provide a way to determine progress and set goals.",
+          "explanation": "Deux usages de la mesure : savoir où l'on en est, et se fixer des buts.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-standardized-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la qualité « standardized »",
+          "answer": "Standardized: As with measurable, a controls framework should rely on standardization so results from one organization or part of an organization can be compared in a meaningful way to results from another organization.\n\nTraduction : Standardisé : comme pour la qualité mesurable, un cadre de contrôles doit reposer sur la standardisation, pour que les résultats d'une organisation ou d'une partie d'organisation se comparent de façon utile à ceux d'une autre organisation.",
+          "explanation": "Mêmes règles pour tous : on peut alors comparer une filiale à une autre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-standardized-def3",
+          "type": "cloze",
+          "question": "Standardized: As with measurable, a controls framework should [[rely on standardization]] so [[results from one organization]] or part of an organization can be [[compared in a meaningful way]] to results from another organization.",
+          "answer": "Standardized: As with measurable, a controls framework should rely on standardization so results from one organization or part of an organization can be compared in a meaningful way to results from another organization.",
+          "explanation": "La standardisation sert à une chose : comparer des résultats de façon utile.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-comprehensive-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la qualité « comprehensive »",
+          "answer": "Comprehensive: The selected framework should cover the minimum legal and regulatory requirements of an organization and be extensible to accommodate additional organization-specific requirements.\n\nTraduction : Complet : le cadre choisi doit couvrir au minimum les exigences légales et réglementaires d'une organisation, et pouvoir s'étendre pour accueillir des exigences supplémentaires propres à l'organisation.",
+          "explanation": "Un socle obligatoire (les lois), plus de la place pour les besoins propres à l'entreprise.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-comprehensive-def3",
+          "type": "cloze",
+          "question": "Comprehensive: The selected framework should cover the [[minimum legal and regulatory]] requirements of an organization and [[be extensible]] to accommodate [[additional organization-specific requirements]].",
+          "answer": "Comprehensive: The selected framework should cover the minimum legal and regulatory requirements of an organization and be extensible to accommodate additional organization-specific requirements.",
+          "explanation": "Le minimum légal, la capacité de s'étendre, puis les exigences en plus.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-modular-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la qualité « modular »",
+          "answer": "Modular: A modular framework is more likely to withstand the changes of an organization, as only the controls or requirements needing modification are reviewed and updated.\n\nTraduction : Modulaire : un cadre modulaire résiste mieux aux changements d'une organisation, car seuls les contrôles ou exigences à modifier sont revus et mis à jour.",
+          "explanation": "Comme des briques : on change seulement celle qui est abîmée.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-modular-def3",
+          "type": "cloze",
+          "question": "Modular: A modular framework is [[more likely to withstand]] the changes of an organization, as [[only the controls]] or requirements needing modification are [[reviewed and updated]].",
+          "answer": "Modular: A modular framework is more likely to withstand the changes of an organization, as only the controls or requirements needing modification are reviewed and updated.",
+          "explanation": "Résister aux changements, en ne touchant que ce qui doit changer.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-qualites-1",
+          "type": "sort",
+          "question": "Quelle qualité d'un bon cadre illustre chaque situation ?",
+          "answer": "Cohérent : mêmes règles partout. Mesurable : progrès visibles. Standardisé : résultats comparables. Modulaire : mises à jour par morceaux.",
+          "explanation": "Cherche le verbe : appliquer pareil (cohérent), mesurer (mesurable), comparer (standardisé), mettre à jour (modulaire).",
+          "data": {
+            "mode": "classer",
+            "categories": ["Cohérent", "Mesurable", "Standardisé", "Modulaire"],
+            "items": [
+              { "text": "Toutes les équipes appliquent les mêmes règles à chaque évaluation", "category": "Cohérent" },
+              { "text": "La sécurité et la vie privée sont traitées de la même façon partout", "category": "Cohérent" },
+              { "text": "On suit ses progrès et on fixe des objectifs", "category": "Mesurable" },
+              { "text": "Le cadre contient une procédure pour vérifier la conformité", "category": "Mesurable" },
+              { "text": "Les résultats de deux filiales se comparent facilement", "category": "Standardisé" },
+              { "text": "Une entreprise compare son score à celui d'une autre", "category": "Standardisé" },
+              { "text": "On revoit seulement les contrôles qui changent", "category": "Modulaire" },
+              { "text": "Une nouvelle exigence ne force pas à tout réécrire", "category": "Modulaire" }
+            ]
+          }
+        },
+        {
+          "id": "d1-rcad-qualites-2",
+          "type": "duel",
+          "question": "Un cadre couvre les lois obligatoires et accepte aussi les règles propres à l'entreprise. Quelle qualité ?",
+          "options": ["Complet (comprehensive)", "Modulaire (modular)"],
+          "answer": "Complet (comprehensive)",
+          "explanation": "Complet parle de ce que le cadre couvre. Modulaire parle de la façon de le mettre à jour.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-qualites-3",
+          "type": "qcm",
+          "question": "Une loi change. L'entreprise ne revoit que deux contrôles sur cinquante. Quelle qualité du cadre l'a permis ?",
+          "options": ["Modulaire", "Mesurable", "Cohérent", "Standardisé"],
+          "options_why": [
+            "",
+            "Mesurable aide à suivre les progrès, pas à limiter les mises à jour.",
+            "Cohérent veut dire appliqué de la même façon, pas mis à jour par morceaux.",
+            "Standardisé aide à comparer des résultats, pas à modifier le cadre."
+          ],
+          "answer": "Modulaire",
+          "explanation": "Seules les parties concernées sont revues : c'est la définition d'un cadre modulaire.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-qualites-4",
+          "type": "duel",
+          "question": "Comparer ses résultats à ceux d'une autre entreprise : quelle qualité ?",
+          "options": ["Standardisé", "Mesurable"],
+          "answer": "Standardisé",
+          "explanation": "Mesurable : on voit ses propres progrès. Standardisé : on peut se comparer aux autres.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-qualites-5",
+          "type": "why",
+          "question": "Pourquoi un cadre de gouvernance doit-il être mesurable ?",
+          "answer": "Pour savoir où l'on en est et fixer des objectifs. Sans mesure, impossible de dire si les risques diminuent.",
+          "explanation": "Ce qu'on ne mesure pas, on ne peut pas l'améliorer.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-qualites-6",
+          "type": "flash",
+          "question": "Quelle qualité d'un cadre permet de comparer les résultats de deux organisations ?",
+          "answer": "La standardisation : le cadre est standardisé (standardized).",
+          "explanation": "Des règles identiques donnent des résultats comparables.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-qualites-7",
+          "type": "whatif",
+          "question": "Et si un cadre n'était pas modulaire et qu'une loi changeait ?",
+          "answer": "Il faudrait revoir tout le cadre, même les parties qui n'ont pas changé. C'est long et coûteux.",
+          "explanation": "La modularité évite de tout refaire pour un seul changement.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-rcad-iso31000",
+      "name": "La norme ISO 31000",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Un langage commun pour le risque",
+          "paragraphes": [
+            "Un banquier, un ingénieur et un médecin parlent tous de « risque ». Ils ne veulent pas toujours dire la même chose.",
+            "Pour s'entendre, il faut un langage commun et des règles communes. C'est le rôle d'une norme : un document de règles que beaucoup d'organisations acceptent de suivre.",
+            "Une organisation internationale a écrit une série de normes pour le risque : l'ISO 31000."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le code de la route",
+          "comme": "Dans presque tous les pays, un feu rouge veut dire stop. Grâce à ces règles communes, tu peux rouler partout.",
+          "enVrai": "La série ISO 31000 donne des principes communs pour gérer les risques, et des conseils pour les appliquer. Elle s'appuie sur un guide de vocabulaire commun, l'ISO/IEC Guide 73:2009. L'image s'arrête là : ISO 31000 donne des conseils, elle ne dicte pas un seul chemin."
+        },
+        {
+          "type": "predire",
+          "question": "ISO 31000 est faite pour quel type d'organisation ?",
+          "options": [
+            "Seulement les banques",
+            "N'importe quelle organisation",
+            "Seulement les gouvernements"
+          ],
+          "answer": "N'importe quelle organisation",
+          "explanation": "ISO 31000:2018 vise toute organisation, quels que soient sa structure ou son secteur. Les deux autres réponses sont trop étroites."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un hôpital, une usine, une école",
+          "texte": "Un hôpital, une usine et une école utilisent la même norme. Chacune règle les détails à sa façon. La norme demande de relier les activités de gestion du risque, à tous les niveaux. Elle aide pour les risques du quotidien (opérationnels) et ceux des grands choix (stratégiques)."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rcad-iso31000-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la série « ISO 31000 »",
+          "answer": "The International Standards Organization has developed the ISO 31000 series of standards to identify principles for general risk management and to provide a set of guidelines for implementation.\n\nTraduction : L'Organisation internationale de normalisation a développé la série de normes ISO 31000 pour identifier des principes de gestion du risque en général et fournir un ensemble de lignes directrices pour la mise en œuvre.",
+          "explanation": "Deux cadeaux de la série : des principes, et un guide pour les appliquer.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso31000-def2",
+          "type": "cloze",
+          "question": "The International Standards Organization has developed the ISO 31000 series of standards to identify [[principles]] for general risk management and to provide a set of [[guidelines]] for implementation.",
+          "answer": "The International Standards Organization has developed the ISO 31000 series of standards to identify principles for general risk management and to provide a set of guidelines for implementation.",
+          "explanation": "Principes pour comprendre, lignes directrices pour agir.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso31000-def3",
+          "type": "cloze",
+          "question": "The [[International Standards Organization]] has developed the ISO 31000 series of standards to [[identify principles]] for general risk management and to provide [[a set of guidelines]] for implementation.",
+          "answer": "The International Standards Organization has developed the ISO 31000 series of standards to identify principles for general risk management and to provide a set of guidelines for implementation.",
+          "explanation": "Qui l'a écrite, ce qu'elle apporte (des principes) et le reste (un ensemble de lignes directrices).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso31000-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de la série « ISO 31000 » (en anglais).",
+          "answer": "The International Standards Organization has developed the ISO 31000 series of standards to identify principles for general risk management and to provide a set of guidelines for implementation.\n\nTraduction : L'Organisation internationale de normalisation a développé la série de normes ISO 31000 pour identifier des principes de gestion du risque en général et fournir un ensemble de lignes directrices pour la mise en œuvre.",
+          "explanation": "Repère les deux buts : principes et lignes directrices. Compare avec la réponse.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso31000-any-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : à qui s'applique « ISO 31000:2018 » ?",
+          "answer": "Developed using the consistent language contained in ISO/IEC Guide 73:2009, the ISO 31000:2018 is intended to be applicable to any organization, regardless of the governance structure or industry.\n\nTraduction : Développée avec le langage cohérent du guide ISO/IEC 73:2009, l'ISO 31000:2018 est conçue pour s'appliquer à toute organisation, quels que soient sa structure de gouvernance ou son secteur.",
+          "explanation": "Mot-clé : any organization. Aucune organisation n'est exclue.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso31000-any-def3",
+          "type": "cloze",
+          "question": "Developed using the [[consistent language]] contained in ISO/IEC Guide 73:2009, the ISO 31000:2018 is intended to be applicable to [[any organization]], regardless of the [[governance structure or industry]].",
+          "answer": "Developed using the consistent language contained in ISO/IEC Guide 73:2009, the ISO 31000:2018 is intended to be applicable to any organization, regardless of the governance structure or industry.",
+          "explanation": "Un langage commun au départ, et une portée universelle à l'arrivée.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso31000-integ-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce que la norme ISO 31000 encourage",
+          "answer": "The standard encourages the integration of risk management activities across organizational lines and levels to provide the organization with a consistent approach to management of operational and strategic risks.\n\nTraduction : La norme encourage l'intégration des activités de gestion du risque à travers les services et les niveaux de l'organisation, pour lui donner une approche cohérente de la gestion des risques opérationnels et stratégiques.",
+          "explanation": "Un seul fil rouge pour tous les services et tous les niveaux.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso31000-integ-def3",
+          "type": "cloze",
+          "question": "The standard encourages the [[integration of risk management]] activities across [[organizational lines and levels]] to provide the organization with a consistent approach to management of [[operational and strategic risks]].",
+          "answer": "The standard encourages the integration of risk management activities across organizational lines and levels to provide the organization with a consistent approach to management of operational and strategic risks.",
+          "explanation": "Intégrer, à tous les niveaux, pour deux types de risques : opérationnels et stratégiques.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso31000-1",
+          "type": "duel",
+          "question": "ISO 31000 sert surtout à…",
+          "options": [
+            "Donner des principes et des conseils pour gérer le risque en général",
+            "Imposer une liste de protections techniques à installer"
+          ],
+          "answer": "Donner des principes et des conseils pour gérer le risque en général",
+          "explanation": "Elle parle de la méthode de gestion du risque, pas d'un produit ou d'un réglage précis.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso31000-2",
+          "type": "qcm",
+          "question": "Quelle version d'ISO 31000 le livre cite-t-il ?",
+          "options": ["ISO 31000:2018", "ISO 31000:2009", "ISO 31000:2011", "ISO 31000:2016"],
+          "options_why": [
+            "",
+            "2009 est l'année du guide de vocabulaire (ISO/IEC Guide 73), pas de la norme.",
+            "Ce n'est pas l'année citée par le livre pour ISO 31000.",
+            "Ce n'est pas l'année citée par le livre pour ISO 31000."
+          ],
+          "answer": "ISO 31000:2018",
+          "explanation": "Le chiffre après les deux points est l'année de publication de la version.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks » : ISO 31000:2018.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-rcad-iso31000-3",
+          "type": "why",
+          "question": "Pourquoi une norme internationale aide-t-elle deux entreprises de pays différents ?",
+          "answer": "Elles parlent le même langage du risque. Leurs façons de gérer le risque se comprennent et se comparent plus facilement.",
+          "explanation": "Un vocabulaire commun évite les malentendus.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso31000-4",
+          "type": "qcm",
+          "question": "Une école veut organiser sa gestion des risques. Un collègue dit : « ISO 31000 est réservée aux banques. » Que lui répondre ?",
+          "options": [
+            "Elle vise toute organisation, quel que soit son secteur",
+            "Il a raison : elle est écrite pour le secteur de la finance",
+            "Elle est réservée aux administrations publiques",
+            "Elle ne concerne que les entreprises d'informatique"
+          ],
+          "options_why": [
+            "",
+            "Le livre dit qu'elle est faite pour toute organisation, pas seulement la finance.",
+            "Les administrations peuvent l'utiliser, mais elle n'est pas réservée à elles.",
+            "Elle traite du risque en général, pas seulement de l'informatique."
+          ],
+          "answer": "Elle vise toute organisation, quel que soit son secteur",
+          "explanation": "ISO 31000:2018 s'applique à toute organisation, quelle que soit son industrie.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso31000-5",
+          "type": "cloze",
+          "question": "ISO 31000 encourage à [[intégrer]] la gestion du risque à tous les [[niveaux]] de l'organisation.",
+          "answer": "ISO 31000 encourage à intégrer la gestion du risque à tous les niveaux de l'organisation.",
+          "explanation": "Le risque ne se gère pas dans un coin : tout le monde y participe.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso31000-6",
+          "type": "whatif",
+          "question": "Et si chaque service gérait ses risques seul, sans lien avec les autres ?",
+          "answer": "On perdrait la vue d'ensemble. ISO 31000 demande d'intégrer la gestion du risque à tous les services et à tous les niveaux.",
+          "explanation": "Des services isolés se contredisent et laissent des trous entre eux.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso31000-7",
+          "type": "flash",
+          "question": "Quelle norme aide à passer de ses pratiques actuelles à ISO 31000 ?",
+          "answer": "ISO 31004, un guide de mise en œuvre de l'ISO 31000.",
+          "explanation": "31004 est le mode d'emploi pour adopter 31000.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks ». Le guide propose une approche structurée pour faire la transition.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-rcad-iso31000-8",
+          "type": "flash",
+          "question": "Quels deux types de risques ISO 31000 aide-t-elle à gérer de façon cohérente ?",
+          "answer": "Les risques opérationnels (ceux du quotidien) et les risques stratégiques (ceux des grands choix).",
+          "explanation": "Une panne d'imprimante est opérationnelle. Se lancer dans un nouveau pays est stratégique.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-rcad-principes-a",
+      "name": "Les principes de l'ISO 31000 (1 sur 2)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La sortie de classe",
+          "paragraphes": [
+            "Ton collège organise une sortie à la piscine. Le plan de sécurité n'est pas le même que pour une sortie en montagne.",
+            "Les parents sont prévenus à l'avance. Le plan pense à tout : transport, repas, secours. Chaque accompagnateur connaît son rôle.",
+            "La norme ISO 31000:2018 résume ces idées en huit principes. Voici les quatre premiers."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Quatre idées dans une sortie de classe",
+          "comme": "On adapte le plan à la sortie. On prévient les personnes concernées. On pense à tout. Et la sécurité devient l'affaire de chacun.",
+          "enVrai": "Adapté (customized), inclusif (inclusive), complet (comprehensive), intégré (integrated). Une partie prenante (stakeholder) est une personne ou un groupe concerné, comme les parents dans l'exemple."
+        },
+        {
+          "type": "predire",
+          "question": "Un petit magasin copie tel quel le plan de risque d'une grande banque. Quel principe oublie-t-il ?",
+          "options": [
+            "Adapté (customized)",
+            "Intégré (integrated)",
+            "Inclusif (inclusive)"
+          ],
+          "answer": "Adapté (customized)",
+          "explanation": "Un plan trop lourd ou trop léger pour la taille de l'organisation n'est pas adapté. Les autres principes parlent de qui participe et de la place du risque dans les activités."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le nouveau logiciel de paie",
+          "texte": "Une entreprise change son logiciel de paie. Le service des paies n'est ni prévenu ni consulté avant le choix des mesures de sécurité. Le principe inclusif demande d'impliquer à temps les personnes concernées. Ici, ce n'est pas fait."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rcad-principes-a-huit-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les principes de « ISO 31000:2018 »",
+          "answer": "ISO 31000:2018 is based on a set of eight principles that drive the development of the risk framework shown in Figure 1.7.\n\nTraduction : L'ISO 31000:2018 repose sur un ensemble de huit principes qui guident le développement du cadre de risque présenté à la figure 1.7.",
+          "explanation": "Retiens le nombre : huit principes. Ils servent de moteur au cadre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ». Les huit principes sont répartis sur deux planètes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-huit-def3",
+          "type": "cloze",
+          "question": "ISO 31000:2018 is based on [[a set of eight principles]] that [[drive the development]] of the [[risk framework]] shown in Figure 1.7.",
+          "answer": "ISO 31000:2018 is based on a set of eight principles that drive the development of the risk framework shown in Figure 1.7.",
+          "explanation": "Huit principes, qui guident la construction du cadre de risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-customized-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le principe « customized »",
+          "answer": "Customized: The framework should be customized and proportionate to the organization and the level of risk.\n\nTraduction : Adapté : le cadre doit être adapté et proportionné à l'organisation et au niveau de risque.",
+          "explanation": "Taille de l'organisation et niveau de risque : le cadre se règle sur les deux.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-customized-def3",
+          "type": "cloze",
+          "question": "Customized: The framework should be [[customized and proportionate]] to [[the organization]] and [[the level of risk]].",
+          "answer": "Customized: The framework should be customized and proportionate to the organization and the level of risk.",
+          "explanation": "Adapté et proportionné, selon deux choses : l'organisation et le niveau de risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-inclusive-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le principe « inclusive »",
+          "answer": "Inclusive: The appropriate and timely involvement of stakeholders is necessary.\n\nTraduction : Inclusif : l'implication appropriée et à temps des parties prenantes est nécessaire.",
+          "explanation": "Inclure les bonnes personnes, au bon moment.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-inclusive-def3",
+          "type": "cloze",
+          "question": "Inclusive: The [[appropriate and timely]] [[involvement of stakeholders]] [[is necessary]].",
+          "answer": "Inclusive: The appropriate and timely involvement of stakeholders is necessary.",
+          "explanation": "Trois idées : bien choisie, à temps, et nécessaire.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-comprehensive-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le principe « comprehensive »",
+          "answer": "Comprehensive: A structured and comprehensive approach is required.\n\nTraduction : Complet : une approche structurée et complète est exigée.",
+          "explanation": "Structurée et complète : on ne laisse pas de trou.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-comprehensive-def3",
+          "type": "cloze",
+          "question": "Comprehensive: [[A structured]] and [[comprehensive approach]] [[is required]].",
+          "answer": "Comprehensive: A structured and comprehensive approach is required.",
+          "explanation": "Une approche à la fois structurée et complète, et c'est une exigence.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-integrated-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le principe « integrated »",
+          "answer": "Integrated: Risk management is an integral part of all organizational activities.\n\nTraduction : Intégré : la gestion du risque fait partie intégrante de toutes les activités de l'organisation.",
+          "explanation": "Le risque se gère dans chaque activité, pas dans un service à part.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-integrated-def3",
+          "type": "cloze",
+          "question": "Integrated: [[Risk management]] is [[an integral part]] of [[all organizational activities]].",
+          "answer": "Integrated: Risk management is an integral part of all organizational activities.",
+          "explanation": "Qui : la gestion du risque. Quelle place : partie intégrante. Où : dans toutes les activités.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-a-1",
+          "type": "duel",
+          "question": "Un petit magasin copie le plan de risque d'une grande banque, sans rien changer. Quel principe oublie-t-il ?",
+          "options": ["Adapté (customized)", "Inclusif (inclusive)"],
+          "answer": "Adapté (customized)",
+          "explanation": "Le plan doit correspondre à la taille de l'organisation. Inclusif parle de qui est consulté.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-a-2",
+          "type": "qcm",
+          "question": "Une entreprise change le logiciel du service des paies. Personne de ce service n'est consulté avant de choisir les mesures de risque. Quel principe oublie-t-elle ?",
+          "options": [
+            "Inclusif (inclusive)",
+            "Adapté (customized)",
+            "Complet (comprehensive)",
+            "Intégré (integrated)"
+          ],
+          "options_why": [
+            "",
+            "Adapté parle de la taille du plan, pas de qui est consulté.",
+            "Complet parle de couvrir tous les sujets, pas de qui participe.",
+            "Intégré parle de la place du risque dans les activités, pas de la consultation des personnes concernées."
+          ],
+          "answer": "Inclusif (inclusive)",
+          "explanation": "Les parties prenantes (ici le service des paies) doivent être impliquées à temps.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-a-3",
+          "type": "sort",
+          "question": "Quel principe illustre chaque situation ?",
+          "answer": "Adapté : plan à la bonne taille. Inclusif : personnes concernées consultées. Complet : approche qui couvre tout. Intégré : le risque dans chaque activité.",
+          "explanation": "Pose-toi une question : est-ce la taille du plan, les personnes consultées, la couverture ou la place du risque ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Adapté", "Inclusif", "Complet", "Intégré"],
+            "items": [
+              { "text": "Une petite boutique garde un plan simple, pas celui d'une banque", "category": "Adapté" },
+              { "text": "Plus le risque est grand, plus le suivi est poussé", "category": "Adapté" },
+              { "text": "Les employés concernés donnent leur avis à temps", "category": "Inclusif" },
+              { "text": "Les clients sont prévenus avant un changement important", "category": "Inclusif" },
+              { "text": "Le plan couvre les risques techniques, humains et juridiques", "category": "Complet" },
+              { "text": "Aucun domaine de l'entreprise n'est laissé sans méthode", "category": "Complet" },
+              { "text": "Chaque projet de l'entreprise contient une étape sur le risque", "category": "Intégré" },
+              { "text": "Chaque équipe pense au risque dans son travail de tous les jours", "category": "Intégré" }
+            ]
+          }
+        },
+        {
+          "id": "d1-rcad-principes-a-4",
+          "type": "cloze",
+          "question": "Le principe [[inclusif]] demande d'impliquer les [[parties prenantes]] à temps.",
+          "answer": "Le principe inclusif demande d'impliquer les parties prenantes à temps.",
+          "explanation": "Inclure, c'est consulter ceux que la décision touche, avant de décider.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-a-5",
+          "type": "why",
+          "question": "Pourquoi faut-il adapter le cadre à la taille de l'organisation et au niveau de risque ?",
+          "answer": "Un cadre trop lourd freine une petite équipe. Un cadre trop léger laisse passer les gros risques. Il doit être proportionné.",
+          "explanation": "Le bon cadre a la taille de ce qu'il protège.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-a-6",
+          "type": "whatif",
+          "question": "Et si la gestion du risque restait un service à part, séparé des autres activités ?",
+          "answer": "Les équipes oublieraient d'y penser dans leur travail. Le principe intégré demande que le risque fasse partie de toutes les activités.",
+          "explanation": "Un risque géré dans un coin n'est pas géré partout.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-a-7",
+          "type": "flash",
+          "question": "Que veut dire « partie prenante » (stakeholder) ?",
+          "answer": "Une personne ou un groupe concerné par ce que fait l'organisation, comme des employés, des clients ou des partenaires.",
+          "explanation": "Si la décision te touche, tu es une partie prenante.",
+          "explanation_more": "Explication hors manuel : le livre emploie le mot sans le définir dans cette section.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-a-8",
+          "type": "flash",
+          "question": "Combien de principes l'ISO 31000:2018 compte-t-elle ?",
+          "answer": "Huit principes.",
+          "explanation": "Quatre sont dans cette planète, quatre dans la suivante.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks », figure 1.7.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "d1-rcad-principes-b",
+      "name": "Les principes de l'ISO 31000 (2 sur 2)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le GPS et le bouchon",
+          "paragraphes": [
+            "Tu suis ton GPS. Un accident bloque la route. Il recalcule aussitôt un autre chemin.",
+            "Mais il n'est pas parfait : parfois ses cartes sont vieilles. Un bon GPS te prévient quand il n'est pas sûr.",
+            "La gestion du risque doit réagir de la même façon. Voici les quatre derniers principes de l'ISO 31000."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le GPS qui s'adapte",
+          "comme": "Le GPS repère le bouchon et change de route à temps. Il sait aussi que ses données ne sont pas parfaites.",
+          "enVrai": "Dynamique (dynamic) : la gestion du risque repère les changements et réagit à temps. Meilleure information disponible (best available information) : elle dit clairement ce que l'on ne sait pas."
+        },
+        {
+          "type": "analogie",
+          "titre": "L'équipe de sport",
+          "comme": "Une équipe tient compte de la fatigue et du moral des joueurs. Après chaque match, elle note ce qu'elle doit améliorer.",
+          "enVrai": "Facteurs humains et culturels (human and cultural factors) : les habitudes et les comportements influencent la gestion du risque. Amélioration continue (continual improvement) : on apprend de l'expérience, sans cesse."
+        },
+        {
+          "type": "predire",
+          "question": "Après une attaque, l'équipe note ce qu'elle a appris et change ses méthodes. Quel principe applique-t-elle ?",
+          "options": [
+            "Amélioration continue (continual improvement)",
+            "Dynamique (dynamic)",
+            "Meilleure information disponible (best available information)"
+          ],
+          "answer": "Amélioration continue (continual improvement)",
+          "explanation": "Apprendre de l'expérience pour s'améliorer, c'est l'amélioration continue. Dynamique parle de réagir à temps aux changements, pas d'apprendre après coup."
+        },
+        {
+          "type": "exemple",
+          "titre": "Des chiffres un peu vieux",
+          "texte": "Une équipe estime un risque avec des chiffres vieux de trois ans. Elle écrit clairement : « Ces données sont anciennes, le résultat est incertain. » C'est le principe de la meilleure information disponible : on reconnaît les limites de ce qu'on sait."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rcad-principes-b-dynamic-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le principe « dynamic »",
+          "answer": "Dynamic: Risk management anticipates, detects, acknowledges, and responds to changes in a timely fashion.\n\nTraduction : Dynamique : la gestion du risque anticipe, détecte, reconnaît et répond aux changements en temps voulu.",
+          "explanation": "Quatre verbes qui forment une chaîne : anticiper, détecter, reconnaître, répondre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-b-dynamic-def3",
+          "type": "cloze",
+          "question": "Dynamic: Risk management [[anticipates, detects, acknowledges]], and [[responds to changes]] in a [[timely fashion]].",
+          "answer": "Dynamic: Risk management anticipates, detects, acknowledges, and responds to changes in a timely fashion.",
+          "explanation": "Trois verbes, puis le dernier verbe avec les changements, et enfin : à temps.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-b-best-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le principe « best available information »",
+          "answer": "Best available information: Risk management explicitly considers any limitations of available information.\n\nTraduction : Meilleure information disponible : la gestion du risque tient compte explicitement de toutes les limites des informations disponibles.",
+          "explanation": "On utilise les meilleures données, et on dit ouvertement leurs limites.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-b-best-def3",
+          "type": "cloze",
+          "question": "Best available information: Risk management [[explicitly considers]] any [[limitations]] of [[available information]].",
+          "answer": "Best available information: Risk management explicitly considers any limitations of available information.",
+          "explanation": "Le mot-clé est limitations : on ne cache pas ce qu'on ignore.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-b-human-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le principe « human and cultural factors »",
+          "answer": "Human and cultural factors: Human and cultural factors influence all aspects of risk management.\n\nTraduction : Facteurs humains et culturels : les facteurs humains et culturels influencent tous les aspects de la gestion du risque.",
+          "explanation": "Les gens et leurs habitudes pèsent sur chaque étape, pas seulement sur une.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-b-human-def3",
+          "type": "cloze",
+          "question": "Human and cultural factors: [[Human and cultural factors]] [[influence all aspects]] of [[risk management]].",
+          "answer": "Human and cultural factors: Human and cultural factors influence all aspects of risk management.",
+          "explanation": "Qui influence : le facteur humain. Quoi : tous les aspects. De quoi : la gestion du risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-b-continual-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le principe « continual improvement »",
+          "answer": "Continual improvement: Risk management is continually improved through learning and experience.\n\nTraduction : Amélioration continue : la gestion du risque est améliorée en continu grâce à l'apprentissage et à l'expérience.",
+          "explanation": "On apprend de ce qui arrive, puis on s'améliore, encore et encore.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-b-continual-def3",
+          "type": "cloze",
+          "question": "Continual improvement: [[Risk management]] is [[continually improved]] through [[learning and experience]].",
+          "answer": "Continual improvement: Risk management is continually improved through learning and experience.",
+          "explanation": "Le moteur de l'amélioration : l'apprentissage et l'expérience.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-principes-b-1",
+          "type": "duel",
+          "question": "La menace change du jour au lendemain et l'équipe s'adapte vite. Quel principe ?",
+          "options": ["Dynamique (dynamic)", "Amélioration continue (continual improvement)"],
+          "answer": "Dynamique (dynamic)",
+          "explanation": "Dynamique : réagir à temps aux changements. Amélioration continue : apprendre de l'expérience.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-b-2",
+          "type": "qcm",
+          "question": "Une enquête montre que des employés ignorent une règle de sécurité parce que « ça ne se fait pas ici ». Quel principe en tient compte ?",
+          "options": [
+            "Facteurs humains et culturels",
+            "Dynamique",
+            "Meilleure information disponible",
+            "Amélioration continue"
+          ],
+          "options_why": [
+            "",
+            "Dynamique parle de réagir aux changements, pas des habitudes des personnes.",
+            "Ce principe parle de la qualité des données, pas des comportements.",
+            "Ce principe parle d'apprendre de l'expérience, pas d'habitudes de groupe."
+          ],
+          "answer": "Facteurs humains et culturels",
+          "explanation": "Les habitudes et la culture d'un groupe influencent la façon dont les règles sont suivies.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-b-3",
+          "type": "sort",
+          "question": "Quel principe illustre chaque situation ?",
+          "answer": "Dynamique : réagir vite. Meilleure information : dire les limites des données. Facteurs humains : tenir compte des habitudes. Amélioration continue : apprendre de l'expérience.",
+          "explanation": "Cherche le mot clé : changement, données incertaines, habitudes ou leçon retenue.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Dynamique", "Meilleure information", "Facteurs humains", "Amélioration continue"],
+            "items": [
+              { "text": "L'équipe repère un nouveau danger dès son apparition", "category": "Dynamique" },
+              { "text": "Les règles changent vite quand la situation change", "category": "Dynamique" },
+              { "text": "Le rapport dit clairement quelles données sont incertaines", "category": "Meilleure information" },
+              { "text": "L'équipe note qu'elle manque d'informations sur un fournisseur", "category": "Meilleure information" },
+              { "text": "Les habitudes de l'équipe sont prises en compte dans le plan", "category": "Facteurs humains" },
+              { "text": "On sait que la fatigue fait faire des erreurs, donc on adapte les règles", "category": "Facteurs humains" },
+              { "text": "Après chaque incident, on retient une leçon", "category": "Amélioration continue" },
+              { "text": "Chaque année, la méthode est revue grâce à l'expérience", "category": "Amélioration continue" }
+            ]
+          }
+        },
+        {
+          "id": "d1-rcad-principes-b-4",
+          "type": "cloze",
+          "question": "Un risque évolue : la gestion du risque doit [[détecter]] les changements et y [[répondre]] à temps.",
+          "answer": "Un risque évolue : la gestion du risque doit détecter les changements et y répondre à temps.",
+          "explanation": "C'est le principe dynamique : voir le changement, puis réagir.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-b-5",
+          "type": "why",
+          "question": "Pourquoi faut-il reconnaître les limites des informations disponibles ?",
+          "answer": "Une donnée incertaine peut sembler plus sûre qu'elle ne l'est. Dire ses limites évite de prendre une mauvaise décision.",
+          "explanation": "Savoir ce qu'on ignore fait partie de bien décider.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-b-6",
+          "type": "whatif",
+          "question": "Et si une équipe ignorait les habitudes et la culture de l'entreprise ?",
+          "answer": "Ses règles seraient mal suivies, même si elles sont bonnes sur le papier. Les facteurs humains influencent tous les aspects du risque.",
+          "explanation": "Une règle que personne n'applique ne protège rien.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-principes-b-7",
+          "type": "flash",
+          "question": "Quel principe demande de reconnaître que les informations disponibles peuvent être incomplètes ?",
+          "answer": "Meilleure information disponible (best available information).",
+          "explanation": "On utilise le mieux possible ce qu'on a, en disant clairement ce qui manque.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-rcad-iso27005",
+      "name": "ISO/IEC 27005 : le risque de sécurité de l'information",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le généraliste et le spécialiste",
+          "paragraphes": [
+            "Quand tu es malade, tu vois d'abord le médecin généraliste. Il connaît la santé en général. Pour le cœur, il t'envoie chez un spécialiste.",
+            "Les normes ISO fonctionnent un peu pareil. ISO 31000 traite du risque en général. La série ISO 27000 traite de la sécurité de l'information : la protection des données et des systèmes.",
+            "Dans cette série, la norme ISO 27005 s'occupe du risque lié à la sécurité de l'information."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le chef et la liste d'ingrédients",
+          "comme": "Un chef reçoit la liste des ingrédients disponibles et le plat attendu. Mais personne ne lui impose sa recette.",
+          "enVrai": "ISO 27005 ne donne pas directement la méthode d'évaluation du risque. Elle dit ce qu'il faut fournir au départ (les entrées) et ce qu'on obtient à la fin (les sorties). L'entreprise garde sa propre méthode."
+        },
+        {
+          "type": "predire",
+          "question": "ISO 27005 fournit-elle la recette complète pour évaluer un risque, étape par étape ?",
+          "options": [
+            "Oui, étape par étape",
+            "Non, elle fournit un cadre mais pas la méthode"
+          ],
+          "answer": "Non, elle fournit un cadre mais pas la méthode",
+          "explanation": "La norme définit le contexte et reçoit les résultats de la méthode choisie. La première réponse est tentante, car on attend d'une norme qu'elle dise tout."
+        },
+        {
+          "type": "exemple",
+          "titre": "La tolérance au risque",
+          "texte": "Une boutique en ligne décide : une courte panne est acceptable, mais une fuite des données clients ne l'est pas. Ce niveau de risque que l'entreprise accepte s'appelle la tolérance au risque (risk tolerance). ISO 27005 demande de la fixer dans le contexte."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rcad-iso27005-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la norme « ISO/IEC 27005 »",
+          "answer": "ISO/IEC 27005:2011, \"Information technology-Security techniques — Information security risk management,\" gives detail and structure to the information security risks by defining the context for information security risk decision-making.\n\nTraduction : L'ISO/IEC 27005:2011, « Technologies de l'information - Techniques de sécurité - Gestion du risque de sécurité de l'information », donne du détail et de la structure aux risques de sécurité de l'information, en définissant le contexte des décisions sur ces risques.",
+          "explanation": "La 27005 précise le risque de sécurité de l'information et fixe le contexte des décisions.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ». Le titre entre guillemets est le titre officiel de la norme. Dans le livre, la phrase commence par le guide ISO/IEC 73 (langage commun) ; on apprend ici la partie sur la 27005.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-def2",
+          "type": "cloze",
+          "question": "ISO/IEC 27005:2011, \"Information technology-Security techniques — Information security risk management,\" gives [[detail]] and structure to the information security risks by defining the [[context]] for information security risk decision-making.",
+          "answer": "ISO/IEC 27005:2011, \"Information technology-Security techniques — Information security risk management,\" gives detail and structure to the information security risks by defining the context for information security risk decision-making.",
+          "explanation": "Deux mots à garder : detail et context.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-def3",
+          "type": "cloze",
+          "question": "[[ISO/IEC 27005:2011]], \"Information technology-Security techniques — Information security risk management,\" gives [[detail and structure]] to the information security risks by [[defining the context]] for information security risk decision-making.",
+          "answer": "ISO/IEC 27005:2011, \"Information technology-Security techniques — Information security risk management,\" gives detail and structure to the information security risks by defining the context for information security risk decision-making.",
+          "explanation": "Le nom de la norme, le détail et la structure, puis la définition du contexte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de la norme « ISO/IEC 27005 » (en anglais).",
+          "answer": "ISO/IEC 27005:2011, \"Information technology-Security techniques — Information security risk management,\" gives detail and structure to the information security risks by defining the context for information security risk decision-making.\n\nTraduction : L'ISO/IEC 27005:2011, « Technologies de l'information - Techniques de sécurité - Gestion du risque de sécurité de l'information », donne du détail et de la structure aux risques de sécurité de l'information, en définissant le contexte des décisions sur ces risques.",
+          "explanation": "La phrase est longue : apprends-la en deux blocs : le sujet, puis ce qu'elle apporte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-serie-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les séries ISO 31000 et ISO 27000",
+          "answer": "While the 31000 series addresses general risk, information security practices are addressed in the ISO 27000 series.\n\nTraduction : Alors que la série 31000 traite du risque en général, les pratiques de sécurité de l'information sont traitées dans la série ISO 27000.",
+          "explanation": "31000 = le risque en général. 27000 = la sécurité de l'information.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-serie-def3",
+          "type": "cloze",
+          "question": "While the [[31000 series]] addresses [[general risk]], information security practices are addressed in the [[ISO 27000 series]].",
+          "answer": "While the 31000 series addresses general risk, information security practices are addressed in the ISO 27000 series.",
+          "explanation": "Deux séries, deux sujets : le risque en général et la sécurité de l'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-ctx-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le contexte défini par ISO/IEC 27005",
+          "answer": "This context includes definition of the organization's risk tolerance, compliance expectations, and the preferred approaches for assessment and treatment of risk.\n\nTraduction : Ce contexte comprend la définition de la tolérance au risque de l'organisation, de ses attentes de conformité, et des approches préférées pour l'évaluation et le traitement du risque.",
+          "explanation": "Trois choses dans le contexte : le risque accepté, les règles à respecter, et la méthode choisie.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-ctx-def3",
+          "type": "cloze",
+          "question": "This context includes definition of the organization's [[risk tolerance]], [[compliance expectations]], and the [[preferred approaches for assessment]] and treatment of risk.",
+          "answer": "This context includes definition of the organization's risk tolerance, compliance expectations, and the preferred approaches for assessment and treatment of risk.",
+          "explanation": "Tolérance au risque, conformité, puis approches préférées pour évaluer et traiter.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-noproc-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce qu'ISO 27005 ne fournit pas",
+          "answer": "ISO 27005 does not directly provide a risk assessment process.\n\nTraduction : ISO 27005 ne fournit pas directement de processus d'évaluation du risque.",
+          "explanation": "Piège classique : la norme encadre l'évaluation, mais ne dit pas comment la faire.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-noproc-def3",
+          "type": "cloze",
+          "question": "[[ISO 27005]] [[does not directly provide]] a [[risk assessment process]].",
+          "answer": "ISO 27005 does not directly provide a risk assessment process.",
+          "explanation": "Le sujet, la négation avec directly, puis ce qui manque : un processus d'évaluation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-inout-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce qu'ISO 27005 fournit à la place",
+          "answer": "Rather, it provides inputs to, and gets outputs from, the risk assessment practice used by the organization.\n\nTraduction : Elle fournit plutôt des entrées à la pratique d'évaluation du risque utilisée par l'organisation, et reçoit les sorties de cette pratique.",
+          "explanation": "Comme la liste d'ingrédients : des entrées au départ, des sorties à l'arrivée.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-inout-def3",
+          "type": "cloze",
+          "question": "Rather, it provides [[inputs to, and gets outputs from]], the [[risk assessment practice]] used by the [[organization]].",
+          "answer": "Rather, it provides inputs to, and gets outputs from, the risk assessment practice used by the organization.",
+          "explanation": "Entrées et sorties : la norme et la méthode de l'organisation s'échangent des informations.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-iso27005-1",
+          "type": "duel",
+          "question": "Quelle série d'ISO vise le risque de la sécurité de l'information ?",
+          "options": ["La série ISO 27000", "La série ISO 31000"],
+          "answer": "La série ISO 27000",
+          "explanation": "ISO 31000 traite du risque en général. La série 27000 traite de la sécurité de l'information.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso27005-2",
+          "type": "qcm",
+          "question": "Qu'est-ce qui fait partie du contexte défini par ISO 27005 ?",
+          "options": [
+            "La tolérance au risque de l'organisation",
+            "Le choix de l'antivirus à acheter",
+            "La liste des pirates connus",
+            "Le nombre d'employés de l'entreprise"
+          ],
+          "options_why": [
+            "",
+            "Choisir un outil vient après : ce n'est pas du contexte de décision.",
+            "Cette liste peut servir plus tard, mais ce n'est pas citée dans le contexte.",
+            "Ce chiffre peut aider, mais le livre cite la tolérance au risque, la conformité et les approches préférées."
+          ],
+          "answer": "La tolérance au risque de l'organisation",
+          "explanation": "Le contexte contient la tolérance au risque, les attentes de conformité et les approches préférées.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso27005-3",
+          "type": "qcm",
+          "question": "Un chef de projet demande à ISO 27005 : « Donne-moi la méthode d'évaluation, étape par étape. » Que répond la norme ?",
+          "options": [
+            "Elle ne la donne pas : elle fournit des entrées et reçoit des sorties",
+            "Elle donne une méthode complète et obligatoire",
+            "Elle impose une évaluation en chiffres uniquement",
+            "Elle interdit les évaluations en mots, sans chiffres"
+          ],
+          "options_why": [
+            "",
+            "Le livre dit qu'elle ne fournit pas directement de processus d'évaluation.",
+            "L'évaluation peut être en chiffres (quantitative) ou en mots (qualitative).",
+            "Les deux types sont permis, à condition d'être cohérents."
+          ],
+          "answer": "Elle ne la donne pas : elle fournit des entrées et reçoit des sorties",
+          "explanation": "L'organisation choisit sa méthode. La norme lui apporte le contexte et reçoit ses résultats.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso27005-4",
+          "type": "why",
+          "question": "Pourquoi l'évaluation doit-elle être faite de façon cohérente, en mots (qualitative) ou en chiffres (quantitative) ?",
+          "answer": "Pour pouvoir classer les risques par priorité. Si chaque risque est mesuré d'une autre façon, on ne peut plus les comparer.",
+          "explanation": "Mesurer tout avec la même règle permet de savoir quoi traiter en premier.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks » : l'évaluation doit être cohérente pour que la priorisation soit possible.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso27005-5",
+          "type": "cloze",
+          "question": "ISO 27005 insiste sur la [[communication]] avec les parties prenantes et sur la [[surveillance]] continue des changements.",
+          "answer": "ISO 27005 insiste sur la communication avec les parties prenantes et sur la surveillance continue des changements.",
+          "explanation": "Parler aux personnes concernées et surveiller ce qui change : deux habitudes à garder.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso27005-6",
+          "type": "flash",
+          "question": "Pourquoi les normes ISO sont-elles très utilisées dans le monde ?",
+          "answer": "Elles sont créées par un processus international large et elles se relient à d'autres normes ISO. On obtient une vue d'ensemble du risque et de la conformité.",
+          "explanation": "Des normes qui se complètent s'adoptent plus facilement.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-iso27005-7",
+          "type": "whatif",
+          "question": "Et si une entreprise ne surveillait pas les changements de son environnement de risque ?",
+          "answer": "Ses évaluations deviendraient vite fausses. ISO 27005 demande de surveiller en continu les changements.",
+          "explanation": "Un risque évalué hier peut avoir changé aujourd'hui.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-rcad-rmf",
+      "name": "Le NIST RMF (Risk Management Framework)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Mille systèmes, une méthode",
+          "paragraphes": [
+            "Le gouvernement des États-Unis gère des milliers de systèmes informatiques. Un système est un ensemble d'ordinateurs, de logiciels et de réseaux qui font un travail précis.",
+            "Qui protège quoi, et avec quelles règles ? Sans méthode commune, chaque agence ferait à sa façon.",
+            "Un institut américain, le NIST (National Institute of Standards and Technology), a donc publié une méthode. Elle s'appelle le Risk Management Framework (RMF)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "C'est comme le contrôle technique d'une voiture",
+          "comme": "Avant de rouler, une voiture passe un contrôle. On la classe, on vérifie ses équipements, un expert l'examine, puis elle reçoit l'autorisation de rouler. Plus tard, on la recontrôle.",
+          "enVrai": "Le RMF suit ce schéma pour un système informatique : le classer, le protéger, le vérifier, l'autoriser, puis le surveiller. L'image s'arrête là : dans le RMF, la surveillance ne s'arrête jamais."
+        },
+        {
+          "type": "predire",
+          "question": "Pour qui le RMF a-t-il d'abord été écrit ?",
+          "options": [
+            "Les agences du gouvernement américain",
+            "Les écoles",
+            "Les petits magasins"
+          ],
+          "answer": "Les agences du gouvernement américain",
+          "explanation": "Le livre dit que ses étapes visent les agences fédérales des États-Unis. Elles servent pourtant dans presque toutes les industries."
+        },
+        {
+          "type": "exemple",
+          "titre": "La loi HIPAA",
+          "texte": "HIPAA est une loi américaine sur les données de santé. Les organisations de santé doivent montrer que leurs contrôles suivent les pratiques du NIST. Un hôpital privé doit donc connaître le travail du NIST, même s'il n'est pas une agence du gouvernement."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rcad-rmf-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le « Risk Management Framework (RMF) »",
+          "answer": "In the current incarnation, the Risk Management Framework (RMF) provides a structured analytical process to identify, control, evaluate, and improve the organization's information security controls.\n\nTraduction : Dans sa version actuelle, le Risk Management Framework (RMF) fournit un processus analytique structuré pour identifier, contrôler, évaluer et améliorer les contrôles de sécurité de l'information de l'organisation.",
+          "explanation": "Quatre verbes : identifier, contrôler, évaluer, améliorer. Ils portent sur les contrôles de sécurité.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-rmf-def2",
+          "type": "cloze",
+          "question": "In the current incarnation, the Risk Management Framework (RMF) provides a [[structured]] analytical process to identify, control, evaluate, and [[improve]] the organization's information security controls.",
+          "answer": "In the current incarnation, the Risk Management Framework (RMF) provides a structured analytical process to identify, control, evaluate, and improve the organization's information security controls.",
+          "explanation": "Un processus structuré, qui finit par un verbe d'amélioration.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-rmf-def3",
+          "type": "cloze",
+          "question": "In the current incarnation, the [[Risk Management Framework]] (RMF) provides a [[structured analytical process]] to [[identify, control, evaluate, and improve]] the organization's information security controls.",
+          "answer": "In the current incarnation, the Risk Management Framework (RMF) provides a structured analytical process to identify, control, evaluate, and improve the organization's information security controls.",
+          "explanation": "Le nom du cadre, la nature du processus, et les quatre verbes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-rmf-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle du « Risk Management Framework (RMF) » (en anglais).",
+          "answer": "In the current incarnation, the Risk Management Framework (RMF) provides a structured analytical process to identify, control, evaluate, and improve the organization's information security controls.\n\nTraduction : Dans sa version actuelle, le Risk Management Framework (RMF) fournit un processus analytique structuré pour identifier, contrôler, évaluer et améliorer les contrôles de sécurité de l'information de l'organisation.",
+          "explanation": "Commence par les quatre verbes, puis ajoute le reste autour.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-rmf-nist-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le rôle du « NIST »",
+          "answer": "Through a hierarchy of publications, the National Institute of Standards and Technology provides direction to U.S. government agencies in implementing information security practices.\n\nTraduction : Grâce à une hiérarchie de publications, le National Institute of Standards and Technology guide les agences du gouvernement américain pour mettre en œuvre des pratiques de sécurité de l'information.",
+          "explanation": "Le NIST publie des guides, du plus général au plus précis, pour les agences américaines.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-rmf-nist-def3",
+          "type": "cloze",
+          "question": "Through a [[hierarchy of publications]], the National Institute of Standards and Technology [[provides direction]] to [[U.S. government agencies]] in implementing information security practices.",
+          "answer": "Through a hierarchy of publications, the National Institute of Standards and Technology provides direction to U.S. government agencies in implementing information security practices.",
+          "explanation": "Comment (par des publications), ce qu'il fait (il guide) et pour qui (les agences américaines).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-rmf-sp-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la publication « NIST SP 800-37 »",
+          "answer": "Documented in NIST Special Publication 800-37, \"Guide for Applying the Risk Management Framework to Federal Information Systems,\" it prescribes a six-step process through which the federal government manages the risks of its information systems; the six steps are pictured in Figure 1.8.\n\nTraduction : Documenté dans la publication spéciale NIST 800-37, « Guide pour appliquer le Risk Management Framework aux systèmes d'information fédéraux », il prescrit un processus en six étapes par lequel le gouvernement fédéral gère les risques de ses systèmes d'information ; les six étapes sont montrées à la figure 1.8.",
+          "explanation": "Retiens deux chiffres : le numéro 800-37, et les six étapes.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-rmf-sp-def3",
+          "type": "cloze",
+          "question": "Documented in [[NIST Special Publication 800-37]], \"Guide for Applying the Risk Management Framework to Federal Information Systems,\" it prescribes a [[six-step process]] through which the [[federal government]] manages the risks of its information systems; the six steps are pictured in Figure 1.8.",
+          "answer": "Documented in NIST Special Publication 800-37, \"Guide for Applying the Risk Management Framework to Federal Information Systems,\" it prescribes a six-step process through which the federal government manages the risks of its information systems; the six steps are pictured in Figure 1.8.",
+          "explanation": "Le numéro du document, le nombre d'étapes, et qui l'utilise : le gouvernement fédéral.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-rmf-1",
+          "type": "duel",
+          "question": "Lequel est conçu à l'origine pour les agences du gouvernement des États-Unis ?",
+          "options": ["Le NIST RMF", "ISO 31000"],
+          "answer": "Le NIST RMF",
+          "explanation": "ISO 31000 vise toute organisation dans le monde. Le RMF vient d'un institut américain, pour le gouvernement fédéral.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-rmf-2",
+          "type": "qcm",
+          "question": "Une clinique doit prouver à la loi HIPAA que ses contrôles suivent le NIST. Que montre cet exemple ?",
+          "options": [
+            "Le NIST influence aussi des secteurs privés réglementés",
+            "Le NIST gère directement les cliniques",
+            "Toutes les entreprises doivent appliquer le RMF",
+            "Le NIST n'a aucun effet hors du gouvernement"
+          ],
+          "options_why": [
+            "",
+            "Le NIST publie des guides, il ne gère pas les cliniques.",
+            "Le livre ne dit pas cela : seules certaines lois, comme HIPAA, s'y réfèrent.",
+            "C'est l'inverse : HIPAA montre un effet sur le secteur de la santé."
+          ],
+          "answer": "Le NIST influence aussi des secteurs privés réglementés",
+          "explanation": "Les normes du NIST fixent souvent les attentes envers d'autres industries réglementées.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-rmf-3",
+          "type": "why",
+          "question": "Pourquoi les normes du NIST ont-elles un effet très large sur la communauté de la sécurité ?",
+          "answer": "Elles couvrent beaucoup de sujets, elles sont publiques et elles sont écrites avec l'industrie et les universités.",
+          "explanation": "Trois raisons : une large portée, la disponibilité publique, et la participation de nombreux acteurs.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks » : broad scope, public domain, inclusion of industry and academia.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-rmf-4",
+          "type": "cloze",
+          "question": "Le NIST RMF est un processus en [[six]] étapes, décrit dans la publication spéciale [[800-37]].",
+          "answer": "Le NIST RMF est un processus en six étapes, décrit dans la publication spéciale 800-37.",
+          "explanation": "Six étapes, numéro 800-37 : deux chiffres à retenir.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-rcad-rmf-5",
+          "type": "flash",
+          "question": "Quel guide du NIST aide à mener des évaluations de risque ?",
+          "answer": "Le NIST 800-30, « Guide for Conducting Risk Assessments ». Le NIST Cybersecurity Framework aide aussi à présenter les risques à la direction.",
+          "explanation": "Les deux donnent des conseils pratiques pour éclairer les décisions de la direction.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks » (encadré Tip).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-rcad-rmf-6",
+          "type": "whatif",
+          "question": "Et si une entreprise privée ignorait le RMF parce qu'il est fait pour le gouvernement ?",
+          "answer": "Elle se priverait d'un bon modèle : ses étapes servent dans presque toutes les industries. Certaines lois, comme HIPAA, s'y réfèrent même.",
+          "explanation": "Le RMF est pensé pour l'État, mais il est largement applicable.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-rmf-7",
+          "type": "flash",
+          "question": "Pourquoi le RMF est-il important pour l'examen CISSP ?",
+          "answer": "Il est très cité dans le monde de la sécurité. Le livre le présente comme une partie importante du CBK, le corpus de connaissances du CISSP.",
+          "explanation": "Le CBK (Common Body of Knowledge) est la liste de ce qu'un CISSP doit connaître.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-rcad-etapes",
+      "name": "Les six étapes du NIST RMF",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Ouvrir un restaurant",
+          "paragraphes": [
+            "Tu veux ouvrir un restaurant. Avant de servir, tu te demandes : est-ce un petit snack ou la cuisine d'un hôpital ?",
+            "Tu choisis les règles d'hygiène, tu les mets en place, un inspecteur vérifie, puis tu reçois l'autorisation d'ouvrir.",
+            "Après l'ouverture, les contrôles continuent. Le RMF suit six étapes très proches de celles-ci."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Les six étapes d'un restaurant",
+          "comme": "On classe le restaurant selon le danger en cas de problème. On choisit les règles de base. On les applique. On les fait vérifier. On obtient l'autorisation. On les surveille sans fin.",
+          "enVrai": "Six étapes. Catégoriser le système (categorize). Choisir les contrôles (select). Les mettre en œuvre (implement). Les évaluer (assess). Autoriser le système (authorize). Les surveiller (monitor)."
+        },
+        {
+          "type": "predire",
+          "question": "Quelle est la première étape du RMF ?",
+          "options": [
+            "Classer le système selon l'impact d'une perte",
+            "Choisir les contrôles",
+            "Autoriser le système"
+          ],
+          "answer": "Classer le système selon l'impact d'une perte",
+          "explanation": "On ne peut pas choisir des contrôles avant de savoir à quel point le système est important. Autoriser vient bien plus tard."
+        },
+        {
+          "type": "exemple",
+          "titre": "Deux systèmes, deux classes",
+          "texte": "Un site qui affiche le menu d'une cantine pèse moins qu'un système de dossiers médicaux d'hôpital. Perdre le second est bien plus grave. À l'étape 1, ils reçoivent donc des classes différentes. Ils reçoivent aussi des contrôles de base (baseline) différents : un ensemble minimal de contrôles de départ."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rcad-etapes-categorize-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la première étape du NIST RMF",
+          "answer": "The first step of the NIST RMF involves categorizing all information systems based on the potential impact to the organization due to the loss of confidentiality, integrity, or availability.\n\nTraduction : La première étape du NIST RMF consiste à catégoriser tous les systèmes d'information selon l'impact possible pour l'organisation en cas de perte de confidentialité, d'intégrité ou de disponibilité.",
+          "explanation": "On classe chaque système selon la gravité d'une perte de l'un des trois piliers CIA.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ». Le livre précise qu'il faut un inventaire complet des systèmes pour pouvoir les catégoriser.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-categorize-def3",
+          "type": "cloze",
+          "question": "The first step of the NIST RMF involves [[categorizing all information systems]] based on the [[potential impact]] to the organization due to the loss of [[confidentiality, integrity, or availability]].",
+          "answer": "The first step of the NIST RMF involves categorizing all information systems based on the potential impact to the organization due to the loss of confidentiality, integrity, or availability.",
+          "explanation": "On catégorise tous les systèmes, d'après l'impact, pour les trois piliers CIA.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-select-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'étape « choisir les contrôles »",
+          "answer": "Once security categorization has been performed, a baseline set of controls must be selected based on the identified categorization and impact.\n\nTraduction : Une fois la catégorisation de sécurité faite, un ensemble de base de contrôles doit être choisi selon la catégorisation et l'impact identifiés.",
+          "explanation": "Plus l'impact est grand, plus l'ensemble de contrôles de base est exigeant.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-select-def3",
+          "type": "cloze",
+          "question": "Once security categorization has been performed, [[a baseline set of controls]] must be [[selected based on]] the identified [[categorization and impact]].",
+          "answer": "Once security categorization has been performed, a baseline set of controls must be selected based on the identified categorization and impact.",
+          "explanation": "Un ensemble de base, choisi d'après la catégorie et l'impact.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-assess-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les étapes « mettre en œuvre » et « évaluer » les contrôles",
+          "answer": "Once the system has been categorized and baseline controls are selected, the controls must be implemented and monitored to ensure that they \"are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting the security requirements for the system.\"\n\nTraduction : Une fois le système catégorisé et les contrôles de base choisis, les contrôles doivent être mis en œuvre et suivis pour s'assurer qu'ils « sont mis en œuvre correctement, fonctionnent comme prévu et produisent le résultat voulu pour répondre aux exigences de sécurité du système ».",
+          "explanation": "Trois questions : bien installés ? Ils marchent comme prévu ? Ils donnent le résultat voulu ?",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ». Cette étape produit des documents qui certifient l'application technique des contrôles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-assess-def3",
+          "type": "cloze",
+          "question": "Once the system has been categorized and baseline controls are selected, the controls must be [[implemented and monitored]] to ensure that they \"are [[implemented correctly]], operating as intended, and producing the [[desired outcome]] with respect to meeting the security requirements for the system.\"",
+          "answer": "Once the system has been categorized and baseline controls are selected, the controls must be implemented and monitored to ensure that they \"are implemented correctly, operating as intended, and producing the desired outcome with respect to meeting the security requirements for the system.\"",
+          "explanation": "Mettre en œuvre et suivre, avec trois critères : correct, comme prévu, résultat voulu.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-authorize-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'étape « autoriser le système »",
+          "answer": "After categorizing information systems, selecting and implementing controls, and assessing the effectiveness of those controls, organizational leadership then makes a formal decision whether to authorize the use of the system.\n\nTraduction : Après avoir catégorisé les systèmes, choisi et mis en œuvre les contrôles, et évalué leur efficacité, la direction de l'organisation prend alors une décision formelle : autoriser ou non l'utilisation du système.",
+          "explanation": "C'est la direction qui décide, pas l'équipe technique, et seulement après les étapes d'avant.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ». La décision repose sur la capacité des contrôles à garder le système dans la tolérance au risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-authorize-def3",
+          "type": "cloze",
+          "question": "After categorizing information systems, selecting and implementing controls, and assessing the effectiveness of those controls, [[organizational leadership]] then makes [[a formal decision]] whether to [[authorize the use]] of the system.",
+          "answer": "After categorizing information systems, selecting and implementing controls, and assessing the effectiveness of those controls, organizational leadership then makes a formal decision whether to authorize the use of the system.",
+          "explanation": "Qui décide (la direction), comment (formellement) et quoi (autoriser l'usage).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-monitor-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'étape « surveiller les contrôles »",
+          "answer": "Finally, the organization must continuously monitor the effectiveness of the controls over time to ensure that the ongoing operation of the system occurs within the organization's risk tolerance.\n\nTraduction : Enfin, l'organisation doit surveiller en continu l'efficacité des contrôles dans le temps, pour s'assurer que le fonctionnement du système reste dans la tolérance au risque de l'organisation.",
+          "explanation": "La dernière étape ne finit jamais : on surveille tant que le système tourne.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-monitor-def3",
+          "type": "cloze",
+          "question": "Finally, the organization must [[continuously monitor]] the [[effectiveness of the controls]] over time to ensure that the ongoing operation of the system occurs within the organization's [[risk tolerance]].",
+          "answer": "Finally, the organization must continuously monitor the effectiveness of the controls over time to ensure that the ongoing operation of the system occurs within the organization's risk tolerance.",
+          "explanation": "On surveille en continu l'efficacité, pour rester dans la tolérance au risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-etapes-1",
+          "type": "sort",
+          "question": "Remets les six étapes du NIST RMF dans l'ordre.",
+          "answer": "1. Catégoriser le système. 2. Choisir les contrôles. 3. Mettre en œuvre les contrôles. 4. Évaluer les contrôles. 5. Autoriser le système. 6. Surveiller les contrôles.",
+          "explanation": "Pense au restaurant : on classe, on choisit les règles, on les applique, on vérifie, on autorise, on surveille.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks », figure 1.8.",
+          "retention_goal": "1y",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Catégoriser le système",
+              "Choisir les contrôles",
+              "Mettre en œuvre les contrôles",
+              "Évaluer les contrôles",
+              "Autoriser le système",
+              "Surveiller les contrôles"
+            ]
+          }
+        },
+        {
+          "id": "d1-rcad-etapes-2",
+          "type": "sort",
+          "question": "À quelle étape appartient chaque situation ?",
+          "answer": "Catégoriser : classer selon l'impact. Choisir : retenir les contrôles de base. Autoriser : décision de la direction. Surveiller : suivi sans fin.",
+          "explanation": "Repère le verbe : classer, choisir, décider ou surveiller.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Catégoriser", "Choisir les contrôles", "Autoriser", "Surveiller"],
+            "items": [
+              { "text": "On classe un système selon la gravité d'une perte de données", "category": "Catégoriser" },
+              { "text": "On dresse l'inventaire de tous les systèmes avant de les classer", "category": "Catégoriser" },
+              { "text": "On retient l'ensemble de contrôles de base adapté à la classe du système", "category": "Choisir les contrôles" },
+              { "text": "La direction décide si le système peut être utilisé", "category": "Autoriser" },
+              { "text": "La décision repose sur la tolérance au risque de l'organisation", "category": "Autoriser" },
+              { "text": "On vérifie chaque mois que les contrôles marchent encore", "category": "Surveiller" }
+            ]
+          }
+        },
+        {
+          "id": "d1-rcad-etapes-3",
+          "type": "qcm",
+          "question": "Un hôpital classe son système de dossiers médicaux selon la gravité d'une fuite. Quelle étape vient de se passer ?",
+          "options": [
+            "Catégoriser le système",
+            "Choisir les contrôles",
+            "Autoriser le système",
+            "Surveiller les contrôles"
+          ],
+          "options_why": [
+            "",
+            "Choisir les contrôles vient après, une fois la classe connue.",
+            "Autoriser est une décision de la direction, bien plus tard.",
+            "Surveiller est la dernière étape, quand le système tourne déjà."
+          ],
+          "answer": "Catégoriser le système",
+          "explanation": "Classer selon l'impact d'une perte est la première étape.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-etapes-4",
+          "type": "duel",
+          "question": "Qui prend la décision formelle d'utiliser le système ?",
+          "options": [
+            "La direction de l'organisation (étape Autoriser)",
+            "L'équipe technique (étape Évaluer)"
+          ],
+          "answer": "La direction de l'organisation (étape Autoriser)",
+          "explanation": "L'équipe vérifie les contrôles. La direction décide, en fonction de la tolérance au risque.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-etapes-5",
+          "type": "why",
+          "question": "Pourquoi faut-il un inventaire complet des systèmes avant de les catégoriser ?",
+          "answer": "On ne peut pas classer un système qu'on ne connaît pas. Sans liste complète, certains systèmes resteraient sans protection adaptée.",
+          "explanation": "Le livre le dit : l'inventaire est sous-entendu dans la première étape.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-etapes-6",
+          "type": "whatif",
+          "question": "Et si l'organisation arrêtait de surveiller ses contrôles après l'autorisation ?",
+          "answer": "Les contrôles pourraient s'affaiblir sans que personne le voie. Le système pourrait sortir de la tolérance au risque.",
+          "explanation": "La surveillance dure autant que le système.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-etapes-7",
+          "type": "flash",
+          "question": "Sur quoi repose la décision d'autoriser un système ?",
+          "answer": "Sur la capacité des contrôles à faire fonctionner le système dans la tolérance au risque de l'organisation.",
+          "explanation": "Autoriser, c'est accepter le risque restant.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-etapes-8",
+          "type": "cloze",
+          "question": "La première étape classe les systèmes selon l'[[impact]] d'une perte de confidentialité, d'[[intégrité]] ou de disponibilité.",
+          "answer": "La première étape classe les systèmes selon l'impact d'une perte de confidentialité, d'intégrité ou de disponibilité.",
+          "explanation": "Les trois piliers CIA servent de mètre pour mesurer la gravité.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-rcad-cobit",
+      "name": "COBIT et RiskIT (ISACA)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "L'informatique et la direction ne se parlent pas",
+          "paragraphes": [
+            "Dans les années 1990, des auditeurs, des personnes qui vérifient le travail des entreprises, font un constat. Le service informatique et la direction ne vont pas dans le même sens.",
+            "Les projets informatiques ne servent pas toujours les buts de l'entreprise. Et certains risques ne sont couverts par aucun contrôle.",
+            "L'organisation ISACA crée alors un cadre pour évaluer les activités informatiques : COBIT."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le chef d'orchestre",
+          "comme": "Dans un orchestre, chaque musicien joue bien. Mais sans partition commune, ça sonne faux. Le chef donne le plan que tout le monde suit.",
+          "enVrai": "COBIT relie les activités informatiques aux buts de l'entreprise. Il range les processus en deux groupes : gouverner et gérer. L'image s'arrête là : COBIT n'est pas un chef de personnes, c'est un plan de processus."
+        },
+        {
+          "type": "analogie",
+          "titre": "La caserne de pompiers",
+          "comme": "À la caserne, on fixe les règles, on repère et on mesure les dangers, puis on intervient.",
+          "enVrai": "RiskIT a trois domaines : gouvernance du risque (risk governance), évaluation du risque (risk evaluation) et réponse au risque (risk response). Chaque domaine contient trois processus."
+        },
+        {
+          "type": "predire",
+          "question": "COBIT range ses processus en deux groupes. Lesquels ?",
+          "options": [
+            "Gouvernance de l'informatique et gestion de l'informatique",
+            "Technique et juridique",
+            "Interne et externe"
+          ],
+          "answer": "Gouvernance de l'informatique et gestion de l'informatique",
+          "explanation": "COBIT distingue gouverner (décider, orienter) et gérer (faire fonctionner). Les deux autres paires sont des découpages courants, mais ce ne sont pas ceux de COBIT."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un processus COBIT",
+          "texte": "Chaque processus COBIT a des objectifs, des entrées, des activités clés, des sorties et des mesures pour juger sa performance. Une entreprise peut ainsi vérifier si un processus atteint ses objectifs. COBIT compte cinq processus de gouvernance et 32 processus de gestion."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-rcad-cobit-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le cadre « COBIT »",
+          "answer": "The Control Objectives for Information and Related Technology framework differentiates processes into either Governance of Enterprise IT (five processes) or Management of Enterprise IT (32 processes).\n\nTraduction : Le cadre Control Objectives for Information and Related Technology répartit les processus en deux groupes : la gouvernance de l'informatique d'entreprise (cinq processus) ou la gestion de l'informatique d'entreprise (32 processus).",
+          "explanation": "Deux groupes : gouvernance (5 processus) et gestion (32 processus).",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-def2",
+          "type": "cloze",
+          "question": "The Control Objectives for Information and Related Technology framework differentiates processes into either [[Governance]] of Enterprise IT (five processes) or [[Management]] of Enterprise IT (32 processes).",
+          "answer": "The Control Objectives for Information and Related Technology framework differentiates processes into either Governance of Enterprise IT (five processes) or Management of Enterprise IT (32 processes).",
+          "explanation": "Gouvernance d'un côté, gestion de l'autre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-def3",
+          "type": "cloze",
+          "question": "The Control Objectives for [[Information and Related Technology]] framework differentiates processes into either [[Governance of Enterprise IT]] (five processes) or [[Management of Enterprise IT]] (32 processes).",
+          "answer": "The Control Objectives for Information and Related Technology framework differentiates processes into either Governance of Enterprise IT (five processes) or Management of Enterprise IT (32 processes).",
+          "explanation": "Le nom complet de COBIT et ses deux groupes de processus.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « COBIT » (en anglais).",
+          "answer": "The Control Objectives for Information and Related Technology framework differentiates processes into either Governance of Enterprise IT (five processes) or Management of Enterprise IT (32 processes).\n\nTraduction : Le cadre Control Objectives for Information and Related Technology répartit les processus en deux groupes : la gouvernance de l'informatique d'entreprise (cinq processus) ou la gestion de l'informatique d'entreprise (32 processus).",
+          "explanation": "N'oublie pas les deux nombres : cinq et 32.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-isaca-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'origine de « COBIT »",
+          "answer": "To address this gap, ISACA developed a framework through which the IT activities of an organization could be assessed.\n\nTraduction : Pour combler cet écart, l'ISACA a développé un cadre qui permet d'évaluer les activités informatiques d'une organisation.",
+          "explanation": "L'écart, c'est le décalage entre l'informatique et la direction. Le cadre sert à l'évaluer.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-isaca-def3",
+          "type": "cloze",
+          "question": "To address this gap, [[ISACA developed a framework]] through which the [[IT activities]] of an organization could be [[assessed]].",
+          "answer": "To address this gap, ISACA developed a framework through which the IT activities of an organization could be assessed.",
+          "explanation": "Qui l'a créé (ISACA), ce qu'il évalue (les activités informatiques).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-riskit-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le cadre « RiskIT »",
+          "answer": "Based on the ISACA COBIT governance framework, the RiskIT framework provides a structure for the identification, evaluation, and monitoring of information technology risk.\n\nTraduction : Fondé sur le cadre de gouvernance COBIT de l'ISACA, le cadre RiskIT fournit une structure pour l'identification, l'évaluation et la surveillance du risque lié aux technologies de l'information.",
+          "explanation": "RiskIT est le petit frère de COBIT, spécialisé dans le risque informatique.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-riskit-def2",
+          "type": "cloze",
+          "question": "Based on the ISACA COBIT governance framework, the [[RiskIT]] framework provides a structure for the identification, evaluation, and [[monitoring]] of information technology risk.",
+          "answer": "Based on the ISACA COBIT governance framework, the RiskIT framework provides a structure for the identification, evaluation, and monitoring of information technology risk.",
+          "explanation": "Trois mots d'action : identification, évaluation, surveillance.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-riskit-def3",
+          "type": "cloze",
+          "question": "Based on the [[ISACA COBIT]] governance framework, the RiskIT framework provides [[a structure for]] the [[identification, evaluation, and monitoring]] of information technology risk.",
+          "answer": "Based on the ISACA COBIT governance framework, the RiskIT framework provides a structure for the identification, evaluation, and monitoring of information technology risk.",
+          "explanation": "Sur quoi il repose, ce qu'il apporte, et les trois activités.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-riskit-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « RiskIT » (en anglais).",
+          "answer": "Based on the ISACA COBIT governance framework, the RiskIT framework provides a structure for the identification, evaluation, and monitoring of information technology risk.\n\nTraduction : Fondé sur le cadre de gouvernance COBIT de l'ISACA, le cadre RiskIT fournit une structure pour l'identification, l'évaluation et la surveillance du risque lié aux technologies de l'information.",
+          "explanation": "Commence par « Based on COBIT », termine par « information technology risk ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-dom-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les trois domaines de « RiskIT »",
+          "answer": "The RiskIT framework consists of three domains — risk governance, risk evaluation, and risk response — each of which has three processes.\n\nTraduction : Le cadre RiskIT se compose de trois domaines (gouvernance du risque, évaluation du risque et réponse au risque), qui ont chacun trois processus.",
+          "explanation": "Gouverner, évaluer, répondre : trois domaines, trois processus chacun.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-dom-def3",
+          "type": "cloze",
+          "question": "The RiskIT framework consists of [[three domains]] — risk governance, [[risk evaluation]], and risk response — each of which has [[three processes]].",
+          "answer": "The RiskIT framework consists of three domains — risk governance, risk evaluation, and risk response — each of which has three processes.",
+          "explanation": "Deux fois le nombre trois : trois domaines, et trois processus par domaine.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-rcad-cobit-1",
+          "type": "duel",
+          "question": "Lequel est centré sur les risques liés à l'informatique ?",
+          "options": ["RiskIT", "COBIT"],
+          "answer": "RiskIT",
+          "explanation": "COBIT couvre toute l'informatique de l'entreprise. RiskIT en est la partie dédiée au risque.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cobit-2",
+          "type": "sort",
+          "question": "À quel domaine de RiskIT appartient chaque activité ?",
+          "answer": "Gouvernance du risque : fixer les règles et les responsables. Évaluation du risque : mesurer probabilité et impact. Réponse au risque : décider quoi faire du risque.",
+          "explanation": "Gouverner = décider du cadre. Évaluer = mesurer. Répondre = agir.",
+          "explanation_more": "Les exemples d'activités sont une explication hors manuel : le livre ne cite que les noms des trois domaines.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Gouvernance du risque", "Évaluation du risque", "Réponse au risque"],
+            "items": [
+              { "text": "Fixer qui est responsable des risques informatiques", "category": "Gouvernance du risque" },
+              { "text": "Définir les règles générales de gestion du risque", "category": "Gouvernance du risque" },
+              { "text": "Mesurer la probabilité et l'impact d'un risque", "category": "Évaluation du risque" },
+              { "text": "Comparer plusieurs risques pour les classer", "category": "Évaluation du risque" },
+              { "text": "Décider de réduire, de transférer ou d'accepter un risque", "category": "Réponse au risque" },
+              { "text": "Mettre en place une mesure pour limiter un risque identifié", "category": "Réponse au risque" }
+            ]
+          }
+        },
+        {
+          "id": "d1-rcad-cobit-3",
+          "type": "qcm",
+          "question": "Une entreprise veut mesurer si chacun de ses processus informatiques atteint ses objectifs. Quel cadre lui convient le mieux ?",
+          "options": ["COBIT", "RiskIT", "ISO 31000", "Le NIST RMF"],
+          "options_why": [
+            "",
+            "RiskIT se concentre sur le risque informatique, pas sur la performance de tous les processus.",
+            "ISO 31000 traite du risque en général, pas des processus informatiques.",
+            "Le RMF vise surtout la sécurité des systèmes du gouvernement américain."
+          ],
+          "answer": "COBIT",
+          "explanation": "Chaque processus COBIT a des objectifs et des mesures pour évaluer sa performance.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cobit-4",
+          "type": "why",
+          "question": "Pourquoi les auditeurs ont-ils voulu un cadre comme COBIT ?",
+          "answer": "L'informatique et la direction n'étaient pas alignées. Des risques n'étaient pas couverts par les contrôles ni reflétés dans les comptes.",
+          "explanation": "Le cadre sert à relier les activités informatiques aux buts de l'entreprise.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks » : constat de la fin des années 1990.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cobit-5",
+          "type": "flash",
+          "question": "Combien de processus de gouvernance et de gestion y a-t-il dans COBIT ?",
+          "answer": "Cinq processus de gouvernance et 32 processus de gestion.",
+          "explanation": "Peu de processus pour gouverner, beaucoup pour gérer le quotidien.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-rcad-cobit-6",
+          "type": "cloze",
+          "question": "Chaque processus COBIT a des [[objectifs]], des entrées, des activités clés, des sorties et des [[mesures]] de performance.",
+          "answer": "Chaque processus COBIT a des objectifs, des entrées, des activités clés, des sorties et des mesures de performance.",
+          "explanation": "Les mesures servent à comparer ce qu'on obtient aux objectifs.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cobit-7",
+          "type": "whatif",
+          "question": "Et si l'informatique d'une entreprise travaillait sans lien avec les objectifs de la direction ?",
+          "answer": "Les projets pourraient servir d'autres buts que ceux de l'entreprise. C'est le décalage que COBIT veut corriger.",
+          "explanation": "COBIT rapproche l'informatique et la direction.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cobit-8",
+          "type": "flash",
+          "question": "Que veut dire ERM, et comment RiskIT s'y relie-t-il ?",
+          "answer": "ERM est la gestion du risque d'entreprise (enterprise risk management). RiskIT facilite l'intégration du risque informatique dans ces activités plus larges.",
+          "explanation": "Le risque informatique est une pièce du puzzle du risque de l'entreprise.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risk Frameworks ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-rcad-cobit-9",
+          "type": "flash",
+          "question": "Quelle organisation a créé COBIT ?",
+          "answer": "L'ISACA, pour combler l'écart entre la gouvernance informatique et la gestion globale de l'entreprise.",
+          "explanation": "ISACA et COBIT vont ensemble, tout comme RiskIT.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

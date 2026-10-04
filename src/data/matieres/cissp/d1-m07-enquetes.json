@@ -1,0 +1,2030 @@
+{
+  "id": "d1-m07-enquetes",
+  "name": "D1.7 Les types d'enquêtes",
+  "galaxie": { "teinte": 202, "ambiance": "mysterieux" },
+  "concepts": [
+    {
+      "id": "d1-enq-apercu",
+      "name": "Les quatre types d'enquêtes",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Quatre problèmes dans la même semaine",
+          "paragraphes": [
+            "Cette semaine, le collège a eu quatre problèmes. Un élève a copié son devoir sur internet. Des ordinateurs ont été volés.",
+            "Des parents réclament de l'argent pour un téléphone cassé. Un inspecteur vient vérifier l'hygiène de la cantine.",
+            "Personne n'a enquêté de la même façon. En sécurité, on retrouve quatre sortes d'enquêtes. Le manuel les compare."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Quatre enquêteurs différents",
+          "comme": "Pour le devoir copié, le directeur enquête lui-même. Pour le vol, c'est la police. Pour le téléphone cassé, un juge tranche entre les familles. Pour la cantine, un inspecteur de l'État vérifie un règlement officiel.",
+          "enVrai": "Les quatre types s'appellent : administrative, pénale (criminal), civile (civil) et de régulation (regulatory). Chacune a son enquêteur, son niveau de preuve et ses conséquences. Tu les apprendras une par une. L'image s'arrête là : ces exemples sont simplifiés, les vrais cas sont plus complexes."
+        },
+        {
+          "type": "predire",
+          "question": "Un employé télécharge des films avec la connexion de l'entreprise, contre le règlement. Qui enquête le plus probablement ?",
+          "options": ["La police", "L'entreprise elle-même", "Un tribunal"],
+          "answer": "L'entreprise elle-même",
+          "explanation": "C'est une violation de la règle de l'entreprise. Personne d'extérieur n'est concerné. L'entreprise enquête donc sur elle-même : c'est une enquête administrative."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un cas, quatre enquêtes possibles",
+          "texte": "Une entreprise découvre qu'un ancien employé a copié des fichiers clients. Elle peut enquêter en interne. Elle peut prévenir la police. Elle peut le poursuivre devant un tribunal pour réclamer de l'argent. Et une autorité de l'État peut vérifier comment les données étaient protégées."
+        },
+        {
+          "type": "analogie",
+          "titre": "Les règles changent selon le pays",
+          "comme": "Le règlement change d'un collège à l'autre. Ce qui est permis chez toi est parfois interdit ailleurs.",
+          "enVrai": "Les lois et les tribunaux changent aussi d'un pays à l'autre. Le manuel prend comme exemple la tradition du droit anglais (English common law). C'est un droit fondé sur les décisions de justice passées. Toi, tu dois apprendre les règles de ton pays et de tes clients."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-apercu-1",
+          "type": "flash",
+          "question": "Quels sont les quatre types d'enquêtes comparés par le manuel ?",
+          "answer": "Administrative, pénale (criminal), civile (civil) et de régulation (regulatory).",
+          "explanation": "Pense aux quatre enquêteurs : la direction, la police, le juge entre deux parties, l'inspecteur.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-2",
+          "type": "sort",
+          "question": "Quel type d'enquête correspond à chaque situation ?",
+          "answer": "Administrative : l'entreprise enquête seule. Pénale : la police et l'État poursuivent un crime. Civile : une partie privée réclame de l'argent. Régulation : une agence vérifie un règlement officiel.",
+          "explanation": "Demande-toi qui enquête et pourquoi : l'organisation, l'État, une partie privée ou une agence de contrôle.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Administrative", "Pénale", "Civile", "De régulation"],
+            "items": [
+              { "text": "L'entreprise enquête seule sur un employé qui a enfreint son règlement", "category": "Administrative" },
+              { "text": "Le service de sécurité réunit des journaux pour la direction, sans police ni tribunal", "category": "Administrative" },
+              { "text": "La police enquête sur le vol de données par un pirate", "category": "Pénale" },
+              { "text": "L'État poursuit un pirate pour un crime", "category": "Pénale" },
+              { "text": "Une entreprise réclame de l'argent à un ancien employé devant un tribunal", "category": "Civile" },
+              { "text": "Une cliente poursuit l'entreprise pour un dommage", "category": "Civile" },
+              { "text": "Une agence de l'État vérifie qu'une entreprise suit un règlement officiel", "category": "De régulation" },
+              { "text": "Un inspecteur contrôle si une usine respecte les règles de l'environnement", "category": "De régulation" }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-apercu-3",
+          "type": "duel",
+          "question": "Une entreprise enquête seule sur un employé qui a enfreint son règlement, sans police ni tribunal. Quel type d'enquête ?",
+          "options": ["Administrative", "Pénale"],
+          "answer": "Administrative",
+          "explanation": "L'entreprise enquête sur elle-même : c'est le sens d'administrative. La police ne participe pas.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-4",
+          "type": "qcm",
+          "question": "Une agence de l'État vérifie si un restaurant respecte les règles d'hygiène. Quel type d'enquête est-ce ?",
+          "options": ["De régulation", "Civile", "Administrative"],
+          "options_why": [
+            "",
+            "Il n'y a pas de dispute entre deux parties privées, donc pas d'affaire civile.",
+            "Ce n'est pas le restaurant qui enquête sur lui-même : c'est une agence de l'État."
+          ],
+          "answer": "De régulation",
+          "explanation": "Une agence qui contrôle le respect d'un règlement officiel fait une enquête de régulation.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-5",
+          "type": "flash",
+          "question": "Que compare le manuel pour chaque type d'enquête ?",
+          "answer": "Qui mène l'enquête, le niveau de preuve pour recueillir et présenter les preuves, et les différences générales entre les types.",
+          "explanation": "Trois questions : qui, quelle preuve, et en quoi c'est différent.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-6",
+          "type": "why",
+          "question": "Pourquoi un professionnel doit-il connaître les lois de son pays, alors que le manuel prend le droit anglais comme exemple ?",
+          "answer": "Parce que les lois et les tribunaux varient beaucoup d'un pays à l'autre. Le droit anglais n'est qu'un exemple. À toi d'apprendre les règles de ton lieu de travail et de tes clients.",
+          "explanation": "Appliquer les règles d'un autre pays peut faire échouer une enquête.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. Il est essentiel de se familiariser avec les lois et règlements de son lieu et de ses clients.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-7",
+          "type": "qcm",
+          "question": "Quelle tradition de droit sert d'exemple dans le manuel pour expliquer les enquêtes ?",
+          "options": [
+            "Le droit anglais (English common law)",
+            "Le droit français",
+            "Le droit de l'Union européenne"
+          ],
+          "options_why": [
+            "",
+            "Le manuel est américain : il ne prend pas le droit français comme base.",
+            "Le manuel ne s'appuie pas sur le droit européen pour cet exemple."
+          ],
+          "answer": "Le droit anglais (English common law)",
+          "explanation": "Le manuel précise que c'est seulement à titre d'exemple.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : « largely based on traditions of English common law, strictly as an example ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-8",
+          "type": "cloze",
+          "question": "Le manuel s'appuie sur la tradition du droit [[anglais]], seulement à titre d'[[exemple]].",
+          "answer": "Le manuel s'appuie sur la tradition du droit anglais, seulement à titre d'exemple.",
+          "explanation": "Chaque pays a ses propres règles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-9",
+          "type": "duel",
+          "question": "Deux entreprises privées se disputent devant un tribunal. Quel type d'enquête soutient cette affaire ?",
+          "options": ["Civile", "Administrative"],
+          "answer": "Civile",
+          "explanation": "Un conflit entre deux parties privées relève du droit civil. Administrative veut dire : l'organisation enquête sur elle-même.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-10",
+          "type": "whatif",
+          "question": "Et si tu appliques les règles d'un autre pays à ton enquête ?",
+          "answer": "Tu risques de te tromper : lois et tribunaux varient selon l'endroit. Mieux vaut apprendre les règles du lieu où les faits ont eu lieu et celles de tes clients.",
+          "explanation": "Une preuve bien collectée dans un pays peut être refusée dans un autre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-11",
+          "type": "problem",
+          "question": "Une entreprise découvre qu'un employé a falsifié des chiffres. Cite deux types d'enquête qui peuvent suivre.",
+          "answer": "Une enquête administrative en interne, puis une enquête pénale si c'est un crime. Ou une procédure civile pour réclamer de l'argent.",
+          "explanation": "Une même affaire peut donner lieu à plusieurs enquêtes à la suite.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. La direction peut passer d'une enquête administrative à des actions civiles ou à des poursuites pénales.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-apercu-12",
+          "type": "flash",
+          "question": "C'est quoi, une preuve (evidence) ?",
+          "answer": "Un élément, comme un document, un journal ou un fichier, qui montre qu'un fait est vrai.",
+          "explanation": "Sans preuves, une enquête reste une simple opinion.",
+          "explanation_more": "Définition simple, hors manuel. Le manuel parle de la preuve dans toute cette section.",
+          "retention_goal": "life"
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-charge-preuve",
+      "name": "La charge de la preuve (burden of proof)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Qui a pris mon cahier ?",
+          "paragraphes": [
+            "Lucas dit : « C'est Emma qui a pris mon cahier ! » Le prof répond : « Tu as une preuve ? »",
+            "Lucas n'a rien : ni témoin, ni trace. Emma n'est pas punie. Ce n'est pas à elle de prouver qu'elle est innocente.",
+            "C'est à celui qui accuse d'apporter la preuve. En justice, cette obligation s'appelle la charge de la preuve (burden of proof)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le prof, juge de la classe",
+          "comme": "Le prof n'écoute pas seulement la parole de Lucas. Il attend des éléments solides. Tant qu'il n'en a pas, Emma est considérée comme n'ayant rien fait.",
+          "enVrai": "Celui qui accuse doit prouver. Au pénal (la justice criminelle), c'est le procureur, qui représente l'État. Au civil (un conflit entre deux parties privées), c'est le plaignant (plaintiff), qui réclame réparation. Celui qui se défend, le défendeur (defendant), est présumé innocent. L'image s'arrête là : un prof peut suivre son impression, un tribunal exige des preuves solides."
+        },
+        {
+          "type": "predire",
+          "question": "Dans un procès, qui doit apporter la preuve ?",
+          "options": ["Celui qui accuse", "Celui qui est accusé", "Le juge"],
+          "answer": "Celui qui accuse",
+          "explanation": "C'est la charge de la preuve : à celui qui avance une accusation de la démontrer. Le juge évalue les preuves, l'accusé n'a rien à prouver."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les journaux de connexion",
+          "texte": "Une entreprise accuse un ancien employé d'avoir volé des fichiers. C'est à l'entreprise de le prouver, par exemple avec les journaux de connexion. L'ancien employé n'a pas à démontrer qu'il n'a rien fait. Tant que l'accusation n'est pas prouvée, il est présumé sans faute."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-charge-preuve-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « burden of proof »",
+          "answer": "Burden of proof is the requirement that the criminal prosecutor or civil plaintiff/claimant prove the claims they are making against the accused, or defendant.\n\nTraduction : La charge de la preuve est l'obligation, pour le procureur pénal ou le plaignant civil, de prouver les accusations qu'il porte contre l'accusé, ou défendeur.",
+          "explanation": "Pense à Lucas : c'est à lui de prouver ce qu'il avance sur Emma.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ». Burden veut dire fardeau : c'est un poids à porter.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-charge-preuve-def2",
+          "type": "cloze",
+          "question": "Burden of proof is the [[requirement]] that the criminal prosecutor or civil plaintiff/claimant [[prove]] the claims they are making against the accused, or defendant.",
+          "answer": "Burden of proof is the requirement that the criminal prosecutor or civil plaintiff/claimant prove the claims they are making against the accused, or defendant.",
+          "explanation": "Une obligation (requirement), et un devoir : prouver.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-charge-preuve-def3",
+          "type": "cloze",
+          "question": "Burden of proof is the requirement that [[the criminal prosecutor]] or [[civil plaintiff/claimant]] prove the claims they are making against [[the accused, or defendant]].",
+          "answer": "Burden of proof is the requirement that the criminal prosecutor or civil plaintiff/claimant prove the claims they are making against the accused, or defendant.",
+          "explanation": "Trois blocs : le procureur pénal, le plaignant civil, et l'accusé ou défendeur.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-charge-preuve-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « burden of proof » (en anglais).",
+          "answer": "Burden of proof is the requirement that the criminal prosecutor or civil plaintiff/claimant prove the claims they are making against the accused, or defendant.\n\nTraduction : La charge de la preuve est l'obligation, pour le procureur pénal ou le plaignant civil, de prouver les accusations qu'il porte contre l'accusé, ou défendeur.",
+          "explanation": "Retiens les deux accusateurs : le procureur pénal et le plaignant civil.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-charge-preuve-accuse-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : celui qui accuse et celui qui se défend",
+          "answer": "The party making a claim must demonstrate the truth of that claim, with compelling evidence; the entity defending against the claim, in most modern societies, is presumed innocent or without fault — that is, the court will not recognize the validity of a claim against anyone until that claim is substantiated and the defendant is proven guilty.\n\nTraduction : La partie qui porte une accusation doit démontrer qu'elle est vraie, avec des preuves convaincantes ; l'entité qui s'en défend, dans la plupart des sociétés modernes, est présumée innocente ou sans faute — c'est-à-dire que le tribunal ne reconnaîtra pas la validité d'une accusation contre quiconque tant qu'elle n'est pas étayée et que le défendeur n'est pas déclaré coupable.",
+          "explanation": "C'est la présomption d'innocence : on est innocent tant que l'accusation n'est pas prouvée.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Étayée (substantiated) veut dire appuyée par des preuves.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-charge-preuve-accuse-def3",
+          "type": "cloze",
+          "question": "The party making a claim must demonstrate the truth of that claim, with [[compelling evidence]]; the entity defending against the claim, in most modern societies, is [[presumed innocent]] or without fault — that is, the court will not recognize the validity of a claim against anyone until that claim is substantiated and the defendant is [[proven guilty]].",
+          "answer": "The party making a claim must demonstrate the truth of that claim, with compelling evidence; the entity defending against the claim, in most modern societies, is presumed innocent or without fault — that is, the court will not recognize the validity of a claim against anyone until that claim is substantiated and the defendant is proven guilty.",
+          "explanation": "Des preuves convaincantes, la présomption d'innocence, et le moment où l'on est déclaré coupable.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-charge-preuve-niveaux-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les deux niveaux de preuve aux États-Unis",
+          "answer": "In the U.S. legal system, the two predominant standards of proof that must be met are called preponderance of the evidence and beyond a reasonable doubt.\n\nTraduction : Dans le système juridique américain, les deux niveaux de preuve prédominants à atteindre s'appellent la prépondérance de la preuve (preponderance of the evidence) et au-delà d'un doute raisonnable (beyond a reasonable doubt).",
+          "explanation": "Deux niveaux, un plus bas et un plus haut : la planète suivante les détaille.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-charge-preuve-niveaux-def3",
+          "type": "cloze",
+          "question": "In the U.S. legal system, the [[two predominant standards]] of proof that must be met are called [[preponderance of the evidence]] and [[beyond a reasonable doubt]].",
+          "answer": "In the U.S. legal system, the two predominant standards of proof that must be met are called preponderance of the evidence and beyond a reasonable doubt.",
+          "explanation": "Le nombre (deux), puis les deux noms dans l'ordre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-charge-preuve-1",
+          "type": "duel",
+          "question": "Dans un procès, qui doit prouver ?",
+          "options": ["Celui qui accuse", "Celui qui se défend"],
+          "answer": "Celui qui accuse",
+          "explanation": "La charge de la preuve pèse sur l'accusateur. Celui qui se défend est présumé innocent.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-charge-preuve-2",
+          "type": "qcm",
+          "question": "Une entreprise accuse un employé de fuite de données, sans journal ni témoin. Que dit la présomption d'innocence ?",
+          "options": [
+            "Il est considéré sans faute tant que l'accusation n'est pas prouvée",
+            "Il doit prouver lui-même qu'il est innocent",
+            "Le juge doit chercher les preuves à sa place"
+          ],
+          "options_why": [
+            "",
+            "C'est l'inverse : c'est à l'accusateur de prouver, pas à l'accusé.",
+            "Le juge évalue les preuves, mais il ne remplace pas l'accusateur."
+          ],
+          "answer": "Il est considéré sans faute tant que l'accusation n'est pas prouvée",
+          "explanation": "Le tribunal ne reconnaît pas une accusation tant qu'elle n'est pas étayée par des preuves.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-charge-preuve-3",
+          "type": "flash",
+          "question": "Qui porte l'accusation dans un procès pénal ?",
+          "answer": "Le procureur (criminal prosecutor), qui représente l'État.",
+          "explanation": "Au pénal, c'est l'État qui poursuit.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-charge-preuve-4",
+          "type": "sort",
+          "question": "Qui accuse et qui se défend ? Dans quelle boîte va chaque personne ?",
+          "answer": "Celui qui accuse : le procureur d'un procès pénal et le plaignant d'un procès civil. Celui qui se défend : l'accusé et le défendeur.",
+          "explanation": "Le procureur et le plaignant portent la charge de la preuve. L'accusé et le défendeur sont présumés innocents.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Celui qui accuse", "Celui qui se défend"],
+            "items": [
+              { "text": "Le procureur d'un procès pénal", "category": "Celui qui accuse" },
+              { "text": "Le plaignant d'un procès civil", "category": "Celui qui accuse" },
+              { "text": "L'accusé", "category": "Celui qui se défend" },
+              { "text": "Le défendeur", "category": "Celui qui se défend" }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-charge-preuve-5",
+          "type": "why",
+          "question": "Pourquoi la personne accusée est-elle présumée innocente ?",
+          "answer": "Parce que le tribunal ne reconnaît une accusation que lorsqu'elle est prouvée. Tant que ce n'est pas fait, personne n'est jugé coupable.",
+          "explanation": "On ne punit pas quelqu'un sur une simple parole.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : la partie défenderesse est présumée innocente ou sans faute dans la plupart des sociétés modernes.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-charge-preuve-6",
+          "type": "flash",
+          "question": "Qui porte l'accusation dans un procès civil ?",
+          "answer": "Le plaignant (civil plaintiff, aussi appelé claimant).",
+          "explanation": "Au civil, c'est une partie privée qui réclame réparation.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-charge-preuve-7",
+          "type": "cloze",
+          "question": "Celui qui fait une accusation doit [[démontrer]] qu'elle est vraie, avec des preuves [[convaincantes]].",
+          "answer": "Celui qui fait une accusation doit démontrer qu'elle est vraie, avec des preuves convaincantes.",
+          "explanation": "Une affirmation sans preuve ne suffit pas.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-charge-preuve-8",
+          "type": "flash",
+          "question": "Comment appelle-t-on la personne contre qui l'accusation est portée ?",
+          "answer": "L'accusé (accused), aussi appelé défendeur (defendant).",
+          "explanation": "C'est celui qui se défend contre l'accusation.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-charge-preuve-9",
+          "type": "whatif",
+          "question": "Et si l'accusé devait prouver son innocence ?",
+          "answer": "Une personne pourrait être punie sans que personne n'ait prouvé qu'elle a fait quelque chose. C'est l'inverse du principe : celui qui accuse doit prouver.",
+          "explanation": "Prouver qu'on n'a rien fait est souvent impossible.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-charge-preuve-10",
+          "type": "problem",
+          "question": "Explique avec tes mots ce qu'est la charge de la preuve, avec un exemple de la vie du collège.",
+          "answer": "C'est l'obligation, pour celui qui accuse, de prouver ce qu'il avance. Exemple : Lucas accuse Emma d'avoir pris son cahier. C'est à Lucas de le prouver, pas à Emma de prouver son innocence.",
+          "explanation": "Celui qui affirme doit montrer.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-niveaux-preuve",
+      "name": "Les deux niveaux de preuve (standards of proof)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Deux décisions, deux niveaux",
+          "paragraphes": [
+            "Le prof de maths pense que Marie a sûrement oublié son livre. Il lui met une simple remarque. Il n'a pas besoin d'être certain à cent pour cent.",
+            "Pour exclure définitivement un élève, le conseil de discipline doit être beaucoup plus sûr. Une erreur coûterait trop cher.",
+            "Plus la décision est lourde, plus la preuve doit être forte. En justice, deux niveaux de preuve (standards of proof) existent."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La balance",
+          "comme": "Imagine une balance. Pour une petite décision, il suffit qu'elle penche un peu d'un côté. Pour une très grave décision, elle doit pencher si fort qu'on ne peut plus douter.",
+          "enVrai": "Au civil, il suffit que la balance penche un peu : c'est plus probable que non (preponderance of the evidence). Au pénal, elle doit pencher tellement qu'une personne raisonnable ne doute plus : au-delà d'un doute raisonnable (beyond a reasonable doubt). L'image s'arrête là : un juge ne calcule pas avec une vraie balance."
+        },
+        {
+          "type": "predire",
+          "question": "Lequel de ces deux procès demande la preuve la plus forte ?",
+          "options": [
+            "Un procès civil entre deux entreprises",
+            "Un procès pénal où la prison est possible"
+          ],
+          "answer": "Un procès pénal où la prison est possible",
+          "explanation": "Quand une personne risque la prison, on veut être presque certain avant de la condamner. Au civil, l'enjeu est surtout financier."
+        },
+        {
+          "type": "exemple",
+          "titre": "Même histoire, deux procès",
+          "texte": "Un employé est accusé d'avoir volé des données. Au civil, l'entreprise réclame de l'argent. Elle doit montrer qu'il est plus probable que non qu'il soit responsable. Au pénal, l'État veut le condamner. Il doit prouver sa culpabilité au-delà d'un doute raisonnable."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-niveaux-preuve-prepond-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « preponderance of the evidence »",
+          "answer": "Preponderance of the evidence is the lower standard of the two and is used primarily in civil actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.\n\nTraduction : La prépondérance de la preuve est le plus bas des deux niveaux et s'utilise surtout dans les actions civiles. Elle signifie essentiellement que les preuves montrent que le défendeur a plus probablement causé le dommage que non.",
+          "explanation": "Pense à la balance qui penche un peu : plus probable que non.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ». Une action civile est un procès entre parties privées.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-prepond-def2",
+          "type": "cloze",
+          "question": "Preponderance of the evidence is the [[lower]] standard of the two and is used primarily in [[civil]] actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.",
+          "answer": "Preponderance of the evidence is the lower standard of the two and is used primarily in civil actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.",
+          "explanation": "Le niveau le plus bas, et son domaine : le civil.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-prepond-def3",
+          "type": "cloze",
+          "question": "Preponderance of the evidence is [[the lower standard]] of the two and is used primarily in [[civil actions]]. It essentially means that the evidence shows that the defendant is [[more likely to]] have caused the damage than not.",
+          "answer": "Preponderance of the evidence is the lower standard of the two and is used primarily in civil actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.",
+          "explanation": "Trois blocs : le niveau le plus bas, le civil, et plus probable que non.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-prepond-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « preponderance of the evidence » (en anglais).",
+          "answer": "Preponderance of the evidence is the lower standard of the two and is used primarily in civil actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.\n\nTraduction : La prépondérance de la preuve est le plus bas des deux niveaux et s'utilise surtout dans les actions civiles. Elle signifie essentiellement que les preuves montrent que le défendeur a plus probablement causé le dommage que non.",
+          "explanation": "Deux phrases : le niveau et son domaine, puis ce que cela signifie.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-doute-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « beyond a reasonable doubt »",
+          "answer": "The second standard, beyond a reasonable doubt, is much harder to prove and is used primarily in criminal actions.\n\nTraduction : Le second niveau, au-delà d'un doute raisonnable, est beaucoup plus difficile à prouver et s'utilise surtout dans les actions pénales.",
+          "explanation": "Pense à la balance qui doit pencher à fond : on ne doit plus douter.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ». Une action pénale est un procès où l'État poursuit.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-doute-def2",
+          "type": "cloze",
+          "question": "The second standard, beyond a reasonable doubt, is much [[harder]] to prove and is used primarily in [[criminal]] actions.",
+          "answer": "The second standard, beyond a reasonable doubt, is much harder to prove and is used primarily in criminal actions.",
+          "explanation": "Beaucoup plus difficile à prouver, et pour le pénal.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-doute-def3",
+          "type": "cloze",
+          "question": "The second standard, [[beyond a reasonable doubt]], is [[much harder to prove]] and is used primarily in [[criminal actions]].",
+          "answer": "The second standard, beyond a reasonable doubt, is much harder to prove and is used primarily in criminal actions.",
+          "explanation": "Trois blocs : le nom du niveau, sa difficulté, et son domaine.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-doute-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « beyond a reasonable doubt » (en anglais).",
+          "answer": "The second standard, beyond a reasonable doubt, is much harder to prove and is used primarily in criminal actions.\n\nTraduction : Le second niveau, au-delà d'un doute raisonnable, est beaucoup plus difficile à prouver et s'utilise surtout dans les actions pénales.",
+          "explanation": "Retiens : second, beaucoup plus difficile, pénal.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-clair-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce que « beyond a reasonable doubt » demande aux preuves",
+          "answer": "It is insufficient for the evidence to merely make the judge or jury lean more toward guilt than not. In this case, the evidence has to be so clear and compelling that a \"reasonable\" person has no doubt or reservation about the defendant's guilt after seeing it.\n\nTraduction : Il ne suffit pas que les preuves fassent simplement pencher le juge ou le jury plutôt vers la culpabilité que l'inverse. Dans ce cas, les preuves doivent être si claires et convaincantes qu'une personne « raisonnable » n'a ni doute ni réserve sur la culpabilité du défendeur après les avoir vues.",
+          "explanation": "Pencher un peu ne suffit pas : le doute doit disparaître pour une personne raisonnable.",
+          "explanation_more": "Phrases du manuel officiel (ISC)2, domaine 1, section « Understand Requirements for Investigation Types ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-clair-def3",
+          "type": "cloze",
+          "question": "It is insufficient for the evidence to [[merely make the judge]] or jury lean more toward guilt than not. In this case, the evidence has to be [[so clear and compelling]] that a \"reasonable\" person has [[no doubt or reservation]] about the defendant's guilt after seeing it.",
+          "answer": "It is insufficient for the evidence to merely make the judge or jury lean more toward guilt than not. In this case, the evidence has to be so clear and compelling that a \"reasonable\" person has no doubt or reservation about the defendant's guilt after seeing it.",
+          "explanation": "Trois blocs : pencher ne suffit pas, preuves claires et convaincantes, aucun doute.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-pct-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le pourcentage de la « preponderance of the evidence »",
+          "answer": "In other words, the evidence convinced the judge, jury, or ruling body that there was at least a 51 percent chance that the defendant caused the damage.\n\nTraduction : En d'autres termes, les preuves ont convaincu le juge, le jury ou l'organe de décision qu'il y avait au moins 51 % de chances que le défendeur ait causé le dommage.",
+          "explanation": "Un peu plus de la moitié des chances : c'est la balance qui penche juste un peu.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1. Plus loin, le manuel dit 50,1 % : retiens « plus de la moitié ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-pct-def3",
+          "type": "cloze",
+          "question": "In other words, the evidence convinced the judge, [[jury, or ruling body]] that there was at least a [[51 percent chance]] that the defendant [[caused the damage]].",
+          "answer": "In other words, the evidence convinced the judge, jury, or ruling body that there was at least a 51 percent chance that the defendant caused the damage.",
+          "explanation": "Qui est convaincu, le chiffre de 51 %, et ce qu'on doit montrer : le défendeur a causé le dommage.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-1",
+          "type": "duel",
+          "question": "Quel niveau de preuve est le plus bas des deux ?",
+          "options": ["Preponderance of the evidence", "Beyond a reasonable doubt"],
+          "answer": "Preponderance of the evidence",
+          "explanation": "Il suffit que ce soit plus probable que non. Au-delà d'un doute raisonnable est beaucoup plus difficile à atteindre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-2",
+          "type": "qcm",
+          "question": "Dans un procès pénal, un juge pense que l'accusé est probablement coupable (environ 70 %), mais il reste un doute sérieux. Que doit-il décider ?",
+          "options": [
+            "Il ne peut pas condamner : la preuve n'est pas assez forte",
+            "Il condamne, car 70 % dépasse 50 %",
+            "Il demande à l'accusé de prouver son innocence"
+          ],
+          "options_why": [
+            "",
+            "Au pénal, il faut aller au-delà d'un doute raisonnable, pas seulement dépasser 50 %.",
+            "C'est toujours à l'accusation de prouver, jamais à l'accusé."
+          ],
+          "answer": "Il ne peut pas condamner : la preuve n'est pas assez forte",
+          "explanation": "Pencher plus vers la culpabilité que l'inverse ne suffit pas au pénal.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-3",
+          "type": "sort",
+          "question": "Quel niveau de preuve correspond à chaque phrase ?",
+          "answer": "Prépondérance : procès civil, plus de 50 % et niveau le plus bas. Au-delà d'un doute raisonnable : procès pénal, plus aucun doute et niveau le plus difficile.",
+          "explanation": "Le civil se contente de plus probable que non. Le pénal demande de ne plus douter.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Preponderance of the evidence", "Beyond a reasonable doubt"],
+            "items": [
+              { "text": "Procès entre deux entreprises", "category": "Preponderance of the evidence" },
+              { "text": "Plus de 50 % de chances que le défendeur soit responsable", "category": "Preponderance of the evidence" },
+              { "text": "Le niveau le plus bas des deux", "category": "Preponderance of the evidence" },
+              { "text": "Procès où l'accusé risque la prison", "category": "Beyond a reasonable doubt" },
+              { "text": "Une personne raisonnable ne doute plus de la culpabilité", "category": "Beyond a reasonable doubt" },
+              { "text": "Le niveau le plus difficile à atteindre", "category": "Beyond a reasonable doubt" }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-4",
+          "type": "why",
+          "question": "Pourquoi exige-t-on une preuve plus forte dans un procès pénal ?",
+          "answer": "Parce que les enjeux sont plus lourds : amende, prison, parfois pire. On veut être presque certain avant de condamner quelqu'un.",
+          "explanation": "Plus la sanction est grave, plus la preuve doit être solide.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : les enjeux d'un procès civil sont bien plus faibles que ceux d'un procès pénal.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-5",
+          "type": "flash",
+          "question": "Quel pourcentage de chances faut-il dépasser pour la preponderance of the evidence ?",
+          "answer": "Plus de 50 % : le manuel dit « au moins 51 % », puis 50,1 %.",
+          "explanation": "Une simple majorité suffit.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. Le manuel donne 51 % dans un paragraphe et 50,1 % dans un autre. Retiens : un peu plus de la moitié.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-6",
+          "type": "cloze",
+          "question": "La prépondérance de la preuve veut dire : plus [[probable]] que [[non]].",
+          "answer": "La prépondérance de la preuve veut dire : plus probable que non.",
+          "explanation": "Une chance sur deux, plus un tout petit peu.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-7",
+          "type": "whatif",
+          "question": "Et si un accusé est déclaré non coupable au pénal ? Peut-il quand même perdre un procès civil sur les mêmes faits ?",
+          "answer": "Oui, c'est possible. Le procès civil demande une preuve plus faible. Il peut suffire que la responsabilité soit plus probable que non.",
+          "explanation": "Deux niveaux de preuve différents peuvent donner deux résultats différents.",
+          "explanation_more": "Raisonnement hors manuel. Le manuel dit seulement qu'une action civile peut s'ajouter à une action pénale.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-8",
+          "type": "flash",
+          "question": "Que veut dire « beyond a reasonable doubt » en mots simples ?",
+          "answer": "La preuve est si claire qu'une personne raisonnable n'a plus aucun doute sur la culpabilité.",
+          "explanation": "Pencher vers la culpabilité ne suffit pas : il faut effacer le doute.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-9",
+          "type": "problem",
+          "question": "Explique à un ami pourquoi 70 % de certitude ne suffit pas pour condamner quelqu'un au pénal.",
+          "answer": "Au pénal, il faut aller au-delà d'un doute raisonnable. Une personne raisonnable ne doit plus avoir de doute. Dépasser 50 % est le niveau du civil.",
+          "explanation": "Le pénal est le niveau le plus exigeant.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-administrative",
+      "name": "L'enquête administrative (administrative investigation)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le sujet du contrôle a fuité",
+          "paragraphes": [
+            "Un prof découvre que le sujet d'un contrôle circulait avant l'épreuve. Il prévient le directeur.",
+            "Le directeur interroge des élèves et regarde qui a imprimé le sujet. Personne n'appelle la police.",
+            "Le collège règle l'affaire tout seul : il enquête sur lui-même. En sécurité, ça s'appelle une enquête administrative."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le directeur est aussi l'enquêteur",
+          "comme": "Le directeur décide qui interroger. Il décide aussi ce qu'il croit et quelle punition donner : retenue, changement de classe. Personne d'extérieur ne contrôle sa façon de juger.",
+          "enVrai": "Dans une enquête administrative (administrative investigation), une organisation enquête sur elle-même. Sa direction (management) choisit ce qu'elle croit et quelles sanctions donner. L'image s'arrête là : un directeur de collège ne règle pas seul un vol commis par un inconnu de l'extérieur."
+        },
+        {
+          "type": "predire",
+          "question": "Un employé a enfreint la règle d'internet de l'entreprise. Que peut faire l'entreprise ?",
+          "options": [
+            "Enquêter seule, sans police ni tribunal",
+            "Appeler obligatoirement la police",
+            "Attendre qu'une autorité de contrôle intervienne"
+          ],
+          "answer": "Enquêter seule, sans police ni tribunal",
+          "explanation": "Une violation de la politique interne, sans personne d'extérieur, se règle en interne. Si l'enquête révèle un crime, la direction peut changer de type d'enquête."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le cas du partage de fichiers",
+          "texte": "Le service informatique signale qu'un employé partage des fichiers sans autorisation sur la connexion de l'entreprise. Le service de sécurité prévient la direction. Informatique et sécurité réunissent les journaux (logs) de son compte. La direction consulte les juristes et les ressources humaines, le service qui gère les employés. Elle décide de renvoyer l'employé."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-administrative-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « administrative » (pour (ISC)2)",
+          "answer": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions constrained to those conducted within a single organization — that is, the organization performs an administrative investigation of itself.\n\nTraduction : Quand on parle d'enquêtes, pour (ISC)2, le terme « administrative » désigne des actions limitées à celles menées au sein d'une seule organisation, c'est-à-dire que l'organisation mène une enquête administrative sur elle-même.",
+          "explanation": "Pense au collège qui règle l'affaire tout seul : il enquête sur lui-même.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Administrative ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-administrative-def2",
+          "type": "cloze",
+          "question": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions [[constrained]] to those conducted within a [[single]] organization — that is, the organization performs an administrative investigation of itself.",
+          "answer": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions constrained to those conducted within a single organization — that is, the organization performs an administrative investigation of itself.",
+          "explanation": "Limité à une seule organisation : personne d'extérieur.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-administrative-def3",
+          "type": "cloze",
+          "question": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to [[actions constrained to]] those conducted [[within a single organization]] — that is, the organization performs an administrative investigation [[of itself]].",
+          "answer": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions constrained to those conducted within a single organization — that is, the organization performs an administrative investigation of itself.",
+          "explanation": "Trois blocs : limité à, au sein d'une seule organisation, et sur elle-même.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-administrative-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « administrative » pour (ISC)2 (en anglais).",
+          "answer": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions constrained to those conducted within a single organization — that is, the organization performs an administrative investigation of itself.\n\nTraduction : Quand on parle d'enquêtes, pour (ISC)2, le terme « administrative » désigne des actions limitées à celles menées au sein d'une seule organisation, c'est-à-dire que l'organisation mène une enquête administrative sur elle-même.",
+          "explanation": "Retiens : une seule organisation, qui enquête sur elle-même.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-administrative-interne-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : quand mène-t-on une enquête interne ?",
+          "answer": "Internal investigations are typically performed when the matter involves some violation of organizational policy and does not involve any external entities such as law enforcement, investors, third-party suppliers, or attackers.\n\nTraduction : Les enquêtes internes sont généralement menées lorsque l'affaire concerne une violation de la politique de l'organisation et n'implique aucune entité extérieure comme les forces de l'ordre, les investisseurs, les fournisseurs tiers ou les attaquants.",
+          "explanation": "Une règle interne enfreinte, et personne d'extérieur n'est concerné.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Administrative ». Les forces de l'ordre (law enforcement) sont la police et les services chargés de faire appliquer la loi.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-administrative-interne-def3",
+          "type": "cloze",
+          "question": "Internal investigations are typically performed when the matter involves [[some violation of]] [[organizational policy]] and does not involve [[any external entities]] such as law enforcement, investors, third-party suppliers, or attackers.",
+          "answer": "Internal investigations are typically performed when the matter involves some violation of organizational policy and does not involve any external entities such as law enforcement, investors, third-party suppliers, or attackers.",
+          "explanation": "Une violation de la politique interne, sans entité extérieure.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-administrative-preuve-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : la charge de la preuve d'une enquête administrative",
+          "answer": "The burden of proof for administrative investigations is the lowest of all investigation types. Management can use whatever criteria they choose to believe evidence.\n\nTraduction : La charge de la preuve pour les enquêtes administratives est la plus basse de tous les types d'enquête. La direction peut utiliser les critères qu'elle souhaite pour croire les preuves.",
+          "explanation": "C'est la direction qui décide ce qu'elle croit : le niveau le plus bas.",
+          "explanation_more": "Phrases du manuel officiel (ISC)2, domaine 1, section « Administrative ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-administrative-preuve-def3",
+          "type": "cloze",
+          "question": "The burden of proof for administrative investigations is [[the lowest]] of all [[investigation types]]. Management can use [[whatever criteria they choose]] to believe evidence.",
+          "answer": "The burden of proof for administrative investigations is the lowest of all investigation types. Management can use whatever criteria they choose to believe evidence.",
+          "explanation": "Le niveau le plus bas, et des critères choisis par la direction.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-administrative-1",
+          "type": "duel",
+          "question": "Pour (ISC)2, que veut dire « administrative » dans « enquête administrative » ?",
+          "options": [
+            "Une enquête interne à l'organisation",
+            "Une enquête menée par une agence de l'État"
+          ],
+          "answer": "Une enquête interne à l'organisation",
+          "explanation": "Aux États-Unis, le droit administratif désigne les lois des agences de l'État. Mais pour le CISSP, administrative veut seulement dire interne.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, note de la section « Administrative ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-administrative-2",
+          "type": "worked_example",
+          "question": "Comment se déroule une enquête administrative sur un partage de fichiers non autorisé ?",
+          "answer": "Le service informatique prévient la sécurité, qui prévient la direction. On réunit les journaux du compte. La direction consulte les juristes et les ressources humaines, puis décide.",
+          "explanation": "Du signalement à la décision, tout reste dans l'organisation.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, exemple de la section « Administrative ».",
+          "retention_goal": "1y",
+          "data": {
+            "steps": [
+              { "prompt": "Qui est prévenu en premier ?", "text": "Le service informatique signale le problème au service de sécurité." },
+              { "prompt": "Que fait ensuite la sécurité ?", "text": "Elle informe la direction." },
+              { "prompt": "Que demande la direction ?", "text": "Elle demande à l'informatique et à la sécurité de rassembler des informations sur l'activité de l'employé." },
+              { "prompt": "Quelles preuves rassemble-t-on ?", "text": "Ils réunissent les journaux du compte et de l'ordinateur, puis les présentent à la direction." },
+              { "prompt": "Qui conseille la direction ?", "text": "Elle consulte les services juridique et des ressources humaines." },
+              { "prompt": "Qui décide des suites ?", "text": "La direction décide. Ici, elle décide de renvoyer l'employé." }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-administrative-3",
+          "type": "qcm",
+          "question": "Une enquête interne révèle une activité criminelle volontaire. Que peut faire la direction ?",
+          "options": [
+            "Passer à des poursuites civiles ou déposer une plainte pénale",
+            "Rien : une enquête administrative ne peut pas changer de type",
+            "Faire juger l'employé par ses collègues"
+          ],
+          "options_why": [
+            "",
+            "Le manuel dit au contraire que la direction peut changer le type d'enquête.",
+            "Les collègues n'ont aucun pouvoir de justice : seules la direction et la justice décident."
+          ],
+          "answer": "Passer à des poursuites civiles ou déposer une plainte pénale",
+          "explanation": "La direction peut passer à une action civile (un procès) ou à des poursuites pénales.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Administrative » : la direction peut escalader vers des actions civiles ou des poursuites pénales.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-administrative-4",
+          "type": "flash",
+          "question": "Qui peut mener une enquête administrative ?",
+          "answer": "Toute personne que l'organisation désigne : employés (sécurité, informatique, auditeurs, direction) ou spécialistes extérieurs engagés par elle.",
+          "explanation": "L'organisation choisit elle-même ses enquêteurs.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Administrative ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-administrative-5",
+          "type": "flash",
+          "question": "Quelles sanctions peut entraîner une enquête administrative ?",
+          "answer": "Le renvoi de l'employé, la perte de privilèges, un changement de poste, par exemple.",
+          "explanation": "Ce sont des sanctions internes à l'organisation.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Administrative » : employee termination, loss of privilege, reassignment, and so forth.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-administrative-6",
+          "type": "why",
+          "question": "Pourquoi manipuler les preuves avec soin, même dans une enquête interne ?",
+          "answer": "Parce qu'une enquête interne peut mener à un procès civil ou pénal. Une preuve mal traitée risque de ne plus pouvoir servir ensuite.",
+          "explanation": "Le niveau de preuve est bas, mais les preuves peuvent resservir plus tard.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Administrative ». En cas de doute, il est prudent d'en parler à la direction ou à un avocat.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-administrative-7",
+          "type": "cloze",
+          "question": "Dans une enquête administrative, la charge de la preuve est la plus [[basse]] de tous les types d'[[enquête]].",
+          "answer": "Dans une enquête administrative, la charge de la preuve est la plus basse de tous les types d'enquête.",
+          "explanation": "La direction fixe ses propres critères pour croire les preuves.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-administrative-8",
+          "type": "problem",
+          "question": "Un employé a copié des fichiers de l'entreprise sur une clé personnelle. Quel type d'enquête et qui décide des suites ?",
+          "answer": "Une enquête administrative, menée en interne. La direction décide des suites, avec les juristes. Si l'acte est criminel, elle peut passer à une enquête pénale.",
+          "explanation": "Une violation de la règle interne se traite d'abord en interne.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-administrative-9",
+          "type": "whatif",
+          "question": "Et si l'enquête interne révèle un acte malveillant ou criminel ?",
+          "answer": "La direction peut changer de type d'enquête. Elle peut aller vers un procès civil ou déposer une plainte pénale. Ces cas demandent d'autres enquêtes.",
+          "explanation": "C'est pour cela qu'il faut garder les preuves intactes dès le début.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-penale",
+      "name": "L'enquête pénale (criminal investigation)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Les ordinateurs ont disparu",
+          "paragraphes": [
+            "Dix ordinateurs ont disparu de la salle info. Le collège prévient la police. Les policiers arrivent, prennent des photos, posent des questions.",
+            "Ce n'est plus l'affaire du collège seul. Un vol est puni par la loi du pays. C'est l'État qui poursuit.",
+            "Quand l'État poursuit quelqu'un qui a enfreint la loi, on parle d'enquête pénale (criminal investigation)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La police prend la main",
+          "comme": "À l'école, une dispute se règle chez le directeur. Mais un vol grave est puni par la loi du pays. La police et la justice prennent la main.",
+          "enVrai": "Dans une enquête pénale, l'État poursuit ceux qui enfreignent ses lois. Les peines vont des amendes à la prison, et parfois plus. L'enquête est menée par les forces de l'ordre (law enforcement). L'image s'arrête là : un directeur de collège ne peut ni emprisonner ni juger au nom de l'État."
+        },
+        {
+          "type": "predire",
+          "question": "Quelle condition faut-il remplir avant que les forces de l'ordre puissent traiter une affaire ?",
+          "options": [
+            "Établir la juridiction",
+            "Obtenir l'accord de l'entreprise victime",
+            "Avoir déjà identifié le coupable"
+          ],
+          "answer": "Établir la juridiction",
+          "explanation": "Les forces de l'ordre doivent d'abord avoir le pouvoir légal de traiter l'affaire. Avec l'informatique, c'est parfois compliqué."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une affaire qui peut être abandonnée",
+          "texte": "Un pirate attaque une entreprise depuis un autre continent. La police se demande : qui est compétent ? Combien coûtera l'enquête ? A-t-on une chance de gagner le procès ? Parfois l'affaire est transmise à une autre police, ou abandonnée."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-penale-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « criminal investigations »",
+          "answer": "Criminal investigations involve prosecution under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even death for offenders.\n\nTraduction : Les enquêtes pénales impliquent des poursuites en vertu des lois pénales. Le gouvernement, au niveau fédéral, de l'État ou local, poursuit les violations de ses lois en imposant des amendes, de l'emprisonnement ou, dans certains cas extrêmes, même la mort aux contrevenants.",
+          "explanation": "Pense à la police qui prend la main : l'État poursuit une infraction à sa loi.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Criminal ». Poursuivre (prosecute) veut dire accuser devant la justice.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-def2",
+          "type": "cloze",
+          "question": "Criminal investigations involve [[prosecution]] under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even [[death]] for offenders.",
+          "answer": "Criminal investigations involve prosecution under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even death for offenders.",
+          "explanation": "Les poursuites, et la peine la plus lourde que le manuel cite.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-def3",
+          "type": "cloze",
+          "question": "Criminal investigations involve [[prosecution under criminal laws]]. The government, at the [[federal, state, or local]] level, prosecutes violations of its laws by imposing fines, imprisonment, or, [[in some extreme cases]], even death for offenders.",
+          "answer": "Criminal investigations involve prosecution under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even death for offenders.",
+          "explanation": "Trois blocs : les poursuites, les trois niveaux de gouvernement, et les cas extrêmes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « criminal investigations » (en anglais).",
+          "answer": "Criminal investigations involve prosecution under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even death for offenders.\n\nTraduction : Les enquêtes pénales impliquent des poursuites en vertu des lois pénales. Le gouvernement, au niveau fédéral, de l'État ou local, poursuit les violations de ses lois en imposant des amendes, de l'emprisonnement ou, dans certains cas extrêmes, même la mort aux contrevenants.",
+          "explanation": "Deux phrases : la définition, puis ce que fait le gouvernement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-qui-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : qui mène une enquête pénale",
+          "answer": "Criminal investigations are conducted by law enforcement organizations, which can include local, state, federal, or even international agencies.\n\nTraduction : Les enquêtes pénales sont menées par des organisations chargées de faire appliquer la loi, qui peuvent inclure des agences locales, d'État, fédérales ou même internationales.",
+          "explanation": "Ce sont les forces de l'ordre, de la police locale aux agences internationales.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Criminal ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-qui-def3",
+          "type": "cloze",
+          "question": "Criminal investigations are conducted by [[law enforcement organizations]], which can include [[local, state, federal]], or even [[international agencies]].",
+          "answer": "Criminal investigations are conducted by law enforcement organizations, which can include local, state, federal, or even international agencies.",
+          "explanation": "Les forces de l'ordre, à tous les niveaux, jusqu'à l'international.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-juridiction-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « jurisdiction » (dans les enquêtes pénales)",
+          "answer": "Jurisdiction, as we discussed in the section, \"Determine Compliance and Other Requirements,\" is the legal authority of a governmental body (such as a court or enforcement agency) over a specific matter, often based on geography.\n\nTraduction : La juridiction, comme nous l'avons vu dans la section « Determine Compliance and Other Requirements », est l'autorité légale d'un organisme gouvernemental (comme un tribunal ou une agence chargée de l'application de la loi) sur une affaire précise, souvent selon la géographie.",
+          "explanation": "C'est la définition vue dans la galaxie sur la conformité, appliquée aux enquêtes.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Criminal ». Les forces de l'ordre doivent d'abord établir leur juridiction.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-juridiction-def3",
+          "type": "cloze",
+          "question": "Jurisdiction, as we discussed in the section, \"Determine Compliance and Other Requirements,\" is [[the legal authority]] of [[a governmental body]] (such as a court or enforcement agency) over [[a specific matter]], often based on geography.",
+          "answer": "Jurisdiction, as we discussed in the section, \"Determine Compliance and Other Requirements,\" is the legal authority of a governmental body (such as a court or enforcement agency) over a specific matter, often based on geography.",
+          "explanation": "L'autorité légale, l'organisme public, et l'affaire précise.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-preuve-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le niveau de preuve des tribunaux pénaux",
+          "answer": "Typically, criminal courts have the highest legal standard for determining liability and guilt; this is often referred to as evidence that shows that the accused has caused harm beyond a reasonable doubt.\n\nTraduction : En général, les tribunaux pénaux ont le niveau de preuve juridique le plus élevé pour déterminer la responsabilité et la culpabilité ; on parle souvent de preuves montrant que l'accusé a causé un préjudice au-delà d'un doute raisonnable.",
+          "explanation": "Le plus haut niveau de preuve : au-delà d'un doute raisonnable.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Criminal ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-preuve-def3",
+          "type": "cloze",
+          "question": "Typically, criminal courts have [[the highest legal standard]] for determining [[liability and guilt]]; this is often referred to as evidence that shows that the accused has caused harm [[beyond a reasonable doubt]].",
+          "answer": "Typically, criminal courts have the highest legal standard for determining liability and guilt; this is often referred to as evidence that shows that the accused has caused harm beyond a reasonable doubt.",
+          "explanation": "Le plus haut niveau, la culpabilité, et le doute raisonnable.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-penale-1",
+          "type": "duel",
+          "question": "Qui mène une enquête pénale ?",
+          "options": ["Les forces de l'ordre", "La direction de l'entreprise"],
+          "answer": "Les forces de l'ordre",
+          "explanation": "La direction mène l'enquête administrative. L'enquête pénale est l'affaire de la police et de la justice.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-penale-2",
+          "type": "qcm",
+          "question": "Une police abandonne une affaire de piratage lointain. Laquelle de ces raisons le manuel cite-t-il ?",
+          "options": [
+            "Le coût de l'enquête comparé à l'ampleur du crime",
+            "La victime ne veut plus coopérer",
+            "Le pirate a effacé son propre nom"
+          ],
+          "options_why": [
+            "",
+            "Le manuel ne cite pas ce motif. Il parle de juridiction, de coût et de chances de succès.",
+            "Le manuel ne cite pas ce motif non plus : il parle de juridiction, de coût et de chances de succès."
+          ],
+          "answer": "Le coût de l'enquête comparé à l'ampleur du crime",
+          "explanation": "Le manuel cite la juridiction, le coût face à l'ampleur du crime, et les chances de réussite.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal » : jurisdictional issues, cost versus scale and impact, likelihood of successful prosecution.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-penale-3",
+          "type": "flash",
+          "question": "Que cherche d'abord à comprendre l'enquêteur une fois la juridiction établie ?",
+          "answer": "Ce qui s'est passé, les dégâts causés et l'éventail de crimes possibles pour des poursuites.",
+          "explanation": "Avant de viser une loi précise, il faut comprendre les faits.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-penale-4",
+          "type": "flash",
+          "question": "Que fait l'enquêteur à mesure que l'enquête avance ?",
+          "answer": "Il identifie les suspects possibles et les preuves disponibles. Puis il vise des lois et des textes précis.",
+          "explanation": "Le champ se réduit peu à peu.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-penale-5",
+          "type": "why",
+          "question": "Pourquoi la juridiction est-elle parfois compliquée quand des biens informatiques sont en jeu ?",
+          "answer": "Parce qu'une attaque peut impliquer plusieurs organismes publics, plusieurs endroits et plusieurs lois à la fois.",
+          "explanation": "Un attaquant et sa victime peuvent être dans des pays différents.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-penale-6",
+          "type": "cloze",
+          "question": "Au pénal, la preuve doit être faite [[au-delà d'un doute raisonnable]].",
+          "answer": "Au pénal, la preuve doit être faite au-delà d'un doute raisonnable.",
+          "explanation": "C'est le plus haut niveau de preuve.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-penale-7",
+          "type": "flash",
+          "question": "Quelles techniques utilisent les enquêteurs pénaux sur les preuves informatiques ?",
+          "answer": "Des techniques d'enquête, dont la criminalistique numérique (digital forensics) : chercher et analyser des preuves dans des appareils numériques.",
+          "explanation": "Elle permet de retrouver des traces sans les abîmer.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal ». La criminalistique numérique est traitée au domaine 7.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-penale-8",
+          "type": "problem",
+          "question": "Une entreprise subit un vol de données par un pirate étranger. Explique pourquoi la police peut décider de ne pas poursuivre.",
+          "answer": "La juridiction peut être incertaine. L'enquête peut coûter plus cher que l'ampleur du crime. Les chances de réussite des poursuites peuvent être faibles. L'affaire peut aussi être transmise à une autre police.",
+          "explanation": "Trois raisons : la juridiction, le coût et les chances de succès.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-penale-9",
+          "type": "whatif",
+          "question": "Et si aucune juridiction n'est établie ?",
+          "answer": "Les forces de l'ordre n'ont pas le pouvoir légal de prendre l'affaire. Elle peut être transmise à une autre police.",
+          "explanation": "Sans juridiction, pas d'enquête pénale possible.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-gestes",
+      "name": "Les bons gestes face à un crime soupçonné",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le premier sur place",
+          "paragraphes": [
+            "Tu es responsable de la sécurité de ton entreprise. Un matin, tu vois qu'un inconnu a copié des fichiers clients pendant la nuit.",
+            "Tu veux fouiller tous les ordinateurs pour trouver qui c'est. Ça paraît logique. Pourtant, c'est une mauvaise idée.",
+            "Chaque clic peut effacer des traces. Quand un crime est soupçonné, ton rôle n'est pas d'enquêter seul."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le premier témoin d'un accident",
+          "comme": "Tu es le premier à voir un accident. Tu préviens les secours, tu évites d'autres accidents, tu ne déplaces rien. Les spécialistes feront l'enquête.",
+          "enVrai": "Au travail, c'est pareil. Tu limites les dégâts immédiats (containment), tu préviens ta direction, et tu laisses les autorités mener l'enquête. L'image s'arrête là : tu n'es pas passif, tu protèges les systèmes tout de suite."
+        },
+        {
+          "type": "predire",
+          "question": "Tu soupçonnes un crime dans ton entreprise. Quelle est la meilleure première action ?",
+          "options": [
+            "Fouiller les ordinateurs pour trouver le coupable",
+            "Limiter les dégâts et prévenir la direction",
+            "Appeler la police sans en parler à personne"
+          ],
+          "answer": "Limiter les dégâts et prévenir la direction",
+          "explanation": "Fouiller peut abîmer les preuves. Appeler seul n'est pas ton rôle : la décision se prend avec la direction et un juriste."
+        },
+        {
+          "type": "exemple",
+          "titre": "Qui a besoin d'un ordre du tribunal ?",
+          "texte": "Pour accéder aux ordinateurs d'une entreprise, la police peut avoir besoin d'un ordre du tribunal. Cet ordre est un mandat (warrant) ou une citation à produire des documents (subpoena). Mais si l'entreprise appelle elle-même la police, elle peut l'autoriser à accéder à ses propres ordinateurs. L'entreprise en est propriétaire."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-gestes-1",
+          "type": "qcm",
+          "question": "Tu soupçonnes qu'un crime a été commis dans ton entreprise. Quelle est la meilleure première action ?",
+          "options": [
+            "Limiter les dégâts immédiats et prévenir la direction",
+            "Fouiller les ordinateurs pour trouver le coupable",
+            "Appeler la police sans en parler à personne"
+          ],
+          "options_why": [
+            "",
+            "Des personnes sans formation peuvent abîmer les preuves et gêner l'enquête.",
+            "La décision d'appeler la police se prend avec la direction et un juriste."
+          ],
+          "answer": "Limiter les dégâts immédiats et prévenir la direction",
+          "explanation": "Tu remontes l'information tout de suite, et tu laisses les autorités décider de la suite.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal » : suspendre l'enquête (sauf pour limiter les dégâts) et prévenir aussitôt la direction.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-2",
+          "type": "duel",
+          "question": "Tu penses qu'un crime a eu lieu. Peux-tu contacter seul la police ?",
+          "options": [
+            "Non : la décision se prend avec la direction et un juriste",
+            "Oui : c'est ton devoir immédiat"
+          ],
+          "answer": "Non : la décision se prend avec la direction et un juriste",
+          "explanation": "C'est une décision complexe : elle ne revient pas à un seul employé.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal ». Un juriste (counsel) peut être interne ou extérieur à l'entreprise.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-3",
+          "type": "why",
+          "question": "Pourquoi ne faut-il pas enquêter soi-même quand on soupçonne un crime ?",
+          "answer": "Des personnes sans formation peuvent abîmer les traces. On dit qu'elles contaminent les preuves (taint the evidence). Cela gêne ensuite l'enquête de la police.",
+          "explanation": "Une preuve abîmée peut devenir inutilisable.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal » : les actions de personnel non formé peuvent contaminer les preuves.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-4",
+          "type": "flash",
+          "question": "Que peux-tu continuer à faire après avoir soupçonné un crime ?",
+          "answer": "Seulement limiter les dégâts immédiats (containment). Puis tu attends les consignes des autorités et tu préviens la direction.",
+          "explanation": "Limiter les dégâts n'est pas enquêter.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal » : suspendre l'activité d'enquête, au-delà de la limitation des dégâts immédiats.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-5",
+          "type": "sort",
+          "question": "À faire ou à ne pas faire quand un crime est soupçonné ?",
+          "answer": "À faire : prévenir la direction, limiter les dégâts immédiats et attendre les consignes des autorités. À ne pas faire : fouiller seul, appeler seul la police et modifier les fichiers.",
+          "explanation": "Protège, préviens et attends. Ne fouille pas, ne décide pas seul et ne modifie rien.",
+          "data": {
+            "mode": "classer",
+            "categories": ["À faire", "À ne pas faire"],
+            "items": [
+              { "text": "Prévenir immédiatement la direction", "category": "À faire" },
+              { "text": "Limiter les dégâts immédiats", "category": "À faire" },
+              { "text": "Attendre les consignes des autorités", "category": "À faire" },
+              { "text": "Fouiller seul les disques pour trouver le coupable", "category": "À ne pas faire" },
+              { "text": "Contacter seul la police sans consulter personne", "category": "À ne pas faire" },
+              { "text": "Modifier les fichiers pour tout réparer", "category": "À ne pas faire" }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-gestes-6",
+          "type": "flash",
+          "question": "Quelles formes peut prendre un ordre du tribunal (court order) pour obtenir des preuves ?",
+          "answer": "Un mandat (warrant) ou une citation à produire des documents (subpoena). Certains viennent d'un juge, d'autres d'un officier du tribunal comme un procureur.",
+          "explanation": "Ces ordres donnent à l'État le droit d'accéder à des biens, appareils et données privés.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-7",
+          "type": "qcm",
+          "question": "Une entreprise demande l'aide de la police et lui ouvre l'accès à ses propres serveurs. Faut-il un ordre du tribunal ?",
+          "options": [
+            "Non : l'entreprise possède les équipements et peut en autoriser l'accès",
+            "Oui : toujours, sans exception",
+            "Oui : sauf si les données sont chiffrées"
+          ],
+          "options_why": [
+            "",
+            "Le manuel dit que le propriétaire des biens peut donner la permission à qui il veut.",
+            "Le chiffrement n'est pas le critère : c'est la propriété des équipements qui compte."
+          ],
+          "answer": "Non : l'entreprise possède les équipements et peut en autoriser l'accès",
+          "explanation": "Le propriétaire peut autoriser l'accès à qui il choisit, y compris à la police.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-8",
+          "type": "duel",
+          "question": "Qui doit suivre des règles strictes de collecte des preuves, comme le mandat et la chaîne de traçabilité ?",
+          "options": [
+            "Les enquêteurs de la police",
+            "L'entreprise qui remet ses propres données"
+          ],
+          "answer": "Les enquêteurs de la police",
+          "explanation": "Une entreprise peut remettre ses preuves. Les forces de l'ordre sont soumises à des règles strictes.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal » : mandats, chaîne de traçabilité et limites d'analyse pour les enquêteurs publics.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-9",
+          "type": "why",
+          "question": "Pourquoi la décision d'appeler la police se prend-elle avec la direction et un juriste ?",
+          "answer": "Parce que c'est une décision complexe, avec des conséquences pour l'entreprise. Un juriste connaît les règles à suivre.",
+          "explanation": "Une personne seule voit rarement tous les risques.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Criminal ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-10",
+          "type": "cloze",
+          "question": "En cas de crime soupçonné, il faut [[prévenir]] la direction et suspendre toute enquête personnelle, sauf pour limiter les [[dégâts]].",
+          "answer": "En cas de crime soupçonné, il faut prévenir la direction et suspendre toute enquête personnelle, sauf pour limiter les dégâts.",
+          "explanation": "Protéger d'abord, laisser enquêter ensuite.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-11",
+          "type": "whatif",
+          "question": "Et si un employé sans formation copie lui-même les fichiers du pirate ?",
+          "answer": "Il peut modifier ou abîmer les traces. La preuve risque d'être contaminée et l'enquête de la police gênée.",
+          "explanation": "Le moindre geste peut laisser une trace nouvelle ou en effacer une ancienne.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-12",
+          "type": "problem",
+          "question": "Un matin, tu vois qu'un inconnu a copié des fichiers clients. Écris ce que tu fais, dans l'ordre.",
+          "answer": "Je limite les dégâts immédiats. Je préviens tout de suite la direction. Je ne fouille pas seul. La direction et un juriste décident d'appeler la police. J'attends ensuite les consignes des autorités.",
+          "explanation": "Protège, préviens, ne fouille pas, laisse décider.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-gestes-13",
+          "type": "flash",
+          "question": "Que veut dire « chain of custody » (chaîne de traçabilité) ?",
+          "answer": "Le suivi écrit de qui a eu la preuve entre les mains, et quand. Il montre qu'elle n'a pas été modifiée.",
+          "explanation": "C'est le carnet de passage de la preuve.",
+          "explanation_more": "Définition simple, hors manuel. Le manuel cite la chaîne de traçabilité parmi les règles strictes des enquêteurs publics. Elle est détaillée au domaine 7.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-civile",
+      "name": "L'enquête civile (civil investigation)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le téléphone cassé",
+          "paragraphes": [
+            "Dans la cour, Tom casse le téléphone de Sacha. Les parents de Sacha demandent de l'argent pour le réparer.",
+            "Personne n'appelle la police. Personne n'ira en prison. C'est un conflit entre deux familles, qui veulent que quelqu'un répare le tort.",
+            "Si les familles ne s'entendent pas, elles vont devant un juge. Ce genre de conflit entre parties privées s'appelle une affaire civile."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le juge entre deux familles",
+          "comme": "Le juge ne punit pas une faute contre le pays. Il décide qui doit quoi à qui : rembourser, arrêter, tenir sa promesse.",
+          "enVrai": "En droit civil, un plaignant (plaintiff) poursuit une autre partie privée. Il veut une réparation pour une perte, ou la fin d'un conflit. Le juge dit si le défendeur est responsable (liable) ou non. Il peut ordonner de payer des dommages-intérêts (damages), c'est-à-dire de l'argent pour réparer le tort. L'image s'arrête là : un tribunal civil applique des lois précises."
+        },
+        {
+          "type": "predire",
+          "question": "Dans un procès civil, un défendeur jugé responsable peut-il être envoyé en prison pour cette responsabilité ?",
+          "options": [
+            "Non, la responsabilité civile ne mène pas à la prison",
+            "Oui, comme au pénal"
+          ],
+          "answer": "Non, la responsabilité civile ne mène pas à la prison",
+          "explanation": "Au civil, on est responsable ou non. On peut devoir payer ou arrêter une activité. Refuser d'obéir à un ordre du tribunal peut toutefois mener à la prison."
+        },
+        {
+          "type": "exemple",
+          "titre": "Deux cas où ton entreprise est concernée",
+          "texte": "Cas 1 : un inconnu vole des données dans ton système. Ton entreprise demande des dommages-intérêts devant un tribunal. Tu rassembles les journaux qui prouvent la faute. Cas 2 : un ancien employé accuse l'entreprise de l'avoir mal traité. Tu dois garder tous les mails et empêcher leur destruction."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-civile-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « civil law »",
+          "answer": "Civil law governs relations and interactions between private entities. The plaintiff in a civil case sues for compensation for a loss or relief from some type of dispute.\n\nTraduction : Le droit civil régit les relations et les interactions entre des entités privées. Le plaignant, dans une affaire civile, poursuit pour obtenir une compensation pour une perte ou une réparation d'un litige.",
+          "explanation": "Pense aux deux familles : une partie privée en poursuit une autre.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Civil ». Une entité privée est une personne ou une entreprise, pas l'État.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-def2",
+          "type": "cloze",
+          "question": "Civil law governs relations and interactions between [[private]] entities. The plaintiff in a civil case [[sues]] for compensation for a loss or relief from some type of dispute.",
+          "answer": "Civil law governs relations and interactions between private entities. The plaintiff in a civil case sues for compensation for a loss or relief from some type of dispute.",
+          "explanation": "Des entités privées, et un plaignant qui poursuit.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-def3",
+          "type": "cloze",
+          "question": "Civil law governs [[relations and interactions]] between [[private entities]]. The plaintiff in a civil case sues for [[compensation for a loss]] or relief from some type of dispute.",
+          "answer": "Civil law governs relations and interactions between private entities. The plaintiff in a civil case sues for compensation for a loss or relief from some type of dispute.",
+          "explanation": "Trois blocs : les relations, les entités privées, et la compensation d'une perte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « civil law » (en anglais).",
+          "answer": "Civil law governs relations and interactions between private entities. The plaintiff in a civil case sues for compensation for a loss or relief from some type of dispute.\n\nTraduction : Le droit civil régit les relations et les interactions entre des entités privées. Le plaignant, dans une affaire civile, poursuit pour obtenir une compensation pour une perte ou une réparation d'un litige.",
+          "explanation": "Deux phrases : le domaine du droit civil, puis le rôle du plaignant.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-preuve-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le niveau de preuve d'un procès civil",
+          "answer": "Unlike criminal law, in civil proceedings, the usual standard of proof is preponderance of the evidence, meaning it is a much lower burden of proof.\n\nTraduction : Contrairement au droit pénal, dans les procédures civiles, le niveau de preuve habituel est la prépondérance de la preuve, ce qui représente une charge de la preuve bien plus faible.",
+          "explanation": "Le civil se contente d'un niveau de preuve bien plus bas que le pénal.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Civil ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-preuve-def3",
+          "type": "cloze",
+          "question": "Unlike criminal law, in civil proceedings, the [[usual standard of proof]] is [[preponderance of the evidence]], meaning it is [[a much lower]] burden of proof.",
+          "answer": "Unlike criminal law, in civil proceedings, the usual standard of proof is preponderance of the evidence, meaning it is a much lower burden of proof.",
+          "explanation": "Le niveau de preuve habituel, son nom, et le fait qu'il est bien plus bas.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-liable-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « liable » et « guilty » dans un procès civil",
+          "answer": "In a civil proceeding, there is no question of guilty versus not guilty but rather liable versus not liable.\n\nTraduction : Dans une procédure civile, la question n'est pas coupable ou non coupable, mais responsable ou non responsable.",
+          "explanation": "Au civil, on parle de responsabilité, pas de culpabilité.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Civil ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-liable-def3",
+          "type": "cloze",
+          "question": "In a civil proceeding, there is [[no question of]] [[guilty versus not guilty]] but rather [[liable versus not liable]].",
+          "answer": "In a civil proceeding, there is no question of guilty versus not guilty but rather liable versus not liable.",
+          "explanation": "On écarte coupable ou non, et on garde responsable ou non.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-spoliation-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « spoliation of evidence »",
+          "answer": "Spoliation of evidence (i.e., altering or destruction of the original) can lead to exclusion of evidence in a case or, in some situations, can lead to a separate lawsuit for the damages resulting from the spoliation.\n\nTraduction : La spoliation de preuves (c'est-à-dire l'altération ou la destruction de l'original) peut conduire à l'exclusion des preuves dans une affaire ou, dans certains cas, à un procès distinct pour les dommages résultant de la spoliation.",
+          "explanation": "Abîmer ou détruire une preuve peut la faire écarter, et même coûter un autre procès.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Civil ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-spoliation-def3",
+          "type": "cloze",
+          "question": "Spoliation of evidence (i.e., [[altering or destruction]] of the original) can lead to [[exclusion of evidence]] in a case or, in some situations, can lead to a [[separate lawsuit]] for the damages resulting from the spoliation.",
+          "answer": "Spoliation of evidence (i.e., altering or destruction of the original) can lead to exclusion of evidence in a case or, in some situations, can lead to a separate lawsuit for the damages resulting from the spoliation.",
+          "explanation": "Altérer ou détruire, puis deux conséquences : preuve écartée, ou autre procès.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-civile-1",
+          "type": "duel",
+          "question": "En procédure civile, quelle est la question posée au tribunal ?",
+          "options": ["Responsable ou non responsable", "Coupable ou non coupable"],
+          "answer": "Responsable ou non responsable",
+          "explanation": "Coupable ou non coupable est le langage du pénal. Au civil, on parle de responsabilité.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-civile-2",
+          "type": "qcm",
+          "question": "Un ancien employé accuse l'entreprise de l'avoir mal traité. Un avocat demande de garder tous les mails. Que fais-tu ?",
+          "options": [
+            "J'empêche que ces preuves soient détruites",
+            "Je supprime les mails pour protéger l'entreprise",
+            "Je corrige les mails qui prêtent à confusion"
+          ],
+          "options_why": [
+            "",
+            "Détruire des preuves est de la spoliation : cela peut faire écarter les preuves et mener à un autre procès.",
+            "Modifier l'original est de la spoliation. Les originaux ne doivent jamais être changés."
+          ],
+          "answer": "J'empêche que ces preuves soient détruites",
+          "explanation": "Il faut conserver les preuves à la demande du tribunal ou des avocats.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Civil » : destruction hold notice, preservation notice, litigation hold.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-civile-3",
+          "type": "flash",
+          "question": "Quel pourcentage de faute suffit pour perdre un procès civil ?",
+          "answer": "Même 50,1 % : une simple majorité de responsabilité.",
+          "explanation": "Le civil se contente de plus de la moitié.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Civil ». Ailleurs, le manuel dit « au moins 51 % ». Retiens : un peu plus de la moitié.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-enq-civile-4",
+          "type": "sort",
+          "question": "Enquête pénale ou civile ? Dans quelle boîte va chaque phrase ?",
+          "answer": "Pénale : l'État poursuit, la preuve est la plus difficile et les policiers enquêtent. Civile : le plaignant réclame une compensation, la question est responsable ou non, et des professionnels comme toi enquêtent.",
+          "explanation": "Pénal : l'État, la police, la preuve la plus forte. Civil : deux parties privées, des professionnels de la sécurité, une preuve plus faible.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Pénale", "Civile"],
+            "items": [
+              { "text": "L'État poursuit l'accusé", "category": "Pénale" },
+              { "text": "La preuve est la plus difficile à atteindre", "category": "Pénale" },
+              { "text": "Les policiers mènent l'enquête", "category": "Pénale" },
+              { "text": "Un plaignant réclame une compensation", "category": "Civile" },
+              { "text": "Le verdict est « responsable » ou « non responsable »", "category": "Civile" },
+              { "text": "Des professionnels de l'informatique et de la sécurité collectent les preuves", "category": "Civile" }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-civile-5",
+          "type": "flash",
+          "question": "Que peut ordonner un tribunal à un défendeur jugé responsable ?",
+          "answer": "Payer des dommages-intérêts, arrêter une activité qui nuit au plaignant, ou respecter un contrat.",
+          "explanation": "Ce sont des obligations, pas des peines de prison.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Civil ». Refuser d'obéir à un ordre du tribunal peut mener à une accusation d'outrage (contempt of court). Cela peut aller jusqu'à la prison.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-civile-6",
+          "type": "why",
+          "question": "Pourquoi l'effort de collecte des preuves est-il plus léger au civil, sans être bâclé ?",
+          "answer": "Parce que le niveau de preuve et les enjeux sont plus faibles. Mais il faut toujours agir avec soin et de façon professionnelle.",
+          "explanation": "Moins d'enjeux ne veut pas dire moins de sérieux.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Civil » : due care must still be taken.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-civile-7",
+          "type": "flash",
+          "question": "Comment appelle-t-on l'obligation de conserver les preuves à la demande d'un tribunal ou d'un avocat ?",
+          "answer": "Une « litigation hold », ou « preservation notice » ou « destruction hold notice ».",
+          "explanation": "Elle empêche qu'on détruise des preuves possibles.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Civil » : destruction hold notice, preservation notice, litigation hold, or similar terms.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-civile-8",
+          "type": "cloze",
+          "question": "Au civil, la responsabilité ne mène pas en [[prison]]. Mais refuser un ordre du tribunal peut mener à un [[outrage]] au tribunal.",
+          "answer": "Au civil, la responsabilité ne mène pas en prison. Mais refuser un ordre du tribunal peut mener à un outrage au tribunal.",
+          "explanation": "L'outrage au tribunal (contempt of court) peut, à terme, mener à la prison.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-civile-9",
+          "type": "problem",
+          "question": "Ton entreprise est plaignante après un vol de données. Quelles preuves peux-tu avoir à rassembler ?",
+          "answer": "Les journaux (logs) des machines attaquées, des systèmes de détection d'intrusion et des équipements réseau. Ils montrent que le défendeur a causé le dommage.",
+          "explanation": "Ces journaux racontent ce qui s'est passé, minute par minute.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Civil ». Un système de détection d'intrusion repère les accès suspects.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-civile-10",
+          "type": "whatif",
+          "question": "Et si tu modifies un fichier original avant le procès ?",
+          "answer": "C'est de la spoliation. La preuve peut être écartée. Un procès distinct peut même être ouvert pour les dommages causés.",
+          "explanation": "Les originaux ne doivent jamais être changés sans l'avis des avocats.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-regulation",
+      "name": "L'enquête de régulation (regulatory investigation)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "L'inspecteur de la cantine",
+          "paragraphes": [
+            "Un inspecteur de l'État vient à la cantine du collège. Il vérifie les frigos, les dates, la propreté.",
+            "Personne ne l'a appelé pour se plaindre. Il décide de lui-même de venir.",
+            "S'il trouve une faute, il peut donner une amende ou ordonner d'arrêter. Ce type de contrôle s'appelle une enquête de régulation (regulatory investigation)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "L'inspecteur qui a les pouvoirs de la loi",
+          "comme": "L'inspecteur ne donne pas de conseils. Il applique des règles qui ont la force de la loi. Ces règles protègent les élèves.",
+          "enVrai": "Un règlement officiel (regulation) est une loi établie par un organisme public. Il protège les citoyens ou l'environnement, ou rend un secteur plus sûr. Une enquête de régulation vérifie qu'une organisation respecte ce règlement. L'image s'arrête là : l'inspecteur n'a de pouvoir que dans son domaine."
+        },
+        {
+          "type": "predire",
+          "question": "La norme PCI DSS, qui protège les paiements par carte, est-elle une regulation au sens du manuel ?",
+          "options": [
+            "Oui : c'est une règle obligatoire",
+            "Non : c'est un standard par contrat"
+          ],
+          "answer": "Non : c'est un standard par contrat",
+          "explanation": "Une regulation est une loi établie par un organisme public. PCI DSS est un standard contractuel : seuls ceux qui choisissent de s'y soumettre sont concernés."
+        },
+        {
+          "type": "exemple",
+          "titre": "L'EPA et les déchets toxiques",
+          "texte": "Aux États-Unis, l'EPA (Environmental Protection Agency) est une agence de l'État. Elle écrit des règlements sur les déchets toxiques et le transport de certains produits. Ces règlements ont force de loi. Quelqu'un qui les enfreint peut être poursuivi par le gouvernement."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-regulation-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « regulatory investigations »",
+          "answer": "Regulatory investigations involve determining whether an organization is compliant with a given regulation or legal requirement.\n\nTraduction : Les enquêtes de régulation consistent à déterminer si une organisation est conforme à une réglementation ou à une exigence légale donnée.",
+          "explanation": "Pense à l'inspecteur : il vérifie si l'organisation est en règle.",
+          "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1, section « Regulatory ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-def2",
+          "type": "cloze",
+          "question": "Regulatory investigations involve determining whether an organization is [[compliant]] with a given regulation or legal [[requirement]].",
+          "answer": "Regulatory investigations involve determining whether an organization is compliant with a given regulation or legal requirement.",
+          "explanation": "Le mot clé est conforme (compliant) : on vérifie la conformité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-def3",
+          "type": "cloze",
+          "question": "Regulatory investigations involve [[determining whether]] an [[organization is compliant]] with a [[given regulation]] or legal requirement.",
+          "answer": "Regulatory investigations involve determining whether an organization is compliant with a given regulation or legal requirement.",
+          "explanation": "Trois blocs : déterminer si, l'organisation est conforme, et à quelle règle.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « regulatory investigations » (en anglais).",
+          "answer": "Regulatory investigations involve determining whether an organization is compliant with a given regulation or legal requirement.\n\nTraduction : Les enquêtes de régulation consistent à déterminer si une organisation est conforme à une réglementation ou à une exigence légale donnée.",
+          "explanation": "Retiens : déterminer si, organisation conforme, règle ou exigence légale.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-reglement-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « regulation » selon (ISC)2",
+          "answer": "A regulation is not a standard, guideline, or suggestion — it is law, established by a government body.\n\nTraduction : Une regulation n'est pas une norme, une ligne directrice ou une suggestion : c'est la loi, établie par un organisme gouvernemental.",
+          "explanation": "Une regulation est une loi : on ne peut pas choisir de l'ignorer.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, note de la section « Regulatory ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-reglement-def2",
+          "type": "cloze",
+          "question": "A regulation is not a standard, guideline, or [[suggestion]] — it is law, established by a [[government]] body.",
+          "answer": "A regulation is not a standard, guideline, or suggestion — it is law, established by a government body.",
+          "explanation": "Ni conseil, ni suggestion : une loi établie par un organisme public.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-reglement-def3",
+          "type": "cloze",
+          "question": "A regulation is [[not a standard]], guideline, or suggestion — it is [[law, established by]] a [[government body]].",
+          "answer": "A regulation is not a standard, guideline, or suggestion — it is law, established by a government body.",
+          "explanation": "Trois blocs : pas une norme, une loi établie par, un organisme gouvernemental.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-reglement-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « regulation » selon (ISC)2 (en anglais).",
+          "answer": "A regulation is not a standard, guideline, or suggestion — it is law, established by a government body.\n\nTraduction : Une regulation n'est pas une norme, une ligne directrice ou une suggestion : c'est la loi, établie par un organisme gouvernemental.",
+          "explanation": "Retiens ce qu'elle n'est pas, puis ce qu'elle est : une loi.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-force-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le lien entre régulation et enquête pénale",
+          "answer": "Regulations have the force of law; consequently, regulatory investigations are similar to criminal investigations.\n\nTraduction : Les regulations ont force de loi ; par conséquent, les enquêtes de régulation ressemblent aux enquêtes pénales.",
+          "explanation": "Une règle qui a force de loi se contrôle un peu comme une loi pénale.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Regulatory ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-force-def3",
+          "type": "cloze",
+          "question": "Regulations have [[the force of law]]; consequently, [[regulatory investigations are similar]] to [[criminal investigations]].",
+          "answer": "Regulations have the force of law; consequently, regulatory investigations are similar to criminal investigations.",
+          "explanation": "La force de la loi explique la ressemblance avec le pénal.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-preuve-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : preuve et sanctions d'une enquête de régulation",
+          "answer": "The burden of proof for regulatory investigations is the preponderance of the evidence, and the penalties typically involve fines and injunctions.\n\nTraduction : La charge de la preuve pour les enquêtes de régulation est la prépondérance de la preuve, et les sanctions comprennent généralement des amendes et des injonctions.",
+          "explanation": "Le niveau de preuve du civil, avec des sanctions d'argent et des ordres officiels.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Regulatory ». Une injonction (injunction) est un ordre officiel de faire ou d'arrêter quelque chose.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-preuve-def3",
+          "type": "cloze",
+          "question": "The burden of proof for regulatory investigations is the [[preponderance of the evidence]], and the [[penalties typically involve]] [[fines and injunctions]].",
+          "answer": "The burden of proof for regulatory investigations is the preponderance of the evidence, and the penalties typically involve fines and injunctions.",
+          "explanation": "Le niveau de preuve, puis les sanctions habituelles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-pci-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : PCI-DSS n'est pas une regulation",
+          "answer": "Conversely, the PCI-DSS is not a regulation, as defined by (ISC)2; the PCI-DSS is a contractual standard, affecting only those parties that voluntarily choose to comply with it (i.e., merchants that accept credit card payment).\n\nTraduction : À l'inverse, PCI-DSS n'est pas une regulation, telle que définie par (ISC)2 ; PCI-DSS est un standard contractuel, qui ne concerne que les parties qui choisissent volontairement de s'y conformer (c'est-à-dire les commerçants qui acceptent les paiements par carte de crédit).",
+          "explanation": "Un standard par contrat, choisi volontairement : ce n'est pas une loi.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, note de la section « Regulatory ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-pci-def3",
+          "type": "cloze",
+          "question": "Conversely, the PCI-DSS is [[not a regulation]], as defined by (ISC)2; the PCI-DSS is [[a contractual standard]], affecting only those parties that [[voluntarily choose to comply]] with it (i.e., merchants that accept credit card payment).",
+          "answer": "Conversely, the PCI-DSS is not a regulation, as defined by (ISC)2; the PCI-DSS is a contractual standard, affecting only those parties that voluntarily choose to comply with it (i.e., merchants that accept credit card payment).",
+          "explanation": "Pas une regulation, un standard contractuel, suivi volontairement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-regulation-1",
+          "type": "duel",
+          "question": "Laquelle est une regulation au sens de (ISC)2 ?",
+          "options": [
+            "Une règle de l'agence de protection de l'environnement",
+            "La norme PCI DSS"
+          ],
+          "answer": "Une règle de l'agence de protection de l'environnement",
+          "explanation": "Une règle d'une agence de l'État a force de loi. PCI DSS est un standard par contrat.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-regulation-2",
+          "type": "qcm",
+          "question": "Quelles sanctions sont typiques d'une enquête de régulation ?",
+          "options": [
+            "Des amendes et des injonctions",
+            "Toujours de la prison",
+            "Uniquement des excuses publiques"
+          ],
+          "options_why": [
+            "",
+            "La prison est possible seulement si le régulateur transmet l'affaire à la justice pénale.",
+            "Le manuel parle de sanctions réelles : des amendes et des injonctions."
+          ],
+          "answer": "Des amendes et des injonctions",
+          "explanation": "Le manuel dit que les sanctions comprennent généralement des amendes et des injonctions.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Regulatory ». Le régulateur peut aussi demander l'intervention des forces de l'ordre pénales : de la prison est alors possible.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-regulation-3",
+          "type": "sort",
+          "question": "Est-ce une regulation au sens de (ISC)2 ?",
+          "answer": "Regulation : le règlement de l'EPA, et la loi établie par un organisme public. Pas une regulation : PCI DSS, un conseil, et une simple ligne directrice.",
+          "explanation": "Une regulation est une loi publique. Une norme, un conseil ou une ligne directrice n'en sont pas.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Une regulation", "Pas une regulation"],
+            "items": [
+              { "text": "Une règle écrite par l'EPA sur les déchets toxiques", "category": "Une regulation" },
+              { "text": "Une loi établie par un organisme public", "category": "Une regulation" },
+              { "text": "La norme PCI DSS", "category": "Pas une regulation" },
+              { "text": "Un conseil proposé par une association", "category": "Pas une regulation" },
+              { "text": "Une ligne directrice facultative", "category": "Pas une regulation" }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-regulation-4",
+          "type": "flash",
+          "question": "Qui décide de lancer une enquête de régulation ?",
+          "answer": "Les agences gouvernementales elles-mêmes. Elles ont le pouvoir de décider quand enquêter. Elles ont leurs propres enquêteurs, procureurs et tribunaux.",
+          "explanation": "L'agence n'attend pas qu'on l'appelle.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Regulatory ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-regulation-5",
+          "type": "why",
+          "question": "Pourquoi une enquête de régulation ressemble-t-elle à une enquête pénale ?",
+          "answer": "Parce que les regulations ont force de loi. Les faire respecter, c'est un peu comme faire respecter une loi pénale.",
+          "explanation": "Une règle qui a force de loi peut mener à des poursuites.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Regulatory ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-regulation-6",
+          "type": "flash",
+          "question": "Que peut faire un régulateur au lieu de mener sa propre enquête ?",
+          "answer": "Exiger des informations des organisations visées, ou utiliser les données de rapports d'audit.",
+          "explanation": "Il peut s'appuyer sur ce que l'organisation fournit.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Regulatory ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-regulation-7",
+          "type": "cloze",
+          "question": "Une regulation est établie par un organisme [[gouvernemental]] et a force de [[loi]].",
+          "answer": "Une regulation est établie par un organisme gouvernemental et a force de loi.",
+          "explanation": "Ni norme ni conseil : une loi.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-regulation-8",
+          "type": "flash",
+          "question": "Qu'est-ce qu'une injonction (injunction) ?",
+          "answer": "Un ordre officiel qui oblige à faire ou à arrêter de faire quelque chose.",
+          "explanation": "Elle accompagne souvent une amende.",
+          "explanation_more": "Définition simple, hors manuel. Le manuel cite les injonctions parmi les sanctions typiques d'une enquête de régulation.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-regulation-9",
+          "type": "whatif",
+          "question": "Et si un régulateur trouve des preuves d'un crime ?",
+          "answer": "Il peut demander aux forces de l'ordre pénales de prendre le relais. Cela peut alors mener à de la prison.",
+          "explanation": "Une enquête de régulation peut déboucher sur une enquête pénale.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Regulatory ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-regulation-10",
+          "type": "problem",
+          "question": "Ton collègue dit : « PCI DSS est une regulation, donc c'est la loi. » Corrige-le.",
+          "answer": "Non. Pour (ISC)2, une regulation est une loi établie par un organisme public. PCI DSS est un standard contractuel, suivi volontairement par ceux qui acceptent les cartes.",
+          "explanation": "Un standard par contrat n'est pas une loi.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-normes",
+      "name": "Les normes d'enquête (ISO et NIST)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La méthode du laboratoire",
+          "paragraphes": [
+            "En cours de sciences, on suit une méthode. On observe, on note, on garde l'échantillon intact, on analyse, puis on écrit un compte rendu.",
+            "Si tu sautes une étape, personne ne croit ton résultat.",
+            "Pour les preuves numériques (fichiers, téléphones, journaux), des organisations ont écrit des méthodes semblables. Ce sont des normes et des guides."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le protocole du labo",
+          "comme": "Le protocole du labo dit quoi faire, dans quel ordre, pour que le résultat soit fiable. Tu peux l'adapter, mais il sert de guide.",
+          "enVrai": "Les normes d'enquête recommandent des étapes pour traiter les preuves numériques. Elles couvrent aussi les incidents de sécurité, c'est-à-dire les événements qui menacent la sécurité, comme une fuite de données. La criminalistique numérique (digital forensics) est l'ensemble des techniques pour trouver et analyser ces preuves. L'image s'arrête là : certaines normes dépendent de ton pays ou de ton secteur."
+        },
+        {
+          "type": "predire",
+          "question": "Une norme recommande quatre étapes pour traiter une preuve numérique. Quelle est la bonne suite ?",
+          "options": [
+            "Identifier, collecter, acquérir, préserver",
+            "Analyser, effacer, copier, signaler",
+            "Copier, analyser, identifier, signaler"
+          ],
+          "answer": "Identifier, collecter, acquérir, préserver",
+          "explanation": "Il faut d'abord savoir quoi prendre, puis le collecter, en obtenir une copie exploitable (acquérir), et le conserver intact (préserver)."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un téléphone dans une enquête",
+          "texte": "Un employé est soupçonné d'avoir copié des fichiers sur son téléphone. Un téléphone n'est pas un ordinateur comme les autres : sa mémoire et ses fichiers sont organisés autrement. Un guide du NIST explique comment obtenir, conserver, examiner et analyser ses preuves, puis faire un rapport. Le téléphone est aussi privé : il faut être prudent."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-normes-27037-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ISO/IEC 27037:2012 »",
+          "answer": "ISO/IEC 27037:2012 provides guidelines for handling digital evidence. This is covered through a four-step process of identification, collection, acquisition, and preservation.\n\nTraduction : ISO/IEC 27037:2012 fournit des lignes directrices pour le traitement des preuves numériques. Cela est couvert par un processus en quatre étapes : identification, collecte, acquisition et préservation.",
+          "explanation": "Pense à la méthode du labo : repérer, ramasser, copier, conserver.",
+          "explanation_more": "Phrases du manuel officiel (ISC)2, domaine 1, section « Industry Standards ». ISO est l'organisation internationale de normalisation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-27037-def2",
+          "type": "cloze",
+          "question": "ISO/IEC 27037:2012 provides guidelines for handling [[digital]] evidence. This is covered through a four-step process of identification, collection, acquisition, and [[preservation]].",
+          "answer": "ISO/IEC 27037:2012 provides guidelines for handling digital evidence. This is covered through a four-step process of identification, collection, acquisition, and preservation.",
+          "explanation": "Les preuves numériques, et la dernière étape : la préservation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-27037-def3",
+          "type": "cloze",
+          "question": "ISO/IEC 27037:2012 provides [[guidelines for handling]] digital evidence. This is covered through a [[four-step process]] of [[identification, collection, acquisition]], and preservation.",
+          "answer": "ISO/IEC 27037:2012 provides guidelines for handling digital evidence. This is covered through a four-step process of identification, collection, acquisition, and preservation.",
+          "explanation": "Trois blocs : les lignes directrices, les quatre étapes, et les trois premières étapes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-27037-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur ISO/IEC 27037:2012 (en anglais).",
+          "answer": "ISO/IEC 27037:2012 provides guidelines for handling digital evidence. This is covered through a four-step process of identification, collection, acquisition, and preservation.\n\nTraduction : ISO/IEC 27037:2012 fournit des lignes directrices pour le traitement des preuves numériques. Cela est couvert par un processus en quatre étapes : identification, collecte, acquisition et préservation.",
+          "explanation": "Retiens les quatre étapes dans l'ordre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-86-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les phases du NIST SP 800-86",
+          "answer": "Most importantly, NIST SP 800-86 describes the digital forensic process overall in four phases: collection, examination, analysis, and reporting.\n\nTraduction : Surtout, le NIST SP 800-86 décrit l'ensemble du processus de criminalistique numérique en quatre phases : collecte, examen, analyse et rapport.",
+          "explanation": "Quatre phases : ramasser, examiner, analyser, rapporter.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Industry Standards ». NIST SP 800-86 : « Guide to Integrating Forensic Techniques into Incident Response ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-86-def2",
+          "type": "cloze",
+          "question": "Most importantly, NIST SP 800-86 describes the digital [[forensic]] process overall in four phases: collection, examination, analysis, and [[reporting]].",
+          "answer": "Most importantly, NIST SP 800-86 describes the digital forensic process overall in four phases: collection, examination, analysis, and reporting.",
+          "explanation": "Le processus de criminalistique numérique, et sa dernière phase : le rapport.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-86-def3",
+          "type": "cloze",
+          "question": "Most importantly, NIST SP 800-86 describes the [[digital forensic process]] overall in [[four phases]]: [[collection, examination, analysis]], and reporting.",
+          "answer": "Most importantly, NIST SP 800-86 describes the digital forensic process overall in four phases: collection, examination, analysis, and reporting.",
+          "explanation": "Trois blocs : le processus, le nombre de phases, et les trois premières phases.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-86-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur les quatre phases du NIST SP 800-86 (en anglais).",
+          "answer": "Most importantly, NIST SP 800-86 describes the digital forensic process overall in four phases: collection, examination, analysis, and reporting.\n\nTraduction : Surtout, le NIST SP 800-86 décrit l'ensemble du processus de criminalistique numérique en quatre phases : collecte, examen, analyse et rapport.",
+          "explanation": "Retiens les quatre phases dans l'ordre.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-27043-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ISO/IEC 27043:2015 »",
+          "answer": "ISO/IEC 27043:2015 recommends procedural steps for conducting security incident investigations.\n\nTraduction : ISO/IEC 27043:2015 recommande des étapes de procédure pour mener des enquêtes sur les incidents de sécurité.",
+          "explanation": "Elle couvre les enquêtes sur les incidents, de la préparation à la conclusion.",
+          "explanation_more": "Phrase du manuel officiel (ISC)2, domaine 1, section « Industry Standards ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-27043-def3",
+          "type": "cloze",
+          "question": "ISO/IEC 27043:2015 [[recommends procedural]] steps for [[conducting security]] [[incident investigations]].",
+          "answer": "ISO/IEC 27043:2015 recommends procedural steps for conducting security incident investigations.",
+          "explanation": "Des étapes de procédure pour enquêter sur les incidents de sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-101-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le « NIST SP 800-101 Revision 1 »",
+          "answer": "NIST SP 800-101 Revision 1, \"Guidelines on Mobile Device Forensics,\" has a self-explanatory title. It covers the unique requirements for acquiring, preserving, examining, analyzing, and reporting on the digital evidence present on mobile devices.\n\nTraduction : NIST SP 800-101 Révision 1, « Guidelines on Mobile Device Forensics », a un titre qui se passe d'explication. Il couvre les exigences propres à l'acquisition, la préservation, l'examen, l'analyse et le compte rendu des preuves numériques présentes sur les appareils mobiles.",
+          "explanation": "C'est le guide du téléphone : une mémoire et des fichiers organisés autrement.",
+          "explanation_more": "Phrases du manuel officiel (ISC)2, domaine 1, section « Industry Standards ». Un appareil mobile est, par exemple, un téléphone ou une tablette.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-101-def3",
+          "type": "cloze",
+          "question": "NIST SP 800-101 Revision 1, \"Guidelines on Mobile Device Forensics,\" has a [[self-explanatory title]]. It covers the [[unique requirements]] for [[acquiring, preserving, examining]], analyzing, and reporting on the digital evidence present on mobile devices.",
+          "answer": "NIST SP 800-101 Revision 1, \"Guidelines on Mobile Device Forensics,\" has a self-explanatory title. It covers the unique requirements for acquiring, preserving, examining, analyzing, and reporting on the digital evidence present on mobile devices.",
+          "explanation": "Un titre clair, des exigences propres aux mobiles, et les premières actions sur la preuve.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-enq-normes-1",
+          "type": "duel",
+          "question": "Quelle norme décrit quatre phases : collecte, examen, analyse et rapport ?",
+          "options": ["NIST SP 800-86", "ISO/IEC 27037"],
+          "answer": "NIST SP 800-86",
+          "explanation": "ISO/IEC 27037 décrit quatre étapes différentes : identification, collecte, acquisition, préservation.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-normes-2",
+          "type": "sort",
+          "question": "Remets dans l'ordre les quatre étapes d'ISO/IEC 27037 pour traiter une preuve numérique.",
+          "answer": "Identification, puis collecte, puis acquisition, puis préservation.",
+          "explanation": "On repère la preuve, on la ramasse, on en obtient une copie exploitable, puis on la conserve intacte.",
+          "retention_goal": "1y",
+          "data": {
+            "mode": "ordonner",
+            "items": ["Identification", "Collecte", "Acquisition", "Préservation"]
+          }
+        },
+        {
+          "id": "d1-enq-normes-3",
+          "type": "flash",
+          "question": "En quelles années ont été publiées les normes ISO/IEC 27043 et ISO/IEC 27037 ?",
+          "answer": "2015 pour la 27043 (enquêtes sur les incidents) et 2012 pour la 27037 (preuves numériques).",
+          "explanation": "Le numéro le plus bas, 27037, est le plus ancien.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Industry Standards ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-enq-normes-4",
+          "type": "qcm",
+          "question": "Tu dois examiner le téléphone d'un employé soupçonné. Quelle publication est faite pour cela ?",
+          "options": ["NIST SP 800-101", "NIST SP 800-86", "ISO/IEC 27043"],
+          "options_why": [
+            "",
+            "Le NIST SP 800-86 est le guide général de la criminalistique numérique, pas celui des mobiles.",
+            "ISO/IEC 27043 recommande des étapes pour enquêter sur les incidents, pas pour les mobiles."
+          ],
+          "answer": "NIST SP 800-101",
+          "explanation": "Le NIST SP 800-101 traite des exigences propres aux appareils mobiles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-normes-5",
+          "type": "sort",
+          "question": "Remets dans l'ordre les quatre phases du NIST SP 800-86.",
+          "answer": "Collecte, puis examen, puis analyse, puis rapport.",
+          "explanation": "On ramasse, on examine, on analyse, puis on rapporte.",
+          "retention_goal": "1y",
+          "data": {
+            "mode": "ordonner",
+            "items": ["Collecte", "Examen", "Analyse", "Rapport"]
+          }
+        },
+        {
+          "id": "d1-enq-normes-6",
+          "type": "flash",
+          "question": "Quels incidents la norme ISO/IEC 27043 couvre-t-elle ?",
+          "answer": "La perte ou l'altération de données, l'accès non autorisé et les fuites de données confirmées.",
+          "explanation": "Elle couvre de nombreux scénarios, de la préparation à la fin de l'enquête.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Industry Standards ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-normes-7",
+          "type": "why",
+          "question": "Pourquoi suivre une norme quand on gère une preuve numérique ?",
+          "answer": "Pour que la preuve reste fiable et utilisable. Une méthode reconnue montre que chaque étape a été faite avec soin.",
+          "explanation": "Une preuve mal traitée peut être écartée.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1 : la gestion des preuves et la criminalistique numérique sont au cœur des enquêtes technologiques.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-normes-8",
+          "type": "flash",
+          "question": "Que couvre aussi ISO/IEC 27037 en plus des quatre étapes ?",
+          "answer": "La chaîne de traçabilité (chain of custody) et l'échange de preuves entre juridictions.",
+          "explanation": "Elle couvre aussi de nombreux supports : disques, mobiles, caméras, ordinateurs et données réseau.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Industry Standards ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-normes-9",
+          "type": "sort",
+          "question": "Quelle publication correspond à chaque description ?",
+          "answer": "ISO/IEC 27037 : les quatre étapes de preuve et la chaîne de traçabilité. NIST SP 800-86 : les quatre phases et la capacité de criminalistique. NIST SP 800-101 : les appareils mobiles et les zones sensibles.",
+          "explanation": "27037 pour les étapes de la preuve, 800-86 pour le processus global, 800-101 pour les téléphones.",
+          "retention_goal": "1y",
+          "data": {
+            "mode": "classer",
+            "categories": ["ISO/IEC 27037", "NIST SP 800-86", "NIST SP 800-101"],
+            "items": [
+              { "text": "Quatre étapes : identification, collecte, acquisition, préservation", "category": "ISO/IEC 27037" },
+              { "text": "Couvre aussi la chaîne de traçabilité", "category": "ISO/IEC 27037" },
+              { "text": "Quatre phases : collecte, examen, analyse, rapport", "category": "NIST SP 800-86" },
+              { "text": "Explique comment bâtir une capacité de criminalistique dans l'organisation", "category": "NIST SP 800-86" },
+              { "text": "Traite des appareils mobiles", "category": "NIST SP 800-101" },
+              { "text": "Signale les zones sensibles quand le téléphone appartient à une personne privée", "category": "NIST SP 800-101" }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-normes-10",
+          "type": "cloze",
+          "question": "La norme ISO/IEC 27037 couvre quatre étapes : identification, collecte, [[acquisition]] et [[préservation]].",
+          "answer": "La norme ISO/IEC 27037 couvre quatre étapes : identification, collecte, acquisition et préservation.",
+          "explanation": "Les deux dernières étapes sont les plus faciles à oublier.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-enq-normes-11",
+          "type": "flash",
+          "question": "Quel est le titre du NIST SP 800-86 ?",
+          "answer": "« Guide to Integrating Forensic Techniques into Incident Response » : intégrer des techniques de criminalistique à la réponse aux incidents.",
+          "explanation": "Il détaille aussi les outils et la formation dont ton équipe a besoin.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Industry Standards ». Il décrit aussi comment structurer les politiques, normes et procédures de criminalistique.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-enq-normes-12",
+          "type": "problem",
+          "question": "Ton entreprise veut mettre en place une capacité de criminalistique numérique. Quelle publication du NIST lis-tu, et pourquoi ?",
+          "answer": "Le NIST SP 800-86. Il explique comment construire cette capacité, quels outils et quelle formation il faut, et comment écrire les politiques et les procédures.",
+          "explanation": "C'est le guide général qui couvre l'ensemble du processus.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

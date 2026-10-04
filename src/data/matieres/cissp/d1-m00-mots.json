@@ -1,0 +1,1908 @@
+{
+  "id": "d1-m00-mots",
+  "name": "D1.0 Les mots de base de la cybersécurité",
+  "galaxie": { "teinte": 160, "ambiance": "calme" },
+  "concepts": [
+    {
+      "id": "d1-m0-cyber",
+      "name": "La cybersécurité (cybersecurity) et le CISSP",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Un code sur ton téléphone",
+          "paragraphes": [
+            "Ton téléphone contient tes photos, tes messages et tes secrets. Tu le verrouilles avec un code.",
+            "Sans le savoir, tu fais déjà de la sécurité : tu protèges ce qui a de la valeur pour toi.",
+            "Une entreprise fait la même chose, mais avec des milliers d'appareils et de fichiers. Protéger tout cela, c'est la cybersécurité (cybersecurity)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Une maison, plusieurs protections",
+          "comme": "Une maison n'est pas protégée par une seule chose. Il y a la porte, la serrure, l'alarme et des voisins attentifs.",
+          "enVrai": "En cybersécurité, on combine aussi trois choses : des personnes, des règles de travail et des outils. Aucune ne suffit seule. Une maison a une porte visible, alors que les portes d'un système informatique sont parfois invisibles."
+        },
+        {
+          "type": "predire",
+          "question": "Dans une entreprise, qui est responsable de la sécurité ?",
+          "options": [
+            "Seulement l'équipe informatique",
+            "Seulement le patron",
+            "Tout le monde, du directeur au stagiaire"
+          ],
+          "answer": "Tout le monde, du directeur au stagiaire",
+          "explanation": "Le manuel dit que la sécurité est le travail de tous, du directeur au plus jeune employé. Les deux autres réponses sont tentantes : on croit que c'est une affaire de spécialistes. Une seule erreur d'un employé peut suffire à causer un problème."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le CISSP, un diplôme de la sécurité",
+          "texte": "Le CISSP est une certification : un diplôme reconnu qui prouve qu'on connaît bien la sécurité de l'information. Une organisation appelée (ISC)2 le délivre. Pour le garder, il faut respecter des règles de bonne conduite."
+        },
+        {
+          "type": "analogie",
+          "titre": "Un pays découpé en régions",
+          "comme": "Pour visiter un grand pays, on le découpe en régions. On les explore une par une.",
+          "enVrai": "Le programme du CISSP est découpé en huit domaines. Ce cours commence par le domaine 1 : la sécurité et la gestion du risque. Avant cela, tu apprends les mots de base."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-cyber-1",
+          "type": "flash",
+          "question": "C'est quoi, la cybersécurité (cybersecurity) ?",
+          "answer": "C'est protéger les informations et les ordinateurs. On les protège des accès non voulus, des modifications et des pannes. Exemple : le code qui verrouille ton téléphone.",
+          "explanation": "Pense au code de ton téléphone : il empêche les autres de voir et de changer tes affaires.",
+          "explanation_more": "Le manuel (domaine 1) parle de protéger l'information et les systèmes. Il cite l'accès, l'usage, la modification et la perturbation non appropriés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-cyber-2",
+          "type": "flash",
+          "question": "C'est quoi, la sécurité de l'information (information security) ?",
+          "answer": "C'est le même but que la cybersécurité : protéger l'information et les machines qui la contiennent. Le manuel du CISSP utilise surtout ce nom.",
+          "explanation": "Deux noms pour une même idée. Dans ce cours, tu peux les prendre pour synonymes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-cyber-3",
+          "type": "duel",
+          "question": "Pour bien protéger une entreprise, que faut-il surtout ?",
+          "options": ["Acheter les meilleurs outils", "Combiner personnes, règles et outils"],
+          "answer": "Combiner personnes, règles et outils",
+          "explanation": "Un outil seul peut être contourné ou mal utilisé. Les personnes et les règles ferment les autres portes.",
+          "explanation_more": "Le manuel insiste : un programme de sécurité solide est plus qu'une collection d'outils. Il demande des processus et de la supervision."
+        },
+        {
+          "id": "d1-m0-cyber-4",
+          "type": "flash",
+          "question": "C'est quoi, le CISSP ?",
+          "answer": "C'est une certification reconnue en sécurité de l'information. Elle prouve qu'on connaît bien ce métier. Tu en suis le programme dans ce cours.",
+          "explanation": "Une certification est un diplôme qu'on passe pour prouver ses compétences.",
+          "explanation_more": "CISSP signifie Certified Information Systems Security Professional (hors manuel : nom complet de la certification).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-cyber-5",
+          "type": "flash",
+          "question": "C'est quoi, (ISC)2 ?",
+          "answer": "C'est l'organisation qui délivre la certification CISSP. Elle publie aussi le manuel que ce cours suit.",
+          "explanation": "Un membre qui ne respecte pas son code d'éthique peut perdre sa certification.",
+          "explanation_more": "Source : domaine 1 du manuel, début du chapitre sur l'éthique.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-cyber-6",
+          "type": "qcm",
+          "question": "Dans une entreprise, quelle phrase décrit le mieux la sécurité ?",
+          "options": [
+            "Elle concerne tous les employés",
+            "Elle concerne seulement l'équipe informatique",
+            "Elle concerne seulement les dirigeants"
+          ],
+          "options_why": [
+            "",
+            "Les spécialistes la pilotent, mais chaque employé peut causer ou éviter un problème.",
+            "Les dirigeants fixent la direction, mais tout le monde applique les règles."
+          ],
+          "answer": "Elle concerne tous les employés",
+          "explanation": "Du directeur au plus jeune employé : chacun a un rôle à jouer."
+        },
+        {
+          "id": "d1-m0-cyber-7",
+          "type": "cloze",
+          "question": "La cybersécurité repose sur trois choses : des [[personnes]], des [[règles|processus]] de travail et des outils.",
+          "answer": "La cybersécurité repose sur trois choses : des personnes, des règles de travail et des outils.",
+          "explanation": "Les trois se complètent : chacune compense les faiblesses des autres.",
+          "explanation_more": "Le manuel parle de « people, processes, and technologies » : les personnes, les processus et les technologies."
+        },
+        {
+          "id": "d1-m0-cyber-8",
+          "type": "why",
+          "question": "Pourquoi une seule protection ne suffit-elle pas ?",
+          "answer": "Parce qu'une protection peut tomber en panne ou être contournée. Avec plusieurs couches, il reste d'autres barrières quand l'une cède.",
+          "explanation": "Comme dans une maison : la porte, la serrure et l'alarme se relaient."
+        },
+        {
+          "id": "d1-m0-cyber-9",
+          "type": "flash",
+          "question": "Combien de domaines compte le programme du CISSP ?",
+          "answer": "Huit. Ce cours commence par le domaine 1 : la sécurité et la gestion du risque (Security and Risk Management).",
+          "explanation": "Chaque domaine est une grande région du programme.",
+          "explanation_more": "Source : plan du manuel (ISC)2 que ce cours suit, huit domaines.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-m0-cyber-10",
+          "type": "sort",
+          "question": "Dans quelle boîte va chaque exemple ?",
+          "answer": "Personnes : la formation et le signalement. Règles : le document et la marche à suivre. Outils : le verrou et l'alarme.",
+          "explanation": "Pose-toi la question : est-ce quelqu'un, une consigne ou un objet ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Personnes", "Règles", "Outils"],
+            "items": [
+              { "text": "Former les employés aux pièges", "category": "Personnes" },
+              { "text": "Un employé qui signale un message suspect", "category": "Personnes" },
+              { "text": "Un document qui dit qui peut entrer dans le bureau", "category": "Règles" },
+              { "text": "Une marche à suivre pour accueillir un nouvel employé", "category": "Règles" },
+              { "text": "Un verrou électronique sur la porte du bureau", "category": "Outils" },
+              { "text": "Une alarme qui sonne quand quelqu'un force l'entrée", "category": "Outils" }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-cyber-11",
+          "type": "qcm",
+          "question": "Léa reçoit un message étrange d'un collègue. Au lieu de l'ignorer, elle prévient l'équipe de sécurité. Que montre son geste ?",
+          "options": [
+            "Chaque employé joue un rôle dans la sécurité",
+            "Seuls les experts doivent signaler un problème",
+            "Un message étrange ne concerne que l'informatique"
+          ],
+          "options_why": [
+            "",
+            "Tout le monde peut repérer un problème, pas seulement les experts.",
+            "Un message étrange peut toucher toute l'entreprise, pas seulement les machines."
+          ],
+          "answer": "Chaque employé joue un rôle dans la sécurité",
+          "explanation": "Prévenir vite permet de limiter les dégâts avant qu'ils ne se propagent.",
+          "explanation_more": "Le manuel demande aux utilisateurs de signaler toute violation de sécurité réelle ou suspectée."
+        },
+        {
+          "id": "d1-m0-cyber-12",
+          "type": "duel",
+          "question": "Une simple erreur d'employé peut-elle suffire à créer un problème de sécurité ?",
+          "options": ["Oui, même sans personne de malveillant", "Non, il faut toujours quelqu'un de malveillant"],
+          "answer": "Oui, même sans personne de malveillant",
+          "explanation": "Un mail envoyé à la mauvaise personne suffit : aucune intention de nuire n'est nécessaire."
+        },
+        {
+          "id": "d1-m0-cyber-13",
+          "type": "why",
+          "question": "Pourquoi dit-on que les personnes sont le maillon faible de la sécurité ?",
+          "answer": "Parce qu'une erreur humaine suffit : cliquer sur un lien piégé ou envoyer un fichier à la mauvaise personne. Bien formées, elles deviennent la meilleure protection.",
+          "explanation": "Le maillon faible est aussi celui qu'on peut renforcer en formant les gens.",
+          "explanation_more": "Le manuel dit que la sécurité d'une entreprise est aussi forte que son maillon le plus faible, souvent le personnel."
+        },
+        {
+          "id": "d1-m0-cyber-14",
+          "type": "whatif",
+          "question": "Et si une entreprise n'achetait que des outils, sans former ses employés ?",
+          "answer": "Les outils resteraient utiles, mais une erreur humaine pourrait les contourner. Il manquerait deux piliers : les personnes et les règles.",
+          "explanation": "Un outil ne remplace pas un employé qui sait quoi faire."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-machines",
+      "name": "Les machines et les programmes (hardware, software)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le téléphone qui ne s'allume plus",
+          "paragraphes": [
+            "Ton téléphone refuse de s'allumer. Peut-être que l'écran est cassé. Ou alors un programme est bloqué.",
+            "Dans le premier cas, c'est la partie qu'on peut toucher qui est en cause. Dans le second, c'est la partie qu'on ne peut pas toucher.",
+            "La première s'appelle le matériel (hardware). La seconde s'appelle le logiciel (software)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un piano et sa partition",
+          "comme": "Le piano est l'objet que tu touches. La partition dit quelles notes jouer. Sans partition, le piano reste muet.",
+          "enVrai": "Le matériel, c'est l'ordinateur lui-même : écran, clavier, pièces électroniques. Le logiciel, ce sont les instructions qui lui disent quoi faire. L'image s'arrête ici : un logiciel se copie en un clic, pas un piano."
+        },
+        {
+          "type": "predire",
+          "question": "Un jeu vidéo est-il du matériel ou du logiciel ?",
+          "options": ["Du matériel", "Du logiciel", "Les deux à la fois"],
+          "answer": "Du logiciel",
+          "explanation": "Le jeu est un ensemble d'instructions, donc un logiciel. La console qui le fait tourner est le matériel. On croit souvent que le jeu est un objet dans la console, mais ce sont des instructions."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le chef de cuisine",
+          "comme": "Dans une cuisine de restaurant, le chef répartit le travail et vérifie que tout se passe bien.",
+          "enVrai": "Le système d'exploitation (operating system, ou OS) fait ce travail dans un ordinateur. Windows, macOS et Linux en sont des exemples. Il fait le lien entre le matériel et les applications."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les clients d'un magasin en ligne",
+          "texte": "Un magasin en ligne note le nom, l'adresse et les commandes de chaque client. Chaque information gardée est une donnée (data). Rangées de façon organisée, elles forment une base de données (database). Si quelqu'un la modifie par erreur, le magasin envoie le mauvais colis."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-machines-1",
+          "type": "flash",
+          "question": "C'est quoi, une donnée (data) ?",
+          "answer": "Une donnée est une information enregistrée dans un ordinateur : un nom, une photo, un chiffre. Exemple : ta date de naissance dans un formulaire.",
+          "explanation": "Pour la sécurité, ce sont souvent les données qui ont le plus de valeur.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-machines-2",
+          "type": "flash",
+          "question": "C'est quoi, un fichier (file) ?",
+          "answer": "Un fichier est un ensemble de données rangées sous un seul nom. Exemple : une photo, un document ou un tableau.",
+          "explanation": "Un dossier est un endroit où l'on range plusieurs fichiers.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-machines-3",
+          "type": "duel",
+          "question": "L'écran tactile de ton téléphone : matériel ou logiciel ?",
+          "options": ["Matériel", "Logiciel"],
+          "answer": "Matériel",
+          "explanation": "Tu peux le toucher : c'est du matériel. Le logiciel, c'est ce qui s'affiche dessus."
+        },
+        {
+          "id": "d1-m0-machines-4",
+          "type": "flash",
+          "question": "C'est quoi, le matériel (hardware) ?",
+          "answer": "Le matériel est la partie d'un ordinateur qu'on peut toucher. Exemple : l'écran, le clavier, le disque qui garde les fichiers.",
+          "explanation": "Il peut tomber en panne, être volé ou être abîmé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-machines-5",
+          "type": "flash",
+          "question": "C'est quoi, un logiciel (software) ?",
+          "answer": "Un logiciel est un ensemble d'instructions qui dit à l'ordinateur quoi faire. On dit aussi un programme. Exemple : un traitement de texte.",
+          "explanation": "Il n'a pas de forme physique : on peut seulement le copier ou l'effacer.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-machines-6",
+          "type": "cloze",
+          "question": "Le [[matériel]] est la partie qu'on peut toucher ; le [[logiciel]] est un ensemble d'instructions.",
+          "answer": "Le matériel est la partie qu'on peut toucher ; le logiciel est un ensemble d'instructions.",
+          "explanation": "Pense au piano et à sa partition."
+        },
+        {
+          "id": "d1-m0-machines-7",
+          "type": "flash",
+          "question": "C'est quoi, une application (application) ?",
+          "answer": "Une application est un logiciel fait pour une tâche précise. Exemple : une messagerie, un jeu ou une calculatrice.",
+          "explanation": "Sur un téléphone, on dit souvent une appli.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-machines-8",
+          "type": "flash",
+          "question": "C'est quoi, un système d'exploitation (operating system, OS) ?",
+          "answer": "C'est le logiciel principal d'un ordinateur. Il fait le lien entre le matériel et les applications. Exemples : Windows, macOS, Linux.",
+          "explanation": "Sans lui, les applications ne sauraient pas parler au matériel.",
+          "explanation_more": "Le manuel cite Windows, macOS et Linux : une entreprise qui en utilise plusieurs doit les protéger tous.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-machines-9",
+          "type": "qcm",
+          "question": "Lequel de ces éléments est un système d'exploitation ?",
+          "options": ["Linux", "Une clé USB", "Un tableur"],
+          "options_why": [
+            "",
+            "Une clé USB est un objet qu'on touche : c'est du matériel.",
+            "Un tableur sert à faire des calculs : c'est une application."
+          ],
+          "answer": "Linux",
+          "explanation": "Linux fait le lien entre le matériel et les applications."
+        },
+        {
+          "id": "d1-m0-machines-10",
+          "type": "flash",
+          "question": "C'est quoi, une base de données (database) ?",
+          "answer": "Une base de données est un grand ensemble de données rangées de façon organisée. Exemple : les clients d'un magasin en ligne.",
+          "explanation": "On peut y chercher, ajouter ou modifier une information très vite.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-machines-11",
+          "type": "flash",
+          "question": "C'est quoi, un système informatique (system) ?",
+          "answer": "C'est un ensemble de matériel et de logiciels qui travaillent ensemble. Exemple : une caisse de magasin, avec son écran, son lecteur et son programme.",
+          "explanation": "Quand on protège un système, on protège toutes ses pièces à la fois.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-machines-12",
+          "type": "sort",
+          "question": "Matériel, logiciel ou donnée ?",
+          "answer": "Matériel : le clavier et l'écran. Logiciel : Windows et le jeu. Donnée : le nom et la photo.",
+          "explanation": "Si tu peux le toucher, c'est du matériel. S'il donne des ordres, c'est un logiciel. S'il décrit quelque chose, c'est une donnée.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Matériel", "Logiciel", "Donnée"],
+            "items": [
+              { "text": "Le clavier", "category": "Matériel" },
+              { "text": "L'écran d'un ordinateur", "category": "Matériel" },
+              { "text": "Windows", "category": "Logiciel" },
+              { "text": "Un jeu installé sur ton téléphone", "category": "Logiciel" },
+              { "text": "Ton nom dans un formulaire", "category": "Donnée" },
+              { "text": "Une photo de vacances", "category": "Donnée" }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-machines-13",
+          "type": "why",
+          "question": "Pourquoi est-il grave qu'une base de données soit modifiée par erreur ?",
+          "answer": "Parce que l'entreprise se fie à ces données pour agir. Si elles sont incorrectes, elle envoie un mauvais colis ou facture la mauvaise somme.",
+          "explanation": "Une donnée incorrecte mène à de mauvaises décisions."
+        },
+        {
+          "id": "d1-m0-machines-14",
+          "type": "qcm",
+          "question": "Une boutique en ligne garde les noms, adresses et commandes de ses clients, rangés en lignes. Comment s'appelle cet ensemble ?",
+          "options": ["Une base de données", "Un système d'exploitation", "Une application"],
+          "options_why": [
+            "",
+            "Le système d'exploitation est le logiciel principal de l'ordinateur, pas un ensemble de clients.",
+            "Une application sert à faire une tâche. Ici, on parle des données elles-mêmes, bien rangées."
+          ],
+          "answer": "Une base de données",
+          "explanation": "Des données bien rangées, où l'on peut chercher vite : c'est une base de données."
+        },
+        {
+          "id": "d1-m0-machines-15",
+          "type": "whatif",
+          "question": "Et si un ordinateur n'avait pas de système d'exploitation ?",
+          "answer": "Le matériel serait là, mais aucune application ne pourrait l'utiliser. Le système d'exploitation fait le lien entre les deux.",
+          "explanation": "C'est lui qui traduit les demandes des applications pour le matériel."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-reseaux",
+      "name": "Les réseaux, internet et le cloud (network, internet, cloud)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le message qui voyage",
+          "paragraphes": [
+            "Tu envoies un message à une amie qui habite à l'autre bout du monde. Il arrive en quelques secondes. Pourtant, vos téléphones ne sont pas reliés par un fil direct.",
+            "Entre vous, il y a une immense toile de câbles, de machines et de relais. Ton message passe de l'un à l'autre jusqu'à son but.",
+            "Des appareils reliés entre eux pour échanger des données forment un réseau (network)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Comme un réseau de routes",
+          "comme": "Les routes relient les villes. Les voitures transportent des gens ou des colis d'un endroit à un autre.",
+          "enVrai": "Un réseau relie des ordinateurs. Les données voyagent comme les voitures. Internet est le réseau mondial : des millions de réseaux reliés entre eux."
+        },
+        {
+          "type": "predire",
+          "question": "Quand tu ouvres un site, où se trouvent ses pages ?",
+          "options": [
+            "Dans ton téléphone",
+            "Sur un ordinateur puissant, quelque part dans le monde",
+            "Dans ta box internet"
+          ],
+          "answer": "Sur un ordinateur puissant, quelque part dans le monde",
+          "explanation": "Les pages sont rangées sur un ordinateur qui reste allumé et répond à toutes les demandes. On l'appelle un serveur. Ton téléphone ne fait que les afficher, et ta box te connecte sans garder les pages."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le serveur, une cuisine ouverte",
+          "comme": "Dans un restaurant, les cuisiniers préparent les plats que les clients commandent. La cuisine reste ouverte et sert beaucoup de monde.",
+          "enVrai": "Un serveur (server) est un ordinateur qui répond aux demandes des autres. Tu demandes une page, il l'envoie. Il reste allumé jour et nuit."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le cloud, un garde-meuble",
+          "comme": "Tu ne gardes pas tout chez toi. Tu loues de la place dans un garde-meuble, et tu paies selon ce que tu utilises.",
+          "enVrai": "Le cloud (cloud computing) loue des serveurs à des entreprises. Ces serveurs sont rangés dans de grands bâtiments : les centres de données (datacenters). Le cloud n'est pas un nuage : ce sont de vraies machines."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un bureau sans internet",
+          "texte": "Dans un bureau, les employés partagent leurs fichiers sur un serveur. Une partie de leurs outils tourne dans le cloud. Quand la connexion internet tombe, ils ne peuvent plus travailler sur ces outils."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-reseaux-1",
+          "type": "flash",
+          "question": "C'est quoi, un réseau (network) ?",
+          "answer": "Un réseau est un ensemble d'appareils reliés pour échanger des données. Exemple : les ordinateurs d'un collège, reliés entre eux.",
+          "explanation": "Si un appareil du réseau est attaqué, les autres peuvent être touchés aussi.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-reseaux-2",
+          "type": "flash",
+          "question": "C'est quoi, internet (the internet) ?",
+          "answer": "Internet est le réseau mondial qui relie des millions de réseaux. Exemple : l'endroit où se trouvent les sites web.",
+          "explanation": "Un appareil connecté à internet peut être atteint depuis le monde entier.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-reseaux-3",
+          "type": "duel",
+          "question": "Le réseau interne d'un collège est-il « internet » ?",
+          "options": ["Non, c'est un réseau parmi d'autres", "Oui, tout réseau est internet"],
+          "answer": "Non, c'est un réseau parmi d'autres",
+          "explanation": "Internet relie des millions de réseaux. Un petit réseau peut même ne pas être relié à internet."
+        },
+        {
+          "id": "d1-m0-reseaux-4",
+          "type": "flash",
+          "question": "C'est quoi, un serveur (server) ?",
+          "answer": "Un serveur est un ordinateur qui répond aux demandes d'autres appareils. Exemple : celui qui envoie les pages d'un site web.",
+          "explanation": "Il reste allumé en permanence : c'est une cible intéressante pour les attaquants.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-reseaux-5",
+          "type": "flash",
+          "question": "C'est quoi, un fournisseur d'accès internet (Internet service provider, ISP) ?",
+          "answer": "C'est l'entreprise qui te connecte à internet. Exemple : l'opérateur de la box de ta maison.",
+          "explanation": "Si ton fournisseur tombe en panne, tu perds internet.",
+          "explanation_more": "Le manuel cite les ISP à propos de la redondance : certaines entreprises en louent plusieurs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-reseaux-6",
+          "type": "qcm",
+          "question": "Dans une entreprise, des employés partagent des fichiers sur un ordinateur toujours allumé. Comment s'appelle-t-il ?",
+          "options": ["Un serveur", "Un fournisseur d'accès", "Un système d'exploitation"],
+          "options_why": [
+            "",
+            "Le fournisseur d'accès est l'entreprise qui te relie à internet, pas la machine qui garde les fichiers.",
+            "Le système d'exploitation est le logiciel principal d'un ordinateur. Ici, on parle de la machine."
+          ],
+          "answer": "Un serveur",
+          "explanation": "Une machine qui répond aux demandes des autres appareils est un serveur."
+        },
+        {
+          "id": "d1-m0-reseaux-7",
+          "type": "flash",
+          "question": "C'est quoi, le cloud (cloud computing) ?",
+          "answer": "Le cloud consiste à utiliser, par internet, des serveurs loués et situés ailleurs. Exemple : garder tes photos en ligne.",
+          "explanation": "Ce n'est pas un nuage : ce sont de vraies machines dans de vrais bâtiments.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-reseaux-8",
+          "type": "flash",
+          "question": "C'est quoi, un centre de données (datacenter) ?",
+          "answer": "C'est un grand bâtiment rempli de serveurs. Il a besoin d'électricité, de refroidissement et d'une bonne connexion.",
+          "explanation": "Il contient beaucoup de données : il faut le protéger des pannes, du feu et des intrus.",
+          "explanation_more": "Le manuel cite les pannes de courant, les inondations et la chaleur excessive comme menaces pour les centres de données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-reseaux-9",
+          "type": "cloze",
+          "question": "Le cloud, ce sont des [[serveurs]] loués, installés dans des [[centres de données|datacenters]] et utilisés par internet.",
+          "answer": "Le cloud, ce sont des serveurs loués, installés dans des centres de données et utilisés par internet.",
+          "explanation": "Loué, distant, par internet : trois mots pour t'en souvenir."
+        },
+        {
+          "id": "d1-m0-reseaux-10",
+          "type": "flash",
+          "question": "C'est quoi, un fournisseur de cloud (cloud service provider, CSP) ?",
+          "answer": "C'est l'entreprise qui loue ses serveurs à d'autres entreprises. Exemple : une grande société qui héberge des milliers de sites.",
+          "explanation": "Quand tu utilises le cloud, une partie de la sécurité dépend de ce fournisseur.",
+          "explanation_more": "Le manuel dit que, dans le cloud, le risque est partagé entre le client et le fournisseur.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-reseaux-11",
+          "type": "flash",
+          "question": "C'est quoi, un réseau privé virtuel (virtual private network, VPN) ?",
+          "answer": "C'est un tunnel protégé qui relie ton appareil à un réseau à distance, en passant par internet. Exemple : travailler de chez soi sur le réseau de son entreprise.",
+          "explanation": "Les données qui passent dans ce tunnel sont cachées aux curieux.",
+          "explanation_more": "Le manuel cite le VPN parmi les systèmes communs à toute une entreprise.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-reseaux-12",
+          "type": "sort",
+          "question": "Remets dans l'ordre le trajet d'une page web.",
+          "answer": "Tu tapes l'adresse. Ta demande part vers ton fournisseur d'accès. Elle traverse internet. Un serveur la reçoit. Il renvoie la page. Elle s'affiche sur ton écran.",
+          "explanation": "Chaque étape est un endroit où une donnée peut être lue, changée ou bloquée.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Tu tapes l'adresse d'un site",
+              "Ta demande part vers ton fournisseur d'accès",
+              "Elle traverse internet",
+              "Un serveur reçoit la demande",
+              "Le serveur renvoie la page",
+              "La page s'affiche sur ton écran"
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-reseaux-13",
+          "type": "qcm",
+          "question": "Un employé travaille depuis un café. Que peut-il utiliser pour accéder en sécurité aux fichiers de son entreprise ?",
+          "options": [
+            "Un VPN",
+            "Le Wi-Fi du café, sans rien de plus",
+            "Un envoi des fichiers sur son téléphone par message"
+          ],
+          "options_why": [
+            "",
+            "Un Wi-Fi public peut être écouté par d'autres personnes. Il faut une protection en plus.",
+            "Un message ne protège pas les fichiers, et ils quittent le contrôle de l'entreprise."
+          ],
+          "answer": "Un VPN",
+          "explanation": "Le VPN crée un tunnel protégé entre l'employé et le réseau de l'entreprise."
+        },
+        {
+          "id": "d1-m0-reseaux-14",
+          "type": "why",
+          "question": "Pourquoi la panne d'un centre de données touche-t-elle beaucoup d'entreprises à la fois ?",
+          "answer": "Parce que beaucoup d'entreprises louent les mêmes serveurs. Si ces machines s'arrêtent, tous leurs clients perdent leurs services en même temps.",
+          "explanation": "Mettre tous ses œufs dans le même panier augmente l'effet d'une panne."
+        },
+        {
+          "id": "d1-m0-reseaux-15",
+          "type": "whatif",
+          "question": "Et si ton fournisseur d'accès tombait en panne ?",
+          "answer": "Tes appareils resteraient allumés, mais ils n'atteindraient plus internet. Tu ne pourrais plus ouvrir de sites ni utiliser le cloud.",
+          "explanation": "Ta connexion dépend de lui : c'est pourquoi certaines entreprises en louent deux."
+        }
+      ]
+    }
+,
+    {
+      "id": "d1-m0-identite",
+      "name": "L'identité : compte, mot de passe et droits (account, password, access)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le badge du collège",
+          "paragraphes": [
+            "À l'entrée du collège, le surveillant regarde ta carte et te laisse passer. Pourtant, il ne te laisse pas entrer dans la salle des profs.",
+            "Il a fait deux choses. D'abord, il a vérifié que tu es bien toi. Ensuite, il a décidé où tu as le droit d'aller.",
+            "Un ordinateur fait pareil : on prouve qui on est, puis le système décide ce qu'on peut faire."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un compte, comme un casier",
+          "comme": "Au collège, chacun a un casier avec son nom dessus. Le cadenas ne s'ouvre qu'avec ton code.",
+          "enVrai": "Un compte (account) est ta place personnelle dans un système. L'identifiant (username) dit à qui il appartient. Le mot de passe (password) est le code secret qui prouve que c'est toi."
+        },
+        {
+          "type": "predire",
+          "question": "Quelqu'un utilise ton mot de passe. Que croit le système ?",
+          "options": [
+            "Que c'est bien toi",
+            "Qu'un inconnu essaie d'entrer",
+            "Qu'il doit demander une photo"
+          ],
+          "answer": "Que c'est bien toi",
+          "explanation": "Le système ne voit pas ton visage : il ne voit que le mot de passe. C'est pour cela qu'un mot de passe volé est si dangereux. Les autres réponses sont tentantes, mais le système n'a aucun moyen de deviner."
+        },
+        {
+          "type": "analogie",
+          "titre": "Deux preuves valent mieux qu'une",
+          "comme": "Pour ouvrir un coffre, il faut parfois une clé et un code. Si un voleur n'a que la clé, le coffre reste fermé.",
+          "enVrai": "L'authentification multifacteur (multifactor authentication, MFA) demande plusieurs preuves. Par exemple, un mot de passe et un code reçu sur ton téléphone. Voler le mot de passe ne suffit plus."
+        },
+        {
+          "type": "exemple",
+          "titre": "Chacun ses droits",
+          "texte": "Dans une entreprise, une comptable peut voir les factures. Un technicien peut installer des programmes. Les droits d'accès (permissions) disent ce que chacun peut voir ou faire. L'administrateur (administrator) est la personne qui a les droits les plus larges sur un système."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-identite-1",
+          "type": "flash",
+          "question": "C'est quoi, un compte (account) ?",
+          "answer": "Un compte est ta place personnelle dans un système. Il te permet d'être reconnu et d'utiliser un service. Exemple : ton compte de messagerie.",
+          "explanation": "Chaque compte correspond à une personne ou à un service.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-2",
+          "type": "flash",
+          "question": "C'est quoi, un mot de passe (password) ?",
+          "answer": "Un mot de passe est un secret qui prouve que tu es bien le propriétaire du compte. Plus il est long et unique, mieux il protège.",
+          "explanation": "Il ne doit jamais être partagé, ni réutilisé sur plusieurs comptes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-3",
+          "type": "duel",
+          "question": "Lequel doit rester secret : l'identifiant ou le mot de passe ?",
+          "options": ["Le mot de passe", "L'identifiant"],
+          "answer": "Le mot de passe",
+          "explanation": "L'identifiant dit qui tu es, et il est souvent connu. Le mot de passe est la preuve : il doit rester secret."
+        },
+        {
+          "id": "d1-m0-identite-4",
+          "type": "flash",
+          "question": "C'est quoi, un identifiant (username, user ID) ?",
+          "answer": "Un identifiant est le nom qui indique à qui appartient un compte. Exemple : ton adresse de messagerie. Il n'est en général pas secret.",
+          "explanation": "Chaque personne devrait avoir son propre identifiant, pour savoir qui a fait quoi.",
+          "explanation_more": "Source : l'exigence 8 de PCI DSS, citée dans le manuel (domaine 1), demande un identifiant unique pour chaque personne qui utilise un ordinateur.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-5",
+          "type": "flash",
+          "question": "C'est quoi, l'authentification (authentication) ?",
+          "answer": "L'authentification est l'action de prouver que tu es bien qui tu dis être. Exemple : taper ton mot de passe.",
+          "explanation": "Dire qui tu es ne suffit pas : il faut le prouver.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-6",
+          "type": "cloze",
+          "question": "Prouver qui tu es s'appelle l'[[authentification]]. Décider ce que tu peux faire s'appelle l'[[autorisation]].",
+          "answer": "Prouver qui tu es s'appelle l'authentification. Décider ce que tu peux faire s'appelle l'autorisation.",
+          "explanation": "On prouve d'abord, on décide ensuite : toujours dans cet ordre."
+        },
+        {
+          "id": "d1-m0-identite-7",
+          "type": "flash",
+          "question": "C'est quoi, l'authentification multifacteur (multifactor authentication, MFA) ?",
+          "answer": "C'est une authentification avec au moins deux preuves différentes. Exemple : un mot de passe et un code reçu sur ton téléphone.",
+          "explanation": "Un voleur qui connaît ton mot de passe n'a pas ton téléphone.",
+          "explanation_more": "Le manuel la cite parmi les mesures qui protègent l'accès aux données sensibles.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-8",
+          "type": "flash",
+          "question": "C'est quoi, l'authentification unique (single sign-on, SSO) ?",
+          "answer": "Elle te laisse t'identifier une seule fois pour accéder à plusieurs services. Exemple : un seul compte pour la messagerie et les documents.",
+          "explanation": "C'est pratique, mais ce compte devient très précieux : s'il est volé, tout s'ouvre.",
+          "explanation_more": "Hors manuel (domaine 1) : notion utile pour la suite du cours.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-9",
+          "type": "qcm",
+          "question": "Un compte demande ton mot de passe, puis un code reçu sur ton téléphone. Comment s'appelle cette méthode ?",
+          "options": [
+            "L'authentification multifacteur",
+            "L'autorisation",
+            "L'authentification unique"
+          ],
+          "options_why": [
+            "",
+            "L'autorisation décide ce que tu peux faire, pas qui tu es.",
+            "L'authentification unique te laisse t'identifier une seule fois pour plusieurs services : ce n'est pas la même idée."
+          ],
+          "answer": "L'authentification multifacteur",
+          "explanation": "Deux preuves différentes : un secret que tu connais et un objet que tu possèdes."
+        },
+        {
+          "id": "d1-m0-identite-10",
+          "type": "flash",
+          "question": "C'est quoi, l'autorisation (authorization) ?",
+          "answer": "L'autorisation décide ce que tu as le droit de faire une fois que tu es identifié. Exemple : lire un dossier sans pouvoir le modifier.",
+          "explanation": "Être reconnu ne donne pas tous les droits.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-11",
+          "type": "duel",
+          "question": "Un élève montre sa carte à l'entrée, puis le surveillant lui dit où il peut aller. Quelle étape est l'autorisation ?",
+          "options": ["Dire où il peut aller", "Montrer la carte"],
+          "answer": "Dire où il peut aller",
+          "explanation": "Montrer la carte prouve qui il est : c'est l'authentification. Décider où il peut aller, c'est l'autorisation."
+        },
+        {
+          "id": "d1-m0-identite-12",
+          "type": "flash",
+          "question": "C'est quoi, les droits d'accès (access rights, permissions) ?",
+          "answer": "Les droits d'accès sont la liste de ce qu'un compte peut voir ou faire. On parle aussi de privilèges (privileges).",
+          "explanation": "Plus un compte a de droits, plus il est dangereux s'il est volé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-13",
+          "type": "flash",
+          "question": "C'est quoi, un administrateur (administrator) ?",
+          "answer": "Un administrateur est la personne qui gère un système et qui a les droits les plus larges. Exemple : le technicien qui installe les programmes.",
+          "explanation": "Son compte est très précieux : il doit être protégé en priorité.",
+          "explanation_more": "Le manuel écrit aussi sysadmin, pour administrateur système.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-14",
+          "type": "sort",
+          "question": "Authentification ou autorisation ?",
+          "answer": "Authentification : le mot de passe, le code et l'empreinte. Autorisation : lire sans modifier, accéder aux salaires, ne pas installer.",
+          "explanation": "Authentification : qui es-tu ? Autorisation : qu'as-tu le droit de faire ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Authentification", "Autorisation"],
+            "items": [
+              { "text": "Taper son mot de passe", "category": "Authentification" },
+              { "text": "Entrer un code reçu sur son téléphone", "category": "Authentification" },
+              { "text": "Poser son doigt sur un lecteur d'empreinte", "category": "Authentification" },
+              { "text": "Pouvoir lire un dossier sans le modifier", "category": "Autorisation" },
+              { "text": "Avoir accès au dossier des salaires", "category": "Autorisation" },
+              { "text": "Ne pas avoir le droit d'installer un programme", "category": "Autorisation" }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-identite-15",
+          "type": "flash",
+          "question": "C'est quoi, le contrôle d'accès (access control) ?",
+          "answer": "Le contrôle d'accès est l'ensemble des moyens qui décident qui peut entrer où. Exemples : badge, mot de passe, droits d'accès.",
+          "explanation": "Il peut protéger une pièce, un fichier ou un programme.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-identite-16",
+          "type": "why",
+          "question": "Pourquoi un mot de passe seul est-il risqué ?",
+          "answer": "Parce qu'il peut être deviné, volé ou réutilisé. Celui qui le possède se fait passer pour toi sans que le système s'en rende compte.",
+          "explanation": "Ajouter une deuxième preuve rend le vol du mot de passe presque inutile."
+        },
+        {
+          "id": "d1-m0-identite-17",
+          "type": "qcm",
+          "question": "Tom a quitté la comptabilité pour le marketing, mais il garde l'accès aux factures. Quel est le problème ?",
+          "options": [
+            "Il a plus de droits que nécessaire",
+            "Il n'a pas assez de droits",
+            "Son mot de passe est trop court"
+          ],
+          "options_why": [
+            "",
+            "Au contraire : il garde des droits dont il n'a plus besoin.",
+            "Rien dans la situation ne parle de son mot de passe."
+          ],
+          "answer": "Il a plus de droits que nécessaire",
+          "explanation": "Quand quelqu'un change de poste, on retire les droits dont il n'a plus besoin.",
+          "explanation_more": "Le manuel recommande de retirer les accès devenus inutiles lors d'un transfert d'employé."
+        },
+        {
+          "id": "d1-m0-identite-18",
+          "type": "whatif",
+          "question": "Et si tout le monde dans l'entreprise avait un compte administrateur ?",
+          "answer": "N'importe qui pourrait tout voir ou tout changer. Une erreur, ou un compte volé, ferait beaucoup plus de dégâts.",
+          "explanation": "Chaque droit en trop est une porte ouverte inutile."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-chiffrer",
+      "name": "Chiffrer et déchiffrer (encrypt, decrypt)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le mot secret en classe",
+          "paragraphes": [
+            "Tu passes un mot secret à ton ami pendant un cours. Si le prof l'attrape, il le lit. Alors vous inventez un code : chaque lettre est remplacée par la suivante.",
+            "Le prof lit « Cpokpvs » et ne comprend rien. Ton ami, lui, recule d'une lettre et retrouve « Bonjour ».",
+            "Rendre un message illisible s'appelle chiffrer (encrypt). Le remettre en clair s'appelle déchiffrer (decrypt)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La clé, c'est le secret du code",
+          "comme": "Votre code « avance d'une lettre » ne marche que si l'autre connaît la règle. Sans la règle, le message n'a aucun sens.",
+          "enVrai": "Dans un vrai chiffrement, la méthode est connue de tous. Le secret, c'est la clé (key) : une très longue suite de chiffres. Sans la bonne clé, le message reste illisible."
+        },
+        {
+          "type": "predire",
+          "question": "Un voleur attrape un message chiffré. Sans la clé, peut-il le lire ?",
+          "options": [
+            "Oui, en le lisant attentivement",
+            "Non, il reste illisible sans clé"
+          ],
+          "answer": "Non, il reste illisible sans clé",
+          "explanation": "Un bon chiffrement rend le texte incompréhensible. Le voleur a le message, mais pas de quoi le lire. Le regarder longtemps ne change rien."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un paiement en ligne",
+          "texte": "Quand tu paies en ligne, les données de ta carte voyagent chiffrées. Un voleur qui les attrape en chemin ne voit qu'un texte incompréhensible. Seul le site du magasin possède la clé pour les déchiffrer."
+        },
+        {
+          "type": "analogie",
+          "titre": "L'empreinte d'un fichier",
+          "comme": "Une empreinte digitale identifie une personne. Si la personne change, l'empreinte change.",
+          "enVrai": "Une empreinte numérique (hash) est un court code calculé à partir d'un fichier. Si on change une seule lettre du fichier, le code change complètement. Ainsi, on repère qu'un fichier a été modifié. Attention : on ne peut pas retrouver le fichier à partir de son empreinte."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-chiffrer-1",
+          "type": "flash",
+          "question": "C'est quoi, chiffrer (encrypt) ?",
+          "answer": "Chiffrer, c'est transformer un message pour qu'il devienne illisible sans la clé. Exemple : les données de ta carte pendant un paiement en ligne.",
+          "explanation": "Le message existe toujours, mais personne ne peut le comprendre sans la clé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-chiffrer-2",
+          "type": "flash",
+          "question": "C'est quoi, déchiffrer (decrypt) ?",
+          "answer": "Déchiffrer, c'est remettre un message chiffré en clair, grâce à la bonne clé. C'est l'opération inverse de chiffrer.",
+          "explanation": "Seuls les destinataires prévus ont la clé pour le faire.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-chiffrer-3",
+          "type": "duel",
+          "question": "Remettre un message lisible avec la clé : chiffrer ou déchiffrer ?",
+          "options": ["Déchiffrer", "Chiffrer"],
+          "answer": "Déchiffrer",
+          "explanation": "Chiffrer rend le message illisible. Déchiffrer lui redonne un texte lisible."
+        },
+        {
+          "id": "d1-m0-chiffrer-4",
+          "type": "flash",
+          "question": "C'est quoi, une clé (key) de chiffrement ?",
+          "answer": "Une clé est une longue suite de chiffres et de lettres qui sert à chiffrer ou à déchiffrer. Elle doit rester secrète.",
+          "explanation": "La méthode est connue de tous : tout le secret est dans la clé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-chiffrer-5",
+          "type": "flash",
+          "question": "C'est quoi, un texte en clair (plaintext) et un texte chiffré (ciphertext) ?",
+          "answer": "Un texte en clair est lisible par tous. Un texte chiffré est le résultat du chiffrement : il est illisible sans la clé.",
+          "explanation": "Envoyer en clair, c'est envoyer sans aucune protection.",
+          "explanation_more": "Le manuel parle d'envoyer des courriels sensibles « in the clear » : sans chiffrement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-chiffrer-6",
+          "type": "qcm",
+          "question": "Un employé envoie par message la liste des salaires, sans la chiffrer. Comment le message voyage-t-il ?",
+          "options": ["En clair", "Chiffré", "Déchiffré"],
+          "options_why": [
+            "",
+            "Chiffré voudrait dire qu'une clé a rendu le message illisible, ce qui n'est pas le cas ici.",
+            "Déchiffré décrit l'action de remettre un message en clair, pas la façon dont il voyage."
+          ],
+          "answer": "En clair",
+          "explanation": "Sans chiffrement, n'importe qui peut lire le message en chemin."
+        },
+        {
+          "id": "d1-m0-chiffrer-7",
+          "type": "flash",
+          "question": "C'est quoi, le chiffrement (encryption) ?",
+          "answer": "Le chiffrement est la technique qui consiste à chiffrer les données. Il empêche un voleur de lire ce qu'il a copié.",
+          "explanation": "C'est l'une des mesures de protection les plus importantes.",
+          "explanation_more": "Le manuel cite le chiffrement parmi les mesures qui protègent les données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-chiffrer-8",
+          "type": "flash",
+          "question": "C'est quoi, la cryptographie (cryptography) ?",
+          "answer": "La cryptographie est la science des codes secrets. Elle crée les méthodes de chiffrement et étudie leur solidité.",
+          "explanation": "Le chiffrement est l'outil, la cryptographie est la science derrière.",
+          "explanation_more": "Hors manuel (domaine 1) : définition simple pour la suite du cours.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-chiffrer-9",
+          "type": "cloze",
+          "question": "Pour lire un message [[chiffré]], il faut la bonne [[clé]].",
+          "answer": "Pour lire un message chiffré, il faut la bonne clé.",
+          "explanation": "Sans la clé, même un message volé reste illisible."
+        },
+        {
+          "id": "d1-m0-chiffrer-10",
+          "type": "flash",
+          "question": "C'est quoi, une empreinte numérique (hash) ?",
+          "answer": "C'est un court code calculé à partir d'un fichier. Si le fichier change d'un seul caractère, le code change aussi.",
+          "explanation": "On compare les codes pour savoir si un fichier a été modifié.",
+          "explanation_more": "Le manuel cite les empreintes cryptographiques (cryptographic hashes) parmi les mesures qui protègent l'exactitude des données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-chiffrer-11",
+          "type": "duel",
+          "question": "Chiffrement ou empreinte : lequel permet de retrouver le texte d'origine ?",
+          "options": ["Le chiffrement", "L'empreinte"],
+          "answer": "Le chiffrement",
+          "explanation": "Avec la clé, on déchiffre. Une empreinte ne se transforme pas en fichier : elle sert seulement à comparer."
+        },
+        {
+          "id": "d1-m0-chiffrer-12",
+          "type": "sort",
+          "question": "Chiffrement ou empreinte ?",
+          "answer": "Chiffrement : rendre illisible, protéger un paiement, lire avec une clé. Empreinte : comparer des codes, repérer un changement, obtenir le même code.",
+          "explanation": "Le chiffrement cache le contenu. L'empreinte repère un changement.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Chiffrement", "Empreinte"],
+            "items": [
+              { "text": "Rendre une pièce jointe illisible pour un voleur", "category": "Chiffrement" },
+              { "text": "Protéger les données de carte pendant un paiement", "category": "Chiffrement" },
+              { "text": "Utiliser une clé secrète pour lire un message", "category": "Chiffrement" },
+              { "text": "Comparer deux codes pour savoir si un fichier a changé", "category": "Empreinte" },
+              { "text": "Repérer qu'un document a été modifié en cachette", "category": "Empreinte" },
+              { "text": "Obtenir toujours le même court code pour le même fichier", "category": "Empreinte" }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-chiffrer-13",
+          "type": "why",
+          "question": "Pourquoi chiffrer les données alors qu'un mot de passe les protège déjà ?",
+          "answer": "Parce qu'un voleur peut copier les données sans passer par le mot de passe. Chiffrées, elles restent illisibles pour lui.",
+          "explanation": "Le mot de passe garde la porte. Le chiffrement protège le contenu, même si la porte est contournée."
+        },
+        {
+          "id": "d1-m0-chiffrer-14",
+          "type": "qcm",
+          "question": "Un ordinateur portable rempli de dossiers clients est volé dans un train. Qu'est-ce qui rend les données inutilisables pour le voleur ?",
+          "options": [
+            "Le chiffrement des données",
+            "Un nom de dossier compliqué",
+            "Un fond d'écran discret"
+          ],
+          "options_why": [
+            "",
+            "Un nom compliqué n'empêche pas d'ouvrir le dossier.",
+            "Un fond d'écran ne protège aucune donnée."
+          ],
+          "answer": "Le chiffrement des données",
+          "explanation": "Sans la clé, le contenu reste illisible, même si le voleur copie tout.",
+          "explanation_more": "Le manuel cite l'oubli de chiffrer des données sensibles comme une erreur humaine qui menace leur secret."
+        },
+        {
+          "id": "d1-m0-chiffrer-15",
+          "type": "whatif",
+          "question": "Et si la clé de chiffrement tombait entre les mains d'un voleur ?",
+          "answer": "Il pourrait déchiffrer toutes les données. Une clé doit donc rester secrète et bien gardée.",
+          "explanation": "C'est comme la clé d'une maison : si elle est copiée, la serrure ne sert plus à rien."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-attaques",
+      "name": "Les attaquants et leurs armes (hackers, malware, phishing)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le message de la banque",
+          "paragraphes": [
+            "Tu reçois un message : « Votre compte est bloqué. Cliquez ici pour le débloquer. » Il porte le logo de ta banque. Tu paniques un peu.",
+            "Mais ce message ne vient pas de ta banque. Quelqu'un l'a écrit pour te faire taper ton mot de passe sur un site imité.",
+            "Ce piège s'appelle l'hameçonnage (phishing). Les pirates (hackers), des personnes qui entrent dans les systèmes sans permission, l'utilisent beaucoup."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le pêcheur à la ligne",
+          "comme": "Un pêcheur lance un appât. Il ne force pas le poisson : c'est le poisson qui mord.",
+          "enVrai": "L'attaquant (attacker) est celui qui mène l'attaque. Dans l'hameçonnage, le message est l'appât : tu ouvres la porte toi-même en cliquant. C'est de l'ingénierie sociale (social engineering) : manipuler une personne pour obtenir des informations."
+        },
+        {
+          "type": "predire",
+          "question": "Un inconnu appelle un employé et dit être du service informatique. Il demande son mot de passe pour une vérification. Que fait un bon employé ?",
+          "options": [
+            "Il le donne : c'est le service informatique",
+            "Il refuse et prévient la sécurité",
+            "Il donne seulement la moitié du mot de passe"
+          ],
+          "answer": "Il refuse et prévient la sécurité",
+          "explanation": "Un vrai service informatique ne demande jamais ton mot de passe. Donner la moitié est tentant, mais cela offre déjà un indice à l'attaquant."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le virus, comme celui de la grippe",
+          "comme": "Un virus de grippe s'accroche à une personne et passe à la suivante. Il a besoin d'un hôte pour vivre.",
+          "enVrai": "Un virus informatique s'attache à un fichier. Quand on ouvre ce fichier, il se copie ailleurs. Le malware (logiciel malveillant) est le mot général pour tous les programmes faits pour nuire. Le virus n'en est qu'un type."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le ransomware, un coffre sans clé",
+          "comme": "Un voleur enferme tes affaires dans un coffre. Il ne te donne la clé que contre de l'argent.",
+          "enVrai": "Le ransomware (rançongiciel) chiffre tes fichiers pour les bloquer. L'attaquant demande de l'argent contre la clé. Tu retrouves tes fichiers si tu paies, ou si tu as gardé une copie ailleurs."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un site saturé",
+          "texte": "Un site de billets de concert reçoit des millions de demandes à la même seconde. Il n'arrive plus à répondre aux vrais clients. Cette attaque s'appelle un déni de service (denial of service, DoS)."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-attaques-1",
+          "type": "flash",
+          "question": "C'est quoi, un pirate (hacker) ?",
+          "answer": "Un pirate est une personne qui cherche à entrer dans un système sans en avoir le droit. C'est le sens que le mot a dans ce cours.",
+          "explanation": "Le mot désigne parfois aussi un expert en informatique, mais ici il s'agit de l'intrus.",
+          "explanation_more": "Le manuel emploie « hacker » pour une personne qui attaque un système, par exemple pour chiffrer des données et demander une rançon.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-2",
+          "type": "flash",
+          "question": "C'est quoi, une attaque (attack) ?",
+          "answer": "Une attaque est une action volontaire pour voler, modifier ou bloquer des données ou un système. Celui qui la mène est l'attaquant (attacker).",
+          "explanation": "Le point commun : quelqu'un agit exprès pour nuire.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-3",
+          "type": "duel",
+          "question": "Un pirate teste des mots de passe sur un compte qui n'est pas le sien. Est-ce déjà une attaque ?",
+          "options": ["Oui, même s'il n'a rien cassé", "Non, il n'a encore rien cassé"],
+          "answer": "Oui, même s'il n'a rien cassé",
+          "explanation": "Une attaque est une action volontaire pour nuire. Essayer d'entrer sans droit en est déjà une."
+        },
+        {
+          "id": "d1-m0-attaques-4",
+          "type": "flash",
+          "question": "C'est quoi, un malware (logiciel malveillant) ?",
+          "answer": "Un malware est un programme conçu pour nuire : voler, abîmer ou bloquer des données. Exemples : virus, ransomware, cheval de Troie.",
+          "explanation": "Malware vient de l'anglais malicious software : logiciel malveillant.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-5",
+          "type": "flash",
+          "question": "C'est quoi, un virus informatique ?",
+          "answer": "Un virus est un malware qui s'attache à un fichier et se copie quand on ouvre ce fichier. Il passe ainsi de fichier en fichier.",
+          "explanation": "Comme un virus de grippe, il a besoin d'un hôte pour se propager.",
+          "explanation_more": "Le manuel cite les virus parmi les menaces qui peuvent modifier ou abîmer les données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-6",
+          "type": "duel",
+          "question": "Un virus est-il un malware ?",
+          "options": ["Oui, c'est un type de malware", "Non, ce sont deux choses différentes"],
+          "answer": "Oui, c'est un type de malware",
+          "explanation": "Malware est le mot général. Le virus, le ransomware et le cheval de Troie en sont des types."
+        },
+        {
+          "id": "d1-m0-attaques-7",
+          "type": "flash",
+          "question": "C'est quoi, un cheval de Troie (Trojan) ?",
+          "answer": "Un cheval de Troie est un malware caché dans un programme qui paraît utile. On l'installe soi-même sans le savoir.",
+          "explanation": "Comme dans la légende : le cadeau cache les soldats.",
+          "explanation_more": "Le manuel raconte qu'en 2017, une mise à jour de CCleaner contenait un cheval de Troie : plus de 2 milliards de téléchargements ont été signalés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-8",
+          "type": "flash",
+          "question": "C'est quoi, un ransomware (rançongiciel) ?",
+          "answer": "Un ransomware est un malware qui chiffre tes fichiers pour les bloquer. L'attaquant demande de l'argent pour donner la clé.",
+          "explanation": "Ransom veut dire rançon en anglais.",
+          "explanation_more": "Le manuel cite le ransomware comme menace contre la disponibilité des données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-9",
+          "type": "qcm",
+          "question": "Tous tes fichiers sont bloqués. Un message demande de l'argent pour les débloquer. De quel malware s'agit-il ?",
+          "options": [
+            "Un ransomware",
+            "Un virus qui s'efface seul",
+            "Un cheval de Troie qui espionne"
+          ],
+          "options_why": [
+            "",
+            "Un virus se copie de fichier en fichier. Ici, le but est de bloquer et de réclamer de l'argent.",
+            "Un cheval de Troie se cache dans un programme. Ici, la demande d'argent montre un ransomware."
+          ],
+          "answer": "Un ransomware",
+          "explanation": "Bloquer les fichiers contre de l'argent : c'est la marque du ransomware."
+        },
+        {
+          "id": "d1-m0-attaques-10",
+          "type": "flash",
+          "question": "C'est quoi, l'hameçonnage (phishing) ?",
+          "answer": "L'hameçonnage est un message piège qui imite une source de confiance. Il pousse à cliquer ou à donner un mot de passe.",
+          "explanation": "Phishing se prononce comme fishing, la pêche : le message est l'appât.",
+          "explanation_more": "Le manuel dit que l'hameçonnage est la forme la plus courante d'ingénierie sociale, par courriel.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-11",
+          "type": "flash",
+          "question": "C'est quoi, le spam ?",
+          "answer": "Le spam est un message non désiré envoyé à beaucoup de gens à la fois. Certains spams sont des pièges d'hameçonnage.",
+          "explanation": "Un spam n'est pas toujours dangereux, mais il faut se méfier de ses liens.",
+          "explanation_more": "Le manuel parle de spam à propos de la loi CAN-SPAM : des messages non sollicités.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-12",
+          "type": "duel",
+          "question": "Un site imité te demande ton mot de passe : hameçonnage ou ransomware ?",
+          "options": ["Hameçonnage", "Ransomware"],
+          "answer": "Hameçonnage",
+          "explanation": "Le but est de te faire donner ton secret. Un ransomware, lui, bloque tes fichiers."
+        },
+        {
+          "id": "d1-m0-attaques-13",
+          "type": "flash",
+          "question": "C'est quoi, l'ingénierie sociale (social engineering) ?",
+          "answer": "C'est manipuler une personne, en se faisant passer pour quelqu'un d'autre, pour obtenir des informations. Exemple : un appel prétendu du service informatique.",
+          "explanation": "L'attaquant vise la personne, pas la machine.",
+          "explanation_more": "Selon le manuel, l'hameçonnage en est la forme la plus courante.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-14",
+          "type": "flash",
+          "question": "C'est quoi, un déni de service (denial of service, DoS) ?",
+          "answer": "Un déni de service bloque l'accès à un service en le saturant de demandes. Les vrais utilisateurs ne peuvent plus l'utiliser.",
+          "explanation": "Rien n'est volé : on empêche seulement le service de répondre.",
+          "explanation_more": "Le manuel le cite comme attaque courante contre la disponibilité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-15",
+          "type": "cloze",
+          "question": "Le [[ransomware]] chiffre tes fichiers et réclame de l'argent pour la [[clé]].",
+          "answer": "Le ransomware chiffre tes fichiers et réclame de l'argent pour la clé.",
+          "explanation": "Chiffrer, bloquer, réclamer : retiens ces trois verbes."
+        },
+        {
+          "id": "d1-m0-attaques-16",
+          "type": "flash",
+          "question": "C'est quoi, un déni de service distribué (distributed denial of service, DDoS) ?",
+          "answer": "C'est un déni de service lancé depuis un très grand nombre d'ordinateurs à la fois. Il est plus difficile à arrêter.",
+          "explanation": "Bloquer une seule source ne suffit plus : elles sont des milliers.",
+          "explanation_more": "Le manuel cite le DDoS à côté du ransomware parmi les attaques qui menacent la continuité d'une activité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-17",
+          "type": "flash",
+          "question": "C'est quoi, le vol d'identifiants (credential theft) ?",
+          "answer": "C'est voler un identifiant et un mot de passe pour se faire passer pour quelqu'un. L'hameçonnage est une façon d'y arriver.",
+          "explanation": "Avec tes identifiants, l'attaquant entre par la porte d'entrée.",
+          "explanation_more": "Le manuel cite le vol d'identifiants parmi les actes qui visent le secret des données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-18",
+          "type": "sort",
+          "question": "Quel type d'attaque ?",
+          "answer": "Hameçonnage ou ingénierie sociale : le message imité et l'appel. Malware : le virus et le ransomware. Déni de service : les deux sites saturés.",
+          "explanation": "Manipuler une personne, nuire avec un programme, ou saturer un service : trois familles.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Hameçonnage ou ingénierie sociale", "Malware", "Déni de service"],
+            "items": [
+              { "text": "Un message imite ta banque et demande ton mot de passe", "category": "Hameçonnage ou ingénierie sociale" },
+              { "text": "Une personne se fait passer pour le service informatique au téléphone", "category": "Hameçonnage ou ingénierie sociale" },
+              { "text": "Un fichier se copie dans d'autres fichiers quand on l'ouvre", "category": "Malware" },
+              { "text": "Un programme bloque tes fichiers contre de l'argent", "category": "Malware" },
+              { "text": "Des millions de demandes saturent un site de billets", "category": "Déni de service" },
+              { "text": "Un site devient impossible à ouvrir à cause d'un flot de demandes", "category": "Déni de service" }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-attaques-19",
+          "type": "flash",
+          "question": "C'est quoi, le reniflage de réseau (network sniffing) ?",
+          "answer": "C'est écouter en cachette les données qui circulent sur un réseau. Le chiffrement empêche l'écouteur de les comprendre.",
+          "explanation": "L'écouteur ne modifie rien : il lit seulement ce qui passe.",
+          "explanation_more": "Le manuel le cite parmi les actes malveillants qui visent le secret des données.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-attaques-20",
+          "type": "why",
+          "question": "Pourquoi l'hameçonnage marche-t-il même contre des gens prudents ?",
+          "answer": "Parce qu'il joue sur les émotions : peur, urgence, curiosité. Sous la pression, on clique avant de réfléchir. Le message imite aussi un expéditeur de confiance.",
+          "explanation": "Ralentir et vérifier l'expéditeur est le meilleur réflexe.",
+          "explanation_more": "Le manuel dit que l'hameçonnage peut échapper aux outils de sécurité les plus sophistiqués."
+        },
+        {
+          "id": "d1-m0-attaques-21",
+          "type": "qcm",
+          "question": "Léa reçoit un mail du « directeur » : il demande un virement urgent et dit de ne parler à personne. Que doit-elle faire ?",
+          "options": [
+            "Vérifier par un autre moyen, comme un appel",
+            "Faire le virement vite pour ne pas fâcher le directeur",
+            "Répondre au mail pour demander s'il est sûr"
+          ],
+          "options_why": [
+            "",
+            "L'urgence et le secret sont des signes classiques d'une manipulation.",
+            "Répondre au même mail peut renvoyer la question à l'attaquant lui-même."
+          ],
+          "answer": "Vérifier par un autre moyen, comme un appel",
+          "explanation": "Un second canal de confiance permet de vérifier la demande."
+        },
+        {
+          "id": "d1-m0-attaques-22",
+          "type": "whatif",
+          "question": "Et si un seul employé clique sur un lien piégé ?",
+          "answer": "Un malware peut s'installer sur son ordinateur, puis se répandre dans tout le réseau. Une seule erreur suffit.",
+          "explanation": "Un seul clic peut ouvrir la porte à toute l'entreprise."
+        }
+      ]
+    }
+,
+    {
+      "id": "d1-m0-defenses",
+      "name": "Les défenses (firewall, backup, patch, logs)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le devoir qui disparaît",
+          "paragraphes": [
+            "Tu as passé trois heures sur un devoir. L'ordinateur plante, et tout disparaît.",
+            "Si tu avais gardé une copie ailleurs, tu aurais perdu cinq minutes, pas trois heures.",
+            "Cette copie de secours s'appelle une sauvegarde (backup). C'est l'une des défenses de base en cybersécurité."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un château a plusieurs défenses",
+          "comme": "Un château a des remparts, des gardes à l'entrée, des cloches d'alarme et des réserves en cas de siège.",
+          "enVrai": "Une entreprise empile aussi des défenses. Le pare-feu (firewall) est le garde à l'entrée : il filtre ce qui entre et sort du réseau. L'antivirus cherche les malwares. Les journaux (logs) notent ce qui se passe."
+        },
+        {
+          "type": "predire",
+          "question": "Le défaut d'un logiciel est connu, et son créateur publie une mise à jour qui le répare. Que se passe-t-il si tu ne l'installes pas ?",
+          "options": [
+            "Rien : le défaut reste inoffensif",
+            "Le défaut reste ouvert aux attaquants",
+            "L'ordinateur s'éteint tout seul"
+          ],
+          "answer": "Le défaut reste ouvert aux attaquants",
+          "explanation": "Une fois le défaut connu, les attaquants le connaissent aussi. Ne pas mettre à jour, c'est laisser une porte ouverte. « Rien » est tentant, car on ne voit aucune différence."
+        },
+        {
+          "type": "analogie",
+          "titre": "Les journaux, comme des caméras",
+          "comme": "Une caméra à l'entrée n'empêche aucun vol. Mais après un vol, on peut revoir ce qui s'est passé.",
+          "enVrai": "Les journaux (logs) enregistrent qui a fait quoi, et quand, sur un système. Ils n'arrêtent pas une attaque. Ils permettent de la repérer et de comprendre ce qui s'est passé."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un lundi matin de ransomware",
+          "texte": "Une entreprise découvre que tous ses fichiers sont bloqués. Elle ne paie rien : elle a une sauvegarde de la veille, gardée hors du réseau. En quelques heures, elle remet ses fichiers en place. Sans sauvegarde, elle aurait perdu des années de travail."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-defenses-1",
+          "type": "flash",
+          "question": "C'est quoi, une sauvegarde (backup) ?",
+          "answer": "Une sauvegarde est une copie de tes données gardée ailleurs, pour les retrouver en cas de perte. Exemple : une copie de tes fichiers sur un autre disque.",
+          "explanation": "Elle protège contre les pannes, les vols et les ransomwares.",
+          "explanation_more": "Le manuel recommande de garder plusieurs copies, dont une hors du site principal.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-2",
+          "type": "flash",
+          "question": "C'est quoi, restaurer (restore) ?",
+          "answer": "Restaurer, c'est remettre en place des données à partir d'une sauvegarde. Exemple : retrouver tes fichiers après une panne.",
+          "explanation": "Une sauvegarde qu'on ne sait pas restaurer ne sert à rien : il faut s'entraîner.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-3",
+          "type": "duel",
+          "question": "Une sauvegarde sert-elle à empêcher une attaque ou à s'en remettre ?",
+          "options": ["À s'en remettre", "À empêcher l'attaque"],
+          "answer": "À s'en remettre",
+          "explanation": "Elle ne bloque rien, mais elle permet de retrouver tes données après le problème."
+        },
+        {
+          "id": "d1-m0-defenses-4",
+          "type": "flash",
+          "question": "C'est quoi, un pare-feu (firewall) ?",
+          "answer": "Un pare-feu est un filtre qui laisse passer ou bloque les données entre deux réseaux, selon des règles. Exemple : empêcher les inconnus d'entrer dans le réseau d'une entreprise.",
+          "explanation": "Comme le garde à l'entrée d'un château : il vérifie qui passe.",
+          "explanation_more": "Le manuel cite le pare-feu parmi les contrôles techniques, et l'exigence 1 de PCI DSS demande un pare-feu pour protéger les données de carte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-5",
+          "type": "flash",
+          "question": "C'est quoi, un antivirus ?",
+          "answer": "Un antivirus est un logiciel qui cherche et supprime les malwares. Il doit rester à jour pour reconnaître les nouveaux.",
+          "explanation": "Un antivirus oublié depuis des mois protège mal.",
+          "explanation_more": "L'exigence 5 de PCI DSS, citée dans le manuel, demande un antivirus utilisé et mis à jour régulièrement.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-6",
+          "type": "qcm",
+          "question": "Une pièce jointe contient un virus. Quel outil le repère et le supprime ?",
+          "options": ["L'antivirus", "Les journaux", "La sauvegarde"],
+          "options_why": [
+            "",
+            "Les journaux notent ce qui se passe, mais ne suppriment rien.",
+            "La sauvegarde garde une copie des données, mais ne supprime pas le virus."
+          ],
+          "answer": "L'antivirus",
+          "explanation": "Repérer et supprimer les malwares est le métier de l'antivirus."
+        },
+        {
+          "id": "d1-m0-defenses-7",
+          "type": "flash",
+          "question": "C'est quoi, un correctif (patch) ?",
+          "answer": "Un correctif est une mise à jour qui répare un défaut d'un logiciel. L'installer s'appelle patcher le logiciel.",
+          "explanation": "Beaucoup d'attaques utilisent des défauts pour lesquels un correctif existe déjà.",
+          "explanation_more": "Le manuel cite l'analyse et la correction des vulnérabilités (scanning and patching) comme exemples de bonnes pratiques.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-8",
+          "type": "flash",
+          "question": "C'est quoi, les journaux (logs) ?",
+          "answer": "Les journaux sont les traces écrites de ce qui se passe dans un système : qui s'est connecté, quand, et ce qu'il a fait.",
+          "explanation": "Ils n'empêchent rien, mais ils permettent d'enquêter.",
+          "explanation_more": "Le manuel recommande d'activer les journaux de sécurité et de les relire pour repérer les activités suspectes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-9",
+          "type": "cloze",
+          "question": "Un [[pare-feu]] filtre le réseau ; un [[antivirus]] cherche les malwares.",
+          "answer": "Un pare-feu filtre le réseau ; un antivirus cherche les malwares.",
+          "explanation": "Le garde à l'entrée filtre ; l'infirmier soigne ce qui est déjà entré."
+        },
+        {
+          "id": "d1-m0-defenses-10",
+          "type": "flash",
+          "question": "C'est quoi, un système de détection d'intrusion (intrusion detection system, IDS) ?",
+          "answer": "C'est un outil qui repère les comportements suspects et prévient. Son cousin, l'IPS (système de prévention d'intrusion), peut aussi les bloquer.",
+          "explanation": "L'IDS est comme une alarme : il sonne, mais ne ferme pas la porte.",
+          "explanation_more": "Le manuel écrit IDS/IPS parmi les outils techniques d'un programme de sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-11",
+          "type": "flash",
+          "question": "C'est quoi, un test d'intrusion (penetration test, pentest) ?",
+          "answer": "C'est une attaque simulée et autorisée, qui cherche des faiblesses avant les vrais attaquants. Les résultats servent à corriger les problèmes.",
+          "explanation": "On attaque soi-même pour trouver les failles avant les autres.",
+          "explanation_more": "Le manuel cite les tests d'intrusion pour vérifier que les règles d'un pare-feu sont assez strictes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-12",
+          "type": "sort",
+          "question": "Cette défense sert à empêcher, à repérer ou à se remettre ?",
+          "answer": "Empêcher : le pare-feu et le correctif. Repérer : les journaux et la détection d'intrusion. Se remettre : la copie remise en place et le système restauré.",
+          "explanation": "Avant, pendant, après : trois moments, trois types de défense.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Empêcher que ça arrive", "Repérer que ça arrive", "Se remettre après"],
+            "items": [
+              { "text": "Un pare-feu qui bloque un inconnu", "category": "Empêcher que ça arrive" },
+              { "text": "Un correctif installé à temps", "category": "Empêcher que ça arrive" },
+              { "text": "Les journaux qui montrent une connexion étrange", "category": "Repérer que ça arrive" },
+              { "text": "Un outil de détection d'intrusion qui prévient", "category": "Repérer que ça arrive" },
+              { "text": "Des fichiers remis en place depuis une copie", "category": "Se remettre après" },
+              { "text": "Un système restauré après une panne", "category": "Se remettre après" }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-defenses-13",
+          "type": "flash",
+          "question": "C'est quoi, un incident de sécurité (security incident) ?",
+          "answer": "Un incident de sécurité est un événement qui met en danger des données ou des systèmes. Exemples : un ransomware, un compte volé.",
+          "explanation": "Quand un incident arrive, on le repère, on le limite, puis on se remet.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-14",
+          "type": "flash",
+          "question": "C'est quoi, la redondance (redundancy) ?",
+          "answer": "La redondance consiste à doubler un élément important. Si l'un tombe en panne, l'autre prend le relais. Exemple : deux connexions internet.",
+          "explanation": "C'est comme avoir une roue de secours dans la voiture.",
+          "explanation_more": "Le manuel cite l'électricité, l'eau et les connexions internet en double, et parfois plusieurs fournisseurs d'accès.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-defenses-15",
+          "type": "why",
+          "question": "Pourquoi installer rapidement les correctifs ?",
+          "answer": "Un défaut connu peut être utilisé par n'importe quel attaquant. Chaque jour de retard laisse la porte ouverte plus longtemps.",
+          "explanation": "Les attaquants lisent aussi les annonces de correctifs."
+        },
+        {
+          "id": "d1-m0-defenses-16",
+          "type": "qcm",
+          "question": "Une entreprise lit le journal de son serveur et voit mille tentatives de connexion échouées à trois heures du matin. Que montre ce journal ?",
+          "options": [
+            "Une possible attaque à examiner",
+            "Que le serveur est en bonne santé",
+            "Que le pare-feu a disparu"
+          ],
+          "options_why": [
+            "",
+            "Mille tentatives refusées en pleine nuit ne sont pas un signe de bonne santé.",
+            "Rien dans le journal ne dit que le pare-feu a disparu."
+          ],
+          "answer": "Une possible attaque à examiner",
+          "explanation": "Les journaux servent à repérer ce genre de signe pour réagir vite."
+        },
+        {
+          "id": "d1-m0-defenses-17",
+          "type": "whatif",
+          "question": "Et si la seule copie de ta sauvegarde était sur le même ordinateur ?",
+          "answer": "Une panne, un vol ou un ransomware pourrait détruire l'original et la copie en même temps. Il vaut mieux garder une copie ailleurs.",
+          "explanation": "Une copie au même endroit que l'original ne protège pas d'un problème qui touche cet endroit.",
+          "explanation_more": "Le manuel demande qu'au moins un jeu de sauvegardes soit gardé hors du site principal."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-faille-menace",
+      "name": "Faille, menace, attaque : trois mots à ne pas mélanger (vulnerability, threat, attack)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La fenêtre ouverte",
+          "paragraphes": [
+            "Tu pars en vacances en laissant une fenêtre ouverte. Personne n'est encore entré. Un cambrioleur passe pourtant devant la maison et regarde la fenêtre.",
+            "Trois choses existent déjà : une fenêtre ouverte, un cambrioleur possible et des objets de valeur à l'intérieur. Le vol n'a pas encore eu lieu.",
+            "Les experts ont un mot pour chacune. La fenêtre ouverte est une faille, ou vulnérabilité (vulnerability). Le cambrioleur est une menace (threat)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La maison et ses trois éléments",
+          "comme": "La fenêtre ouverte est un point faible. Le cambrioleur est un danger possible. Quand il entre pour de bon, c'est le cambriolage.",
+          "enVrai": "Une faille est un point faible d'un système. Une menace est ce qui peut en profiter. L'attaque est le moment où quelqu'un en profite vraiment. Les objets de valeur sont les actifs (assets)."
+        },
+        {
+          "type": "predire",
+          "question": "Un logiciel a un défaut connu, mais personne ne s'en est encore servi. Que doit-on dire ?",
+          "options": [
+            "Il y a une faille",
+            "Il y a une attaque",
+            "Il y a un virus"
+          ],
+          "answer": "Il y a une faille",
+          "explanation": "Le défaut est un point faible : c'est une faille. Sans personne pour s'en servir, il n'y a pas encore d'attaque. « Attaque » est tentant parce que le mot fait peur, mais rien ne s'est passé."
+        },
+        {
+          "type": "analogie",
+          "titre": "Le risque, comme la pluie",
+          "comme": "Le ciel est gris et tu as oublié ton parapluie. La pluie est possible, et tu seras mouillé si elle tombe.",
+          "enVrai": "Le risque (risk) est la chance qu'une menace profite d'une faille et fasse du mal à un actif. Il dépend de la probabilité (la chance que ça arrive) et de l'impact (la gravité des dégâts). Sans faille ou sans menace, le risque baisse."
+        },
+        {
+          "type": "exemple",
+          "titre": "Au bureau",
+          "texte": "Un employé garde son mot de passe sur un papier collé à l'écran : c'est une faille. Un visiteur curieux est une menace. S'il note le mot de passe et se connecte, c'est une attaque. Les données de l'entreprise sont l'actif en danger."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-faille-menace-1",
+          "type": "flash",
+          "question": "C'est quoi, une faille (vulnerability) ?",
+          "answer": "Une faille, ou vulnérabilité, est un point faible dans un système, qu'un attaquant peut utiliser. Exemple : un logiciel jamais mis à jour.",
+          "explanation": "La faille est dans le système : elle existe même si personne ne s'en sert.",
+          "explanation_more": "Définition simple. La définition officielle du manuel arrive plus loin, dans la galaxie sur les menaces et le risque (D1.11).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-faille-menace-2",
+          "type": "flash",
+          "question": "C'est quoi, une menace (threat) ?",
+          "answer": "Une menace est un événement ou une personne qui peut causer des dégâts. Exemples : un pirate, un incendie, un employé en colère.",
+          "explanation": "La menace n'est pas dans le système : c'est ce qui peut le toucher.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-faille-menace-3",
+          "type": "duel",
+          "question": "Une porte de bureau mal fermée : faille ou menace ?",
+          "options": ["Une faille", "Une menace"],
+          "answer": "Une faille",
+          "explanation": "La porte mal fermée est un point faible. La menace serait la personne qui pourrait en profiter."
+        },
+        {
+          "id": "d1-m0-faille-menace-4",
+          "type": "flash",
+          "question": "Quand une menace profite d'une faille, comment appelle-t-on cela ?",
+          "answer": "Une attaque. C'est le moment où quelqu'un profite vraiment d'une faille pour nuire.",
+          "explanation": "Faille, menace, attaque : le point faible, le danger, puis le passage à l'acte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-faille-menace-5",
+          "type": "flash",
+          "question": "C'est quoi, un actif (asset) ?",
+          "answer": "Un actif est tout ce qui a de la valeur pour une entreprise : des personnes, des machines, des données. Exemple : la liste des clients.",
+          "explanation": "Un actif est ce qu'on cherche à protéger.",
+          "explanation_more": "Le manuel dit qu'un actif est « anything of value », et cite les personnes, les biens et l'information.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-faille-menace-6",
+          "type": "sort",
+          "question": "Faille, menace ou actif ?",
+          "answer": "Faille : le logiciel non mis à jour et le mot de passe trop simple. Menace : le ransomware et l'ancien employé en colère. Actif : la base clients et les serveurs.",
+          "explanation": "La faille est le trou. La menace est ce qui peut s'y glisser. L'actif est ce qu'on veut protéger.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Faille", "Menace", "Actif"],
+            "items": [
+              { "text": "Un logiciel jamais mis à jour", "category": "Faille" },
+              { "text": "Un mot de passe beaucoup trop simple", "category": "Faille" },
+              { "text": "Un ransomware qui circule", "category": "Menace" },
+              { "text": "Un ancien employé en colère", "category": "Menace" },
+              { "text": "La base de données des clients", "category": "Actif" },
+              { "text": "Les serveurs de l'entreprise", "category": "Actif" }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-faille-menace-7",
+          "type": "flash",
+          "question": "C'est quoi, un risque (risk) ?",
+          "answer": "Un risque est la chance qu'une menace profite d'une faille et fasse du mal à un actif. Il dépend de la probabilité et de l'impact.",
+          "explanation": "Sans menace, ou sans faille, le risque est plus faible.",
+          "explanation_more": "Le manuel dit que le risque se trouve à l'intersection des menaces, des vulnérabilités et des actifs.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-faille-menace-8",
+          "type": "flash",
+          "question": "C'est quoi, une menace interne (insider threat) ?",
+          "answer": "Une menace interne vient de quelqu'un de l'intérieur : un employé, un ancien employé ou un partenaire. Elle peut être voulue ou due à une erreur.",
+          "explanation": "Une menace interne n'a pas besoin de forcer la porte : elle a déjà une clé.",
+          "explanation_more": "Le manuel dit que la menace interne est souvent considérée comme une préoccupation majeure de sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-faille-menace-9",
+          "type": "duel",
+          "question": "Une inondation peut détruire un centre de données : est-ce une menace ou une faille ?",
+          "options": ["Une menace", "Une faille"],
+          "answer": "Une menace",
+          "explanation": "L'inondation est un événement dangereux : une menace. La faille serait de n'avoir aucune protection contre l'eau.",
+          "explanation_more": "Le manuel cite les inondations, la chaleur excessive et les pannes de courant parmi les menaces environnementales."
+        },
+        {
+          "id": "d1-m0-faille-menace-10",
+          "type": "flash",
+          "question": "Une menace peut-elle être accidentelle ?",
+          "answer": "Oui. Une panne, un incendie ou l'erreur d'un employé sont des menaces, même sans intention de nuire.",
+          "explanation": "On protège donc contre les erreurs et les accidents, pas seulement contre les pirates.",
+          "explanation_more": "Le manuel dit qu'une menace peut venir d'une personne qui compromet un actif volontairement ou par accident."
+        },
+        {
+          "id": "d1-m0-faille-menace-11",
+          "type": "cloze",
+          "question": "Une [[faille]] est un point faible ; une [[menace]] est un danger qui peut en profiter.",
+          "answer": "Une faille est un point faible ; une menace est un danger qui peut en profiter.",
+          "explanation": "La fenêtre ouverte et le cambrioleur : deux choses différentes."
+        },
+        {
+          "id": "d1-m0-faille-menace-12",
+          "type": "flash",
+          "question": "C'est quoi, une violation de données (data breach) ?",
+          "answer": "Une violation de données est un incident où des données sont lues ou volées sans autorisation. Exemple : une liste de clients qui se retrouve en ligne.",
+          "explanation": "C'est la conséquence possible d'une attaque réussie.",
+          "explanation_more": "Le manuel la décrit comme un cybercrime où l'information est consultée ou volée sans autorisation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-faille-menace-13",
+          "type": "qcm",
+          "question": "Sur un site, le mot de passe administrateur est resté « 1234 ». Que représente « 1234 » ?",
+          "options": ["Une faille", "Une menace", "Un actif"],
+          "options_why": [
+            "",
+            "Une menace est ce qui peut profiter d'un point faible, comme un pirate. Ici, « 1234 » est le point faible lui-même.",
+            "Un actif est ce qu'on protège, comme les données. Ici, « 1234 » est le trou dans la protection."
+          ],
+          "answer": "Une faille",
+          "explanation": "C'est un point faible facile à deviner : une faille."
+        },
+        {
+          "id": "d1-m0-faille-menace-14",
+          "type": "why",
+          "question": "Pourquoi corriger une faille même si personne ne l'a encore utilisée ?",
+          "answer": "Parce qu'une menace peut apparaître plus tard, sans prévenir. Une fois la faille connue, quelqu'un peut en profiter à tout moment.",
+          "explanation": "Mieux vaut fermer la fenêtre avant l'arrivée du cambrioleur."
+        },
+        {
+          "id": "d1-m0-faille-menace-15",
+          "type": "sort",
+          "question": "Remets les étapes dans l'ordre, de la faille jusqu'aux dégâts.",
+          "answer": "Une faille existe. Un attaquant la découvre. Il s'en sert : c'est l'attaque. Des données sont volées ou bloquées. L'entreprise subit des dégâts.",
+          "explanation": "On peut couper la chaîne à chaque étape : corriger la faille, repérer l'attaque, limiter les dégâts.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Une faille existe dans un logiciel",
+              "Un attaquant la découvre",
+              "Il s'en sert : c'est l'attaque",
+              "Des données sont volées ou bloquées",
+              "L'entreprise subit des dégâts"
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-faille-menace-16",
+          "type": "whatif",
+          "question": "Et si on corrige toutes les failles connues : le risque disparaît-il ?",
+          "answer": "Non. Des menaces comme les pannes ou les erreurs restent possibles, et de nouvelles failles peuvent apparaître. Le risque baisse, mais ne disparaît jamais.",
+          "explanation": "On ne vise pas le risque zéro : on le rend acceptable.",
+          "explanation_more": "Le manuel appelle risque résiduel (residual risk) celui qui reste après les mesures de protection."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-entreprise",
+      "name": "L'entreprise et la loi (organization, law, audit)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le règlement du collège",
+          "paragraphes": [
+            "Au collège, il y a un règlement : pas de téléphone en classe, carnet de correspondance obligatoire. D'autres règles viennent de la loi, comme l'obligation d'aller à l'école.",
+            "Une entreprise vit aussi avec des règles de plusieurs origines : les siennes, celles de ses partenaires et celles de l'État.",
+            "En sécurité, il faut les connaître toutes. Sinon, on risque une sanction ou la perte de confiance des clients."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Des règles à plusieurs niveaux",
+          "comme": "À la maison, tu suis les règles de tes parents. Au collège, celles du règlement. Dans la rue, celles de la loi. Elles s'ajoutent.",
+          "enVrai": "Une entreprise a ses règles internes, des normes que beaucoup acceptent de suivre, des contrats avec ses partenaires et des lois obligatoires. En cas de conflit, la loi passe avant le reste."
+        },
+        {
+          "type": "predire",
+          "question": "Une entreprise ne respecte pas une loi sur les données de ses clients. Que risque-t-elle ?",
+          "options": [
+            "Rien, une loi n'est qu'un conseil",
+            "Une amende ou un procès",
+            "Seulement une mauvaise note"
+          ],
+          "answer": "Une amende ou un procès",
+          "explanation": "Une loi est obligatoire. L'ignorer peut coûter une amende, c'est-à-dire une somme à payer, ou un procès. Un simple conseil, lui, n'oblige personne."
+        },
+        {
+          "type": "analogie",
+          "titre": "L'audit, comme le contrôle technique",
+          "comme": "Une voiture passe un contrôle technique. Un expert vérifie les freins et les phares, puis note ce qui ne va pas.",
+          "enVrai": "Un audit (audit) est un contrôle fait par une personne qui vérifie si l'entreprise respecte ses règles. L'auditeur lit des documents, pose des questions et teste. Il écrit ensuite un rapport."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un magasin et les données de ses clients",
+          "texte": "Un magasin garde le nom, l'adresse et l'e-mail de ses clients. Ce sont des données personnelles. Le magasin doit les garder secrètes. En Europe, une loi permet aux clients de demander leur suppression. Si le magasin ne respecte pas cette loi, il risque une amende."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-entreprise-1",
+          "type": "flash",
+          "question": "C'est quoi, une entreprise (organization) ?",
+          "answer": "Une entreprise est un groupe de personnes qui travaillent ensemble pour atteindre un but commun. Exemples : un magasin, une banque, un hôpital.",
+          "explanation": "Le mot anglais organization couvre aussi les administrations et les associations.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-2",
+          "type": "flash",
+          "question": "C'est quoi, un employé (employee) ?",
+          "answer": "Un employé est une personne qui travaille pour une entreprise et qui est payée par elle. Il a accès à certaines informations.",
+          "explanation": "Du directeur au plus jeune employé, chacun a un rôle dans la sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-3",
+          "type": "why",
+          "question": "Pourquoi un employé n'a-t-il pas accès à tous les fichiers de l'entreprise ?",
+          "answer": "Parce que chaque personne n'a besoin que de certaines informations. Plus il y a d'accès, plus il y a de risques de fuite ou d'erreur.",
+          "explanation": "Chaque accès en trop est une porte ouverte inutile."
+        },
+        {
+          "id": "d1-m0-entreprise-4",
+          "type": "flash",
+          "question": "C'est quoi, un prestataire ou fournisseur (contractor, vendor) ?",
+          "answer": "Un prestataire est une personne ou une entreprise extérieure qui fournit un service ou un produit. Exemple : un technicien engagé pour installer un réseau.",
+          "explanation": "Il peut avoir accès à des informations : il faut donc l'encadrer par un contrat.",
+          "explanation_more": "Le manuel cite les contractors, les consultants et les vendors parmi les tiers à encadrer.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-5",
+          "type": "flash",
+          "question": "C'est quoi, un client (customer) ?",
+          "answer": "Un client est une personne ou une entreprise qui achète ce que l'entreprise vend. Ses données personnelles doivent être protégées.",
+          "explanation": "Perdre les données des clients, c'est perdre aussi leur confiance.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-6",
+          "type": "sort",
+          "question": "Employé, prestataire ou client ?",
+          "answer": "Employé : la comptable et le vendeur. Prestataire : le technicien extérieur et le consultant. Client : l'acheteur et l'entreprise qui commande.",
+          "explanation": "Qui est payé par l'entreprise ? Qui lui rend un service ? Qui lui achète quelque chose ?",
+          "data": {
+            "mode": "classer",
+            "categories": ["Employé", "Prestataire", "Client"],
+            "items": [
+              { "text": "Une comptable payée par l'entreprise", "category": "Employé" },
+              { "text": "Un vendeur du magasin", "category": "Employé" },
+              { "text": "Un technicien d'une société extérieure venu réparer le réseau", "category": "Prestataire" },
+              { "text": "Un consultant engagé pour trois mois", "category": "Prestataire" },
+              { "text": "Une personne qui achète un produit sur le site", "category": "Client" },
+              { "text": "Une entreprise qui commande des fournitures", "category": "Client" }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-entreprise-7",
+          "type": "flash",
+          "question": "C'est quoi, un contrat (contract) ?",
+          "answer": "Un contrat est un accord écrit entre deux parties, qui dit ce que chacune doit faire. Exemple : le contrat avec un fournisseur de cloud.",
+          "explanation": "On peut s'appuyer sur lui si l'autre partie ne respecte pas l'accord.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-8",
+          "type": "flash",
+          "question": "C'est quoi, une règle interne (policy) ?",
+          "answer": "Une règle interne est une consigne que l'entreprise impose à ses employés. Exemple : verrouiller son écran quand on s'absente.",
+          "explanation": "On l'appelle aussi une politique : le mot anglais est policy.",
+          "explanation_more": "Le manuel définit les politiques, les normes, les procédures et les conseils dans la galaxie D1.8.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-9",
+          "type": "qcm",
+          "question": "Une entreprise promet par écrit à un client de garder ses fichiers accessibles. Comment appelle-t-on cet accord ?",
+          "options": ["Un contrat", "Une norme", "Un audit"],
+          "options_why": [
+            "",
+            "Une norme est un ensemble de règles reconnues, pas un accord entre deux parties.",
+            "Un audit est un contrôle, pas un accord."
+          ],
+          "answer": "Un contrat",
+          "explanation": "Un accord écrit entre deux parties est un contrat."
+        },
+        {
+          "id": "d1-m0-entreprise-10",
+          "type": "flash",
+          "question": "C'est quoi, une norme (standard) ?",
+          "answer": "Une norme est un ensemble de règles reconnues, que beaucoup d'entreprises choisissent de suivre. Exemple : la norme ISO 27001.",
+          "explanation": "L'État n'y oblige pas, sauf si un contrat ou une loi le demande.",
+          "explanation_more": "Le manuel cite ISO/IEC 27001 comme norme très répandue en sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-11",
+          "type": "flash",
+          "question": "C'est quoi, une loi (law) ?",
+          "answer": "Une loi est une règle obligatoire écrite par l'État. Ne pas la respecter expose à une sanction.",
+          "explanation": "La loi s'impose à tous dans le pays concerné.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-12",
+          "type": "duel",
+          "question": "La norme ISO 27001, en général : un choix de l'entreprise ou une obligation de la loi ?",
+          "options": ["Un choix de l'entreprise", "Une obligation de la loi"],
+          "answer": "Un choix de l'entreprise",
+          "explanation": "Une norme est suivie par choix, ou parce qu'un contrat l'impose. Seule la loi s'impose à tous."
+        },
+        {
+          "id": "d1-m0-entreprise-13",
+          "type": "flash",
+          "question": "C'est quoi, une amende (fine) ?",
+          "answer": "Une amende est une somme d'argent à payer quand on n'a pas respecté une loi.",
+          "explanation": "C'est l'une des sanctions possibles, avec le procès et la perte de confiance.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-14",
+          "type": "flash",
+          "question": "C'est quoi, un audit (audit) ?",
+          "answer": "Un audit est un contrôle fait par une personne qui vérifie si l'entreprise respecte ses règles. Il se termine par un rapport.",
+          "explanation": "L'auditeur lit des documents, pose des questions et teste.",
+          "explanation_more": "Le manuel décrit ces trois méthodes : examiner, interroger et tester.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-15",
+          "type": "cloze",
+          "question": "Une [[loi]] est obligatoire ; une [[norme]] est suivie par choix ou par contrat.",
+          "answer": "Une loi est obligatoire ; une norme est suivie par choix ou par contrat.",
+          "explanation": "L'obligation vient de l'État d'un côté, du choix ou du contrat de l'autre."
+        },
+        {
+          "id": "d1-m0-entreprise-16",
+          "type": "flash",
+          "question": "C'est quoi, les données personnelles (personal data) ?",
+          "answer": "Les données personnelles sont les informations qui permettent de reconnaître une personne : nom, adresse, date de naissance. La loi oblige à les protéger.",
+          "explanation": "Plus une donnée identifie précisément quelqu'un, plus elle doit rester secrète.",
+          "explanation_more": "Le manuel utilise le terme PII (personally identifiable information), vu dans la galaxie D1.1.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-17",
+          "type": "flash",
+          "question": "C'est quoi, la conformité (compliance) ?",
+          "answer": "Être conforme, c'est respecter les lois, les normes et les contrats qui s'appliquent à l'entreprise. Le contraire s'appelle la non-conformité.",
+          "explanation": "Être conforme ne garantit pas d'être en sécurité : c'est seulement un premier pas.",
+          "explanation_more": "Le manuel précise que la conformité est une base solide, mais seulement la première étape vers la sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-m0-entreprise-18",
+          "type": "qcm",
+          "question": "Un magasin en ligne perd une liste de clients avec noms et adresses. Quelle conséquence est la plus probable ?",
+          "options": [
+            "Une amende et une perte de confiance",
+            "Aucune, ce sont juste des noms",
+            "Une mise à jour à installer"
+          ],
+          "options_why": [
+            "",
+            "Des noms et des adresses sont des données personnelles : la loi demande de les protéger.",
+            "Une mise à jour peut corriger un défaut, mais elle ne règle pas les conséquences d'une perte de données."
+          ],
+          "answer": "Une amende et une perte de confiance",
+          "explanation": "Des données personnelles perdues peuvent coûter de l'argent et la confiance des clients.",
+          "explanation_more": "Le manuel dit que les entreprises qui perdent le secret de leurs données risquent des sanctions et des dégâts de réputation."
+        },
+        {
+          "id": "d1-m0-entreprise-19",
+          "type": "why",
+          "question": "Pourquoi un audit est-il utile même si tout semble bien se passer ?",
+          "answer": "Parce qu'une personne extérieure voit ce qu'on ne remarque plus. Elle repère les écarts avant qu'ils ne deviennent de vrais problèmes.",
+          "explanation": "On s'habitue à ses propres défauts : un regard neuf aide."
+        },
+        {
+          "id": "d1-m0-entreprise-20",
+          "type": "whatif",
+          "question": "Et si une entreprise suit toutes les normes, mais ignore une loi ?",
+          "answer": "Elle reste en infraction : la loi s'impose, même si les normes sont suivies. Les normes aident, mais ne remplacent pas la loi.",
+          "explanation": "On respecte d'abord la loi, puis on ajoute les normes."
+        }
+      ]
+    }
+
+  ]
+}

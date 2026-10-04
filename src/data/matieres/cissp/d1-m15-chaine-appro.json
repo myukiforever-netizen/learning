@@ -1,0 +1,1638 @@
+{
+  "id": "d1-m15-chaine-appro",
+  "name": "D1.15 Le risque de la chaîne d'approvisionnement",
+  "galaxie": { "teinte": 250, "ambiance": "mysterieux" },
+  "concepts": [
+    {
+      "id": "d1-appro-chaine",
+      "name": "La chaîne d'approvisionnement (supply chain)",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La cantine du collège",
+          "paragraphes": [
+            "La cantine de ton collège ne fabrique pas tout elle-même. Le pain vient d'une boulangerie, la viande d'un éleveur, les yaourts d'une usine.",
+            "Un jour, un seul lot de yaourts est avarié chez le fournisseur. Personne à la cantine n'a rien fait de mal. Pourtant, la moitié du collège est malade.",
+            "Les entreprises vivent la même chose avec leur matériel, leurs logiciels et leurs services. On parle du risque de la chaîne d'approvisionnement (supply chain risk)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Chaque fournisseur est un maillon",
+          "comme": "Une chaîne de vélo tient tant que tous ses maillons tiennent. Un seul maillon rouillé, et elle casse.",
+          "enVrai": "La chaîne d'approvisionnement (supply chain) regroupe tous les fournisseurs dont une entreprise dépend. Ils lui livrent du matériel (hardware), des logiciels (software) ou des services. Chaque fournisseur (vendor) est un maillon. L'image s'arrête ici : un maillon rouillé se voit, un risque chez un fournisseur reste souvent invisible."
+        },
+        {
+          "type": "predire",
+          "question": "Ton collège choisit un nouveau fournisseur de yaourts. Que fait-il avant de signer ?",
+          "options": [
+            "Il vérifie comment le fournisseur travaille",
+            "Il choisit le moins cher",
+            "Il fait confiance à un nom connu"
+          ],
+          "answer": "Il vérifie comment le fournisseur travaille",
+          "explanation": "Il confie une partie de la santé du collège à quelqu'un d'autre. Il doit donc vérifier. Le prix et la réputation sont tentants, mais ils ne prouvent rien sur la qualité."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le cloud et la loi",
+          "texte": "Une entreprise veut stocker ses données chez un fournisseur de cloud (CSP, cloud service provider). C'est une entreprise qui loue ses serveurs sur internet. Ce fournisseur garde les données dans un autre pays. La loi de ton pays peut l'interdire. Aucun pirate ici : le risque vient d'une règle de conformité (compliance) non respectée."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-appro-chaine-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « la chaîne d'approvisionnement (supply chain) »",
+          "answer": "Securing your organization's assets requires that you evaluate the security risk of your entire supply chain and that you apply appropriate controls to manage that risk.\n\nTraduction : Protéger les actifs de ton organisation exige d'évaluer le risque de sécurité de toute ta chaîne d'approvisionnement, et d'appliquer les contrôles adaptés pour gérer ce risque.",
+          "explanation": "Deux gestes : mesurer le risque chez tous les fournisseurs, puis agir.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Apply Supply Chain Risk Management Concepts ». Un actif, c'est tout ce qui a de la valeur pour l'entreprise : données, machines, logiciels.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-chaine-def3",
+          "type": "cloze",
+          "question": "Securing your organization's assets requires that you [[evaluate the security risk]] of your [[entire supply chain]] and that you [[apply appropriate controls]] to manage that risk.",
+          "answer": "Securing your organization's assets requires that you evaluate the security risk of your entire supply chain and that you apply appropriate controls to manage that risk.",
+          "explanation": "Trois blocs : évaluer le risque, regarder toute la chaîne, appliquer des contrôles adaptés.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-chaine-1",
+          "type": "flash",
+          "question": "C'est quoi, la chaîne d'approvisionnement en cybersécurité ?",
+          "answer": "Tous les fournisseurs dont l'entreprise dépend : matériel, logiciels et services. Si un maillon est fragile, tout ce qui le suit est exposé.",
+          "explanation": "Pense à la cantine : un seul lot avarié rend tout le monde malade.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-chaine-2",
+          "type": "duel",
+          "question": "Un fournisseur de cloud garde tes données dans un pays où la loi l'interdit. De quel risque s'agit-il ?",
+          "options": ["Un risque de conformité", "Un risque de panne matérielle"],
+          "answer": "Un risque de conformité",
+          "explanation": "Aucune machine ne tombe en panne : c'est une règle de loi qui n'est pas respectée.",
+          "explanation_more": "Le manuel cite ce cas : des données stockées hors du pays. Source : domaine 1, section « Risks Associated with Hardware, Software, and Services ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-chaine-3",
+          "type": "qcm",
+          "question": "Ton entreprise veut ajouter un logiciel acheté chez un éditeur. Que doit-elle regarder d'abord ?",
+          "options": [
+            "Son effet sur la sécurité globale",
+            "Le nombre de postes à équiper d'abord",
+            "Les promesses affichées par l'éditeur",
+            "Sa date de sortie sur le marché"
+          ],
+          "options_why": [
+            "",
+            "Le nombre de postes compte moins que l'impact sur la sécurité.",
+            "Une promesse n'est pas une preuve : il faut vérifier.",
+            "Un produit récent peut aussi cacher des risques."
+          ],
+          "answer": "Son effet sur la sécurité globale",
+          "explanation": "Avant d'ajouter un élément venu d'un tiers, on regarde comment il s'intègre. On regarde aussi ce qu'il change à la sécurité.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Risks Associated with Hardware, Software, and Services ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-chaine-4",
+          "type": "cloze",
+          "question": "Une entreprise doit évaluer le risque de toute sa [[chaîne d'approvisionnement]], pas seulement de ses propres machines.",
+          "answer": "Une entreprise doit évaluer le risque de toute sa chaîne d'approvisionnement, pas seulement de ses propres machines.",
+          "explanation": "Un risque peut arriver chez toi par n'importe quel fournisseur.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-chaine-5",
+          "type": "why",
+          "question": "Pourquoi une entreprise ne peut-elle pas protéger seulement ses propres ordinateurs ?",
+          "answer": "Parce qu'elle dépend de ses fournisseurs. Si l'un d'eux est piraté ou négligent, le problème arrive chez elle. Il passe par le matériel, le logiciel ou le service livré.",
+          "explanation": "Un maillon faible ailleurs devient un maillon faible chez toi.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-chaine-6",
+          "type": "sort",
+          "question": "Dans quelle famille range-t-on chaque exemple de fournisseur ?",
+          "answer": "Matériel : les ordinateurs portables et les disques durs. Logiciel : le traitement de texte et la messagerie. Service : l'hébergement chez un fournisseur de cloud et le prestataire de paie.",
+          "explanation": "Le matériel se touche, le logiciel s'installe, le service est rendu par une entreprise extérieure.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Matériel", "Logiciel", "Service"],
+            "items": [
+              { "text": "Des ordinateurs portables achetés en gros", "category": "Matériel" },
+              { "text": "Des disques durs pour les serveurs", "category": "Matériel" },
+              { "text": "Un traitement de texte acheté avec sa licence", "category": "Logiciel" },
+              { "text": "Une messagerie installée sur tous les postes", "category": "Logiciel" },
+              { "text": "L'hébergement d'un site chez un fournisseur de cloud", "category": "Service" },
+              { "text": "Un prestataire qui calcule les paies", "category": "Service" }
+            ]
+          }
+        },
+        {
+          "id": "d1-appro-chaine-7",
+          "type": "flash",
+          "question": "Que veut dire CSP ?",
+          "answer": "Cloud service provider : un fournisseur de cloud, c'est-à-dire une entreprise qui loue ses serveurs sur internet.",
+          "explanation": "C'est un fournisseur de plus dans ta chaîne d'approvisionnement.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-chaine-8",
+          "type": "whatif",
+          "question": "Et si ton fournisseur de cloud ne respecte pas les exigences de sécurité que la loi ou ton contrat t'imposent ?",
+          "answer": "Ton entreprise court un risque de sécurité, car elle ne respecte plus ses propres obligations. Il faut donc vérifier avant de signer.",
+          "explanation": "Les obligations légales et contractuelles restent les tiennes, même si le fournisseur s'occupe des serveurs.",
+          "explanation_more": "Le manuel donne ce cas : un fournisseur de cloud qui ne répond pas aux exigences légales ou contractuelles.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-chaine-9",
+          "type": "flash",
+          "question": "Cite deux risques possibles quand on utilise un fournisseur de cloud.",
+          "answer": "Un risque de conformité si les données sont stockées hors du pays. Un risque de sécurité si le fournisseur ne respecte pas les exigences légales ou contractuelles.",
+          "explanation": "Les deux viennent du fait que tu confies des données à un tiers.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-chaine-10",
+          "type": "problem",
+          "question": "Ton entreprise veut louer un service de cloud. Écris deux questions à poser au fournisseur avant de signer.",
+          "answer": "Où mes données seront-elles stockées, dans quel pays ? Respectez-vous les exigences de sécurité que la loi ou mon contrat m'imposent ?",
+          "explanation": "Ces deux questions couvrent les risques cités dans le manuel.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-appro-attaques",
+      "name": "Le code malveillant dans la chaîne (malicious code in the supply chain)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "La mise à jour de confiance",
+          "paragraphes": [
+            "Ton téléphone te propose une mise à jour. Tu appuies sur Installer sans hésiter, car elle vient de l'éditeur de l'appli.",
+            "Imagine qu'un pirate ait glissé un piège dans cette mise à jour avant son départ. Ce piège pourrait être un cheval de Troie (Trojan), un programme caché dans un logiciel normal. Tout le monde l'installerait.",
+            "On n'attaque plus la victime, mais son fournisseur. C'est une attaque par la chaîne d'approvisionnement (supply chain attack)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le cachet de la poste",
+          "comme": "Une lettre porte le cachet de la poste. Si quelqu'un glisse un piège dans l'enveloppe avant le cachet, tout le monde croira la lettre officielle.",
+          "enVrai": "Un éditeur signe ses mises à jour (code signing) : c'est un cachet numérique qui prouve qu'elles viennent de lui. Si le piège est ajouté avant la signature, le cachet reste valide. L'image s'arrête ici : le cachet prouve l'origine, pas l'absence de piège."
+        },
+        {
+          "type": "predire",
+          "question": "En 2017, une mise à jour officielle d'un logiciel connu contenait un cheval de Troie. Pourquoi tant de gens l'ont-ils installée ?",
+          "options": [
+            "Elle venait de l'éditeur lui-même",
+            "Elle promettait de l'argent",
+            "Elle arrivait par un mail inconnu"
+          ],
+          "answer": "Elle venait de l'éditeur lui-même",
+          "explanation": "Les utilisateurs avaient confiance en l'éditeur. Ici, la confiance était la faille. Les promesses d'argent et les mails inconnus piègent aussi, mais pas dans ce cas."
+        },
+        {
+          "type": "exemple",
+          "titre": "CCleaner, 2017",
+          "texte": "L'éditeur du logiciel CCleaner envoie à ses utilisateurs une mise à jour de routine. Elle contient un cheval de Troie d'accès à distance (remote-access Trojan). Il donne à l'attaquant la main sur l'ordinateur, de loin. Le code piégé a été ajouté avant la signature. Le manuel parle de plus de 2 milliards de téléchargements."
+        },
+        {
+          "type": "exemple",
+          "titre": "SolarWinds, 2020",
+          "texte": "En 2020, la société FireEye révèle une attaque géante, appelée SUNBURST. Elle passe par Orion, un produit de SolarWinds qui sert à surveiller et à gérer l'informatique. L'outil censé protéger est devenu l'arme. Parmi les victimes : Microsoft, Intel, des agences américaines et FireEye elle-même. SolarWinds estime environ 18 000 entreprises touchées."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-appro-attaques-cots-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les logiciels « COTS »",
+          "answer": "The widespread use of proprietary commercial off-the-shelf (COTS) software requires customers to trust the security practices of the vendors.\n\nTraduction : L'usage répandu de logiciels propriétaires du commerce (COTS, commercial off-the-shelf) oblige les clients à faire confiance aux pratiques de sécurité des éditeurs.",
+          "explanation": "Un logiciel COTS est acheté tout fait : tu ne vois pas comment il est fabriqué, tu fais confiance.",
+          "explanation_more": "Définition du manuel (ISC)2, domaine 1, section « Malicious Code in the Supply Chain ». « Off-the-shelf » veut dire « sur étagère », comme un jeu vendu en boîte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-attaques-cots-def3",
+          "type": "cloze",
+          "question": "The widespread use of [[proprietary commercial off-the-shelf]] (COTS) software requires [[customers to trust]] the [[security practices]] of the vendors.",
+          "answer": "The widespread use of proprietary commercial off-the-shelf (COTS) software requires customers to trust the security practices of the vendors.",
+          "explanation": "Trois blocs : le logiciel du commerce, la confiance du client, les pratiques de l'éditeur.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-attaques-sunburst-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « SUNBURST »",
+          "answer": "SUNBURST is a vulnerability within the SolarWinds Orion Platform, which, if present and activated, allows an attacker to compromise the server on which the Orion product is running.\n\nTraduction : SUNBURST est une faille de la plateforme Orion de SolarWinds : si elle est présente et activée, elle permet à un attaquant de compromettre le serveur sur lequel tourne le produit Orion.",
+          "explanation": "Une faille cachée dans un outil de confiance, qui ouvre la porte aux attaquants.",
+          "explanation_more": "Définition du manuel (ISC)2, domaine 1. L'attaque a été révélée en 2020 par la société FireEye.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-attaques-sunburst-def3",
+          "type": "cloze",
+          "question": "SUNBURST is a [[vulnerability within]] the SolarWinds Orion Platform, which, [[if present and activated]], allows an attacker to [[compromise the server]] on which the Orion product is running.",
+          "answer": "SUNBURST is a vulnerability within the SolarWinds Orion Platform, which, if present and activated, allows an attacker to compromise the server on which the Orion product is running.",
+          "explanation": "Trois blocs : la faille, la condition (présente et activée), le résultat (le serveur est compromis).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-attaques-1",
+          "type": "flash",
+          "question": "Qu'est-ce qui rend une attaque par un fournisseur de logiciel si efficace ?",
+          "answer": "Les mises à jour viennent d'une source de confiance. Les utilisateurs les installent sans méfiance, donc le piège passe partout.",
+          "explanation": "La confiance dans l'éditeur devient la porte d'entrée.",
+          "explanation_more": "Le manuel dit que cette méthode est populaire chez les auteurs de malware. Les mises à jour viennent d'une source de confiance.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-attaques-2",
+          "type": "qcm",
+          "question": "Une entreprise installe la mise à jour officielle de son logiciel de comptabilité. Elle contenait un code piégé. Qu'est-ce qui a surtout été exploité ?",
+          "options": [
+            "La confiance en l'éditeur du logiciel",
+            "Un mot de passe trop faible",
+            "Un mail trompeur envoyé à un employé",
+            "Une faille du pare-feu de l'entreprise"
+          ],
+          "options_why": [
+            "",
+            "Aucun mot de passe n'est en cause : le piège est arrivé par la mise à jour.",
+            "Aucun employé n'a été trompé par un mail : la mise à jour semblait officielle.",
+            "Le piège est entré par le logiciel de confiance, pas en forçant le pare-feu."
+          ],
+          "answer": "La confiance en l'éditeur du logiciel",
+          "explanation": "L'entreprise a installé la mise à jour parce qu'elle faisait confiance à son fournisseur.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-attaques-3",
+          "type": "duel",
+          "question": "Quelle situation est une attaque de la chaîne d'approvisionnement ?",
+          "options": ["Un piège caché dans une mise à jour officielle", "Un mail trompeur envoyé à un employé"],
+          "answer": "Un piège caché dans une mise à jour officielle",
+          "explanation": "Dans le premier cas, l'attaquant passe par le fournisseur. Dans le second, il vise directement la personne.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-attaques-4",
+          "type": "why",
+          "question": "Pourquoi le code piégé de CCleaner est-il passé pour une mise à jour légitime ?",
+          "answer": "Le code malveillant a été inséré avant la signature. Tout le paquet de mise à jour semblait donc officiel aux utilisateurs.",
+          "explanation": "La signature prouve l'origine du paquet, pas la sécurité de son contenu.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Malicious Code in the Supply Chain ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-attaques-5",
+          "type": "cloze",
+          "question": "En [[2017]], la mise à jour de CCleaner contenait un cheval de Troie d'accès à distance.",
+          "answer": "En 2017, la mise à jour de CCleaner contenait un cheval de Troie d'accès à distance.",
+          "explanation": "Une mise à jour de routine, pourtant piégée.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1. Le manuel parle de plus de 2 milliards de téléchargements. C'est le chiffre donné par le livre.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-appro-attaques-6",
+          "type": "flash",
+          "question": "Quel produit a été piégé dans l'attaque SUNBURST ?",
+          "answer": "Orion, un produit de SolarWinds qui sert à surveiller et à gérer l'informatique.",
+          "explanation": "Ironie : l'outil censé surveiller les systèmes est devenu l'instrument du mal.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-attaques-7",
+          "type": "sort",
+          "question": "Dans quelle attaque range-t-on chaque détail ?",
+          "answer": "CCleaner : cheval de Troie livré, code ajouté avant la signature, plus de 2 milliards de téléchargements. SolarWinds : outil de surveillance piégé, annonce de FireEye, environ 18 000 entreprises touchées.",
+          "explanation": "CCleaner date de 2017 et concerne une mise à jour signée. SolarWinds date de 2020 et concerne un outil de surveillance.",
+          "data": {
+            "mode": "classer",
+            "categories": ["CCleaner (2017)", "SolarWinds (2020)"],
+            "items": [
+              { "text": "Un cheval de Troie d'accès à distance est livré dans la mise à jour", "category": "CCleaner (2017)" },
+              { "text": "Le code piégé a été ajouté avant la signature", "category": "CCleaner (2017)" },
+              { "text": "Plus de 2 milliards de téléchargements (chiffre du manuel)", "category": "CCleaner (2017)" },
+              { "text": "L'outil piégé sert à surveiller l'informatique", "category": "SolarWinds (2020)" },
+              { "text": "FireEye a révélé l'attaque, puis a découvert qu'elle en était victime", "category": "SolarWinds (2020)" },
+              { "text": "Environ 18 000 entreprises touchées", "category": "SolarWinds (2020)" }
+            ]
+          }
+        },
+        {
+          "id": "d1-appro-attaques-8",
+          "type": "flash",
+          "question": "Quelle société a révélé l'attaque SUNBURST, en 2020 ?",
+          "answer": "FireEye, qui en a aussi été victime.",
+          "explanation": "Même une société de cybersécurité de haut niveau peut être touchée.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « SolarWinds and the SUNBURST Attack ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-appro-attaques-9",
+          "type": "cloze",
+          "question": "SolarWinds estime qu'environ [[18 000|18000|dix-huit mille]] entreprises ont été touchées dans le monde.",
+          "answer": "SolarWinds estime qu'environ 18 000 entreprises ont été touchées dans le monde.",
+          "explanation": "Un seul produit piégé a touché des milliers d'entreprises.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « SolarWinds and the SUNBURST Attack ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-appro-attaques-10",
+          "type": "whatif",
+          "question": "Et si tu apprends que l'outil qui surveille ton informatique est lui-même piégé ?",
+          "answer": "Alors le piège a un accès très large à tes systèmes. Cet outil est partout et jouit de ta confiance. C'est ce qui a rendu SUNBURST si grave.",
+          "explanation": "Un outil de surveillance voit tout : s'il est piégé, l'attaquant voit tout aussi.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-attaques-11",
+          "type": "problem",
+          "question": "Tu es responsable de la sécurité d'une entreprise. Écris une chose à faire pour réduire le risque d'un éditeur de logiciel piégé.",
+          "answer": "Évaluer les pratiques de sécurité de l'éditeur avant d'acheter, puis le réévaluer et le surveiller régulièrement.",
+          "explanation": "On ne peut pas tout vérifier, mais on peut choisir ses fournisseurs et les suivre.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-appro-tiers",
+      "name": "L'évaluation et le suivi des tiers (third-party assessment and monitoring)",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le nouveau traiteur",
+          "paragraphes": [
+            "Le collège change de traiteur pour la fête de fin d'année. Le traiteur promet des repas parfaits. Le directeur le croit sur parole.",
+            "Le jour J, on découvre que sa cuisine n'est pas propre. Si quelqu'un l'avait visitée avant, on l'aurait vu.",
+            "Quand une entreprise confie un travail à un tiers (third party : une entreprise extérieure), elle doit donc vérifier, puis surveiller. C'est l'évaluation et le suivi des tiers."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La visite de contrôle",
+          "comme": "Avant d'engager le traiteur, le directeur visite sa cuisine et lit ses rapports d'hygiène. Ensuite, il repasse de temps en temps.",
+          "enVrai": "L'entreprise fait pareil avec ses fournisseurs. Elle vérifie leur sécurité avant de signer. Ensuite, elle les réévalue régulièrement et les surveille en continu. L'image s'arrête ici : on ne peut pas toujours visiter un fournisseur situé à l'autre bout du monde. D'où la formule du manuel : « where feasible », c'est-à-dire quand c'est possible."
+        },
+        {
+          "type": "predire",
+          "question": "Le traiteur a réussi son contrôle en janvier. Faut-il encore le surveiller en juin ?",
+          "options": [
+            "Oui, on le revérifie régulièrement",
+            "Non, un seul contrôle suffit",
+            "Seulement après un accident"
+          ],
+          "answer": "Oui, on le revérifie régulièrement",
+          "explanation": "Un fournisseur change : nouveaux employés, nouvelles méthodes. Le manuel demande de réévaluer régulièrement et de surveiller en continu. Attendre l'accident est tentant, mais il est alors trop tard."
+        },
+        {
+          "type": "exemple",
+          "titre": "Trois contrôles possibles",
+          "texte": "Pour vérifier un fournisseur, le manuel cite trois activités. La visite de sa sécurité sur place (onsite security survey). L'audit formel (formal security audit), un examen méthodique de ses systèmes. Le test d'intrusion (penetration testing) : des experts, avec accord, essaient de pénétrer ses systèmes pour trouver les failles."
+        },
+        {
+          "type": "exemple",
+          "titre": "Un nouveau prestataire de paie",
+          "texte": "Une entreprise veut engager un prestataire de paie. Elle compare ses pratiques avec ses exigences de sécurité. Il manque un contrôle d'accès ? Elle note cet écart (gap) par écrit, puis le suit de près."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-appro-tiers-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « third-party risk management policy »",
+          "answer": "Any organization that does business with contractors, vendors, or any other third parties should have a third-party risk management policy that establishes a third-party risk management program responsible for assessing, monitoring, and controlling risks associated with outsourcing to third parties.\n\nTraduction : Toute organisation qui travaille avec des sous-traitants, des fournisseurs ou d'autres tiers devrait avoir une politique de gestion du risque lié aux tiers. Elle met en place un programme chargé d'évaluer, de surveiller et de contrôler les risques de l'externalisation vers des tiers.",
+          "explanation": "Trois verbes à retenir : évaluer, surveiller, contrôler.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Third-Party Assessment and Monitoring ». Externaliser (outsourcing), c'est confier une tâche à une entreprise extérieure.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-tiers-def2",
+          "type": "cloze",
+          "question": "Any organization that does business with contractors, vendors, or any other third parties should have a third-party risk management [[policy]] that establishes a third-party risk management [[program]] responsible for assessing, monitoring, and controlling risks associated with outsourcing to third parties.",
+          "answer": "Any organization that does business with contractors, vendors, or any other third parties should have a third-party risk management policy that establishes a third-party risk management program responsible for assessing, monitoring, and controlling risks associated with outsourcing to third parties.",
+          "explanation": "La politique (policy) décide, le programme (program) agit.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-tiers-def3",
+          "type": "cloze",
+          "question": "Any organization that does business with [[contractors, vendors]], or any other third parties should have a [[third-party risk management policy]] that establishes a third-party risk management program responsible for [[assessing, monitoring, and controlling]] risks associated with outsourcing to third parties.",
+          "answer": "Any organization that does business with contractors, vendors, or any other third parties should have a third-party risk management policy that establishes a third-party risk management program responsible for assessing, monitoring, and controlling risks associated with outsourcing to third parties.",
+          "explanation": "Trois blocs : avec qui on travaille, la politique, et les trois verbes du programme.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-tiers-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « third-party risk management policy » (en anglais).",
+          "answer": "Any organization that does business with contractors, vendors, or any other third parties should have a third-party risk management policy that establishes a third-party risk management program responsible for assessing, monitoring, and controlling risks associated with outsourcing to third parties.\n\nTraduction : Toute organisation qui travaille avec des sous-traitants, des fournisseurs ou d'autres tiers devrait avoir une politique de gestion du risque lié aux tiers. Elle met en place un programme chargé d'évaluer, de surveiller et de contrôler les risques de l'externalisation vers des tiers.",
+          "explanation": "Commence par « Any organization… », puis cherche politique, programme, et les trois verbes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-tiers-controles-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : les activités de surveillance des tiers",
+          "answer": "Governance and oversight activities should include onsite security surveys, formal security audits of third-party systems, and penetration testing, where feasible.\n\nTraduction : Les activités de gouvernance et de supervision devraient inclure des visites de sécurité sur place, des audits de sécurité formels des systèmes des tiers, et des tests d'intrusion, quand c'est possible.",
+          "explanation": "Trois contrôles : visiter, auditer, tester. Et toujours « where feasible » : quand c'est possible.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1. Le manuel renvoie au chapitre 6 pour les audits.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-tiers-controles-def3",
+          "type": "cloze",
+          "question": "Governance and oversight activities should include [[onsite security surveys]], [[formal security audits]] of third-party systems, and [[penetration testing]], where feasible.",
+          "answer": "Governance and oversight activities should include onsite security surveys, formal security audits of third-party systems, and penetration testing, where feasible.",
+          "explanation": "Trois blocs : la visite, l'audit, le test d'intrusion.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-tiers-nouveau-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : évaluer un nouveau tiers",
+          "answer": "Any new third party should be assessed against your organization's security requirements, and gaps should be documented and closely monitored.\n\nTraduction : Tout nouveau tiers devrait être évalué par rapport aux exigences de sécurité de ton organisation, et les écarts devraient être documentés et suivis de près.",
+          "explanation": "Évaluer, noter les écarts (gaps), les suivre de près.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Third-Party Assessment and Monitoring ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-tiers-nouveau-def3",
+          "type": "cloze",
+          "question": "Any new third party should be [[assessed against]] your organization's [[security requirements]], and gaps should be [[documented and closely monitored]].",
+          "answer": "Any new third party should be assessed against your organization's security requirements, and gaps should be documented and closely monitored.",
+          "explanation": "Trois blocs : l'évaluation, la référence (tes exigences), le sort des écarts.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-tiers-1",
+          "type": "flash",
+          "question": "Quel est le plus grand défi avec les fournisseurs, selon le manuel ?",
+          "answer": "S'assurer que les tiers font vraiment ce qu'ils doivent faire pour protéger les informations de l'entreprise.",
+          "explanation": "Les bons contrôles existent déjà. Le difficile, c'est d'obtenir que le tiers les applique.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Third-Party Assessment and Monitoring ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-tiers-2",
+          "type": "duel",
+          "question": "Laquelle de ces deux actions est un test d'intrusion ?",
+          "options": ["Des experts essaient de pénétrer les systèmes", "On lit le rapport du fournisseur"],
+          "answer": "Des experts essaient de pénétrer les systèmes",
+          "explanation": "Un test d'intrusion se fait pour de vrai, avec accord. Lire un rapport, c'est seulement croire ce qu'il dit.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-tiers-3",
+          "type": "qcm",
+          "question": "Un nouveau fournisseur n'a pas deux contrôles exigés par ton entreprise. Que fais-tu ?",
+          "options": [
+            "Je note ces écarts et je les suis",
+            "J'ignore ces écarts : il est nouveau",
+            "Je refuse tous les fournisseurs",
+            "J'attends le premier incident"
+          ],
+          "options_why": [
+            "",
+            "Un nouveau fournisseur doit être évalué comme les autres.",
+            "Refuser tout le monde n'est pas la solution : on documente et on surveille.",
+            "Attendre l'incident, c'est agir trop tard."
+          ],
+          "answer": "Je note ces écarts et je les suis",
+          "explanation": "Le manuel demande de documenter les écarts et de les surveiller de près.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-tiers-4",
+          "type": "sort",
+          "question": "À quelle activité de contrôle correspond chaque description ?",
+          "answer": "Visite sur place : observer ses locaux et ses serveurs. Audit formel : un examen méthodique avec rapport. Test d'intrusion : jouer l'attaquant avec accord.",
+          "explanation": "Visite = on regarde sur place. Audit = on examine selon des critères. Test d'intrusion = on essaie d'entrer.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Visite sur place", "Audit formel", "Test d'intrusion"],
+            "items": [
+              { "text": "Un expert se rend chez le fournisseur et observe sa sécurité sur place", "category": "Visite sur place" },
+              { "text": "On regarde sur place comment sont protégés ses locaux et ses serveurs", "category": "Visite sur place" },
+              { "text": "Un examen formel et méthodique des systèmes du tiers", "category": "Audit formel" },
+              { "text": "Un contrôle selon des critères précis, avec un rapport officiel", "category": "Audit formel" },
+              { "text": "Des experts essaient de pénétrer les systèmes pour trouver les failles", "category": "Test d'intrusion" },
+              { "text": "On joue le rôle d'un attaquant, avec l'accord du fournisseur", "category": "Test d'intrusion" }
+            ]
+          }
+        },
+        {
+          "id": "d1-appro-tiers-5",
+          "type": "cloze",
+          "question": "Les fournisseurs doivent être [[réévalués]] régulièrement et [[surveillés]] en continu.",
+          "answer": "Les fournisseurs doivent être réévalués régulièrement et surveillés en continu.",
+          "explanation": "Un seul contrôle au départ ne suffit pas.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-tiers-6",
+          "type": "why",
+          "question": "Pourquoi réévaluer un fournisseur déjà contrôlé ?",
+          "answer": "Parce qu'un fournisseur évolue : ses équipes, ses outils et ses pratiques changent. Seuls un suivi régulier et une surveillance continue montrent s'il protège toujours bien tes informations.",
+          "explanation": "Un bon contrôle en janvier ne garantit rien pour juin.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-tiers-7",
+          "type": "flash",
+          "question": "Que dit le manuel sur les écarts (gaps) trouvés chez un nouveau tiers ?",
+          "answer": "Ils doivent être documentés, c'est-à-dire notés, et suivis de près.",
+          "explanation": "Un écart connu et suivi est moins dangereux qu'un écart oublié.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-tiers-8",
+          "type": "sort",
+          "question": "Remets dans l'ordre les gestes à faire avec un nouveau fournisseur.",
+          "answer": "1. Évaluer le tiers selon les exigences de sécurité\n2. Documenter les écarts trouvés\n3. Surveiller ces écarts de près\n4. Réévaluer régulièrement le tiers\n5. Le surveiller en continu",
+          "explanation": "On évalue d'abord, on note, puis on suit. Le suivi ne s'arrête jamais.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Évaluer le tiers selon les exigences de sécurité",
+              "Documenter les écarts trouvés",
+              "Surveiller ces écarts de près",
+              "Réévaluer régulièrement le tiers",
+              "Le surveiller en continu"
+            ]
+          }
+        },
+        {
+          "id": "d1-appro-tiers-9",
+          "type": "whatif",
+          "question": "Et si ton entreprise ne peut pas visiter un fournisseur situé à l'étranger ?",
+          "answer": "Le manuel demande ces contrôles « where feasible », c'est-à-dire quand c'est possible. Il faut alors choisir ceux qui restent possibles.",
+          "explanation": "La formule « quand c'est possible » reconnaît que tous les contrôles ne sont pas toujours réalisables.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-tiers-10",
+          "type": "problem",
+          "question": "Ton entreprise va confier sa paie à un prestataire. Écris trois actions pour limiter le risque.",
+          "answer": "Évaluer le prestataire avant de signer, documenter et suivre les écarts, puis le réévaluer et le surveiller régulièrement.",
+          "explanation": "Évaluer, suivre les écarts, réévaluer : le cycle complet du suivi des tiers.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-appro-msr",
+      "name": "Les exigences minimales de sécurité (minimum security requirements, MSR)",
+      "planete": { "relief": "gazeuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le règlement de la cantine",
+          "paragraphes": [
+            "Le collège choisit ses fournisseurs de repas. Il pose pourtant une règle de départ : tout fournisseur garde la viande au frais et lave ses locaux.",
+            "Un fournisseur peut faire mieux. S'il fait moins, il n'est pas accepté.",
+            "Pour une entreprise, cette règle de départ s'appelle une exigence minimale de sécurité (minimum security requirement, MSR)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La barre du saut en hauteur",
+          "comme": "Au saut en hauteur, la barre est placée à une hauteur minimale. Tu peux sauter plus haut, mais pas passer dessous.",
+          "enVrai": "Une MSR est cette barre. Elle fixe le niveau de sécurité le plus bas que l'entreprise accepte d'un fournisseur. Le fournisseur peut faire mieux, jamais moins. L'image s'arrête ici : la barre ne dit pas jusqu'où viser, seulement le plancher à respecter."
+        },
+        {
+          "type": "predire",
+          "question": "Une loi impose une règle de sécurité. Ton entreprise veut une MSR plus faible que cette loi. Est-ce permis ?",
+          "options": [
+            "Non : une MSR ne peut pas être sous la loi",
+            "Oui : l'entreprise fait ses propres règles",
+            "Oui, si le fournisseur est petit"
+          ],
+          "answer": "Non : une MSR ne peut pas être sous la loi",
+          "explanation": "Le manuel dit de ne jamais descendre sous une exigence externe, comme une loi, un contrat ou un règlement. Être chez soi est tentant, mais la loi passe avant."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une clinique et ses fournisseurs",
+          "texte": "Une clinique doit respecter une loi sur la protection des données de santé. Elle écrit ses MSR pour ses fournisseurs. Elle ne peut pas fixer des exigences plus faibles que la loi. Elle doit aussi vérifier, par un audit, que chaque fournisseur les respecte."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-appro-msr-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « minimum security requirements (MSRs) »",
+          "answer": "Similar to baselines and standards (discussed earlier in this chapter), your organization should establish minimum security requirements (MSRs) that define the least acceptable security standards that vendors and other parties in your supply chain must satisfy.\n\nTraduction : Comme pour les bases de référence et les standards (vus plus tôt dans ce chapitre), ton organisation devrait établir des exigences minimales de sécurité (MSR) qui définissent les standards de sécurité les moins élevés que les fournisseurs et les autres parties de ta chaîne doivent satisfaire.",
+          "explanation": "Mot-clé : « least acceptable », le moins élevé que tu acceptes.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Minimum Security Requirements ». Les bases de référence et les standards sont les règles de sécurité fixées par l'entreprise pour ses propres systèmes.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-msr-def2",
+          "type": "cloze",
+          "question": "Similar to baselines and standards (discussed earlier in this chapter), your organization should establish [[minimum]] security requirements (MSRs) that define the [[least]] acceptable security standards that vendors and other parties in your supply chain must satisfy.",
+          "answer": "Similar to baselines and standards (discussed earlier in this chapter), your organization should establish minimum security requirements (MSRs) that define the least acceptable security standards that vendors and other parties in your supply chain must satisfy.",
+          "explanation": "Deux mots pour le plancher : « minimum » et « least acceptable ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-msr-def3",
+          "type": "cloze",
+          "question": "Similar to baselines and standards (discussed earlier in this chapter), your organization should [[establish minimum security requirements]] (MSRs) that define the [[least acceptable security standards]] that [[vendors and other parties]] in your supply chain must satisfy.",
+          "answer": "Similar to baselines and standards (discussed earlier in this chapter), your organization should establish minimum security requirements (MSRs) that define the least acceptable security standards that vendors and other parties in your supply chain must satisfy.",
+          "explanation": "Trois blocs : établir les MSR, le niveau le plus bas accepté, ceux à qui elles s'imposent.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-msr-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « minimum security requirements (MSRs) » (en anglais).",
+          "answer": "Similar to baselines and standards (discussed earlier in this chapter), your organization should establish minimum security requirements (MSRs) that define the least acceptable security standards that vendors and other parties in your supply chain must satisfy.\n\nTraduction : Comme pour les bases de référence et les standards (vus plus tôt dans ce chapitre), ton organisation devrait établir des exigences minimales de sécurité (MSR) qui définissent les standards de sécurité les moins élevés que les fournisseurs et les autres parties de ta chaîne doivent satisfaire.",
+          "explanation": "Repère l'ordre : établir les MSR, définir le plancher, dire à qui ça s'impose.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-msr-plancher-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : ce que décrit une MSR",
+          "answer": "Of course, you should strive to ensure that your third parties have the strongest possible security postures, but MSRs, as the name suggests, describe the lowest level of security that your organization is willing to accept from a third party.\n\nTraduction : Bien sûr, tu dois chercher à ce que tes tiers aient les meilleures postures de sécurité possibles, mais les MSR, comme leur nom l'indique, décrivent le niveau de sécurité le plus bas que ton organisation accepte d'un tiers.",
+          "explanation": "On vise le plus fort, mais la MSR dit seulement le plus bas qu'on accepte.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1. Une posture de sécurité (security posture), c'est l'état général de la sécurité, comme la forme physique d'un sportif.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-msr-plancher-def3",
+          "type": "cloze",
+          "question": "Of course, you should strive to ensure that your third parties have the [[strongest possible]] security postures, but MSRs, as the name suggests, describe the [[lowest level of security]] that your organization is [[willing to accept]] from a third party.",
+          "answer": "Of course, you should strive to ensure that your third parties have the strongest possible security postures, but MSRs, as the name suggests, describe the lowest level of security that your organization is willing to accept from a third party.",
+          "explanation": "Trois blocs : on vise le plus fort, la MSR est le plus bas, que l'organisation accepte.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-msr-1",
+          "type": "flash",
+          "question": "Que veut dire le sigle MSR ?",
+          "answer": "Minimum security requirements : les exigences minimales de sécurité qu'un fournisseur doit respecter.",
+          "explanation": "Pense à la barre du saut en hauteur : un niveau plancher.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-msr-2",
+          "type": "duel",
+          "question": "Une MSR décrit le niveau de sécurité que l'entreprise...",
+          "options": ["Accepte au minimum d'un tiers", "Espère au mieux d'un tiers"],
+          "answer": "Accepte au minimum d'un tiers",
+          "explanation": "Une MSR est un plancher, pas un objectif idéal.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-msr-3",
+          "type": "qcm",
+          "question": "Une loi exige qu'un fournisseur chiffre les données. Ton entreprise écrit sa MSR. Quelle est la bonne idée ?",
+          "options": [
+            "Exiger le chiffrement, au moins comme la loi",
+            "Ne rien dire du chiffrement, qui coûte cher",
+            "Demander moins que la loi, pour rester souple",
+            "Laisser chaque fournisseur décider seul"
+          ],
+          "options_why": [
+            "",
+            "Le silence laisse le fournisseur libre de ne pas chiffrer : la loi ne serait pas respectée.",
+            "Une MSR ne doit pas être sous une exigence externe, comme la loi.",
+            "Sans règle commune, il n'y a plus de plancher."
+          ],
+          "answer": "Exiger le chiffrement, au moins comme la loi",
+          "explanation": "Une MSR tient compte des exigences légales, contractuelles et réglementaires. Elle ne descend jamais en dessous.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Minimum Security Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-msr-4",
+          "type": "cloze",
+          "question": "Une MSR décrit le niveau de sécurité le plus [[bas]] que l'entreprise accepte d'un tiers.",
+          "answer": "Une MSR décrit le niveau de sécurité le plus bas que l'entreprise accepte d'un tiers.",
+          "explanation": "Le plancher, pas le plafond.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-msr-5",
+          "type": "why",
+          "question": "Pourquoi une MSR doit-elle tenir compte des lois et des contrats ?",
+          "answer": "Parce que l'entreprise doit respecter ces exigences externes. Une MSR plus faible que la loi mettrait l'entreprise en infraction, même si le fournisseur respecte ses règles.",
+          "explanation": "La loi passe avant les règles internes.",
+          "explanation_more": "Le manuel dit : ne pas établir une MSR en dessous d'une exigence de conformité externe.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-msr-6",
+          "type": "sort",
+          "question": "Ta MSR dit : « chiffrer les données et garder des journaux ». Quels fournisseurs sont acceptés ?",
+          "answer": "Acceptés : celui qui chiffre et garde des journaux, celui qui fait cela et ajoute une double vérification. Refusés : celui qui garde des journaux sans chiffrer, celui qui chiffre sans journaux.",
+          "explanation": "Il faut atteindre le plancher. Faire plus est permis, faire moins ne l'est pas.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Accepté", "Refusé"],
+            "items": [
+              { "text": "Chiffre les données et garde des journaux", "category": "Accepté" },
+              { "text": "Chiffre les données, garde des journaux et ajoute une double vérification", "category": "Accepté" },
+              { "text": "Garde des journaux mais ne chiffre pas les données", "category": "Refusé" },
+              { "text": "Chiffre les données mais ne garde aucun journal", "category": "Refusé" }
+            ]
+          }
+        },
+        {
+          "id": "d1-appro-msr-7",
+          "type": "flash",
+          "question": "Que doit faire l'entreprise après avoir établi et communiqué ses MSR ?",
+          "answer": "Être prête à auditer et à évaluer la conformité des tiers à ces MSR.",
+          "explanation": "Une règle sans contrôle ne protège pas.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Minimum Security Requirements ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-msr-8",
+          "type": "whatif",
+          "question": "Et si un fournisseur est bien meilleur que la MSR ?",
+          "answer": "Aucun problème : la MSR est le niveau le plus bas accepté. Le manuel conseille même de viser les postures de sécurité les plus fortes possibles.",
+          "explanation": "Le plancher n'empêche pas de monter.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-msr-9",
+          "type": "problem",
+          "question": "Écris un exemple de MSR pour un fournisseur informatique de ton collège.",
+          "answer": "Par exemple : « Toutes les données des élèves doivent être chiffrées. » Une MSR fixe un seuil que chaque fournisseur doit satisfaire.",
+          "explanation": "Une bonne MSR est précise et peut être vérifiée par un audit.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-appro-sla",
+      "name": "L'accord de niveau de service (service-level agreement, SLA)",
+      "planete": { "relief": "glacee" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le contrat de la cantine",
+          "paragraphes": [
+            "Ton collège signe un contrat avec la cantine. Il y est écrit : les repas sont servis avant midi et demi, chaque jour.",
+            "Un mois plus tard, les repas arrivent à deux heures. Le collège montre le contrat et exige une réparation.",
+            "En informatique, ce genre de contrat s'appelle un accord de niveau de service (service-level agreement, SLA)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "La promesse du livreur",
+          "comme": "Un livreur de pizza promet : « en 30 minutes, ou c'est gratuit ». Si la pizza est en retard, tu as des droits.",
+          "enVrai": "Un SLA fonctionne pareil. Le fournisseur s'engage sur un niveau minimum de performance, écrit dans un contrat. S'il ne le tient pas, le client a des droits. L'image s'arrête ici : un SLA est un contrat signé et précis, pas une simple promesse orale."
+        },
+        {
+          "type": "predire",
+          "question": "Ton fournisseur de cloud tombe en panne pendant longtemps. Ton SLA prévoit un fonctionnement presque permanent. Que peut-il t'apporter ?",
+          "options": [
+            "Une compensation, ou partir sans pénalité",
+            "Rien : une panne est normale",
+            "Des excuses, c'est tout"
+          ],
+          "answer": "Une compensation, ou partir sans pénalité",
+          "explanation": "Le SLA est un contrat : le fournisseur est obligé de tenir sa promesse. Sinon, le client peut obtenir de l'argent ou mettre fin au service sans pénalité."
+        },
+        {
+          "type": "exemple",
+          "titre": "Le SLA d'un fournisseur de cloud",
+          "texte": "Une entreprise loue des serveurs chez un fournisseur de cloud. Le SLA promet un niveau de disponibilité du système (uptime : le temps où le service fonctionne). En cas de panne longue, l'entreprise peut recevoir une compensation financière. Elle peut aussi arrêter le service sans pénalité."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-appro-sla-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « service-level agreement (SLA) »",
+          "answer": "A service-level agreement (SLA) is a contractual agreement between a service provider and its customers that establishes the minimum performance standards that the provider is obligated to meet.\n\nTraduction : Un accord de niveau de service (SLA) est un accord contractuel entre un fournisseur de services et ses clients, qui établit les normes de performance minimales que le fournisseur est obligé de respecter.",
+          "explanation": "Mots-clés : contractuel, minimum, obligé. C'est la promesse écrite du fournisseur.",
+          "explanation_more": "Définition du manuel (ISC)2, domaine 1, section « Service-Level Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-sla-def2",
+          "type": "cloze",
+          "question": "A service-level agreement (SLA) is a [[contractual]] agreement between a service provider and its customers that establishes the minimum performance standards that the provider is [[obligated]] to meet.",
+          "answer": "A service-level agreement (SLA) is a contractual agreement between a service provider and its customers that establishes the minimum performance standards that the provider is obligated to meet.",
+          "explanation": "Un contrat, et une obligation : le fournisseur n'a pas le choix.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-sla-def3",
+          "type": "cloze",
+          "question": "A service-level agreement (SLA) is a [[contractual agreement]] between a [[service provider]] and its customers that establishes the [[minimum performance standards]] that the provider is obligated to meet.",
+          "answer": "A service-level agreement (SLA) is a contractual agreement between a service provider and its customers that establishes the minimum performance standards that the provider is obligated to meet.",
+          "explanation": "Trois blocs : le contrat, les deux parties, le minimum de performance.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-sla-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « service-level agreement (SLA) » (en anglais).",
+          "answer": "A service-level agreement (SLA) is a contractual agreement between a service provider and its customers that establishes the minimum performance standards that the provider is obligated to meet.\n\nTraduction : Un accord de niveau de service (SLA) est un accord contractuel entre un fournisseur de services et ses clients, qui établit les normes de performance minimales que le fournisseur est obligé de respecter.",
+          "explanation": "Retiens l'ordre : contrat, fournisseur et clients, performance minimale, obligation.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-sla-tiers-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : à quoi servent les SLA avec les tiers",
+          "answer": "When dealing with vendors and other third parties, SLAs serve as documented and agreed-upon performance requirements that a customer can use to hold the third party accountable.\n\nTraduction : Quand on traite avec des fournisseurs et d'autres tiers, les SLA servent d'exigences de performance documentées et convenues, qu'un client peut utiliser pour tenir le tiers responsable.",
+          "explanation": "Le SLA est la preuve écrite qui permet de demander des comptes.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Service-Level Requirements ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-sla-tiers-def3",
+          "type": "cloze",
+          "question": "When dealing with vendors and other third parties, SLAs serve as [[documented and agreed-upon]] [[performance requirements]] that a customer can use to [[hold the third party accountable]].",
+          "answer": "When dealing with vendors and other third parties, SLAs serve as documented and agreed-upon performance requirements that a customer can use to hold the third party accountable.",
+          "explanation": "Trois blocs : écrit et convenu, la performance, tenir le tiers responsable.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-sla-1",
+          "type": "flash",
+          "question": "Que veut dire SLA ?",
+          "answer": "Service-level agreement : l'accord de niveau de service, un contrat qui fixe les performances minimales du fournisseur.",
+          "explanation": "C'est la promesse écrite du fournisseur à son client.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-sla-2",
+          "type": "duel",
+          "question": "Le fournisseur s'engage par contrat à garantir un niveau de performance. Quel document est-ce ?",
+          "options": ["Un SLA", "Une MSR"],
+          "answer": "Un SLA",
+          "explanation": "Le SLA est la promesse du fournisseur sur la performance. La MSR est le seuil de sécurité fixé par le client.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-sla-3",
+          "type": "qcm",
+          "question": "Le site de ton entreprise, hébergé chez un fournisseur de cloud, est hors service pendant plusieurs jours. Que consultes-tu d'abord ?",
+          "options": [
+            "Le SLA signé avec le fournisseur",
+            "La politique de mots de passe",
+            "Le rapport annuel du fournisseur",
+            "Le règlement intérieur des employés"
+          ],
+          "options_why": [
+            "",
+            "Cette politique règle l'accès aux comptes, pas les pannes du fournisseur.",
+            "Un rapport décrit le passé et ne t'engage à rien envers toi.",
+            "Ce règlement concerne tes employés, pas ton fournisseur."
+          ],
+          "answer": "Le SLA signé avec le fournisseur",
+          "explanation": "Le SLA dit quelle disponibilité le fournisseur doit assurer et ce que tu peux exiger en cas de panne.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-sla-4",
+          "type": "cloze",
+          "question": "Un SLA est un accord [[contractuel]] entre un fournisseur de services et ses [[clients]].",
+          "answer": "Un SLA est un accord contractuel entre un fournisseur de services et ses clients.",
+          "explanation": "Un contrat, pas une simple promesse.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-sla-5",
+          "type": "why",
+          "question": "Pourquoi un client a-t-il intérêt à avoir un SLA avec son fournisseur ?",
+          "answer": "Parce que le SLA fixe par écrit les performances minimales. Si le fournisseur ne les tient pas, le client peut le tenir responsable : compensation ou fin du contrat.",
+          "explanation": "Sans écrit, impossible de prouver ce qui avait été promis.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-sla-6",
+          "type": "sort",
+          "question": "SLA ou MSR ? Classe chaque phrase.",
+          "answer": "SLA : le fournisseur s'engage sur le temps de fonctionnement, la compensation en cas de panne longue, le contrat signé. MSR : le niveau de sécurité le plus bas accepté, la barre imposée par le client, le contrôle prévu par l'entreprise.",
+          "explanation": "Le SLA vient du fournisseur et parle de performance. La MSR vient du client et parle de sécurité.",
+          "data": {
+            "mode": "classer",
+            "categories": ["SLA", "MSR"],
+            "items": [
+              { "text": "Le fournisseur s'engage sur un temps de fonctionnement minimum", "category": "SLA" },
+              { "text": "Une compensation est prévue en cas de panne longue", "category": "SLA" },
+              { "text": "Un contrat signé entre le fournisseur et ses clients", "category": "SLA" },
+              { "text": "Le niveau de sécurité le plus bas que l'entreprise accepte", "category": "MSR" },
+              { "text": "Une barre que le client impose à ses fournisseurs", "category": "MSR" },
+              { "text": "L'entreprise doit être prête à vérifier si les fournisseurs la respectent", "category": "MSR" }
+            ]
+          }
+        },
+        {
+          "id": "d1-appro-sla-7",
+          "type": "flash",
+          "question": "Que peut obtenir une entreprise si le service du fournisseur tombe en panne longtemps ?",
+          "answer": "Une compensation financière, ou le droit de mettre fin au service sans pénalité, selon ce que prévoit le SLA.",
+          "explanation": "C'est l'avantage d'un engagement écrit.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Service-Level Requirements ». Le manuel parle d'une panne soutenue (sustained outage).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-sla-8",
+          "type": "whatif",
+          "question": "Et si tu n'as aucun SLA avec ton fournisseur de cloud ?",
+          "answer": "Tu n'as aucun document pour exiger un niveau de performance. Tu ne peux pas le tenir responsable d'une panne, et tu dépends de sa bonne volonté.",
+          "explanation": "Sans engagement écrit, tout repose sur la confiance.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-sla-9",
+          "type": "problem",
+          "question": "Tu choisis un fournisseur de cloud. Écris un engagement de performance que tu voudrais voir dans le SLA.",
+          "answer": "Par exemple : un niveau minimum de disponibilité du système (uptime), avec une compensation en cas de panne longue.",
+          "explanation": "Un bon engagement est précis et mesurable.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-appro-nist",
+      "name": "Le NIST IR 7622 : dix pratiques pour la chaîne d'approvisionnement",
+      "planete": { "relief": "rocheuse" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Le guide des dix bonnes habitudes",
+          "paragraphes": [
+            "Après plusieurs cas de gastro dans des cantines, un organisme publie dix bonnes habitudes à suivre.",
+            "Une grande cantine de lycée et une petite buvette de club ne l'appliquent pas pareil. Chacune s'adapte à son rôle.",
+            "Pour la chaîne d'approvisionnement des systèmes informatiques, il existe une liste du même genre : le NIST IR 7622. Le NIST est un organisme du gouvernement américain qui publie des guides de sécurité."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Dix gestes pour rester en bonne santé",
+          "comme": "Dormir assez, bouger, se laver les mains : dix gestes simples protègent ta santé. Un sportif et un lycéen ne les adaptent pas pareil.",
+          "enVrai": "Le NIST IR 7622 est un guide de dix pratiques pour réduire le risque de la chaîne d'approvisionnement. Le texte précise que les actions changent selon le rôle de chacun, comme le niveau et le type de contrôle. L'image s'arrête ici : ce sont des pratiques de sécurité précises, pas des conseils généraux."
+        },
+        {
+          "type": "predire",
+          "question": "Dans une chaîne, tu es un petit fournisseur et ton voisin est un très gros fabricant. Vos contrôles sont-ils identiques ?",
+          "options": [
+            "Non : ils dépendent du rôle de chacun",
+            "Oui : tout le monde applique les mêmes",
+            "Seul le gros fabricant en applique"
+          ],
+          "answer": "Non : ils dépendent du rôle de chacun",
+          "explanation": "Le manuel dit que les actions, le niveau et le type de contrôle changent selon le rôle. Tout le monde y participe, mais pas de la même façon."
+        },
+        {
+          "type": "exemple",
+          "titre": "Deux pratiques en clair",
+          "texte": "Première pratique : « Uniquely identify supply chain elements, processes, and actors. » Autrement dit : tenir une liste précise de qui et quoi compose la chaîne. Dernière pratique : « Manage disposal and final disposition activities throughout the system or element lifecycle. » Autrement dit : même la fin de vie d'un matériel fait partie de la sécurité."
+        },
+        {
+          "type": "exemple",
+          "titre": "Deux autres textes américains",
+          "texte": "Le gouvernement américain a aussi la directive 505 du comité CNSS (Committee on National Security Systems). Elle fixe des exigences de sécurité pour les systèmes stratégiques nationaux. Il y a aussi l'initiative CNCI numéro 11. Elle donne aux agences des outils pour gérer leur chaîne d'approvisionnement cyber, selon une approche fondée sur le risque."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-appro-nist-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « NIST IR 7622 »",
+          "answer": "The U.S. government began directly addressing cyber supply chain risk as a separate issue with the publication of NIST IR 7622, \"Notional Supply Chain Risk Management Practices for Federal Information Systems.\"\n\nTraduction : Le gouvernement américain a commencé à traiter directement le risque cyber de la chaîne d'approvisionnement comme un sujet à part avec la publication du NIST IR 7622, « Notional Supply Chain Risk Management Practices for Federal Information Systems ».",
+          "explanation": "NIST IR 7622 : le premier texte américain à traiter ce risque à part.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « NIST IR 7622 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-nist-def3",
+          "type": "cloze",
+          "question": "The U.S. government began [[directly addressing]] cyber supply chain risk as a [[separate issue]] with the publication of [[NIST IR 7622]], \"Notional Supply Chain Risk Management Practices for Federal Information Systems.\"",
+          "answer": "The U.S. government began directly addressing cyber supply chain risk as a separate issue with the publication of NIST IR 7622, \"Notional Supply Chain Risk Management Practices for Federal Information Systems.\"",
+          "explanation": "Trois blocs : traiter directement, comme sujet à part, par le NIST IR 7622.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-nist-1",
+          "type": "flash",
+          "question": "Quel texte du NIST a servi de point de départ au traitement séparé du risque de la chaîne d'approvisionnement cyber ?",
+          "answer": "Le NIST IR 7622, « Notional Supply Chain Risk Management Practices for Federal Information Systems ».",
+          "explanation": "IR veut dire « interagency report », un rapport du NIST.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST IR 7622 ». Le sens de IR est hors manuel.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-appro-nist-2",
+          "type": "qcm",
+          "question": "Combien de pratiques le NIST IR 7622 identifie-t-il ?",
+          "options": ["10", "12", "5", "20"],
+          "options_why": [
+            "",
+            "Douze est le nombre de principes du NCSC britannique, une autre source.",
+            "Il y en a plus : dix en tout.",
+            "Il y en a moins : dix en tout."
+          ],
+          "answer": "10",
+          "explanation": "Dix pratiques à prendre en compte face au risque de la chaîne d'approvisionnement.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST IR 7622 ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-appro-nist-3",
+          "type": "sort",
+          "question": "Remets dans l'ordre du manuel les cinq premières pratiques.",
+          "answer": "1. Uniquely identify supply chain elements, processes, and actors\n2. Limit access and exposure within the supply chain\n3. Establish and maintain the provenance of elements, processes, tools, and data\n4. Share information within strict limits\n5. Perform supply chain risk management awareness and training",
+          "explanation": "Repère le fil : identifier, limiter l'accès, suivre l'origine, partager peu, former.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Uniquely identify supply chain elements, processes, and actors",
+              "Limit access and exposure within the supply chain",
+              "Establish and maintain the provenance of elements, processes, tools, and data",
+              "Share information within strict limits",
+              "Perform supply chain risk management awareness and training"
+            ]
+          }
+        },
+        {
+          "id": "d1-appro-nist-4",
+          "type": "sort",
+          "question": "Remets dans l'ordre du manuel les cinq dernières pratiques.",
+          "answer": "6. Use defensive design for systems, elements, and processes\n7. Perform continuous integrator review\n8. Strengthen delivery mechanisms\n9. Assure sustainment activities and processes\n10. Manage disposal and final disposition activities throughout the system or element lifecycle",
+          "explanation": "Repère le fil : concevoir pour résister, relire l'intégrateur, livrer sûr, maintenir, et finir proprement.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Use defensive design for systems, elements, and processes",
+              "Perform continuous integrator review",
+              "Strengthen delivery mechanisms",
+              "Assure sustainment activities and processes",
+              "Manage disposal and final disposition activities throughout the system or element lifecycle"
+            ]
+          }
+        },
+        {
+          "id": "d1-appro-nist-5",
+          "type": "flash",
+          "question": "Que veut dire « provenance » dans la pratique « establish and maintain the provenance » ?",
+          "answer": "La provenance, c'est l'origine et l'historique d'un élément : d'où il vient et par qui il est passé.",
+          "explanation": "Comme l'étiquette d'un produit qui dit où il a été fabriqué.",
+          "explanation_more": "Cette explication simple est hors manuel : le livre ne définit pas le mot.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-nist-6",
+          "type": "duel",
+          "question": "Quel texte américain concerne les systèmes stratégiques nationaux ?",
+          "options": ["La directive CNSS 505", "L'initiative CNCI numéro 11"],
+          "answer": "La directive CNSS 505",
+          "explanation": "La directive 505 fixe des exigences pour les systèmes stratégiques nationaux. La CNCI 11 donne des outils aux agences.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST IR 7622 ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-appro-nist-7",
+          "type": "flash",
+          "question": "Que veut dire « defensive design » dans la liste des pratiques ?",
+          "answer": "Concevoir les systèmes en prévoyant dès le départ que quelqu'un puisse les attaquer.",
+          "explanation": "Comme une maison conçue dès le plan avec des serrures solides.",
+          "explanation_more": "Cette explication simple est hors manuel : le livre ne définit pas l'expression.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-nist-8",
+          "type": "why",
+          "question": "Pourquoi les actions ne sont-elles pas identiques pour tous les acteurs de la chaîne ?",
+          "answer": "Parce que chaque acteur a un rôle différent. Le manuel dit que les actions, le niveau et le type de contrôle changent selon ce rôle.",
+          "explanation": "Un petit fournisseur et un gros fabricant n'ont pas les mêmes responsabilités.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-nist-9",
+          "type": "qcm",
+          "question": "Un petit fournisseur et un grand fabricant appliquent le NIST IR 7622 différemment. Est-ce normal ?",
+          "options": [
+            "Oui : le contrôle dépend du rôle de chacun",
+            "Non : tous doivent appliquer les mêmes contrôles",
+            "Non : seul le petit fournisseur doit s'adapter"
+          ],
+          "options_why": [
+            "",
+            "Le manuel dit que le niveau et le type de contrôle changent selon le rôle.",
+            "Les deux acteurs ont un rôle, donc les deux adaptent leurs actions."
+          ],
+          "answer": "Oui : le contrôle dépend du rôle de chacun",
+          "explanation": "Le texte demande des actions adaptées au rôle, pas un contrôle unique pour tous.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-nist-10",
+          "type": "cloze",
+          "question": "Le NIST IR 7622 identifie [[10|dix]] pratiques à prendre en compte face au risque de la chaîne d'approvisionnement.",
+          "answer": "Le NIST IR 7622 identifie 10 pratiques à prendre en compte face au risque de la chaîne d'approvisionnement.",
+          "explanation": "Dix, pas douze : douze, c'est le NCSC britannique.",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-appro-nist-11",
+          "type": "flash",
+          "question": "Quelle pratique du NIST IR 7622 concerne la fin de vie d'un matériel ou d'un logiciel ?",
+          "answer": "Manage disposal and final disposition activities throughout the system or element lifecycle. Autrement dit : gérer la mise au rebut tout au long du cycle de vie.",
+          "explanation": "C'est la dernière pratique de la liste.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-nist-12",
+          "type": "whatif",
+          "question": "Et si ton entreprise jette d'anciens disques durs sans précaution ?",
+          "answer": "Des données de l'entreprise pourraient sortir avec eux. La dernière pratique demande de gérer la mise au rebut pendant tout le cycle de vie.",
+          "explanation": "La sécurité ne s'arrête pas quand on n'utilise plus un matériel.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-nist-13",
+          "type": "problem",
+          "question": "Explique avec tes mots la pratique « Share information within strict limits ».",
+          "answer": "Ne partager les informations sur la chaîne qu'avec ceux qui en ont besoin, et dans des limites strictes.",
+          "explanation": "Moins il y a de personnes informées, moins l'information risque de fuiter.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-nist-14",
+          "type": "flash",
+          "question": "Que fait l'initiative CNCI numéro 11 ?",
+          "answer": "Elle donne aux agences américaines des outils pour gérer leur chaîne d'approvisionnement cyber. L'approche est fondée sur le risque (risk-driven).",
+          "explanation": "Des outils pratiques, pas seulement des principes.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « NIST IR 7622 ». CNCI veut dire Comprehensive National Cybersecurity Initiative.",
+          "retention_goal": "3m"
+        }
+      ]
+    },
+    {
+      "id": "d1-appro-iso28000",
+      "name": "ISO 28000 : un cadre pour la chaîne d'approvisionnement",
+      "planete": { "relief": "oceanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "L'entraîneur qui recommence chaque semaine",
+          "paragraphes": [
+            "Ton équipe de foot perd souvent. L'entraîneur prépare un plan, le teste en match, regarde le résultat, puis corrige.",
+            "Il recommence chaque semaine. L'équipe s'améliore doucement, sans tout changer d'un coup.",
+            "Les normes de sécurité utilisent la même idée : le cycle PDCA (plan, do, check, act). Une norme ISO est un texte de bonnes pratiques publié par l'organisation internationale ISO."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Le cycle de l'entraîneur",
+          "comme": "Planifier la séance, la faire, vérifier le score, agir pour corriger. Puis on recommence.",
+          "enVrai": "PDCA veut dire : Plan, planifier. Do, faire. Check, vérifier. Act, agir. Une entreprise répète ce cycle pour améliorer sa sécurité, tour après tour. L'image s'arrête ici : une saison de foot finit, le cycle PDCA ne s'arrête jamais."
+        },
+        {
+          "type": "predire",
+          "question": "ISO 28000 parle de la chaîne d'approvisionnement. Est-elle réservée à la cybersécurité ?",
+          "options": [
+            "Non : elle n'est pas propre à la cybersécurité",
+            "Oui : elle ne parle que de sécurité informatique"
+          ],
+          "answer": "Non : elle n'est pas propre à la cybersécurité",
+          "explanation": "Le manuel précise qu'ISO 28000 n'est pas spécifique à la cybersécurité. Elle s'intéresse à la chaîne en général. Penser qu'elle ne parle que d'informatique est un réflexe naturel."
+        },
+        {
+          "type": "exemple",
+          "titre": "Une norme qui s'ajoute aux autres",
+          "texte": "Une entreprise suit déjà ISO 9001 et ISO 27001, deux autres normes ISO. Elle ajoute ISO 28000 pour sa chaîne d'approvisionnement. Tout s'intègre dans ses audits et dans sa gestion globale des risques."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-appro-iso28000-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « ISO 28000 »",
+          "answer": "ISO 28000:2007, \"Specification for security management systems for the supply chain,\" provides a broad framework for managing supply chain risk.\n\nTraduction : ISO 28000:2007, « Spécification pour les systèmes de management de la sécurité de la chaîne d'approvisionnement », fournit un cadre large pour gérer le risque de la chaîne d'approvisionnement.",
+          "explanation": "ISO 28000 : un cadre large pour gérer le risque de la chaîne.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « ISO 28000 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-def2",
+          "type": "cloze",
+          "question": "ISO 28000:2007, \"Specification for security management systems for the supply chain,\" provides a broad [[framework]] for [[managing]] supply chain risk.",
+          "answer": "ISO 28000:2007, \"Specification for security management systems for the supply chain,\" provides a broad framework for managing supply chain risk.",
+          "explanation": "Un cadre (framework) pour gérer (managing) le risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-def3",
+          "type": "cloze",
+          "question": "ISO 28000:2007, \"[[Specification for security management systems]] for the supply chain,\" provides a [[broad framework]] for [[managing supply chain risk]].",
+          "answer": "ISO 28000:2007, \"Specification for security management systems for the supply chain,\" provides a broad framework for managing supply chain risk.",
+          "explanation": "Trois blocs : le titre de la norme, le cadre large, gérer le risque.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la définition officielle de « ISO 28000 » (en anglais).",
+          "answer": "ISO 28000:2007, \"Specification for security management systems for the supply chain,\" provides a broad framework for managing supply chain risk.\n\nTraduction : ISO 28000:2007, « Spécification pour les systèmes de management de la sécurité de la chaîne d'approvisionnement », fournit un cadre large pour gérer le risque de la chaîne d'approvisionnement.",
+          "explanation": "Commence par le titre de la norme, puis « provides a broad framework ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-pdca-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : « PDCA » dans ISO 28000",
+          "answer": "ISO 28000:2007 relies heavily on the continuous process improvement model of plan, do, check, act (PDCA) to improve the security management system and to assure organizational conformance to the security practice.\n\nTraduction : ISO 28000:2007 s'appuie fortement sur le modèle d'amélioration continue des processus (planifier, faire, vérifier, agir, ou PDCA) pour améliorer le système de management de la sécurité et assurer la conformité de l'organisation à la pratique de sécurité.",
+          "explanation": "PDCA : planifier, faire, vérifier, agir, puis on recommence.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « ISO 28000 ». Conformance veut dire que l'organisation respecte bien la pratique de sécurité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-pdca-def2",
+          "type": "cloze",
+          "question": "ISO 28000:2007 relies heavily on the continuous process [[improvement]] model of plan, do, check, act (PDCA) to improve the security management system and to assure organizational [[conformance]] to the security practice.",
+          "answer": "ISO 28000:2007 relies heavily on the continuous process improvement model of plan, do, check, act (PDCA) to improve the security management system and to assure organizational conformance to the security practice.",
+          "explanation": "Deux mots clés : improvement (on s'améliore) et conformance (on respecte).",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-pdca-def3",
+          "type": "cloze",
+          "question": "ISO 28000:2007 relies heavily on the [[continuous process improvement]] model of [[plan, do, check, act]] (PDCA) to improve the [[security management system]] and to assure organizational conformance to the security practice.",
+          "answer": "ISO 28000:2007 relies heavily on the continuous process improvement model of plan, do, check, act (PDCA) to improve the security management system and to assure organizational conformance to the security practice.",
+          "explanation": "Trois blocs : l'amélioration continue, les quatre étapes, le système de management.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-pdca-def4",
+          "type": "problem",
+          "question": "Écris de mémoire la phrase du manuel sur le « PDCA » dans ISO 28000 (en anglais).",
+          "answer": "ISO 28000:2007 relies heavily on the continuous process improvement model of plan, do, check, act (PDCA) to improve the security management system and to assure organizational conformance to the security practice.\n\nTraduction : ISO 28000:2007 s'appuie fortement sur le modèle d'amélioration continue des processus (planifier, faire, vérifier, agir, ou PDCA) pour améliorer le système de management de la sécurité et assurer la conformité de l'organisation à la pratique de sécurité.",
+          "explanation": "Repère deux buts : améliorer le système, et assurer la conformité.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-utile-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : à qui ISO 28000 est utile",
+          "answer": "While not specific to cybersecurity, ISO 28000 is useful for organizations that leverage other ISO specifications (such as ISO 9001 and ISO 27001) to align supply chain risk with the organizations' audit processes or that seek to use a standardized, risk-based approach to evaluating supply chain risk.\n\nTraduction : Bien que non spécifique à la cybersécurité, ISO 28000 est utile aux organisations qui s'appuient sur d'autres spécifications ISO (comme ISO 9001 et ISO 27001) pour aligner le risque de la chaîne avec leurs processus d'audit, ou qui veulent une approche standardisée, fondée sur le risque, pour évaluer ce risque.",
+          "explanation": "Deux publics : ceux qui suivent déjà d'autres normes ISO, et ceux qui veulent une méthode standardisée.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « ISO 28000 ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-utile-def3",
+          "type": "cloze",
+          "question": "While not [[specific to cybersecurity]], ISO 28000 is useful for organizations that [[leverage other ISO specifications]] (such as ISO 9001 and ISO 27001) to align supply chain risk with the organizations' audit processes or that seek to use a [[standardized, risk-based approach]] to evaluating supply chain risk.",
+          "answer": "While not specific to cybersecurity, ISO 28000 is useful for organizations that leverage other ISO specifications (such as ISO 9001 and ISO 27001) to align supply chain risk with the organizations' audit processes or that seek to use a standardized, risk-based approach to evaluating supply chain risk.",
+          "explanation": "Trois blocs : pas propre à la cyber, s'appuie sur d'autres normes ISO, approche standardisée.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-iso28000-1",
+          "type": "flash",
+          "question": "Que veulent dire les lettres PDCA ?",
+          "answer": "Plan, do, check, act : planifier, faire, vérifier, agir.",
+          "explanation": "Quatre verbes, toujours dans cet ordre.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-iso28000-2",
+          "type": "sort",
+          "question": "Remets dans l'ordre les quatre étapes du cycle PDCA.",
+          "answer": "1. Plan (planifier)\n2. Do (faire)\n3. Check (vérifier)\n4. Act (agir)",
+          "explanation": "On prépare, on fait, on regarde le résultat, on corrige. Puis on recommence.",
+          "data": {
+            "mode": "ordonner",
+            "items": ["Plan (planifier)", "Do (faire)", "Check (vérifier)", "Act (agir)"]
+          }
+        },
+        {
+          "id": "d1-appro-iso28000-3",
+          "type": "duel",
+          "question": "ISO 28000 est-elle une norme réservée à la cybersécurité ?",
+          "options": ["Non, elle est plus large", "Oui, uniquement la cybersécurité"],
+          "answer": "Non, elle est plus large",
+          "explanation": "Le manuel dit qu'elle n'est pas spécifique à la cybersécurité. Elle traite la sécurité de la chaîne en général.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-iso28000-4",
+          "type": "qcm",
+          "question": "Chaque trimestre, une entreprise planifie des améliorations, les met en place, mesure les résultats, puis corrige. Quel modèle suit-elle ?",
+          "options": [
+            "Plan, do, check, act",
+            "Identify, protect, detect, respond",
+            "Avoid, mitigate, transfer, accept",
+            "Spoofing, tampering, repudiation"
+          ],
+          "options_why": [
+            "",
+            "Ce sont les premières fonctions d'un cadre de cybersécurité, pas un cycle d'amélioration.",
+            "Ce sont les réponses possibles à un risque, pas un cycle d'amélioration.",
+            "Ce sont des types de menaces, pas un cycle d'amélioration."
+          ],
+          "answer": "Plan, do, check, act",
+          "explanation": "Planifier, faire, vérifier, agir : c'est le cycle PDCA, qu'ISO 28000 utilise pour s'améliorer.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-iso28000-5",
+          "type": "cloze",
+          "question": "ISO 28000 s'appuie sur l'amélioration [[continue]] grâce au cycle PDCA.",
+          "answer": "ISO 28000 s'appuie sur l'amélioration continue grâce au cycle PDCA.",
+          "explanation": "Un cycle qu'on répète, sans jamais s'arrêter.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-iso28000-6",
+          "type": "why",
+          "question": "Pourquoi le cycle PDCA ne s'arrête-t-il jamais ?",
+          "answer": "Parce que les risques et les fournisseurs changent. Après avoir agi, on vérifie de nouveau et on recommence, pour améliorer le système petit à petit.",
+          "explanation": "Une sécurité figée devient vite dépassée.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-iso28000-7",
+          "type": "flash",
+          "question": "Quel avantage le cycle PDCA apporte-t-il, selon le manuel ?",
+          "answer": "Il facilite l'intégration du risque de la chaîne d'approvisionnement avec les activités plus larges de gestion du risque de l'organisation.",
+          "explanation": "La chaîne d'approvisionnement ne reste pas dans un coin : elle rejoint la gestion globale des risques.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « ISO 28000 ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-iso28000-8",
+          "type": "whatif",
+          "question": "Et si une entreprise ne suit aucune autre norme ISO : peut-elle utiliser ISO 28000 ?",
+          "answer": "Oui. ISO 28000 est aussi utile à ceux qui veulent une approche standardisée. Cette approche est fondée sur le risque.",
+          "explanation": "Les autres normes ISO ne sont qu'un des deux cas d'usage cités.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-iso28000-9",
+          "type": "problem",
+          "question": "Explique avec tes mots comment une entreprise utiliserait le PDCA pour améliorer le suivi de ses fournisseurs.",
+          "answer": "Elle planifie les contrôles, les réalise, vérifie les résultats, puis corrige ce qui ne va pas. Ensuite elle recommence.",
+          "explanation": "Chaque tour du cycle améliore un peu le suivi.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-appro-ncsc",
+      "name": "Les 12 principes du NCSC britannique (U.K. National Cyber Security Centre)",
+      "planete": { "relief": "volcanique" },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Les quatre étapes du directeur",
+          "paragraphes": [
+            "Le directeur du collège veut bien choisir ses fournisseurs. Il découpe le travail en quatre étapes : savoir qui livre quoi, fixer des règles, vérifier, puis s'améliorer.",
+            "Un pays a fait la même chose pour les entreprises : douze principes, rangés en quatre étapes.",
+            "Ces douze principes viennent du centre national de cybersécurité du Royaume-Uni : le NCSC (National Cyber Security Centre)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Un escalier à quatre marches",
+          "comme": "Pour monter un escalier, on passe d'une marche à la suivante. Si on saute la première, on risque de tomber.",
+          "enVrai": "Les quatre étapes du NCSC vont dans l'ordre : comprendre les risques, établir le contrôle, vérifier les arrangements, s'améliorer en continu. Chaque étape prépare la suivante. L'image s'arrête ici : après la dernière marche, on continue de s'améliorer."
+        },
+        {
+          "type": "predire",
+          "question": "Tu es chargé(e) des fournisseurs de ton entreprise. Par quelle étape commences-tu ?",
+          "options": [
+            "Je comprends les risques : qui sont mes fournisseurs ?",
+            "Je vérifie mes arrangements avec eux",
+            "Je cherche à m'améliorer en continu"
+          ],
+          "answer": "Je comprends les risques : qui sont mes fournisseurs ?",
+          "explanation": "On ne peut pas contrôler ni vérifier ce qu'on ne connaît pas. D'abord, on identifie les fournisseurs et ce qu'il faut protéger. Les autres étapes viennent après."
+        },
+        {
+          "type": "exemple",
+          "titre": "Les quatre étapes dans l'ordre",
+          "texte": "Étape 1 : l'entreprise liste ses fournisseurs et ce qu'elle doit protéger. Étape 2 : elle fixe ses exigences minimales et les communique. Étape 3 : elle prévoit des droits d'audit et des indicateurs de performance (KPI, des chiffres qui montrent si ça marche). Étape 4 : elle construit la confiance et encourage les progrès."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-appro-ncsc-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : le « NCSC » et ses principes",
+          "answer": "The U.K. National Cyber Security Centre (NCSC) proposed guidance that attempts to provide organizations with improved awareness of supply chain risks, while also establishing 12 principles intended to help organizations establish and maintain effective control of their supply chain.\n\nTraduction : Le centre national de cybersécurité du Royaume-Uni (NCSC) a proposé des conseils pour mieux faire connaître les risques de la chaîne d'approvisionnement, en établissant aussi 12 principes pour aider les organisations à établir et à garder un contrôle efficace de leur chaîne.",
+          "explanation": "Deux buts : mieux connaître les risques, et garder le contrôle grâce à 12 principes.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « U.K. National Cyber Security Centre ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-def3",
+          "type": "cloze",
+          "question": "The U.K. National Cyber Security Centre (NCSC) proposed guidance that attempts to provide organizations with [[improved awareness]] of supply chain risks, while also establishing [[12 principles]] intended to help organizations establish and [[maintain effective control]] of their supply chain.",
+          "answer": "The U.K. National Cyber Security Centre (NCSC) proposed guidance that attempts to provide organizations with improved awareness of supply chain risks, while also establishing 12 principles intended to help organizations establish and maintain effective control of their supply chain.",
+          "explanation": "Trois blocs : mieux connaître les risques, 12 principes, garder un contrôle efficace.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-comprendre-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'étape 1 du NCSC, « Understand the risks »",
+          "answer": "Understand the risks: The principles in this stage involve identifying your vendors in your supply chain and establishing what needs to be protected in that supply chain (and why).\n\nTraduction : Comprendre les risques : les principes de cette étape consistent à identifier tes fournisseurs dans ta chaîne d'approvisionnement et à établir ce qui doit y être protégé (et pourquoi).",
+          "explanation": "Étape 1 : qui sont mes fournisseurs, et que dois-je protéger ?",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « U.K. National Cyber Security Centre ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-comprendre-def3",
+          "type": "cloze",
+          "question": "[[Understand the risks]]: The principles in this stage involve [[identifying your vendors]] in your supply chain and establishing what [[needs to be protected]] in that supply chain (and why).",
+          "answer": "Understand the risks: The principles in this stage involve identifying your vendors in your supply chain and establishing what needs to be protected in that supply chain (and why).",
+          "explanation": "Trois blocs : le nom de l'étape, identifier les fournisseurs, ce qui doit être protégé.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-controle-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'étape 2 du NCSC, « Establish control »",
+          "answer": "Establish control: This stage involves establishing minimum security requirements (see the earlier section \"Minimum Security Requirements\") and communicating your security expectations to your suppliers.\n\nTraduction : Établir le contrôle : cette étape consiste à établir des exigences minimales de sécurité (voir la section « Minimum Security Requirements ») et à communiquer tes attentes de sécurité à tes fournisseurs.",
+          "explanation": "Étape 2 : fixer les MSR, puis les dire clairement aux fournisseurs.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « U.K. National Cyber Security Centre ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-controle-def3",
+          "type": "cloze",
+          "question": "[[Establish control]]: This stage involves [[establishing minimum security requirements]] (see the earlier section \"Minimum Security Requirements\") and [[communicating your security expectations]] to your suppliers.",
+          "answer": "Establish control: This stage involves establishing minimum security requirements (see the earlier section \"Minimum Security Requirements\") and communicating your security expectations to your suppliers.",
+          "explanation": "Trois blocs : le nom de l'étape, les exigences minimales, la communication.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-verifier-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'étape 3 du NCSC, « Check your arrangements »",
+          "answer": "Check your arrangements: This stage involves establishing assurance activities and building those into your supply chain processes.\n\nTraduction : Vérifier tes arrangements : cette étape consiste à établir des activités d'assurance et à les intégrer aux processus de ta chaîne d'approvisionnement.",
+          "explanation": "Étape 3 : prévoir des contrôles pour être sûr que les règles sont respectées.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1. La phrase suivante du manuel cite les droits d'audit, les indicateurs clés de performance et d'autres tests.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-verifier-def3",
+          "type": "cloze",
+          "question": "[[Check your arrangements]]: This stage involves [[establishing assurance activities]] and [[building those into]] your supply chain processes.",
+          "answer": "Check your arrangements: This stage involves establishing assurance activities and building those into your supply chain processes.",
+          "explanation": "Trois blocs : le nom de l'étape, les activités d'assurance, leur intégration.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-amelioration-def1",
+          "type": "flash",
+          "phase": "comprehension",
+          "question": "Définition officielle (en anglais) : l'étape 4 du NCSC, « Continuous improvement »",
+          "answer": "Continuous improvement: This stage involves continually building trust with your suppliers and constantly encouraging security improvements for your supply chain.\n\nTraduction : Amélioration continue : cette étape consiste à construire sans cesse la confiance avec tes fournisseurs et à encourager constamment des améliorations de sécurité dans ta chaîne d'approvisionnement.",
+          "explanation": "Étape 4 : la confiance et le progrès, tous les jours.",
+          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « U.K. National Cyber Security Centre ».",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-amelioration-def3",
+          "type": "cloze",
+          "question": "[[Continuous improvement]]: This stage involves [[continually building trust]] with your suppliers and [[constantly encouraging security improvements]] for your supply chain.",
+          "answer": "Continuous improvement: This stage involves continually building trust with your suppliers and constantly encouraging security improvements for your supply chain.",
+          "explanation": "Trois blocs : le nom de l'étape, bâtir la confiance, encourager les améliorations.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-appro-ncsc-1",
+          "type": "sort",
+          "question": "Remets dans l'ordre les quatre étapes du NCSC.",
+          "answer": "1. Understand the risks\n2. Establish control\n3. Check your arrangements\n4. Continuous improvement",
+          "explanation": "On comprend, on fixe les règles, on vérifie, puis on s'améliore sans cesse.",
+          "data": {
+            "mode": "ordonner",
+            "items": ["Understand the risks", "Establish control", "Check your arrangements", "Continuous improvement"]
+          }
+        },
+        {
+          "id": "d1-appro-ncsc-2",
+          "type": "qcm",
+          "question": "Une entreprise écrit ses exigences minimales de sécurité et les envoie à ses fournisseurs. Dans quelle étape du NCSC est-elle ?",
+          "options": [
+            "Establish control",
+            "Understand the risks",
+            "Check your arrangements",
+            "Continuous improvement"
+          ],
+          "options_why": [
+            "",
+            "Cette étape sert à identifier les fournisseurs et ce qu'il faut protéger, avant les règles.",
+            "Cette étape vérifie que les règles sont respectées, après les avoir fixées.",
+            "Cette étape construit la confiance et encourage les progrès, après les trois autres."
+          ],
+          "answer": "Establish control",
+          "explanation": "Fixer des exigences minimales et les communiquer, c'est établir le contrôle.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-ncsc-3",
+          "type": "sort",
+          "question": "Dans quelle étape range-t-on chaque action ?",
+          "answer": "Understand the risks : lister ses fournisseurs, décider de ce qu'il faut protéger. Check your arrangements : prévoir des droits d'audit, fixer des indicateurs. Continuous improvement : encourager les progrès, construire la confiance.",
+          "explanation": "Comprendre = connaître. Vérifier = contrôler. Améliorer = progresser avec les fournisseurs.",
+          "data": {
+            "mode": "classer",
+            "categories": ["Understand the risks", "Check your arrangements", "Continuous improvement"],
+            "items": [
+              { "text": "Lister ses fournisseurs", "category": "Understand the risks" },
+              { "text": "Décider de ce qu'il faut protéger dans la chaîne", "category": "Understand the risks" },
+              { "text": "Prévoir des droits d'audit", "category": "Check your arrangements" },
+              { "text": "Fixer des indicateurs de performance (KPI)", "category": "Check your arrangements" },
+              { "text": "Encourager sans cesse des améliorations de sécurité", "category": "Continuous improvement" },
+              { "text": "Construire peu à peu la confiance avec les fournisseurs", "category": "Continuous improvement" }
+            ]
+          }
+        },
+        {
+          "id": "d1-appro-ncsc-4",
+          "type": "flash",
+          "question": "Combien de principes le NCSC propose-t-il, et en combien d'étapes ?",
+          "answer": "12 principes, rangés en 4 étapes.",
+          "explanation": "Douze principes, quatre étapes : ne confonds pas avec les dix pratiques du NIST.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « U.K. National Cyber Security Centre ».",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-appro-ncsc-5",
+          "type": "flash",
+          "question": "Que comprend l'étape « Check your arrangements » en plus des activités d'assurance ?",
+          "answer": "Établir des droits d'audit, des indicateurs clés de performance (KPI) et d'autres activités de test et de validation.",
+          "explanation": "Des moyens concrets de vérifier que les fournisseurs tiennent parole.",
+          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « U.K. National Cyber Security Centre ».",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-ncsc-6",
+          "type": "cloze",
+          "question": "Dans l'étape « Establish control », on fixe les exigences minimales et on [[communique]] ses attentes de sécurité aux fournisseurs.",
+          "answer": "Dans l'étape « Establish control », on fixe les exigences minimales et on communique ses attentes de sécurité aux fournisseurs.",
+          "explanation": "Une règle que le fournisseur ne connaît pas ne sert à rien.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-ncsc-7",
+          "type": "why",
+          "question": "Pourquoi l'étape « Understand the risks » vient-elle en premier ?",
+          "answer": "Parce qu'on ne peut pas contrôler ni vérifier des fournisseurs qu'on ne connaît pas. Il faut d'abord les identifier et savoir ce qu'on protège, et pourquoi.",
+          "explanation": "Impossible de protéger ce qu'on n'a pas identifié.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-ncsc-8",
+          "type": "whatif",
+          "question": "Et si une entreprise saute l'étape « Check your arrangements » ?",
+          "answer": "Elle a des règles et des exigences, mais ne sait pas si les fournisseurs les respectent. Les droits d'audit et les indicateurs servent justement à vérifier.",
+          "explanation": "Une règle sans vérification reste une simple promesse.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-appro-ncsc-9",
+          "type": "problem",
+          "question": "Donne un exemple concret d'action pour l'étape « Continuous improvement ».",
+          "answer": "Par exemple : discuter chaque année avec ses fournisseurs des progrès possibles, et les encourager à améliorer leur sécurité.",
+          "explanation": "Cette étape construit la confiance et pousse les fournisseurs à progresser.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}
