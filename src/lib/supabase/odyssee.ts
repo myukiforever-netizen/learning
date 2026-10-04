@@ -2,6 +2,7 @@
 // et galaxies, profil (XP, carburant). Côté serveur uniquement.
 import { createClient } from "./server";
 import { profilCourantId } from "@/lib/profils";
+import { lireSecteurChoisi } from "@/lib/secteur";
 import { chargerCartesEtRevisions, type CarteAvecMatiere } from "./requetes";
 import { aujourdhui } from "@/lib/dates";
 import { CONFIG_REVISION } from "@/lib/revision/config";
@@ -38,17 +39,23 @@ const PROFIL_VIDE: Profil = {
 
 // ---------- Lecture ----------
 
-/** Structure brute du secteur actif (la première matière active), avec le nombre de cartes par planète. */
-async function structureSecteur(): Promise<{ structure: StructureSecteur; cartes: CarteAvecMatiere[] } | null> {
+/** Une matière active, proposée dans le sélecteur de secteur. */
+export interface SecteurPropose {
+  id: string;
+  nom: string;
+}
+
+/**
+ * Structure brute du secteur affiché (celui choisi par la personne, sinon la dernière matière chargée),
+ * avec le nombre de cartes par planète, et la liste de tous les secteurs possibles.
+ */
+async function structureSecteur(): Promise<{ structure: StructureSecteur; cartes: CarteAvecMatiere[]; secteurs: SecteurPropose[] } | null> {
   const supabase = await createClient();
-  const { data: subjects, error } = await supabase
-    .from("subjects")
-    .select("id, name, status")
-    .eq("status", "active")
-    .order("created_at")
-    .limit(1);
+  const { data: subjects, error } = await supabase.from("subjects").select("id, name, status").eq("status", "active").order("created_at");
   if (error) throw new Error(error.message);
-  const subject = subjects?.[0];
+  const secteurs = (subjects ?? []).map((s) => ({ id: s.id as string, nom: s.name as string }));
+  const choisi = await lireSecteurChoisi();
+  const subject = (subjects ?? []).find((s) => s.id === choisi) ?? subjects?.at(-1);
   if (!subject) return null;
 
   const [modulesRes, conceptsRes, { cartes }] = await Promise.all([
@@ -63,8 +70,10 @@ async function structureSecteur(): Promise<{ structure: StructureSecteur; cartes
   if (modulesRes.error) throw new Error(modulesRes.error.message);
   if (conceptsRes.error) throw new Error(conceptsRes.error.message);
 
+  // Seules les cartes du secteur affiché : la carte, les planètes et les phases n'en ont pas besoin d'autres.
+  const cartesDuSecteur = cartes.filter((c) => c.matiere?.id === subject.id);
   const nbCartes = new Map<string, number>();
-  for (const c of cartes) nbCartes.set(c.carte.concept_id, (nbCartes.get(c.carte.concept_id) ?? 0) + 1);
+  for (const c of cartesDuSecteur) nbCartes.set(c.carte.concept_id, (nbCartes.get(c.carte.concept_id) ?? 0) + 1);
 
   const concepts = (conceptsRes.data ?? []) as unknown as { id: string; name: string; module_id: string; discovery: unknown[] | null }[];
   return {
@@ -77,7 +86,8 @@ async function structureSecteur(): Promise<{ structure: StructureSecteur; cartes
         planetes: concepts.filter((c) => c.module_id === m.id).map((c) => ({ id: c.id, nom: c.name, nbCartes: nbCartes.get(c.id) ?? 0, decouverte: c.discovery })),
       })),
     },
-    cartes,
+    cartes: cartesDuSecteur,
+    secteurs,
   };
 }
 
@@ -100,6 +110,8 @@ export interface Univers {
   /** Signaux de détresse par planète (notions dues ou fragiles). */
   detresse: Map<string, number>;
   profil: Profil;
+  /** Toutes les matières actives (pour changer de secteur) et celle qui est affichée. */
+  secteurs: SecteurPropose[];
 }
 
 /** Tout ce qu'il faut pour la carte de l'univers, une galaxie ou une planète. Null = aucune matière chargée. */
@@ -116,7 +128,7 @@ export async function chargerUnivers(): Promise<Univers | null> {
       detresse.set(planete.id, signauxDetresse(revisions, jour));
     }
   }
-  return { secteur, cartes: base.cartes, detresse, profil };
+  return { secteur, cartes: base.cartes, detresse, profil, secteurs: base.secteurs };
 }
 
 export function cartesDePlanete(univers: Univers, conceptId: string): CarteAReviser[] {

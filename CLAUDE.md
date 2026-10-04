@@ -60,6 +60,7 @@ docs/               les 2 documents de référence
 - Animations CSS uniquement (transform + opacity), ease-out : 150ms micro-feedback, 250ms transitions, 600ms fin de session (seule célébration). Respecter `prefers-reduced-motion`.
 - Raccourcis clavier : 1-4 = choix, Espace = révéler, Entrée = valider, E = en savoir plus.
 - Simple avant élégant. Corriger la cause racine d'un bug, jamais une rustine.
+- Secteur affiché sur l'accueil : celui choisi dans le sélecteur (cookie `ancre.secteur`, `src/lib/secteur.ts`), sinon **la dernière matière chargée** (le CISSP depuis le 04/10/2026).
 - **Univers CISSP : lire aussi `docs/GUIDE_CISSP.md`** (définitions officielles en anglais apprises mot pour mot, suites `-def1` à `-def4`, contrôle `node scripts/verifier-definitions.mjs <domaine> <fichier>`).
 - **Contenu (univers, galaxies, planètes, cartes, découvertes) : lire et respecter `docs/GUIDE_UNIVERS.md`** avant toute écriture ou modification. Ids stables, version augmentée, découverte avant les cartes, analogies fidèles, vocabulaire dès 13 ans.
 

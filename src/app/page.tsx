@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Ambiance } from "@/components/audio/Ambiance";
 import { CarteUnivers } from "@/components/odyssee/CarteUnivers";
 import { Hud } from "@/components/odyssee/Hud";
+import { SelecteurSecteur } from "@/components/odyssee/SelecteurSecteur";
 import { prochaineDestination, resumeSecteur } from "@/lib/odyssee/univers";
 import { routes } from "@/lib/odyssee/urls";
 import { chargerUnivers } from "@/lib/supabase/odyssee";
@@ -36,6 +37,8 @@ export default async function PageUnivers() {
     <div className="flex flex-col gap-6">
       <Ambiance />
       <Hud profil={univers.profil} joueur={profil} serie={chiffres.serie} signaux={chiffres.dues} />
+
+      <SelecteurSecteur secteurs={univers.secteurs} courantId={secteur.id} />
 
       <section className="flex flex-col gap-2">
         <p className="texte-2 text-sm">Secteur</p>
