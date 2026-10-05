@@ -5,6 +5,7 @@ import { apparenceGalaxie } from "@/lib/odyssee/planete";
 import { aujourdhui } from "@/lib/dates";
 import { composerSoleil } from "@/lib/odyssee/composer";
 import { depuisUrl, routes } from "@/lib/odyssee/urls";
+import { optionsLangue } from "@/lib/supabase/alternatives";
 import { cartesDePlanete, chargerUnivers } from "@/lib/supabase/odyssee";
 import { creerSession } from "@/lib/supabase/requetes";
 
@@ -25,6 +26,7 @@ export default async function PageSoleil({ params }: PageProps<"/galaxie/[id]/so
     `${galaxie.id}:${sessionId}`,
   ).map((carte) => parId.get(carte.id)!);
 
+  const { langue, cartesAlt } = await optionsLangue(file);
   return (
     <>
     <Ambiance teinte={apparenceGalaxie(galaxie.id).teinte} />
@@ -32,6 +34,8 @@ export default async function PageSoleil({ params }: PageProps<"/galaxie/[id]/so
       mode="soleil"
       sessionId={sessionId}
       cartes={file}
+      langue={langue}
+      cartesAlt={cartesAlt}
       aujourdhui={aujourdhui()}
       cibleId={galaxie.id}
       retourHref={routes.galaxie(galaxie.id)}

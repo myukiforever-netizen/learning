@@ -1,13 +1,15 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { useSon } from "@/components/audio/AudioProvider";
 import { BarreProgression } from "@/components/BarreProgression";
 import { Carte as CadreCarte } from "@/components/Carte";
 import { Feedback } from "@/components/Feedback";
 import { FinDeSession } from "@/components/FinDeSession";
+import { InterrupteurLangue } from "@/components/InterrupteurLangue";
 import { FinDePhase } from "@/components/odyssee/FinDePhase";
+import { COOKIE_LANGUE, type Langue } from "@/lib/langue-types";
 import { Cloze } from "@/components/cartes/Cloze";
 import { Exemple } from "@/components/cartes/Exemple";
 import { Flash } from "@/components/cartes/Flash";
@@ -187,10 +189,34 @@ interface Props {
   cibleId?: string;
   retourHref?: string;
   rejouerHref?: string;
+  /** Langue dans laquelle `cartes` est écrite (cookie), pour le bouton FR / EN du bas de page. */
+  langue?: Langue;
+  /** Les mêmes cartes, dans l'autre langue (même ordre) ; absent = pas de bouton de langue. */
+  cartesAlt?: Carte[] | null;
 }
 
-export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHref = "/", rejouerHref = "/" }: Props) {
+const UN_AN = 60 * 60 * 24 * 365;
+
+export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHref = "/", rejouerHref = "/", langue = "fr", cartesAlt = null }: Props) {
   const [file, setFile] = useState<Carte[]>(() => cartes.map((c) => c.carte));
+  const [langueAffichee, setLangueAffichee] = useState<Langue>(langue);
+  // Les cartes dans chaque langue, par identifiant : basculer remplace les textes sans toucher à l'ordre ni à l'avancement.
+  const parLangue = useMemo(() => {
+    const alt: Langue = langue === "fr" ? "en" : "fr";
+    return {
+      [langue]: new Map(cartes.map((c) => [c.carte.id, c.carte])),
+      [alt]: new Map((cartesAlt ?? []).map((c) => [c.id, c])),
+    } as Record<Langue, Map<string, Carte>>;
+  }, [cartes, cartesAlt, langue]);
+  const cartesAffichees = useMemo(() => cartes.map((c) => parLangue[langueAffichee].get(c.carte.id) ?? c.carte), [cartes, parLangue, langueAffichee]);
+
+  function basculerLangue() {
+    const cible: Langue = langueAffichee === "en" ? "fr" : "en";
+    setLangueAffichee(cible);
+    setFile((f) => f.map((c) => parLangue[cible].get(c.id) ?? c));
+    // Mémorisé pour les prochains écrans (même cookie que le bouton des pages).
+    document.cookie = `${COOKIE_LANGUE}=${cible}; path=/; max-age=${UN_AN}; samesite=lax`;
+  }
   const [index, setIndex] = useState(0);
   const [etat, setEtat] = useState<EtatCarte>(() => etatInitial(file[0]));
   const [reponses, setReponses] = useState<ReponseSession[]>([]);
@@ -455,7 +481,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
       <FinDePhase
         mode={mode}
         cibleId={cibleId}
-        cartes={cartes.map((c) => c.carte)}
+        cartes={cartesAffichees}
         reponses={reponses}
         retourHref={retourHref}
         rejouerHref={rejouerHref}
@@ -467,7 +493,7 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
   if (terminee) {
     return (
       <FinDeSession
-        cartes={cartes.map((c) => c.carte)}
+        cartes={cartesAffichees}
         reponses={reponses}
         aujourdhui={aujourdhui}
         onTerminer={terminer}
@@ -616,6 +642,12 @@ export function Session({ mode, sessionId, cartes, aujourdhui, cibleId, retourHr
 
       {erreurSauvegarde && (
         <p className="texte-2 text-sm text-center">Enregistrement impossible : {erreurSauvegarde}</p>
+      )}
+
+      {cartesAlt && (
+        <div className="flex justify-center pt-2">
+          <InterrupteurLangue langue={langueAffichee} onBasculer={basculerLangue} />
+        </div>
       )}
     </div>
   );
