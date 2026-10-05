@@ -1,0 +1,1875 @@
+{
+  "id": "d1-m07-enquetes",
+  "name": "D1.7 Types of investigations",
+  "concepts": [
+    {
+      "id": "d1-enq-apercu",
+      "name": "The four types of investigations",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Four problems in the same week",
+          "paragraphes": [
+            "This week, school had four problems. A student copied homework from the internet. Some computers were stolen.",
+            "Some parents asked for money for a broken phone. An inspector came to check the hygiene of the canteen.",
+            "Nobody investigated in the same way. In security, there are four kinds of investigations. The official manual compares them."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Four different investigators",
+          "comme": "For the copied homework, the principal investigates alone. For the theft, the police step in. For the broken phone, a judge decides between the families. For the canteen, a government inspector checks an official rule.",
+          "enVrai": "The four types are called administrative, criminal, civil and regulatory. Each one has its own investigator, its own level of proof and its own consequences. You will learn them one by one. The image stops there: these examples are simplified, and real cases are more complex."
+        },
+        {
+          "type": "predire",
+          "question": "An employee downloads movies with the company connection, against the rules. Who most likely investigates?",
+          "options": [
+            "The police",
+            "The company itself",
+            "A court"
+          ],
+          "answer": "The company itself",
+          "explanation": "This breaks a company rule. Nobody outside is concerned. So the company investigates itself: this is an administrative investigation."
+        },
+        {
+          "type": "exemple",
+          "titre": "One case, four possible investigations",
+          "texte": "A company finds out that a former employee copied customer files. It can investigate inside the company. It can warn the police. It can take him to court to ask for money. And a government authority can check how the data was protected."
+        },
+        {
+          "type": "analogie",
+          "titre": "The rules change from country to country",
+          "comme": "School rules change from one school to another. What is allowed at your school is sometimes forbidden elsewhere.",
+          "enVrai": "Laws and courts also change from one country to another. The manual takes the tradition of English common law as an example. It is a kind of law built on past court decisions. You must learn the rules of your own country and of your clients."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-apercu-1",
+          "question": "What are the four types of investigations compared by the manual?",
+          "answer": "Administrative, criminal, civil and regulatory.",
+          "explanation": "Think of the four investigators: the management, the police, the judge between two sides, and the inspector.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”."
+        },
+        {
+          "id": "d1-enq-apercu-2",
+          "question": "Which type of investigation matches each situation?",
+          "answer": "Administrative: the company investigates alone. Criminal: the police and the State pursue a crime. Civil: a private party asks for money. Regulatory: an agency checks an official rule.",
+          "explanation": "Ask yourself who investigates and why: the organization, the State, a private party or a control agency.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Administrative",
+              "Criminal",
+              "Civil",
+              "Regulatory"
+            ],
+            "items": [
+              {
+                "text": "The company investigates alone an employee who broke its rules",
+                "category": "Administrative"
+              },
+              {
+                "text": "The security team gathers logs for management, with no police or court",
+                "category": "Administrative"
+              },
+              {
+                "text": "The police investigate the theft of data by a hacker",
+                "category": "Criminal"
+              },
+              {
+                "text": "The State prosecutes a hacker for a crime",
+                "category": "Criminal"
+              },
+              {
+                "text": "A company asks a former employee for money in court",
+                "category": "Civil"
+              },
+              {
+                "text": "A customer sues the company for damage",
+                "category": "Civil"
+              },
+              {
+                "text": "A government agency checks that a company follows an official rule",
+                "category": "Regulatory"
+              },
+              {
+                "text": "An inspector checks whether a factory follows the environment rules",
+                "category": "Regulatory"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-apercu-3",
+          "question": "A company investigates alone an employee who broke its rules, with no police and no court. Which type of investigation is it?",
+          "options": [
+            "Administrative",
+            "Criminal"
+          ],
+          "answer": "Administrative",
+          "explanation": "The company investigates itself: that is what administrative means. The police take no part."
+        },
+        {
+          "id": "d1-enq-apercu-4",
+          "question": "A government agency checks whether a restaurant follows the hygiene rules. Which type of investigation is it?",
+          "options": [
+            "Regulatory",
+            "Civil",
+            "Administrative"
+          ],
+          "options_why": [
+            "",
+            "There is no dispute between two private parties, so it is not a civil case.",
+            "The restaurant is not investigating itself: it is a government agency."
+          ],
+          "answer": "Regulatory",
+          "explanation": "An agency that checks whether an official rule is followed runs a regulatory investigation."
+        },
+        {
+          "id": "d1-enq-apercu-5",
+          "question": "What does the manual compare for each type of investigation?",
+          "answer": "Who leads the investigation, the level of proof for collecting and presenting evidence, and the general differences between the types.",
+          "explanation": "Three questions: who, what proof, and how it is different.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”."
+        },
+        {
+          "id": "d1-enq-apercu-6",
+          "question": "Why must a professional know the laws of their own country, when the manual uses English law as an example?",
+          "answer": "Because laws and courts vary a lot from one country to another. English law is only an example. You must learn the rules of your workplace and of your clients.",
+          "explanation": "Using the rules of another country can make an investigation fail.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1. It is essential to get to know the laws and rules of your location and of your clients."
+        },
+        {
+          "id": "d1-enq-apercu-7",
+          "question": "Which legal tradition does the manual use as an example to explain investigations?",
+          "options": [
+            "English common law",
+            "French law",
+            "European Union law"
+          ],
+          "options_why": [
+            "",
+            "The manual is American: it does not use French law as its base.",
+            "The manual does not rely on European law for this example."
+          ],
+          "answer": "English common law",
+          "explanation": "The manual says it is only an example.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1: “largely based on traditions of English common law, strictly as an example”."
+        },
+        {
+          "id": "d1-enq-apercu-8",
+          "question": "The manual uses the tradition of [[English]] law, only as an [[example]].",
+          "answer": "The manual uses the tradition of English law, only as an example.",
+          "explanation": "Every country has its own rules."
+        },
+        {
+          "id": "d1-enq-apercu-9",
+          "question": "Two private companies argue in court. Which type of investigation supports this case?",
+          "options": [
+            "Civil",
+            "Administrative"
+          ],
+          "answer": "Civil",
+          "explanation": "A conflict between two private parties belongs to civil law. Administrative means: the organization investigates itself."
+        },
+        {
+          "id": "d1-enq-apercu-10",
+          "question": "What if you apply the rules of another country to your investigation?",
+          "answer": "You may get it wrong: laws and courts vary from place to place. It is better to learn the rules of the place where the facts happened and those of your clients.",
+          "explanation": "Evidence collected well in one country can be refused in another."
+        },
+        {
+          "id": "d1-enq-apercu-11",
+          "question": "A company finds out that an employee falsified some figures. Name two types of investigation that can follow.",
+          "answer": "An administrative investigation inside the company, then a criminal investigation if it is a crime. Or a civil case to ask for money.",
+          "explanation": "One single case can lead to several investigations, one after another.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1. Management can move from an administrative investigation to civil actions or to criminal prosecution."
+        },
+        {
+          "id": "d1-enq-apercu-12",
+          "question": "What is evidence?",
+          "answer": "Something, like a document, a log or a file, that shows a fact is true.",
+          "explanation": "Without evidence, an investigation is only an opinion.",
+          "explanation_more": "Simple definition, outside the manual. The manual talks about evidence throughout this section."
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-charge-preuve",
+      "name": "The burden of proof",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Who took my notebook?",
+          "paragraphes": [
+            "Lucas says: “Emma took my notebook!” The teacher answers: “Do you have proof?”",
+            "Lucas has nothing: no witness, no trace. Emma is not punished. It is not her job to prove she is innocent.",
+            "The one who accuses must bring the proof. In court, this duty is called the burden of proof."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The teacher, judge of the class",
+          "comme": "The teacher does not only listen to Lucas. He waits for solid facts. Until he has some, Emma is treated as someone who did nothing.",
+          "enVrai": "The one who accuses must prove. In a criminal case (the justice system for crimes), it is the prosecutor, who represents the State. In a civil case (a conflict between two private parties), it is the plaintiff, who asks for compensation. The one who defends himself, the defendant, is presumed innocent. The image stops there: a teacher can follow his feeling, but a court demands solid proof."
+        },
+        {
+          "type": "predire",
+          "question": "In a trial, who must bring the proof?",
+          "options": [
+            "The one who accuses",
+            "The one who is accused",
+            "The judge"
+          ],
+          "answer": "The one who accuses",
+          "explanation": "That is the burden of proof: whoever makes an accusation must show it is true. The judge weighs the evidence, and the accused has nothing to prove."
+        },
+        {
+          "type": "exemple",
+          "titre": "The connection logs",
+          "texte": "A company accuses a former employee of stealing files. The company must prove it, for example with the connection logs. The former employee does not have to show that he did nothing. Until the accusation is proven, he is presumed to have done no wrong."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-charge-preuve-def1",
+          "question": "Official definition: “burden of proof”",
+          "answer": "Burden of proof is the requirement that the criminal prosecutor or civil plaintiff/claimant prove the claims they are making against the accused, or defendant.",
+          "explanation": "Think of Lucas: it is up to him to prove what he says about Emma.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”. A burden is a heavy load: it is a weight to carry."
+        },
+        {
+          "id": "d1-enq-charge-preuve-def2",
+          "question": "Burden of proof is the [[requirement]] that the criminal prosecutor or civil plaintiff/claimant [[prove]] the claims they are making against the accused, or defendant.",
+          "answer": "Burden of proof is the requirement that the criminal prosecutor or civil plaintiff/claimant prove the claims they are making against the accused, or defendant.",
+          "explanation": "A requirement, and a duty: to prove."
+        },
+        {
+          "id": "d1-enq-charge-preuve-def3",
+          "question": "Burden of proof is the requirement that [[the criminal prosecutor]] or [[civil plaintiff/claimant]] prove the claims they are making against [[the accused, or defendant]].",
+          "answer": "Burden of proof is the requirement that the criminal prosecutor or civil plaintiff/claimant prove the claims they are making against the accused, or defendant.",
+          "explanation": "Three blocks: the criminal prosecutor, the civil plaintiff, and the accused or defendant."
+        },
+        {
+          "id": "d1-enq-charge-preuve-def4",
+          "question": "Write from memory the official definition of “burden of proof”.",
+          "answer": "Burden of proof is the requirement that the criminal prosecutor or civil plaintiff/claimant prove the claims they are making against the accused, or defendant.",
+          "explanation": "Remember the two accusers: the criminal prosecutor and the civil plaintiff."
+        },
+        {
+          "id": "d1-enq-charge-preuve-accuse-def1",
+          "question": "Official definition: the one who accuses and the one who defends",
+          "answer": "The party making a claim must demonstrate the truth of that claim, with compelling evidence; the entity defending against the claim, in most modern societies, is presumed innocent or without fault — that is, the court will not recognize the validity of a claim against anyone until that claim is substantiated and the defendant is proven guilty.",
+          "explanation": "This is the presumption of innocence: you are innocent until the accusation is proven.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. Substantiated means backed up by evidence."
+        },
+        {
+          "id": "d1-enq-charge-preuve-accuse-def3",
+          "question": "The party making a claim must demonstrate the truth of that claim, with [[compelling evidence]]; the entity defending against the claim, in most modern societies, is [[presumed innocent]] or without fault — that is, the court will not recognize the validity of a claim against anyone until that claim is substantiated and the defendant is [[proven guilty]].",
+          "answer": "The party making a claim must demonstrate the truth of that claim, with compelling evidence; the entity defending against the claim, in most modern societies, is presumed innocent or without fault — that is, the court will not recognize the validity of a claim against anyone until that claim is substantiated and the defendant is proven guilty.",
+          "explanation": "Convincing evidence, the presumption of innocence, and the moment when someone is found guilty."
+        },
+        {
+          "id": "d1-enq-charge-preuve-niveaux-def1",
+          "question": "Official definition: the two standards of proof in the United States",
+          "answer": "In the U.S. legal system, the two predominant standards of proof that must be met are called preponderance of the evidence and beyond a reasonable doubt.",
+          "explanation": "Two levels, one lower and one higher: the next planet explains them in detail.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”."
+        },
+        {
+          "id": "d1-enq-charge-preuve-niveaux-def3",
+          "question": "In the U.S. legal system, the [[two predominant standards]] of proof that must be met are called [[preponderance of the evidence]] and [[beyond a reasonable doubt]].",
+          "answer": "In the U.S. legal system, the two predominant standards of proof that must be met are called preponderance of the evidence and beyond a reasonable doubt.",
+          "explanation": "The number (two), then the two names in order."
+        },
+        {
+          "id": "d1-enq-charge-preuve-1",
+          "question": "In a trial, who must prove?",
+          "options": [
+            "The one who accuses",
+            "The one who defends himself"
+          ],
+          "answer": "The one who accuses",
+          "explanation": "The burden of proof rests on the accuser. The one who defends himself is presumed innocent."
+        },
+        {
+          "id": "d1-enq-charge-preuve-2",
+          "question": "A company accuses an employee of a data leak, with no log and no witness. What does the presumption of innocence say?",
+          "options": [
+            "He is treated as having done no wrong until the accusation is proven",
+            "He must prove himself that he is innocent",
+            "The judge must look for the proof in place of the accuser"
+          ],
+          "options_why": [
+            "",
+            "It is the opposite: the accuser must prove, not the accused.",
+            "The judge weighs the evidence, but does not take the accuser's place."
+          ],
+          "answer": "He is treated as having done no wrong until the accusation is proven",
+          "explanation": "The court does not accept an accusation until it is backed up by evidence."
+        },
+        {
+          "id": "d1-enq-charge-preuve-3",
+          "question": "Who makes the accusation in a criminal trial?",
+          "answer": "The criminal prosecutor, who represents the State.",
+          "explanation": "In a criminal case, it is the State that prosecutes.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”."
+        },
+        {
+          "id": "d1-enq-charge-preuve-4",
+          "question": "Who accuses and who defends? Which box does each person go in?",
+          "answer": "The one who accuses: the prosecutor of a criminal trial and the plaintiff of a civil trial. The one who defends himself: the accused and the defendant.",
+          "explanation": "The prosecutor and the plaintiff carry the burden of proof. The accused and the defendant are presumed innocent.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "The one who accuses",
+              "The one who defends himself"
+            ],
+            "items": [
+              {
+                "text": "The prosecutor of a criminal trial",
+                "category": "The one who accuses"
+              },
+              {
+                "text": "The plaintiff of a civil trial",
+                "category": "The one who accuses"
+              },
+              {
+                "text": "The accused",
+                "category": "The one who defends himself"
+              },
+              {
+                "text": "The defendant",
+                "category": "The one who defends himself"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-charge-preuve-5",
+          "question": "Why is the accused person presumed innocent?",
+          "answer": "Because the court accepts an accusation only when it is proven. Until that is done, nobody is found guilty.",
+          "explanation": "We do not punish someone on a simple word.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1: the defending party is presumed innocent or without fault in most modern societies."
+        },
+        {
+          "id": "d1-enq-charge-preuve-6",
+          "question": "Who makes the accusation in a civil trial?",
+          "answer": "The civil plaintiff, also called the claimant.",
+          "explanation": "In a civil case, it is a private party who asks for compensation.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”."
+        },
+        {
+          "id": "d1-enq-charge-preuve-7",
+          "question": "The one who makes an accusation must [[show]] that it is true, with [[convincing]] evidence.",
+          "answer": "The one who makes an accusation must show that it is true, with convincing evidence.",
+          "explanation": "A claim with no proof is not enough."
+        },
+        {
+          "id": "d1-enq-charge-preuve-8",
+          "question": "What do we call the person against whom the accusation is made?",
+          "answer": "The accused, also called the defendant.",
+          "explanation": "This is the one who defends himself against the accusation.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”."
+        },
+        {
+          "id": "d1-enq-charge-preuve-9",
+          "question": "What if the accused had to prove his innocence?",
+          "answer": "A person could be punished without anyone proving that they did something. This is the opposite of the principle: the one who accuses must prove.",
+          "explanation": "Proving that you did nothing is often impossible."
+        },
+        {
+          "id": "d1-enq-charge-preuve-10",
+          "question": "Explain in your own words what the burden of proof is, with an example from school life.",
+          "answer": "It is the duty of the one who accuses to prove what he says. Example: Lucas accuses Emma of taking his notebook. Lucas must prove it. Emma does not have to prove her innocence.",
+          "explanation": "Whoever claims must show."
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-niveaux-preuve",
+      "name": "The two standards of proof",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Two decisions, two levels",
+          "paragraphes": [
+            "The math teacher thinks Marie surely forgot her book. He gives her a simple remark. He does not need to be one hundred percent sure.",
+            "To expel a student for good, the discipline board must be much more sure. A mistake would cost too much.",
+            "The heavier the decision, the stronger the proof must be. In court, there are two levels of proof (standards of proof)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The scale",
+          "comme": "Imagine a scale. For a small decision, it is enough if it tips a little to one side. For a very serious decision, it must tip so far that nobody can doubt.",
+          "enVrai": "In a civil case, it is enough that the scale tips a little: it is more likely than not (preponderance of the evidence). In a criminal case, it must tip so far that a reasonable person no longer doubts: beyond a reasonable doubt. The image stops there: a judge does not calculate with a real scale."
+        },
+        {
+          "type": "predire",
+          "question": "Which of these two trials needs the stronger proof?",
+          "options": [
+            "A civil trial between two companies",
+            "A criminal trial where prison is possible"
+          ],
+          "answer": "A criminal trial where prison is possible",
+          "explanation": "When a person risks prison, we want to be almost certain before convicting. In a civil case, the stakes are mostly about money."
+        },
+        {
+          "type": "exemple",
+          "titre": "Same story, two trials",
+          "texte": "An employee is accused of stealing data. In a civil case, the company asks for money. It must show that it is more likely than not that he is responsible. In a criminal case, the State wants to convict him. It must prove his guilt beyond a reasonable doubt."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-niveaux-preuve-prepond-def1",
+          "question": "Official definition: “preponderance of the evidence”",
+          "answer": "Preponderance of the evidence is the lower standard of the two and is used primarily in civil actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.",
+          "explanation": "Think of the scale that tips a little: more likely than not.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”. A civil action is a trial between private parties."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-prepond-def2",
+          "question": "Preponderance of the evidence is the [[lower]] standard of the two and is used primarily in [[civil]] actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.",
+          "answer": "Preponderance of the evidence is the lower standard of the two and is used primarily in civil actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.",
+          "explanation": "The lower level, and its field: civil cases."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-prepond-def3",
+          "question": "Preponderance of the evidence is [[the lower standard]] of the two and is used primarily in [[civil actions]]. It essentially means that the evidence shows that the defendant is [[more likely to]] have caused the damage than not.",
+          "answer": "Preponderance of the evidence is the lower standard of the two and is used primarily in civil actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.",
+          "explanation": "Three blocks: the lower level, civil cases, and more likely than not."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-prepond-def4",
+          "question": "Write from memory the official definition of “preponderance of the evidence”.",
+          "answer": "Preponderance of the evidence is the lower standard of the two and is used primarily in civil actions. It essentially means that the evidence shows that the defendant is more likely to have caused the damage than not.",
+          "explanation": "Two sentences: the level and its field, then what it means."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-doute-def1",
+          "question": "Official definition: “beyond a reasonable doubt”",
+          "answer": "The second standard, beyond a reasonable doubt, is much harder to prove and is used primarily in criminal actions.",
+          "explanation": "Think of the scale that must tip all the way: nobody can doubt any more.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”. A criminal action is a trial where the State prosecutes."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-doute-def2",
+          "question": "The second standard, beyond a reasonable doubt, is much [[harder]] to prove and is used primarily in [[criminal]] actions.",
+          "answer": "The second standard, beyond a reasonable doubt, is much harder to prove and is used primarily in criminal actions.",
+          "explanation": "Much harder to prove, and used for criminal cases."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-doute-def3",
+          "question": "The second standard, [[beyond a reasonable doubt]], is [[much harder to prove]] and is used primarily in [[criminal actions]].",
+          "answer": "The second standard, beyond a reasonable doubt, is much harder to prove and is used primarily in criminal actions.",
+          "explanation": "Three blocks: the name of the level, how hard it is, and its field."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-doute-def4",
+          "question": "Write from memory the official definition of “beyond a reasonable doubt”.",
+          "answer": "The second standard, beyond a reasonable doubt, is much harder to prove and is used primarily in criminal actions.",
+          "explanation": "Remember: second, much harder, criminal."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-clair-def1",
+          "question": "Official definition: what “beyond a reasonable doubt” asks of the evidence",
+          "answer": "It is insufficient for the evidence to merely make the judge or jury lean more toward guilt than not. In this case, the evidence has to be so clear and compelling that a \"reasonable\" person has no doubt or reservation about the defendant's guilt after seeing it.",
+          "explanation": "Tipping a little is not enough: the doubt must disappear for a reasonable person.",
+          "explanation_more": "Sentences from the official (ISC)2 manual, domain 1, section “Understand Requirements for Investigation Types”."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-clair-def3",
+          "question": "It is insufficient for the evidence to [[merely make the judge]] or jury lean more toward guilt than not. In this case, the evidence has to be [[so clear and compelling]] that a \"reasonable\" person has [[no doubt or reservation]] about the defendant's guilt after seeing it.",
+          "answer": "It is insufficient for the evidence to merely make the judge or jury lean more toward guilt than not. In this case, the evidence has to be so clear and compelling that a \"reasonable\" person has no doubt or reservation about the defendant's guilt after seeing it.",
+          "explanation": "Three blocks: leaning is not enough, clear and compelling evidence, no doubt at all."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-pct-def1",
+          "question": "Official definition: the percentage of the “preponderance of the evidence”",
+          "answer": "In other words, the evidence convinced the judge, jury, or ruling body that there was at least a 51 percent chance that the defendant caused the damage.",
+          "explanation": "A little more than half of the chances: it is the scale that tips just a little.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. Later, the manual says 50.1 percent: remember “more than half”."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-pct-def3",
+          "question": "In other words, the evidence convinced the judge, [[jury, or ruling body]] that there was at least a [[51 percent chance]] that the defendant [[caused the damage]].",
+          "answer": "In other words, the evidence convinced the judge, jury, or ruling body that there was at least a 51 percent chance that the defendant caused the damage.",
+          "explanation": "Who is convinced, the 51 percent figure, and what must be shown: the defendant caused the damage."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-1",
+          "question": "Which standard of proof is the lower of the two?",
+          "options": [
+            "Preponderance of the evidence",
+            "Beyond a reasonable doubt"
+          ],
+          "answer": "Preponderance of the evidence",
+          "explanation": "It is enough that it is more likely than not. Beyond a reasonable doubt is much harder to reach."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-2",
+          "question": "In a criminal trial, a judge thinks the accused is probably guilty (about 70 percent), but a serious doubt remains. What must he decide?",
+          "options": [
+            "He cannot convict: the proof is not strong enough",
+            "He convicts, because 70 percent is above 50",
+            "He asks the accused to prove his innocence"
+          ],
+          "options_why": [
+            "",
+            "In a criminal case, you need to go beyond a reasonable doubt, not only pass 50 percent.",
+            "It is always up to the accusation to prove, never the accused."
+          ],
+          "answer": "He cannot convict: the proof is not strong enough",
+          "explanation": "Leaning toward guilt more than not is not enough in a criminal case."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-3",
+          "question": "Which standard of proof matches each sentence?",
+          "answer": "Preponderance: civil trial, more than 50 percent, lowest level. Beyond a reasonable doubt: criminal trial, no doubt left, hardest level.",
+          "explanation": "A civil case is satisfied with more likely than not. A criminal case asks for no more doubt.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Preponderance of the evidence",
+              "Beyond a reasonable doubt"
+            ],
+            "items": [
+              {
+                "text": "Trial between two companies",
+                "category": "Preponderance of the evidence"
+              },
+              {
+                "text": "More than 50 percent chance that the defendant is responsible",
+                "category": "Preponderance of the evidence"
+              },
+              {
+                "text": "The lower of the two levels",
+                "category": "Preponderance of the evidence"
+              },
+              {
+                "text": "Trial where the accused risks prison",
+                "category": "Beyond a reasonable doubt"
+              },
+              {
+                "text": "A reasonable person no longer doubts the guilt",
+                "category": "Beyond a reasonable doubt"
+              },
+              {
+                "text": "The hardest level to reach",
+                "category": "Beyond a reasonable doubt"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-4",
+          "question": "Why do we ask for stronger proof in a criminal trial?",
+          "answer": "Because the stakes are heavier: a fine, prison, sometimes worse. We want to be almost certain before convicting someone.",
+          "explanation": "The more serious the penalty, the more solid the proof must be.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1: the stakes of a civil trial are much lower than those of a criminal trial."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-5",
+          "question": "Which percentage of chance must be passed for the preponderance of the evidence?",
+          "answer": "More than 50 percent: the manual says “at least 51 percent”, then 50.1 percent.",
+          "explanation": "A simple majority is enough.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1. The manual gives 51 percent in one paragraph and 50.1 percent in another. Remember: a little more than half."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-6",
+          "question": "Preponderance of the evidence means: more [[likely]] than [[not]].",
+          "answer": "Preponderance of the evidence means: more likely than not.",
+          "explanation": "One chance in two, plus a tiny bit."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-7",
+          "question": "What if an accused person is found not guilty in a criminal case? Can he still lose a civil trial on the same facts?",
+          "answer": "Yes, it is possible. A civil trial asks for weaker proof. It can be enough that responsibility is more likely than not.",
+          "explanation": "Two different standards of proof can give two different results.",
+          "explanation_more": "Reasoning outside the manual. The manual only says that a civil action can be added to a criminal action."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-8",
+          "question": "What does “beyond a reasonable doubt” mean in simple words?",
+          "answer": "The proof is so clear that a reasonable person has no doubt left about the guilt.",
+          "explanation": "Leaning toward guilt is not enough: the doubt must be gone."
+        },
+        {
+          "id": "d1-enq-niveaux-preuve-9",
+          "question": "Explain to a friend why 70 percent certainty is not enough to convict someone in a criminal case.",
+          "answer": "In a criminal case, you must go beyond a reasonable doubt. A reasonable person must have no doubt left. Passing 50 percent is the civil level.",
+          "explanation": "A criminal case is the most demanding level."
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-administrative",
+      "name": "The administrative investigation",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The test questions leaked",
+          "paragraphes": [
+            "A teacher finds out that the questions of a test were going around before the exam. She warns the principal.",
+            "The principal questions some students and checks who printed the test. Nobody calls the police.",
+            "The school settles the matter alone: it investigates itself. In security, this is called an administrative investigation."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The principal is also the investigator",
+          "comme": "The principal decides who to question. She also decides what she believes and what punishment to give: detention, a change of class. Nobody outside checks how she judges.",
+          "enVrai": "In an administrative investigation, an organization investigates itself. Its management chooses what it believes and what penalties to give. The image stops there: a school principal does not settle alone a theft committed by an unknown person from outside."
+        },
+        {
+          "type": "predire",
+          "question": "An employee broke the internet rule of the company. What can the company do?",
+          "options": [
+            "Investigate alone, with no police and no court",
+            "Call the police, always",
+            "Wait for a control authority to step in"
+          ],
+          "answer": "Investigate alone, with no police and no court",
+          "explanation": "Breaking an internal policy, with nobody outside involved, is settled inside. If the investigation finds a crime, management can change the type of investigation."
+        },
+        {
+          "type": "exemple",
+          "titre": "The file sharing case",
+          "texte": "The IT team reports that an employee is sharing files without permission on the company connection. The security team warns management. IT and security gather the logs of his account. Management asks the lawyers and human resources, the team that looks after employees. It decides to dismiss the employee."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-administrative-def1",
+          "question": "Official definition: “administrative” (for (ISC)2)",
+          "answer": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions constrained to those conducted within a single organization — that is, the organization performs an administrative investigation of itself.",
+          "explanation": "Think of the school that settles the matter alone: it investigates itself.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Administrative”."
+        },
+        {
+          "id": "d1-enq-administrative-def2",
+          "question": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions [[constrained]] to those conducted within a [[single]] organization — that is, the organization performs an administrative investigation of itself.",
+          "answer": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions constrained to those conducted within a single organization — that is, the organization performs an administrative investigation of itself.",
+          "explanation": "Limited to one single organization: nobody from outside."
+        },
+        {
+          "id": "d1-enq-administrative-def3",
+          "question": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to [[actions constrained to]] those conducted [[within a single organization]] — that is, the organization performs an administrative investigation [[of itself]].",
+          "answer": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions constrained to those conducted within a single organization — that is, the organization performs an administrative investigation of itself.",
+          "explanation": "Three blocks: limited to, within a single organization, and of itself."
+        },
+        {
+          "id": "d1-enq-administrative-def4",
+          "question": "Write from memory the official definition of “administrative” for (ISC)2.",
+          "answer": "When discussing investigations, for (ISC)2 purposes, the term administrative will refer to actions constrained to those conducted within a single organization — that is, the organization performs an administrative investigation of itself.",
+          "explanation": "Remember: one single organization, investigating itself."
+        },
+        {
+          "id": "d1-enq-administrative-interne-def1",
+          "question": "Official definition: when is an internal investigation carried out?",
+          "answer": "Internal investigations are typically performed when the matter involves some violation of organizational policy and does not involve any external entities such as law enforcement, investors, third-party suppliers, or attackers.",
+          "explanation": "An internal rule was broken, and nobody from outside is concerned.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Administrative”. Law enforcement means the police and the services that make sure the law is followed."
+        },
+        {
+          "id": "d1-enq-administrative-interne-def3",
+          "question": "Internal investigations are typically performed when the matter involves [[some violation of]] [[organizational policy]] and does not involve [[any external entities]] such as law enforcement, investors, third-party suppliers, or attackers.",
+          "answer": "Internal investigations are typically performed when the matter involves some violation of organizational policy and does not involve any external entities such as law enforcement, investors, third-party suppliers, or attackers.",
+          "explanation": "A broken internal policy, with no outside party."
+        },
+        {
+          "id": "d1-enq-administrative-preuve-def1",
+          "question": "Official definition: the burden of proof of an administrative investigation",
+          "answer": "The burden of proof for administrative investigations is the lowest of all investigation types. Management can use whatever criteria they choose to believe evidence.",
+          "explanation": "Management decides what it believes: the lowest level.",
+          "explanation_more": "Sentences from the official (ISC)2 manual, domain 1, section “Administrative”."
+        },
+        {
+          "id": "d1-enq-administrative-preuve-def3",
+          "question": "The burden of proof for administrative investigations is [[the lowest]] of all [[investigation types]]. Management can use [[whatever criteria they choose]] to believe evidence.",
+          "answer": "The burden of proof for administrative investigations is the lowest of all investigation types. Management can use whatever criteria they choose to believe evidence.",
+          "explanation": "The lowest level, and criteria chosen by management."
+        },
+        {
+          "id": "d1-enq-administrative-1",
+          "question": "For (ISC)2, what does “administrative” mean in “administrative investigation”?",
+          "options": [
+            "An investigation inside the organization",
+            "An investigation run by a government agency"
+          ],
+          "answer": "An investigation inside the organization",
+          "explanation": "In the United States, administrative law means the laws of government agencies. But for the CISSP, administrative only means internal.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, note in the section “Administrative”."
+        },
+        {
+          "id": "d1-enq-administrative-2",
+          "question": "How does an administrative investigation of unauthorized file sharing go?",
+          "answer": "The IT team warns security, which warns management. The logs of the account are gathered. Management asks the lawyers and human resources, then decides.",
+          "explanation": "From the report to the decision, everything stays inside the organization.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, example in the section “Administrative”.",
+          "data": {
+            "steps": [
+              {
+                "prompt": "Who is warned first?",
+                "text": "The IT team reports the problem to the security team."
+              },
+              {
+                "prompt": "What does security do next?",
+                "text": "It informs management."
+              },
+              {
+                "prompt": "What does management ask for?",
+                "text": "It asks IT and security to gather information about the employee's activity."
+              },
+              {
+                "prompt": "What evidence is gathered?",
+                "text": "They gather the logs of the account and of the computer, then show them to management."
+              },
+              {
+                "prompt": "Who advises management?",
+                "text": "It asks the legal team and the human resources team."
+              },
+              {
+                "prompt": "Who decides what happens next?",
+                "text": "Management decides. Here, it decides to dismiss the employee."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-administrative-3",
+          "question": "An internal investigation finds deliberate criminal activity. What can management do?",
+          "options": [
+            "Move to civil action or file a criminal complaint",
+            "Nothing: an administrative investigation cannot change type",
+            "Let the employee's colleagues judge him"
+          ],
+          "options_why": [
+            "",
+            "The manual says the opposite: management can change the type of investigation.",
+            "Colleagues have no power of justice: only management and the justice system decide."
+          ],
+          "answer": "Move to civil action or file a criminal complaint",
+          "explanation": "Management can move to a civil action (a trial) or to criminal prosecution.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Administrative”: management can escalate to civil actions or criminal prosecution."
+        },
+        {
+          "id": "d1-enq-administrative-4",
+          "question": "Who can lead an administrative investigation?",
+          "answer": "Anyone the organization chooses: employees (security, IT, auditors, management) or outside specialists that it hires.",
+          "explanation": "The organization chooses its own investigators.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Administrative”."
+        },
+        {
+          "id": "d1-enq-administrative-5",
+          "question": "What penalties can an administrative investigation lead to?",
+          "answer": "Dismissing the employee, loss of privileges, or a move to another job, for example.",
+          "explanation": "These are penalties inside the organization.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Administrative”: employee termination, loss of privilege, reassignment, and so forth."
+        },
+        {
+          "id": "d1-enq-administrative-6",
+          "question": "Why handle evidence with care, even in an internal investigation?",
+          "answer": "Because an internal investigation can lead to a civil or criminal trial. Evidence that was handled badly may no longer be usable afterwards.",
+          "explanation": "The level of proof is low, but the evidence may be needed again later.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Administrative”. When in doubt, it is wise to talk to management or to a lawyer."
+        },
+        {
+          "id": "d1-enq-administrative-7",
+          "question": "In an administrative investigation, the burden of proof is the [[lowest]] of all types of [[investigation]].",
+          "answer": "In an administrative investigation, the burden of proof is the lowest of all types of investigation.",
+          "explanation": "Management sets its own criteria for believing the evidence."
+        },
+        {
+          "id": "d1-enq-administrative-8",
+          "question": "An employee copied company files to a personal USB stick. Which type of investigation is it, and who decides what happens next?",
+          "answer": "An administrative investigation, run inside the company. Management decides what happens next, with the lawyers. If the act is a crime, it can move to a criminal investigation.",
+          "explanation": "A broken internal rule is handled inside first."
+        },
+        {
+          "id": "d1-enq-administrative-9",
+          "question": "What if the internal investigation finds a malicious or criminal act?",
+          "answer": "Management can change the type of investigation. It can move to a civil trial or file a criminal complaint. These cases need other investigations.",
+          "explanation": "This is why the evidence must be kept intact from the start."
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-penale",
+      "name": "The criminal investigation",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The computers disappeared",
+          "paragraphes": [
+            "Ten computers disappeared from the computer room. The school calls the police. The officers arrive, take photos and ask questions.",
+            "It is no longer the school's business alone. A theft is punished by the law of the country. The State prosecutes.",
+            "When the State prosecutes someone who broke the law, we speak of a criminal investigation."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The police take over",
+          "comme": "At school, an argument is settled in the principal's office. But a serious theft is punished by the law of the country. The police and the justice system take over.",
+          "enVrai": "In a criminal investigation, the State prosecutes those who break its laws. Penalties go from fines to prison, and sometimes more. The investigation is led by law enforcement. The image stops there: a school principal can neither jail nor judge in the name of the State."
+        },
+        {
+          "type": "predire",
+          "question": "What condition must be met before law enforcement can handle a case?",
+          "options": [
+            "Establish jurisdiction",
+            "Get the agreement of the victim company",
+            "Have already identified the guilty person"
+          ],
+          "answer": "Establish jurisdiction",
+          "explanation": "Law enforcement must first have the legal power to handle the case. With computers, this is sometimes complicated."
+        },
+        {
+          "type": "exemple",
+          "titre": "A case that can be dropped",
+          "texte": "A hacker attacks a company from another continent. The police ask: who is responsible for this case? How much will the investigation cost? Is there a chance to win the trial? Sometimes the case is passed to another police force, or dropped."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-penale-def1",
+          "question": "Official definition: “criminal investigations”",
+          "answer": "Criminal investigations involve prosecution under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even death for offenders.",
+          "explanation": "Think of the police taking over: the State prosecutes a break of its law.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Criminal”. To prosecute means to accuse in front of the justice system."
+        },
+        {
+          "id": "d1-enq-penale-def2",
+          "question": "Criminal investigations involve [[prosecution]] under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even [[death]] for offenders.",
+          "answer": "Criminal investigations involve prosecution under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even death for offenders.",
+          "explanation": "The prosecution, and the heaviest penalty the manual mentions."
+        },
+        {
+          "id": "d1-enq-penale-def3",
+          "question": "Criminal investigations involve [[prosecution under criminal laws]]. The government, at the [[federal, state, or local]] level, prosecutes violations of its laws by imposing fines, imprisonment, or, [[in some extreme cases]], even death for offenders.",
+          "answer": "Criminal investigations involve prosecution under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even death for offenders.",
+          "explanation": "Three blocks: the prosecution, the three levels of government, and the extreme cases."
+        },
+        {
+          "id": "d1-enq-penale-def4",
+          "question": "Write from memory the official definition of “criminal investigations”.",
+          "answer": "Criminal investigations involve prosecution under criminal laws. The government, at the federal, state, or local level, prosecutes violations of its laws by imposing fines, imprisonment, or, in some extreme cases, even death for offenders.",
+          "explanation": "Two sentences: the definition, then what the government does."
+        },
+        {
+          "id": "d1-enq-penale-qui-def1",
+          "question": "Official definition: who leads a criminal investigation",
+          "answer": "Criminal investigations are conducted by law enforcement organizations, which can include local, state, federal, or even international agencies.",
+          "explanation": "It is law enforcement, from the local police to international agencies.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Criminal”."
+        },
+        {
+          "id": "d1-enq-penale-qui-def3",
+          "question": "Criminal investigations are conducted by [[law enforcement organizations]], which can include [[local, state, federal]], or even [[international agencies]].",
+          "answer": "Criminal investigations are conducted by law enforcement organizations, which can include local, state, federal, or even international agencies.",
+          "explanation": "Law enforcement, at every level, up to the international one."
+        },
+        {
+          "id": "d1-enq-penale-juridiction-def1",
+          "question": "Official definition: “jurisdiction” (in criminal investigations)",
+          "answer": "Jurisdiction, as we discussed in the section, \"Determine Compliance and Other Requirements,\" is the legal authority of a governmental body (such as a court or enforcement agency) over a specific matter, often based on geography.",
+          "explanation": "This is the definition seen in the galaxy about compliance, applied to investigations.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Criminal”. Law enforcement must first establish its jurisdiction."
+        },
+        {
+          "id": "d1-enq-penale-juridiction-def3",
+          "question": "Jurisdiction, as we discussed in the section, \"Determine Compliance and Other Requirements,\" is [[the legal authority]] of [[a governmental body]] (such as a court or enforcement agency) over [[a specific matter]], often based on geography.",
+          "answer": "Jurisdiction, as we discussed in the section, \"Determine Compliance and Other Requirements,\" is the legal authority of a governmental body (such as a court or enforcement agency) over a specific matter, often based on geography.",
+          "explanation": "The legal authority, the public body, and the specific matter."
+        },
+        {
+          "id": "d1-enq-penale-preuve-def1",
+          "question": "Official definition: the standard of proof of criminal courts",
+          "answer": "Typically, criminal courts have the highest legal standard for determining liability and guilt; this is often referred to as evidence that shows that the accused has caused harm beyond a reasonable doubt.",
+          "explanation": "The highest standard of proof: beyond a reasonable doubt.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Criminal”."
+        },
+        {
+          "id": "d1-enq-penale-preuve-def3",
+          "question": "Typically, criminal courts have [[the highest legal standard]] for determining [[liability and guilt]]; this is often referred to as evidence that shows that the accused has caused harm [[beyond a reasonable doubt]].",
+          "answer": "Typically, criminal courts have the highest legal standard for determining liability and guilt; this is often referred to as evidence that shows that the accused has caused harm beyond a reasonable doubt.",
+          "explanation": "The highest standard, guilt, and the reasonable doubt."
+        },
+        {
+          "id": "d1-enq-penale-1",
+          "question": "Who leads a criminal investigation?",
+          "options": [
+            "Law enforcement",
+            "The company management"
+          ],
+          "answer": "Law enforcement",
+          "explanation": "Management leads the administrative investigation. The criminal investigation is the business of the police and the justice system."
+        },
+        {
+          "id": "d1-enq-penale-2",
+          "question": "A police force drops a case about a far-away hacker. Which of these reasons does the manual mention?",
+          "options": [
+            "The cost of the investigation compared to the size of the crime",
+            "The victim no longer wants to cooperate",
+            "The hacker erased his own name"
+          ],
+          "options_why": [
+            "",
+            "The manual does not mention this reason. It talks about jurisdiction, cost and chances of success.",
+            "The manual does not mention this reason either: it talks about jurisdiction, cost and chances of success."
+          ],
+          "answer": "The cost of the investigation compared to the size of the crime",
+          "explanation": "The manual mentions jurisdiction, the cost against the size of the crime, and the chances of success.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”: jurisdictional issues, cost versus scale and impact, likelihood of successful prosecution."
+        },
+        {
+          "id": "d1-enq-penale-3",
+          "question": "What does the investigator first try to understand once jurisdiction is established?",
+          "answer": "What happened, the damage caused, and the range of possible crimes for a prosecution.",
+          "explanation": "Before aiming at a precise law, you must understand the facts.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”."
+        },
+        {
+          "id": "d1-enq-penale-4",
+          "question": "What does the investigator do as the investigation moves forward?",
+          "answer": "He identifies the possible suspects and the available evidence. Then he aims at precise laws and rules.",
+          "explanation": "The field narrows little by little.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”."
+        },
+        {
+          "id": "d1-enq-penale-5",
+          "question": "Why is jurisdiction sometimes complicated when computer assets are involved?",
+          "answer": "Because an attack can involve several public bodies, several places and several laws at the same time.",
+          "explanation": "An attacker and his victim can be in different countries.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”."
+        },
+        {
+          "id": "d1-enq-penale-6",
+          "question": "In a criminal case, the proof must be made [[beyond a reasonable doubt]].",
+          "answer": "In a criminal case, the proof must be made beyond a reasonable doubt.",
+          "explanation": "This is the highest standard of proof."
+        },
+        {
+          "id": "d1-enq-penale-7",
+          "question": "Which techniques do criminal investigators use on computer evidence?",
+          "answer": "Investigation techniques, including digital forensics: looking for and analyzing evidence in digital devices.",
+          "explanation": "It makes it possible to find traces without damaging them.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”. Digital forensics is covered in domain 7."
+        },
+        {
+          "id": "d1-enq-penale-8",
+          "question": "A company suffers a data theft by a foreign hacker. Explain why the police may decide not to prosecute.",
+          "answer": "Jurisdiction may be unclear. The investigation may cost more than the size of the crime. The chances of a successful prosecution may be low. The case may also be passed to another police force.",
+          "explanation": "Three reasons: jurisdiction, cost and chances of success."
+        },
+        {
+          "id": "d1-enq-penale-9",
+          "question": "What if no jurisdiction is established?",
+          "answer": "Law enforcement has no legal power to take the case. It can be passed to another police force.",
+          "explanation": "Without jurisdiction, no criminal investigation is possible."
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-gestes",
+      "name": "The right moves when a crime is suspected",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The first one on the scene",
+          "paragraphes": [
+            "You are in charge of security at your company. One morning, you see that a stranger copied customer files during the night.",
+            "You want to search every computer to find out who it is. It seems logical. Yet it is a bad idea.",
+            "Every click can erase traces. When a crime is suspected, your job is not to investigate alone."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The first witness of an accident",
+          "comme": "You are the first to see an accident. You call the rescue team, you avoid more accidents, and you move nothing. The specialists will do the investigation.",
+          "enVrai": "At work, it is the same. You limit the immediate damage (containment), you warn your management, and you let the authorities lead the investigation. The image stops there: you are not passive, you protect the systems right away."
+        },
+        {
+          "type": "predire",
+          "question": "You suspect a crime in your company. What is the best first action?",
+          "options": [
+            "Search the computers to find the guilty person",
+            "Limit the damage and warn management",
+            "Call the police without telling anyone"
+          ],
+          "answer": "Limit the damage and warn management",
+          "explanation": "Searching can damage the evidence. Calling alone is not your role: the decision is made with management and a lawyer."
+        },
+        {
+          "type": "exemple",
+          "titre": "Who needs a court order?",
+          "texte": "To get into a company's computers, the police may need a court order. This order is a warrant or a subpoena (an order to hand over documents). But if the company calls the police itself, it can allow them to get into its own computers. The company owns them."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-gestes-1",
+          "question": "You suspect that a crime was committed in your company. What is the best first action?",
+          "options": [
+            "Limit the immediate damage and warn management",
+            "Search the computers to find the guilty person",
+            "Call the police without telling anyone"
+          ],
+          "options_why": [
+            "",
+            "People without training can damage the evidence and get in the way of the investigation.",
+            "The decision to call the police is made with management and a lawyer."
+          ],
+          "answer": "Limit the immediate damage and warn management",
+          "explanation": "You pass the information up right away, and you let the authorities decide what comes next.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”: suspend the investigation (except to limit damage) and warn management right away."
+        },
+        {
+          "id": "d1-enq-gestes-2",
+          "question": "You think a crime took place. Can you contact the police alone?",
+          "options": [
+            "No: the decision is made with management and a lawyer",
+            "Yes: it is your immediate duty"
+          ],
+          "answer": "No: the decision is made with management and a lawyer",
+          "explanation": "It is a complex decision: it does not belong to one single employee.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”. A lawyer (counsel) can work inside the company or outside it."
+        },
+        {
+          "id": "d1-enq-gestes-3",
+          "question": "Why should you not investigate on your own when you suspect a crime?",
+          "answer": "People without training can damage the traces. We say they taint the evidence. This then gets in the way of the police investigation.",
+          "explanation": "Damaged evidence can become unusable.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”: the actions of untrained staff can taint the evidence."
+        },
+        {
+          "id": "d1-enq-gestes-4",
+          "question": "What can you keep doing after you suspect a crime?",
+          "answer": "Only limiting the immediate damage (containment). Then you wait for instructions from the authorities and you warn management.",
+          "explanation": "Limiting the damage is not investigating.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”: suspend investigation activity, beyond limiting the immediate damage."
+        },
+        {
+          "id": "d1-enq-gestes-5",
+          "question": "To do or not to do when a crime is suspected?",
+          "answer": "To do: warn management, limit the immediate damage and wait for instructions from the authorities. Not to do: search alone, call the police alone and change the files.",
+          "explanation": "Protect, warn and wait. Do not search, do not decide alone and do not change anything.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "To do",
+              "Not to do"
+            ],
+            "items": [
+              {
+                "text": "Warn management right away",
+                "category": "To do"
+              },
+              {
+                "text": "Limit the immediate damage",
+                "category": "To do"
+              },
+              {
+                "text": "Wait for instructions from the authorities",
+                "category": "To do"
+              },
+              {
+                "text": "Search the disks alone to find the guilty person",
+                "category": "Not to do"
+              },
+              {
+                "text": "Contact the police alone without asking anyone",
+                "category": "Not to do"
+              },
+              {
+                "text": "Change the files to fix everything",
+                "category": "Not to do"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-gestes-6",
+          "question": "Which forms can a court order take to get evidence?",
+          "answer": "A warrant or a subpoena (an order to hand over documents). Some come from a judge, others from an officer of the court such as a prosecutor.",
+          "explanation": "These orders give the State the right to get into private property, devices and data.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”."
+        },
+        {
+          "id": "d1-enq-gestes-7",
+          "question": "A company asks the police for help and opens access to its own servers. Is a court order needed?",
+          "options": [
+            "No: the company owns the equipment and can allow access to it",
+            "Yes: always, with no exception",
+            "Yes: unless the data is encrypted"
+          ],
+          "options_why": [
+            "",
+            "The manual says that the owner of the property can give permission to anyone they want.",
+            "Encryption is not the test: what counts is who owns the equipment."
+          ],
+          "answer": "No: the company owns the equipment and can allow access to it",
+          "explanation": "The owner can allow access to anyone they choose, including the police.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”."
+        },
+        {
+          "id": "d1-enq-gestes-8",
+          "question": "Who must follow strict rules for collecting evidence, like the warrant and the chain of custody?",
+          "options": [
+            "The police investigators",
+            "The company that hands over its own data"
+          ],
+          "answer": "The police investigators",
+          "explanation": "A company can hand over its evidence. Law enforcement is bound by strict rules.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”: warrants, chain of custody and limits on analysis for public investigators."
+        },
+        {
+          "id": "d1-enq-gestes-9",
+          "question": "Why is the decision to call the police made with management and a lawyer?",
+          "answer": "Because it is a complex decision, with consequences for the company. A lawyer knows the rules to follow.",
+          "explanation": "One person alone rarely sees all the risks.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Criminal”."
+        },
+        {
+          "id": "d1-enq-gestes-10",
+          "question": "When a crime is suspected, you must [[warn]] management and suspend any personal investigation, except to limit the [[damage]].",
+          "answer": "When a crime is suspected, you must warn management and suspend any personal investigation, except to limit the damage.",
+          "explanation": "Protect first, let others investigate afterwards."
+        },
+        {
+          "id": "d1-enq-gestes-11",
+          "question": "What if an untrained employee copies the hacker's files himself?",
+          "answer": "He can change or damage the traces. The evidence may be tainted and the police investigation made harder.",
+          "explanation": "The smallest move can leave a new trace or erase an old one."
+        },
+        {
+          "id": "d1-enq-gestes-12",
+          "question": "One morning, you see that a stranger copied customer files. Write what you do, in order.",
+          "answer": "I limit the immediate damage. I warn management right away. I do not search alone. Management and a lawyer decide to call the police. Then I wait for instructions from the authorities.",
+          "explanation": "Protect, warn, do not search, let others decide."
+        },
+        {
+          "id": "d1-enq-gestes-13",
+          "question": "What does “chain of custody” mean?",
+          "answer": "The written record of who held the evidence, and when. It shows that it was not changed.",
+          "explanation": "It is the logbook of where the evidence has been.",
+          "explanation_more": "Simple definition, outside the manual. The manual lists the chain of custody among the strict rules for public investigators. It is explained in detail in domain 7."
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-civile",
+      "name": "The civil investigation",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The broken phone",
+          "paragraphes": [
+            "In the yard, Tom breaks Sacha's phone. Sacha's parents ask for money to repair it.",
+            "Nobody calls the police. Nobody will go to prison. It is a conflict between two families, who want someone to make up for the harm.",
+            "If the families do not agree, they go to a judge. This kind of conflict between private parties is called a civil case."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The judge between two families",
+          "comme": "The judge does not punish a fault against the country. He decides who owes what to whom: pay back, stop, keep a promise.",
+          "enVrai": "In civil law, a plaintiff sues another private party. He wants compensation for a loss, or an end to a dispute. The judge says whether the defendant is liable (responsible) or not. He can order the payment of damages, which is money to make up for the harm. The image stops there: a civil court applies precise laws."
+        },
+        {
+          "type": "predire",
+          "question": "In a civil trial, can a defendant found liable be sent to prison for that responsibility?",
+          "options": [
+            "No, civil liability does not lead to prison",
+            "Yes, like in a criminal case"
+          ],
+          "answer": "No, civil liability does not lead to prison",
+          "explanation": "In a civil case, you are liable or not. You may have to pay or stop an activity. But refusing to obey a court order can lead to prison."
+        },
+        {
+          "type": "exemple",
+          "titre": "Two cases that involve your company",
+          "texte": "Case 1: a stranger steals data from your system. Your company asks for damages in court. You gather the logs that prove the fault. Case 2: a former employee says the company treated him badly. You must keep all the emails and stop them from being destroyed."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-civile-def1",
+          "question": "Official definition: “civil law”",
+          "answer": "Civil law governs relations and interactions between private entities. The plaintiff in a civil case sues for compensation for a loss or relief from some type of dispute.",
+          "explanation": "Think of the two families: one private party sues another.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Civil”. A private entity is a person or a company, not the State."
+        },
+        {
+          "id": "d1-enq-civile-def2",
+          "question": "Civil law governs relations and interactions between [[private]] entities. The plaintiff in a civil case [[sues]] for compensation for a loss or relief from some type of dispute.",
+          "answer": "Civil law governs relations and interactions between private entities. The plaintiff in a civil case sues for compensation for a loss or relief from some type of dispute.",
+          "explanation": "Private entities, and a plaintiff who sues."
+        },
+        {
+          "id": "d1-enq-civile-def3",
+          "question": "Civil law governs [[relations and interactions]] between [[private entities]]. The plaintiff in a civil case sues for [[compensation for a loss]] or relief from some type of dispute.",
+          "answer": "Civil law governs relations and interactions between private entities. The plaintiff in a civil case sues for compensation for a loss or relief from some type of dispute.",
+          "explanation": "Three blocks: the relations, the private entities, and the compensation for a loss."
+        },
+        {
+          "id": "d1-enq-civile-def4",
+          "question": "Write from memory the official definition of “civil law”.",
+          "answer": "Civil law governs relations and interactions between private entities. The plaintiff in a civil case sues for compensation for a loss or relief from some type of dispute.",
+          "explanation": "Two sentences: the field of civil law, then the role of the plaintiff."
+        },
+        {
+          "id": "d1-enq-civile-preuve-def1",
+          "question": "Official definition: the standard of proof of a civil trial",
+          "answer": "Unlike criminal law, in civil proceedings, the usual standard of proof is preponderance of the evidence, meaning it is a much lower burden of proof.",
+          "explanation": "A civil case is satisfied with a standard of proof that is much lower than a criminal case.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Civil”."
+        },
+        {
+          "id": "d1-enq-civile-preuve-def3",
+          "question": "Unlike criminal law, in civil proceedings, the [[usual standard of proof]] is [[preponderance of the evidence]], meaning it is [[a much lower]] burden of proof.",
+          "answer": "Unlike criminal law, in civil proceedings, the usual standard of proof is preponderance of the evidence, meaning it is a much lower burden of proof.",
+          "explanation": "The usual standard of proof, its name, and the fact that it is much lower."
+        },
+        {
+          "id": "d1-enq-civile-liable-def1",
+          "question": "Official definition: “liable” and “guilty” in a civil trial",
+          "answer": "In a civil proceeding, there is no question of guilty versus not guilty but rather liable versus not liable.",
+          "explanation": "In a civil case, we speak of liability, not guilt.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Civil”."
+        },
+        {
+          "id": "d1-enq-civile-liable-def3",
+          "question": "In a civil proceeding, there is [[no question of]] [[guilty versus not guilty]] but rather [[liable versus not liable]].",
+          "answer": "In a civil proceeding, there is no question of guilty versus not guilty but rather liable versus not liable.",
+          "explanation": "We set aside guilty or not, and keep liable or not."
+        },
+        {
+          "id": "d1-enq-civile-spoliation-def1",
+          "question": "Official definition: “spoliation of evidence”",
+          "answer": "Spoliation of evidence (i.e., altering or destruction of the original) can lead to exclusion of evidence in a case or, in some situations, can lead to a separate lawsuit for the damages resulting from the spoliation.",
+          "explanation": "Damaging or destroying evidence can get it thrown out, and can even cost you another trial.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Civil”."
+        },
+        {
+          "id": "d1-enq-civile-spoliation-def3",
+          "question": "Spoliation of evidence (i.e., [[altering or destruction]] of the original) can lead to [[exclusion of evidence]] in a case or, in some situations, can lead to a [[separate lawsuit]] for the damages resulting from the spoliation.",
+          "answer": "Spoliation of evidence (i.e., altering or destruction of the original) can lead to exclusion of evidence in a case or, in some situations, can lead to a separate lawsuit for the damages resulting from the spoliation.",
+          "explanation": "Altering or destroying, then two results: evidence thrown out, or another trial."
+        },
+        {
+          "id": "d1-enq-civile-1",
+          "question": "In a civil case, what question is put to the court?",
+          "options": [
+            "Liable or not liable",
+            "Guilty or not guilty"
+          ],
+          "answer": "Liable or not liable",
+          "explanation": "Guilty or not guilty is the language of criminal cases. In a civil case, we speak of liability."
+        },
+        {
+          "id": "d1-enq-civile-2",
+          "question": "A former employee says the company treated him badly. A lawyer asks you to keep all the emails. What do you do?",
+          "options": [
+            "I stop this evidence from being destroyed",
+            "I delete the emails to protect the company",
+            "I fix the emails that cause confusion"
+          ],
+          "options_why": [
+            "",
+            "Destroying evidence is spoliation: it can get the evidence thrown out and lead to another trial.",
+            "Changing the original is spoliation. Originals must never be changed."
+          ],
+          "answer": "I stop this evidence from being destroyed",
+          "explanation": "Evidence must be kept when the court or the lawyers ask for it.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Civil”: destruction hold notice, preservation notice, litigation hold."
+        },
+        {
+          "id": "d1-enq-civile-3",
+          "question": "How much fault is enough to lose a civil trial?",
+          "answer": "Even 50.1 percent: a simple majority of responsibility.",
+          "explanation": "A civil case is satisfied with more than half.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Civil”. Elsewhere, the manual says “at least 51 percent”. Remember: a little more than half."
+        },
+        {
+          "id": "d1-enq-civile-4",
+          "question": "Criminal or civil investigation? Which box does each sentence go in?",
+          "answer": "Criminal: the State prosecutes, the proof is the hardest and police officers investigate. Civil: the plaintiff asks for compensation, the question is liable or not, and professionals like you investigate.",
+          "explanation": "Criminal: the State, the police, the strongest proof. Civil: two private parties, security professionals, weaker proof.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Criminal",
+              "Civil"
+            ],
+            "items": [
+              {
+                "text": "The State prosecutes the accused",
+                "category": "Criminal"
+              },
+              {
+                "text": "The proof is the hardest to reach",
+                "category": "Criminal"
+              },
+              {
+                "text": "Police officers lead the investigation",
+                "category": "Criminal"
+              },
+              {
+                "text": "A plaintiff asks for compensation",
+                "category": "Civil"
+              },
+              {
+                "text": "The verdict is “liable” or “not liable”",
+                "category": "Civil"
+              },
+              {
+                "text": "IT and security professionals collect the evidence",
+                "category": "Civil"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-civile-5",
+          "question": "What can a court order a defendant found liable to do?",
+          "answer": "Pay damages, stop an activity that harms the plaintiff, or respect a contract.",
+          "explanation": "These are duties, not prison sentences.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Civil”. Refusing to obey a court order can lead to a charge of contempt of court. This can go as far as prison."
+        },
+        {
+          "id": "d1-enq-civile-6",
+          "question": "Why is the effort to collect evidence lighter in a civil case, without being careless?",
+          "answer": "Because the standard of proof and the stakes are lower. But you must still act with care and in a professional way.",
+          "explanation": "Lower stakes do not mean less seriousness.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Civil”: due care must still be taken."
+        },
+        {
+          "id": "d1-enq-civile-7",
+          "question": "What do we call the duty to keep evidence when a court or a lawyer asks for it?",
+          "answer": "A litigation hold, or preservation notice, or destruction hold notice.",
+          "explanation": "It stops possible evidence from being destroyed.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Civil”: destruction hold notice, preservation notice, litigation hold, or similar terms."
+        },
+        {
+          "id": "d1-enq-civile-8",
+          "question": "In a civil case, being liable does not lead to [[prison]]. But refusing a court order can lead to [[contempt]] of court.",
+          "answer": "In a civil case, being liable does not lead to prison. But refusing a court order can lead to contempt of court.",
+          "explanation": "Contempt of court can, in the end, lead to prison."
+        },
+        {
+          "id": "d1-enq-civile-9",
+          "question": "Your company is the plaintiff after a data theft. Which evidence may you have to gather?",
+          "answer": "The logs of the attacked machines, of the intrusion detection systems and of the network devices. They show that the defendant caused the damage.",
+          "explanation": "These logs tell what happened, minute by minute.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Civil”. An intrusion detection system spots suspicious access."
+        },
+        {
+          "id": "d1-enq-civile-10",
+          "question": "What if you change an original file before the trial?",
+          "answer": "It is spoliation. The evidence can be thrown out. A separate trial can even be opened for the damage caused.",
+          "explanation": "Originals must never be changed without the lawyers' advice."
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-regulation",
+      "name": "The regulatory investigation",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The canteen inspector",
+          "paragraphes": [
+            "A government inspector visits the school canteen. He checks the fridges, the dates and the cleanliness.",
+            "Nobody called him to complain. He decides by himself to come.",
+            "If he finds a fault, he can give a fine or order the canteen to stop. This kind of check is called a regulatory investigation."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The inspector with the powers of the law",
+          "comme": "The inspector does not give advice. He applies rules that have the force of law. These rules protect the students.",
+          "enVrai": "A regulation is an official rule: a law set by a public body. It protects citizens or the environment, or makes a sector safer. A regulatory investigation checks that an organization follows this rule. The image stops there: the inspector only has power in his own field."
+        },
+        {
+          "type": "predire",
+          "question": "Is the PCI DSS standard, which protects card payments, a regulation in the sense of the manual?",
+          "options": [
+            "Yes: it is a mandatory rule",
+            "No: it is a standard set by contract"
+          ],
+          "answer": "No: it is a standard set by contract",
+          "explanation": "A regulation is a law set by a public body. PCI DSS is a contract standard: only those who choose to follow it are concerned."
+        },
+        {
+          "type": "exemple",
+          "titre": "The EPA and toxic waste",
+          "texte": "In the United States, the EPA (Environmental Protection Agency) is a government agency. It writes regulations about toxic waste and the transport of some products. These regulations have the force of law. Someone who breaks them can be prosecuted by the government."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-regulation-def1",
+          "question": "Official definition: “regulatory investigations”",
+          "answer": "Regulatory investigations involve determining whether an organization is compliant with a given regulation or legal requirement.",
+          "explanation": "Think of the inspector: he checks whether the organization follows the rules.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Regulatory”."
+        },
+        {
+          "id": "d1-enq-regulation-def2",
+          "question": "Regulatory investigations involve determining whether an organization is [[compliant]] with a given regulation or legal [[requirement]].",
+          "answer": "Regulatory investigations involve determining whether an organization is compliant with a given regulation or legal requirement.",
+          "explanation": "The key word is compliant: we check compliance."
+        },
+        {
+          "id": "d1-enq-regulation-def3",
+          "question": "Regulatory investigations involve [[determining whether]] an [[organization is compliant]] with a [[given regulation]] or legal requirement.",
+          "answer": "Regulatory investigations involve determining whether an organization is compliant with a given regulation or legal requirement.",
+          "explanation": "Three blocks: determining whether, the organization is compliant, and with which rule."
+        },
+        {
+          "id": "d1-enq-regulation-def4",
+          "question": "Write from memory the official definition of “regulatory investigations”.",
+          "answer": "Regulatory investigations involve determining whether an organization is compliant with a given regulation or legal requirement.",
+          "explanation": "Remember: determining whether, a compliant organization, a rule or legal requirement."
+        },
+        {
+          "id": "d1-enq-regulation-reglement-def1",
+          "question": "Official definition: “regulation” according to (ISC)2",
+          "answer": "A regulation is not a standard, guideline, or suggestion — it is law, established by a government body.",
+          "explanation": "A regulation is a law: you cannot choose to ignore it.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, note in the section “Regulatory”."
+        },
+        {
+          "id": "d1-enq-regulation-reglement-def2",
+          "question": "A regulation is not a standard, guideline, or [[suggestion]] — it is law, established by a [[government]] body.",
+          "answer": "A regulation is not a standard, guideline, or suggestion — it is law, established by a government body.",
+          "explanation": "Not advice, not a suggestion: a law set by a public body."
+        },
+        {
+          "id": "d1-enq-regulation-reglement-def3",
+          "question": "A regulation is [[not a standard]], guideline, or suggestion — it is [[law, established by]] a [[government body]].",
+          "answer": "A regulation is not a standard, guideline, or suggestion — it is law, established by a government body.",
+          "explanation": "Three blocks: not a standard, a law established by, a government body."
+        },
+        {
+          "id": "d1-enq-regulation-reglement-def4",
+          "question": "Write from memory the official definition of “regulation” according to (ISC)2.",
+          "answer": "A regulation is not a standard, guideline, or suggestion — it is law, established by a government body.",
+          "explanation": "Remember what it is not, then what it is: a law."
+        },
+        {
+          "id": "d1-enq-regulation-force-def1",
+          "question": "Official definition: the link between regulation and criminal investigation",
+          "answer": "Regulations have the force of law; consequently, regulatory investigations are similar to criminal investigations.",
+          "explanation": "A rule that has the force of law is checked a bit like a criminal law.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Regulatory”."
+        },
+        {
+          "id": "d1-enq-regulation-force-def3",
+          "question": "Regulations have [[the force of law]]; consequently, [[regulatory investigations are similar]] to [[criminal investigations]].",
+          "answer": "Regulations have the force of law; consequently, regulatory investigations are similar to criminal investigations.",
+          "explanation": "The force of law explains the likeness with criminal cases."
+        },
+        {
+          "id": "d1-enq-regulation-preuve-def1",
+          "question": "Official definition: proof and penalties of a regulatory investigation",
+          "answer": "The burden of proof for regulatory investigations is the preponderance of the evidence, and the penalties typically involve fines and injunctions.",
+          "explanation": "The standard of proof of civil cases, with money penalties and official orders.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Regulatory”. An injunction is an official order to do or to stop doing something."
+        },
+        {
+          "id": "d1-enq-regulation-preuve-def3",
+          "question": "The burden of proof for regulatory investigations is the [[preponderance of the evidence]], and the [[penalties typically involve]] [[fines and injunctions]].",
+          "answer": "The burden of proof for regulatory investigations is the preponderance of the evidence, and the penalties typically involve fines and injunctions.",
+          "explanation": "The standard of proof, then the usual penalties."
+        },
+        {
+          "id": "d1-enq-regulation-pci-def1",
+          "question": "Official definition: PCI-DSS is not a regulation",
+          "answer": "Conversely, the PCI-DSS is not a regulation, as defined by (ISC)2; the PCI-DSS is a contractual standard, affecting only those parties that voluntarily choose to comply with it (i.e., merchants that accept credit card payment).",
+          "explanation": "A standard set by contract and followed by choice: it is not a law.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, note in the section “Regulatory”."
+        },
+        {
+          "id": "d1-enq-regulation-pci-def3",
+          "question": "Conversely, the PCI-DSS is [[not a regulation]], as defined by (ISC)2; the PCI-DSS is [[a contractual standard]], affecting only those parties that [[voluntarily choose to comply]] with it (i.e., merchants that accept credit card payment).",
+          "answer": "Conversely, the PCI-DSS is not a regulation, as defined by (ISC)2; the PCI-DSS is a contractual standard, affecting only those parties that voluntarily choose to comply with it (i.e., merchants that accept credit card payment).",
+          "explanation": "Not a regulation, a contractual standard, followed by choice."
+        },
+        {
+          "id": "d1-enq-regulation-1",
+          "question": "Which one is a regulation in the sense of (ISC)2?",
+          "options": [
+            "A rule of the environmental protection agency",
+            "The PCI DSS standard"
+          ],
+          "answer": "A rule of the environmental protection agency",
+          "explanation": "A rule from a government agency has the force of law. PCI DSS is a standard set by contract."
+        },
+        {
+          "id": "d1-enq-regulation-2",
+          "question": "Which penalties are typical of a regulatory investigation?",
+          "options": [
+            "Fines and injunctions",
+            "Always prison",
+            "Only public apologies"
+          ],
+          "options_why": [
+            "",
+            "Prison is possible only if the regulator passes the case to criminal justice.",
+            "The manual talks about real penalties: fines and injunctions."
+          ],
+          "answer": "Fines and injunctions",
+          "explanation": "The manual says that the penalties typically involve fines and injunctions.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Regulatory”. The regulator can also ask criminal law enforcement to step in: prison is then possible."
+        },
+        {
+          "id": "d1-enq-regulation-3",
+          "question": "Is it a regulation in the sense of (ISC)2?",
+          "answer": "Regulation: the EPA rule, and a law set by a public body. Not a regulation: PCI DSS, a piece of advice, and a simple guideline.",
+          "explanation": "A regulation is a public law. A standard, a piece of advice or a guideline is not one.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "A regulation",
+              "Not a regulation"
+            ],
+            "items": [
+              {
+                "text": "A rule written by the EPA about toxic waste",
+                "category": "A regulation"
+              },
+              {
+                "text": "A law set by a public body",
+                "category": "A regulation"
+              },
+              {
+                "text": "The PCI DSS standard",
+                "category": "Not a regulation"
+              },
+              {
+                "text": "A piece of advice offered by an association",
+                "category": "Not a regulation"
+              },
+              {
+                "text": "An optional guideline",
+                "category": "Not a regulation"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-regulation-4",
+          "question": "Who decides to start a regulatory investigation?",
+          "answer": "The government agencies themselves. They have the power to decide when to investigate. They have their own investigators, prosecutors and courts.",
+          "explanation": "The agency does not wait to be called.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Regulatory”."
+        },
+        {
+          "id": "d1-enq-regulation-5",
+          "question": "Why does a regulatory investigation look like a criminal investigation?",
+          "answer": "Because regulations have the force of law. Making people follow them is a bit like enforcing a criminal law.",
+          "explanation": "A rule that has the force of law can lead to prosecution.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Regulatory”."
+        },
+        {
+          "id": "d1-enq-regulation-6",
+          "question": "What can a regulator do instead of running its own investigation?",
+          "answer": "Ask the targeted organizations for information, or use the data from audit reports.",
+          "explanation": "It can rely on what the organization provides.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Regulatory”."
+        },
+        {
+          "id": "d1-enq-regulation-7",
+          "question": "A regulation is set by a [[government]] body and has the force of [[law]].",
+          "answer": "A regulation is set by a government body and has the force of law.",
+          "explanation": "Not a standard and not advice: a law."
+        },
+        {
+          "id": "d1-enq-regulation-8",
+          "question": "What is an injunction?",
+          "answer": "An official order that forces you to do something or to stop doing something.",
+          "explanation": "It often comes along with a fine.",
+          "explanation_more": "Simple definition, outside the manual. The manual lists injunctions among the typical penalties of a regulatory investigation."
+        },
+        {
+          "id": "d1-enq-regulation-9",
+          "question": "What if a regulator finds evidence of a crime?",
+          "answer": "It can ask criminal law enforcement to take over. This can then lead to prison.",
+          "explanation": "A regulatory investigation can lead to a criminal investigation.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Regulatory”."
+        },
+        {
+          "id": "d1-enq-regulation-10",
+          "question": "Your colleague says: “PCI DSS is a regulation, so it is the law.” Correct him.",
+          "answer": "No. For (ISC)2, a regulation is a law set by a public body. PCI DSS is a contractual standard, followed by choice by those who accept cards.",
+          "explanation": "A standard set by contract is not a law."
+        }
+      ]
+    },
+    {
+      "id": "d1-enq-normes",
+      "name": "Investigation standards (ISO and NIST)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The lab method",
+          "paragraphes": [
+            "In science class, you follow a method. You observe, you take notes, you keep the sample untouched, you analyze, then you write a report.",
+            "If you skip a step, nobody believes your result.",
+            "For digital evidence (files, phones, logs), organizations have written similar methods. They are standards and guides."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The lab protocol",
+          "comme": "The lab protocol says what to do, and in which order, so that the result can be trusted. You can adapt it, but it serves as a guide.",
+          "enVrai": "Investigation standards recommend steps for handling digital evidence. They also cover security incidents, which are events that threaten security, like a data leak. Digital forensics is the set of techniques used to find and analyze this evidence. The image stops there: some standards depend on your country or your sector."
+        },
+        {
+          "type": "predire",
+          "question": "A standard recommends four steps to handle digital evidence. Which is the right order?",
+          "options": [
+            "Identify, collect, acquire, preserve",
+            "Analyze, erase, copy, report",
+            "Copy, analyze, identify, report"
+          ],
+          "answer": "Identify, collect, acquire, preserve",
+          "explanation": "You first need to know what to take, then collect it, get a usable copy of it (acquire), and keep it untouched (preserve)."
+        },
+        {
+          "type": "exemple",
+          "titre": "A phone in an investigation",
+          "texte": "An employee is suspected of copying files onto his phone. A phone is not a computer like the others: its memory and files are organized differently. A NIST guide explains how to get, keep, examine and analyze its evidence, then write a report. The phone is also private: you must be careful."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-enq-normes-27037-def1",
+          "question": "Official definition: “ISO/IEC 27037:2012”",
+          "answer": "ISO/IEC 27037:2012 provides guidelines for handling digital evidence. This is covered through a four-step process of identification, collection, acquisition, and preservation.",
+          "explanation": "Think of the lab method: spot, pick up, copy, keep.",
+          "explanation_more": "Sentences from the official (ISC)2 manual, domain 1, section “Industry Standards”. ISO is the International Organization for Standardization."
+        },
+        {
+          "id": "d1-enq-normes-27037-def2",
+          "question": "ISO/IEC 27037:2012 provides guidelines for handling [[digital]] evidence. This is covered through a four-step process of identification, collection, acquisition, and [[preservation]].",
+          "answer": "ISO/IEC 27037:2012 provides guidelines for handling digital evidence. This is covered through a four-step process of identification, collection, acquisition, and preservation.",
+          "explanation": "Digital evidence, and the last step: preservation."
+        },
+        {
+          "id": "d1-enq-normes-27037-def3",
+          "question": "ISO/IEC 27037:2012 provides [[guidelines for handling]] digital evidence. This is covered through a [[four-step process]] of [[identification, collection, acquisition]], and preservation.",
+          "answer": "ISO/IEC 27037:2012 provides guidelines for handling digital evidence. This is covered through a four-step process of identification, collection, acquisition, and preservation.",
+          "explanation": "Three blocks: the guidelines, the four steps, and the first three steps."
+        },
+        {
+          "id": "d1-enq-normes-27037-def4",
+          "question": "Write from memory the sentence of the manual about ISO/IEC 27037:2012.",
+          "answer": "ISO/IEC 27037:2012 provides guidelines for handling digital evidence. This is covered through a four-step process of identification, collection, acquisition, and preservation.",
+          "explanation": "Remember the four steps in order."
+        },
+        {
+          "id": "d1-enq-normes-86-def1",
+          "question": "Official definition: the phases of NIST SP 800-86",
+          "answer": "Most importantly, NIST SP 800-86 describes the digital forensic process overall in four phases: collection, examination, analysis, and reporting.",
+          "explanation": "Four phases: pick up, examine, analyze, report.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Industry Standards”. NIST SP 800-86: “Guide to Integrating Forensic Techniques into Incident Response”."
+        },
+        {
+          "id": "d1-enq-normes-86-def2",
+          "question": "Most importantly, NIST SP 800-86 describes the digital [[forensic]] process overall in four phases: collection, examination, analysis, and [[reporting]].",
+          "answer": "Most importantly, NIST SP 800-86 describes the digital forensic process overall in four phases: collection, examination, analysis, and reporting.",
+          "explanation": "The digital forensic process, and its last phase: reporting."
+        },
+        {
+          "id": "d1-enq-normes-86-def3",
+          "question": "Most importantly, NIST SP 800-86 describes the [[digital forensic process]] overall in [[four phases]]: [[collection, examination, analysis]], and reporting.",
+          "answer": "Most importantly, NIST SP 800-86 describes the digital forensic process overall in four phases: collection, examination, analysis, and reporting.",
+          "explanation": "Three blocks: the process, the number of phases, and the first three phases."
+        },
+        {
+          "id": "d1-enq-normes-86-def4",
+          "question": "Write from memory the sentence of the manual about the four phases of NIST SP 800-86.",
+          "answer": "Most importantly, NIST SP 800-86 describes the digital forensic process overall in four phases: collection, examination, analysis, and reporting.",
+          "explanation": "Remember the four phases in order."
+        },
+        {
+          "id": "d1-enq-normes-27043-def1",
+          "question": "Official definition: “ISO/IEC 27043:2015”",
+          "answer": "ISO/IEC 27043:2015 recommends procedural steps for conducting security incident investigations.",
+          "explanation": "It covers incident investigations, from preparation to the end.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Industry Standards”."
+        },
+        {
+          "id": "d1-enq-normes-27043-def3",
+          "question": "ISO/IEC 27043:2015 [[recommends procedural]] steps for [[conducting security]] [[incident investigations]].",
+          "answer": "ISO/IEC 27043:2015 recommends procedural steps for conducting security incident investigations.",
+          "explanation": "Procedural steps for investigating security incidents."
+        },
+        {
+          "id": "d1-enq-normes-101-def1",
+          "question": "Official definition: “NIST SP 800-101 Revision 1”",
+          "answer": "NIST SP 800-101 Revision 1, \"Guidelines on Mobile Device Forensics,\" has a self-explanatory title. It covers the unique requirements for acquiring, preserving, examining, analyzing, and reporting on the digital evidence present on mobile devices.",
+          "explanation": "This is the phone guide: a memory and files organized differently.",
+          "explanation_more": "Sentences from the official (ISC)2 manual, domain 1, section “Industry Standards”. A mobile device is, for example, a phone or a tablet."
+        },
+        {
+          "id": "d1-enq-normes-101-def3",
+          "question": "NIST SP 800-101 Revision 1, \"Guidelines on Mobile Device Forensics,\" has a [[self-explanatory title]]. It covers the [[unique requirements]] for [[acquiring, preserving, examining]], analyzing, and reporting on the digital evidence present on mobile devices.",
+          "answer": "NIST SP 800-101 Revision 1, \"Guidelines on Mobile Device Forensics,\" has a self-explanatory title. It covers the unique requirements for acquiring, preserving, examining, analyzing, and reporting on the digital evidence present on mobile devices.",
+          "explanation": "A clear title, requirements that are specific to mobiles, and the first actions on the evidence."
+        },
+        {
+          "id": "d1-enq-normes-1",
+          "question": "Which standard describes four phases: collection, examination, analysis and reporting?",
+          "options": [
+            "NIST SP 800-86",
+            "ISO/IEC 27037"
+          ],
+          "answer": "NIST SP 800-86",
+          "explanation": "ISO/IEC 27037 describes four different steps: identification, collection, acquisition, preservation."
+        },
+        {
+          "id": "d1-enq-normes-2",
+          "question": "Put in order the four steps of ISO/IEC 27037 for handling digital evidence.",
+          "answer": "Identification, then collection, then acquisition, then preservation.",
+          "explanation": "You spot the evidence, you pick it up, you get a usable copy of it, then you keep it untouched.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Identification",
+              "Collection",
+              "Acquisition",
+              "Preservation"
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-normes-3",
+          "question": "In which years were the standards ISO/IEC 27043 and ISO/IEC 27037 published?",
+          "answer": "2015 for 27043 (incident investigations) and 2012 for 27037 (digital evidence).",
+          "explanation": "The lower number, 27037, is the older one.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Industry Standards”."
+        },
+        {
+          "id": "d1-enq-normes-4",
+          "question": "You must examine the phone of a suspected employee. Which publication is made for this?",
+          "options": [
+            "NIST SP 800-101",
+            "NIST SP 800-86",
+            "ISO/IEC 27043"
+          ],
+          "options_why": [
+            "",
+            "NIST SP 800-86 is the general guide to digital forensics, not the one for mobiles.",
+            "ISO/IEC 27043 recommends steps for investigating incidents, not for mobiles."
+          ],
+          "answer": "NIST SP 800-101",
+          "explanation": "NIST SP 800-101 deals with the requirements that are specific to mobile devices."
+        },
+        {
+          "id": "d1-enq-normes-5",
+          "question": "Put in order the four phases of NIST SP 800-86.",
+          "answer": "Collection, then examination, then analysis, then reporting.",
+          "explanation": "You collect, you examine, you analyze, then you report.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Collection",
+              "Examination",
+              "Analysis",
+              "Reporting"
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-normes-6",
+          "question": "Which incidents does the ISO/IEC 27043 standard cover?",
+          "answer": "Loss or change of data, unauthorized access and confirmed data leaks.",
+          "explanation": "It covers many scenarios, from preparation to the end of the investigation.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Industry Standards”."
+        },
+        {
+          "id": "d1-enq-normes-7",
+          "question": "Why follow a standard when you handle digital evidence?",
+          "answer": "So that the evidence stays reliable and usable. A recognized method shows that every step was done with care.",
+          "explanation": "Evidence that was handled badly can be thrown out.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1: evidence handling and digital forensics are at the heart of technology investigations."
+        },
+        {
+          "id": "d1-enq-normes-8",
+          "question": "What else does ISO/IEC 27037 cover, besides the four steps?",
+          "answer": "The chain of custody and the exchange of evidence between jurisdictions.",
+          "explanation": "It also covers many kinds of media: disks, mobiles, cameras, computers and network data.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Industry Standards”."
+        },
+        {
+          "id": "d1-enq-normes-9",
+          "question": "Which publication matches each description?",
+          "answer": "ISO/IEC 27037: the four evidence steps and the chain of custody. NIST SP 800-86: the four phases and the forensic capability. NIST SP 800-101: mobile devices and sensitive areas.",
+          "explanation": "27037 for the evidence steps, 800-86 for the whole process, 800-101 for phones.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "ISO/IEC 27037",
+              "NIST SP 800-86",
+              "NIST SP 800-101"
+            ],
+            "items": [
+              {
+                "text": "Four steps: identification, collection, acquisition, preservation",
+                "category": "ISO/IEC 27037"
+              },
+              {
+                "text": "Also covers the chain of custody",
+                "category": "ISO/IEC 27037"
+              },
+              {
+                "text": "Four phases: collection, examination, analysis, reporting",
+                "category": "NIST SP 800-86"
+              },
+              {
+                "text": "Explains how to build a forensic capability in the organization",
+                "category": "NIST SP 800-86"
+              },
+              {
+                "text": "Deals with mobile devices",
+                "category": "NIST SP 800-101"
+              },
+              {
+                "text": "Points out the sensitive areas when the phone belongs to a private person",
+                "category": "NIST SP 800-101"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-enq-normes-10",
+          "question": "The ISO/IEC 27037 standard covers four steps: identification, collection, [[acquisition]] and [[preservation]].",
+          "answer": "The ISO/IEC 27037 standard covers four steps: identification, collection, acquisition and preservation.",
+          "explanation": "The last two steps are the easiest to forget."
+        },
+        {
+          "id": "d1-enq-normes-11",
+          "question": "What is the title of NIST SP 800-86?",
+          "answer": "“Guide to Integrating Forensic Techniques into Incident Response”: adding forensic techniques to incident response.",
+          "explanation": "It also details the tools and the training your team needs.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Industry Standards”. It also describes how to structure forensic policies, standards and procedures."
+        },
+        {
+          "id": "d1-enq-normes-12",
+          "question": "Your company wants to set up a digital forensic capability. Which NIST publication do you read, and why?",
+          "answer": "NIST SP 800-86. It explains how to build this capability, which tools and training are needed, and how to write the policies and procedures.",
+          "explanation": "It is the general guide that covers the whole process."
+        }
+      ]
+    }
+  ]
+}

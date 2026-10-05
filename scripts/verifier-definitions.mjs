@@ -2,7 +2,8 @@
 //
 // Usage :  node scripts/verifier-definitions.mjs <domaine> <fichier.json> [<fichier.json> ...]
 //   <domaine>  1 à 8  (cherche « domain<N>.pdf » ou « domaine<N>.pdf » dans le dossier des sources)
-//   fichiers   des modules (galaxies) JSON, ou un concept seul, ou une matière entière.
+//   fichiers   des modules (galaxies) JSON, ou un concept seul, ou une matière entière,
+//              ou des traductions anglaises (dossier en/ : phrase officielle seule, sans « Traduction : »).
 //
 // Une carte est une « définition officielle » quand son id finit par -def1, -def2, -def3 ou -def4.
 // Sa phrase officielle = son champ `answer` (avant « \n\nTraduction : »). Elle doit apparaître telle quelle
@@ -58,7 +59,7 @@ function* toutesLesCartes(noeud) {
   if (Array.isArray(noeud)) {
     for (const n of noeud) yield* toutesLesCartes(n);
   } else if (noeud && typeof noeud === "object") {
-    if (typeof noeud.id === "string" && typeof noeud.type === "string" && "answer" in noeud) yield noeud;
+    if (typeof noeud.id === "string" && "answer" in noeud) yield noeud;
     for (const valeur of Object.values(noeud)) yield* toutesLesCartes(valeur);
   }
 }
@@ -82,6 +83,8 @@ const echec = (carte, message) => {
 };
 
 for (const fichier of fichiers) {
+  // Les traductions anglaises (dossier en/) n'ont ni champ `type` ni ligne « Traduction : ».
+  const estEn = /[\/]en[\/]/.test(fichier);
   const json = JSON.parse(readFileSync(fichier, "utf8"));
   for (const carte of toutesLesCartes(json)) {
     if (!/-def[1-4]$/.test(carte.id)) continue;
@@ -90,11 +93,12 @@ for (const fichier of fichiers) {
     if (phrase.length < 25) echec(carte, "phrase officielle trop courte ou vide.");
     else if (!source.includes(normaliser(phrase))) echec(carte, `ne figure pas mot pour mot dans le manuel : « ${phrase.slice(0, 90)}… »`);
 
-    if (carte.type === "cloze") {
+    const estCloze = carte.type === "cloze" || (estEn && /[[.+?]]/.test(carte.question));
+    if (estCloze) {
       if (normaliser(remplirTrous(carte.question)) !== normaliser(carte.answer)) {
         echec(carte, "la question, une fois les trous remplis, ne redonne pas exactement la phrase de `answer`.");
       }
-    } else if (/-def[14]$/.test(carte.id) && !SEPARATEUR.test(carte.answer)) {
+    } else if (!estEn && /-def[14]$/.test(carte.id) && !SEPARATEUR.test(carte.answer)) {
       echec(carte, "il manque « \\n\\nTraduction : … » dans `answer`.");
     }
   }

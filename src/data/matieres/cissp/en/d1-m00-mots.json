@@ -1,0 +1,1914 @@
+{
+  "id": "d1-m00-mots",
+  "name": "D1.0 The basic words of cybersecurity",
+  "concepts": [
+    {
+      "id": "d1-m0-cyber",
+      "name": "Cybersecurity and the CISSP",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "A code on your phone",
+          "paragraphes": [
+            "Your phone holds your photos, your messages and your secrets. You lock it with a code.",
+            "Without knowing it, you already do security: you protect what matters to you.",
+            "A company does the same thing, but with thousands of devices and files. Protecting all of that is called cybersecurity."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "One house, many protections",
+          "comme": "A house is not protected by just one thing. There is the door, the lock, the alarm and watchful neighbors.",
+          "enVrai": "In cybersecurity, you also combine three things: people, work rules and tools. None of them is enough alone. A house has a door you can see, but the doors of a computer system are sometimes invisible."
+        },
+        {
+          "type": "predire",
+          "question": "In a company, who is responsible for security?",
+          "options": [
+            "Only the IT team",
+            "Only the boss",
+            "Everyone, from the director to the intern"
+          ],
+          "answer": "Everyone, from the director to the intern",
+          "explanation": "The official manual says security is everyone's job, from the director to the newest employee. The other two answers are tempting: people think it is a job for specialists. One mistake by one employee can be enough to cause a problem."
+        },
+        {
+          "type": "exemple",
+          "titre": "The CISSP, a diploma for security",
+          "texte": "The CISSP is a certification: a respected diploma that proves you know information security well. An organization called (ISC)2 awards it. To keep it, you must follow rules of good conduct."
+        },
+        {
+          "type": "analogie",
+          "titre": "A country cut into regions",
+          "comme": "To visit a big country, you split it into regions. You explore them one by one.",
+          "enVrai": "The CISSP program is split into eight domains. This course starts with domain 1: security and risk management. Before that, you learn the basic words."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-cyber-1",
+          "question": "What is cybersecurity?",
+          "answer": "It means protecting information and computers. You protect them from unwanted access, changes and breakdowns. Example: the code that locks your phone.",
+          "explanation": "Think of your phone code: it stops other people from seeing and changing your things.",
+          "explanation_more": "The official manual (domain 1) talks about protecting information and systems. It mentions inappropriate access, use, modification and disruption."
+        },
+        {
+          "id": "d1-m0-cyber-2",
+          "question": "What is information security?",
+          "answer": "It has the same goal as cybersecurity: protecting information and the machines that hold it. The CISSP manual mostly uses this name.",
+          "explanation": "Two names for the same idea. In this course, you can treat them as synonyms."
+        },
+        {
+          "id": "d1-m0-cyber-3",
+          "question": "To protect a company well, what matters most?",
+          "options": [
+            "Buying the best tools",
+            "Combining people, rules and tools"
+          ],
+          "answer": "Combining people, rules and tools",
+          "explanation": "A tool alone can be bypassed or used badly. People and rules close the other doors.",
+          "explanation_more": "The official manual insists: a strong security program is more than a collection of tools. It needs processes and oversight."
+        },
+        {
+          "id": "d1-m0-cyber-4",
+          "question": "What is the CISSP?",
+          "answer": "It is a respected certification in information security. It proves you know this job well. You follow its program in this course.",
+          "explanation": "A certification is a diploma you take to prove your skills.",
+          "explanation_more": "CISSP stands for Certified Information Systems Security Professional (outside the manual: full name of the certification)."
+        },
+        {
+          "id": "d1-m0-cyber-5",
+          "question": "What is (ISC)2?",
+          "answer": "It is the organization that awards the CISSP certification. It also publishes the manual this course follows.",
+          "explanation": "A member who does not follow the code of ethics can lose the certification.",
+          "explanation_more": "Source: domain 1 of the manual, start of the chapter on ethics."
+        },
+        {
+          "id": "d1-m0-cyber-6",
+          "question": "In a company, which sentence describes security best?",
+          "options": [
+            "It concerns all employees",
+            "It concerns only the IT team",
+            "It concerns only the managers"
+          ],
+          "options_why": [
+            "",
+            "Specialists lead it, but every employee can cause a problem or prevent one.",
+            "Managers set the direction, but everyone follows the rules."
+          ],
+          "answer": "It concerns all employees",
+          "explanation": "From the director to the newest employee: everyone has a role to play."
+        },
+        {
+          "id": "d1-m0-cyber-7",
+          "question": "Cybersecurity relies on three things: [[people]], [[rules|processes]] and tools.",
+          "answer": "Cybersecurity relies on three things: people, rules and tools.",
+          "explanation": "The three work together: each one makes up for the weak points of the others.",
+          "explanation_more": "The official manual says “people, processes, and technologies”."
+        },
+        {
+          "id": "d1-m0-cyber-8",
+          "question": "Why is one protection not enough?",
+          "answer": "Because one protection can break down or be bypassed. With several layers, other barriers remain when one gives way.",
+          "explanation": "Like in a house: the door, the lock and the alarm take turns."
+        },
+        {
+          "id": "d1-m0-cyber-9",
+          "question": "How many domains does the CISSP program have?",
+          "answer": "Eight. This course starts with domain 1: Security and Risk Management.",
+          "explanation": "Each domain is a big region of the program.",
+          "explanation_more": "Source: outline of the (ISC)2 manual that this course follows, eight domains."
+        },
+        {
+          "id": "d1-m0-cyber-10",
+          "question": "Which box does each example go in?",
+          "answer": "People: training and reporting. Rules: the document and the procedure. Tools: the lock and the alarm.",
+          "explanation": "Ask yourself: is it someone, an instruction, or an object?",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "People",
+              "Rules",
+              "Tools"
+            ],
+            "items": [
+              {
+                "text": "Training employees to spot traps",
+                "category": "People"
+              },
+              {
+                "text": "An employee who reports a suspicious message",
+                "category": "People"
+              },
+              {
+                "text": "A document that says who can enter the office",
+                "category": "Rules"
+              },
+              {
+                "text": "A procedure for welcoming a new employee",
+                "category": "Rules"
+              },
+              {
+                "text": "An electronic lock on the office door",
+                "category": "Tools"
+              },
+              {
+                "text": "An alarm that rings when someone forces the entrance",
+                "category": "Tools"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-cyber-11",
+          "question": "Lea gets a strange message from a coworker. Instead of ignoring it, she warns the security team. What does her action show?",
+          "options": [
+            "Every employee plays a role in security",
+            "Only experts should report a problem",
+            "A strange message only concerns IT"
+          ],
+          "options_why": [
+            "",
+            "Anyone can spot a problem, not just experts.",
+            "A strange message can affect the whole company, not just the machines."
+          ],
+          "answer": "Every employee plays a role in security",
+          "explanation": "Warning quickly helps limit the damage before it spreads.",
+          "explanation_more": "The official manual asks users to report any actual or suspected security breach."
+        },
+        {
+          "id": "d1-m0-cyber-12",
+          "question": "Can a simple employee mistake be enough to create a security problem?",
+          "options": [
+            "Yes, even with no bad person involved",
+            "No, there must always be a bad person"
+          ],
+          "answer": "Yes, even with no bad person involved",
+          "explanation": "An email sent to the wrong person is enough: no intention to harm is needed."
+        },
+        {
+          "id": "d1-m0-cyber-13",
+          "question": "Why do people say that people are the weakest link in security?",
+          "answer": "Because one human mistake is enough: clicking a trap link or sending a file to the wrong person. Well trained, they become the best protection.",
+          "explanation": "The weakest link is also the one you can strengthen by training people.",
+          "explanation_more": "The official manual says a company's security is only as strong as its weakest link, often its staff."
+        },
+        {
+          "id": "d1-m0-cyber-14",
+          "question": "What if a company only bought tools, without training its employees?",
+          "answer": "The tools would still be useful, but a human mistake could bypass them. Two pillars would be missing: people and rules.",
+          "explanation": "A tool does not replace an employee who knows what to do."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-machines",
+      "name": "Machines and programs (hardware, software)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The phone that will not turn on",
+          "paragraphes": [
+            "Your phone will not turn on. Maybe the screen is broken. Or maybe a program is stuck.",
+            "In the first case, the problem is the part you can touch. In the second, it is the part you cannot touch.",
+            "The first is called hardware. The second is called software."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "A piano and its sheet music",
+          "comme": "The piano is the object you touch. The sheet music says which notes to play. Without sheet music, the piano stays silent.",
+          "enVrai": "Hardware is the computer itself: screen, keyboard, electronic parts. Software is the instructions that tell it what to do. The image stops here: you can copy software with one click, but not a piano."
+        },
+        {
+          "type": "predire",
+          "question": "Is a video game hardware or software?",
+          "options": [
+            "Hardware",
+            "Software",
+            "Both at the same time"
+          ],
+          "answer": "Software",
+          "explanation": "The game is a set of instructions, so it is software. The console that runs it is the hardware. People often think the game is an object inside the console, but it is instructions."
+        },
+        {
+          "type": "analogie",
+          "titre": "The head chef",
+          "comme": "In a restaurant kitchen, the head chef shares out the work and checks that everything goes well.",
+          "enVrai": "The operating system (OS) does this job inside a computer. Windows, macOS and Linux are examples. It links the hardware and the applications."
+        },
+        {
+          "type": "exemple",
+          "titre": "The customers of an online shop",
+          "texte": "An online shop records the name, address and orders of each customer. Each piece of saved information is data. Stored in an organized way, data forms a database. If someone changes it by mistake, the shop sends the wrong package."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-machines-1",
+          "question": "What is data?",
+          "answer": "Data is information stored in a computer: a name, a photo, a number. Example: your birth date in a form.",
+          "explanation": "For security, data is often the thing with the most value."
+        },
+        {
+          "id": "d1-m0-machines-2",
+          "question": "What is a file?",
+          "answer": "A file is a set of data stored under one name. Example: a photo, a document or a spreadsheet.",
+          "explanation": "A folder is a place where you keep several files."
+        },
+        {
+          "id": "d1-m0-machines-3",
+          "question": "The touch screen of your phone: hardware or software?",
+          "options": [
+            "Hardware",
+            "Software"
+          ],
+          "answer": "Hardware",
+          "explanation": "You can touch it: it is hardware. The software is what appears on it."
+        },
+        {
+          "id": "d1-m0-machines-4",
+          "question": "What is hardware?",
+          "answer": "Hardware is the part of a computer that you can touch. Example: the screen, the keyboard, the disk that stores the files.",
+          "explanation": "It can break down, be stolen or be damaged."
+        },
+        {
+          "id": "d1-m0-machines-5",
+          "question": "What is software?",
+          "answer": "Software is a set of instructions that tells the computer what to do. It is also called a program. Example: a word processor.",
+          "explanation": "It has no physical shape: you can only copy it or delete it."
+        },
+        {
+          "id": "d1-m0-machines-6",
+          "question": "[[Hardware]] is the part you can touch; [[software]] is a set of instructions.",
+          "answer": "Hardware is the part you can touch; software is a set of instructions.",
+          "explanation": "Think of the piano and its sheet music."
+        },
+        {
+          "id": "d1-m0-machines-7",
+          "question": "What is an application?",
+          "answer": "An application is software made for one specific task. Example: a messaging tool, a game or a calculator.",
+          "explanation": "On a phone, people often say an app."
+        },
+        {
+          "id": "d1-m0-machines-8",
+          "question": "What is an operating system (OS)?",
+          "answer": "It is the main software of a computer. It links the hardware and the applications. Examples: Windows, macOS, Linux.",
+          "explanation": "Without it, applications would not know how to talk to the hardware.",
+          "explanation_more": "The official manual mentions Windows, macOS and Linux: a company that uses several of them must protect them all."
+        },
+        {
+          "id": "d1-m0-machines-9",
+          "question": "Which of these is an operating system?",
+          "options": [
+            "Linux",
+            "A USB stick",
+            "A spreadsheet program"
+          ],
+          "options_why": [
+            "",
+            "A USB stick is an object you can touch: it is hardware.",
+            "A spreadsheet program is used to do calculations: it is an application."
+          ],
+          "answer": "Linux",
+          "explanation": "Linux links the hardware and the applications."
+        },
+        {
+          "id": "d1-m0-machines-10",
+          "question": "What is a database?",
+          "answer": "A database is a large set of data stored in an organized way. Example: the customers of an online shop.",
+          "explanation": "You can search, add or change a piece of information very fast."
+        },
+        {
+          "id": "d1-m0-machines-11",
+          "question": "What is a system?",
+          "answer": "It is a set of hardware and software that work together. Example: a store checkout, with its screen, its scanner and its program.",
+          "explanation": "When you protect a system, you protect all its parts at once."
+        },
+        {
+          "id": "d1-m0-machines-12",
+          "question": "Hardware, software or data?",
+          "answer": "Hardware: the keyboard and the screen. Software: Windows and the game. Data: the name and the photo.",
+          "explanation": "If you can touch it, it is hardware. If it gives orders, it is software. If it describes something, it is data.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Hardware",
+              "Software",
+              "Data"
+            ],
+            "items": [
+              {
+                "text": "The keyboard",
+                "category": "Hardware"
+              },
+              {
+                "text": "The screen of a computer",
+                "category": "Hardware"
+              },
+              {
+                "text": "Windows",
+                "category": "Software"
+              },
+              {
+                "text": "A game installed on your phone",
+                "category": "Software"
+              },
+              {
+                "text": "Your name in a form",
+                "category": "Data"
+              },
+              {
+                "text": "A vacation photo",
+                "category": "Data"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-machines-13",
+          "question": "Why is it serious if a database is changed by mistake?",
+          "answer": "Because the company relies on this data to act. If it is incorrect, the company sends the wrong package or bills the wrong amount.",
+          "explanation": "Incorrect data leads to bad decisions."
+        },
+        {
+          "id": "d1-m0-machines-14",
+          "question": "An online shop keeps the names, addresses and orders of its customers, stored in rows. What is this set called?",
+          "options": [
+            "A database",
+            "An operating system",
+            "An application"
+          ],
+          "options_why": [
+            "",
+            "The operating system is the main software of the computer, not a set of customers.",
+            "An application is used to do a task. Here, we are talking about the data itself, neatly stored."
+          ],
+          "answer": "A database",
+          "explanation": "Neatly stored data that you can search quickly: that is a database."
+        },
+        {
+          "id": "d1-m0-machines-15",
+          "question": "What if a computer had no operating system?",
+          "answer": "The hardware would be there, but no application could use it. The operating system links the two.",
+          "explanation": "It translates the requests of the applications for the hardware."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-reseaux",
+      "name": "Networks, the internet and the cloud",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The message that travels",
+          "paragraphes": [
+            "You send a message to a friend on the other side of the world. It arrives in a few seconds. Yet your phones are not joined by a direct wire.",
+            "Between you, there is a huge web of cables, machines and relays. Your message passes from one to the next until it reaches its goal.",
+            "Devices linked together to exchange data form a network."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Like a network of roads",
+          "comme": "Roads link cities. Cars carry people or packages from one place to another.",
+          "enVrai": "A network links computers. Data travels like the cars. The internet is the worldwide network: millions of networks linked together."
+        },
+        {
+          "type": "predire",
+          "question": "When you open a website, where are its pages stored?",
+          "options": [
+            "Inside your phone",
+            "On a powerful computer, somewhere in the world",
+            "Inside your home internet box"
+          ],
+          "answer": "On a powerful computer, somewhere in the world",
+          "explanation": "The pages are stored on a computer that stays on and answers all requests. It is called a server. Your phone only shows them, and your box connects you without keeping the pages."
+        },
+        {
+          "type": "analogie",
+          "titre": "The server, an open kitchen",
+          "comme": "In a restaurant, the cooks prepare the dishes that customers order. The kitchen stays open and serves many people.",
+          "enVrai": "A server is a computer that answers the requests of other devices. You ask for a page, and it sends it. It stays on day and night."
+        },
+        {
+          "type": "analogie",
+          "titre": "The cloud, a storage unit",
+          "comme": "You do not keep everything at home. You rent space in a storage unit, and you pay for what you use.",
+          "enVrai": "Cloud computing rents out servers from companies. These servers are kept in big buildings called datacenters. The cloud is not a cloud in the sky: it is real machines."
+        },
+        {
+          "type": "exemple",
+          "titre": "An office without internet",
+          "texte": "In an office, employees share their files on a server. Some of their tools run in the cloud. When the internet connection goes down, they can no longer work with those tools."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-reseaux-1",
+          "question": "What is a network?",
+          "answer": "A network is a set of devices linked to exchange data. Example: the computers of a school, linked together.",
+          "explanation": "If one device on the network is attacked, the others can be hit too."
+        },
+        {
+          "id": "d1-m0-reseaux-2",
+          "question": "What is the internet?",
+          "answer": "The internet is the worldwide network that links millions of networks. Example: the place where websites are found.",
+          "explanation": "A device connected to the internet can be reached from all over the world."
+        },
+        {
+          "id": "d1-m0-reseaux-3",
+          "question": "Is the internal network of a school “the internet”?",
+          "options": [
+            "No, it is one network among many",
+            "Yes, every network is the internet"
+          ],
+          "answer": "No, it is one network among many",
+          "explanation": "The internet links millions of networks. A small network may not even be linked to the internet."
+        },
+        {
+          "id": "d1-m0-reseaux-4",
+          "question": "What is a server?",
+          "answer": "A server is a computer that answers the requests of other devices. Example: the one that sends the pages of a website.",
+          "explanation": "It stays on all the time: it is an interesting target for attackers."
+        },
+        {
+          "id": "d1-m0-reseaux-5",
+          "question": "What is an Internet service provider (ISP)?",
+          "answer": "It is the company that connects you to the internet. Example: the company behind the internet box in your home.",
+          "explanation": "If your provider goes down, you lose the internet.",
+          "explanation_more": "The official manual mentions ISPs when it talks about redundancy: some companies rent several of them."
+        },
+        {
+          "id": "d1-m0-reseaux-6",
+          "question": "In a company, employees share files on a computer that is always on. What is it called?",
+          "options": [
+            "A server",
+            "An internet service provider",
+            "An operating system"
+          ],
+          "options_why": [
+            "",
+            "The internet service provider is the company that connects you to the internet, not the machine that keeps the files.",
+            "The operating system is the main software of a computer. Here, we are talking about the machine."
+          ],
+          "answer": "A server",
+          "explanation": "A machine that answers the requests of other devices is a server."
+        },
+        {
+          "id": "d1-m0-reseaux-7",
+          "question": "What is the cloud (cloud computing)?",
+          "answer": "The cloud means using rented servers, located elsewhere, through the internet. Example: keeping your photos online.",
+          "explanation": "It is not a cloud in the sky: it is real machines in real buildings."
+        },
+        {
+          "id": "d1-m0-reseaux-8",
+          "question": "What is a datacenter?",
+          "answer": "It is a big building full of servers. It needs electricity, cooling and a good connection.",
+          "explanation": "It holds a lot of data: it must be protected from breakdowns, fire and intruders.",
+          "explanation_more": "The official manual mentions power failures, floods and excessive heat as threats to datacenters."
+        },
+        {
+          "id": "d1-m0-reseaux-9",
+          "question": "The cloud means rented [[servers]], kept in [[datacenters]] and used through the internet.",
+          "answer": "The cloud means rented servers, kept in datacenters and used through the internet.",
+          "explanation": "Rented, far away, through the internet: three words to remember it."
+        },
+        {
+          "id": "d1-m0-reseaux-10",
+          "question": "What is a cloud service provider (CSP)?",
+          "answer": "It is the company that rents out its servers to other companies. Example: a big company that hosts thousands of websites.",
+          "explanation": "When you use the cloud, part of the security depends on this provider.",
+          "explanation_more": "The official manual says that, in the cloud, the risk is shared between the customer and the provider."
+        },
+        {
+          "id": "d1-m0-reseaux-11",
+          "question": "What is a virtual private network (VPN)?",
+          "answer": "It is a protected tunnel that links your device to a remote network, through the internet. Example: working from home on your company's network.",
+          "explanation": "The data inside this tunnel is hidden from snoopers.",
+          "explanation_more": "The official manual mentions the VPN among the systems shared across a whole company."
+        },
+        {
+          "id": "d1-m0-reseaux-12",
+          "question": "Put the journey of a web page in order.",
+          "answer": "You type the address. Your request goes to your internet provider. It crosses the internet. A server receives it. It sends back the page. It appears on your screen.",
+          "explanation": "Each step is a place where data can be read, changed or blocked.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "You type the address of a website",
+              "Your request goes to your internet provider",
+              "It crosses the internet",
+              "A server receives the request",
+              "The server sends back the page",
+              "The page appears on your screen"
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-reseaux-13",
+          "question": "An employee works from a cafe. What can they use to reach their company's files safely?",
+          "options": [
+            "A VPN",
+            "The cafe Wi-Fi, with nothing else",
+            "Sending the files to their phone in a message"
+          ],
+          "options_why": [
+            "",
+            "A public Wi-Fi can be listened to by other people. It needs extra protection.",
+            "A message does not protect the files, and they leave the company's control."
+          ],
+          "answer": "A VPN",
+          "explanation": "The VPN creates a protected tunnel between the employee and the company network."
+        },
+        {
+          "id": "d1-m0-reseaux-14",
+          "question": "Why does the breakdown of a datacenter affect many companies at once?",
+          "answer": "Because many companies rent the same servers. If those machines stop, all their customers lose their services at the same time.",
+          "explanation": "Putting all your eggs in one basket makes a breakdown hit harder."
+        },
+        {
+          "id": "d1-m0-reseaux-15",
+          "question": "What if your internet provider went down?",
+          "answer": "Your devices would stay on, but they could no longer reach the internet. You could not open websites or use the cloud.",
+          "explanation": "Your connection depends on it: that is why some companies rent two."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-identite",
+      "name": "Identity: account, password and rights (account, password, access)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The school ID card",
+          "paragraphes": [
+            "At the school entrance, the supervisor looks at your card and lets you in. Yet he does not let you into the teachers' room.",
+            "He did two things. First, he checked that you are really you. Then, he decided where you are allowed to go.",
+            "A computer does the same: you prove who you are, then the system decides what you can do."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "An account, like a locker",
+          "comme": "At school, everyone has a locker with their name on it. The padlock only opens with your code.",
+          "enVrai": "An account is your personal place in a system. The username says who it belongs to. The password is the secret code that proves it is you."
+        },
+        {
+          "type": "predire",
+          "question": "Someone uses your password. What does the system believe?",
+          "options": [
+            "That it is really you",
+            "That a stranger is trying to get in",
+            "That it must ask for a photo"
+          ],
+          "answer": "That it is really you",
+          "explanation": "The system cannot see your face: it only sees the password. That is why a stolen password is so dangerous. The other answers are tempting, but the system has no way to guess."
+        },
+        {
+          "type": "analogie",
+          "titre": "Two proofs are better than one",
+          "comme": "To open a safe, you sometimes need a key and a code. If a thief only has the key, the safe stays closed.",
+          "enVrai": "Multifactor authentication (MFA) asks for several proofs. For example, a password and a code sent to your phone. Stealing the password is no longer enough."
+        },
+        {
+          "type": "exemple",
+          "titre": "Everyone has their own rights",
+          "texte": "In a company, an accountant can see the invoices. A technician can install programs. Access rights, also called permissions, say what each person can see or do. The administrator is the person with the widest rights on a system."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-identite-1",
+          "question": "What is an account?",
+          "answer": "An account is your personal place in a system. It lets you be recognized and use a service. Example: your email account.",
+          "explanation": "Each account belongs to one person or one service."
+        },
+        {
+          "id": "d1-m0-identite-2",
+          "question": "What is a password?",
+          "answer": "A password is a secret that proves you are the real owner of the account. The longer and more unique it is, the better it protects.",
+          "explanation": "It must never be shared, or reused on several accounts."
+        },
+        {
+          "id": "d1-m0-identite-3",
+          "question": "Which one must stay secret: the username or the password?",
+          "options": [
+            "The password",
+            "The username"
+          ],
+          "answer": "The password",
+          "explanation": "The username says who you are, and it is often known. The password is the proof: it must stay secret."
+        },
+        {
+          "id": "d1-m0-identite-4",
+          "question": "What is a username (user ID)?",
+          "answer": "A username is the name that shows who an account belongs to. Example: your email address. It is usually not secret.",
+          "explanation": "Each person should have their own username, so you know who did what.",
+          "explanation_more": "Source: requirement 8 of PCI DSS, quoted in the manual (domain 1), asks for a unique ID for each person who uses a computer."
+        },
+        {
+          "id": "d1-m0-identite-5",
+          "question": "What is authentication?",
+          "answer": "Authentication is the act of proving that you are who you say you are. Example: typing your password.",
+          "explanation": "Saying who you are is not enough: you must prove it."
+        },
+        {
+          "id": "d1-m0-identite-6",
+          "question": "Proving who you are is called [[authentication]]. Deciding what you can do is called [[authorization]].",
+          "answer": "Proving who you are is called authentication. Deciding what you can do is called authorization.",
+          "explanation": "You prove first, you decide after: always in this order."
+        },
+        {
+          "id": "d1-m0-identite-7",
+          "question": "What is multifactor authentication (MFA)?",
+          "answer": "It is authentication with at least two different proofs. Example: a password and a code sent to your phone.",
+          "explanation": "A thief who knows your password does not have your phone.",
+          "explanation_more": "The official manual mentions it among the measures that protect access to sensitive data."
+        },
+        {
+          "id": "d1-m0-identite-8",
+          "question": "What is single sign-on (SSO)?",
+          "answer": "It lets you identify yourself once to reach several services. Example: one account for the email and the documents.",
+          "explanation": "It is handy, but that account becomes very valuable: if it is stolen, everything opens.",
+          "explanation_more": "Outside the manual (domain 1): a useful idea for the rest of the course."
+        },
+        {
+          "id": "d1-m0-identite-9",
+          "question": "An account asks for your password, then a code sent to your phone. What is this method called?",
+          "options": [
+            "Multifactor authentication",
+            "Authorization",
+            "Single sign-on"
+          ],
+          "options_why": [
+            "",
+            "Authorization decides what you can do, not who you are.",
+            "Single sign-on lets you identify yourself once for several services: it is not the same idea."
+          ],
+          "answer": "Multifactor authentication",
+          "explanation": "Two different proofs: a secret you know and an object you have."
+        },
+        {
+          "id": "d1-m0-identite-10",
+          "question": "What is authorization?",
+          "answer": "Authorization decides what you are allowed to do once you are identified. Example: reading a folder without being able to change it.",
+          "explanation": "Being recognized does not give you every right."
+        },
+        {
+          "id": "d1-m0-identite-11",
+          "question": "A student shows a card at the entrance, then the supervisor tells them where they can go. Which step is authorization?",
+          "options": [
+            "Saying where they can go",
+            "Showing the card"
+          ],
+          "answer": "Saying where they can go",
+          "explanation": "Showing the card proves who they are: that is authentication. Deciding where they can go is authorization."
+        },
+        {
+          "id": "d1-m0-identite-12",
+          "question": "What are access rights (permissions)?",
+          "answer": "Access rights are the list of what an account can see or do. They are also called privileges.",
+          "explanation": "The more rights an account has, the more dangerous it is if it is stolen."
+        },
+        {
+          "id": "d1-m0-identite-13",
+          "question": "What is an administrator?",
+          "answer": "An administrator is the person who manages a system and has the widest rights. Example: the technician who installs the programs.",
+          "explanation": "Their account is very valuable: it must be protected first.",
+          "explanation_more": "The official manual also writes sysadmin, short for system administrator."
+        },
+        {
+          "id": "d1-m0-identite-14",
+          "question": "Authentication or authorization?",
+          "answer": "Authentication: the password, the code and the fingerprint. Authorization: reading without changing, reaching the salaries, not installing.",
+          "explanation": "Authentication: who are you? Authorization: what are you allowed to do?",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Authentication",
+              "Authorization"
+            ],
+            "items": [
+              {
+                "text": "Typing your password",
+                "category": "Authentication"
+              },
+              {
+                "text": "Entering a code sent to your phone",
+                "category": "Authentication"
+              },
+              {
+                "text": "Placing your finger on a fingerprint reader",
+                "category": "Authentication"
+              },
+              {
+                "text": "Being able to read a folder without changing it",
+                "category": "Authorization"
+              },
+              {
+                "text": "Having access to the salaries folder",
+                "category": "Authorization"
+              },
+              {
+                "text": "Not being allowed to install a program",
+                "category": "Authorization"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-identite-15",
+          "question": "What is access control?",
+          "answer": "Access control is all the means that decide who can go where. Examples: badge, password, access rights.",
+          "explanation": "It can protect a room, a file or a program."
+        },
+        {
+          "id": "d1-m0-identite-16",
+          "question": "Why is a password alone risky?",
+          "answer": "Because it can be guessed, stolen or reused. Whoever has it pretends to be you, and the system does not notice.",
+          "explanation": "Adding a second proof makes a stolen password almost useless."
+        },
+        {
+          "id": "d1-m0-identite-17",
+          "question": "Tom moved from accounting to marketing, but he still has access to the invoices. What is the problem?",
+          "options": [
+            "He has more rights than he needs",
+            "He does not have enough rights",
+            "His password is too short"
+          ],
+          "options_why": [
+            "",
+            "On the contrary: he keeps rights he no longer needs.",
+            "Nothing in the situation talks about his password."
+          ],
+          "answer": "He has more rights than he needs",
+          "explanation": "When someone changes jobs, you remove the rights they no longer need.",
+          "explanation_more": "The official manual recommends removing access that is no longer needed when an employee transfers."
+        },
+        {
+          "id": "d1-m0-identite-18",
+          "question": "What if everyone in the company had an administrator account?",
+          "answer": "Anyone could see or change everything. A mistake, or a stolen account, would do much more damage.",
+          "explanation": "Every extra right is an open door for no reason."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-chiffrer",
+      "name": "Encrypting and decrypting (encrypt, decrypt)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The secret note in class",
+          "paragraphes": [
+            "You pass a secret note to your friend during class. If the teacher catches it, they read it. So you invent a code: each letter is replaced by the next one.",
+            "The teacher reads “Cpokpvs” and understands nothing. Your friend steps back one letter and finds “Bonjour”.",
+            "Making a message unreadable is called encrypting. Turning it back into plain text is called decrypting."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The key is the secret of the code",
+          "comme": "Your “move one letter forward” code only works if the other person knows the rule. Without the rule, the message makes no sense.",
+          "enVrai": "In real encryption, the method is known to everyone. The secret is the key: a very long string of numbers. Without the right key, the message stays unreadable."
+        },
+        {
+          "type": "predire",
+          "question": "A thief catches an encrypted message. Without the key, can they read it?",
+          "options": [
+            "Yes, by reading it carefully",
+            "No, it stays unreadable without the key"
+          ],
+          "answer": "No, it stays unreadable without the key",
+          "explanation": "Good encryption makes the text impossible to understand. The thief has the message, but nothing to read it with. Staring at it for a long time changes nothing."
+        },
+        {
+          "type": "exemple",
+          "titre": "An online payment",
+          "texte": "When you pay online, your card data travels encrypted. A thief who catches it on the way only sees text that makes no sense. Only the shop's website has the key to decrypt it."
+        },
+        {
+          "type": "analogie",
+          "titre": "The fingerprint of a file",
+          "comme": "A fingerprint identifies a person. If the person changes, the fingerprint changes.",
+          "enVrai": "A hash is a short code calculated from a file. If you change a single letter of the file, the code changes completely. This way, you can tell that a file was modified. Warning: you cannot get the file back from its hash."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-chiffrer-1",
+          "question": "What does it mean to encrypt?",
+          "answer": "To encrypt means to change a message so that it becomes unreadable without the key. Example: your card data during an online payment.",
+          "explanation": "The message still exists, but nobody can understand it without the key."
+        },
+        {
+          "id": "d1-m0-chiffrer-2",
+          "question": "What does it mean to decrypt?",
+          "answer": "To decrypt means to turn an encrypted message back into plain text, using the right key. It is the opposite of encrypting.",
+          "explanation": "Only the intended receivers have the key to do it."
+        },
+        {
+          "id": "d1-m0-chiffrer-3",
+          "question": "Making a message readable again with the key: encrypt or decrypt?",
+          "options": [
+            "Decrypt",
+            "Encrypt"
+          ],
+          "answer": "Decrypt",
+          "explanation": "Encrypting makes the message unreadable. Decrypting gives it back as readable text."
+        },
+        {
+          "id": "d1-m0-chiffrer-4",
+          "question": "What is an encryption key?",
+          "answer": "A key is a long string of numbers and letters used to encrypt or decrypt. It must stay secret.",
+          "explanation": "The method is known to everyone: all the secret is in the key."
+        },
+        {
+          "id": "d1-m0-chiffrer-5",
+          "question": "What are plaintext and ciphertext?",
+          "answer": "Plaintext can be read by anyone. Ciphertext is the result of encryption: it is unreadable without the key.",
+          "explanation": "Sending in plain text means sending with no protection at all.",
+          "explanation_more": "The official manual talks about sending sensitive emails “in the clear”: without encryption."
+        },
+        {
+          "id": "d1-m0-chiffrer-6",
+          "question": "An employee sends the salary list in a message, without encrypting it. How does the message travel?",
+          "options": [
+            "In the clear",
+            "Encrypted",
+            "Decrypted"
+          ],
+          "options_why": [
+            "",
+            "Encrypted would mean a key made the message unreadable, which is not the case here.",
+            "Decrypted describes the act of turning a message back into plain text, not the way it travels."
+          ],
+          "answer": "In the clear",
+          "explanation": "Without encryption, anyone can read the message on the way."
+        },
+        {
+          "id": "d1-m0-chiffrer-7",
+          "question": "What is encryption?",
+          "answer": "Encryption is the technique of encrypting data. It stops a thief from reading what they copied.",
+          "explanation": "It is one of the most important protection measures.",
+          "explanation_more": "The official manual mentions encryption among the measures that protect data."
+        },
+        {
+          "id": "d1-m0-chiffrer-8",
+          "question": "What is cryptography?",
+          "answer": "Cryptography is the science of secret codes. It creates encryption methods and studies how strong they are.",
+          "explanation": "Encryption is the tool, cryptography is the science behind it.",
+          "explanation_more": "Outside the manual (domain 1): a simple definition for the rest of the course."
+        },
+        {
+          "id": "d1-m0-chiffrer-9",
+          "question": "To read an [[encrypted]] message, you need the right [[key]].",
+          "answer": "To read an encrypted message, you need the right key.",
+          "explanation": "Without the key, even a stolen message stays unreadable."
+        },
+        {
+          "id": "d1-m0-chiffrer-10",
+          "question": "What is a hash?",
+          "answer": "It is a short code calculated from a file. If the file changes by a single character, the code changes too.",
+          "explanation": "You compare the codes to find out if a file was modified.",
+          "explanation_more": "The official manual mentions cryptographic hashes among the measures that protect the accuracy of data."
+        },
+        {
+          "id": "d1-m0-chiffrer-11",
+          "question": "Encryption or hash: which one lets you get the original text back?",
+          "options": [
+            "Encryption",
+            "A hash"
+          ],
+          "answer": "Encryption",
+          "explanation": "With the key, you decrypt. A hash cannot be turned back into a file: it is only used to compare."
+        },
+        {
+          "id": "d1-m0-chiffrer-12",
+          "question": "Encryption or hash?",
+          "answer": "Encryption: making unreadable, protecting a payment, reading with a key. Hash: comparing codes, spotting a change, getting the same code.",
+          "explanation": "Encryption hides the content. A hash spots a change.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Encryption",
+              "Hash"
+            ],
+            "items": [
+              {
+                "text": "Making an attachment unreadable for a thief",
+                "category": "Encryption"
+              },
+              {
+                "text": "Protecting card data during a payment",
+                "category": "Encryption"
+              },
+              {
+                "text": "Using a secret key to read a message",
+                "category": "Encryption"
+              },
+              {
+                "text": "Comparing two codes to know if a file changed",
+                "category": "Hash"
+              },
+              {
+                "text": "Spotting that a document was secretly modified",
+                "category": "Hash"
+              },
+              {
+                "text": "Always getting the same short code for the same file",
+                "category": "Hash"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-chiffrer-13",
+          "question": "Why encrypt data when a password already protects it?",
+          "answer": "Because a thief can copy the data without going through the password. Once encrypted, it stays unreadable for them.",
+          "explanation": "The password guards the door. Encryption protects the content, even if the door is bypassed."
+        },
+        {
+          "id": "d1-m0-chiffrer-14",
+          "question": "A laptop full of customer files is stolen on a train. What makes the data useless to the thief?",
+          "options": [
+            "Encrypting the data",
+            "A complicated folder name",
+            "A discreet wallpaper"
+          ],
+          "options_why": [
+            "",
+            "A complicated name does not stop anyone from opening the folder.",
+            "A wallpaper does not protect any data."
+          ],
+          "answer": "Encrypting the data",
+          "explanation": "Without the key, the content stays unreadable, even if the thief copies everything.",
+          "explanation_more": "The official manual lists forgetting to encrypt sensitive data as a human mistake that threatens its secrecy."
+        },
+        {
+          "id": "d1-m0-chiffrer-15",
+          "question": "What if the encryption key fell into the hands of a thief?",
+          "answer": "They could decrypt all the data. A key must therefore stay secret and well guarded.",
+          "explanation": "It is like a house key: if it is copied, the lock is no use anymore."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-attaques",
+      "name": "Attackers and their weapons (hackers, malware, phishing)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The message from the bank",
+          "paragraphes": [
+            "You get a message: “Your account is blocked. Click here to unblock it.” It has the logo of your bank. You panic a little.",
+            "But this message does not come from your bank. Someone wrote it to make you type your password on a fake website.",
+            "This trap is called phishing. Hackers, people who get into systems without permission, use it a lot."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The angler with a fishing rod",
+          "comme": "An angler throws out some bait. They do not force the fish: the fish chooses to bite.",
+          "enVrai": "The attacker is the one who carries out the attack. In phishing, the message is the bait: you open the door yourself by clicking. This is social engineering: tricking a person to get information."
+        },
+        {
+          "type": "predire",
+          "question": "A stranger calls an employee and says they are from the IT team. They ask for the employee's password for a check. What does a good employee do?",
+          "options": [
+            "They give it: it is the IT team",
+            "They refuse and warn security",
+            "They give only half of the password"
+          ],
+          "answer": "They refuse and warn security",
+          "explanation": "A real IT team never asks for your password. Giving half is tempting, but it already gives the attacker a clue."
+        },
+        {
+          "type": "analogie",
+          "titre": "The virus, like the flu",
+          "comme": "A flu virus sticks to one person and passes to the next. It needs a host to live.",
+          "enVrai": "A computer virus attaches itself to a file. When you open that file, it copies itself elsewhere. Malware (malicious software) is the general word for all programs made to cause harm. A virus is only one type."
+        },
+        {
+          "type": "analogie",
+          "titre": "Ransomware, a locked chest with no key",
+          "comme": "A thief locks your things in a chest. They only give you the key if you pay.",
+          "enVrai": "Ransomware encrypts your files to lock them. The attacker asks for money in return for the key. You get your files back if you pay, or if you kept a copy elsewhere."
+        },
+        {
+          "type": "exemple",
+          "titre": "A website overloaded",
+          "texte": "A concert ticket website receives millions of requests in the same second. It can no longer answer the real customers. This attack is called a denial of service (DoS)."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-attaques-1",
+          "question": "What is a hacker?",
+          "answer": "A hacker is a person who tries to get into a system without having the right to. This is the meaning the word has in this course.",
+          "explanation": "The word sometimes also means a computer expert, but here it means the intruder.",
+          "explanation_more": "The official manual uses “hacker” for a person who attacks a system, for example to encrypt data and ask for a ransom."
+        },
+        {
+          "id": "d1-m0-attaques-2",
+          "question": "What is an attack?",
+          "answer": "An attack is a deliberate action to steal, change or block data or a system. The person who carries it out is the attacker.",
+          "explanation": "The common point: someone acts on purpose to cause harm."
+        },
+        {
+          "id": "d1-m0-attaques-3",
+          "question": "A hacker tries passwords on an account that is not theirs. Is this already an attack?",
+          "options": [
+            "Yes, even if they broke nothing",
+            "No, they have not broken anything yet"
+          ],
+          "answer": "Yes, even if they broke nothing",
+          "explanation": "An attack is a deliberate action to cause harm. Trying to get in without the right is already one."
+        },
+        {
+          "id": "d1-m0-attaques-4",
+          "question": "What is malware (malicious software)?",
+          "answer": "Malware is a program made to cause harm: stealing, damaging or blocking data. Examples: virus, ransomware, Trojan horse.",
+          "explanation": "Malware comes from the words malicious software."
+        },
+        {
+          "id": "d1-m0-attaques-5",
+          "question": "What is a computer virus?",
+          "answer": "A virus is malware that attaches itself to a file and copies itself when you open that file. This way, it passes from file to file.",
+          "explanation": "Like a flu virus, it needs a host to spread.",
+          "explanation_more": "The official manual mentions viruses among the threats that can change or damage data."
+        },
+        {
+          "id": "d1-m0-attaques-6",
+          "question": "Is a virus a kind of malware?",
+          "options": [
+            "Yes, it is a type of malware",
+            "No, they are two different things"
+          ],
+          "answer": "Yes, it is a type of malware",
+          "explanation": "Malware is the general word. The virus, the ransomware and the Trojan horse are types of it."
+        },
+        {
+          "id": "d1-m0-attaques-7",
+          "question": "What is a Trojan horse (Trojan)?",
+          "answer": "A Trojan horse is malware hidden inside a program that looks useful. You install it yourself without knowing.",
+          "explanation": "Like in the legend: the gift hides the soldiers.",
+          "explanation_more": "The official manual tells how, in 2017, a CCleaner update contained a Trojan horse: more than 2 billion downloads were reported."
+        },
+        {
+          "id": "d1-m0-attaques-8",
+          "question": "What is ransomware?",
+          "answer": "Ransomware is malware that encrypts your files to lock them. The attacker asks for money to give you the key.",
+          "explanation": "A ransom is money demanded to set something free.",
+          "explanation_more": "The official manual mentions ransomware as a threat to the availability of data."
+        },
+        {
+          "id": "d1-m0-attaques-9",
+          "question": "All your files are locked. A message asks for money to unlock them. Which malware is this?",
+          "options": [
+            "Ransomware",
+            "A virus that erases itself",
+            "A Trojan horse that spies"
+          ],
+          "options_why": [
+            "",
+            "A virus copies itself from file to file. Here, the goal is to lock files and ask for money.",
+            "A Trojan horse hides inside a program. Here, the demand for money points to ransomware."
+          ],
+          "answer": "Ransomware",
+          "explanation": "Locking files in return for money: that is the mark of ransomware."
+        },
+        {
+          "id": "d1-m0-attaques-10",
+          "question": "What is phishing?",
+          "answer": "Phishing is a trap message that copies a trusted source. It pushes you to click or to give a password.",
+          "explanation": "Phishing sounds like fishing: the message is the bait.",
+          "explanation_more": "The official manual says phishing is the most common form of social engineering, by email."
+        },
+        {
+          "id": "d1-m0-attaques-11",
+          "question": "What is spam?",
+          "answer": "Spam is an unwanted message sent to many people at once. Some spam messages are phishing traps.",
+          "explanation": "Spam is not always dangerous, but you should be careful with its links.",
+          "explanation_more": "The official manual talks about spam when it covers the CAN-SPAM law: unsolicited messages."
+        },
+        {
+          "id": "d1-m0-attaques-12",
+          "question": "A fake website asks for your password: phishing or ransomware?",
+          "options": [
+            "Phishing",
+            "Ransomware"
+          ],
+          "answer": "Phishing",
+          "explanation": "The goal is to make you give away your secret. Ransomware, on the other hand, locks your files."
+        },
+        {
+          "id": "d1-m0-attaques-13",
+          "question": "What is social engineering?",
+          "answer": "It means tricking a person, by pretending to be someone else, to get information. Example: a fake call from the IT team.",
+          "explanation": "The attacker aims at the person, not the machine.",
+          "explanation_more": "According to the official manual, phishing is the most common form of it."
+        },
+        {
+          "id": "d1-m0-attaques-14",
+          "question": "What is a denial of service (DoS)?",
+          "answer": "A denial of service blocks access to a service by overloading it with requests. Real users can no longer use it.",
+          "explanation": "Nothing is stolen: the service is only stopped from answering.",
+          "explanation_more": "The official manual mentions it as a common attack on availability."
+        },
+        {
+          "id": "d1-m0-attaques-15",
+          "question": "[[Ransomware]] encrypts your files and asks for money for the [[key]].",
+          "answer": "Ransomware encrypts your files and asks for money for the key.",
+          "explanation": "Encrypt, lock, demand: remember these three verbs."
+        },
+        {
+          "id": "d1-m0-attaques-16",
+          "question": "What is a distributed denial of service (DDoS)?",
+          "answer": "It is a denial of service launched from a very large number of computers at once. It is harder to stop.",
+          "explanation": "Blocking one single source is no longer enough: there are thousands.",
+          "explanation_more": "The official manual mentions DDoS next to ransomware among the attacks that threaten the continuity of a business."
+        },
+        {
+          "id": "d1-m0-attaques-17",
+          "question": "What is credential theft?",
+          "answer": "It means stealing a username and password to pretend to be someone. Phishing is one way to do it.",
+          "explanation": "With your credentials, the attacker walks in through the front door.",
+          "explanation_more": "The official manual mentions credential theft among the acts that aim at the secrecy of data."
+        },
+        {
+          "id": "d1-m0-attaques-18",
+          "question": "Which type of attack is it?",
+          "answer": "Phishing or social engineering: the fake message and the call. Malware: the virus and the ransomware. Denial of service: the two overloaded websites.",
+          "explanation": "Tricking a person, causing harm with a program, or overloading a service: three families.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Phishing or social engineering",
+              "Malware",
+              "Denial of service"
+            ],
+            "items": [
+              {
+                "text": "A message copies your bank and asks for your password",
+                "category": "Phishing or social engineering"
+              },
+              {
+                "text": "A person pretends to be the IT team on the phone",
+                "category": "Phishing or social engineering"
+              },
+              {
+                "text": "A file copies itself into other files when you open it",
+                "category": "Malware"
+              },
+              {
+                "text": "A program locks your files in return for money",
+                "category": "Malware"
+              },
+              {
+                "text": "Millions of requests overload a ticket website",
+                "category": "Denial of service"
+              },
+              {
+                "text": "A website cannot be opened because of a flood of requests",
+                "category": "Denial of service"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-attaques-19",
+          "question": "What is network sniffing?",
+          "answer": "It means secretly listening to the data that travels on a network. Encryption stops the listener from understanding it.",
+          "explanation": "The listener changes nothing: they only read what passes by.",
+          "explanation_more": "The official manual mentions it among the malicious acts that aim at the secrecy of data."
+        },
+        {
+          "id": "d1-m0-attaques-20",
+          "question": "Why does phishing work even against careful people?",
+          "answer": "Because it plays on emotions: fear, urgency, curiosity. Under pressure, people click before thinking. The message also copies a trusted sender.",
+          "explanation": "Slowing down and checking the sender is the best habit.",
+          "explanation_more": "The official manual says phishing can get past even the most sophisticated security tools."
+        },
+        {
+          "id": "d1-m0-attaques-21",
+          "question": "Lea gets an email from the “director”: he asks for an urgent money transfer and says to tell no one. What should she do?",
+          "options": [
+            "Check in another way, like a phone call",
+            "Make the transfer fast so the director does not get angry",
+            "Reply to the email to ask if he is sure"
+          ],
+          "options_why": [
+            "",
+            "Urgency and secrecy are classic signs of manipulation.",
+            "Replying to the same email may send the question back to the attacker."
+          ],
+          "answer": "Check in another way, like a phone call",
+          "explanation": "A second trusted channel lets you check the request."
+        },
+        {
+          "id": "d1-m0-attaques-22",
+          "question": "What if just one employee clicks on a trap link?",
+          "answer": "Malware can install itself on their computer, then spread through the whole network. One single mistake is enough.",
+          "explanation": "One single click can open the door to the whole company."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-defenses",
+      "name": "Defenses (firewall, backup, patch, logs)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The homework that disappears",
+          "paragraphes": [
+            "You spent three hours on a homework assignment. The computer crashes, and everything disappears.",
+            "If you had kept a copy somewhere else, you would have lost five minutes, not three hours.",
+            "This spare copy is called a backup. It is one of the basic defenses in cybersecurity."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "A castle has several defenses",
+          "comme": "A castle has walls, guards at the gate, alarm bells and food supplies in case of a siege.",
+          "enVrai": "A company also stacks up defenses. The firewall is the guard at the gate: it filters what comes in and out of the network. Antivirus software looks for malware. Logs record what happens."
+        },
+        {
+          "type": "predire",
+          "question": "A flaw in a program is known, and its maker publishes an update that fixes it. What happens if you do not install it?",
+          "options": [
+            "Nothing: the flaw stays harmless",
+            "The flaw stays open to attackers",
+            "The computer turns itself off"
+          ],
+          "answer": "The flaw stays open to attackers",
+          "explanation": "Once a flaw is known, attackers know it too. Not updating means leaving a door open. “Nothing” is tempting, because you see no difference."
+        },
+        {
+          "type": "analogie",
+          "titre": "Logs, like cameras",
+          "comme": "A camera at the entrance does not stop any theft. But after a theft, you can watch again what happened.",
+          "enVrai": "Logs record who did what, and when, on a system. They do not stop an attack. They help you spot it and understand what happened."
+        },
+        {
+          "type": "exemple",
+          "titre": "A ransomware Monday morning",
+          "texte": "A company finds that all its files are locked. It pays nothing: it has a backup from the day before, kept outside the network. In a few hours, it puts its files back. Without a backup, it would have lost years of work."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-defenses-1",
+          "question": "What is a backup?",
+          "answer": "A backup is a copy of your data kept somewhere else, so you can get it back after a loss. Example: a copy of your files on another disk.",
+          "explanation": "It protects against breakdowns, theft and ransomware.",
+          "explanation_more": "The official manual recommends keeping several copies, including one away from the main site."
+        },
+        {
+          "id": "d1-m0-defenses-2",
+          "question": "What does it mean to restore?",
+          "answer": "To restore means to put data back in place from a backup. Example: getting your files back after a breakdown.",
+          "explanation": "A backup you do not know how to restore is useless: you need to practice."
+        },
+        {
+          "id": "d1-m0-defenses-3",
+          "question": "Does a backup help stop an attack or recover from it?",
+          "options": [
+            "Recover from it",
+            "Stop the attack"
+          ],
+          "answer": "Recover from it",
+          "explanation": "It blocks nothing, but it lets you get your data back after the problem."
+        },
+        {
+          "id": "d1-m0-defenses-4",
+          "question": "What is a firewall?",
+          "answer": "A firewall is a filter that lets data pass or blocks it between two networks, following rules. Example: stopping strangers from entering a company's network.",
+          "explanation": "Like the guard at the gate of a castle: it checks who passes.",
+          "explanation_more": "The official manual mentions the firewall among the technical controls, and requirement 1 of PCI DSS asks for a firewall to protect card data."
+        },
+        {
+          "id": "d1-m0-defenses-5",
+          "question": "What is antivirus software?",
+          "answer": "Antivirus software is a program that finds and removes malware. It must stay up to date to recognize new ones.",
+          "explanation": "An antivirus forgotten for months protects badly.",
+          "explanation_more": "Requirement 5 of PCI DSS, quoted in the manual, asks for antivirus software that is used and updated regularly."
+        },
+        {
+          "id": "d1-m0-defenses-6",
+          "question": "An attachment contains a virus. Which tool finds and removes it?",
+          "options": [
+            "The antivirus",
+            "The logs",
+            "The backup"
+          ],
+          "options_why": [
+            "",
+            "Logs record what happens, but they remove nothing.",
+            "The backup keeps a copy of the data, but it does not remove the virus."
+          ],
+          "answer": "The antivirus",
+          "explanation": "Finding and removing malware is the job of the antivirus."
+        },
+        {
+          "id": "d1-m0-defenses-7",
+          "question": "What is a patch?",
+          "answer": "A patch is an update that fixes a flaw in a program. Installing it is called patching the program.",
+          "explanation": "Many attacks use flaws for which a patch already exists.",
+          "explanation_more": "The official manual mentions scanning and patching for vulnerabilities as examples of good practice."
+        },
+        {
+          "id": "d1-m0-defenses-8",
+          "question": "What are logs?",
+          "answer": "Logs are the written records of what happens in a system: who logged in, when, and what they did.",
+          "explanation": "They stop nothing, but they let you investigate.",
+          "explanation_more": "The official manual recommends turning on security logs and reviewing them to spot suspicious activity."
+        },
+        {
+          "id": "d1-m0-defenses-9",
+          "question": "A [[firewall]] filters the network; an [[antivirus]] looks for malware.",
+          "answer": "A firewall filters the network; an antivirus looks for malware.",
+          "explanation": "The guard at the gate filters; the nurse treats what has already come in."
+        },
+        {
+          "id": "d1-m0-defenses-10",
+          "question": "What is an intrusion detection system (IDS)?",
+          "answer": "It is a tool that spots suspicious behavior and warns you. Its cousin, the IPS (intrusion prevention system), can also block it.",
+          "explanation": "The IDS is like an alarm: it rings, but it does not close the door.",
+          "explanation_more": "The official manual lists IDS/IPS among the technical tools of a security program."
+        },
+        {
+          "id": "d1-m0-defenses-11",
+          "question": "What is a penetration test (pentest)?",
+          "answer": "It is a simulated and authorized attack that looks for weak points before real attackers do. The results are used to fix the problems.",
+          "explanation": "You attack yourself to find the flaws before others do.",
+          "explanation_more": "The official manual mentions penetration tests to check that the rules of a firewall are strict enough."
+        },
+        {
+          "id": "d1-m0-defenses-12",
+          "question": "Does this defense help to prevent, to spot, or to recover?",
+          "answer": "Prevent: the firewall and the patch. Spot: the logs and intrusion detection. Recover: the copy put back and the restored system.",
+          "explanation": "Before, during, after: three moments, three types of defense.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Prevent it from happening",
+              "Spot that it is happening",
+              "Recover afterwards"
+            ],
+            "items": [
+              {
+                "text": "A firewall that blocks a stranger",
+                "category": "Prevent it from happening"
+              },
+              {
+                "text": "A patch installed in time",
+                "category": "Prevent it from happening"
+              },
+              {
+                "text": "Logs that show a strange login",
+                "category": "Spot that it is happening"
+              },
+              {
+                "text": "An intrusion detection tool that warns you",
+                "category": "Spot that it is happening"
+              },
+              {
+                "text": "Files put back from a copy",
+                "category": "Recover afterwards"
+              },
+              {
+                "text": "A system restored after a breakdown",
+                "category": "Recover afterwards"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-defenses-13",
+          "question": "What is a security incident?",
+          "answer": "A security incident is an event that puts data or systems in danger. Examples: ransomware, a stolen account.",
+          "explanation": "When an incident happens, you spot it, limit it, then recover."
+        },
+        {
+          "id": "d1-m0-defenses-14",
+          "question": "What is redundancy?",
+          "answer": "Redundancy means doubling an important element. If one breaks down, the other takes over. Example: two internet connections.",
+          "explanation": "It is like having a spare wheel in the car.",
+          "explanation_more": "The official manual mentions doubled electricity, water and internet connections, and sometimes several internet providers."
+        },
+        {
+          "id": "d1-m0-defenses-15",
+          "question": "Why install patches quickly?",
+          "answer": "A known flaw can be used by any attacker. Each day of delay leaves the door open for longer.",
+          "explanation": "Attackers also read the patch announcements."
+        },
+        {
+          "id": "d1-m0-defenses-16",
+          "question": "A company reads its server log and sees a thousand failed login attempts at three in the morning. What does this log show?",
+          "options": [
+            "A possible attack to look into",
+            "That the server is healthy",
+            "That the firewall has disappeared"
+          ],
+          "options_why": [
+            "",
+            "A thousand refused attempts in the middle of the night are not a sign of good health.",
+            "Nothing in the log says the firewall has disappeared."
+          ],
+          "answer": "A possible attack to look into",
+          "explanation": "Logs are used to spot this kind of sign so you can react fast."
+        },
+        {
+          "id": "d1-m0-defenses-17",
+          "question": "What if the only copy of your backup was on the same computer?",
+          "answer": "A breakdown, a theft or ransomware could destroy the original and the copy at the same time. It is better to keep a copy elsewhere.",
+          "explanation": "A copy in the same place as the original does not protect against a problem that hits that place.",
+          "explanation_more": "The official manual asks that at least one set of backups be kept away from the main site."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-faille-menace",
+      "name": "Vulnerability, threat, attack: three words not to mix up",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The open window",
+          "paragraphes": [
+            "You leave on vacation and leave a window open. Nobody has come in yet. Still, a burglar walks past the house and looks at the window.",
+            "Three things already exist: an open window, a possible burglar and valuables inside. The theft has not happened yet.",
+            "Experts have a word for each one. The open window is a weakness, or vulnerability. The burglar is a threat."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The house and its three elements",
+          "comme": "The open window is a weak point. The burglar is a possible danger. When they really come in, that is the burglary.",
+          "enVrai": "A vulnerability is a weak point of a system. A threat is what can take advantage of it. The attack is the moment when someone really does. The valuables are the assets."
+        },
+        {
+          "type": "predire",
+          "question": "A program has a known flaw, but nobody has used it yet. What should we call it?",
+          "options": [
+            "There is a vulnerability",
+            "There is an attack",
+            "There is a virus"
+          ],
+          "answer": "There is a vulnerability",
+          "explanation": "The flaw is a weak point: it is a vulnerability. With nobody using it, there is no attack yet. “Attack” is tempting because the word sounds scary, but nothing has happened."
+        },
+        {
+          "type": "analogie",
+          "titre": "Risk, like the rain",
+          "comme": "The sky is gray and you forgot your umbrella. Rain is possible, and you will get wet if it falls.",
+          "enVrai": "Risk is the chance that a threat takes advantage of a vulnerability and harms an asset. It depends on probability (the chance that it happens) and impact (how bad the damage is). Without a vulnerability or without a threat, the risk goes down."
+        },
+        {
+          "type": "exemple",
+          "titre": "At the office",
+          "texte": "An employee keeps their password on a paper stuck to the screen: that is a vulnerability. A curious visitor is a threat. If the visitor writes the password down and logs in, that is an attack. The company's data is the asset in danger."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-faille-menace-1",
+          "question": "What is a vulnerability?",
+          "answer": "A vulnerability, or weakness, is a weak point in a system that an attacker can use. Example: a program that was never updated.",
+          "explanation": "The vulnerability is in the system: it exists even if nobody uses it.",
+          "explanation_more": "Simple definition. The official definition from the manual comes later, in the galaxy on threats and risk (D1.11)."
+        },
+        {
+          "id": "d1-m0-faille-menace-2",
+          "question": "What is a threat?",
+          "answer": "A threat is an event or a person that can cause damage. Examples: a hacker, a fire, an angry employee.",
+          "explanation": "The threat is not in the system: it is what can hit it."
+        },
+        {
+          "id": "d1-m0-faille-menace-3",
+          "question": "An office door that is not closed properly: a vulnerability or a threat?",
+          "options": [
+            "A vulnerability",
+            "A threat"
+          ],
+          "answer": "A vulnerability",
+          "explanation": "The badly closed door is a weak point. The threat would be the person who could take advantage of it."
+        },
+        {
+          "id": "d1-m0-faille-menace-4",
+          "question": "When a threat takes advantage of a vulnerability, what is that called?",
+          "answer": "An attack. It is the moment when someone really uses a vulnerability to cause harm.",
+          "explanation": "Vulnerability, threat, attack: the weak point, the danger, then the action."
+        },
+        {
+          "id": "d1-m0-faille-menace-5",
+          "question": "What is an asset?",
+          "answer": "An asset is anything of value to an organization: people, machines, data. Example: the customer list.",
+          "explanation": "An asset is what you are trying to protect.",
+          "explanation_more": "The official manual says an asset is “anything of value”, and mentions people, property and information."
+        },
+        {
+          "id": "d1-m0-faille-menace-6",
+          "question": "Vulnerability, threat or asset?",
+          "answer": "Vulnerability: the outdated program and the password that is too simple. Threat: the ransomware and the angry former employee. Asset: the customer database and the servers.",
+          "explanation": "The vulnerability is the hole. The threat is what can slip through it. The asset is what you want to protect.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Vulnerability",
+              "Threat",
+              "Asset"
+            ],
+            "items": [
+              {
+                "text": "A program that was never updated",
+                "category": "Vulnerability"
+              },
+              {
+                "text": "A password that is far too simple",
+                "category": "Vulnerability"
+              },
+              {
+                "text": "A ransomware that is going around",
+                "category": "Threat"
+              },
+              {
+                "text": "An angry former employee",
+                "category": "Threat"
+              },
+              {
+                "text": "The customer database",
+                "category": "Asset"
+              },
+              {
+                "text": "The company's servers",
+                "category": "Asset"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-faille-menace-7",
+          "question": "What is a risk?",
+          "answer": "A risk is the chance that a threat takes advantage of a vulnerability and harms an asset. It depends on probability and impact.",
+          "explanation": "Without a threat, or without a vulnerability, the risk is lower.",
+          "explanation_more": "The official manual says that risk sits where threats, vulnerabilities and assets meet."
+        },
+        {
+          "id": "d1-m0-faille-menace-8",
+          "question": "What is an insider threat?",
+          "answer": "An insider threat comes from someone inside: an employee, a former employee or a partner. It can be deliberate or caused by a mistake.",
+          "explanation": "An insider threat does not need to force the door: it already has a key.",
+          "explanation_more": "The official manual says the insider threat is often seen as a major security concern."
+        },
+        {
+          "id": "d1-m0-faille-menace-9",
+          "question": "A flood can destroy a datacenter: is it a threat or a vulnerability?",
+          "options": [
+            "A threat",
+            "A vulnerability"
+          ],
+          "answer": "A threat",
+          "explanation": "The flood is a dangerous event: a threat. The vulnerability would be having no protection against water.",
+          "explanation_more": "The official manual mentions floods, excessive heat and power failures among the environmental threats."
+        },
+        {
+          "id": "d1-m0-faille-menace-10",
+          "question": "Can a threat be accidental?",
+          "answer": "Yes. A breakdown, a fire or an employee's mistake are threats, even with no intention to cause harm.",
+          "explanation": "So you protect against mistakes and accidents, not only against hackers.",
+          "explanation_more": "The official manual says a threat can come from a person who harms an asset on purpose or by accident."
+        },
+        {
+          "id": "d1-m0-faille-menace-11",
+          "question": "A [[vulnerability]] is a weak point; a [[threat]] is a danger that can take advantage of it.",
+          "answer": "A vulnerability is a weak point; a threat is a danger that can take advantage of it.",
+          "explanation": "The open window and the burglar: two different things."
+        },
+        {
+          "id": "d1-m0-faille-menace-12",
+          "question": "What is a data breach?",
+          "answer": "A data breach is an incident where data is read or stolen without permission. Example: a customer list that ends up online.",
+          "explanation": "It is the possible result of a successful attack.",
+          "explanation_more": "The official manual describes it as a cybercrime where information is viewed or stolen without authorization."
+        },
+        {
+          "id": "d1-m0-faille-menace-13",
+          "question": "On a website, the administrator password was left as “1234”. What does “1234” represent?",
+          "options": [
+            "A vulnerability",
+            "A threat",
+            "An asset"
+          ],
+          "options_why": [
+            "",
+            "A threat is what can take advantage of a weak point, like a hacker. Here, “1234” is the weak point itself.",
+            "An asset is what you protect, like data. Here, “1234” is the hole in the protection."
+          ],
+          "answer": "A vulnerability",
+          "explanation": "It is an easy-to-guess weak point: a vulnerability."
+        },
+        {
+          "id": "d1-m0-faille-menace-14",
+          "question": "Why fix a vulnerability even if nobody has used it yet?",
+          "answer": "Because a threat can appear later, without warning. Once the vulnerability is known, someone can take advantage of it at any time.",
+          "explanation": "It is better to close the window before the burglar arrives."
+        },
+        {
+          "id": "d1-m0-faille-menace-15",
+          "question": "Put the steps in order, from the vulnerability to the damage.",
+          "answer": "A vulnerability exists. An attacker discovers it. They use it: that is the attack. Data is stolen or locked. The company suffers damage.",
+          "explanation": "You can cut the chain at each step: fix the vulnerability, spot the attack, limit the damage.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "A vulnerability exists in a program",
+              "An attacker discovers it",
+              "They use it: that is the attack",
+              "Data is stolen or locked",
+              "The company suffers damage"
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-faille-menace-16",
+          "question": "What if you fix all the known vulnerabilities: does the risk disappear?",
+          "answer": "No. Threats like breakdowns or mistakes are still possible, and new vulnerabilities can appear. The risk goes down, but never disappears.",
+          "explanation": "The goal is not zero risk: it is to make the risk acceptable.",
+          "explanation_more": "The official manual calls the risk that remains after protection measures residual risk."
+        }
+      ]
+    },
+    {
+      "id": "d1-m0-entreprise",
+      "name": "The organization and the law (organization, law, audit)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The school rules",
+          "paragraphes": [
+            "At school, there are rules: no phones in class, and a school planner you must carry. Other rules come from the law, like going to school being required.",
+            "A company also lives with rules from several sources: its own, those of its partners and those of the state.",
+            "In security, you must know them all. Otherwise, you risk a penalty or losing the trust of customers."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Rules at several levels",
+          "comme": "At home, you follow your parents' rules. At school, the school rules. In the street, the law. They add up.",
+          "enVrai": "A company has its own internal rules, standards that many agree to follow, contracts with its partners and laws that are required. If they clash, the law comes before the rest."
+        },
+        {
+          "type": "predire",
+          "question": "A company does not follow a law about its customers' data. What does it risk?",
+          "options": [
+            "Nothing, a law is only advice",
+            "A fine or a lawsuit",
+            "Only a bad grade"
+          ],
+          "answer": "A fine or a lawsuit",
+          "explanation": "A law is required. Ignoring it can cost a fine, which is a sum of money to pay, or a lawsuit. Simple advice, on the other hand, forces nobody."
+        },
+        {
+          "type": "analogie",
+          "titre": "The audit, like a car inspection",
+          "comme": "A car goes through an inspection. An expert checks the brakes and the lights, then notes what is wrong.",
+          "enVrai": "An audit is a check done by a person who verifies whether the company follows its rules. The auditor reads documents, asks questions and runs tests. Then they write a report."
+        },
+        {
+          "type": "exemple",
+          "titre": "A shop and its customers' data",
+          "texte": "A shop keeps the name, address and email of its customers. This is personal data. The shop must keep it secret. In Europe, a law lets customers ask for it to be deleted. If the shop does not follow this law, it risks a fine."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-m0-entreprise-1",
+          "question": "What is an organization?",
+          "answer": "An organization is a group of people who work together toward a shared goal. Examples: a shop, a bank, a hospital.",
+          "explanation": "In this course, the word organization also covers government offices and charities."
+        },
+        {
+          "id": "d1-m0-entreprise-2",
+          "question": "What is an employee?",
+          "answer": "An employee is a person who works for an organization and is paid by it. They have access to some information.",
+          "explanation": "From the director to the newest employee, everyone has a role in security."
+        },
+        {
+          "id": "d1-m0-entreprise-3",
+          "question": "Why does an employee not have access to all the files of the company?",
+          "answer": "Because each person only needs some of the information. The more access there is, the more risk of a leak or a mistake.",
+          "explanation": "Every extra access is an open door for no reason."
+        },
+        {
+          "id": "d1-m0-entreprise-4",
+          "question": "What is a contractor or vendor?",
+          "answer": "A contractor is an outside person or company that provides a service or a product. Example: a technician hired to set up a network.",
+          "explanation": "They may have access to information: so you must frame their work with a contract.",
+          "explanation_more": "The official manual mentions contractors, consultants and vendors among the third parties to manage."
+        },
+        {
+          "id": "d1-m0-entreprise-5",
+          "question": "What is a customer?",
+          "answer": "A customer is a person or company that buys what the organization sells. Their personal data must be protected.",
+          "explanation": "Losing customer data also means losing their trust."
+        },
+        {
+          "id": "d1-m0-entreprise-6",
+          "question": "Employee, contractor or customer?",
+          "answer": "Employee: the accountant and the salesperson. Contractor: the outside technician and the consultant. Customer: the buyer and the company that orders.",
+          "explanation": "Who is paid by the organization? Who provides it a service? Who buys something from it?",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Employee",
+              "Contractor",
+              "Customer"
+            ],
+            "items": [
+              {
+                "text": "An accountant paid by the company",
+                "category": "Employee"
+              },
+              {
+                "text": "A salesperson of the shop",
+                "category": "Employee"
+              },
+              {
+                "text": "A technician from an outside firm who came to repair the network",
+                "category": "Contractor"
+              },
+              {
+                "text": "A consultant hired for three months",
+                "category": "Contractor"
+              },
+              {
+                "text": "A person who buys a product on the website",
+                "category": "Customer"
+              },
+              {
+                "text": "A company that orders supplies",
+                "category": "Customer"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-m0-entreprise-7",
+          "question": "What is a contract?",
+          "answer": "A contract is a written agreement between two parties that says what each one must do. Example: the contract with a cloud provider.",
+          "explanation": "You can rely on it if the other party does not respect the agreement."
+        },
+        {
+          "id": "d1-m0-entreprise-8",
+          "question": "What is a policy (an internal rule)?",
+          "answer": "A policy is an instruction that the organization imposes on its employees. Example: locking your screen when you step away.",
+          "explanation": "The official manual calls it a policy.",
+          "explanation_more": "The official manual defines policies, standards, procedures and guidelines in the galaxy D1.8."
+        },
+        {
+          "id": "d1-m0-entreprise-9",
+          "question": "A company promises a customer in writing to keep their files accessible. What is this agreement called?",
+          "options": [
+            "A contract",
+            "A standard",
+            "An audit"
+          ],
+          "options_why": [
+            "",
+            "A standard is a set of recognized rules, not an agreement between two parties.",
+            "An audit is a check, not an agreement."
+          ],
+          "answer": "A contract",
+          "explanation": "A written agreement between two parties is a contract."
+        },
+        {
+          "id": "d1-m0-entreprise-10",
+          "question": "What is a standard?",
+          "answer": "A standard is a set of recognized rules that many organizations choose to follow. Example: the ISO 27001 standard.",
+          "explanation": "The state does not force it, unless a contract or a law asks for it.",
+          "explanation_more": "The official manual mentions ISO/IEC 27001 as a very widespread standard in security."
+        },
+        {
+          "id": "d1-m0-entreprise-11",
+          "question": "What is a law?",
+          "answer": "A law is a required rule written by the state. Not following it exposes you to a penalty.",
+          "explanation": "The law applies to everyone in the country concerned."
+        },
+        {
+          "id": "d1-m0-entreprise-12",
+          "question": "The ISO 27001 standard, in general: a choice of the organization or a requirement of the law?",
+          "options": [
+            "A choice of the organization",
+            "A requirement of the law"
+          ],
+          "answer": "A choice of the organization",
+          "explanation": "A standard is followed by choice, or because a contract requires it. Only the law applies to everyone."
+        },
+        {
+          "id": "d1-m0-entreprise-13",
+          "question": "What is a fine?",
+          "answer": "A fine is a sum of money to pay when you did not follow a law.",
+          "explanation": "It is one of the possible penalties, along with a lawsuit and a loss of trust."
+        },
+        {
+          "id": "d1-m0-entreprise-14",
+          "question": "What is an audit?",
+          "answer": "An audit is a check done by a person who verifies whether the organization follows its rules. It ends with a report.",
+          "explanation": "The auditor reads documents, asks questions and runs tests.",
+          "explanation_more": "The official manual describes these three methods: examine, interview and test."
+        },
+        {
+          "id": "d1-m0-entreprise-15",
+          "question": "A [[law]] is required; a [[standard]] is followed by choice or by contract.",
+          "answer": "A law is required; a standard is followed by choice or by contract.",
+          "explanation": "The requirement comes from the state on one side, from choice or a contract on the other."
+        },
+        {
+          "id": "d1-m0-entreprise-16",
+          "question": "What is personal data?",
+          "answer": "Personal data is information that lets you recognize a person: name, address, birth date. The law requires you to protect it.",
+          "explanation": "The more precisely a piece of data identifies someone, the more secret it must stay.",
+          "explanation_more": "The official manual uses the term PII (personally identifiable information), seen in the galaxy D1.1."
+        },
+        {
+          "id": "d1-m0-entreprise-17",
+          "question": "What is compliance?",
+          "answer": "Being compliant means following the laws, standards and contracts that apply to the organization. The opposite is called non-compliance.",
+          "explanation": "Being compliant does not guarantee you are secure: it is only a first step.",
+          "explanation_more": "The official manual says compliance is a solid base, but only the first step toward security."
+        },
+        {
+          "id": "d1-m0-entreprise-18",
+          "question": "An online shop loses a list of customers with names and addresses. Which consequence is the most likely?",
+          "options": [
+            "A fine and a loss of trust",
+            "None, they are just names",
+            "An update to install"
+          ],
+          "options_why": [
+            "",
+            "Names and addresses are personal data: the law requires you to protect them.",
+            "An update can fix a flaw, but it does not fix the consequences of lost data."
+          ],
+          "answer": "A fine and a loss of trust",
+          "explanation": "Lost personal data can cost money and the trust of customers.",
+          "explanation_more": "The official manual says organizations that lose the secrecy of their data risk penalties and damage to their reputation."
+        },
+        {
+          "id": "d1-m0-entreprise-19",
+          "question": "Why is an audit useful even if everything seems to be going well?",
+          "answer": "Because an outside person sees what you no longer notice. They spot gaps before they become real problems.",
+          "explanation": "You get used to your own flaws: a fresh look helps."
+        },
+        {
+          "id": "d1-m0-entreprise-20",
+          "question": "What if an organization follows all the standards, but ignores a law?",
+          "answer": "It is still breaking the rules: the law applies, even if the standards are followed. Standards help, but they do not replace the law.",
+          "explanation": "You respect the law first, then you add the standards."
+        }
+      ]
+    }
+  ]
+}

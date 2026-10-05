@@ -1,0 +1,1761 @@
+{
+  "id": "d1-m14-modelisation",
+  "name": "D1.14 Threat modeling",
+  "concepts": [
+    {
+      "id": "d1-modl-menaces",
+      "name": "Threat modeling",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The imaginary burglar",
+          "paragraphes": [
+            "Before you fit locks, you walk around your house. You ask yourself how a burglar could get in: the open window, the garage door, the roof.",
+            "You write down each weak point. Then you pick one protection for each.",
+            "Experts do the same with computer systems, before the danger shows up. It is called threat modeling."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Playing the burglar on paper",
+          "comme": "You step into the burglar's shoes and look for a way in. You break nothing: you just think.",
+          "enVrai": "A threat is a possible danger for a system. A countermeasure is a protection that answers that threat. To model threats is to spot the possible threats, then choose the countermeasures."
+        },
+        {
+          "type": "predire",
+          "question": "When is threat modeling the most useful for an application?",
+          "options": [
+            "While it is being built",
+            "Only after an attack",
+            "Never, a firewall is enough"
+          ],
+          "answer": "While it is being built",
+          "explanation": "The official manual says it is used mostly during development. You can also use it to lower the risk of applications already in use."
+        },
+        {
+          "type": "exemple",
+          "titre": "A food delivery app",
+          "texte": "A team builds a delivery app. Before writing any code, it asks: who could steal customers' addresses? Who could change the price of an order? It writes down each threat, then picks a protection."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-modl-menaces-def1",
+          "question": "Official definition: “threat modeling”",
+          "answer": "Threat modeling is a technique by which you can identify potential threats to your systems and applications, as well as identify suitable countermeasures against those threats.",
+          "explanation": "Two steps: spot the threats, then find the protections that fit.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. You will need to know it word for word."
+        },
+        {
+          "id": "d1-modl-menaces-def2",
+          "question": "Threat modeling is a technique by which you can identify potential [[threats]] to your systems and applications, as well as identify suitable [[countermeasures]] against those threats.",
+          "answer": "Threat modeling is a technique by which you can identify potential threats to your systems and applications, as well as identify suitable countermeasures against those threats.",
+          "explanation": "The two key words: threats (the danger) and countermeasures (the protection)."
+        },
+        {
+          "id": "d1-modl-menaces-def3",
+          "question": "[[Threat modeling]] is a technique by which you can [[identify potential threats]] to your systems and applications, as well as [[identify suitable countermeasures]] against those threats.",
+          "answer": "Threat modeling is a technique by which you can identify potential threats to your systems and applications, as well as identify suitable countermeasures against those threats.",
+          "explanation": "The name of the technique, then its two verbs: identify the threats, identify the countermeasures."
+        },
+        {
+          "id": "d1-modl-menaces-def4",
+          "question": "Write the official definition of “threat modeling” from memory.",
+          "answer": "Threat modeling is a technique by which you can identify potential threats to your systems and applications, as well as identify suitable countermeasures against those threats.",
+          "explanation": "You do not need to be perfect the first time: compare, spot the missing word, try again tomorrow."
+        },
+        {
+          "id": "d1-modl-menaces-vuln-def1",
+          "question": "Official definition: where “threats” can come from",
+          "answer": "Threats may be related to overall system vulnerabilities or an absence of necessary security controls.",
+          "explanation": "A weak door (vulnerability) or a missing lock (missing control).",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-menaces-vuln-def3",
+          "question": "Threats may be related to [[overall system vulnerabilities]] or an [[absence of]] necessary [[security controls]].",
+          "answer": "Threats may be related to overall system vulnerabilities or an absence of necessary security controls.",
+          "explanation": "Two sources of threat: a weakness in the system, or a protection that is missing."
+        },
+        {
+          "id": "d1-modl-menaces-programme-def1",
+          "question": "Official definition: why a threat modeling program is useful",
+          "answer": "Implementing a structured threat modeling program allows an organization to consistently identify and characterize the threats it faces and then apply appropriate control to the risks associated with those threats.",
+          "explanation": "A regular program gives the same habits to every project: spot, describe, protect.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, end of the section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-menaces-programme-def3",
+          "question": "Implementing a [[structured threat modeling program]] allows an organization to [[consistently identify and characterize]] the threats it faces and then [[apply appropriate control]] to the risks associated with those threats.",
+          "answer": "Implementing a structured threat modeling program allows an organization to consistently identify and characterize the threats it faces and then apply appropriate control to the risks associated with those threats.",
+          "explanation": "A structured program, threats spotted in a consistent way, then a fitting control."
+        },
+        {
+          "id": "d1-modl-menaces-1",
+          "question": "Modeling threats is mostly about…",
+          "options": [
+            "Thinking ahead about the possible dangers of a system",
+            "Repairing a system that was already attacked"
+          ],
+          "answer": "Thinking ahead about the possible dangers of a system",
+          "explanation": "You imagine what could happen so you can choose protections. Repairing things afterwards is another step."
+        },
+        {
+          "id": "d1-modl-menaces-2",
+          "question": "A team is preparing an app. It lists what could go wrong before writing any code, then notes a protection for each danger. Which technique is it using?",
+          "options": [
+            "Threat modeling",
+            "A data backup",
+            "An audit after an incident",
+            "A password test"
+          ],
+          "options_why": [
+            "",
+            "A backup helps you recover data. It does not spot threats in advance.",
+            "An audit after an incident comes too late: here, nothing has happened yet.",
+            "A password test checks only one point, not all the dangers."
+          ],
+          "answer": "Threat modeling",
+          "explanation": "Spotting the possible threats, then choosing the countermeasures: that is the definition."
+        },
+        {
+          "id": "d1-modl-menaces-3",
+          "question": "According to the manual, what can a threat be linked to?",
+          "options": [
+            "A weakness in the system or a missing security control",
+            "Only a very skilled hacker",
+            "Only a mistake by the team",
+            "Only a power cut"
+          ],
+          "options_why": [
+            "",
+            "A threat exists even without a skilled hacker: a weakness is enough.",
+            "A mistake can be part of it, but it is not the only source named.",
+            "A power cut is another kind of danger, not the source named here."
+          ],
+          "answer": "A weakness in the system or a missing security control",
+          "explanation": "An existing weakness or a missing protection creates a possible threat."
+        },
+        {
+          "id": "d1-modl-menaces-4",
+          "question": "When is threat modeling used the most?",
+          "answer": "Mostly during the development phase of an application. You can also use it to lower the risk in applications and environments already in use.",
+          "explanation": "The earlier the better, but it is never too late.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-menaces-5",
+          "question": "Why is it better to model threats before you build an application?",
+          "answer": "You spot the weak points on paper, before they exist in the code. The protections are chosen from the start.",
+          "explanation": "Fixing a plan is easier than fixing a finished product.",
+          "explanation_more": "The manual says the technique is used mostly during development. The reasoning about cost is an explanation from outside the manual."
+        },
+        {
+          "id": "d1-modl-menaces-6",
+          "question": "Threat modeling is used to spot the [[threats]] and to choose [[countermeasures]].",
+          "answer": "Threat modeling is used to spot the threats and to choose countermeasures.",
+          "explanation": "The danger first, the protection next."
+        },
+        {
+          "id": "d1-modl-menaces-7",
+          "question": "What if a team adds protections without having imagined the threats?",
+          "answer": "It may protect the wrong places and forget a way in. Threat modeling prevents this.",
+          "explanation": "Locks fitted at random do not always stop the burglar."
+        },
+        {
+          "id": "d1-modl-menaces-8",
+          "question": "What is the difference between a threat and a countermeasure?",
+          "answer": "A threat is a possible danger for a system. A countermeasure is the protection chosen to answer that threat.",
+          "explanation": "Threat = what could happen. Countermeasure = what you do about it."
+        }
+      ]
+    },
+    {
+      "id": "d1-modl-surface",
+      "name": "The attack surface",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "How many doors does your house have?",
+          "paragraphes": [
+            "Your house has a front door, a garage door and six windows. So a burglar has eight places to test.",
+            "If you brick up two useless windows, only six are left. You have lowered his chances.",
+            "This idea has a name in cybersecurity: the attack surface."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "It is like the number of doors and windows",
+          "comme": "The more doors and windows your house has, the more places you have to watch.",
+          "enVrai": "The attack surface is all the places where an attacker can try to get in. The picture stops there: you cannot brick up every door, because the system must stay useful. You only reduce the ones that serve no purpose."
+        },
+        {
+          "type": "predire",
+          "question": "How can you reduce the attack surface of a server?",
+          "options": [
+            "Close the services nobody needs",
+            "Add new services for customers",
+            "Give every employee access to everything"
+          ],
+          "answer": "Close the services nobody needs",
+          "explanation": "Each open service is one more door. Closing the useless ones leaves fewer places to protect. The other two answers add doors."
+        },
+        {
+          "type": "exemple",
+          "titre": "A building too",
+          "texte": "The manual also gives a physical example. The attack surface of a building includes how it is built, where it is, and its entrances and exits. An office with ten access doors gives an intruder more chances than an office with two."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-modl-surface-def1",
+          "question": "Official definition: “attack surface”",
+          "answer": "The attack surface is the total range of areas where an attacker can potentially execute a compromise.",
+          "explanation": "Think of all the doors and windows of a house, seen by a burglar.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. A compromise is succeeding in getting into a system or harming it."
+        },
+        {
+          "id": "d1-modl-surface-def2",
+          "question": "The attack surface is the total [[range]] of areas where an attacker can potentially execute a [[compromise]].",
+          "answer": "The attack surface is the total range of areas where an attacker can potentially execute a compromise.",
+          "explanation": "Range: how far all the places stretch. Compromise: the attack that succeeds."
+        },
+        {
+          "id": "d1-modl-surface-def3",
+          "question": "The [[attack surface]] is the [[total range of areas]] where an attacker can potentially [[execute a compromise]].",
+          "answer": "The attack surface is the total range of areas where an attacker can potentially execute a compromise.",
+          "explanation": "The name, the range of areas, then what the attacker is trying to do."
+        },
+        {
+          "id": "d1-modl-surface-def4",
+          "question": "Write the official definition of “attack surface” from memory.",
+          "answer": "The attack surface is the total range of areas where an attacker can potentially execute a compromise.",
+          "explanation": "Spot the three blocks: the name, the range, what the attacker does."
+        },
+        {
+          "id": "d1-modl-surface-limite-def1",
+          "question": "Official definition: limiting the “attack surface”",
+          "answer": "Limiting the attack surface to the minimum number of areas of exposure reduces the opportunities for a threat to become a successful attack.",
+          "explanation": "Fewer exposed areas means fewer chances to turn a threat into an attack.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-surface-limite-def3",
+          "question": "Limiting the attack surface to [[the minimum number]] of [[areas of exposure]] reduces the [[opportunities for a threat]] to become a successful attack.",
+          "answer": "Limiting the attack surface to the minimum number of areas of exposure reduces the opportunities for a threat to become a successful attack.",
+          "explanation": "The minimum number of areas, then the result: fewer chances for a threat."
+        },
+        {
+          "id": "d1-modl-surface-info-def1",
+          "question": "Official definition: the attack surface of an information system",
+          "answer": "With an information system, this might include the methods of communication, the access controls, or weaknesses in the underlying architectures.",
+          "explanation": "Three places to look: how it communicates, how it controls access, and how the system is built.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. The architecture is the way the system is built."
+        },
+        {
+          "id": "d1-modl-surface-info-def3",
+          "question": "With an information system, this might include the [[methods of communication]], the [[access controls]], or weaknesses in the [[underlying architectures]].",
+          "answer": "With an information system, this might include the methods of communication, the access controls, or weaknesses in the underlying architectures.",
+          "explanation": "Communication, access, architecture: the three areas named."
+        },
+        {
+          "id": "d1-modl-surface-phys-def1",
+          "question": "Official definition: the attack surface of a physical environment",
+          "answer": "With a physical environment, the attack surface might include the construction techniques, the location, or the means of entrance and egress.",
+          "explanation": "For a building: how it is built, where it is, and where people go in and out.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. Egress means exit."
+        },
+        {
+          "id": "d1-modl-surface-phys-def3",
+          "question": "With a physical environment, the attack surface might include the [[construction techniques]], [[the location]], or the means of [[entrance and egress]].",
+          "answer": "With a physical environment, the attack surface might include the construction techniques, the location, or the means of entrance and egress.",
+          "explanation": "Construction, location, entrances and exits: the three physical areas."
+        },
+        {
+          "id": "d1-modl-surface-1",
+          "question": "Which attack surface does each item belong to?",
+          "answer": "Computer system: ways of communicating, access controls, weaknesses in the architecture. Building: construction, location, entrances and exits.",
+          "explanation": "Ask yourself: are we talking about a system that exchanges data, or about a real place?",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Computer system",
+              "Building (physical environment)"
+            ],
+            "items": [
+              {
+                "text": "The system's ways of communicating",
+                "category": "Computer system"
+              },
+              {
+                "text": "The access controls",
+                "category": "Computer system"
+              },
+              {
+                "text": "The weaknesses in the system's architecture",
+                "category": "Computer system"
+              },
+              {
+                "text": "The way the building is constructed",
+                "category": "Building (physical environment)"
+              },
+              {
+                "text": "The location of the building",
+                "category": "Building (physical environment)"
+              },
+              {
+                "text": "The entrances and exits of the building",
+                "category": "Building (physical environment)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-surface-2",
+          "question": "A company has opened ten services on the internet, but it only uses three. Which step best reduces its attack surface?",
+          "options": [
+            "Close the seven unused services",
+            "Buy a second server",
+            "Change the logo of the website",
+            "Ask everyone to change their password"
+          ],
+          "options_why": [
+            "",
+            "A second server even adds more places to protect.",
+            "The logo has no effect on the entry points.",
+            "That helps, but it does not reduce the number of open doors."
+          ],
+          "answer": "Close the seven unused services",
+          "explanation": "Each open service is a door. Closing seven of them reduces the chances of an attack."
+        },
+        {
+          "id": "d1-modl-surface-3",
+          "question": "“All the places where an attacker could try to get in.” What are we talking about?",
+          "options": [
+            "The attack surface",
+            "A countermeasure"
+          ],
+          "answer": "The attack surface",
+          "explanation": "A countermeasure is a protection. The attack surface is what you are trying to protect."
+        },
+        {
+          "id": "d1-modl-surface-4",
+          "question": "Why does reducing the attack surface lower the risk?",
+          "answer": "The fewer places are exposed, the fewer chances a threat has to become a real attack.",
+          "explanation": "A closed door cannot be forced open."
+        },
+        {
+          "id": "d1-modl-surface-5",
+          "question": "Name two parts of the attack surface of a computer system.",
+          "answer": "For example the ways of communicating, the access controls or the weaknesses in the architecture.",
+          "explanation": "Each part is a place to watch."
+        },
+        {
+          "id": "d1-modl-surface-6",
+          "question": "The [[smaller]] the attack surface, the fewer [[chances]] there are for a successful attack.",
+          "answer": "The smaller the attack surface, the fewer chances there are for a successful attack.",
+          "explanation": "That is the goal of reducing it: fewer doors, fewer chances."
+        },
+        {
+          "id": "d1-modl-surface-7",
+          "question": "What if you add a new remote access to the system?",
+          "answer": "The attack surface grows: there is one more place to protect and to watch.",
+          "explanation": "Each new feature open to the outside is one more door."
+        },
+        {
+          "id": "d1-modl-surface-8",
+          "question": "Why can't you remove the whole attack surface?",
+          "answer": "Because a system must stay useful: you have to keep some access points. You only reduce the number of exposed areas to the minimum.",
+          "explanation": "With no door at all, nobody could get in, not even the people who are allowed.",
+          "explanation_more": "The manual talks about the “minimum number of areas of exposure”. The reasoning about use is an explanation from outside the manual."
+        }
+      ]
+    },
+    {
+      "id": "d1-modl-approches",
+      "name": "Three approaches: attacker, asset, software",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Three guards, three ideas",
+          "paragraphes": [
+            "To protect a museum, one guard thinks first about thieves. Another thinks about the most valuable paintings. A third studies the floor plan, room by room.",
+            "None of the three is wrong. They are three different starting points.",
+            "In threat modeling, we talk about the attacker-centric, asset-centric and software-centric approaches."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The museum and its three guards",
+          "comme": "The first guard studies the possible thieves. The second makes a list of valuable objects. The third examines the plan and every room.",
+          "enVrai": "Attacker: you start from who could harm you. Asset, meaning something of value: you start from what you must protect. Software or system: you start from a diagram of the system, part by part."
+        },
+        {
+          "type": "predire",
+          "question": "You start from the list of the company's most valuable data. Which approach are you using?",
+          "options": [
+            "Asset-centric",
+            "Attacker-centric",
+            "Software-centric"
+          ],
+          "answer": "Asset-centric",
+          "explanation": "You start from what has value: that is the asset-centric approach. The other two start from an attacker profile or from a diagram of the system."
+        },
+        {
+          "type": "exemple",
+          "titre": "A bank against money laundering",
+          "texte": "A bank wants to stop money laundering (AML), which means making dirty money look clean. It studies how launderers act, then blocks each step of their method. This is an attacker-centric approach."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-modl-approches-attacker-def1",
+          "question": "Official definition: the “attacker-centric” approach",
+          "answer": "The attacker-centric threat modeling approach starts by identifying the various actors who could potentially cause harm to a system.",
+          "explanation": "You start from the people (the actors) who could do harm, then describe their means.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. The manual adds that you profile their characteristics, skills and motivations."
+        },
+        {
+          "id": "d1-modl-approches-attacker-def3",
+          "question": "The attacker-centric threat modeling approach starts by [[identifying the various actors]] who could [[potentially cause harm]] to [[a system]].",
+          "answer": "The attacker-centric threat modeling approach starts by identifying the various actors who could potentially cause harm to a system.",
+          "explanation": "You start with the actors, the ones who could harm a system."
+        },
+        {
+          "id": "d1-modl-approches-asset-def1",
+          "question": "Official definition: the “asset-centric” approach",
+          "answer": "As opposed to an attacker-centric approach, an asset-centric threat model identifies the assets of value first.",
+          "explanation": "You start with what matters, then ask how an attacker could take it.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-approches-asset-def3",
+          "question": "As opposed to an attacker-centric approach, an [[asset-centric threat model]] [[identifies the assets]] [[of value first]].",
+          "answer": "As opposed to an attacker-centric approach, an asset-centric threat model identifies the assets of value first.",
+          "explanation": "The key word is first: you list the assets of value before anything else."
+        },
+        {
+          "id": "d1-modl-approches-software-def1",
+          "question": "Official definition: the “software-centric” approach",
+          "answer": "In this approach, the system is represented as a set of interconnected processes, using architecture diagrams such as dataflow diagrams (DFDs) or component diagrams.",
+          "explanation": "You draw the system as linked pieces, then look for threats on each piece.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”, the “software-centric (or system-centric)” approach."
+        },
+        {
+          "id": "d1-modl-approches-software-def3",
+          "question": "In this approach, the system is represented as a set of [[interconnected processes]], using [[architecture diagrams]] such as [[dataflow diagrams]] (DFDs) or component diagrams.",
+          "answer": "In this approach, the system is represented as a set of interconnected processes, using architecture diagrams such as dataflow diagrams (DFDs) or component diagrams.",
+          "explanation": "Linked processes, drawn with architecture diagrams, such as dataflow diagrams."
+        },
+        {
+          "id": "d1-modl-approches-1",
+          "question": "Which approach does each situation show?",
+          "answer": "Attacker: profile the possible hackers. Asset: start from the data to protect. Software: start from a diagram of the system.",
+          "explanation": "Look for the starting point: an attacker, a thing of value, or a diagram.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Attacker-centric",
+              "Asset-centric",
+              "Software-centric"
+            ],
+            "items": [
+              {
+                "text": "You describe the skills and motivations of a possible hacker",
+                "category": "Attacker-centric"
+              },
+              {
+                "text": "A bank models how a money launderer acts",
+                "category": "Attacker-centric"
+              },
+              {
+                "text": "You start by listing the health data you must protect",
+                "category": "Asset-centric"
+              },
+              {
+                "text": "You study how credit card data is stored and used",
+                "category": "Asset-centric"
+              },
+              {
+                "text": "You draw the system with a data flow diagram",
+                "category": "Software-centric"
+              },
+              {
+                "text": "Analysts look for a possible attack against each part of the diagram",
+                "category": "Software-centric"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-approches-2",
+          "question": "An auditor must prove that health data is well protected. Which approach helps the most?",
+          "options": [
+            "Asset-centric",
+            "Attacker-centric"
+          ],
+          "answer": "Asset-centric",
+          "explanation": "Laws often protect one precise type of data. Starting from the asset follows those rules closely."
+        },
+        {
+          "id": "d1-modl-approches-3",
+          "question": "A team has the full diagram of its application, with its linked parts. It looks for a possible attack against each part. Which approach is it following?",
+          "options": [
+            "Software-centric (or system-centric)",
+            "Attacker-centric",
+            "Asset-centric"
+          ],
+          "options_why": [
+            "",
+            "It does not start from a hacker profile: it starts from the diagram.",
+            "It does not start from a list of valuable data: it starts from the components."
+          ],
+          "answer": "Software-centric (or system-centric)",
+          "explanation": "A diagram of linked components is the starting point of the software approach."
+        },
+        {
+          "id": "d1-modl-approches-4",
+          "question": "Why does the asset-centric approach help with compliance?",
+          "answer": "Many laws protect one precise type of data, like health data or credit card data. Starting from the asset fits those rules.",
+          "explanation": "The law names the asset to protect, so you start from the same point.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”. Examples: PHI (HIPAA), PII (GDPR), card data (PCI-DSS)."
+        },
+        {
+          "id": "d1-modl-approches-5",
+          "question": "In which fields is the attacker-centric approach often used?",
+          "answer": "Tactical military intelligence. Many business continuity and disaster recovery plans. The fight against money laundering (AML).",
+          "explanation": "In all these cases, you study what the opponent does so you can block it.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-approches-6",
+          "question": "The [[software]]-centric approach shows the system with [[diagrams]], like data flow diagrams.",
+          "answer": "The software-centric approach shows the system with diagrams, like data flow diagrams.",
+          "explanation": "A diagram shows the parts of the system and what moves between them."
+        },
+        {
+          "id": "d1-modl-approches-7",
+          "question": "What if a team studies only attackers, without listing its assets of value?",
+          "answer": "It may miss a valuable piece of data that nobody thought of attacking. The assets show what really matters.",
+          "explanation": "Each approach sees things the others may miss."
+        },
+        {
+          "id": "d1-modl-approches-8",
+          "question": "Why does the attacker-centric approach limit the number of scenarios to study?",
+          "answer": "You keep only the most likely attackers, based on their skills and motivations. So there are fewer scenarios.",
+          "explanation": "You study the realistic threats, not every threat you can imagine."
+        },
+        {
+          "id": "d1-modl-approches-9",
+          "question": "What does DFD stand for, and what is it used for?",
+          "answer": "Data flow diagram. It is a drawing that shows how data moves between the parts of a system.",
+          "explanation": "On the diagram, each arrow is a place where a threat can appear.",
+          "explanation_more": "The manual gives the DFD as an example of an architecture diagram. The explanation of the diagram is from outside the manual."
+        }
+      ]
+    },
+    {
+      "id": "d1-modl-stride-a",
+      "name": "STRIDE: the six threats (1 of 2)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The hacked game account",
+          "paragraphes": [
+            "One morning, your game account has a new username. Someone changed your score. Then he says he never touched your account.",
+            "Three things happened. He pretended to be you. He changed your data. He denies what he did.",
+            "At Microsoft, experts sorted this kind of threat using a memory trick: STRIDE."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "One word to remember six ideas",
+          "comme": "To remember your shopping list, you keep a word made from the first letter of each item.",
+          "enVrai": "STRIDE is a mnemonic: a memory aid made of first letters. Each letter is a type of threat: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service, Elevation of privilege."
+        },
+        {
+          "type": "analogie",
+          "titre": "The first three letters at school",
+          "comme": "One student copies a parent's signature on an absence note. Another erases a grade on a report card. A third says “it was not me” when nobody saw.",
+          "enVrai": "Copying an identity is spoofing. Changing data is tampering. Denying that you did an action is repudiation."
+        },
+        {
+          "type": "predire",
+          "question": "Someone changes the quantity in an online order before it is saved. Which STRIDE threat is it?",
+          "options": [
+            "Spoofing (faking an identity)",
+            "Tampering (changing data)",
+            "Repudiation (denying an action)"
+          ],
+          "answer": "Tampering (changing data)",
+          "explanation": "Here, nothing is false about the person's identity: the data is what gets changed. The other two answers are about identity and denial."
+        },
+        {
+          "type": "exemple",
+          "titre": "The faked “From:” field",
+          "texte": "Spammers, who send unwanted emails in bulk, change the “From:” field of an email. The name shown is that of someone you trust. This is a common example of spoofing."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-modl-stride-a-def1",
+          "question": "Official definition: “STRIDE”",
+          "answer": "STRIDE is a threat modeling methodology developed by Microsoft in the late 1990s to help identify and classify computer security threats.",
+          "explanation": "Remember two things: Microsoft, and two verbs (identify and classify).",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. You will need to know it word for word."
+        },
+        {
+          "id": "d1-modl-stride-a-def2",
+          "question": "STRIDE is a threat modeling [[methodology]] developed by [[Microsoft]] in the late 1990s to help identify and classify computer security threats.",
+          "answer": "STRIDE is a threat modeling methodology developed by Microsoft in the late 1990s to help identify and classify computer security threats.",
+          "explanation": "A methodology created by Microsoft."
+        },
+        {
+          "id": "d1-modl-stride-a-def3",
+          "question": "[[STRIDE]] is a [[threat modeling methodology]] developed by Microsoft in the [[late 1990s]] to help identify and classify computer security threats.",
+          "answer": "STRIDE is a threat modeling methodology developed by Microsoft in the late 1990s to help identify and classify computer security threats.",
+          "explanation": "The name, what kind of method it is, and the time: the late 1990s."
+        },
+        {
+          "id": "d1-modl-stride-a-def4",
+          "question": "Write the official definition of “STRIDE” from memory.",
+          "answer": "STRIDE is a threat modeling methodology developed by Microsoft in the late 1990s to help identify and classify computer security threats.",
+          "explanation": "Compare with the answer: did you think of “identify and classify”?"
+        },
+        {
+          "id": "d1-modl-stride-a-nom-def1",
+          "question": "Official definition: the name “STRIDE”",
+          "answer": "The name itself is a mnemonic for six categories of security threats, discussed here:",
+          "explanation": "Six letters, six categories: one letter for each type of threat.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-stride-a-nom-def3",
+          "question": "The name itself is [[a mnemonic]] for [[six categories]] of [[security threats]], discussed here:",
+          "answer": "The name itself is a mnemonic for six categories of security threats, discussed here:",
+          "explanation": "A memory aid, six categories, security threats."
+        },
+        {
+          "id": "d1-modl-stride-a-spoofing-def1",
+          "question": "Official definition: “spoofing” (the S of STRIDE)",
+          "answer": "Spoofing is an attack during which a malicious party assumes the identity of another party (either a user or a system) by falsifying information.",
+          "explanation": "A disguise: the attacker wears someone else's mask.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. Examples from the manual: an email with a changed “From:” field, or stolen credentials that are used."
+        },
+        {
+          "id": "d1-modl-stride-a-spoofing-def3",
+          "question": "Spoofing is an attack during which [[a malicious party]] [[assumes the identity]] of another party (either a user or a system) by [[falsifying information]].",
+          "answer": "Spoofing is an attack during which a malicious party assumes the identity of another party (either a user or a system) by falsifying information.",
+          "explanation": "Who attacks, what they take (the identity), and how (by falsifying)."
+        },
+        {
+          "id": "d1-modl-stride-a-tampering-def1",
+          "question": "Official definition: “data tampering” (the T of STRIDE)",
+          "answer": "Data tampering is an attack on the integrity of data by intentionally and maliciously manipulating data.",
+          "explanation": "Tampering hits integrity: the data is no longer accurate.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. The manual says data can be changed on a disk, in memory or on the network."
+        },
+        {
+          "id": "d1-modl-stride-a-tampering-def3",
+          "question": "Data tampering is an [[attack on the integrity]] of data by [[intentionally and maliciously]] [[manipulating data]].",
+          "answer": "Data tampering is an attack on the integrity of data by intentionally and maliciously manipulating data.",
+          "explanation": "The pillar that is hit (integrity), and the way: on purpose and with bad intent."
+        },
+        {
+          "id": "d1-modl-stride-a-repudiation-def1",
+          "question": "Official definition: “repudiation” (the R of STRIDE)",
+          "answer": "Repudiation is the ability of a party to deny that they are responsible for performing an action.",
+          "explanation": "“It was not me”: and nobody can prove otherwise.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. The manual gives the signature on a parcel delivery as an example of non-repudiation."
+        },
+        {
+          "id": "d1-modl-stride-a-repudiation-def3",
+          "question": "Repudiation is the [[ability of a party]] to [[deny that they are responsible]] for [[performing an action]].",
+          "answer": "Repudiation is the ability of a party to deny that they are responsible for performing an action.",
+          "explanation": "Who: a party. What: denying responsibility. For what: an action."
+        },
+        {
+          "id": "d1-modl-stride-a-1",
+          "question": "Put the first three STRIDE threats in the order of the letters.",
+          "answer": "S: Spoofing. T: Tampering. R: Repudiation.",
+          "explanation": "STRIDE starts with S, T, R: fake, change, deny.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Spoofing (faking an identity)",
+              "Tampering (changing data)",
+              "Repudiation (denying an action)"
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-stride-a-2",
+          "question": "Which STRIDE threat does each situation show?",
+          "answer": "Spoofing: a false identity. Tampering: data changed. Repudiation: an action denied with no proof.",
+          "explanation": "Look for the act: pretending to be someone, changing data, or denying an action.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Spoofing",
+              "Tampering",
+              "Repudiation"
+            ],
+            "items": [
+              {
+                "text": "Someone changes the “From:” field of an email to copy your boss",
+                "category": "Spoofing"
+              },
+              {
+                "text": "A hacker logs in with an employee's stolen password",
+                "category": "Spoofing"
+              },
+              {
+                "text": "Someone changes the price of an order before it is saved",
+                "category": "Tampering"
+              },
+              {
+                "text": "A hacker changes data on a server's disk",
+                "category": "Tampering"
+              },
+              {
+                "text": "A customer says he never bought anything, and nobody can prove otherwise",
+                "category": "Repudiation"
+              },
+              {
+                "text": "An employee denies deleting a file, and there is no log",
+                "category": "Repudiation"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-stride-a-3",
+          "question": "An attacker changes the quantity in an online form, and the app saves it as it is. Which threat?",
+          "options": [
+            "Tampering",
+            "Spoofing"
+          ],
+          "answer": "Tampering",
+          "explanation": "He does not pretend to be someone: he changes a piece of data."
+        },
+        {
+          "id": "d1-modl-stride-a-4",
+          "question": "A customer orders shoes, then says he never ordered them. The shop has no proof. Which STRIDE threat?",
+          "options": [
+            "Repudiation",
+            "Spoofing",
+            "Tampering",
+            "Denial of service"
+          ],
+          "options_why": [
+            "",
+            "Spoofing would be a false identity. Here, the customer denies an action.",
+            "Tampering would be changed data. Here, nobody changed the order.",
+            "A denial of service would block access to the site, which is not the case."
+          ],
+          "answer": "Repudiation",
+          "explanation": "Denying an action when nobody can prove otherwise is repudiation."
+        },
+        {
+          "id": "d1-modl-stride-a-5",
+          "question": "Why is the signature on a parcel delivery an example of non-repudiation?",
+          "answer": "The delivery company keeps a record that you received the parcel on a precise date. You can no longer say you did not get it.",
+          "explanation": "The record that is kept is the proof that stops denial."
+        },
+        {
+          "id": "d1-modl-stride-a-6",
+          "question": "Which protections help prevent repudiation in an application?",
+          "answer": "Complete logging, digital signatures and multifactor authentication, especially for high-risk actions.",
+          "explanation": "Each one leaves proof of who did what.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-stride-a-7",
+          "question": "In spoofing, the attacker [[takes the identity]] of someone else by [[falsifying]] information.",
+          "answer": "In spoofing, the attacker takes the identity of someone else by falsifying information.",
+          "explanation": "Spoofing is all about identity."
+        },
+        {
+          "id": "d1-modl-stride-a-8",
+          "question": "What if an application does not check what the user types in?",
+          "answer": "An attacker can change values, and the application saves and uses them as they are. That is tampering.",
+          "explanation": "Checking inputs means controlling the data before accepting it.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”: applications that do not properly validate user input."
+        },
+        {
+          "id": "d1-modl-stride-a-9",
+          "question": "Which security property does data tampering attack?",
+          "answer": "The integrity of data: the data is no longer accurate or reliable.",
+          "explanation": "Tampering and integrity go together."
+        }
+      ]
+    },
+    {
+      "id": "d1-modl-stride-b",
+      "name": "STRIDE: the six threats (2 of 2)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The diary, the canteen and the keys",
+          "paragraphes": [
+            "A classmate reads your diary without permission. Ten students block the canteen door, so nobody else can get in. A student finds the principal's bunch of keys.",
+            "Three situations, three more STRIDE threats. They complete S, T and R.",
+            "Here are the letters I, D and E."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The blocked canteen",
+          "comme": "Ten students stand in front of the canteen door. The other students, who have the right to go in, cannot get through.",
+          "enVrai": "This is a denial of service: you stop legitimate users from reaching a resource. It attacks availability."
+        },
+        {
+          "type": "analogie",
+          "titre": "The keys to the kingdom",
+          "comme": "An ordinary student gets hold of the principal's keys. He can open every door in the school.",
+          "enVrai": "This is elevation of privilege: a user with no special rights gets the rights of an administrator. The manual talks about the “keys to the kingdom”."
+        },
+        {
+          "type": "predire",
+          "question": "An ordinary employee finds a way to open the website's admin panel. Which STRIDE threat is it?",
+          "options": [
+            "Elevation of privilege",
+            "Information disclosure",
+            "Denial of service"
+          ],
+          "answer": "Elevation of privilege",
+          "explanation": "He goes from ordinary user to administrator: his privileges go up. No data leaked and no service is blocked."
+        },
+        {
+          "type": "exemple",
+          "titre": "A sending mistake",
+          "texte": "An employee sends the salary list to the wrong person. No hacker is involved, but the information was shared with someone who had no right to it. This is information disclosure."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-modl-stride-b-disclosure-def1",
+          "question": "Official definition: “information disclosure” (the I of STRIDE)",
+          "answer": "Information disclosure is when information is shared with an unauthorized party — such as during a data breach or when inadvertently sending an email to the wrong person.",
+          "explanation": "It attacks confidentiality: someone sees what they should not see.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. Protections named: data encryption, strong access control."
+        },
+        {
+          "id": "d1-modl-stride-b-disclosure-def3",
+          "question": "Information disclosure is when information is shared with [[an unauthorized party]] — such as during [[a data breach]] or when [[inadvertently sending an email]] to the wrong person.",
+          "answer": "Information disclosure is when information is shared with an unauthorized party — such as during a data breach or when inadvertently sending an email to the wrong person.",
+          "explanation": "An unauthorized party, a data breach, or an email sent by mistake."
+        },
+        {
+          "id": "d1-modl-stride-b-dos-def1",
+          "question": "Official definition: “denial-of-service attack” (the D of STRIDE)",
+          "answer": "A denial-of-service (DoS) attack is a common availability attack that denies access to resources by legitimate users.",
+          "explanation": "The people who have the right to go in can no longer go in: availability falls.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. The manual advises you to watch for any unusual use of resources by a single user."
+        },
+        {
+          "id": "d1-modl-stride-b-dos-def3",
+          "question": "A [[denial-of-service (DoS) attack]] is a common [[availability attack]] that [[denies access to resources]] by legitimate users.",
+          "answer": "A denial-of-service (DoS) attack is a common availability attack that denies access to resources by legitimate users.",
+          "explanation": "The name, the pillar that is hit (availability), and the effect: access is denied."
+        },
+        {
+          "id": "d1-modl-stride-b-elevation-def1",
+          "question": "Official definition: “elevation of privilege” (the E of STRIDE)",
+          "answer": "Elevation of privilege (or privilege escalation) occurs when an unprivileged user is able to upgrade their privileges to those of a privileged user (e.g., a system administrator).",
+          "explanation": "An ordinary user becomes an administrator: he goes up a level of rights.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. The manual advises you to check identity again before any privileged access, and to use multifactor authentication."
+        },
+        {
+          "id": "d1-modl-stride-b-elevation-def3",
+          "question": "[[Elevation of privilege]] (or privilege escalation) occurs when an [[unprivileged user]] is able to [[upgrade their privileges]] to those of a privileged user (e.g., a system administrator).",
+          "answer": "Elevation of privilege (or privilege escalation) occurs when an unprivileged user is able to upgrade their privileges to those of a privileged user (e.g., a system administrator).",
+          "explanation": "The name, who does it (a user with no privileges), and what he manages: raising his privileges."
+        },
+        {
+          "id": "d1-modl-stride-b-1",
+          "question": "Put the six STRIDE threats in the order of the letters.",
+          "answer": "S: Spoofing. T: Tampering. R: Repudiation. I: Information disclosure. D: Denial of service. E: Elevation of privilege.",
+          "explanation": "One word to remember everything: STRIDE. Each letter starts the name of a threat.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Spoofing (faking an identity)",
+              "Tampering (changing data)",
+              "Repudiation (denying an action)",
+              "Information disclosure (sharing information with the wrong person)",
+              "Denial of service (blocking access)",
+              "Elevation of privilege (getting higher rights)"
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-stride-b-2",
+          "question": "Which STRIDE threat does each situation show?",
+          "answer": "Information disclosure: a secret is seen. Denial of service: the service is blocked. Elevation of privilege: a user becomes an administrator.",
+          "explanation": "Look for the effect: a secret revealed, access blocked, or rights going up.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Information disclosure",
+              "Denial of service",
+              "Elevation of privilege"
+            ],
+            "items": [
+              {
+                "text": "An email with customer data goes to the wrong person",
+                "category": "Information disclosure"
+              },
+              {
+                "text": "A data breach reveals medical records",
+                "category": "Information disclosure"
+              },
+              {
+                "text": "One user sends millions of requests and the site slows down for everyone",
+                "category": "Denial of service"
+              },
+              {
+                "text": "Legitimate customers can no longer open the shop's website",
+                "category": "Denial of service"
+              },
+              {
+                "text": "An ordinary user gets the rights of a system administrator",
+                "category": "Elevation of privilege"
+              },
+              {
+                "text": "An ordinary employee reaches functions meant only for administrators",
+                "category": "Elevation of privilege"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-stride-b-3",
+          "question": "An email sent by mistake reveals the salary list. Which STRIDE threat?",
+          "options": [
+            "Information disclosure",
+            "Tampering"
+          ],
+          "answer": "Information disclosure",
+          "explanation": "Nothing was changed: the information was only seen by someone who had no right to it."
+        },
+        {
+          "id": "d1-modl-stride-b-4",
+          "question": "One user sends millions of requests and the site slows down for everyone. Which control does the manual advise?",
+          "options": [
+            "Watch for and detect unusually high use of resources",
+            "Encrypt all the data of the site",
+            "Add digital signatures to emails",
+            "Ask for two-step login at every click"
+          ],
+          "options_why": [
+            "",
+            "Encryption protects confidentiality, not availability.",
+            "Signatures help against repudiation, not against a blockage.",
+            "Two-step login protects accounts, not against an overload."
+          ],
+          "answer": "Watch for and detect unusually high use of resources",
+          "explanation": "Huge use by one user is a sign of abuse, on purpose or not.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”: abnormally high resource consumption."
+        },
+        {
+          "id": "d1-modl-stride-b-5",
+          "question": "Why does elevation of privilege give the attacker “the keys to the kingdom”?",
+          "answer": "A user with no rights becomes an administrator. He can then reach sensitive data and control the systems.",
+          "explanation": "The higher the rights, the bigger the possible damage."
+        },
+        {
+          "id": "d1-modl-stride-b-6",
+          "question": "Which protections help against information disclosure?",
+          "answer": "Data encryption, strong access control and other data protection mechanisms.",
+          "explanation": "They stop an unauthorized party from reading the information.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-stride-b-7",
+          "question": "What should a system do before it gives privileged access?",
+          "answer": "Check the user's identity and credentials again, and use multifactor authentication when possible.",
+          "explanation": "This is the defense against elevation of privilege.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-stride-b-8",
+          "question": "A denial of service attacks [[availability]], while information disclosure attacks [[confidentiality]].",
+          "answer": "A denial of service attacks availability, while information disclosure attacks confidentiality.",
+          "explanation": "Two CIA pillars, two STRIDE threats."
+        },
+        {
+          "id": "d1-modl-stride-b-9",
+          "question": "What if an application stores personal data without encrypting it?",
+          "answer": "A breach would reveal all the data in readable form. That is the information disclosure threat.",
+          "explanation": "Encryption makes stolen data useless."
+        },
+        {
+          "id": "d1-modl-stride-b-10",
+          "question": "Which STRIDE threat attacks confidentiality?",
+          "answer": "Information disclosure: information is shared with an unauthorized party.",
+          "explanation": "Confidentiality and disclosure go together."
+        }
+      ]
+    },
+    {
+      "id": "d1-modl-pasta",
+      "name": "PASTA: simulating the attack in seven steps",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The firefighters' drill",
+          "paragraphes": [
+            "A fire station prepares a drill. It first decides what to save. Then it marks the limits of the building and splits it up room by room.",
+            "Next it spots the dangers and the weak points, and writes the possible scenarios. At the end, it counts the damage.",
+            "PASTA follows almost the same path, but for computer attacks."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The translator between management and technicians",
+          "comme": "The director talks about goals and money. The technicians talk about servers and flaws. A good translator links the two.",
+          "enVrai": "PASTA starts from the goals of the business, then goes down to the technical side. So the result is easier for management to understand. The picture stops there: PASTA does not translate words, it links methods."
+        },
+        {
+          "type": "predire",
+          "question": "What is the first step of PASTA?",
+          "options": [
+            "Define objectives",
+            "Analyze vulnerabilities",
+            "Enumerate attacks"
+          ],
+          "answer": "Define objectives",
+          "explanation": "PASTA starts with the goals of the business, before diving into the technical side. The other two steps come later."
+        },
+        {
+          "type": "exemple",
+          "titre": "An online shop",
+          "texte": "Objective: never lose payments. Technical scope: the website, the customer database, the payment service. Then you split up the application and look for threats, weaknesses and attacks. You finish by measuring the risk and the impact."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-modl-pasta-def1",
+          "question": "Official definition: “PASTA”",
+          "answer": "The Process for Attack Simulation and Threat Analysis (PASTA) is a risk-based threat model, developed in 2012, that supports dynamic threat analysis.",
+          "explanation": "Three words to keep: risk-based, 2012, dynamic.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. You will need to know it word for word."
+        },
+        {
+          "id": "d1-modl-pasta-def2",
+          "question": "The Process for Attack Simulation and Threat Analysis (PASTA) is a [[risk-based]] threat model, developed in 2012, that supports [[dynamic]] threat analysis.",
+          "answer": "The Process for Attack Simulation and Threat Analysis (PASTA) is a risk-based threat model, developed in 2012, that supports dynamic threat analysis.",
+          "explanation": "Based on risk, and able to do a dynamic analysis."
+        },
+        {
+          "id": "d1-modl-pasta-def3",
+          "question": "The Process for Attack Simulation and Threat Analysis (PASTA) is a [[risk-based threat model]], [[developed in 2012]], that supports [[dynamic threat analysis]].",
+          "answer": "The Process for Attack Simulation and Threat Analysis (PASTA) is a risk-based threat model, developed in 2012, that supports dynamic threat analysis.",
+          "explanation": "The kind of model, its date, and what it supports."
+        },
+        {
+          "id": "d1-modl-pasta-def4",
+          "question": "Write the official definition of “PASTA” from memory.",
+          "answer": "The Process for Attack Simulation and Threat Analysis (PASTA) is a risk-based threat model, developed in 2012, that supports dynamic threat analysis.",
+          "explanation": "Do not forget the year, 2012, or the words risk-based and dynamic."
+        },
+        {
+          "id": "d1-modl-pasta-mgmt-def1",
+          "question": "Official definition: what makes “PASTA” useful for management",
+          "answer": "The PASTA methodology integrates business objectives with technical requirements, making the output more easily understood by upper management.",
+          "explanation": "It links the goals of the business and the technical side, so management can follow.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-pasta-mgmt-def3",
+          "question": "The PASTA methodology [[integrates business objectives]] with [[technical requirements]], making the output more easily [[understood by upper management]].",
+          "answer": "The PASTA methodology integrates business objectives with technical requirements, making the output more easily understood by upper management.",
+          "explanation": "Business objectives, technical requirements, and the result: management understands."
+        },
+        {
+          "id": "d1-modl-pasta-1",
+          "question": "Put the seven steps of PASTA in order.",
+          "answer": "1. Define objectives. 2. Define technical scope. 3. Application decomposition. 4. Threat analysis. 5. Vulnerability analysis. 6. Attack enumeration. 7. Risk and impact analysis.",
+          "explanation": "Like the firefighters: the goal, the ground, the splitting up, the dangers, the weak points, the scenarios, the damage.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”: the seven steps of PASTA.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Define objectives",
+              "Define technical scope",
+              "Application decomposition",
+              "Threat analysis",
+              "Vulnerability analysis",
+              "Attack enumeration",
+              "Risk and impact analysis"
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-pasta-2",
+          "question": "Which PASTA step comes right after the decomposition of the application?",
+          "options": [
+            "Threat analysis",
+            "Vulnerability analysis",
+            "Attack enumeration",
+            "Risk and impact analysis"
+          ],
+          "options_why": [
+            "",
+            "Vulnerability analysis comes after threat analysis.",
+            "Attack enumeration is the second-to-last step.",
+            "Risk and impact analysis is the last step."
+          ],
+          "answer": "Threat analysis",
+          "explanation": "Once the application is split up, you look for threats on each part."
+        },
+        {
+          "id": "d1-modl-pasta-3",
+          "question": "What is the “define technical scope” step of PASTA for?",
+          "answer": "To set the technical limits of the study: which systems, applications and networks are covered.",
+          "explanation": "Before you search, you mark out the playing field.",
+          "explanation_more": "The manual only gives the names of the steps. This explanation is from outside the manual."
+        },
+        {
+          "id": "d1-modl-pasta-4",
+          "question": "Which method links the goals of the business to the technical side, so that management understands?",
+          "options": [
+            "PASTA",
+            "STRIDE"
+          ],
+          "answer": "PASTA",
+          "explanation": "STRIDE sorts types of threats. PASTA brings together business objectives and technical requirements."
+        },
+        {
+          "id": "d1-modl-pasta-5",
+          "question": "A technical team hands in a report full of details. Management does not understand it. Which method could have helped, and why?",
+          "answer": "PASTA: it links business objectives and technical requirements. Its results are easier for management to understand.",
+          "explanation": "A result that starts from the objectives speaks the language of the people who decide."
+        },
+        {
+          "id": "d1-modl-pasta-6",
+          "question": "What is the “application decomposition” step of PASTA for?",
+          "answer": "To split the application into parts (components, data flows) to see where threats can hide.",
+          "explanation": "You look closely at each piece instead of the whole application at once.",
+          "explanation_more": "The manual only gives the names of the steps. This explanation is from outside the manual."
+        },
+        {
+          "id": "d1-modl-pasta-7",
+          "question": "PASTA is a model based on [[risk]], created in [[2012]], that allows [[dynamic]] analysis of threats.",
+          "answer": "PASTA is a model based on risk, created in 2012, that allows dynamic analysis of threats.",
+          "explanation": "Three landmarks: risk, 2012, dynamic.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-pasta-8",
+          "question": "What does the “vulnerability analysis” step of PASTA do?",
+          "answer": "It looks for the weaknesses that would let a threat succeed.",
+          "explanation": "Threat and weakness go together: with no weakness, the threat fails.",
+          "explanation_more": "The manual only gives the names of the steps. This explanation is from outside the manual."
+        },
+        {
+          "id": "d1-modl-pasta-9",
+          "question": "What if you started straight away by looking for vulnerabilities, without defining the objectives?",
+          "answer": "You might fix problems that do not matter to the business. PASTA starts with the objectives to avoid this.",
+          "explanation": "The goal guides what deserves to be protected first."
+        },
+        {
+          "id": "d1-modl-pasta-10",
+          "question": "How many steps does PASTA have, and which one is the last?",
+          "answer": "Seven steps. The last one is risk and impact analysis.",
+          "explanation": "You finish by measuring what the attack would cost.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-pasta-11",
+          "question": "What does “attack enumeration” mean in PASTA?",
+          "answer": "Making a list of the possible attacks, linking them to the threats and weaknesses found earlier.",
+          "explanation": "To enumerate is to list one by one.",
+          "explanation_more": "The manual only gives the names of the steps. This explanation is from outside the manual."
+        }
+      ]
+    },
+    {
+      "id": "d1-modl-nist154",
+      "name": "NIST 800-154: modeling around the data",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The museum's diamond",
+          "paragraphes": [
+            "A museum puts the same alarms everywhere, like all museums. But its diamond is the most precious piece.",
+            "The usual alarms are not enough for it. It needs a protection designed for it alone.",
+            "NIST 800-154 says almost the same thing about sensitive data."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Off the rack or tailor-made",
+          "comme": "Off-the-rack clothes fit many people, but they fit nobody perfectly. Tailor-made clothes are made for you.",
+          "enVrai": "Best practices are off the rack: they are general. NIST 800-154 wants tailor-made controls that start from the data to protect. An approach built around data is called data-centric."
+        },
+        {
+          "type": "predire",
+          "question": "According to NIST 800-154, are general best practices enough to protect sensitive information?",
+          "options": [
+            "Yes, they cover everything",
+            "No, they are too general"
+          ],
+          "answer": "No, they are too general",
+          "explanation": "The guide rejects this idea: a best practice is general and often misses controls made for the sensitive asset. The first answer is tempting, because people think a standard is enough."
+        },
+        {
+          "type": "exemple",
+          "titre": "A clinic's records",
+          "texte": "A clinic keeps medical records. It describes the system and the data. It picks the attack vectors (the paths an attack can take), like a booby-trapped email. It notes the controls that block each path. Finally, it analyzes the model."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-modl-nist154-guide-def1",
+          "question": "Official definition: the guide “NIST 800-154”",
+          "answer": "NIST 800-154, \"Guide to Data-Centric System Threat Modeling,\" was released in draft form in 2016.",
+          "explanation": "A name (data-centric), a type of publication (draft) and a year (2016).",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. Draft form means a working version."
+        },
+        {
+          "id": "d1-modl-nist154-guide-def3",
+          "question": "NIST 800-154, \"Guide to [[Data-Centric System Threat Modeling]],\" was [[released in draft form]] in [[2016]].",
+          "answer": "NIST 800-154, \"Guide to Data-Centric System Threat Modeling,\" was released in draft form in 2016.",
+          "explanation": "The title of the guide, its form (draft) and the year."
+        },
+        {
+          "id": "d1-modl-nist154-rejette-def1",
+          "question": "Official definition: what NIST 800-154 rejects",
+          "answer": "It explicitly rejects that best-practice approaches are sufficient to protect sensitive information, as best practice is too general and often overlooks controls specifically tailored to meet the protection of the sensitive asset.",
+          "explanation": "The “It” means NIST 800-154. Best practice is off the rack: too general.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-nist154-rejette-def2",
+          "question": "It explicitly rejects that best-practice approaches are sufficient to protect sensitive information, as best practice is too [[general]] and often [[overlooks]] controls specifically tailored to meet the protection of the sensitive asset.",
+          "answer": "It explicitly rejects that best-practice approaches are sufficient to protect sensitive information, as best practice is too general and often overlooks controls specifically tailored to meet the protection of the sensitive asset.",
+          "explanation": "Two flaws of a best practice: it is too general, and it misses controls."
+        },
+        {
+          "id": "d1-modl-nist154-rejette-def3",
+          "question": "It explicitly [[rejects that best-practice]] approaches are sufficient to [[protect sensitive information]], as best practice is [[too general]] and often overlooks controls specifically tailored to meet the protection of the sensitive asset.",
+          "answer": "It explicitly rejects that best-practice approaches are sufficient to protect sensitive information, as best practice is too general and often overlooks controls specifically tailored to meet the protection of the sensitive asset.",
+          "explanation": "What it rejects, what you want to protect, and why: it is too general."
+        },
+        {
+          "id": "d1-modl-nist154-rejette-def4",
+          "question": "Write from memory what NIST 800-154 rejects (start with “It explicitly rejects”).",
+          "answer": "It explicitly rejects that best-practice approaches are sufficient to protect sensitive information, as best practice is too general and often overlooks controls specifically tailored to meet the protection of the sensitive asset.",
+          "explanation": "The sentence is long: first learn what it rejects, then the “as” part."
+        },
+        {
+          "id": "d1-modl-nist154-etapes-def1",
+          "question": "Official definition: the steps of NIST 800-154",
+          "answer": "NIST 800-154 establishes four major steps for data-centric system threat modeling",
+          "explanation": "Four steps, from the system and the data to the analysis of the model.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. The four steps are detailed in the next cards."
+        },
+        {
+          "id": "d1-modl-nist154-etapes-def3",
+          "question": "NIST 800-154 [[establishes four major steps]] for [[data-centric system]] [[threat modeling]]",
+          "answer": "NIST 800-154 establishes four major steps for data-centric system threat modeling",
+          "explanation": "NIST, the number of steps (four), and the subject: data-centric threat modeling."
+        },
+        {
+          "id": "d1-modl-nist154-1",
+          "question": "Put the four steps of NIST 800-154 in order.",
+          "answer": "1. Identify and describe the system and the data. 2. Select the attack vectors. 3. Describe the controls. 4. Analyze the threat model.",
+          "explanation": "You start from the system and the data, then move toward the final analysis.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Identify and describe the system and data involved",
+              "Select the attack vectors to include in the model",
+              "Describe the controls that block these attack vectors",
+              "Analyze the threat model"
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-nist154-2",
+          "question": "What does NIST 800-154 start from to model threats?",
+          "options": [
+            "The sensitive data to protect",
+            "The list of known hackers"
+          ],
+          "answer": "The sensitive data to protect",
+          "explanation": "It is a data-centric approach, not an attacker-centric one."
+        },
+        {
+          "id": "d1-modl-nist154-3",
+          "question": "A bank follows all the general best practices, but its card data is still badly protected. What would NIST 800-154 say?",
+          "options": [
+            "Best practices are too general and miss controls made for the sensitive asset",
+            "Best practices are always enough, so you must repeat them more often",
+            "You must delete the credit card data",
+            "Only hackers can explain this problem"
+          ],
+          "options_why": [
+            "",
+            "The guide rejects exactly this idea: best practices are not enough.",
+            "Deleting the asset is not the guide's answer: it wants tailor-made controls.",
+            "The guide looks for the answer in the analysis of the system and the data, not from hackers."
+          ],
+          "answer": "Best practices are too general and miss controls made for the sensitive asset",
+          "explanation": "You need controls designed for the sensitive data itself."
+        },
+        {
+          "id": "d1-modl-nist154-4",
+          "question": "Why can general best practices miss important controls?",
+          "answer": "They are written for everyone, so they do not take your precise sensitive asset into account. Tailor-made controls may be missing.",
+          "explanation": "Off-the-rack fits everybody, but not your case perfectly."
+        },
+        {
+          "id": "d1-modl-nist154-5",
+          "question": "Steps 1 and 2 of NIST 800-154: [[identify]] the system and the data, then [[select]] the attack vectors.",
+          "answer": "Steps 1 and 2 of NIST 800-154: identify the system and the data, then select the attack vectors.",
+          "explanation": "First you look at what you protect, then at where the attack can come from."
+        },
+        {
+          "id": "d1-modl-nist154-6",
+          "question": "Steps 3 and 4 of NIST 800-154: [[describe]] the controls, then [[analyze]] the threat model.",
+          "answer": "Steps 3 and 4 of NIST 800-154: describe the controls, then analyze the threat model.",
+          "explanation": "You describe the protections, then judge whether the model holds up."
+        },
+        {
+          "id": "d1-modl-nist154-7",
+          "question": "What if a company does not describe its controls in step 3?",
+          "answer": "It will not know whether the chosen attack vectors are blocked. The final analysis will have no base.",
+          "explanation": "Without the list of controls, you cannot judge the protection."
+        },
+        {
+          "id": "d1-modl-nist154-8",
+          "question": "What does “data-centric” mean?",
+          "answer": "Built around the data: you start from the data to protect, not from a list of best practices.",
+          "explanation": "The sensitive data is the starting point of the model."
+        }
+      ]
+    },
+    {
+      "id": "d1-modl-dread",
+      "name": "DREAD: scoring how serious a threat is",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The bug in the video game",
+          "paragraphes": [
+            "The makers of a video game receive ten bug reports. They cannot fix everything tonight.",
+            "They ask five questions about each bug. Is it serious? Does it happen every time? Is it easy to trigger? How many players does it hit? Is it easy to find?",
+            "DREAD does the same thing with security threats."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "A threat's report card",
+          "comme": "For each bug in the game, you give a score on five criteria. The bugs with the highest scores are fixed first.",
+          "enVrai": "DREAD is a mnemonic: a memory aid made of first letters. It gives five categories to rate the risk of a threat with numbers: Damage, Reproducibility, Exploitability, Affected users, Discoverability."
+        },
+        {
+          "type": "predire",
+          "question": "A flaw can be used by anyone, with no skill, in a few clicks. Which DREAD category is high?",
+          "options": [
+            "Exploitability (how easy it is to use)",
+            "Damage (how bad the harm is)",
+            "Affected users (how many users are hit)"
+          ],
+          "answer": "Exploitability (how easy it is to use)",
+          "explanation": "Exploitability measures how easy it is to launch the attack. Damage and the number of affected users are other criteria."
+        },
+        {
+          "type": "exemple",
+          "titre": "Rarely used today",
+          "texte": "DREAD is an older technique. Microsoft used it, then dropped it. The manual says it is rarely used today. Still, you must know its memory word and its five categories for the exam."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-modl-dread-vieux-def1",
+          "question": "Official definition: “DREAD”",
+          "answer": "DREAD is an older threat modeling technique, previously used by Microsoft but later abandoned.",
+          "explanation": "Remember: older, Microsoft, abandoned.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-dread-vieux-def3",
+          "question": "DREAD is an [[older threat modeling technique]], previously [[used by Microsoft]] but later [[abandoned]].",
+          "answer": "DREAD is an older threat modeling technique, previously used by Microsoft but later abandoned.",
+          "explanation": "An old technique, first used by Microsoft, then set aside."
+        },
+        {
+          "id": "d1-modl-dread-def1",
+          "question": "Official definition: the mnemonic “DREAD”",
+          "answer": "DREAD provides a mnemonic for quantitative risk rating security threats using five categories",
+          "explanation": "A score in numbers (quantitative) for five criteria.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. You will need to know it word for word."
+        },
+        {
+          "id": "d1-modl-dread-def2",
+          "question": "DREAD provides a mnemonic for [[quantitative]] risk rating security threats using five [[categories]]",
+          "answer": "DREAD provides a mnemonic for quantitative risk rating security threats using five categories",
+          "explanation": "Quantitative: in numbers. Categories: five criteria."
+        },
+        {
+          "id": "d1-modl-dread-def3",
+          "question": "DREAD provides a [[mnemonic]] for [[quantitative risk rating]] security threats using [[five categories]]",
+          "answer": "DREAD provides a mnemonic for quantitative risk rating security threats using five categories",
+          "explanation": "A memory aid, a score of the risk in numbers, five categories."
+        },
+        {
+          "id": "d1-modl-dread-def4",
+          "question": "Write the official definition of the mnemonic “DREAD” from memory.",
+          "answer": "DREAD provides a mnemonic for quantitative risk rating security threats using five categories",
+          "explanation": "Spot the words: mnemonic, quantitative, five categories."
+        },
+        {
+          "id": "d1-modl-dread-1",
+          "question": "Put the five DREAD categories in the order of the letters.",
+          "answer": "D: Damage. R: Reproducibility. E: Exploitability. A: Affected users. D: Discoverability.",
+          "explanation": "One word, DREAD, to remember everything: one letter for each category.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Damage (how bad the harm is)",
+              "Reproducibility (how easy it is to repeat)",
+              "Exploitability (how easy it is to use)",
+              "Affected users (how many users are hit)",
+              "Discoverability (how easy it is to find)"
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-dread-2",
+          "question": "In DREAD, what does the “Damage” category measure?",
+          "answer": "The damage: how serious the attack would be if it succeeded.",
+          "explanation": "The bigger the possible damage, the higher the score.",
+          "explanation_more": "The manual only gives the names of the categories. This explanation is from outside the manual."
+        },
+        {
+          "id": "d1-modl-dread-3",
+          "question": "In DREAD, what does the “Reproducibility” category measure?",
+          "answer": "How easy it is to repeat the attack: does it work every time or only by luck?",
+          "explanation": "An attack that works on every try is more dangerous.",
+          "explanation_more": "The manual only gives the names of the categories. This explanation is from outside the manual."
+        },
+        {
+          "id": "d1-modl-dread-4",
+          "question": "Which model is used to give each threat a score in numbers?",
+          "options": [
+            "DREAD",
+            "STRIDE"
+          ],
+          "answer": "DREAD",
+          "explanation": "STRIDE helps identify and sort threats. DREAD helps rate their risk with numbers."
+        },
+        {
+          "id": "d1-modl-dread-5",
+          "question": "In DREAD, what does the “Exploitability” category measure?",
+          "answer": "How easy it is to launch the attack: the skills, tools and time needed.",
+          "explanation": "The fewer skills you need, the higher the score.",
+          "explanation_more": "The manual only gives the names of the categories. This explanation is from outside the manual."
+        },
+        {
+          "id": "d1-modl-dread-6",
+          "question": "In DREAD, what does the “Affected users” category measure?",
+          "answer": "The number of users hit if the attack succeeds: a few or all of them.",
+          "explanation": "A flaw that hits everyone is more serious.",
+          "explanation_more": "The manual only gives the names of the categories. This explanation is from outside the manual."
+        },
+        {
+          "id": "d1-modl-dread-7",
+          "question": "A security flaw can hit all the customers of a website. Which DREAD category describes this?",
+          "options": [
+            "Affected users",
+            "Damage",
+            "Reproducibility",
+            "Discoverability"
+          ],
+          "options_why": [
+            "",
+            "Damage is about how serious the attack is, not how many people are hit.",
+            "Reproducibility is about how easy it is to repeat the attack.",
+            "Discoverability is about how easy it is to find the flaw."
+          ],
+          "answer": "Affected users",
+          "explanation": "Affected users counts the people hit by the threat."
+        },
+        {
+          "id": "d1-modl-dread-8",
+          "question": "In DREAD, what does the “Discoverability” category measure?",
+          "answer": "How easy it is to find the flaw: is it hidden or obvious to an attacker?",
+          "explanation": "A flaw that is easy to find will be found sooner.",
+          "explanation_more": "The manual only gives the names of the categories. This explanation is from outside the manual."
+        },
+        {
+          "id": "d1-modl-dread-9",
+          "question": "Why does DREAD give a score rather than a simple list of threats?",
+          "answer": "A score in numbers lets you compare threats and deal with the most serious ones first.",
+          "explanation": "When you cannot fix everything, you rank by seriousness."
+        },
+        {
+          "id": "d1-modl-dread-10",
+          "question": "What if a threat is very easy to find and very easy to use?",
+          "answer": "It should get a higher risk score: anyone can discover it, then use it.",
+          "explanation": "High Discoverability and Exploitability raise the risk."
+        },
+        {
+          "id": "d1-modl-dread-11",
+          "question": "Is DREAD widely used today?",
+          "answer": "No, it is rarely used, and Microsoft dropped it. You still need to know its mnemonic and its five categories.",
+          "explanation": "It still shows up on the exam despite its low use.",
+          "explanation_more": "Source: (ISC)2 official manual, Domain 1, section “Threat Modeling”."
+        }
+      ]
+    },
+    {
+      "id": "d1-modl-autres",
+      "name": "The other methods: OCTAVE, Trike, CORAS, VAST",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Several tools in the box",
+          "paragraphes": [
+            "A carpenter has several tools: a hammer, a saw, a screwdriver. He chooses according to the job.",
+            "Threat experts do too. After STRIDE, PASTA, NIST 800-154 and DREAD, the manual names four more methods: OCTAVE, Trike, CORAS and VAST."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The toolbox",
+          "comme": "No tool does everything. The hammer is perfect for nails, but not for screws.",
+          "enVrai": "Each method has its own special feature. OCTAVE comes from a research institute. Trike and CORAS are open to everyone (open source). VAST is a private product (proprietary). For the exam, you mostly need to recognize them."
+        },
+        {
+          "type": "predire",
+          "question": "Among these three methods, which one is proprietary, meaning not free to use?",
+          "options": [
+            "Trike",
+            "CORAS",
+            "VAST"
+          ],
+          "answer": "VAST",
+          "explanation": "VAST is a proprietary approach that uses ideas from agile working (working in short, small steps). Trike and CORAS are open source."
+        },
+        {
+          "type": "exemple",
+          "titre": "An agile project",
+          "texte": "A team works in short, small steps, which is called the agile method. It looks for a threat modeling method that fits the way it works. VAST was designed with these agile ideas."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-modl-autres-octave-def1",
+          "question": "Official definition: “OCTAVE”",
+          "answer": "Operationally Critical Threat, Asset, and Vulnerability Evaluation (OCTAVE) is an approach for managing information security risks, developed at the Software Engineering Institute (SEI).",
+          "explanation": "The name has three key words: threat, asset, vulnerability. It was born at the SEI.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-autres-octave-def3",
+          "question": "Operationally Critical Threat, Asset, and Vulnerability Evaluation (OCTAVE) is [[an approach for managing]] [[information security risks]], developed at the [[Software Engineering Institute]] (SEI).",
+          "answer": "Operationally Critical Threat, Asset, and Vulnerability Evaluation (OCTAVE) is an approach for managing information security risks, developed at the Software Engineering Institute (SEI).",
+          "explanation": "An approach for managing risk, created at the Software Engineering Institute."
+        },
+        {
+          "id": "d1-modl-autres-trike-def1",
+          "question": "Official definition: “Trike”",
+          "answer": "Trike is an open-source threat modeling approach and tool that focuses on using threat models as a risk management tool.",
+          "explanation": "Open source, and it turns the threat model into a risk management tool.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. Open source means the code is open to everyone."
+        },
+        {
+          "id": "d1-modl-autres-trike-def3",
+          "question": "Trike is an [[open-source threat modeling]] approach and tool that focuses on using [[threat models]] as a [[risk management tool]].",
+          "answer": "Trike is an open-source threat modeling approach and tool that focuses on using threat models as a risk management tool.",
+          "explanation": "Free to access, focused on threat models, in the service of risk management."
+        },
+        {
+          "id": "d1-modl-autres-coras-def1",
+          "question": "Official definition: “CORAS”",
+          "answer": "Construct a platform for Risk Analysis of Security Critical Systems (CORAS), also open source, is a European project that relies heavily on Unified Modeling Language (UML) as the front end for visualizing the threats.",
+          "explanation": "A European project, open source, that draws the threats with UML.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”. UML (Unified Modeling Language) is a standard drawing language for showing systems."
+        },
+        {
+          "id": "d1-modl-autres-coras-def3",
+          "question": "Construct a platform for Risk Analysis of Security Critical Systems (CORAS), also [[open source]], is a [[European project]] that relies heavily on [[Unified Modeling Language]] (UML) as the front end for visualizing the threats.",
+          "answer": "Construct a platform for Risk Analysis of Security Critical Systems (CORAS), also open source, is a European project that relies heavily on Unified Modeling Language (UML) as the front end for visualizing the threats.",
+          "explanation": "Open source, European, and built on UML to show the threats."
+        },
+        {
+          "id": "d1-modl-autres-vast-def1",
+          "question": "Official definition: “VAST”",
+          "answer": "Visual, Agile, and Simple Threat Modeling (VAST) is a proprietary approach that leverages Agile concepts.",
+          "explanation": "Proprietary (not free) and designed for agile work.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threat Modeling”."
+        },
+        {
+          "id": "d1-modl-autres-vast-def3",
+          "question": "[[Visual, Agile, and Simple]] Threat Modeling (VAST) is a [[proprietary approach]] that leverages [[Agile concepts]].",
+          "answer": "Visual, Agile, and Simple Threat Modeling (VAST) is a proprietary approach that leverages Agile concepts.",
+          "explanation": "The three words of the name, its status (proprietary) and its basic idea (agile working)."
+        },
+        {
+          "id": "d1-modl-autres-1",
+          "question": "Among these methods, which are open source and which one is proprietary?",
+          "answer": "Open source: Trike and CORAS. Proprietary: VAST.",
+          "explanation": "Open source means open to everyone. Proprietary means kept for its owner.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Open source",
+              "Proprietary"
+            ],
+            "items": [
+              {
+                "text": "Trike",
+                "category": "Open source"
+              },
+              {
+                "text": "CORAS",
+                "category": "Open source"
+              },
+              {
+                "text": "VAST",
+                "category": "Proprietary"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-autres-2",
+          "question": "Which method relies heavily on UML to show the threats?",
+          "options": [
+            "CORAS",
+            "Trike",
+            "VAST",
+            "OCTAVE"
+          ],
+          "options_why": [
+            "",
+            "Trike focuses on using threat models as a risk management tool.",
+            "VAST relies on agile concepts.",
+            "OCTAVE comes from the Software Engineering Institute and manages information security risks."
+          ],
+          "answer": "CORAS",
+          "explanation": "CORAS is a European project that uses UML as its way of showing things."
+        },
+        {
+          "id": "d1-modl-autres-3",
+          "question": "A team that works in short, small steps (agile method) wants a threat method made for that. Which one?",
+          "options": [
+            "VAST",
+            "OCTAVE",
+            "CORAS",
+            "DREAD"
+          ],
+          "options_why": [
+            "",
+            "OCTAVE is an approach from the Software Engineering Institute, not built around agile working.",
+            "CORAS relies on UML, not on agile working.",
+            "DREAD is a risk scoring technique, dropped by Microsoft."
+          ],
+          "answer": "VAST",
+          "explanation": "VAST uses agile concepts in its approach."
+        },
+        {
+          "id": "d1-modl-autres-4",
+          "question": "Which one is a European project?",
+          "options": [
+            "CORAS",
+            "Trike"
+          ],
+          "answer": "CORAS",
+          "explanation": "CORAS is a European project. Trike is an open-source approach and tool."
+        },
+        {
+          "id": "d1-modl-autres-5",
+          "question": "Which method does each sentence match?",
+          "answer": "STRIDE: sort the threats. PASTA: seven steps, speaks to management. NIST 800-154: start from the data. DREAD: score the risk.",
+          "explanation": "Think of the key word of each method: sort, simulate, data, score.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "STRIDE",
+              "PASTA",
+              "NIST 800-154",
+              "DREAD"
+            ],
+            "items": [
+              {
+                "text": "Six categories of threats with a memory word",
+                "category": "STRIDE"
+              },
+              {
+                "text": "An example of a threat: elevation of privilege",
+                "category": "STRIDE"
+              },
+              {
+                "text": "Seven steps that start from the goals of the business",
+                "category": "PASTA"
+              },
+              {
+                "text": "Results that are easy for management to understand",
+                "category": "PASTA"
+              },
+              {
+                "text": "Rejects the idea that best practices are enough",
+                "category": "NIST 800-154"
+              },
+              {
+                "text": "Four steps built around the data",
+                "category": "NIST 800-154"
+              },
+              {
+                "text": "A score in numbers with five categories",
+                "category": "DREAD"
+              },
+              {
+                "text": "An old technique, dropped by Microsoft",
+                "category": "DREAD"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-modl-autres-6",
+          "question": "Where was OCTAVE developed?",
+          "answer": "At the Software Engineering Institute (SEI).",
+          "explanation": "OCTAVE and SEI go together."
+        },
+        {
+          "id": "d1-modl-autres-7",
+          "question": "What does VAST stand for, and what is special about it?",
+          "answer": "Visual, Agile, and Simple Threat Modeling: a proprietary approach that uses agile concepts.",
+          "explanation": "The three words of the name describe its spirit: visual, agile and simple."
+        },
+        {
+          "id": "d1-modl-autres-8",
+          "question": "Why is it good for an organization to build a real threat modeling program?",
+          "answer": "It spots and describes its threats in a consistent way. Then it applies controls that fit the risks linked to those threats.",
+          "explanation": "A regular program avoids reinventing the method for every project."
+        },
+        {
+          "id": "d1-modl-autres-9",
+          "question": "[[Trike]] is open source and makes threat models a [[risk management tool]].",
+          "answer": "Trike is open source and makes threat models a risk management tool.",
+          "explanation": "The key word for Trike: risk management."
+        },
+        {
+          "id": "d1-modl-autres-10",
+          "question": "What if a company uses neither STRIDE nor PASTA?",
+          "answer": "That is not a problem: the manual names many methods. What matters is to choose one and follow it in a consistent way.",
+          "explanation": "No method is the only good one. You mostly need to recognize them."
+        }
+      ]
+    }
+  ]
+}

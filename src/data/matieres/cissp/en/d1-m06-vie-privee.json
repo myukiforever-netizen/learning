@@ -1,0 +1,2003 @@
+{
+  "id": "d1-m06-vie-privee",
+  "name": "D1.6 Privacy and data protection",
+  "concepts": [
+    {
+      "id": "d1-priv-bases",
+      "name": "Privacy",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Your phone knows a lot",
+          "paragraphes": [
+            "Your phone knows your name, your voice, your photos and the places you go. All of this information is about you.",
+            "Imagine an app sells it to strangers without telling you. Nobody hacked anything, but it feels unfair.",
+            "That feeling has a name: you have lost control of your privacy."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "It is like your diary",
+          "comme": "In your room, your diary is about you. Only you decide who can read it.",
+          "enVrai": "Privacy is confidentiality applied to personal data, the information that is about one person (called PII, short for personally identifiable information). The image stops there: your diary stays at home, but your data is often kept by a company. Laws force that company to protect it."
+        },
+        {
+          "type": "predire",
+          "titre": "Your turn to guess",
+          "question": "A company keeps the addresses of its customers. Who must protect these addresses?",
+          "options": [
+            "Only the customers themselves",
+            "The company, because several laws require it",
+            "Nobody, because they are public information"
+          ],
+          "answer": "The company, because several laws require it",
+          "explanation": "Customers cannot protect data they do not keep. Companies keep it, so the laws give the companies duties."
+        },
+        {
+          "type": "exemple",
+          "titre": "An online shop form",
+          "texte": "You buy sneakers online. The site asks for your name, your address and your birth date. These are PII. A law may force the shop to protect them and to tell you what it does with them."
+        },
+        {
+          "type": "analogie",
+          "titre": "One country, its own rules",
+          "comme": "Each country has its own traffic rules. If you drive abroad, you follow the rules of the country where you are.",
+          "enVrai": "Privacy works the same way: each country or region has its own laws. A jurisdiction is the area where a law applies. A professional must know the laws of their jurisdiction."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-priv-bases-def1",
+          "question": "Official definition: “privacy”",
+          "answer": "As discussed earlier in this chapter, privacy is effectively the security principle of confidentiality applied to personal data.",
+          "explanation": "Privacy is confidentiality, but only for data that is about people.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Privacy”. You must know it word for word."
+        },
+        {
+          "id": "d1-priv-bases-def2",
+          "question": "As discussed earlier in this chapter, [[privacy]] is effectively the security principle of [[confidentiality]] applied to personal data.",
+          "answer": "As discussed earlier in this chapter, privacy is effectively the security principle of confidentiality applied to personal data.",
+          "explanation": "Two key words: privacy and confidentiality."
+        },
+        {
+          "id": "d1-priv-bases-def3",
+          "question": "As discussed earlier in this chapter, [[privacy is effectively]] the [[security principle of confidentiality]] [[applied to personal data]].",
+          "answer": "As discussed earlier in this chapter, privacy is effectively the security principle of confidentiality applied to personal data.",
+          "explanation": "Three blocks: privacy is in practice, the principle of confidentiality, applied to personal data."
+        },
+        {
+          "id": "d1-priv-bases-def4",
+          "question": "Write the official definition of “privacy” from memory.",
+          "answer": "As discussed earlier in this chapter, privacy is effectively the security principle of confidentiality applied to personal data.",
+          "explanation": "You do not need to be perfect the first time: compare, spot the missing word, try again tomorrow."
+        },
+        {
+          "id": "d1-priv-bases-apec-def1",
+          "question": "Official definition: the “APEC Privacy Framework”",
+          "answer": "The Asia-Pacific Economic Cooperation (APEC) Privacy Framework is intended to provide member nations and economies with a flexible and consistent approach to information privacy protection without unnecessarily stifling information flow.",
+          "explanation": "This framework offers shared principles that are flexible and not forced on anyone. It is not a law.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. The manual states that it is neither a law nor a regulation."
+        },
+        {
+          "id": "d1-priv-bases-apec-def3",
+          "question": "The Asia-Pacific Economic Cooperation (APEC) Privacy Framework is intended to provide member nations and economies with [[a flexible and consistent approach]] to [[information privacy protection]] without unnecessarily [[stifling information flow]].",
+          "answer": "The Asia-Pacific Economic Cooperation (APEC) Privacy Framework is intended to provide member nations and economies with a flexible and consistent approach to information privacy protection without unnecessarily stifling information flow.",
+          "explanation": "Three ideas: a flexible and consistent approach, privacy protection, and no blocking of exchanges."
+        },
+        {
+          "id": "d1-priv-bases-1",
+          "question": "A website accidentally shows its customers' addresses. What is hit first?",
+          "options": [
+            "Privacy",
+            "Integrity"
+          ],
+          "answer": "Privacy",
+          "explanation": "The addresses did not change. But people who should not see them can now see them: that is the confidentiality of personal data."
+        },
+        {
+          "id": "d1-priv-bases-2",
+          "question": "Camille works for a company and wants to know which laws protect her customers' data. What should she look at first?",
+          "options": [
+            "The jurisdiction of the company and the one of its customers",
+            "Only the country where the servers are stored",
+            "Only the company's own internal rules",
+            "No law at all: the internet has no borders"
+          ],
+          "options_why": [
+            "",
+            "Laws often follow the people concerned, not only the machines. The GDPR is one example.",
+            "Internal rules never replace the law.",
+            "The internet does not erase laws: they apply according to jurisdiction."
+          ],
+          "answer": "The jurisdiction of the company and the one of its customers",
+          "explanation": "Each law applies in its own jurisdiction. You need to know the ones that touch the company and its customers."
+        },
+        {
+          "id": "d1-priv-bases-3",
+          "question": "Which pieces of information are personal data (PII)?",
+          "answer": "Personal data: a student's name, a customer's birth date, a person's social security number. Not personal data: the total number of customers, the price of an item, the temperature outside.",
+          "explanation": "Ask yourself: does this information let you recognize one specific person?",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Personal data (PII)",
+              "Not personal data"
+            ],
+            "items": [
+              {
+                "text": "A student's name",
+                "category": "Personal data (PII)"
+              },
+              {
+                "text": "A customer's birth date",
+                "category": "Personal data (PII)"
+              },
+              {
+                "text": "A person's social security number",
+                "category": "Personal data (PII)"
+              },
+              {
+                "text": "The total number of customers of the shop",
+                "category": "Not personal data"
+              },
+              {
+                "text": "The price of an item on the shelf",
+                "category": "Not personal data"
+              },
+              {
+                "text": "The temperature outside this morning",
+                "category": "Not personal data"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-bases-4",
+          "question": "Why must a security professional know the privacy laws of their jurisdiction?",
+          "answer": "Each law says what the company must do with personal data. Not following it exposes the company to fines and other penalties.",
+          "explanation": "Security protects the data. The law says how far and in what way it must be protected.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Privacy”: it is important to understand each privacy regulation that applies in your jurisdiction."
+        },
+        {
+          "id": "d1-priv-bases-5",
+          "question": "Is the APEC Privacy Framework a law?",
+          "answer": "No. It is a framework of shared principles to share information without blocking it. It is neither a law nor a regulation.",
+          "explanation": "It helps countries of the same region agree, without forcing them.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, note on the APEC Privacy Framework. APEC: Asia-Pacific Economic Cooperation."
+        },
+        {
+          "id": "d1-priv-bases-6",
+          "question": "Privacy is [[confidentiality]] applied to [[personal data]].",
+          "answer": "Privacy is confidentiality applied to personal data.",
+          "explanation": "One single principle, applied to one precise type of data."
+        },
+        {
+          "id": "d1-priv-bases-7",
+          "question": "What if a company protects its files very well against hackers, but sells your data without telling you?",
+          "answer": "Your privacy is not respected. Technical security is not enough: the company must also decide who sees your data and why.",
+          "explanation": "Protecting data from hackers does not allow the company to share it however it likes."
+        },
+        {
+          "id": "d1-priv-bases-8",
+          "question": "An online shop keeps your address. Write two things it should do to respect your privacy.",
+          "answer": "Tell you what your address is used for, and protect it against unauthorized access (for example with encryption or limited access).",
+          "explanation": "Inform the person and protect the data: the two pillars of privacy in practice."
+        },
+        {
+          "id": "d1-priv-bases-9",
+          "question": "What does “privacy and information security go hand in hand” mean?",
+          "answer": "Privacy and information security move together. Privacy needs security to protect personal data.",
+          "explanation": "Without security, you cannot keep personal data secret.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, first sentence of the section “Privacy”."
+        }
+      ]
+    },
+    {
+      "id": "d1-priv-secteurs",
+      "name": "US laws: the government, children and banks",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Three places, three files",
+          "paragraphes": [
+            "Your name is in a government office's file, on an online game site and at your parents' bank.",
+            "Each of these places keeps information about you. The risks are not the same, so the rules are not the same either.",
+            "In the United States, there is one law for each sector. You will meet the ones for the government, for children online and for banks."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "One rulebook per room",
+          "comme": "At school, the library, the gym and the cafeteria each have their own rules. Each place has its own risks.",
+          "enVrai": "In the United States, several laws share the work of protecting privacy, each one for a sector. There is one for government agencies, one for children online and one for banks."
+        },
+        {
+          "type": "predire",
+          "titre": "Your turn to guess",
+          "question": "A game site collects data from 10-year-old children. Which US law should you check first?",
+          "options": [
+            "The law that protects children online",
+            "The law that protects bank customers",
+            "The law that governs government files"
+          ],
+          "answer": "The law that protects children online",
+          "explanation": "The other two laws are about other sectors. The one for children online is called COPPA and covers children under 13."
+        },
+        {
+          "type": "exemple",
+          "titre": "Leo wants to play",
+          "texte": "Leo is 11. He wants to create an account on a US game site. The site must first get his parents' agreement. This is what the COPPA law asks for, and it protects children under 13."
+        },
+        {
+          "type": "analogie",
+          "titre": "The label on a cookie pack",
+          "comme": "The label on a pack tells you what is inside. You know what you eat before you buy.",
+          "enVrai": "A bank must do the same with your data. It gives you a written notice that says what information it collects, how it uses it and how it protects it."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-priv-secteurs-act-def1",
+          "question": "Official definition: the US “Privacy Act”",
+          "answer": "The Privacy Act establishes and governs practices related to the collection, maintenance, use, and dissemination of PII by U.S. government agencies.",
+          "explanation": "This law is about the government: how its agencies handle personal data.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “U.S. Federal Privacy Act of 1974”."
+        },
+        {
+          "id": "d1-priv-secteurs-act-def3",
+          "question": "[[The Privacy Act]] establishes and governs practices related to the [[collection, maintenance, use, and dissemination]] of PII by [[U.S. government agencies]].",
+          "answer": "The Privacy Act establishes and governs practices related to the collection, maintenance, use, and dissemination of PII by U.S. government agencies.",
+          "explanation": "The name of the law, the four stages of a piece of data's life, and the agencies it covers."
+        },
+        {
+          "id": "d1-priv-secteurs-but-def1",
+          "question": "Official definition: the purpose of the Privacy Act",
+          "answer": "The purpose of the Privacy Act is to balance the government's need to maintain information about citizens and permanent residents with the rights of those individuals to keep their personal information private.",
+          "explanation": "The key word is balance: the government needs data, but people have rights.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1."
+        },
+        {
+          "id": "d1-priv-secteurs-but-def3",
+          "question": "The purpose of the Privacy Act is to [[balance]] [[the government's need to maintain information]] about citizens and permanent residents with [[the rights of those individuals]] to keep their personal information private.",
+          "answer": "The purpose of the Privacy Act is to balance the government's need to maintain information about citizens and permanent residents with the rights of those individuals to keep their personal information private.",
+          "explanation": "Balance the government's need and the rights of people."
+        },
+        {
+          "id": "d1-priv-secteurs-coppa-def1",
+          "question": "Official definition: “COPPA”",
+          "answer": "The Children's Online Privacy Protection Act of 1998 is a U.S. federal law that establishes strict guidelines for online businesses to protect the privacy of children under the age of 13.",
+          "explanation": "COPPA = children, online, under 13.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. The manual adds that COPPA affects any organization that handles data of children living in the United States."
+        },
+        {
+          "id": "d1-priv-secteurs-coppa-def3",
+          "question": "The Children's Online Privacy Protection Act of 1998 is a U.S. federal law that establishes [[strict guidelines]] for [[online businesses]] to protect the privacy of [[children under the age of 13]].",
+          "answer": "The Children's Online Privacy Protection Act of 1998 is a U.S. federal law that establishes strict guidelines for online businesses to protect the privacy of children under the age of 13.",
+          "explanation": "Strict rules, for online businesses, about children under 13."
+        },
+        {
+          "id": "d1-priv-secteurs-glba-def1",
+          "question": "Official definition: the “GLBA” law",
+          "answer": "The Gramm-Leach-Bliley Act, also known as the Financial Services Modernization Act of 1999, is a U.S. law that requires financial institutions to safeguard their customer's PII.",
+          "explanation": "GLBA = banks and insurers: they must protect their customers' data.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “U.S. Gramm-Leach-Bliley Act of 1999”."
+        },
+        {
+          "id": "d1-priv-secteurs-glba-def3",
+          "question": "The Gramm-Leach-Bliley Act, also known as the [[Financial Services Modernization Act]] of 1999, is a U.S. law that requires [[financial institutions]] to [[safeguard their customer's PII]].",
+          "answer": "The Gramm-Leach-Bliley Act, also known as the Financial Services Modernization Act of 1999, is a U.S. law that requires financial institutions to safeguard their customer's PII.",
+          "explanation": "Another name for the law, the institutions it covers, and what they must do."
+        },
+        {
+          "id": "d1-priv-secteurs-fpr-def1",
+          "question": "Official definition: the GLBA “Financial Privacy Rule”",
+          "answer": "Among the provisions within GLBA, the Financial Privacy Rule requires that financial institutions provide each customer with a written privacy notice that explains what personal information is collected from the customer, how it is used, and how it is protected.",
+          "explanation": "Think of the label on the pack: what, why, and how it is protected.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1."
+        },
+        {
+          "id": "d1-priv-secteurs-fpr-def3",
+          "question": "Among the provisions within GLBA, the [[Financial Privacy Rule]] requires that financial institutions provide each customer with [[a written privacy notice]] that explains what personal information is collected from the customer, how it is used, and [[how it is protected]].",
+          "answer": "Among the provisions within GLBA, the Financial Privacy Rule requires that financial institutions provide each customer with a written privacy notice that explains what personal information is collected from the customer, how it is used, and how it is protected.",
+          "explanation": "The name of the rule, the written notice, then what it explains: use and protection."
+        },
+        {
+          "id": "d1-priv-secteurs-sg-def1",
+          "question": "Official definition: the GLBA “Safeguards Rule”",
+          "answer": "The GLBA Safeguards Rule requires organizations to implement proper security controls to protect their customers' personal data.",
+          "explanation": "One rule to inform (Financial Privacy), one rule to protect (Safeguards).",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1."
+        },
+        {
+          "id": "d1-priv-secteurs-sg-def3",
+          "question": "The [[GLBA Safeguards Rule]] requires [[organizations]] to [[implement proper security controls]] to protect their customers' personal data.",
+          "answer": "The GLBA Safeguards Rule requires organizations to implement proper security controls to protect their customers' personal data.",
+          "explanation": "The name of the rule, who is concerned, and what they must put in place."
+        },
+        {
+          "id": "d1-priv-secteurs-1",
+          "question": "A bank gives each customer a written notice about how their data is used. Which law requires this?",
+          "options": [
+            "GLBA",
+            "COPPA"
+          ],
+          "answer": "GLBA",
+          "explanation": "GLBA is about financial institutions. COPPA is about children under 13 online."
+        },
+        {
+          "id": "d1-priv-secteurs-2",
+          "question": "A US government agency wants to send a citizen's file to another agency. What does the Privacy Act generally require?",
+          "options": [
+            "The person's written agreement, or their written request",
+            "It is enough that the two agencies agree with each other",
+            "It is enough to tell the person after the file is sent",
+            "Nothing forbids it: agencies share everything freely"
+          ],
+          "options_why": [
+            "",
+            "The agreement of the agencies does not replace the agreement of the person concerned.",
+            "Telling the person afterwards is not enough: the agreement must come before.",
+            "On the contrary: the law strongly limits these exchanges."
+          ],
+          "answer": "The person's written agreement, or their written request",
+          "explanation": "The law forbids sharing a file without a written request or a prior written agreement from the person.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “U.S. Federal Privacy Act of 1974”. Today, online consent forms count as “written consent”."
+        },
+        {
+          "id": "d1-priv-secteurs-3",
+          "question": "A game site accepts 9-year-old players without asking their parents' agreement. Which law might it break?",
+          "options": [
+            "COPPA, the law about children online",
+            "GLBA, the law about banks",
+            "The Privacy Act, the law about government agencies"
+          ],
+          "options_why": [
+            "",
+            "A game site is not a financial institution.",
+            "This law is about government agencies, not private sites."
+          ],
+          "answer": "COPPA, the law about children online",
+          "explanation": "COPPA requires the parents' agreement for children under 13.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1. COPPA applies to any organization in the world that handles data of children living in the United States. It also applies to US companies for children living elsewhere."
+        },
+        {
+          "id": "d1-priv-secteurs-4",
+          "question": "Which law matches each situation?",
+          "answer": "Privacy Act: an agency sharing a file, the government's file on citizens. COPPA: the parents' agreement, advertising aimed at children. GLBA: the bank's written notice, the protection of customer data.",
+          "explanation": "Spot who is concerned: the government, children under 13 online, or financial institutions.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Privacy Act (the government)",
+              "COPPA (children)",
+              "GLBA (banks)"
+            ],
+            "items": [
+              {
+                "text": "A federal agency wants to pass a file to another agency",
+                "category": "Privacy Act (the government)"
+              },
+              {
+                "text": "The government keeps information about its citizens",
+                "category": "Privacy Act (the government)"
+              },
+              {
+                "text": "A site asks for the agreement of the parents of an 11-year-old",
+                "category": "COPPA (children)"
+              },
+              {
+                "text": "Ads are aimed at children under 13",
+                "category": "COPPA (children)"
+              },
+              {
+                "text": "A bank sends a written notice about how it uses its customers' data",
+                "category": "GLBA (banks)"
+              },
+              {
+                "text": "A bank puts security controls in place for customer data",
+                "category": "GLBA (banks)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-secteurs-5",
+          "question": "Put these three US laws in order of their date, from the oldest to the most recent.",
+          "answer": "The Privacy Act (1974), then COPPA (1998), then GLBA (1999).",
+          "explanation": "A law about the government first, then children online, then banks.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "The federal Privacy Act",
+              "The COPPA law about children online",
+              "The GLBA law about financial institutions"
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-secteurs-6",
+          "question": "The Privacy Act dates from [[1974]], COPPA from [[1998]] and GLBA from [[1999]].",
+          "answer": "The Privacy Act dates from 1974, COPPA from 1998 and GLBA from 1999.",
+          "explanation": "Three dates to link with three sectors: the government, children, banks.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Privacy”."
+        },
+        {
+          "id": "d1-priv-secteurs-7",
+          "question": "What is the maximum fine for one violation of COPPA?",
+          "answer": "Up to 43,280 dollars per violation, according to the FTC (Federal Trade Commission, a US federal agency).",
+          "explanation": "The number is precise: remember 43,280 dollars and the words “per violation”.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, note on COPPA: civil penalties of up to 43,280 dollars per violation."
+        },
+        {
+          "id": "d1-priv-secteurs-8",
+          "question": "Why does a special law protect children under 13 online?",
+          "answer": "A young child cannot judge alone what to share. So the law forces sites to ask for the parents' agreement and limits advertising aimed at children.",
+          "explanation": "Parents decide for a child who is too young to measure the risks.",
+          "explanation_more": "The manual describes the duties (parents' agreement, advertising limits) but does not give the reason: this explanation comes from elsewhere (outside the manual)."
+        },
+        {
+          "id": "d1-priv-secteurs-9",
+          "question": "What penalty can a criminal violation of the Privacy Act bring?",
+          "answer": "It is a misdemeanor (a less serious offense than a crime), with a fine of up to 5,000 dollars per violation.",
+          "explanation": "A minor offense, but the fine is counted for each violation.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, note on the Privacy Act of 1974."
+        },
+        {
+          "id": "d1-priv-secteurs-10",
+          "question": "What if a bank never sent its customers a written notice about how their data is used?",
+          "answer": "It would not respect the Financial Privacy Rule of GLBA. Its customers would not know what is collected, how it is used, or how it is protected.",
+          "explanation": "The written notice is there to inform the customer. Without it, transparency disappears."
+        },
+        {
+          "id": "d1-priv-secteurs-11",
+          "question": "What maximum civil fines does GLBA set for non-compliance?",
+          "answer": "Up to 100,000 dollars per violation for the organization, and up to 10,000 dollars for its officers and directors.",
+          "explanation": "Two amounts: one for the company, a lower one for the people who run it.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1. On the criminal side, GLBA can also lead to the loss of licenses and up to five years in prison."
+        },
+        {
+          "id": "d1-priv-secteurs-12",
+          "question": "Write what COPPA asks of a site that welcomes children under 13.",
+          "answer": "It must get the parents' agreement before collecting data, and follow limits on advertising aimed at children.",
+          "explanation": "Two duties: parental consent and limits on marketing.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: “requirements for seeking parental consent” and restrictions on marketing."
+        }
+      ]
+    },
+    {
+      "id": "d1-priv-hipaa",
+      "name": "HIPAA: health data",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The doctor's file",
+          "paragraphes": [
+            "You go to the doctor. They write down your illness, your medicines and your test results.",
+            "Imagine this file is read by your insurer, your neighbor or a future employer. It would be embarrassing, and sometimes unfair.",
+            "In the United States, this information is called PHI (protected health information). A law protects it: HIPAA (Health Insurance Portability and Accountability Act)."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The locked drawer",
+          "comme": "The doctor keeps your file in a locked drawer. They only show the pages to people who must treat you or send you a bill.",
+          "enVrai": "HIPAA's Privacy Rule says who can see your health file and why. The Security Rule says how to lock the drawer when the file is on a computer."
+        },
+        {
+          "type": "predire",
+          "titre": "Your turn to guess",
+          "question": "Who must follow the HIPAA law?",
+          "options": [
+            "Only doctors",
+            "Insurers, caregivers and billing services",
+            "Every company that has customers"
+          ],
+          "answer": "Insurers, caregivers and billing services",
+          "explanation": "These are the three categories of covered entities. A sports shop or a single doctor does not make up the whole scope of the law."
+        },
+        {
+          "type": "exemple",
+          "titre": "Three covered entities",
+          "texte": "Your family's health insurance is a health plan. The hospital is a healthcare provider. The company that converts the hospital's bills for the insurer is a healthcare clearinghouse. All three must follow HIPAA."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-priv-hipaa-entites-def1",
+          "question": "Official definition: “covered entities”",
+          "answer": "Organizations that must comply with HIPAA requirements are known as covered entities and fit into three categories:",
+          "explanation": "A covered entity is an organization that must follow HIPAA. There are three categories.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “U.S. Health Insurance Portability and Accountability Act of 1996”."
+        },
+        {
+          "id": "d1-priv-hipaa-entites-def3",
+          "question": "Organizations that [[must comply with HIPAA requirements]] are known as [[covered entities]] and fit into [[three categories]]:",
+          "answer": "Organizations that must comply with HIPAA requirements are known as covered entities and fit into three categories:",
+          "explanation": "Who must follow HIPAA, what they are called, and how many categories there are."
+        },
+        {
+          "id": "d1-priv-hipaa-plans-def1",
+          "question": "Official definition: “health plans”",
+          "answer": "Health plans: This includes health insurance companies, government programs like Medicare, and military and veteran's health programs that pay for healthcare.",
+          "explanation": "A health plan is the one that pays for care.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. Medicare is a US government health insurance program."
+        },
+        {
+          "id": "d1-priv-hipaa-plans-def3",
+          "question": "Health plans: This includes [[health insurance companies]], [[government programs like Medicare]], and [[military and veteran's health programs]] that pay for healthcare.",
+          "answer": "Health plans: This includes health insurance companies, government programs like Medicare, and military and veteran's health programs that pay for healthcare.",
+          "explanation": "Three types of payers: insurers, government programs, military programs."
+        },
+        {
+          "id": "d1-priv-hipaa-soignants-def1",
+          "question": "Official definition: “healthcare providers”",
+          "answer": "Healthcare providers: This includes hospitals, doctors, nursing homes, pharmacies, and other medical providers that transmit health information.",
+          "explanation": "Healthcare providers are the ones who give care and pass on health information.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1."
+        },
+        {
+          "id": "d1-priv-hipaa-soignants-def3",
+          "question": "Healthcare providers: This includes [[hospitals, doctors, nursing homes]], [[pharmacies]], and [[other medical providers]] that transmit health information.",
+          "answer": "Healthcare providers: This includes hospitals, doctors, nursing homes, pharmacies, and other medical providers that transmit health information.",
+          "explanation": "Hospitals, doctors, nursing homes, pharmacies, and the other caregivers."
+        },
+        {
+          "id": "d1-priv-hipaa-compensation-def1",
+          "question": "Official definition: “healthcare clearinghouses”",
+          "answer": "Healthcare clearinghouses: This includes public and private organizations, like billing services, that process or facilitate the processing of nonstandard health information and convert it into standard data types.",
+          "explanation": "A data translator: they convert health information into a standard format.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. The manual adds that they are often the go-between for a healthcare provider and a payer."
+        },
+        {
+          "id": "d1-priv-hipaa-compensation-def3",
+          "question": "Healthcare clearinghouses: This includes [[public and private organizations]], like [[billing services]], that process or facilitate the processing of [[nonstandard health information]] and convert it into standard data types.",
+          "answer": "Healthcare clearinghouses: This includes public and private organizations, like billing services, that process or facilitate the processing of nonstandard health information and convert it into standard data types.",
+          "explanation": "Who: public or private organizations. What: billing services. What they process: nonstandard data."
+        },
+        {
+          "id": "d1-priv-hipaa-regle-privacy-def1",
+          "question": "Official definition: the “HIPAA Privacy Rule”",
+          "answer": "The HIPAA Privacy Rule establishes minimum standards for protecting a patient's privacy and regulates the use and disclosure of individuals' health information, referred to as protected health information.",
+          "explanation": "Privacy Rule = who has the right to use or show health information.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1. You must know it word for word. The manual states that the rule took effect in 2003."
+        },
+        {
+          "id": "d1-priv-hipaa-regle-privacy-def2",
+          "question": "The HIPAA Privacy Rule establishes [[minimum]] standards for protecting a patient's [[privacy]] and regulates the use and disclosure of individuals' health information, referred to as protected health information.",
+          "answer": "The HIPAA Privacy Rule establishes minimum standards for protecting a patient's privacy and regulates the use and disclosure of individuals' health information, referred to as protected health information.",
+          "explanation": "Two key words: minimum standards, for the patient's privacy."
+        },
+        {
+          "id": "d1-priv-hipaa-regle-privacy-def3",
+          "question": "The HIPAA Privacy Rule establishes [[minimum standards]] for [[protecting a patient's privacy]] and regulates the use and disclosure of individuals' health information, referred to as [[protected health information]].",
+          "answer": "The HIPAA Privacy Rule establishes minimum standards for protecting a patient's privacy and regulates the use and disclosure of individuals' health information, referred to as protected health information.",
+          "explanation": "Three blocks: minimum standards, protecting the patient's privacy, and the name of the information it covers."
+        },
+        {
+          "id": "d1-priv-hipaa-regle-privacy-def4",
+          "question": "Write the official definition of the “HIPAA Privacy Rule” from memory.",
+          "answer": "The HIPAA Privacy Rule establishes minimum standards for protecting a patient's privacy and regulates the use and disclosure of individuals' health information, referred to as protected health information.",
+          "explanation": "Think: minimum standards, patient's privacy, use and disclosure, protected health information."
+        },
+        {
+          "id": "d1-priv-hipaa-regle-security-def1",
+          "question": "Official definition: the “HIPAA Security Rule”",
+          "answer": "The HIPAA Security Rule establishes minimum standards for protecting PHI that is stored or transferred in electronic form.",
+          "explanation": "Security Rule = the same information, but when it is on a computer or on a network.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1. The manual states that it took effect in 2003 and that it puts the Privacy Rule into practice with technical, physical and administrative controls."
+        },
+        {
+          "id": "d1-priv-hipaa-regle-security-def2",
+          "question": "The HIPAA Security Rule establishes [[minimum]] standards for protecting PHI that is stored or transferred in [[electronic]] form.",
+          "answer": "The HIPAA Security Rule establishes minimum standards for protecting PHI that is stored or transferred in electronic form.",
+          "explanation": "Two key words: minimum, and electronic."
+        },
+        {
+          "id": "d1-priv-hipaa-regle-security-def3",
+          "question": "The HIPAA Security Rule establishes [[minimum standards]] for [[protecting PHI]] that is [[stored or transferred in electronic form]].",
+          "answer": "The HIPAA Security Rule establishes minimum standards for protecting PHI that is stored or transferred in electronic form.",
+          "explanation": "Three blocks: minimum standards, protecting PHI, in electronic form."
+        },
+        {
+          "id": "d1-priv-hipaa-regle-security-def4",
+          "question": "Write the official definition of the “HIPAA Security Rule” from memory.",
+          "answer": "The HIPAA Security Rule establishes minimum standards for protecting PHI that is stored or transferred in electronic form.",
+          "explanation": "Think: minimum standards, protecting PHI, stored or transferred, electronic form."
+        },
+        {
+          "id": "d1-priv-hipaa-1",
+          "question": "Patient files are stored on a computer. Which HIPAA rule is mostly about their technical protection?",
+          "options": [
+            "The Security Rule",
+            "The Privacy Rule"
+          ],
+          "answer": "The Security Rule",
+          "explanation": "The Security Rule is about PHI in electronic form. The Privacy Rule governs use and disclosure in general."
+        },
+        {
+          "id": "d1-priv-hipaa-2",
+          "question": "A pharmacy sends a customer's list of medicines to their employer by mistake. Which rule is hit first?",
+          "options": [
+            "The Privacy Rule: the disclosure is forbidden",
+            "The Security Rule: a hard drive broke down",
+            "None: a pharmacy is not covered by HIPAA",
+            "The COPPA law: the customer is too young"
+          ],
+          "options_why": [
+            "",
+            "Nothing broke down here: the information went to someone who should not have it.",
+            "A pharmacy is a healthcare provider, so it is a covered entity.",
+            "COPPA is about children online. Here, health information was disclosed."
+          ],
+          "answer": "The Privacy Rule: the disclosure is forbidden",
+          "explanation": "PHI must be used only for care and billing. Showing it to the employer is a forbidden disclosure."
+        },
+        {
+          "id": "d1-priv-hipaa-3",
+          "question": "Which category of covered entity is it?",
+          "answer": "Health plans: a health insurer, a military health program. Healthcare providers: a hospital, a nursing home. Clearinghouses: a billing service, a go-between for caregiver and payer.",
+          "explanation": "Who pays (plan), who treats (provider), who converts and passes on data (clearinghouse).",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Health plan",
+              "Healthcare provider",
+              "Clearinghouse"
+            ],
+            "items": [
+              {
+                "text": "A health insurance company",
+                "category": "Health plan"
+              },
+              {
+                "text": "A military health program",
+                "category": "Health plan"
+              },
+              {
+                "text": "A hospital",
+                "category": "Healthcare provider"
+              },
+              {
+                "text": "A nursing home",
+                "category": "Healthcare provider"
+              },
+              {
+                "text": "A billing service that converts health data into a standard format",
+                "category": "Clearinghouse"
+              },
+              {
+                "text": "A go-between for a caregiver and the one who pays for care",
+                "category": "Clearinghouse"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-hipaa-4",
+          "question": "When was the HIPAA law signed, and when did its two rules take effect?",
+          "answer": "The law was signed in 1996. The Privacy Rule and the Security Rule took effect in 2003.",
+          "explanation": "Seven years between the law and its rules: 1996, then 2003.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “U.S. Health Insurance Portability and Accountability Act of 1996”."
+        },
+        {
+          "id": "d1-priv-hipaa-5",
+          "question": "The [[Privacy]] Rule governs how health information is used. The [[Security]] Rule protects the information that is in [[electronic]] form.",
+          "answer": "The Privacy Rule governs how health information is used. The Security Rule protects the information that is in electronic form.",
+          "explanation": "Two rules: one for uses, one for technical protection."
+        },
+        {
+          "id": "d1-priv-hipaa-6",
+          "question": "What civil fines are set for a violation of HIPAA?",
+          "answer": "From 100 to 50,000 dollars per violation, with a maximum of 1.5 million dollars per year for similar violations.",
+          "explanation": "Two numbers to remember: 50,000 per violation, 1.5 million per year at most.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section on HIPAA. Criminal penalties go up to a 250,000 dollar fine and 10 years in prison."
+        },
+        {
+          "id": "d1-priv-hipaa-7",
+          "question": "Why does health information deserve a law of its own?",
+          "answer": "It is very personal. A leak can harm a person's job, insurance or social life. So the law limits its use to care and billing.",
+          "explanation": "The more sensitive the information, the more damage its leak does.",
+          "explanation_more": "The manual says PHI may only be used to provide and bill for care. The examples of consequences come from elsewhere (outside the manual)."
+        },
+        {
+          "id": "d1-priv-hipaa-8",
+          "question": "What criminal penalties does HIPAA set?",
+          "answer": "Up to a 250,000 dollar fine, and up to 10 years in prison.",
+          "explanation": "Criminal means the offense can lead to a trial, not only to a civil fine.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section on HIPAA."
+        },
+        {
+          "id": "d1-priv-hipaa-9",
+          "question": "What if a hospital stores its patients' files without protecting them?",
+          "answer": "It breaks the Security Rule. The rule requires technical, physical and administrative controls to protect the confidentiality, integrity and availability of electronic files.",
+          "explanation": "The Security Rule asks for real controls, not only good intentions."
+        },
+        {
+          "id": "d1-priv-hipaa-10",
+          "question": "According to HIPAA, what can protected health information (PHI) be used for?",
+          "answer": "Only to provide care and bill for it. It must be protected against any misuse or improper disclosure.",
+          "explanation": "Only one allowed purpose: treating and billing.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: PHI used “strictly for the purposes of performing and billing for healthcare services”."
+        },
+        {
+          "id": "d1-priv-hipaa-11",
+          "question": "Which types of controls must the Security Rule put in place?",
+          "answer": "Technical, physical and administrative controls.",
+          "explanation": "Technical: the software. Physical: the door and the badge. Administrative: the rules and the training.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: the Security Rule puts the Privacy Rule into practice with these three kinds of controls."
+        }
+      ]
+    },
+    {
+      "id": "d1-priv-hitech",
+      "name": "The HITECH Act: making HIPAA stronger",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "From paper to screen",
+          "paragraphes": [
+            "In the past, your medical file was on paper, in a binder. Today, it is on a computer.",
+            "This is handy for doctors. But a digital file can leak to thousands of people at once.",
+            "In 2009, the United States passed the HITECH law. It pushes digital files while making protection stronger."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "More cars, more speed cameras",
+          "comme": "When there are more cars, the police put up more speed cameras and raise the fines.",
+          "enVrai": "More electronic health records (EHR) means more risk. So the HITECH law added stronger penalties for those who do not follow HIPAA. The image stops there: a speed camera punishes after the fact, but HITECH also forces you to warn the victims of a leak."
+        },
+        {
+          "type": "predire",
+          "titre": "Your turn to guess",
+          "question": "HITECH encourages digital health files. What risk does the law worry about?",
+          "options": [
+            "More risks for security and privacy",
+            "Fewer doctors available",
+            "More expensive computers"
+          ],
+          "answer": "More risks for security and privacy",
+          "explanation": "More data online means more targets for hackers and more possible mistakes. So the law made protections stronger."
+        },
+        {
+          "type": "exemple",
+          "titre": "The notification rule",
+          "texte": "A clinic finds out that an unprotected file has leaked. It must warn the people concerned within 60 days. If 500 people or more are affected, it also warns the US health department and a major local media outlet."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-priv-hitech-def1",
+          "question": "Official definition: the “HITECH Act”",
+          "answer": "The Health Information Technology for Economic and Clinical Health Act, referred to as the HITECH Act, was enacted under the American Recovery and Reinvestment Act of 2009.",
+          "explanation": "HITECH was born in 2009, inside a big economic recovery law.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “U.S. Health Information Technology for Economic and Clinical Health Act of 2009”."
+        },
+        {
+          "id": "d1-priv-hitech-def3",
+          "question": "The [[Health Information Technology for Economic and Clinical Health Act]], referred to as the [[HITECH Act]], was enacted under the [[American Recovery and Reinvestment Act]] of 2009.",
+          "answer": "The Health Information Technology for Economic and Clinical Health Act, referred to as the HITECH Act, was enacted under the American Recovery and Reinvestment Act of 2009.",
+          "explanation": "The full name, its short name, and the 2009 law that carried it."
+        },
+        {
+          "id": "d1-priv-hitech-ext-def1",
+          "question": "Official definition: what HITECH changes for HIPAA",
+          "answer": "As such, the HITECH Act extended HIPAA privacy protections by improving security and privacy protections for healthcare data by imposing tougher penalties for HIPAA compliance violations.",
+          "explanation": "HITECH does not replace HIPAA: it makes it stronger with tougher penalties.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. The manual states that the maximum penalties were raised to 1.5 million dollars per violation category per year."
+        },
+        {
+          "id": "d1-priv-hitech-ext-def3",
+          "question": "As such, the HITECH Act [[extended HIPAA privacy protections]] by [[improving security and privacy protections]] for healthcare data by [[imposing tougher penalties]] for HIPAA compliance violations.",
+          "answer": "As such, the HITECH Act extended HIPAA privacy protections by improving security and privacy protections for healthcare data by imposing tougher penalties for HIPAA compliance violations.",
+          "explanation": "Extend HIPAA, improve the protections, impose tougher penalties."
+        },
+        {
+          "id": "d1-priv-hitech-notif-def1",
+          "question": "Official definition: the HIPAA “Breach Notification Rule”",
+          "answer": "Under this rule, covered entities are required to disclose a breach of unsecured protected health information to affected parties within 60 days of discovery of the breach.",
+          "explanation": "If unprotected health data leaks, you warn the people affected within 60 days.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. “This rule” is the HIPAA Breach Notification Rule, introduced by HITECH."
+        },
+        {
+          "id": "d1-priv-hitech-notif-def3",
+          "question": "Under this rule, [[covered entities]] are required to [[disclose a breach]] of [[unsecured protected health information]] to affected parties within 60 days of discovery of the breach.",
+          "answer": "Under this rule, covered entities are required to disclose a breach of unsecured protected health information to affected parties within 60 days of discovery of the breach.",
+          "explanation": "Who must act, what they must do, and for which data."
+        },
+        {
+          "id": "d1-priv-hitech-1",
+          "question": "Which law added the duty to warn people when health data leaks?",
+          "options": [
+            "HITECH",
+            "HIPAA of 1996"
+          ],
+          "answer": "HITECH",
+          "explanation": "HITECH introduced the breach notification rule."
+        },
+        {
+          "id": "d1-priv-hitech-2",
+          "question": "A clinic loses an unprotected file of 800 patients. Who must it warn?",
+          "options": [
+            "The patients, the health department and a major media outlet",
+            "Only the patients concerned",
+            "Only the health department",
+            "Nobody, as long as nobody complains"
+          ],
+          "options_why": [
+            "",
+            "Above 500 people, the department and a media outlet must also be warned.",
+            "The people affected must be warned too.",
+            "The rule requires warning without waiting for a complaint."
+          ],
+          "answer": "The patients, the health department and a major media outlet",
+          "explanation": "With 500 people or more, the clinic warns the people affected, the US health department and a major media outlet.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: the department is the U.S. Department of Health and Human Services (HHS)."
+        },
+        {
+          "id": "d1-priv-hitech-3",
+          "question": "Put these events in order, from the oldest to the most recent.",
+          "answer": "HIPAA is signed (1996), its rules take effect (2003), then HITECH makes it stronger (2009).",
+          "explanation": "The law first, its rules next, then the boost from HITECH.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "The HIPAA law is signed",
+              "HIPAA's Privacy Rule and Security Rule take effect",
+              "The HITECH law makes HIPAA stronger"
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-hitech-4",
+          "question": "In which year was HITECH passed, and inside which larger law?",
+          "answer": "In 2009, inside the American Recovery and Reinvestment Act.",
+          "explanation": "2009: the year of the big recovery law, with a part about digital health.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section on HITECH."
+        },
+        {
+          "id": "d1-priv-hitech-5",
+          "question": "What deadline does the notification rule set for warning the people affected by a leak?",
+          "answer": "60 days after the leak is discovered.",
+          "explanation": "The clock starts the day the leak is discovered, not the day it happened.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section on HITECH."
+        },
+        {
+          "id": "d1-priv-hitech-6",
+          "question": "HITECH promotes [[electronic]] health records and makes HIPAA [[penalties]] tougher.",
+          "answer": "HITECH promotes electronic health records and makes HIPAA penalties tougher.",
+          "explanation": "Two effects: more digital files, and stronger penalties.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: electronic health records (EHR)."
+        },
+        {
+          "id": "d1-priv-hitech-7",
+          "question": "From how many people affected must the health department and a media outlet also be warned?",
+          "answer": "From 500 people affected.",
+          "explanation": "A small leak concerns the people affected. A big leak becomes public.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: for 500 or more people, the leak is reported to the HHS and to a major media outlet. The outlet serves the area of the people affected."
+        },
+        {
+          "id": "d1-priv-hitech-8",
+          "question": "Why do more electronic records call for stronger protections?",
+          "answer": "A digital file can be copied or stolen in bulk, very fast. The more records are online, the more security and privacy risks grow.",
+          "explanation": "A paper binder is stolen one file at a time. A digital file, thousands at once."
+        },
+        {
+          "id": "d1-priv-hitech-9",
+          "question": "What if a clinic hides a leak of 1,000 files for six months?",
+          "answer": "It breaks the notification rule: the deadline is 60 days after discovery. It faces the tougher penalties of HITECH.",
+          "explanation": "Hiding a leak makes the fault worse and delays the protection of the victims."
+        },
+        {
+          "id": "d1-priv-hitech-10",
+          "question": "What maximum financial penalty did HITECH set?",
+          "answer": "1.5 million dollars per violation category per year.",
+          "explanation": "The cap is yearly and separate for each violation category.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section on HITECH."
+        },
+        {
+          "id": "d1-priv-hitech-11",
+          "question": "A leak affects 500 people or more. Write the three parties the clinic must warn.",
+          "answer": "The people concerned, the US health department (HHS) and a major media outlet in the region of the people affected.",
+          "explanation": "Three audiences: the victims, the authority, and the public through the press."
+        }
+      ]
+    },
+    {
+      "id": "d1-priv-europe",
+      "name": "The European road to the GDPR",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Data that crosses the ocean",
+          "paragraphes": [
+            "An American company receives data from its European customers. Europe protects this data more strictly than the United States does.",
+            "If the rules differ on each side, who is right? For years, both sides looked for a deal.",
+            "This planet tells the story of the first European texts and two deals with the United States. The GDPR will later replace these texts."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "One rulebook for every class",
+          "comme": "If each class had its own rules, students would be lost. A shared rulebook avoids contradictions.",
+          "enVrai": "Before 1995, each European country had its own rules. The 1995 directive (Data Protection Directive) set shared principles. Each country then wrote its own law to apply them."
+        },
+        {
+          "type": "predire",
+          "titre": "Your turn to guess",
+          "question": "A deal between Europe and the United States is judged invalid in 2015. Another one is signed in 2016. What happens in 2020?",
+          "options": [
+            "The second deal is also declared invalid",
+            "The second deal becomes a European law",
+            "The two sides stop exchanging data"
+          ],
+          "answer": "The second deal is also declared invalid",
+          "explanation": "The same court canceled both deals. Data exchanges did not stop because of it: other legal bases had to be found."
+        },
+        {
+          "type": "exemple",
+          "titre": "Giving yourself a good grade",
+          "texte": "With Safe Harbor, an American company could declare by itself that it followed the privacy rules. It is like a student who gives themselves their own grade. European justice judged the system invalid in 2015."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-priv-europe-directive-def1",
+          "question": "Official definition: the “Data Protection Directive”",
+          "answer": "The Data Protection Directive, officially known as Directive 95/46/EC, was enacted by the European Parliament in 1995.",
+          "explanation": "The first big European text on personal data: 1995.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “Data Protection Directive (EU)”. The manual states that it was replaced by the GDPR."
+        },
+        {
+          "id": "d1-priv-europe-directive-def3",
+          "question": "The [[Data Protection Directive]], officially known as [[Directive 95/46/EC]], was enacted by [[the European Parliament]] in 1995.",
+          "answer": "The Data Protection Directive, officially known as Directive 95/46/EC, was enacted by the European Parliament in 1995.",
+          "explanation": "The name, the official number, and the institution that passed it."
+        },
+        {
+          "id": "d1-priv-europe-uk-def1",
+          "question": "Official definition: the British “Data Protection Act”",
+          "answer": "The Data Protection Act was established by the United Kingdom Parliament to enact the provisions within the EU's Data Protection Directive.",
+          "explanation": "It is the British version of the European directive.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. The 1998 law was replaced by the Data Protection Act 2018, which completes the GDPR."
+        },
+        {
+          "id": "d1-priv-europe-uk-def3",
+          "question": "The Data Protection Act was established by [[the United Kingdom Parliament]] to [[enact the provisions]] within the [[EU's Data Protection Directive]].",
+          "answer": "The Data Protection Act was established by the United Kingdom Parliament to enact the provisions within the EU's Data Protection Directive.",
+          "explanation": "Who established it, what it does, and the European text it applies."
+        },
+        {
+          "id": "d1-priv-europe-safeharbor-def1",
+          "question": "Official definition: “Safe Harbor”",
+          "answer": "The International Safe Harbor Privacy Principles, often short-handed as just \"Safe Harbor,\" is an agreement between the United States and European Union, established between 1998 and 2000, that was developed to reconcile differences between U.S. and EU privacy laws.",
+          "explanation": "A bridge between two different systems of laws.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. The manual adds that an American company could certify itself, and that the deal was judged invalid by the European Court of Justice in 2015."
+        },
+        {
+          "id": "d1-priv-europe-safeharbor-def3",
+          "question": "The [[International Safe Harbor Privacy Principles]], often short-handed as just \"Safe Harbor,\" is [[an agreement between the United States and European Union]], established between 1998 and 2000, that was developed to [[reconcile differences between U.S. and EU privacy laws]].",
+          "answer": "The International Safe Harbor Privacy Principles, often short-handed as just \"Safe Harbor,\" is an agreement between the United States and European Union, established between 1998 and 2000, that was developed to reconcile differences between U.S. and EU privacy laws.",
+          "explanation": "The full name, the nature of the deal (United States and EU), and its goal: reconcile the laws."
+        },
+        {
+          "id": "d1-priv-europe-shield-def1",
+          "question": "Official definition: the “EU-US Privacy Shield”",
+          "answer": "The EU-US Privacy Shield was the second attempt by the European Union and United States to agree upon principles to mutually regulate the exchange of personal data between the two jurisdictions.",
+          "explanation": "Second attempt, after Safe Harbor.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. Concluded in 2016, declared invalid by the same court in 2020."
+        },
+        {
+          "id": "d1-priv-europe-shield-def3",
+          "question": "The [[EU-US Privacy Shield]] was [[the second attempt]] by the European Union and United States to [[agree upon principles]] to mutually regulate the exchange of personal data between the two jurisdictions.",
+          "answer": "The EU-US Privacy Shield was the second attempt by the European Union and United States to agree upon principles to mutually regulate the exchange of personal data between the two jurisdictions.",
+          "explanation": "The name, the rank (second attempt), and the goal: agree on principles."
+        },
+        {
+          "id": "d1-priv-europe-1",
+          "question": "Which text is the first big European text on privacy: the 1995 directive or the GDPR?",
+          "options": [
+            "The 1995 directive",
+            "The GDPR"
+          ],
+          "answer": "The 1995 directive",
+          "explanation": "The directive came first. The GDPR replaced it later."
+        },
+        {
+          "id": "d1-priv-europe-2",
+          "question": "In 2018, a European company wants to send personal data to an American partner. Which deal could then cover these exchanges?",
+          "options": [
+            "The EU-US Privacy Shield",
+            "Safe Harbor",
+            "The 1995 directive",
+            "The British law of 1998"
+          ],
+          "options_why": [
+            "",
+            "Safe Harbor was judged invalid in 2015, before 2018.",
+            "The directive is a European text, not a deal with the United States.",
+            "It is a law of the United Kingdom, not a deal with the United States."
+          ],
+          "answer": "The EU-US Privacy Shield",
+          "explanation": "The Privacy Shield was concluded in 2016 and declared invalid in 2020: it was valid in 2018."
+        },
+        {
+          "id": "d1-priv-europe-3",
+          "question": "Put these events in order, from the oldest to the most recent.",
+          "answer": "Directive (1995), Safe Harbor (1998-2000), Safe Harbor invalidated (2015), Privacy Shield (2016), Privacy Shield invalidated (2020).",
+          "explanation": "One deal falls, another replaces it, then it falls in turn.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "The European data protection directive is passed",
+              "The Safe Harbor deal is established",
+              "Safe Harbor is judged invalid",
+              "The Privacy Shield is concluded",
+              "The Privacy Shield is judged invalid"
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-europe-4",
+          "question": "In which year was the European data protection directive passed?",
+          "answer": "In 1995 (Directive 95/46/EC), by the European Parliament.",
+          "explanation": "The number 95 in 95/46/EC reminds you of the year.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Data Protection Directive (EU)”."
+        },
+        {
+          "id": "d1-priv-europe-5",
+          "question": "The Privacy Shield is the [[second]] attempt at a deal between Europe and the United States, after [[Safe Harbor]].",
+          "answer": "The Privacy Shield is the second attempt at a deal between Europe and the United States, after Safe Harbor.",
+          "explanation": "Two deals, one after the other: Safe Harbor then Privacy Shield."
+        },
+        {
+          "id": "d1-priv-europe-6",
+          "question": "When was Safe Harbor judged invalid, and by whom?",
+          "answer": "In 2015, by the European Court of Justice.",
+          "explanation": "The Privacy Shield replaced it soon after.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Safe Harbor”."
+        },
+        {
+          "id": "d1-priv-europe-7",
+          "question": "Why did Europe and the United States need deals like Safe Harbor?",
+          "answer": "Their privacy laws are different. A deal let personal data move between the two without breaking the rules of either side.",
+          "explanation": "Without a deal, an American company did not know which rules to follow for its European customers.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: Safe Harbor “was developed to reconcile differences between U.S. and EU privacy laws”."
+        },
+        {
+          "id": "d1-priv-europe-8",
+          "question": "When was the Privacy Shield concluded, and when was it invalidated?",
+          "answer": "Concluded in 2016, declared invalid in 2020 by the same court as Safe Harbor.",
+          "explanation": "A short-lived deal: about four years.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “EU-US Privacy Shield”."
+        },
+        {
+          "id": "d1-priv-europe-9",
+          "question": "What if the courts cancel a data transfer deal overnight?",
+          "answer": "The companies that relied on it must quickly find a replacement. This is what happened: Safe Harbor was replaced by the Privacy Shield.",
+          "explanation": "A canceled deal leaves a legal gap to fill."
+        },
+        {
+          "id": "d1-priv-europe-10",
+          "question": "Which text replaced the Data Protection Act of 1998?",
+          "answer": "The Data Protection Act 2018, which strengthens and completes the rules of the GDPR.",
+          "explanation": "1998 for the 1995 directive, 2018 for the GDPR: same name, two eras.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Data Protection Act 1998 (UK)”."
+        },
+        {
+          "id": "d1-priv-europe-11",
+          "question": "Explain in one sentence the link between the European directive of 1995 and the British law of 1998.",
+          "answer": "The British law was written to apply the rules of the European directive in the United Kingdom.",
+          "explanation": "A directive gives the shared rules, then each country writes its own law.",
+          "explanation_more": "The manual says that the Data Protection Act was established to enact the directive. The idea that each country writes its law from a directive is a general reminder (outside the manual)."
+        }
+      ]
+    },
+    {
+      "id": "d1-priv-gdpr",
+      "name": "The GDPR: scope, rights and roles",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "A site that asks your permission",
+          "paragraphes": [
+            "You visit a clothing site. It asks your permission to use your data. You can also ask it to erase your data.",
+            "This is not by chance. A European law forces companies to respect you, even if the company is on the other side of the world.",
+            "This law is called the GDPR (General Data Protection Regulation). The official manual presents it as the strongest in the world."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "A life jacket that follows you",
+          "comme": "Your life jacket protects you on any lake. The protection follows you everywhere.",
+          "enVrai": "The GDPR protects the data of people in the European Union (EU), wherever the company that keeps it is located. The image stops there: you wear the jacket yourself, while the law forces the company to act."
+        },
+        {
+          "type": "predire",
+          "titre": "Your turn to guess",
+          "question": "A company in Canada keeps the data of customers who live in France. Does the GDPR apply to it?",
+          "options": [
+            "No, it is outside Europe",
+            "Yes, because it handles data of people in the EU",
+            "Only if it has an office in Europe"
+          ],
+          "answer": "Yes, because it handles data of people in the EU",
+          "explanation": "What matters is who the people are, not where the company is. An office in Europe is not needed."
+        },
+        {
+          "type": "exemple",
+          "titre": "The right to be forgotten",
+          "texte": "Julie had an account on a game site. She no longer plays and wants her data erased. Article 17 of the GDPR gives her this right in several situations. It is called the right to be forgotten."
+        },
+        {
+          "type": "analogie",
+          "titre": "Three roles around a list",
+          "comme": "A school cafeteria keeps the list of students' allergies. The cafeteria decides how to use it. An IT company stores the list for it. The students are the people concerned.",
+          "enVrai": "The data subject is the person whose data is used. The data controller keeps and uses the data. The data processor handles the data on behalf of the controller."
+        },
+        {
+          "type": "exemple",
+          "titre": "Two more articles to know",
+          "texte": "Article 25 asks you to think about privacy from the design stage of a product, and by default (data protection by design and by default). Article 33 asks you to warn the authorities within 72 hours after finding a leak of personal data."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-priv-gdpr-forte-def1",
+          "question": "Official definition: the “GDPR”",
+          "answer": "The GDPR is considered by most to be the world's strongest data privacy law.",
+          "explanation": "GDPR = the world reference for data protection.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “General Data Protection Regulation (EU)”. It was established in 2016 and replaced the 1995 directive."
+        },
+        {
+          "id": "d1-priv-gdpr-forte-def3",
+          "question": "The GDPR is [[considered by most]] to be [[the world's strongest]] [[data privacy law]].",
+          "answer": "The GDPR is considered by most to be the world's strongest data privacy law.",
+          "explanation": "A widely shared opinion: the strongest data protection law."
+        },
+        {
+          "id": "d1-priv-gdpr-portee-def1",
+          "question": "Official definition: who does the GDPR apply to?",
+          "answer": "If your organization stores or processes the personal data of EU citizens or residents, then GDPR applies to you, whether or not your company is located in the EU.",
+          "explanation": "What counts: whose data it is, not where the company is.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1 (note in the GDPR section)."
+        },
+        {
+          "id": "d1-priv-gdpr-portee-def3",
+          "question": "If your organization [[stores or processes the personal data]] of [[EU citizens or residents]], then GDPR applies to you, whether or not [[your company is located in the EU]].",
+          "answer": "If your organization stores or processes the personal data of EU citizens or residents, then GDPR applies to you, whether or not your company is located in the EU.",
+          "explanation": "Three blocks: handling the data, of people in the EU, wherever the company is."
+        },
+        {
+          "id": "d1-priv-gdpr-oubli-def1",
+          "question": "Official definition: Article 17 of the GDPR",
+          "answer": "Article 17 within the GDPR establishes a person's \"right to be forgotten.\"",
+          "explanation": "Article 17 = right to be forgotten: having your data erased.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1 (“Tip” box in the GDPR section)."
+        },
+        {
+          "id": "d1-priv-gdpr-oubli-def3",
+          "question": "[[Article 17]] within the GDPR [[establishes a person's]] \"[[right to be forgotten]].\"",
+          "answer": "Article 17 within the GDPR establishes a person's \"right to be forgotten.\"",
+          "explanation": "The article number, what it establishes, and the name of the right."
+        },
+        {
+          "id": "d1-priv-gdpr-personne-def1",
+          "question": "Official definition: the “data subject” and the right to erasure",
+          "answer": "This provision grants the data subject (i.e., the person whose data is being used) the right to have their personal data deleted if one of several circumstances exists and is a critical concept that information security professionals must consider when developing their data storage and retention policies.",
+          "explanation": "Data subject = the person whose data is used. They can ask for it to be deleted.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. “This provision” is Article 17."
+        },
+        {
+          "id": "d1-priv-gdpr-personne-def3",
+          "question": "This provision grants the [[data subject]] (i.e., the person whose data is being used) the right to [[have their personal data deleted]] if one of several circumstances exists and is a critical concept that information security professionals must consider when developing their [[data storage and retention policies]].",
+          "answer": "This provision grants the data subject (i.e., the person whose data is being used) the right to have their personal data deleted if one of several circumstances exists and is a critical concept that information security professionals must consider when developing their data storage and retention policies.",
+          "explanation": "The person concerned, the right to have data deleted, and the link with retention policies."
+        },
+        {
+          "id": "d1-priv-gdpr-sous-traitant-def1",
+          "question": "Official definition: GDPR Chapter 4 and the “data processors”",
+          "answer": "GDPR Chapter 4 contains several articles that establish requirements related to the data controller and processor and requires that data processors (i.e., an organization that stores and processes PII on behalf of a data controller) prioritize security and privacy.",
+          "explanation": "The processor works on behalf of the controller, but must protect the data too.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1. The manual cites Article 25, which asks for data protection by design and by default."
+        },
+        {
+          "id": "d1-priv-gdpr-sous-traitant-def3",
+          "question": "GDPR Chapter 4 contains several articles that establish requirements related to the [[data controller and processor]] and requires that [[data processors]] (i.e., an organization that stores and processes PII [[on behalf of a data controller]]) prioritize security and privacy.",
+          "answer": "GDPR Chapter 4 contains several articles that establish requirements related to the data controller and processor and requires that data processors (i.e., an organization that stores and processes PII on behalf of a data controller) prioritize security and privacy.",
+          "explanation": "The two roles concerned, the processor, and the key phrase: on behalf of the controller."
+        },
+        {
+          "id": "d1-priv-gdpr-1",
+          "question": "Who is the “data subject” in the GDPR?",
+          "options": [
+            "The person whose data is used",
+            "The organization that keeps the data"
+          ],
+          "answer": "The person whose data is used",
+          "explanation": "The data subject is the person concerned. The organization that keeps the data is the data controller."
+        },
+        {
+          "id": "d1-priv-gdpr-2",
+          "question": "A cloud company stores a shop's customer list on the shop's behalf. Who is the processor?",
+          "options": [
+            "The cloud company",
+            "The shop"
+          ],
+          "answer": "The cloud company",
+          "explanation": "The processor handles data on behalf of the controller. Here, the shop is the controller."
+        },
+        {
+          "id": "d1-priv-gdpr-3",
+          "question": "A Brazilian start-up handles data of German customers. What does the GDPR say?",
+          "options": [
+            "It applies: it handles data of EU residents",
+            "It does not apply: the company is outside the EU",
+            "It applies only if the company has an office in Europe",
+            "It applies only to very large companies"
+          ],
+          "options_why": [
+            "",
+            "The company's location does not decide: the people concerned are what matter.",
+            "The manual's sentence does not require any office in Europe.",
+            "The manual does not limit the GDPR to large companies."
+          ],
+          "answer": "It applies: it handles data of EU residents",
+          "explanation": "As soon as an organization handles data of EU citizens or residents, the GDPR concerns it."
+        },
+        {
+          "id": "d1-priv-gdpr-4",
+          "question": "A former customer asks a shop to erase their personal data. Which GDPR article can allow this?",
+          "options": [
+            "Article 17, the right to be forgotten",
+            "Article 33, the notification within 72 hours",
+            "Article 25, protection by design",
+            "Article 5, the seven principles"
+          ],
+          "options_why": [
+            "",
+            "Article 33 is about data leaks, not erasure.",
+            "Article 25 is about thinking about privacy from the design stage.",
+            "Article 5 lists the principles. It does not create the right to erasure."
+          ],
+          "answer": "Article 17, the right to be forgotten",
+          "explanation": "Article 17 lets you have your data deleted in several situations."
+        },
+        {
+          "id": "d1-priv-gdpr-5",
+          "question": "Put these texts in order of their date, from the oldest to the most recent.",
+          "answer": "Privacy Act (1974), European directive (1995), HIPAA (1996), COPPA (1998), GLBA (1999), HITECH (2009), GDPR (2016).",
+          "explanation": "The American laws come by sector over the years. The GDPR is the most recent on the list.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Privacy”.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "The US federal Privacy Act",
+              "The European data protection directive",
+              "HIPAA",
+              "COPPA",
+              "GLBA",
+              "HITECH",
+              "The GDPR"
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-gdpr-6",
+          "question": "In which year was the GDPR established, and which text did it replace?",
+          "answer": "In 2016. It replaced the European directive of 1995.",
+          "explanation": "Twenty-one years between the directive and the GDPR.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “General Data Protection Regulation (EU)”."
+        },
+        {
+          "id": "d1-priv-gdpr-7",
+          "question": "What does Article 25 of the GDPR ask for?",
+          "answer": "Data protection by design and by default.",
+          "explanation": "Think about privacy from the start, not at the end.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: the manual says this rule puts into law what security professionals have recommended for years."
+        },
+        {
+          "id": "d1-priv-gdpr-8",
+          "question": "Within what time must you warn the authorities after a leak of personal data (Article 33)?",
+          "answer": "Within 72 hours after becoming aware of it.",
+          "explanation": "72 hours is three days: speed matters.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, note on Article 33: warn the competent authorities within 72 hours."
+        },
+        {
+          "id": "d1-priv-gdpr-9",
+          "question": "Article [[17]] gives the right to be forgotten and Article [[33]] requires warning within [[72]] hours.",
+          "answer": "Article 17 gives the right to be forgotten and Article 33 requires warning within 72 hours.",
+          "explanation": "Two articles, two numbers to link: 17 for erasure, 33 for the 72 hours."
+        },
+        {
+          "id": "d1-priv-gdpr-10",
+          "question": "Why does the right to be forgotten matter to those who decide how long to keep data?",
+          "answer": "If a person asks for erasure, the company must be able to find and delete their data. So you must plan retention and deletion from the start.",
+          "explanation": "You cannot erase what you cannot find.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: it is a critical concept for storage and retention policies."
+        },
+        {
+          "id": "d1-priv-gdpr-11",
+          "question": "What if a European company ignores an erasure request?",
+          "answer": "It does not respect the rights of the person concerned. It faces GDPR fines, which you will see on a later planet.",
+          "explanation": "The right to be forgotten is a right of the person, not a favor from the company."
+        },
+        {
+          "id": "d1-priv-gdpr-12",
+          "question": "Explain in your own words what “data protection by design and by default” means.",
+          "answer": "You think about privacy as soon as a product is created. The starting settings already protect the data, without the user having to change them.",
+          "explanation": "Protection is planned from the start, not added afterwards.",
+          "explanation_more": "The manual only says that Article 25 requires “data protection by design and by default”. The detail about starting settings is an explanation outside the manual."
+        }
+      ]
+    },
+    {
+      "id": "d1-priv-principes1",
+      "name": "GDPR: principles 1 to 4",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The class phone list",
+          "paragraphes": [
+            "Your class representative writes down everyone's phone number to organize a trip.",
+            "She must say what the numbers are for, write down only what is needed, and keep the numbers correct. Otherwise, classmates stop trusting her.",
+            "The GDPR asks the same of companies, in its Article 5. It contains seven principles: here are the first four."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The honest class representative",
+          "comme": "The class representative says: “I will use your numbers only for the trip.” She does not ask for your addresses. She fixes a wrong number.",
+          "enVrai": "Lawfulness, fairness and transparency: say clearly how the data will be used. Purpose limitation: announce a specific goal. Data minimization: take only what is needed. Accuracy: keep data correct and up to date."
+        },
+        {
+          "type": "predire",
+          "titre": "Your turn to guess",
+          "question": "A game site asks for your religion before letting you play. Which principle does this request mostly ignore?",
+          "options": [
+            "Data minimization",
+            "Data accuracy",
+            "Purpose limitation"
+          ],
+          "answer": "Data minimization",
+          "explanation": "Asking for more than needed goes against minimization. Accuracy is about correct data, and purpose limitation is about the announced goal."
+        },
+        {
+          "type": "exemple",
+          "titre": "The library sign-up",
+          "texte": "The library asks for your name and address to lend you books. It tells you this is to send a return reminder. If you move, it updates the address. It does not ask for your religion or your parents' jobs."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-priv-principes1-art5-def1",
+          "question": "Official definition: Article 5 of the GDPR",
+          "answer": "GDPR Article 5 establishes and describes seven principles for processing personal data:",
+          "explanation": "Article 5 = seven principles. Remember the number seven.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “General Data Protection Regulation (EU)”."
+        },
+        {
+          "id": "d1-priv-principes1-art5-def3",
+          "question": "GDPR Article 5 [[establishes and describes]] [[seven principles]] for [[processing personal data]]:",
+          "answer": "GDPR Article 5 establishes and describes seven principles for processing personal data:",
+          "explanation": "Establishes and describes, seven principles, for processing personal data."
+        },
+        {
+          "id": "d1-priv-principes1-licite-def1",
+          "question": "Official definition: the principle “lawfulness, fairness, and transparency”",
+          "answer": "Lawfulness, fairness, and transparency: Obtain and process personal data in accordance with applicable laws and fully inform the customer of how their data will be used.",
+          "explanation": "Follow the law, be honest, and tell the customer everything.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, principle 1 of Article 5."
+        },
+        {
+          "id": "d1-priv-principes1-licite-def3",
+          "question": "Lawfulness, fairness, and transparency: [[Obtain and process personal data]] in accordance with [[applicable laws]] and [[fully inform the customer]] of how their data will be used.",
+          "answer": "Lawfulness, fairness, and transparency: Obtain and process personal data in accordance with applicable laws and fully inform the customer of how their data will be used.",
+          "explanation": "Obtain and process the data, following the laws, while fully informing the customer."
+        },
+        {
+          "id": "d1-priv-principes1-finalite-def1",
+          "question": "Official definition: the principle “purpose limitation”",
+          "answer": "Purpose limitation: Identify \"specific, explicit, and legitimate\" purpose for data collection, and inform them of such purpose.",
+          "explanation": "A precise, clear and legitimate goal, announced before collection.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, principle 2 of Article 5."
+        },
+        {
+          "id": "d1-priv-principes1-finalite-def3",
+          "question": "Purpose limitation: Identify \"[[specific, explicit, and legitimate]]\" purpose for [[data collection]], and [[inform them of such purpose]].",
+          "answer": "Purpose limitation: Identify \"specific, explicit, and legitimate\" purpose for data collection, and inform them of such purpose.",
+          "explanation": "Three adjectives for the goal, the collection concerned, and the duty to inform."
+        },
+        {
+          "id": "d1-priv-principes1-minimisation-def1",
+          "question": "Official definition: the principle “data minimization”",
+          "answer": "Data minimization: Collect and process the minimum amount of data necessary to provide the agreed-upon services.",
+          "explanation": "Only what is strictly needed to deliver the promised service.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, principle 3 of Article 5."
+        },
+        {
+          "id": "d1-priv-principes1-minimisation-def3",
+          "question": "Data minimization: [[Collect and process]] [[the minimum amount of data]] necessary to provide [[the agreed-upon services]].",
+          "answer": "Data minimization: Collect and process the minimum amount of data necessary to provide the agreed-upon services.",
+          "explanation": "Collect and process, the minimum amount of data, for the agreed services."
+        },
+        {
+          "id": "d1-priv-principes1-exactitude-def1",
+          "question": "Official definition: the principle “accuracy”",
+          "answer": "Accuracy: Ensure that personal data remains \"accurate and where necessary kept up-to-date.\"",
+          "explanation": "Correct data, updated when needed.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, principle 4 of Article 5."
+        },
+        {
+          "id": "d1-priv-principes1-exactitude-def3",
+          "question": "Accuracy: [[Ensure that personal data remains]] \"[[accurate and where necessary]] kept [[up-to-date]].\"",
+          "answer": "Accuracy: Ensure that personal data remains \"accurate and where necessary kept up-to-date.\"",
+          "explanation": "Make sure the data stays correct, and up to date when needed."
+        },
+        {
+          "id": "d1-priv-principes1-1",
+          "question": "Which principle is ignored in each situation?",
+          "answer": "Transparency: the app that hides how it uses data. Purpose: the delivery address used for ads. Minimization: the blood type for a newsletter. Accuracy: the old address that is never fixed.",
+          "explanation": "Look for the key word: hiding, twisting an announced goal, taking too much, or keeping wrong data.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Transparency",
+              "Purpose limitation",
+              "Minimization",
+              "Accuracy"
+            ],
+            "items": [
+              {
+                "text": "An app does not tell its users what it does with their data",
+                "category": "Transparency"
+              },
+              {
+                "text": "A site uses your data without explaining how",
+                "category": "Transparency"
+              },
+              {
+                "text": "An address given for a delivery is used to send you ads without warning",
+                "category": "Purpose limitation"
+              },
+              {
+                "text": "Data collected for a game is used for another goal, never announced",
+                "category": "Purpose limitation"
+              },
+              {
+                "text": "A form asks for your blood type for a newsletter",
+                "category": "Minimization"
+              },
+              {
+                "text": "A recipe app asks for your location every minute",
+                "category": "Minimization"
+              },
+              {
+                "text": "A file keeps the old address of a customer who moved years ago",
+                "category": "Accuracy"
+              },
+              {
+                "text": "A mistake in your name is never fixed in your file",
+                "category": "Accuracy"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-principes1-2",
+          "question": "A site asks for twelve pieces of information when three are enough. Which principle is ignored?",
+          "options": [
+            "Minimization",
+            "Purpose limitation"
+          ],
+          "answer": "Minimization",
+          "explanation": "It takes more than needed. Purpose limitation is about a goal that was announced and then twisted."
+        },
+        {
+          "id": "d1-priv-principes1-3",
+          "question": "A gym asks for your number to warn you about canceled classes. It later uses it to sell products, without saying so. Which principle is ignored?",
+          "options": [
+            "Purpose limitation: the announced goal is not respected",
+            "Accuracy: the numbers are wrong",
+            "Minimization: a number is too much information",
+            "None: the numbers belong to the gym"
+          ],
+          "options_why": [
+            "",
+            "Nothing says the numbers are wrong. The problem is how they are used.",
+            "A number to warn about a class is justified. The problem is elsewhere.",
+            "The data belongs to the person, and laws control how it is used."
+          ],
+          "answer": "Purpose limitation: the announced goal is not respected",
+          "explanation": "The number was collected for one goal (warning) and used for another (selling)."
+        },
+        {
+          "id": "d1-priv-principes1-4",
+          "question": "How many principles does Article 5 of the GDPR establish?",
+          "answer": "Seven.",
+          "explanation": "On these two planets, you see them in two steps: four, then three.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, GDPR section."
+        },
+        {
+          "id": "d1-priv-principes1-5",
+          "question": "Minimization says to collect the [[minimum]] needed. Accuracy says to keep data up to [[date]].",
+          "answer": "Minimization says to collect the minimum needed. Accuracy says to keep data up to date.",
+          "explanation": "One key word per principle: minimum and up to date."
+        },
+        {
+          "id": "d1-priv-principes1-6",
+          "question": "Why must you announce the goal before collecting data?",
+          "answer": "So the person can decide knowing the facts. Without an announced goal, their data could be used for anything.",
+          "explanation": "You can only accept or refuse what you know."
+        },
+        {
+          "id": "d1-priv-principes1-7",
+          "question": "Which principle says to collect only what is strictly needed?",
+          "answer": "Data minimization.",
+          "explanation": "Minimum: as little as possible to deliver the service."
+        },
+        {
+          "id": "d1-priv-principes1-8",
+          "question": "What if a company keeps inaccurate data about you and uses it to decide on a loan?",
+          "answer": "It may decide about you based on false information. The accuracy principle forces it to keep data correct and up to date when needed.",
+          "explanation": "Wrong data can lead to bad decisions."
+        },
+        {
+          "id": "d1-priv-principes1-9",
+          "question": "A clothing site opens customer accounts. Write the information it may ask for while respecting minimization.",
+          "answer": "The name, the delivery address and a way to contact you. Not your religion, nor your health.",
+          "explanation": "Each piece of information asked for must directly serve the promised service."
+        },
+        {
+          "id": "d1-priv-principes1-10",
+          "question": "Which principle forces you to announce a specific, explicit and legitimate goal before collection?",
+          "answer": "Purpose limitation.",
+          "explanation": "Purpose means goal: a clear, announced, legitimate goal."
+        }
+      ]
+    },
+    {
+      "id": "d1-priv-principes2",
+      "name": "GDPR: principles 5 to 7",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The school report cards",
+          "paragraphes": [
+            "At the end of the year, the school keeps report cards for a set time, then destroys them.",
+            "It stores them in a locked cabinet. And if someone checks, it can show how it protected them.",
+            "These three habits are the last three principles of the GDPR: keep for less time, protect well, and be able to prove it."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The yogurt and its expiry date",
+          "comme": "A yogurt has an expiry date: after it, it goes in the trash. It is also kept in the fridge. And the shop can prove it followed the cold chain.",
+          "enVrai": "Storage limitation: keep data only as long as needed. Integrity and confidentiality: protect it from unauthorized access and from loss. Accountability: the controller must prove it follows the principles."
+        },
+        {
+          "type": "predire",
+          "titre": "Your turn to guess",
+          "question": "A shop keeps a customer's data ten years after their last purchase, for no reason. Which principle is ignored?",
+          "options": [
+            "Storage limitation",
+            "Accuracy",
+            "Data minimization"
+          ],
+          "answer": "Storage limitation",
+          "explanation": "The problem is the length of time: the data is kept longer than needed. Minimization is about the amount collected."
+        },
+        {
+          "type": "exemple",
+          "titre": "Proving you are in order",
+          "texte": "A company wants to show that it protects data well. It gets a recognized certification, for example ISO 27001. It is a way to show its accountability to its customers."
+        },
+        {
+          "type": "analogie",
+          "titre": "Blurring faces",
+          "comme": "On a class photo, you blur the faces before posting it. You still see the class, but nobody is recognized.",
+          "enVrai": "Data anonymization removes what lets you identify a person. The manual names it as a technique to protect customers' identities when necessary."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-priv-principes2-conservation-def1",
+          "question": "Official definition: the principle “storage limitation”",
+          "answer": "Storage limitation: Personal data may be stored only long as necessary to provide the agreed-upon services.",
+          "explanation": "You keep data only as long as the service requires it.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, principle 5 of Article 5. The manual writes “only long as”: you learn it as it is."
+        },
+        {
+          "id": "d1-priv-principes2-conservation-def2",
+          "question": "Storage limitation: Personal data may be [[stored]] only long as necessary to provide the agreed-upon [[services]].",
+          "answer": "Storage limitation: Personal data may be stored only long as necessary to provide the agreed-upon services.",
+          "explanation": "Two key words: stored (kept), and services (the agreed services)."
+        },
+        {
+          "id": "d1-priv-principes2-conservation-def3",
+          "question": "Storage limitation: [[Personal data]] may be stored [[only long as necessary]] to provide [[the agreed-upon services]].",
+          "answer": "Storage limitation: Personal data may be stored only long as necessary to provide the agreed-upon services.",
+          "explanation": "Three blocks: personal data, the necessary time, and the agreed services."
+        },
+        {
+          "id": "d1-priv-principes2-conservation-def4",
+          "question": "Write the official definition of the principle “storage limitation” from memory.",
+          "answer": "Storage limitation: Personal data may be stored only long as necessary to provide the agreed-upon services.",
+          "explanation": "Think: personal data, necessary time, agreed services."
+        },
+        {
+          "id": "d1-priv-principes2-securite-def1",
+          "question": "Official definition: the principle “integrity and confidentiality”",
+          "answer": "Integrity and confidentiality: Ensure appropriate security of personal data, and provide protection against unauthorized access, and accidental loss or destruction.",
+          "explanation": "Data security: against intruders and against accidents.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, principle 6 of Article 5."
+        },
+        {
+          "id": "d1-priv-principes2-securite-def2",
+          "question": "Integrity and confidentiality: Ensure appropriate [[security]] of personal data, and provide protection against [[unauthorized]] access, and accidental loss or destruction.",
+          "answer": "Integrity and confidentiality: Ensure appropriate security of personal data, and provide protection against unauthorized access, and accidental loss or destruction.",
+          "explanation": "Two key words: security, and unauthorized."
+        },
+        {
+          "id": "d1-priv-principes2-securite-def3",
+          "question": "Integrity and confidentiality: [[Ensure appropriate security]] of personal data, and provide [[protection against unauthorized access]], and [[accidental loss or destruction]].",
+          "answer": "Integrity and confidentiality: Ensure appropriate security of personal data, and provide protection against unauthorized access, and accidental loss or destruction.",
+          "explanation": "Appropriate security, against unauthorized access, against accidental loss or destruction."
+        },
+        {
+          "id": "d1-priv-principes2-securite-def4",
+          "question": "Write the official definition of the principle “integrity and confidentiality” from memory.",
+          "answer": "Integrity and confidentiality: Ensure appropriate security of personal data, and provide protection against unauthorized access, and accidental loss or destruction.",
+          "explanation": "Think: appropriate security, unauthorized access, accidental loss or destruction."
+        },
+        {
+          "id": "d1-priv-principes2-responsabilite-def1",
+          "question": "Official definition: the principle “accountability”",
+          "answer": "Accountability: The data controller (i.e., the party that stores and processes the personal data) must be able to demonstrate compliance with all of these principles.",
+          "explanation": "Following the rules is not enough: you must be able to prove it.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, principle 7 of Article 5. The manual adds that many customers look for certifications like ISO 27001 to see this accountability."
+        },
+        {
+          "id": "d1-priv-principes2-responsabilite-def2",
+          "question": "Accountability: The data [[controller]] (i.e., the party that stores and processes the personal data) must be able to [[demonstrate]] compliance with all of these principles.",
+          "answer": "Accountability: The data controller (i.e., the party that stores and processes the personal data) must be able to demonstrate compliance with all of these principles.",
+          "explanation": "Two key words: controller (who is responsible), and demonstrate (prove)."
+        },
+        {
+          "id": "d1-priv-principes2-responsabilite-def3",
+          "question": "Accountability: [[The data controller]] (i.e., the party that stores and processes the personal data) must be able to [[demonstrate compliance]] with [[all of these principles]].",
+          "answer": "Accountability: The data controller (i.e., the party that stores and processes the personal data) must be able to demonstrate compliance with all of these principles.",
+          "explanation": "The data controller, who must demonstrate compliance, with all the principles."
+        },
+        {
+          "id": "d1-priv-principes2-responsabilite-def4",
+          "question": "Write the official definition of the principle “accountability” from memory.",
+          "answer": "Accountability: The data controller (i.e., the party that stores and processes the personal data) must be able to demonstrate compliance with all of these principles.",
+          "explanation": "Think: the data controller, demonstrate compliance, all the principles."
+        },
+        {
+          "id": "d1-priv-principes2-anonymisation-def1",
+          "question": "Official definition: anonymization in the principle “integrity and confidentiality”",
+          "answer": "This includes implementing data anonymization techniques to protect your customers' identities, where necessary.",
+          "explanation": "To anonymize is to remove what lets you recognize a person.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, which follows the principle “integrity and confidentiality”."
+        },
+        {
+          "id": "d1-priv-principes2-anonymisation-def3",
+          "question": "This includes implementing [[data anonymization techniques]] to [[protect your customers' identities]], where [[necessary]].",
+          "answer": "This includes implementing data anonymization techniques to protect your customers' identities, where necessary.",
+          "explanation": "Anonymization techniques, to protect identity, when necessary."
+        },
+        {
+          "id": "d1-priv-principes2-1",
+          "question": "Which principle is respected in each situation?",
+          "answer": "Storage: erasing when the account closes, keeping data for the length of the service. Integrity and confidentiality: encrypting, backing up. Accountability: showing an ISO 27001 certificate, keeping proof.",
+          "explanation": "Limited time, protection against intruders and accidents, or the ability to prove: three different ideas.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Storage limitation",
+              "Integrity and confidentiality",
+              "Accountability"
+            ],
+            "items": [
+              {
+                "text": "A shop erases a customer's data when their account is closed",
+                "category": "Storage limitation"
+              },
+              {
+                "text": "Data is kept only for the length of the service",
+                "category": "Storage limitation"
+              },
+              {
+                "text": "Files are encrypted and protected against unauthorized access",
+                "category": "Integrity and confidentiality"
+              },
+              {
+                "text": "A backup prevents accidental loss of the data",
+                "category": "Integrity and confidentiality"
+              },
+              {
+                "text": "The company shows an ISO 27001 certificate to its customers",
+                "category": "Accountability"
+              },
+              {
+                "text": "The company keeps documents that prove it follows each principle",
+                "category": "Accountability"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-principes2-2",
+          "question": "Who must prove that all the principles are respected: the data controller or the data subject?",
+          "options": [
+            "The data controller",
+            "The data subject"
+          ],
+          "answer": "The data controller",
+          "explanation": "The controller is the one who keeps and uses the data. The accountability principle asks it to be able to show it."
+        },
+        {
+          "id": "d1-priv-principes2-3",
+          "question": "A clinic leaves its patients' files on a computer with no password. Which principle is ignored?",
+          "options": [
+            "Integrity and confidentiality",
+            "Storage limitation",
+            "Accountability",
+            "Minimization"
+          ],
+          "options_why": [
+            "",
+            "Nothing here is about how long the data is kept.",
+            "Accountability is the ability to prove. The problem here is the protection itself.",
+            "Nothing says the clinic collects too much information."
+          ],
+          "answer": "Integrity and confidentiality",
+          "explanation": "With no password, anyone can open the files: the appropriate security is missing."
+        },
+        {
+          "id": "d1-priv-principes2-4",
+          "question": "Which technique protects customers' identities, when necessary?",
+          "answer": "Data anonymization.",
+          "explanation": "You remove what lets you recognize the person.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, principle “integrity and confidentiality”."
+        },
+        {
+          "id": "d1-priv-principes2-5",
+          "question": "How can a company show its accountability?",
+          "answer": "For example with a recognized certification like ISO 27001.",
+          "explanation": "A certification is proof given by an outside party.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1: many customers look for certifications like ISO 27001 to show accountability and commitment."
+        },
+        {
+          "id": "d1-priv-principes2-6",
+          "question": "You keep data [[only]] as long as needed: this is storage [[limitation]].",
+          "answer": "You keep data only as long as needed: this is storage limitation.",
+          "explanation": "The key word is time: no longer than necessary."
+        },
+        {
+          "id": "d1-priv-principes2-7",
+          "question": "Why is keeping data longer than needed risky?",
+          "answer": "Every piece of data kept can be stolen or lost. The less you keep, the less there is to protect and the smaller the leak.",
+          "explanation": "Data that has been erased cannot leak."
+        },
+        {
+          "id": "d1-priv-principes2-8",
+          "question": "What if a company protects its data very well, but cannot prove anything?",
+          "answer": "It may respect security, but not accountability. The controller must be able to demonstrate compliance with all the principles.",
+          "explanation": "Without proof, nobody can check that the principles are followed."
+        },
+        {
+          "id": "d1-priv-principes2-9",
+          "question": "Write three things a company can do to respect principles 5 to 7.",
+          "answer": "Erase data when it is no longer useful, protect it (encryption, limited access), and keep proof or a certification.",
+          "explanation": "One action per principle: keep less, protect, prove."
+        }
+      ]
+    },
+    {
+      "id": "d1-priv-amendes",
+      "name": "GDPR fines",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "A fine that depends on size",
+          "paragraphes": [
+            "A small shop and a very large company make the same mistake. A fine of 1,000 euros only scares the shop.",
+            "To make the penalty matter to everyone, the GDPR sets a maximum based on worldwide revenue. This is the money the company earns by selling its products.",
+            "Let us look at these amounts and at how the sum is decided."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The speeding ticket depends on the offense",
+          "comme": "Going 5 km/h over the limit or 50 km/h over does not cost the same. And if you apologize and fix things, the judge is gentler.",
+          "enVrai": "The GDPR has two levels of fines. The lower level covers some duties. The upper level covers the basic principles, people's rights and data transfers. Ten criteria help set the amount."
+        },
+        {
+          "type": "predire",
+          "titre": "Your turn to guess",
+          "question": "What is the maximum fine for the most serious GDPR offenses?",
+          "options": [
+            "20 million or 4% of worldwide revenue, whichever is higher",
+            "5 million or 3% of worldwide revenue, whichever is higher",
+            "50 million or 6% of worldwide revenue, whichever is higher"
+          ],
+          "answer": "20 million or 4% of worldwide revenue, whichever is higher",
+          "explanation": "Guessing is normal: these numbers must be learned by heart. Seeing them here helps you memorize them later."
+        },
+        {
+          "type": "exemple",
+          "titre": "Two companies, one leak",
+          "texte": "Two companies have a data leak. The first had protections, warned the authorities right away and cooperated. The second ignored the alerts, hid the leak and refused to answer. The fine will probably be heavier for the second."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-priv-amendes-def1",
+          "question": "Official definition: GDPR fines",
+          "answer": "The GDPR imposes stiff fines on data controllers and processors for noncompliance.",
+          "explanation": "The fines target both roles: controller and processor.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “GDPR Fines”."
+        },
+        {
+          "id": "d1-priv-amendes-def3",
+          "question": "The GDPR imposes [[stiff fines]] on [[data controllers and processors]] for [[noncompliance]].",
+          "answer": "The GDPR imposes stiff fines on data controllers and processors for noncompliance.",
+          "explanation": "Heavy fines, for controllers and processors, when they do not follow the law."
+        },
+        {
+          "id": "d1-priv-amendes-criteres-def1",
+          "question": "Official definition: the criteria for setting the amount of a fine",
+          "answer": "The following 10 criteria are to be used to determine the amount of the fine on a noncompliant firm:",
+          "explanation": "Ten criteria: remember the number. Fines are set by the supervisory authorities of each member state.",
+          "explanation_more": "Sentence from the official (ISC)2 manual, domain 1, section “GDPR Fines”."
+        },
+        {
+          "id": "d1-priv-amendes-criteres-def3",
+          "question": "The following [[10 criteria]] are to be used to [[determine the amount of the fine]] on [[a noncompliant firm]]:",
+          "answer": "The following 10 criteria are to be used to determine the amount of the fine on a noncompliant firm:",
+          "explanation": "The number of criteria, what they are used for, and the company concerned."
+        },
+        {
+          "id": "d1-priv-amendes-1",
+          "question": "What is the maximum of the lower level of GDPR fines?",
+          "answer": "Up to 10 million, or 2% of the previous year's worldwide revenue, whichever amount is higher.",
+          "explanation": "Lower level: 10 million or 2%. The higher of the two applies.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, “GDPR Fines”. The manual does not give the currency: it is euros (detail outside the manual)."
+        },
+        {
+          "id": "d1-priv-amendes-2",
+          "question": "What is the maximum of the upper level of GDPR fines?",
+          "answer": "Up to 20 million, or 4% of the previous year's worldwide revenue, whichever amount is higher.",
+          "explanation": "Upper level: double the lower level, 20 million or 4%.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, “GDPR Fines”. The currency is not given in the manual: it is euros (outside the manual)."
+        },
+        {
+          "id": "d1-priv-amendes-3",
+          "question": "In which level of fine does each offense belong?",
+          "answer": "Lower level: duties of controllers and processors, of certification bodies and of monitoring bodies. Upper level: basic principles, people's rights, transfers outside the EU, ignoring an authority's order.",
+          "explanation": "Offenses against people's rights and the basic principles are the most serious: upper level.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, “GDPR Fines” (Lower Level and Upper Level).",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Lower level (10 M or 2%)",
+              "Upper level (20 M or 4%)"
+            ],
+            "items": [
+              {
+                "text": "Failing the duties of controllers and processors (Articles 8, 11, 25 to 39, 42, 43)",
+                "category": "Lower level (10 M or 2%)"
+              },
+              {
+                "text": "Failing the duties of a certification body (Articles 42, 43)",
+                "category": "Lower level (10 M or 2%)"
+              },
+              {
+                "text": "Failing the duties of a monitoring body (Article 41, paragraph 4)",
+                "category": "Lower level (10 M or 2%)"
+              },
+              {
+                "text": "Not respecting the basic principles of processing, including consent (Articles 5, 6, 7, 9)",
+                "category": "Upper level (20 M or 4%)"
+              },
+              {
+                "text": "Not respecting the rights of the data subjects (Articles 12 to 22)",
+                "category": "Upper level (20 M or 4%)"
+              },
+              {
+                "text": "Transferring data to a third country or an international organization (Articles 44 to 49)",
+                "category": "Upper level (20 M or 4%)"
+              },
+              {
+                "text": "Not following the order of a supervisory authority",
+                "category": "Upper level (20 M or 4%)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-priv-amendes-4",
+          "question": "A company has a worldwide revenue of 1 billion. It ignores its customers' right to erasure. What is the maximum fine?",
+          "options": [
+            "40 million",
+            "20 million",
+            "10 million",
+            "2 million"
+          ],
+          "options_why": [
+            "",
+            "20 million is the fixed amount. But 4% of 1 billion is 40 million, and the higher one is used.",
+            "10 million is the fixed amount of the lower level. People's rights are in the upper level.",
+            "2 million does not match any calculation of this level."
+          ],
+          "answer": "40 million",
+          "explanation": "People's rights are in the upper level: 20 million or 4%. Here 4% of 1 billion is 40 million, more than 20 million."
+        },
+        {
+          "id": "d1-priv-amendes-5",
+          "question": "A company with a worldwide revenue of 100 million fails its duties as a processor (Article 25). What is the maximum fine?",
+          "options": [
+            "10 million",
+            "2 million",
+            "20 million",
+            "4 million"
+          ],
+          "options_why": [
+            "",
+            "2% of 100 million is indeed 2 million. But the fixed amount of 10 million is higher, so it is the one used.",
+            "20 million is the amount of the upper level. This duty belongs to the lower level.",
+            "4 million would come from 4% of 100 million. That is not the right level."
+          ],
+          "answer": "10 million",
+          "explanation": "Lower level: 10 million or 2%. Here 2% of 100 million is 2 million, less than 10 million: we use 10 million."
+        },
+        {
+          "id": "d1-priv-amendes-6",
+          "question": "Who sets GDPR fines?",
+          "answer": "The supervisory authorities of each member state.",
+          "explanation": "Each EU country has its own supervisory authority.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, “GDPR Fines”: fines are administered by the supervisory authorities of each member state."
+        },
+        {
+          "id": "d1-priv-amendes-7",
+          "question": "Why is the maximum also calculated as a percentage of revenue?",
+          "answer": "For a very large company, 20 million would be a small sum. The percentage makes the fine serious even for a giant.",
+          "explanation": "The higher of the two amounts is used: the percentage takes over for large companies.",
+          "explanation_more": "The manual gives the amounts but not the reason for this choice: this explanation comes from elsewhere (outside the manual)."
+        },
+        {
+          "id": "d1-priv-amendes-8",
+          "question": "Name three criteria used to set the amount of a fine.",
+          "answer": "For example: the nature of the offense, the intent, the measures taken to limit the damage, or the cooperation with the authority.",
+          "explanation": "The criteria look at how serious it is, the company's attitude, and its preparation.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, “GDPR Fines”: nature of the offense, intent, mitigation, preventive measures, history, cooperation, type of data, notification, certification, other factors."
+        },
+        {
+          "id": "d1-priv-amendes-9",
+          "question": "To set the fine, the authority looks at the company's [[cooperation]] and its [[history]].",
+          "answer": "To set the fine, the authority looks at the company's cooperation and its history.",
+          "explanation": "Two criteria out of ten: cooperating helps, past offenses weigh."
+        },
+        {
+          "id": "d1-priv-amendes-10",
+          "question": "What if a company had already received a warning for a similar offense?",
+          "answer": "History is a criterion: past offenses can count, even under the old directive. The fine may be heavier.",
+          "explanation": "Repeating an offense is judged more harshly than a first mistake.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, criterion “History”: past offenses can include those under the Data Protection Directive."
+        },
+        {
+          "id": "d1-priv-amendes-11",
+          "question": "Explain the phrase “whichever is higher” for a fine of 20 million or 4%.",
+          "answer": "You calculate both amounts, then keep the larger one. For a large company, 4% of revenue often goes above 20 million.",
+          "explanation": "The fixed amount protects against small revenues, the percentage against huge ones."
+        }
+      ]
+    }
+  ]
+}

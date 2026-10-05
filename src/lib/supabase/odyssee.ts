@@ -3,6 +3,8 @@
 import { createClient } from "./server";
 import { profilCourantId } from "@/lib/profils";
 import { lireSecteurChoisi } from "@/lib/secteur";
+import { lireLangue } from "@/lib/langue";
+import { chargerTraductions } from "@/lib/i18n/charger";
 import { chargerCartesEtRevisions, type CarteAvecMatiere } from "./requetes";
 import { aujourdhui } from "@/lib/dates";
 import { CONFIG_REVISION } from "@/lib/revision/config";
@@ -76,18 +78,27 @@ async function structureSecteur(): Promise<{ structure: StructureSecteur; cartes
   for (const c of cartesDuSecteur) nbCartes.set(c.carte.concept_id, (nbCartes.get(c.carte.concept_id) ?? 0) + 1);
 
   const concepts = (conceptsRes.data ?? []) as unknown as { id: string; name: string; module_id: string; discovery: unknown[] | null }[];
+  // Langue choisie : noms et découvertes traduits si la matière existe dans cette langue (sinon français).
+  const langue = await lireLangue();
+  const tr = await chargerTraductions(subject.id, langue);
+  const local = (id: string) => id.slice(subject.id.length + 1);
   return {
     structure: {
       id: subject.id,
-      nom: subject.name,
+      nom: tr?.nomMatiere ?? subject.name,
       galaxies: (modulesRes.data ?? []).map((m) => ({
         id: m.id,
-        nom: m.name,
-        planetes: concepts.filter((c) => c.module_id === m.id).map((c) => ({ id: c.id, nom: c.name, nbCartes: nbCartes.get(c.id) ?? 0, decouverte: c.discovery })),
+        nom: tr?.modules.get(local(m.id)) ?? m.name,
+        planetes: concepts.filter((c) => c.module_id === m.id).map((c) => {
+          const t = tr?.concepts.get(local(c.id));
+          return { id: c.id, nom: t?.name ?? c.name, nbCartes: nbCartes.get(c.id) ?? 0, decouverte: (t?.decouverte as unknown[] | undefined) ?? c.discovery };
+        }),
       })),
     },
     cartes: cartesDuSecteur,
-    secteurs,
+    secteurs: await Promise.all(
+      secteurs.map(async (s) => ({ id: s.id, nom: (await chargerTraductions(s.id, langue))?.nomMatiere ?? s.nom })),
+    ),
   };
 }
 

@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BoutonLangue } from "@/components/BoutonLangue";
+import { lireLangue } from "@/lib/langue";
+import { estMatiereTraduite } from "@/lib/langue-types";
 import { Ambiance } from "@/components/audio/Ambiance";
 import { CarteGalaxie } from "@/components/odyssee/CarteGalaxie";
 import { apparenceGalaxie } from "@/lib/odyssee/planete";
@@ -12,6 +15,7 @@ export default async function PageGalaxie({ params }: PageProps<"/galaxie/[id]">
   const univers = await chargerUnivers();
   const galaxie = univers?.secteur.galaxies.find((g) => g.id === depuisUrl(id));
   if (!univers || !galaxie) notFound();
+  const langue = await lireLangue();
 
   return (
     <div className="flex flex-col gap-6">
@@ -21,9 +25,12 @@ export default async function PageGalaxie({ params }: PageProps<"/galaxie/[id]">
           <p className="texte-2 text-sm">Galaxie {galaxie.index + 1}</p>
           <h1 className="text-2xl font-semibold">{galaxie.nom}</h1>
         </div>
-        <Link href={routes.univers()} className="texte-2 text-sm underline underline-offset-4 whitespace-nowrap">
-          Univers
-        </Link>
+        <div className="flex items-center gap-4">
+          {estMatiereTraduite(univers.secteur.id) && <BoutonLangue langue={langue} />}
+          <Link href={routes.univers()} className="texte-2 text-sm underline underline-offset-4 whitespace-nowrap">
+            Univers
+          </Link>
+        </div>
       </header>
 
       {galaxie.statut === "verrouillee" ? (

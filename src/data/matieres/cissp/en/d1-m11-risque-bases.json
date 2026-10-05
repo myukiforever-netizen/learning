@@ -1,0 +1,1987 @@
+{
+  "id": "d1-m11-risque-bases",
+  "name": "D1.11 Threats, vulnerabilities and risk",
+  "concepts": [
+    {
+      "id": "d1-risq-actif",
+      "name": "Assets",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "One minute to get out",
+          "paragraphes": [
+            "Imagine your house catches fire. You have one minute to get out with three things.",
+            "Without thinking, you grab your phone, your cat and the photo of your grandmother. You leave the toaster.",
+            "You just sorted what has value for you. Security professionals do this sorting before anything else: they list their assets."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "It is like your school backpack",
+          "comme": "In your bag, things have different value: your phone, your notebooks, your pen. You protect first what matters most.",
+          "enVrai": "An asset is anything that has value for an organization: people, equipment, information. We do not protect everything in the same way. Where the picture stops: in a company, people are assets too, not only objects."
+        },
+        {
+          "type": "predire",
+          "question": "In a school, what is an asset?",
+          "options": [
+            "Only the computers and the buildings",
+            "The students, the teachers, the computers and the data",
+            "Only the students' data"
+          ],
+          "answer": "The students, the teachers, the computers and the data",
+          "explanation": "An asset is anything that has value, even people. The other two answers are tempting, but they leave out part of the list."
+        },
+        {
+          "type": "exemple",
+          "titre": "The assets of a video game store",
+          "texte": "A video game store has three kinds of assets. People: the sellers and the customers. Equipment: the consoles in stock and the cash register. What you cannot touch: the code of its website and its logo. The store must protect everything, but not in the same way."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-risq-actif-def1",
+          "question": "Official definition: “asset”",
+          "answer": "An asset is anything of value, which may include people, property, and information.",
+          "explanation": "Think of the minute before leaving the burning house: you take what has value.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Identify Threats and Vulnerabilities”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-actif-def2",
+          "question": "An asset is [[anything]] of value, which may include people, property, and [[information]].",
+          "answer": "An asset is anything of value, which may include people, property, and information.",
+          "explanation": "The key word is “anything”: everything that has value, not only objects."
+        },
+        {
+          "id": "d1-risq-actif-def3",
+          "question": "An asset is [[anything of value]], which [[may include people]], [[property, and information]].",
+          "answer": "An asset is anything of value, which may include people, property, and information.",
+          "explanation": "Three blocks: everything that has value, people, then property and information."
+        },
+        {
+          "id": "d1-risq-actif-def4",
+          "question": "Write the official definition of “asset” from memory.",
+          "answer": "An asset is anything of value, which may include people, property, and information.",
+          "explanation": "Compare word by word, spot what is missing, try again tomorrow: the sentence is short."
+        },
+        {
+          "id": "d1-risq-actif-pro-def1",
+          "question": "Official definition: the role of “assets” for a security professional",
+          "answer": "Assets are the things that we, as security professionals, are trying to protect.",
+          "explanation": "For a security professional, the asset is the thing to protect.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Assets”."
+        },
+        {
+          "id": "d1-risq-actif-pro-def3",
+          "question": "Assets are [[the things]] that we, as [[security professionals]], are [[trying to protect]].",
+          "answer": "Assets are the things that we, as security professionals, are trying to protect.",
+          "explanation": "The things, the people who protect, and the goal: to protect."
+        },
+        {
+          "id": "d1-risq-actif-propriete-def1",
+          "question": "Official definition: “property assets”",
+          "answer": "Property assets include tangible things like servers and equipment, as well as intangible things like software code and other intellectual property.",
+          "explanation": "Tangible means you can touch it. Intangible means you cannot touch it, like code.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Assets”. Intellectual property means ideas, code and inventions."
+        },
+        {
+          "id": "d1-risq-actif-propriete-def3",
+          "question": "Property assets include [[tangible things]] like servers and equipment, as well as [[intangible things]] like [[software code]] and other intellectual property.",
+          "answer": "Property assets include tangible things like servers and equipment, as well as intangible things like software code and other intellectual property.",
+          "explanation": "Tangible on one side, intangible on the other, with code as an example."
+        },
+        {
+          "id": "d1-risq-actif-personnes-def1",
+          "question": "Official definition: “people assets”",
+          "answer": "People assets may include your company's employees, contractors, and vendors, as well as your customers.",
+          "explanation": "Four groups of people: employees, contractors, vendors and customers.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Assets”. A contractor works for you without being an employee. A vendor sells you a product or a service."
+        },
+        {
+          "id": "d1-risq-actif-personnes-def3",
+          "question": "People assets may include [[your company's employees]], [[contractors, and vendors]], as well as [[your customers]].",
+          "answer": "People assets may include your company's employees, contractors, and vendors, as well as your customers.",
+          "explanation": "The employees, then the contractors and vendors, then the customers."
+        },
+        {
+          "id": "d1-risq-actif-1",
+          "question": "The code a company writes for its app: is it tangible or intangible?",
+          "options": [
+            "Tangible (you can touch it)",
+            "Intangible (you cannot touch it)"
+          ],
+          "answer": "Intangible (you cannot touch it)",
+          "explanation": "Code is text, not an object. It is still an asset: it has value."
+        },
+        {
+          "id": "d1-risq-actif-2",
+          "question": "A manager says: “Our assets are our servers.” What is he forgetting?",
+          "options": [
+            "People and information",
+            "The hackers who target the company",
+            "The laws the company must follow",
+            "Nothing: servers are the only assets"
+          ],
+          "options_why": [
+            "",
+            "A hacker has no value for the company: we do not protect hackers, we protect ourselves from them.",
+            "A law is a rule to follow. It is not an asset to protect.",
+            "Employees, customers and data have value too."
+          ],
+          "answer": "People and information",
+          "explanation": "An asset is anything that has value: people, property and information."
+        },
+        {
+          "id": "d1-risq-actif-3",
+          "question": "Which family of assets does each item belong to?",
+          "answer": "People: the sellers and the customers. Equipment: the consoles and the cash register server. Intangible: the website code and the invention protected by a patent.",
+          "explanation": "Ask yourself: is it a person, an object you can touch, or something you cannot touch?",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "People",
+              "Equipment (tangible)",
+              "Intangible"
+            ],
+            "items": [
+              {
+                "text": "The store's sellers",
+                "category": "People"
+              },
+              {
+                "text": "The customers",
+                "category": "People"
+              },
+              {
+                "text": "The consoles in stock",
+                "category": "Equipment (tangible)"
+              },
+              {
+                "text": "The cash register server",
+                "category": "Equipment (tangible)"
+              },
+              {
+                "text": "The website code",
+                "category": "Intangible"
+              },
+              {
+                "text": "An invention protected by a patent",
+                "category": "Intangible"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-actif-4",
+          "question": "What are the three big families of assets given by the manual?",
+          "answer": "People, property and information.",
+          "explanation": "A person, a physical or intangible property, or a piece of information: everything that has value fits in one of the three.",
+          "explanation_more": "Source: (ISC)2 manual, Domain 1, section “Assets”."
+        },
+        {
+          "id": "d1-risq-actif-5",
+          "question": "Why are people assets, just like servers?",
+          "answer": "Because they have value for the organization: their work keeps it running, and their safety matters too. So we must protect them as well.",
+          "explanation": "A server can be replaced. An injured person or a customer who loses trust is harder to repair."
+        },
+        {
+          "id": "d1-risq-actif-6",
+          "question": "Which people count as people assets of a company?",
+          "answer": "Its employees, its contractors, its vendors and its customers.",
+          "explanation": "Everyone who has value for the company, whether they work inside it or around it."
+        },
+        {
+          "id": "d1-risq-actif-7",
+          "question": "Why do we start risk management with the list of assets?",
+          "answer": "Because we cannot protect what we do not know. We also need to know what each asset is worth, to decide how much to spend to protect it.",
+          "explanation": "Without a list, we protect at random. With it, we protect first what matters most.",
+          "explanation_more": "The manual puts this step first: “identify your assets and determine the value of those assets” (Domain 1, section “Risk Identification”)."
+        },
+        {
+          "id": "d1-risq-actif-8",
+          "question": "What if a company forgets an important file in its list of assets?",
+          "answer": "Nobody protects it. It stays defenseless, and the loss only shows after the incident, when it is too late.",
+          "explanation": "An asset missing from the list is an asset without protection."
+        }
+      ]
+    },
+    {
+      "id": "d1-risq-menace",
+      "name": "Threats",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "On the way to school",
+          "paragraphes": [
+            "You ride your bike to school. Three things could go wrong: a storm, a dog running after you, a distracted driver.",
+            "Nothing has happened yet. But each one could damage your bike or hurt you.",
+            "In security, a possible negative event is called a threat."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The storm and the driver",
+          "comme": "The storm is an event: nobody decides it. The driver is a person: he can drive into you on purpose or by distraction.",
+          "enVrai": "A threat is a possible negative event. The threat actor is the person or entity behind it: a hacker who targets you on purpose, or a distracted employee who makes a mistake. Where the picture stops: a fire is a threat, but it has no actor."
+        },
+        {
+          "type": "predire",
+          "question": "An employee clicks a trick link by mistake and infects the network. Is he a threat actor?",
+          "options": [
+            "No, because he did not want to do any harm",
+            "Yes, even if it was an accident",
+            "Yes, but only if a hacker paid him"
+          ],
+          "answer": "Yes, even if it was an accident",
+          "explanation": "The manual says “intentionally or accidentally”: no intention is needed. The first answer is tempting, because we link threats with bad people."
+        },
+        {
+          "type": "exemple",
+          "titre": "Three threats in a school",
+          "texte": "A curious student tries to guess a teacher's password. Ransomware locks the school's files. A fire reaches the server room. These are three threats: a person acting on purpose, a program launched by a hacker, an accidental event."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-risq-menace-def1",
+          "question": "Official definition: “threat”",
+          "answer": "A threat is a negative event that can lead to an undesired outcome, such as damage to, or loss of, an asset.",
+          "explanation": "An event, not a weakness: the storm, the fire, the attack.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Threats”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-menace-def2",
+          "question": "A threat is a [[negative]] event that can lead to an [[undesired]] outcome, such as damage to, or loss of, an asset.",
+          "answer": "A threat is a negative event that can lead to an undesired outcome, such as damage to, or loss of, an asset.",
+          "explanation": "A negative event, which leads to a result that nobody wants."
+        },
+        {
+          "id": "d1-risq-menace-def3",
+          "question": "A threat is [[a negative event]] that can lead to [[an undesired outcome]], such as [[damage to, or loss of]], an asset.",
+          "answer": "A threat is a negative event that can lead to an undesired outcome, such as damage to, or loss of, an asset.",
+          "explanation": "The event, the unwanted result, and the two possible harms: damage or loss."
+        },
+        {
+          "id": "d1-risq-menace-def4",
+          "question": "Write the official definition of “threat” from memory.",
+          "answer": "A threat is a negative event that can lead to an undesired outcome, such as damage to, or loss of, an asset.",
+          "explanation": "Think of the storm: a negative event that can damage your bike or make you lose it."
+        },
+        {
+          "id": "d1-risq-menace-acteur-def1",
+          "question": "Official definition: “threat actor”",
+          "answer": "A threat is posed by a threat actor, which is a person or entity that is capable of intentionally or accidentally compromising an asset's security.",
+          "explanation": "A person or an entity, who acts on purpose or by mistake: both count.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Threats”. An entity can be a company or a group."
+        },
+        {
+          "id": "d1-risq-menace-acteur-def2",
+          "question": "A threat is posed by a threat actor, which is a [[person]] or entity that is capable of [[intentionally]] or accidentally compromising an asset's security.",
+          "answer": "A threat is posed by a threat actor, which is a person or entity that is capable of intentionally or accidentally compromising an asset's security.",
+          "explanation": "A person, and an action that is deliberate or not."
+        },
+        {
+          "id": "d1-risq-menace-acteur-def3",
+          "question": "A threat is posed by [[a threat actor]], which is [[a person or entity]] that is capable of [[intentionally or accidentally]] compromising an asset's security.",
+          "answer": "A threat is posed by a threat actor, which is a person or entity that is capable of intentionally or accidentally compromising an asset's security.",
+          "explanation": "Who the actor is, who can be one, and how he acts."
+        },
+        {
+          "id": "d1-risq-menace-acteur-def4",
+          "question": "Write the official definition of “threat actor” from memory.",
+          "answer": "A threat is posed by a threat actor, which is a person or entity that is capable of intentionally or accidentally compromising an asset's security.",
+          "explanation": "Remember the pair “intentionally or accidentally”: on purpose or by mistake."
+        },
+        {
+          "id": "d1-risq-menace-pros-def1",
+          "question": "Official definition: threats as seen by security professionals",
+          "answer": "As security professionals, threats are the people and events that we work to protect our information and systems from.",
+          "explanation": "The word is wide: it covers people AND events.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Threats”. That is why the manual also calls a hacker or an unhappy employee a threat."
+        },
+        {
+          "id": "d1-risq-menace-pros-def3",
+          "question": "As security professionals, threats are [[the people and events]] that we [[work to protect]] our [[information and systems]] from.",
+          "answer": "As security professionals, threats are the people and events that we work to protect our information and systems from.",
+          "explanation": "The people and events, what we protect, and what we protect it from."
+        },
+        {
+          "id": "d1-risq-menace-1",
+          "question": "A storm cuts the power to the server. Is it a threat or a threat actor?",
+          "options": [
+            "A threat",
+            "A threat actor"
+          ],
+          "answer": "A threat",
+          "explanation": "The storm is a negative event. A threat actor is always a person or an entity."
+        },
+        {
+          "id": "d1-risq-menace-2",
+          "question": "Which box does each item go in?",
+          "answer": "Threat (the event): files locked by ransomware, the fire, stolen data. Threat actor: a hacker, an unhappy employee, a distracted employee.",
+          "explanation": "The event is what happens. The actor is the person or entity behind it.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Threat (the event)",
+              "Threat actor (who is behind it)"
+            ],
+            "items": [
+              {
+                "text": "Files are locked by ransomware",
+                "category": "Threat (the event)"
+              },
+              {
+                "text": "A fire destroys the server room",
+                "category": "Threat (the event)"
+              },
+              {
+                "text": "Customer data is stolen",
+                "category": "Threat (the event)"
+              },
+              {
+                "text": "A hacker",
+                "category": "Threat actor (who is behind it)"
+              },
+              {
+                "text": "An unhappy employee",
+                "category": "Threat actor (who is behind it)"
+              },
+              {
+                "text": "A distracted employee",
+                "category": "Threat actor (who is behind it)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-menace-3",
+          "question": "An unhappy employee wants to steal the customer list to sell it. What does he represent?",
+          "options": [
+            "An asset to protect",
+            "A threat actor",
+            "A natural event",
+            "A protection tool"
+          ],
+          "options_why": [
+            "An asset is what has value and what we protect. Here, the asset is the customer list.",
+            "",
+            "A natural event is a disaster like a storm, with nobody behind it.",
+            "A protection tool is used to defend. Here, the person attacks."
+          ],
+          "answer": "A threat actor",
+          "explanation": "He is a person able to compromise the security of an asset, here on purpose."
+        },
+        {
+          "id": "d1-risq-menace-4",
+          "question": "Give three examples of threats, taken from the manual.",
+          "answer": "A hacker who wants to lock your data to ask for a ransom. An unhappy employee who wants to steal or sell information. A fire or a natural disaster that destroys the data center.",
+          "explanation": "A criminal attack, an inside wrongdoing, a natural event: three different origins.",
+          "explanation_more": "Source: (ISC)2 manual, Domain 1, section “Threats”. A data center is a big room full of servers."
+        },
+        {
+          "id": "d1-risq-menace-5",
+          "question": "Why is a breakdown caused by a storm a threat, even with nobody behind it?",
+          "answer": "Because a threat is a negative event that can damage an asset or make you lose it. Whether there is an intention or not does not change the damage.",
+          "explanation": "For the server, a breakdown caused by a storm does as much harm as an attack."
+        },
+        {
+          "id": "d1-risq-menace-6",
+          "question": "An employee sends a secret file to the wrong customer by mistake. Can we call her a threat actor?",
+          "options": [
+            "No, because she had no intention to harm",
+            "Yes, she compromised security without wanting to",
+            "No, only hackers are threat actors",
+            "Yes, but only if she is paid to do it"
+          ],
+          "options_why": [
+            "The manual says “intentionally or accidentally”: no intention is needed.",
+            "",
+            "A threat actor can be any person or entity, not only a hacker.",
+            "No payment is needed: the mistake is enough."
+          ],
+          "answer": "Yes, she compromised security without wanting to",
+          "explanation": "A person who compromises the security of an asset by accident is still a threat actor."
+        },
+        {
+          "id": "d1-risq-menace-7",
+          "question": "A threat actor can act [[intentionally|on purpose|deliberately]] or [[accidentally|by mistake|by accident]].",
+          "answer": "A threat actor can act intentionally or accidentally.",
+          "explanation": "Both cases count: a hacker acts on purpose, a distracted employee makes a mistake."
+        },
+        {
+          "id": "d1-risq-menace-8",
+          "question": "What if we think threats only come from hackers?",
+          "answer": "We forget employee mistakes and natural disasters, which also cause losses. We must think about people AND events.",
+          "explanation": "A server drowned by a flood is lost, with or without a hacker."
+        }
+      ]
+    },
+    {
+      "id": "d1-risq-vuln",
+      "name": "Vulnerabilities",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The rusty padlock",
+          "paragraphes": [
+            "Your bike is locked with an old rusty padlock. It still holds, but a thief would only need one small knock.",
+            "In your school locker, the door closes badly. On your phone, the code is 1234. Each time, there is a weak point.",
+            "In security, this weak point is called a vulnerability."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The weak link in the chain",
+          "comme": "A bike chain always breaks at its weakest link, never at the strongest.",
+          "enVrai": "A vulnerability is a weakness in a system: a program, a password, a rule, a building. Someone can take advantage of it to attack an asset: we say they exploit it. Where the picture stops: a vulnerability does nothing alone, it waits for a threat to come by."
+        },
+        {
+          "type": "predire",
+          "question": "A program has not been updated for three years. Nobody has attacked it. Does it have a vulnerability?",
+          "options": [
+            "No, as long as nobody attacks it",
+            "Yes, the weakness exists even without an attack",
+            "Only after a first attack"
+          ],
+          "answer": "Yes, the weakness exists even without an attack",
+          "explanation": "A vulnerability is a weakness, not an event. It is there before the attack. The first answer is tempting, because we wait to see damage."
+        },
+        {
+          "type": "exemple",
+          "titre": "Three classic vulnerabilities",
+          "texte": "A program that was never updated has flaws known to everyone. A password like “azerty” can be guessed in a few seconds. A fire system that does not start lets the fire spread. Each time, it is a weak point, not an event."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-risq-vuln-def1",
+          "question": "Official definition: “vulnerability”",
+          "answer": "A vulnerability is a weakness or gap that exists within a system that may be exploited (by a threat actor) to compromise an asset's security or trigger a risk event.",
+          "explanation": "A weakness in the system, which someone can exploit.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Vulnerabilities”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-vuln-def2",
+          "question": "A vulnerability is a [[weakness]] or gap that exists within a system that may be [[exploited]] (by a threat actor) to compromise an asset's security or trigger a risk event.",
+          "answer": "A vulnerability is a weakness or gap that exists within a system that may be exploited (by a threat actor) to compromise an asset's security or trigger a risk event.",
+          "explanation": "A weakness, and the key verb: exploit."
+        },
+        {
+          "id": "d1-risq-vuln-def3",
+          "question": "A vulnerability is [[a weakness or gap]] that exists within a system that may be exploited (by a threat actor) to [[compromise an asset's security]] or [[trigger a risk event]].",
+          "answer": "A vulnerability is a weakness or gap that exists within a system that may be exploited (by a threat actor) to compromise an asset's security or trigger a risk event.",
+          "explanation": "The weakness, what it lets someone compromise, and the risk event it can trigger."
+        },
+        {
+          "id": "d1-risq-vuln-def4",
+          "question": "Write the official definition of “vulnerability” from memory.",
+          "answer": "A vulnerability is a weakness or gap that exists within a system that may be exploited (by a threat actor) to compromise an asset's security or trigger a risk event.",
+          "explanation": "Think of the weak link in the chain, then of the verb “exploited”."
+        },
+        {
+          "id": "d1-risq-vuln-fortify-def1",
+          "question": "Official definition: what professionals do with “vulnerabilities”",
+          "answer": "Vulnerabilities are the things within our systems that we try to fortify and improve.",
+          "explanation": "We do not just suffer them: we strengthen them, like repairing the weak link.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Vulnerabilities”."
+        },
+        {
+          "id": "d1-risq-vuln-fortify-def3",
+          "question": "Vulnerabilities are [[the things within our systems]] that we [[try to fortify]] and [[improve]].",
+          "answer": "Vulnerabilities are the things within our systems that we try to fortify and improve.",
+          "explanation": "They are in our systems, and we try to strengthen and improve them."
+        },
+        {
+          "id": "d1-risq-vuln-1",
+          "question": "A password “1234”: is it a threat or a vulnerability?",
+          "options": [
+            "A threat",
+            "A vulnerability"
+          ],
+          "answer": "A vulnerability",
+          "explanation": "It is a weakness of the system, not an event. The hacker who guesses it would be the threat."
+        },
+        {
+          "id": "d1-risq-vuln-2",
+          "question": "Which box does each item go in?",
+          "answer": "Vulnerability: the program never updated, the password that is too simple, the broken fire system. Threat: the ransomware, the fire, the unhappy employee who wants to steal.",
+          "explanation": "A vulnerability is a weak point that already exists. A threat is what can happen or who can act.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Vulnerability (weak point)",
+              "Threat (event or actor)"
+            ],
+            "items": [
+              {
+                "text": "A program that was never updated",
+                "category": "Vulnerability (weak point)"
+              },
+              {
+                "text": "A password that is too simple",
+                "category": "Vulnerability (weak point)"
+              },
+              {
+                "text": "A fire system that is broken",
+                "category": "Vulnerability (weak point)"
+              },
+              {
+                "text": "Ransomware that locks the files",
+                "category": "Threat (event or actor)"
+              },
+              {
+                "text": "A fire in the server room",
+                "category": "Threat (event or actor)"
+              },
+              {
+                "text": "An unhappy employee who wants to steal data",
+                "category": "Threat (event or actor)"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-vuln-3",
+          "question": "A school writes the wifi password on a board that can be seen from the street. What is the vulnerability?",
+          "options": [
+            "The curious passer-by",
+            "The wifi itself",
+            "The password that is visible from outside",
+            "The connected students"
+          ],
+          "options_why": [
+            "A passer-by who could use the password is the threat, not the weakness.",
+            "The wifi is an asset: it has value and we protect it.",
+            "",
+            "The students are assets: people to protect."
+          ],
+          "answer": "The password that is visible from outside",
+          "explanation": "It is the weak point of the system: someone can take advantage of it to get onto the network."
+        },
+        {
+          "id": "d1-risq-vuln-4",
+          "question": "Give three examples of vulnerabilities, taken from the manual.",
+          "answer": "Unpatched software (programs that are not updated), weak access protections like weak passwords, and faulty fire systems.",
+          "explanation": "A program, an access, a physical device: a weakness can hide anywhere.",
+          "explanation_more": "Source: (ISC)2 manual, Domain 1, section “Vulnerabilities”."
+        },
+        {
+          "id": "d1-risq-vuln-5",
+          "question": "Why is a vulnerability not dangerous on its own?",
+          "answer": "Because a threat is needed to take advantage of it. Without someone or something to exploit it, the weakness stays a simple flaw.",
+          "explanation": "A rusty padlock does nothing as long as nobody comes by."
+        },
+        {
+          "id": "d1-risq-vuln-6",
+          "question": "A threat can [[exploit]] a vulnerability to attack an [[asset]].",
+          "answer": "A threat can exploit a vulnerability to attack an asset.",
+          "explanation": "The threat acts, the vulnerability opens the door, the asset is hit."
+        },
+        {
+          "id": "d1-risq-vuln-7",
+          "question": "What if you repair a vulnerability, but the threat still exists?",
+          "answer": "The threat stays, but it no longer has this way in. It cannot take advantage of this weakness anymore.",
+          "explanation": "This is why we repair vulnerabilities: we remove one way in."
+        },
+        {
+          "id": "d1-risq-vuln-8",
+          "question": "At school, your friend has a locker. Find an asset, a threat and a vulnerability around this locker.",
+          "answer": "Asset: his things in the locker. Threat: a classmate who might want to take them. Vulnerability: the locker door that closes badly.",
+          "explanation": "The three words describe three different things: what we protect, who can act, and what is weak."
+        }
+      ]
+    },
+    {
+      "id": "d1-risq-risque",
+      "name": "Risk",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Crossing the street",
+          "paragraphes": [
+            "You want to cross a street. If there are no cars, you have nothing to fear. If the light is green for you, it is almost safe.",
+            "Danger appears when everything comes together: you in the middle of the road, a car coming, and a light that does not work.",
+            "This crossing of three elements is called a risk."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Three threads that cross",
+          "comme": "Imagine three threads that cross: you crossing, the car driving, the broken light. Remove just one thread, and the dangerous crossing disappears.",
+          "enVrai": "You are the asset. The car is the threat. The broken light is the vulnerability. The risk is the crossing of the three: the possible damage. Where the picture stops: a company has dozens of crossings at the same time."
+        },
+        {
+          "type": "predire",
+          "question": "You repair the broken light. What happens to the risk?",
+          "options": [
+            "It disappears completely",
+            "It goes down, but a little can remain",
+            "It goes up"
+          ],
+          "answer": "It goes down, but a little can remain",
+          "explanation": "Cars still drive: the threat stays, and other weaknesses may exist. But without the broken light, the dangerous crossing becomes less likely."
+        },
+        {
+          "type": "analogie",
+          "titre": "Before and after the helmet",
+          "comme": "Without a helmet, a fall can hurt a lot. With a helmet, a small danger remains: a strong hit can still hurt.",
+          "enVrai": "A protection you put in place is called a control. The risk before any control is the inherent risk. The risk that remains after the controls is the residual risk."
+        },
+        {
+          "type": "exemple",
+          "titre": "The risk of a game store",
+          "texte": "Asset: $40,000 of consoles in stock. Threat: a burglar. Vulnerability: the back door has a broken lock. The risk: the burglar comes in through the broken door and steals the stock. All three elements are needed. If the door is repaired, the risk goes down a lot."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-risq-risque-def1",
+          "question": "Official definition: “risk”",
+          "answer": "In security, a risk is the potential for negative impact on the organization, its goals or objectives, or its assets (including people, systems, and data) due to a threat exploiting a vulnerability.",
+          "explanation": "The three elements are in the sentence: the asset that is hit, the threat and the vulnerability.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Identify Threats and Vulnerabilities”. The manual says there are dozens of definitions depending on the field."
+        },
+        {
+          "id": "d1-risq-risque-def2",
+          "question": "In security, a risk is the [[potential]] for negative impact on the organization, its goals or objectives, or its assets (including people, systems, and data) due to a threat [[exploiting]] a vulnerability.",
+          "answer": "In security, a risk is the potential for negative impact on the organization, its goals or objectives, or its assets (including people, systems, and data) due to a threat exploiting a vulnerability.",
+          "explanation": "A risk is a potential, not damage that has already happened. The threat must exploit the vulnerability."
+        },
+        {
+          "id": "d1-risq-risque-def3",
+          "question": "In security, a risk is [[the potential for negative impact]] on the organization, its goals or objectives, or its assets (including people, systems, and data) due to [[a threat exploiting]] [[a vulnerability]].",
+          "answer": "In security, a risk is the potential for negative impact on the organization, its goals or objectives, or its assets (including people, systems, and data) due to a threat exploiting a vulnerability.",
+          "explanation": "The possible negative impact, then the cause: a threat that exploits a vulnerability."
+        },
+        {
+          "id": "d1-risq-risque-def4",
+          "question": "Write the official definition of “risk” from memory.",
+          "answer": "In security, a risk is the potential for negative impact on the organization, its goals or objectives, or its assets (including people, systems, and data) due to a threat exploiting a vulnerability.",
+          "explanation": "Follow the thread: the potential for impact, what is hit, then the cause “due to…”."
+        },
+        {
+          "id": "d1-risq-risque-inherent-def1",
+          "question": "Official definition: “inherent risk” and “residual risk”",
+          "answer": "Simply put, inherent risk is the risk present before any controls are applied, while residual risk is the level of risk that remains after controls are in place.",
+          "explanation": "Before the helmet: inherent. After the helmet: residual.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Identify Threats and Vulnerabilities” (“Note” box). Know it word for word."
+        },
+        {
+          "id": "d1-risq-risque-inherent-def2",
+          "question": "Simply put, inherent risk is the risk present [[before]] any controls are applied, while residual risk is the level of risk that remains [[after]] controls are in place.",
+          "answer": "Simply put, inherent risk is the risk present before any controls are applied, while residual risk is the level of risk that remains after controls are in place.",
+          "explanation": "Two words not to swap: before (inherent) and after (residual)."
+        },
+        {
+          "id": "d1-risq-risque-inherent-def3",
+          "question": "Simply put, inherent risk is the risk present [[before any controls]] are applied, while residual risk is [[the level of risk]] that remains [[after controls are in place]].",
+          "answer": "Simply put, inherent risk is the risk present before any controls are applied, while residual risk is the level of risk that remains after controls are in place.",
+          "explanation": "The moment before the controls, the level of risk, and the moment after the controls."
+        },
+        {
+          "id": "d1-risq-risque-inherent-def4",
+          "question": "Write the official definition of “inherent risk” and “residual risk” from memory.",
+          "answer": "Simply put, inherent risk is the risk present before any controls are applied, while residual risk is the level of risk that remains after controls are in place.",
+          "explanation": "Inherent = before the controls. Residual = what remains after."
+        },
+        {
+          "id": "d1-risq-risque-1",
+          "question": "“A burglar could come in through the broken door and steal the stock.” Is this a threat or a risk?",
+          "options": [
+            "A threat",
+            "A risk"
+          ],
+          "answer": "A risk",
+          "explanation": "The sentence links the three elements: the burglar, the broken door and the stock. When you see the crossing, it is a risk."
+        },
+        {
+          "id": "d1-risq-risque-2",
+          "question": "Which box does each sentence go in?",
+          "answer": "Asset: the consoles and the sellers. Threat: a burglar, a fire. Vulnerability: the broken lock, the alarm never tested. Risk: the two sentences that link a threat, a weakness and an asset.",
+          "explanation": "The asset is protected, the threat acts, the vulnerability is weak. The risk links the three in one sentence.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Asset",
+              "Threat",
+              "Vulnerability",
+              "Risk"
+            ],
+            "items": [
+              {
+                "text": "The consoles in stock",
+                "category": "Asset"
+              },
+              {
+                "text": "The store's sellers",
+                "category": "Asset"
+              },
+              {
+                "text": "A burglar",
+                "category": "Threat"
+              },
+              {
+                "text": "A fire",
+                "category": "Threat"
+              },
+              {
+                "text": "A broken lock",
+                "category": "Vulnerability"
+              },
+              {
+                "text": "An alarm that was never tested",
+                "category": "Vulnerability"
+              },
+              {
+                "text": "A burglar can come in through the broken lock and steal the stock",
+                "category": "Risk"
+              },
+              {
+                "text": "A fire can destroy the stock, because the alarm does not work",
+                "category": "Risk"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-risque-3",
+          "question": "According to the manual, risk is found where which elements cross?",
+          "options": [
+            "Threat, vulnerability and asset",
+            "Threat, control and cost",
+            "Asset, impact and budget",
+            "Vulnerability, hacker and law"
+          ],
+          "options_why": [
+            "",
+            "The control and the cost come later, when we deal with the risk.",
+            "Impact and budget are used to measure and decide, not to define risk.",
+            "A hacker is one threat among others, and the law is not one of the three elements."
+          ],
+          "answer": "Threat, vulnerability and asset",
+          "explanation": "Without one of the three, the crossing does not exist: this is the picture of risk in the manual."
+        },
+        {
+          "id": "d1-risq-risque-4",
+          "question": "Why does an asset exposed to a threat, but with no vulnerability at all, create almost no risk?",
+          "answer": "Because risk comes from the crossing of the three elements. If there is no weakness to exploit, the threat has no hold on the asset.",
+          "explanation": "Remove one thread of the crossing, and there is no dangerous point anymore."
+        },
+        {
+          "id": "d1-risq-risque-5",
+          "question": "A company estimates its risk of data theft at $100,000 with no protection, then at $10,000 after putting controls in place. What do the $10,000 represent?",
+          "options": [
+            "The cost of the controls",
+            "The inherent risk",
+            "The residual risk",
+            "The value of the asset"
+          ],
+          "options_why": [
+            "The cost of a control is what it costs to buy. Here, we are talking about the risk that remains.",
+            "The inherent risk is the one from before the controls, so the $100,000.",
+            "",
+            "The value of the asset is what it is worth, not the possible loss that remains."
+          ],
+          "answer": "The residual risk",
+          "explanation": "It is the level of risk that remains after the controls.",
+          "explanation_more": "Numbers made up for the example (outside the manual)."
+        },
+        {
+          "id": "d1-risq-risque-6",
+          "question": "The risk that remains after putting on a helmet: is it inherent or residual?",
+          "options": [
+            "Inherent",
+            "Residual"
+          ],
+          "answer": "Residual",
+          "explanation": "The helmet is a control. What remains after it is the residual risk."
+        },
+        {
+          "id": "d1-risq-risque-7",
+          "question": "Using the game store example, write the risk in one sentence with the asset, the threat and the vulnerability.",
+          "answer": "A burglar (threat) can come in through the broken lock (vulnerability) and steal the consoles in stock (asset).",
+          "explanation": "A good risk contains all three elements: who, through which weakness, and what."
+        },
+        {
+          "id": "d1-risq-risque-8",
+          "question": "What if we think a control brings the risk down to zero?",
+          "answer": "We are mistaken: there is always some residual risk left. A helmet protects, but it does not make you unbeatable.",
+          "explanation": "A control reduces the risk, it almost never removes it completely."
+        }
+      ]
+    },
+    {
+      "id": "d1-risq-eval",
+      "name": "Risk assessment",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Before crossing",
+          "paragraphes": [
+            "At the side of a road, you do a series of things without thinking. You look at what could happen to you.",
+            "You judge if a car is coming fast and if the hit would hurt. You compare with the danger you accept. Then you decide.",
+            "Professionals do the same, but in writing and in the right order. This is called a risk assessment."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The four moves of the pedestrian",
+          "comme": "You look around. You estimate the danger. You ask yourself if you accept it. Then you act.",
+          "enVrai": "These are the four steps: risk identification, risk analysis, risk evaluation, risk treatment. The impact is how serious the damage is. The likelihood is the chance that it happens. The risk tolerance is the danger that an organization accepts."
+        },
+        {
+          "type": "predire",
+          "question": "What do we do first in a risk assessment?",
+          "options": [
+            "We choose a protection",
+            "We list the assets and their value",
+            "We calculate how much we lost"
+          ],
+          "answer": "We list the assets and their value",
+          "explanation": "We cannot choose a protection without knowing what we protect. Choosing first is tempting, because we want to act fast."
+        },
+        {
+          "type": "exemple",
+          "titre": "A school takes stock",
+          "texte": "Identification: the school lists its assets, like the grades server and the computers, and their weak points. Analysis: it estimates the likelihood of an attack and how serious the damage would be. Evaluation: it compares with the risk it accepts. Treatment: it decides what to do for each risk."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-risq-eval-def1",
+          "question": "Official definition: “risk assessment”",
+          "answer": "A risk assessment is the set of activities that involve identifying the threats and vulnerabilities that exist and determining the impact and likelihood of those threats exploiting the identified vulnerabilities.",
+          "explanation": "Two moves: identify the threats and vulnerabilities, then measure impact and likelihood.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Risk Assessment”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-eval-def2",
+          "question": "A risk assessment is the set of activities that involve [[identifying]] the threats and vulnerabilities that exist and [[determining]] the impact and likelihood of those threats exploiting the identified vulnerabilities.",
+          "answer": "A risk assessment is the set of activities that involve identifying the threats and vulnerabilities that exist and determining the impact and likelihood of those threats exploiting the identified vulnerabilities.",
+          "explanation": "One verb to search (identifying), one verb to measure (determining)."
+        },
+        {
+          "id": "d1-risq-eval-def3",
+          "question": "A risk assessment is [[the set of activities]] that involve [[identifying the threats and vulnerabilities]] that exist and determining [[the impact and likelihood]] of those threats exploiting the identified vulnerabilities.",
+          "answer": "A risk assessment is the set of activities that involve identifying the threats and vulnerabilities that exist and determining the impact and likelihood of those threats exploiting the identified vulnerabilities.",
+          "explanation": "A set of activities: look for the threats and weaknesses, then measure impact and likelihood."
+        },
+        {
+          "id": "d1-risq-eval-def4",
+          "question": "Write the official definition of “risk assessment” from memory.",
+          "answer": "A risk assessment is the set of activities that involve identifying the threats and vulnerabilities that exist and determining the impact and likelihood of those threats exploiting the identified vulnerabilities.",
+          "explanation": "Spot the two verbs: identifying, then determining."
+        },
+        {
+          "id": "d1-risq-eval-ident-def1",
+          "question": "Official definition: “risk identification phase”",
+          "answer": "During the risk identification phase, you find the systems, applications, and information that need protecting and then identify and describe the vulnerabilities and threats that pose a risk to each of those assets.",
+          "explanation": "First what we protect, then what can hit it.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Risk Identification”."
+        },
+        {
+          "id": "d1-risq-eval-ident-def3",
+          "question": "During the risk identification phase, you [[find the systems]], applications, and information that need protecting and then [[identify and describe]] the vulnerabilities and threats that [[pose a risk]] to each of those assets.",
+          "answer": "During the risk identification phase, you find the systems, applications, and information that need protecting and then identify and describe the vulnerabilities and threats that pose a risk to each of those assets.",
+          "explanation": "Find the assets, describe weaknesses and threats, and see the risk they create."
+        },
+        {
+          "id": "d1-risq-eval-evalu-def1",
+          "question": "Official definition: “risk evaluation”",
+          "answer": "During risk evaluation, you compare the results of your risk analysis to your organization's established risk profile or risk tolerance (i.e., how much risk your organization is willing to take on).",
+          "explanation": "We compare the result of the analysis with what the organization accepts to risk.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Risk Evaluation”. The risk profile describes the level of risk chosen by the organization."
+        },
+        {
+          "id": "d1-risq-eval-evalu-def3",
+          "question": "During risk evaluation, you [[compare the results]] of your risk analysis to your organization's established [[risk profile]] or [[risk tolerance]] (i.e., how much risk your organization is willing to take on).",
+          "answer": "During risk evaluation, you compare the results of your risk analysis to your organization's established risk profile or risk tolerance (i.e., how much risk your organization is willing to take on).",
+          "explanation": "Compare, with the risk profile or the risk tolerance."
+        },
+        {
+          "id": "d1-risq-eval-1",
+          "question": "Put the four steps of the risk assessment in order.",
+          "answer": "Risk identification, risk analysis, risk evaluation, risk treatment.",
+          "explanation": "We find, we measure, we compare, then we act.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Risk identification",
+              "Risk analysis",
+              "Risk evaluation",
+              "Risk treatment"
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-eval-2",
+          "question": "Which step compares the results of the analysis with the organization's risk tolerance?",
+          "options": [
+            "Risk identification",
+            "Risk analysis",
+            "Risk evaluation",
+            "Risk treatment"
+          ],
+          "options_why": [
+            "Identification is used to find the assets, the threats and the weaknesses.",
+            "Analysis is used to measure the likelihood and the impact.",
+            "",
+            "Treatment comes after: it decides what to do with each risk."
+          ],
+          "answer": "Risk evaluation",
+          "explanation": "Comparing with what the organization accepts to risk is the evaluation."
+        },
+        {
+          "id": "d1-risq-eval-3",
+          "question": "Listing the assets and their weak points: is it identification or analysis?",
+          "options": [
+            "Identification",
+            "Analysis"
+          ],
+          "answer": "Identification",
+          "explanation": "Identification finds what exists. Analysis then estimates the likelihood and the impact."
+        },
+        {
+          "id": "d1-risq-eval-4",
+          "question": "What is risk tolerance?",
+          "answer": "The amount of risk that an organization accepts to take on.",
+          "explanation": "Like the pedestrian who crosses a quiet street without hesitating, but not a highway."
+        },
+        {
+          "id": "d1-risq-eval-5",
+          "question": "A manager says: “This breakdown has a one in ten chance of happening and would cost $5,000.” Which step is he at?",
+          "options": [
+            "Identification",
+            "Analysis",
+            "Evaluation",
+            "Treatment"
+          ],
+          "options_why": [
+            "Identification gives no numbers: it finds the assets and the weaknesses.",
+            "",
+            "Evaluation compares with the organization's tolerance. Here, we are still measuring.",
+            "Treatment chooses an action. Here, nobody has decided yet."
+          ],
+          "answer": "Analysis",
+          "explanation": "One chance in ten is the likelihood. $5,000 is the impact. Measuring both is the analysis."
+        },
+        {
+          "id": "d1-risq-eval-6",
+          "question": "Why do we list the assets before looking for the threats?",
+          "answer": "Because a threat only matters if it aims at something valuable. Without the list, we do not know what deserves to be protected.",
+          "explanation": "A threat with no asset to hit makes nobody lose anything."
+        },
+        {
+          "id": "d1-risq-eval-7",
+          "question": "What if a company skips the evaluation and goes straight to treatment?",
+          "answer": "It may spend money on small risks and forget the serious ones, because it does not know which risk it accepts.",
+          "explanation": "Without comparing with the tolerance, we do not know which risk to treat first."
+        },
+        {
+          "id": "d1-risq-eval-8",
+          "question": "A school has three servers. Describe in four sentences the four steps of its risk assessment.",
+          "answer": "Identification: list the servers and their weak points. Analysis: estimate the likelihood and the impact. Evaluation: compare with what the school accepts. Treatment: choose what to do.",
+          "explanation": "One verb per step: find, measure, compare, act."
+        },
+        {
+          "id": "d1-risq-eval-9",
+          "question": "Does a small business always have to follow the full cycle of four steps?",
+          "answer": "Not necessarily. The manual says small and medium businesses can start with the first risk identified and manage it.",
+          "explanation": "A first risk managed is better than a perfect cycle never started.",
+          "explanation_more": "Source: (ISC)2 manual, Domain 1, “Note” box after figure 1.6. The NIST CSF and other modern frameworks recognize this need for small and medium businesses (SMBs)."
+        }
+      ]
+    },
+    {
+      "id": "d1-risq-analyse",
+      "name": "Risk analysis",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Two streets, two dangers",
+          "paragraphes": [
+            "Street A: quiet, one car every ten minutes, at 20 km/h. Street B: a big road with trucks at 80 km/h.",
+            "In street A, an accident is rare and not very serious. In street B, it is frequent and very serious.",
+            "To judge a danger, we ask two questions: is it likely, and would it be serious? Professionals talk about likelihood and impact."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The weather and the storm",
+          "comme": "A forecast says: 80% chance of rain. That is the likelihood. Then we add: light rain or violent storm. That is the seriousness.",
+          "enVrai": "The likelihood says whether the event is going to happen. The impact says how disastrous it would be. Where the picture stops: the weather does not depend on you, while your protections can change the likelihood or the impact."
+        },
+        {
+          "type": "predire",
+          "question": "A company tests its fire systems every month. What happens to the likelihood that a fire destroys everything?",
+          "options": [
+            "It goes down",
+            "It goes up",
+            "It does not change: a fire is still a fire"
+          ],
+          "answer": "It goes down",
+          "explanation": "Systems that are tested regularly put out fires better: there is less chance that the fire destroys everything. The third answer is tempting, because the event is the same."
+        },
+        {
+          "type": "exemple",
+          "titre": "How much is an asset worth?",
+          "texte": "A server costs $12,000: its value can be counted, we say quantitative. The secret file of a recipe has no purchase price, but it matters a lot to the restaurant: its value is judged, we say qualitative. In both cases, the bigger the value, the bigger the impact."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-risq-analyse-def1",
+          "question": "Official definition: “likelihood” and “impact”",
+          "answer": "Likelihood describes the probability that an event will occur, and impact defines how disastrous the event would be if it were to happen.",
+          "explanation": "Likelihood = is it probable? Impact = is it serious?",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Risk Analysis”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-analyse-def2",
+          "question": "Likelihood describes the [[probability]] that an event will occur, and impact defines how [[disastrous]] the event would be if it were to happen.",
+          "answer": "Likelihood describes the probability that an event will occur, and impact defines how disastrous the event would be if it were to happen.",
+          "explanation": "Probability for the chance, “disastrous” for the seriousness."
+        },
+        {
+          "id": "d1-risq-analyse-def3",
+          "question": "Likelihood describes [[the probability]] that an event will occur, and impact defines [[how disastrous]] the event would be [[if it were to happen]].",
+          "answer": "Likelihood describes the probability that an event will occur, and impact defines how disastrous the event would be if it were to happen.",
+          "explanation": "The chance that it happens, the seriousness, and the condition: if it happened."
+        },
+        {
+          "id": "d1-risq-analyse-def4",
+          "question": "Write the official definition of “likelihood” and “impact” from memory.",
+          "answer": "Likelihood describes the probability that an event will occur, and impact defines how disastrous the event would be if it were to happen.",
+          "explanation": "Two halves of the sentence: the first for likelihood, the second for impact."
+        },
+        {
+          "id": "d1-risq-analyse-etape-def1",
+          "question": "Official definition: the risk analysis step",
+          "answer": "This stage of risk assessment is focused on evaluating the likelihood of identified threats exploiting weaknesses (i.e., vulnerabilities) in your environment and determining the impact to your assets if that happens.",
+          "explanation": "The analysis answers two questions: is it likely, and would it be serious?",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Risk Analysis”."
+        },
+        {
+          "id": "d1-risq-analyse-etape-def3",
+          "question": "This stage of risk assessment is focused on [[evaluating the likelihood]] of identified threats exploiting weaknesses (i.e., vulnerabilities) in your environment and [[determining the impact]] to your assets [[if that happens]].",
+          "answer": "This stage of risk assessment is focused on evaluating the likelihood of identified threats exploiting weaknesses (i.e., vulnerabilities) in your environment and determining the impact to your assets if that happens.",
+          "explanation": "Evaluate the likelihood, determine the impact, and the case where it happens."
+        },
+        {
+          "id": "d1-risq-analyse-prob-def1",
+          "question": "Official definition: how “likelihood” is identified",
+          "answer": "Likelihood can be identified by evaluating each threat and assessing the probability that the threats might actually exploit a vulnerability, or weakness.",
+          "explanation": "We look at each threat, and we ask if it can really take advantage of a weakness.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Risk Analysis”."
+        },
+        {
+          "id": "d1-risq-analyse-prob-def3",
+          "question": "Likelihood can be identified by [[evaluating each threat]] and [[assessing the probability]] that the threats might actually [[exploit a vulnerability]], or weakness.",
+          "answer": "Likelihood can be identified by evaluating each threat and assessing the probability that the threats might actually exploit a vulnerability, or weakness.",
+          "explanation": "Evaluate each threat, estimate the chance, and the way: exploit a weakness."
+        },
+        {
+          "id": "d1-risq-analyse-impact-def1",
+          "question": "Official definition: how “impact” is identified",
+          "answer": "Impact can be identified by establishing the value associated with each potentially affected asset and determining how that value will be destroyed or otherwise affected by an adverse event.",
+          "explanation": "To measure the impact, we start from the value of the asset that is hit.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Risk Analysis”."
+        },
+        {
+          "id": "d1-risq-analyse-impact-def3",
+          "question": "Impact can be identified by [[establishing the value]] associated with each potentially affected asset and [[determining how that value]] will be [[destroyed or otherwise affected]] by an adverse event.",
+          "answer": "Impact can be identified by establishing the value associated with each potentially affected asset and determining how that value will be destroyed or otherwise affected by an adverse event.",
+          "explanation": "Establish the value, then see how it is destroyed or affected."
+        },
+        {
+          "id": "d1-risq-analyse-1",
+          "question": "“It happens almost every week.” Are we talking about likelihood or impact?",
+          "options": [
+            "Likelihood",
+            "Impact"
+          ],
+          "answer": "Likelihood",
+          "explanation": "Talking about how often is talking about the chance that it happens. Impact talks about how serious the damage is."
+        },
+        {
+          "id": "d1-risq-analyse-2",
+          "question": "Does each sentence talk about likelihood or impact?",
+          "answer": "Likelihood: the breakdowns that already happened, the alarm tested every month, no background checks. Impact: the server that holds all the grades, the file with all the customers, the loss of $10,000 a day.",
+          "explanation": "Likelihood = the chance that it happens. Impact = how serious it is if it happens.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Likelihood",
+              "Impact"
+            ],
+            "items": [
+              {
+                "text": "This summer, we already had three power cuts",
+                "category": "Likelihood"
+              },
+              {
+                "text": "The fire alarm is tested every month",
+                "category": "Likelihood"
+              },
+              {
+                "text": "Nobody checks the background of the contractors",
+                "category": "Likelihood"
+              },
+              {
+                "text": "The server holds all the school's grades",
+                "category": "Impact"
+              },
+              {
+                "text": "The lost file holds the data of all the customers",
+                "category": "Impact"
+              },
+              {
+                "text": "If the website goes down, the company loses $10,000 a day",
+                "category": "Impact"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-analyse-3",
+          "question": "A company gives its data to a big contractor company, without checking the background of its staff. What happens to the likelihood of a theft by an employee of that company?",
+          "options": [
+            "It becomes higher",
+            "It goes down",
+            "It does not change",
+            "It becomes zero"
+          ],
+          "options_why": [
+            "",
+            "Without checks, we let in people we do not know: the danger does not go down.",
+            "Not checking leaves the door open: the likelihood goes up.",
+            "No control makes the likelihood zero, and here there is not even one."
+          ],
+          "answer": "It becomes higher",
+          "explanation": "Without background checks, there is more chance that something bad happens.",
+          "explanation_more": "Example from the (ISC)2 manual, Domain 1, section “Risk Analysis”. The threat of an insider (a person who works inside) is judged very likely here."
+        },
+        {
+          "id": "d1-risq-analyse-4",
+          "question": "What must risk analysis always start with?",
+          "answer": "A vulnerability assessment and a threat analysis.",
+          "explanation": "The first looks for weak points. The second looks at who or what can attack.",
+          "explanation_more": "Source: (ISC)2 manual, Domain 1, section “Risk Analysis”. The manual points to Chapter 6 for the vulnerability assessment."
+        },
+        {
+          "id": "d1-risq-analyse-5",
+          "question": "The value of an asset can be counted (quantitative) or judged (qualitative). Which of these values can be counted?",
+          "options": [
+            "The importance of the file for the director",
+            "The fact that students care about the app",
+            "The purchase price of the server: $12,000",
+            "The school's reputation"
+          ],
+          "options_why": [
+            "An importance is judged: nobody can measure it with a price.",
+            "That students care about it is an opinion, not a number.",
+            "",
+            "A reputation is judged, it has no purchase price."
+          ],
+          "answer": "The purchase price of the server: $12,000",
+          "explanation": "A cost or a market price can be counted. An importance is judged."
+        },
+        {
+          "id": "d1-risq-analyse-6",
+          "question": "Why should we never spend more to protect an asset than the asset is worth?",
+          "answer": "Because the protection would cost more than the loss it avoids. We would lose money, even if the asset was saved.",
+          "explanation": "A $100 padlock for a $2 notebook costs more than it protects.",
+          "explanation_more": "The manual says it like this: “you never want to spend more protecting an asset than the asset itself is worth”."
+        },
+        {
+          "id": "d1-risq-analyse-7",
+          "question": "Risk analysis estimates the [[likelihood|probability|chance]] of a threat and its [[impact|seriousness]] on assets.",
+          "answer": "Risk analysis estimates the likelihood of a threat and its impact on assets.",
+          "explanation": "Two measures: the chance that it happens and the seriousness if it happens."
+        },
+        {
+          "id": "d1-risq-analyse-8",
+          "question": "What if we do not know the value of an asset?",
+          "answer": "We cannot measure the impact of a loss. So we do not know how much to spend to protect it. We must first estimate its value.",
+          "explanation": "The value of the asset is the starting point of the impact."
+        },
+        {
+          "id": "d1-risq-analyse-9",
+          "question": "A school tests its smoke detectors every month and has two fire systems. What can you say about the likelihood of a fire that destroys everything?",
+          "answer": "The likelihood is low, thanks to the two systems and the regular tests. The impact depends on the value of what would burn.",
+          "explanation": "The tests and the double protection lower the likelihood, but do not change the value of the assets."
+        }
+      ]
+    },
+    {
+      "id": "d1-risq-quali",
+      "name": "Qualitative or quantitative analysis",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "An opinion or a number?",
+          "paragraphes": [
+            "Your teacher tells you: “Your presentation is good.” Your friend gets 14/20. Both are evaluations.",
+            "Which one is more precise? Which one is easier to give?",
+            "To measure a risk, there are both ways: the opinion by levels, and the number."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The traffic light and the speed camera",
+          "comme": "A light says: green, orange, red. A speed camera says: 63 km/h. The light is read quickly. The camera is precise.",
+          "enVrai": "Qualitative analysis gives levels like critical, high, medium, low. Quantitative analysis uses measured numbers. We can also mix the two. Where the picture stops: an orange light is still someone's opinion, like a risk level."
+        },
+        {
+          "type": "predire",
+          "question": "Before 2019, many people put “pandemic” among the low risks. What does this example show about levels?",
+          "options": [
+            "That a low level can underestimate a real danger",
+            "That they are more precise than numbers",
+            "That they are never any use"
+          ],
+          "answer": "That a low level can underestimate a real danger",
+          "explanation": "The manual says qualitative analysis can be vague, imprecise, even misleading. The second answer is tempting, because a word like “high” seems clear."
+        },
+        {
+          "type": "exemple",
+          "titre": "Two schools, two methods",
+          "texte": "School A ranks its server breakdown: medium likelihood, high impact. School B writes: one breakdown every two years, $6,000 lost each time. A does a qualitative analysis. B does a quantitative analysis. B can compare its losses with the price of a protection."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-risq-quali-def1",
+          "question": "Official definition: “qualitative risk analysis”",
+          "answer": "Qualitative risk analysis avoids the use of numbers and tends to be more subjective.",
+          "explanation": "Qualitative = words (levels), few numbers, more opinion.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-quali-def2",
+          "question": "Qualitative risk analysis [[avoids]] the use of numbers and tends to be more [[subjective]].",
+          "answer": "Qualitative risk analysis avoids the use of numbers and tends to be more subjective.",
+          "explanation": "It avoids numbers, so it depends more on opinions."
+        },
+        {
+          "id": "d1-risq-quali-def3",
+          "question": "Qualitative risk analysis [[avoids the use]] of [[numbers]] and tends to be [[more subjective]].",
+          "answer": "Qualitative risk analysis avoids the use of numbers and tends to be more subjective.",
+          "explanation": "It avoids the use, of numbers, and it leans toward being subjective."
+        },
+        {
+          "id": "d1-risq-quali-def4",
+          "question": "Write the official definition of “qualitative risk analysis” from memory.",
+          "answer": "Qualitative risk analysis avoids the use of numbers and tends to be more subjective.",
+          "explanation": "Two ideas: no numbers, more subjective."
+        },
+        {
+          "id": "d1-risq-quali-quanti-def1",
+          "question": "Official definition: “quantitative risk analysis”",
+          "answer": "Quantitative risk analysis is far more precise and objective, because it uses verifiable data to analyze the impact and likelihood of each risk.",
+          "explanation": "Quantitative = numbers you can check, so more precise and more objective.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-quali-quanti-def2",
+          "question": "Quantitative risk analysis is far more [[precise]] and objective, because it uses [[verifiable]] data to analyze the impact and likelihood of each risk.",
+          "answer": "Quantitative risk analysis is far more precise and objective, because it uses verifiable data to analyze the impact and likelihood of each risk.",
+          "explanation": "Precise, and based on data that we can check."
+        },
+        {
+          "id": "d1-risq-quali-quanti-def3",
+          "question": "Quantitative risk analysis is [[far more precise]] and [[objective]], because it uses [[verifiable data]] to analyze the impact and likelihood of each risk.",
+          "answer": "Quantitative risk analysis is far more precise and objective, because it uses verifiable data to analyze the impact and likelihood of each risk.",
+          "explanation": "The level of precision, the objectivity, and the reason: verifiable data."
+        },
+        {
+          "id": "d1-risq-quali-quanti-def4",
+          "question": "Write the official definition of “quantitative risk analysis” from memory.",
+          "answer": "Quantitative risk analysis is far more precise and objective, because it uses verifiable data to analyze the impact and likelihood of each risk.",
+          "explanation": "Compare with the qualitative sentence: here, it is “precise”, “objective” and “verifiable data”."
+        },
+        {
+          "id": "d1-risq-quali-calcul-def1",
+          "question": "Official definition: “quantitative risk calculation”",
+          "answer": "Quantitative risk calculation involves making measurements to mathematically determine probability (likelihood) and impact.",
+          "explanation": "We measure, then we calculate: the likelihood and the impact come out of a formula.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-quali-calcul-def3",
+          "question": "Quantitative risk calculation involves [[making measurements]] to [[mathematically determine probability]] (likelihood) and [[impact]].",
+          "answer": "Quantitative risk calculation involves making measurements to mathematically determine probability (likelihood) and impact.",
+          "explanation": "Make measurements, determine the likelihood with math, and the impact."
+        },
+        {
+          "id": "d1-risq-quali-niveaux-def1",
+          "question": "Official definition: what qualitative analysis does with likelihood and impact",
+          "answer": "Qualitative risk analysis involves assigning less precise values (like critical, high, medium, and low) to likelihood and impact.",
+          "explanation": "Levels like a traffic light, instead of exact numbers.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”."
+        },
+        {
+          "id": "d1-risq-quali-niveaux-def3",
+          "question": "[[Qualitative risk analysis]] involves [[assigning less precise values]] (like critical, high, medium, and low) to [[likelihood and impact]].",
+          "answer": "Qualitative risk analysis involves assigning less precise values (like critical, high, medium, and low) to likelihood and impact.",
+          "explanation": "The name of the method, what it does, and what it rates."
+        },
+        {
+          "id": "d1-risq-quali-mix-def1",
+          "question": "Official definition: the two forms of “risk analysis”",
+          "answer": "Risk analysis can be either qualitative or quantitative (or a combination of the two).",
+          "explanation": "Two methods, and we are allowed to mix them.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”."
+        },
+        {
+          "id": "d1-risq-quali-mix-def3",
+          "question": "Risk analysis can be either [[qualitative or quantitative]] (or [[a combination]] of [[the two]]).",
+          "answer": "Risk analysis can be either qualitative or quantitative (or a combination of the two).",
+          "explanation": "One or the other, or a mix of both."
+        },
+        {
+          "id": "d1-risq-quali-1",
+          "question": "“The likelihood is medium and the impact is high.” Is this a qualitative or a quantitative analysis?",
+          "options": [
+            "Qualitative",
+            "Quantitative"
+          ],
+          "answer": "Qualitative",
+          "explanation": "Medium and high are levels, not measured numbers."
+        },
+        {
+          "id": "d1-risq-quali-2",
+          "question": "“A loss of $6,000 per breakdown, one breakdown every two years.” Is this a qualitative or a quantitative analysis?",
+          "options": [
+            "Qualitative",
+            "Quantitative"
+          ],
+          "answer": "Quantitative",
+          "explanation": "Dollars and a frequency: these are measured numbers."
+        },
+        {
+          "id": "d1-risq-quali-3",
+          "question": "Which method does each item belong to?",
+          "answer": "Qualitative: critical/high/medium/low, the opinion of experts, the colors red/orange/green. Quantitative: the loss of $6,000, two breakdowns a year, a likelihood calculated from ten years of data.",
+          "explanation": "Levels and opinions: qualitative. Measures and numbers: quantitative.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Qualitative",
+              "Quantitative"
+            ],
+            "items": [
+              {
+                "text": "Critical, high, medium, low",
+                "category": "Qualitative"
+              },
+              {
+                "text": "The opinion of a group of experts, with no numbers",
+                "category": "Qualitative"
+              },
+              {
+                "text": "A table in red, orange, green",
+                "category": "Qualitative"
+              },
+              {
+                "text": "A loss of $6,000 per breakdown",
+                "category": "Quantitative"
+              },
+              {
+                "text": "Two breakdowns a year on average",
+                "category": "Quantitative"
+              },
+              {
+                "text": "A likelihood calculated from ten years of data",
+                "category": "Quantitative"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-quali-4",
+          "question": "A small club has no numbers about its past breakdowns. Which analysis can it do to start?",
+          "options": [
+            "Qualitative, because it does not need measured numbers",
+            "Quantitative, because it works with no data at all",
+            "None, because without data we cannot evaluate anything",
+            "A mix, but the manual forbids it"
+          ],
+          "options_why": [
+            "",
+            "Quantitative analysis uses verifiable data: without data, it does not work.",
+            "Without numbers we can still give levels. That is exactly the role of qualitative analysis.",
+            "The manual says the opposite: we can combine the two."
+          ],
+          "answer": "Qualitative, because it does not need measured numbers",
+          "explanation": "Qualitative analysis avoids the use of numbers: it fits when data is missing."
+        },
+        {
+          "id": "d1-risq-quali-5",
+          "question": "Why is quantitative analysis more objective?",
+          "answer": "Because it relies on verifiable data: two people who redo the calculation get the same result. An opinion changes from one person to another.",
+          "explanation": "A number can be checked. An impression cannot."
+        },
+        {
+          "id": "d1-risq-quali-6",
+          "question": "What if we rank a rare but huge danger, like a pandemic, as “low risk”?",
+          "answer": "We underestimate its real impact. The level “low” hides damage that could be very big. This is the manual's example with the pandemic.",
+          "explanation": "A vague level can mislead: rare does not mean not serious.",
+          "explanation_more": "Source: (ISC)2 manual, Domain 1: the likelihood of a pandemic was judged low before 2019, but the overall risk turned out to be very high."
+        },
+        {
+          "id": "d1-risq-quali-7",
+          "question": "A [[qualitative]] analysis uses levels like critical, high, medium and low, while a [[quantitative]] analysis uses numbers.",
+          "answer": "A qualitative analysis uses levels like critical, high, medium and low, while a quantitative analysis uses numbers.",
+          "explanation": "Qualitative: words. Quantitative: numbers."
+        },
+        {
+          "id": "d1-risq-quali-8",
+          "question": "Which levels does the manual give as an example for a qualitative analysis?",
+          "answer": "Critical, high, medium and low.",
+          "explanation": "Four levels, from the most serious to the least serious."
+        },
+        {
+          "id": "d1-risq-quali-9",
+          "question": "A store wants to compare two protections. Why does a quantitative analysis help it more than a qualitative one?",
+          "answer": "Because it gives the cost of the losses in dollars. The store can compare them with the price of each protection.",
+          "explanation": "To compare prices, you need numbers: “high” cannot be compared with $5,000."
+        }
+      ]
+    },
+    {
+      "id": "d1-risq-sle",
+      "name": "The loss from a single incident (SLE, AV, EF)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The bike in the river",
+          "paragraphes": [
+            "Your bike is worth $300. One day, it falls into the river. It is not lost 100%: you dry it, but the chain is rusty and the seat is damaged.",
+            "How much did you lose? Not $300, and not $0.",
+            "You need two pieces of information: what the bike was worth, and the part that is damaged."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The nibbled cake",
+          "comme": "A cake costs $20. If the cat eats a quarter of it, the loss is a quarter of $20, so $5.",
+          "enVrai": "The value of the cake is the asset value (AV). The quarter that was eaten is the exposure factor (EF): the part that is lost, as a percentage. The loss from one incident is the SLE (single loss expectancy): $20 × 25% = $5. Where the picture stops: in a company, the EF must be estimated."
+        },
+        {
+          "type": "predire",
+          "question": "A server is worth $10,000. A breakdown destroys half of it. What is the loss for this incident?",
+          "options": [
+            "$5,000",
+            "$10,000",
+            "$20,000"
+          ],
+          "answer": "$5,000",
+          "explanation": "Half of $10,000 is $5,000. The answer $10,000 would be the loss if everything was destroyed: it is tempting, but here only half is lost."
+        },
+        {
+          "type": "exemple",
+          "titre": "A fire at the game store",
+          "texte": "The stock is worth $40,000: this is the AV. A fire would destroy 25% of it: this is the EF. The loss for one fire is $40,000 × 25%, so $10,000. This is the SLE."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-risq-sle-def1",
+          "question": "Official definition: “SLE” (single loss expectancy)",
+          "answer": "SLE is a measure of the monetary loss (calculated in dollars) you would expect from a single adverse event.",
+          "explanation": "One single time, in dollars: the loss from one incident.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-sle-def2",
+          "question": "SLE is a measure of the [[monetary]] loss (calculated in [[dollars]]) you would expect from a single adverse event.",
+          "answer": "SLE is a measure of the monetary loss (calculated in dollars) you would expect from a single adverse event.",
+          "explanation": "A loss of money, counted in dollars."
+        },
+        {
+          "id": "d1-risq-sle-def3",
+          "question": "SLE is a measure of [[the monetary loss]] ([[calculated in dollars]]) you would expect from [[a single adverse event]].",
+          "answer": "SLE is a measure of the monetary loss (calculated in dollars) you would expect from a single adverse event.",
+          "explanation": "The loss of money, the unit, and the fact that it is one single incident."
+        },
+        {
+          "id": "d1-risq-sle-def4",
+          "question": "Write the official definition of “SLE” from memory.",
+          "answer": "SLE is a measure of the monetary loss (calculated in dollars) you would expect from a single adverse event.",
+          "explanation": "Remember the three words: monetary, dollars, single."
+        },
+        {
+          "id": "d1-risq-sle-calcul-def1",
+          "question": "Official definition: how the SLE is calculated (AV and EF)",
+          "answer": "SLE is calculated by multiplying an asset's value (AV) by its exposure factor (EF).",
+          "explanation": "SLE = AV × EF: the value multiplied by the part that is lost.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-sle-calcul-def2",
+          "question": "SLE is calculated by [[multiplying]] an asset's [[value]] (AV) by its exposure factor (EF).",
+          "answer": "SLE is calculated by multiplying an asset's value (AV) by its exposure factor (EF).",
+          "explanation": "A multiplication, and the value of the asset."
+        },
+        {
+          "id": "d1-risq-sle-calcul-def3",
+          "question": "SLE is [[calculated by multiplying]] an [[asset's value (AV)]] by its [[exposure factor (EF)]].",
+          "answer": "SLE is calculated by multiplying an asset's value (AV) by its exposure factor (EF).",
+          "explanation": "The way to calculate, then the two numbers: AV and EF."
+        },
+        {
+          "id": "d1-risq-sle-calcul-def4",
+          "question": "Write the official definition of the calculation of the “SLE” from memory.",
+          "answer": "SLE is calculated by multiplying an asset's value (AV) by its exposure factor (EF).",
+          "explanation": "Think of the cake: value × the part that was eaten."
+        },
+        {
+          "id": "d1-risq-sle-ef-def1",
+          "question": "Official definition: “EF” (exposure factor)",
+          "answer": "EF is the estimated percentage of loss to a specific asset if a specific threat is realized.",
+          "explanation": "The part of the asset that is lost, as a percentage, for a given threat.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-sle-ef-def2",
+          "question": "EF is the estimated [[percentage]] of loss to a specific asset if a specific threat is [[realized]].",
+          "answer": "EF is the estimated percentage of loss to a specific asset if a specific threat is realized.",
+          "explanation": "A percentage, which only counts if the threat happens."
+        },
+        {
+          "id": "d1-risq-sle-ef-def3",
+          "question": "EF is [[the estimated percentage]] of loss to [[a specific asset]] if [[a specific threat]] is realized.",
+          "answer": "EF is the estimated percentage of loss to a specific asset if a specific threat is realized.",
+          "explanation": "The estimated percentage, the specific asset, the specific threat."
+        },
+        {
+          "id": "d1-risq-sle-ef-def4",
+          "question": "Write the official definition of “EF” from memory.",
+          "answer": "EF is the estimated percentage of loss to a specific asset if a specific threat is realized.",
+          "explanation": "A percentage for a specific asset and a specific threat."
+        },
+        {
+          "id": "d1-risq-sle-autres-def1",
+          "question": "Official definition: the SLE “in other words”",
+          "answer": "In other words, SLE estimates how much you would lose from one occurrence of a particular realized threat.",
+          "explanation": "It is the same idea said more simply: the loss from one single occurrence.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”."
+        },
+        {
+          "id": "d1-risq-sle-autres-def3",
+          "question": "In other words, SLE [[estimates how much]] you would lose from [[one occurrence]] of [[a particular realized threat]].",
+          "answer": "In other words, SLE estimates how much you would lose from one occurrence of a particular realized threat.",
+          "explanation": "Estimate the loss, for one single occurrence, of a threat that happens."
+        },
+        {
+          "id": "d1-risq-sle-1",
+          "question": "A game store has $40,000 of stock. A fire would destroy 25% of it. Calculate the SLE.",
+          "answer": "SLE = AV × EF = $40,000 × 0.25 = $10,000 of loss for one fire.",
+          "explanation": "We multiply the value of the asset by the part that is lost.",
+          "data": {
+            "steps": [
+              {
+                "prompt": "What is the asset value (AV)?",
+                "text": "AV = $40,000: this is the value of the console stock."
+              },
+              {
+                "prompt": "What is the exposure factor (EF)?",
+                "text": "EF = 25%, which is 0.25 as a number."
+              },
+              {
+                "prompt": "Which formula do you use?",
+                "text": "SLE = AV × EF."
+              },
+              {
+                "prompt": "How much is it?",
+                "text": "SLE = 40,000 × 0.25 = $10,000."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-sle-2",
+          "question": "A school's server is worth $12,000. A power surge (a spike of electricity that damages devices) would destroy 50% of it. Calculate the SLE.",
+          "answer": "SLE = AV × EF = $12,000 × 0.5 = $6,000.",
+          "explanation": "Same method as for the store: value × the part that is lost.",
+          "data": {
+            "steps": [
+              {
+                "prompt": "What is the asset value (AV)?",
+                "text": "AV = $12,000."
+              },
+              {
+                "prompt": "What is the exposure factor (EF)?",
+                "text": "EF = 50%, which is 0.5."
+              },
+              {
+                "prompt": "Which formula do you use?",
+                "text": "SLE = AV × EF."
+              },
+              {
+                "prompt": "How much is it?",
+                "text": "SLE = 12,000 × 0.5 = $6,000."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-sle-3",
+          "question": "Which of the two is shown as a percentage: the asset value (AV) or the exposure factor (EF)?",
+          "options": [
+            "The asset value (AV)",
+            "The exposure factor (EF)"
+          ],
+          "answer": "The exposure factor (EF)",
+          "explanation": "The AV is an amount in dollars. The EF is the part that is lost, as a percentage."
+        },
+        {
+          "id": "d1-risq-sle-4",
+          "question": "A website is worth $50,000. A hack would make it lose 20% of its value. What is the SLE?",
+          "options": [
+            "$1,000",
+            "$2,500",
+            "$10,000",
+            "$70,000"
+          ],
+          "options_why": [
+            "You put the decimal point in the wrong place: 20% is written 0.2, not 0.02.",
+            "You divided 50,000 by 20 instead of multiplying by 0.2.",
+            "",
+            "You added the value and the loss. The SLE is a product, not a sum."
+          ],
+          "answer": "$10,000",
+          "explanation": "SLE = AV × EF = 50,000 × 0.2 = $10,000."
+        },
+        {
+          "id": "d1-risq-sle-5",
+          "question": "A school's server is worth $30,000. Ransomware would make 20% of it unusable. Calculate the SLE.",
+          "answer": "SLE = 30,000 × 0.2 = $6,000.",
+          "explanation": "Ransomware locks the files: only a part of the server is lost."
+        },
+        {
+          "id": "d1-risq-sle-6",
+          "question": "Why do we not always assume that the asset is lost 100% (EF = 100%)?",
+          "answer": "Because many incidents only damage a part of the asset. Taking 100% would overestimate the loss and the money spent on protection.",
+          "explanation": "A nibbled cake is not a lost cake."
+        },
+        {
+          "id": "d1-risq-sle-7",
+          "question": "An incident costs $4,500 to a store whose stock is worth $18,000. What is the EF?",
+          "answer": "EF = SLE ÷ AV = 4,500 ÷ 18,000 = 0.25, so 25%.",
+          "explanation": "We flip the formula: if SLE = AV × EF, then EF = SLE ÷ AV.",
+          "explanation_more": "Outside the manual: flipping the formula is a simple math step."
+        },
+        {
+          "id": "d1-risq-sle-8",
+          "question": "In which unit is the SLE shown?",
+          "answer": "In dollars: it is a loss of money for one single incident.",
+          "explanation": "The manual says “calculated in dollars”."
+        },
+        {
+          "id": "d1-risq-sle-9",
+          "question": "An SLE of $10,000 means that...",
+          "options": [
+            "One single occurrence of the threat would cost about $10,000",
+            "The company will lose $10,000 every year",
+            "The asset is worth exactly $10,000",
+            "The threat has 10,000 chances to happen"
+          ],
+          "options_why": [
+            "",
+            "That would be the ALE, seen in the next planet: the SLE counts only one single incident.",
+            "The value of the asset is the AV. The SLE takes only a part of it.",
+            "The SLE is a sum of money, not a probability."
+          ],
+          "answer": "One single occurrence of the threat would cost about $10,000",
+          "explanation": "The SLE is the loss from one incident, nothing more."
+        },
+        {
+          "id": "d1-risq-sle-10",
+          "question": "What if the EF is estimated too low?",
+          "answer": "The SLE will be too small, and we will spend too little to protect ourselves. A bad estimate spoils all the calculation that follows.",
+          "explanation": "The EF is an estimate: the more accurate it is, the better the decision."
+        }
+      ]
+    },
+    {
+      "id": "d1-risq-ale",
+      "name": "The loss over a year (ALE, ARO)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Once, or every year?",
+          "paragraphes": [
+            "The chain of your bike breaks. The repair costs $20. If it happens once in your life, it is nothing.",
+            "If it breaks four times a year, you pay $80 a year. The same breakage can be unimportant or costly, depending on how often it happens.",
+            "To judge a risk over time, we must count the loss of one time and the number of times per year."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The lost pocket money",
+          "comme": "You lose $5 each time you forget your keys. You forget them 6 times a year. Your loss over the year: $5 × 6 = $30.",
+          "enVrai": "The SLE is the loss of one time ($5). The ARO (annual rate of occurrence) is the number of times per year (6). The ALE (annualized loss expectancy) is the loss expected over one year: SLE × ARO. Where the picture stops: in a company, the frequency is an estimate."
+        },
+        {
+          "type": "predire",
+          "question": "An incident costs $6,000 and happens once every two years. How much does it cost on average per year?",
+          "options": [
+            "$12,000",
+            "$6,000",
+            "$3,000"
+          ],
+          "answer": "$3,000",
+          "explanation": "Once every two years is 0.5 times a year: 6,000 × 0.5 = $3,000. The answer $12,000 comes from multiplying by 2 instead of 0.5."
+        },
+        {
+          "type": "exemple",
+          "titre": "The thefts at the game store",
+          "texte": "One burglary makes the store lose $6,000: this is the SLE. The store suffers three per year: the ARO is 3. The ALE is 6,000 × 3 = $18,000. This is what the thefts cost the store each year."
+        },
+        {
+          "type": "exemple",
+          "titre": "What is the ALE used for?",
+          "texte": "If the thefts cost $18,000 a year, an anti-theft system at $2,000 a year is a good deal. If it cost $30,000 a year, it would be a bad deal. The ALE is used to compare the expected loss with the price of protections."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-risq-ale-def1",
+          "question": "Official definition: “annualized loss expectancy (ALE)”",
+          "answer": "One important concept in quantitative risk analysis is annualized loss expectancy (ALE), which is a metric that helps quantify the impact of a realized threat on your organization's assets.",
+          "explanation": "The ALE measures the impact of a threat that happens, brought down to one year.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-ale-def2",
+          "question": "One important concept in quantitative risk analysis is annualized loss expectancy (ALE), which is a [[metric]] that helps [[quantify]] the impact of a realized threat on your organization's assets.",
+          "answer": "One important concept in quantitative risk analysis is annualized loss expectancy (ALE), which is a metric that helps quantify the impact of a realized threat on your organization's assets.",
+          "explanation": "A measure (metric) that helps put a number (quantify) on the impact."
+        },
+        {
+          "id": "d1-risq-ale-def3",
+          "question": "One important concept in quantitative risk analysis is [[annualized loss expectancy]] (ALE), which is [[a metric that helps quantify]] the impact of [[a realized threat]] on your organization's assets.",
+          "answer": "One important concept in quantitative risk analysis is annualized loss expectancy (ALE), which is a metric that helps quantify the impact of a realized threat on your organization's assets.",
+          "explanation": "The full name, what the measure does, and on what: a threat that happens."
+        },
+        {
+          "id": "d1-risq-ale-def4",
+          "question": "Write the official definition of “annualized loss expectancy (ALE)” from memory.",
+          "answer": "One important concept in quantitative risk analysis is annualized loss expectancy (ALE), which is a metric that helps quantify the impact of a realized threat on your organization's assets.",
+          "explanation": "Start with “One important concept in quantitative risk analysis”."
+        },
+        {
+          "id": "d1-risq-ale-calcul-def1",
+          "question": "Official definition: how the ALE is calculated (SLE and ARO)",
+          "answer": "ALE is measured in dollars and is the product of single loss expectancy (SLE) and annual rate of occurrence (ARO).",
+          "explanation": "ALE = SLE × ARO: the loss of one time, multiplied by the number of times per year.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”. The book then adds “which are each discussed here” before detailing the SLE and the ARO."
+        },
+        {
+          "id": "d1-risq-ale-calcul-def2",
+          "question": "ALE is measured in [[dollars]] and is the [[product]] of single loss expectancy (SLE) and annual rate of occurrence (ARO).",
+          "answer": "ALE is measured in dollars and is the product of single loss expectancy (SLE) and annual rate of occurrence (ARO).",
+          "explanation": "Dollars, and a product: a multiplication."
+        },
+        {
+          "id": "d1-risq-ale-calcul-def3",
+          "question": "ALE is measured in dollars and is [[the product of]] [[single loss expectancy]] (SLE) and [[annual rate of occurrence]] (ARO).",
+          "answer": "ALE is measured in dollars and is the product of single loss expectancy (SLE) and annual rate of occurrence (ARO).",
+          "explanation": "The product of two things: the single loss and the annual rate."
+        },
+        {
+          "id": "d1-risq-ale-calcul-def4",
+          "question": "Write the official definition of the calculation of the “ALE” from memory.",
+          "answer": "ALE is measured in dollars and is the product of single loss expectancy (SLE) and annual rate of occurrence (ARO).",
+          "explanation": "Think of the pocket money: $5 per time, 6 times a year."
+        },
+        {
+          "id": "d1-risq-ale-aro-def1",
+          "question": "Official definition: “ARO” (annual rate of occurrence)",
+          "answer": "ARO is the estimated annual frequency of occurrence for a given adverse event.",
+          "explanation": "How many times a year we expect to see the event.",
+          "explanation_more": "Definition from the official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”. Know it word for word."
+        },
+        {
+          "id": "d1-risq-ale-aro-def2",
+          "question": "ARO is the estimated [[annual]] [[frequency]] of occurrence for a given adverse event.",
+          "answer": "ARO is the estimated annual frequency of occurrence for a given adverse event.",
+          "explanation": "A frequency, counted per year."
+        },
+        {
+          "id": "d1-risq-ale-aro-def3",
+          "question": "ARO is [[the estimated annual frequency]] of [[occurrence]] for [[a given adverse event]].",
+          "answer": "ARO is the estimated annual frequency of occurrence for a given adverse event.",
+          "explanation": "The estimated frequency per year, the occurrence, and the event it is about."
+        },
+        {
+          "id": "d1-risq-ale-aro-def4",
+          "question": "Write the official definition of “ARO” from memory.",
+          "answer": "ARO is the estimated annual frequency of occurrence for a given adverse event.",
+          "explanation": "Annual frequency of occurrence: how often it appears each year."
+        },
+        {
+          "id": "d1-risq-ale-nombre-def1",
+          "question": "Official definition: the ARO “in other words”",
+          "answer": "In other words, ARO is the number of times that you expect a particular risk event to occur every year.",
+          "explanation": "A number of times per year: 0.5 means once every two years.",
+          "explanation_more": "Official (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”."
+        },
+        {
+          "id": "d1-risq-ale-nombre-def3",
+          "question": "In other words, ARO is [[the number of times]] that you [[expect a particular]] risk event to [[occur every year]].",
+          "answer": "In other words, ARO is the number of times that you expect a particular risk event to occur every year.",
+          "explanation": "The number of times, what we expect, and the period: every year."
+        },
+        {
+          "id": "d1-risq-ale-1",
+          "question": "A school's server is worth $12,000. A power surge would destroy 50% of it, and it happens once every two years. Calculate the ALE.",
+          "answer": "SLE = 12,000 × 0.5 = $6,000, ARO = 0.5, so ALE = 6,000 × 0.5 = $3,000 per year.",
+          "explanation": "We first calculate the loss of one incident, then we bring it down to one year.",
+          "data": {
+            "steps": [
+              {
+                "prompt": "What is the SLE?",
+                "text": "SLE = AV × EF = 12,000 × 0.5 = $6,000."
+              },
+              {
+                "prompt": "How many times per year?",
+                "text": "Once every two years: ARO = 0.5."
+              },
+              {
+                "prompt": "Which formula do you use?",
+                "text": "ALE = SLE × ARO."
+              },
+              {
+                "prompt": "How much is it?",
+                "text": "ALE = 6,000 × 0.5 = $3,000 per year."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-ale-2",
+          "question": "A store has $60,000 of stock. A burglary takes 10% of it, and there are three per year. Calculate the ALE.",
+          "answer": "SLE = 60,000 × 0.1 = $6,000, ARO = 3, so ALE = 6,000 × 3 = $18,000 per year.",
+          "explanation": "Two steps: the SLE, then the ALE.",
+          "data": {
+            "steps": [
+              {
+                "prompt": "What is the SLE?",
+                "text": "SLE = 60,000 × 0.1 = $6,000."
+              },
+              {
+                "prompt": "What is the ARO?",
+                "text": "ARO = 3: three burglaries per year."
+              },
+              {
+                "prompt": "Which formula do you use?",
+                "text": "ALE = SLE × ARO."
+              },
+              {
+                "prompt": "How much is it?",
+                "text": "ALE = 6,000 × 3 = $18,000 per year."
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-risq-ale-3",
+          "question": "“We expect about three thefts per year.” Is this the SLE or the ARO?",
+          "options": [
+            "The SLE",
+            "The ARO"
+          ],
+          "answer": "The ARO",
+          "explanation": "Three times a year is a frequency: it is the ARO. The SLE would be a sum of money."
+        },
+        {
+          "id": "d1-risq-ale-4",
+          "question": "A ransomware attack costs $25,000 (SLE). We expect one every five years. What is the ALE?",
+          "options": [
+            "$5,000",
+            "$25,000",
+            "$30,000",
+            "$125,000"
+          ],
+          "options_why": [
+            "",
+            "That is the SLE: the loss from a single attack, not the loss per year.",
+            "You added 25,000 and 5. The ALE is a product.",
+            "You multiplied by 5 instead of dividing: once every five years is 0.2 times a year."
+          ],
+          "answer": "$5,000",
+          "explanation": "ARO = 1 ÷ 5 = 0.2. ALE = 25,000 × 0.2 = $5,000 per year."
+        },
+        {
+          "id": "d1-risq-ale-5",
+          "question": "A shop has $50,000 of stock. A theft takes 10% of it, and there are two thefts per year. Calculate the SLE then the ALE.",
+          "answer": "SLE = 50,000 × 0.1 = $5,000. ARO = 2. ALE = 5,000 × 2 = $10,000 per year.",
+          "explanation": "First the loss from one theft, then the loss over the year."
+        },
+        {
+          "id": "d1-risq-ale-6",
+          "question": "Why is the ALE useful to the people who decide?",
+          "options": [
+            "It gives an average loss per year, which can be compared with the price of a protection",
+            "It tells which day the incident will happen",
+            "It replaces the analysis of the threats",
+            "It measures the value of the asset"
+          ],
+          "options_why": [
+            "",
+            "The ALE is an average: it predicts no date.",
+            "The ALE adds to the analysis of the threats, it does not replace it.",
+            "The value of the asset is the AV. The ALE measures an expected loss per year."
+          ],
+          "answer": "It gives an average loss per year, which can be compared with the price of a protection",
+          "explanation": "A price per year can be compared with a protection per year."
+        },
+        {
+          "id": "d1-risq-ale-7",
+          "question": "What are the two formulas to remember for quantitative analysis?",
+          "answer": "SLE = AV × EF, then ALE = SLE × ARO.",
+          "explanation": "The first gives the loss from one incident. The second brings it down to one year.",
+          "explanation_more": "Source: (ISC)2 manual, Domain 1, section “Quantitative Risk Calculation”: the two formulas “to keep in mind”."
+        },
+        {
+          "id": "d1-risq-ale-8",
+          "question": "Why can a rare but very costly incident have the same ALE as a frequent and cheap incident?",
+          "answer": "Because the ALE multiplies the loss by the frequency. A loss of $100,000 every ten years gives $10,000 a year, like $1,000 ten times a year.",
+          "explanation": "Two different paths can lead to the same yearly total."
+        },
+        {
+          "id": "d1-risq-ale-9",
+          "question": "What if we estimate the ARO at 0?",
+          "answer": "The ALE is $0: we say the event will never happen. That is rarely true. A small realistic frequency is better.",
+          "explanation": "An ARO of 0 erases the risk in the calculation, but not in real life."
+        },
+        {
+          "id": "d1-risq-ale-10",
+          "question": "The ALE is calculated by multiplying the [[SLE]] by the [[ARO]].",
+          "answer": "The ALE is calculated by multiplying the SLE by the ARO.",
+          "explanation": "Loss from one incident × number of incidents per year."
+        },
+        {
+          "id": "d1-risq-ale-11",
+          "question": "Put the steps to calculate the ALE in order.",
+          "answer": "Estimate the asset value (AV), estimate the part that is lost (EF), calculate the SLE, estimate the frequency per year (ARO), calculate the ALE.",
+          "explanation": "We first calculate the loss from one incident, then we multiply it by the frequency.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Estimate the asset value (AV)",
+              "Estimate the part that is lost (EF)",
+              "Calculate the SLE = AV × EF",
+              "Estimate the frequency per year (ARO)",
+              "Calculate the ALE = SLE × ARO"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

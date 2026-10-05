@@ -1,0 +1,1396 @@
+{
+  "id": "d1-m10-personnel",
+  "name": "D1.10 Personnel security",
+  "concepts": [
+    {
+      "id": "d1-pers-recrut",
+      "name": "Secure hiring (candidate screening)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The new member of the robotics club",
+          "paragraphes": [
+            "Your robotics club is looking for a new member. They will get the key to the room where the expensive equipment is kept.",
+            "The club does not choose at random. First it writes down what the member will have to do. It also asks what damage a mistake could cause.",
+            "For a company, this is candidate screening: you check someone before you give them access."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The stronger the key, the more you check",
+          "comme": "To lend the key to the broom closet, you check almost nothing. For the key to the safe, you take far more care.",
+          "enVrai": "Each job gets a sensitivity level, based on the damage a person could cause, on purpose or by carelessness. NIST calls this the risk designation. The higher the level, the deeper the check."
+        },
+        {
+          "type": "predire",
+          "question": "Which job deserves the deepest check?",
+          "options": [
+            "A person who welcomes visitors",
+            "An administrator who can open every database",
+            "An intern who tidies the supplies"
+          ],
+          "answer": "An administrator who can open every database",
+          "explanation": "The more power a job gives over data, the more damage a mistake or a betrayal can do. The check should match that level."
+        },
+        {
+          "type": "exemple",
+          "titre": "Checking an accountant",
+          "texte": "A bank wants to hire an accountant. It runs a background check. It checks the accountant's degrees, past jobs, criminal record and references. The job handles clients' money, so it also looks at the person's financial situation."
+        },
+        {
+          "type": "exemple",
+          "titre": "The candidate's social media",
+          "texte": "A recruiter looks at a candidate's online profiles. To keep this fair, the company has written rules. They say what you may look at and which information you keep, and the candidate is told."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-recrut-1",
+          "question": "Besides finding the right person, what is a clear job description for?",
+          "answer": "To measure the employee later against what was expected",
+          "explanation": "The description works like a ruler: later you compare what the employee does with what was announced.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Candidate Screening and Hiring”.",
+          "options": [
+            "To measure the employee later against what was expected",
+            "To replace the employment contract",
+            "To set the employee's salary",
+            "To decide alone what data the employee can access"
+          ],
+          "options_why": [
+            "",
+            "The employment contract is a different document, signed by both sides.",
+            "Salary is decided separately. It is not the job of the description.",
+            "Access depends on how sensitive the job is, not only on the description."
+          ]
+        },
+        {
+          "id": "d1-pers-recrut-2",
+          "question": "Who writes the job description?",
+          "answer": "The hiring manager, together with human resources (HR)",
+          "explanation": "HR is the department that looks after employees. The manager knows the job, and HR knows the hiring rules.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1: “the hiring manager should work with HR to clearly and concisely document the job description”.",
+          "options": [
+            "The hiring manager, together with human resources (HR)",
+            "The security team, on its own"
+          ]
+        },
+        {
+          "id": "d1-pers-recrut-3",
+          "question": "What is a job's sensitivity level based on?",
+          "answer": "On the damage a person in that job could cause by breaking security rules, on purpose or by carelessness.",
+          "explanation": "The bigger the possible damage, the more sensitive the job.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1. NIST calls this level the “risk designation”."
+        },
+        {
+          "id": "d1-pers-recrut-4",
+          "question": "Why must the check go deeper for a sensitive job?",
+          "answer": "The more power a job gives, the more damage a mistake or a betrayal can do. The check must match that level of danger.",
+          "explanation": "You check more carefully the person who gets the key to the safe."
+        },
+        {
+          "id": "d1-pers-recrut-5",
+          "question": "Which of these checks is not in the manual's list?",
+          "answer": "Political opinions",
+          "explanation": "The manual's list: education, work history, citizenship, criminal record, finances and references.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1: “Education, Work history, Citizenship, Criminal record, Credit and financial history, References”.",
+          "options": [
+            "Political opinions",
+            "Criminal record",
+            "References",
+            "Education"
+          ],
+          "options_why": [
+            "",
+            "Criminal record is in the manual's list.",
+            "References are in the manual's list.",
+            "Education is in the manual's list."
+          ]
+        },
+        {
+          "id": "d1-pers-recrut-6",
+          "question": "A check can cover education, past work, [[citizenship]], [[criminal record]], finances and references.",
+          "answer": "A check can cover education, past work, citizenship, criminal record, finances and references.",
+          "explanation": "Six points of control to confirm the application."
+        },
+        {
+          "id": "d1-pers-recrut-7",
+          "question": "Basic check or enhanced check?",
+          "answer": "Basic: degrees, references, work history. Enhanced: drug test, in-depth investigation, security clearance.",
+          "explanation": "The manual keeps extra checks for very sensitive jobs, or jobs that need special clearance.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1. Drug testing and an investigation on top, for very sensitive roles. Or a “special security clearance”, mostly for governments.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Basic check",
+              "Enhanced check"
+            ],
+            "items": [
+              {
+                "text": "Check degrees",
+                "category": "Basic check"
+              },
+              {
+                "text": "Contact references",
+                "category": "Basic check"
+              },
+              {
+                "text": "Check work history",
+                "category": "Basic check"
+              },
+              {
+                "text": "Do a drug test",
+                "category": "Enhanced check"
+              },
+              {
+                "text": "Run an in-depth investigation for a very sensitive job",
+                "category": "Enhanced check"
+              },
+              {
+                "text": "Ask for a clearance: official access to very secret information",
+                "category": "Enhanced check"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-recrut-8",
+          "question": "A company looks at a candidate's social media without telling them and without rules. What does the manual say?",
+          "answer": "It needs clear rules, and candidates must be told",
+          "explanation": "Rules prevent abuse and make the method fair for every candidate.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, note on online searches.",
+          "options": [
+            "It needs clear rules, and candidates must be told",
+            "That is normal, profiles are public",
+            "It is banned in every country",
+            "You should only look at the photos"
+          ],
+          "options_why": [
+            "",
+            "The manual asks for clear rules, even if profiles are public.",
+            "The manual does not say it is banned everywhere. It asks for a clear framework.",
+            "The manual talks about information chosen in advance, not only photos."
+          ]
+        },
+        {
+          "id": "d1-pers-recrut-9",
+          "question": "What must a company plan when it looks at a candidate's social media?",
+          "answer": "Which uses are appropriate, which information is kept, how to check that it is accurate, and telling the candidates.",
+          "explanation": "Four ideas: use, information, accuracy, telling the candidate.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, note on online searches."
+        },
+        {
+          "id": "d1-pers-recrut-10",
+          "question": "What if a new administrator gets every access and nobody checks their past?",
+          "answer": "If they are dishonest or careless, they can do huge damage. Their past should have been checked before trusting them.",
+          "explanation": "Strong access needs trust that has been checked."
+        },
+        {
+          "id": "d1-pers-recrut-11",
+          "question": "As a CISSP, what should you check about hiring?",
+          "answer": "That the company has policies and procedures to check and hire people according to the rules of its jurisdiction (the area where its laws apply).",
+          "explanation": "Each country or region has its own rules about what you may check.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Candidate Screening and Hiring”."
+        },
+        {
+          "id": "d1-pers-recrut-12",
+          "question": "A hospital hires a technician who will handle patient records. Which checks do you suggest?",
+          "answer": "Check degrees and work history, check the criminal record and contact references. The job is sensitive, so the check must be serious.",
+          "explanation": "Health data is very sensitive: you adapt the check to that level."
+        },
+        {
+          "id": "d1-pers-recrut-13",
+          "question": "What is a background check?",
+          "answer": "A check where the company confirms the information in the application and the candidate's ability to do the job.",
+          "explanation": "You check that the candidate is who they say they are.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Candidate Screening and Hiring”."
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-accords",
+      "name": "Agreements signed by the employee (NDA, noncompete)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The team's secret tactics",
+          "paragraphes": [
+            "You join an online video game team. The captain gives you the team's secret tactics. First, he asks for a promise: never tell them.",
+            "He adds a second request: if you leave, do not join the rival team for a while.",
+            "In a company, these two promises are written down and signed. They are called the nondisclosure agreement (NDA) and the noncompete agreement."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Two different promises",
+          "comme": "The first promise says: you will not repeat our secrets. The second says: you will not play for our rivals for a while.",
+          "enVrai": "The NDA protects sensitive information, such as trade secrets (secret ways of making a product) and customer files. It often lasts for life. The noncompete protects the company from unfair competition by a former employee, for a fixed time. The image stops here: these are signed contracts, not simple promises."
+        },
+        {
+          "type": "predire",
+          "question": "An engineer leaves a phone company. They reveal the secret plans of a future model. Which agreement did they break?",
+          "options": [
+            "The noncompete",
+            "The NDA",
+            "Neither of them"
+          ],
+          "answer": "The NDA",
+          "explanation": "Revealing secret information is what the NDA forbids. The noncompete forbids working for a competitor."
+        },
+        {
+          "type": "exemple",
+          "titre": "An engineer's contract",
+          "texte": "A hardware engineer is hired by a phone maker. They sign an NDA: they will say nothing about the plans. They also sign a noncompete: they will not work for a competitor for eighteen months after leaving."
+        },
+        {
+          "type": "exemple",
+          "titre": "The other rules to sign",
+          "texte": "Employees often sign other rules. The acceptable use policy says what you may do with company equipment. The code of conduct says how to behave well. The conflict of interest policy says how not to mix personal interest with the company's interest."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-accords-nda-def1",
+          "question": "Official definition: “nondisclosure agreement (NDA)”",
+          "answer": "A nondisclosure agreement (NDA) is an agreement that restricts an employee or contractor (or anyone else with access to sensitive information) from disclosing sensitive information they obtain through the course of their employment or relationship with an organization.",
+          "explanation": "Think of the promise not to tell the team's secret tactics.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Employment Agreements and Policies”. Learn it word for word."
+        },
+        {
+          "id": "d1-pers-accords-nda-def2",
+          "question": "A nondisclosure agreement (NDA) is an agreement that [[restricts]] an employee or contractor (or anyone else with access to sensitive information) from [[disclosing]] sensitive information they obtain through the course of their employment or relationship with an organization.",
+          "answer": "A nondisclosure agreement (NDA) is an agreement that restricts an employee or contractor (or anyone else with access to sensitive information) from disclosing sensitive information they obtain through the course of their employment or relationship with an organization.",
+          "explanation": "An agreement that restricts what people can do: they cannot disclose (reveal) sensitive information."
+        },
+        {
+          "id": "d1-pers-accords-nda-def3",
+          "question": "A nondisclosure agreement (NDA) is an agreement that [[restricts an employee or contractor]] (or anyone else with access to sensitive information) from [[disclosing sensitive information]] they obtain through [[the course of their employment]] or relationship with an organization.",
+          "answer": "A nondisclosure agreement (NDA) is an agreement that restricts an employee or contractor (or anyone else with access to sensitive information) from disclosing sensitive information they obtain through the course of their employment or relationship with an organization.",
+          "explanation": "Three blocks: who is limited, what they must not reveal, and where the information comes from."
+        },
+        {
+          "id": "d1-pers-accords-nda-def4",
+          "question": "Write the official definition of a “nondisclosure agreement (NDA)” from memory.",
+          "answer": "A nondisclosure agreement (NDA) is an agreement that restricts an employee or contractor (or anyone else with access to sensitive information) from disclosing sensitive information they obtain through the course of their employment or relationship with an organization.",
+          "explanation": "Long sentence: remember who is covered, what is forbidden, and where the information comes from."
+        },
+        {
+          "id": "d1-pers-accords-nc-def1",
+          "question": "Official definition: “noncompete agreement”",
+          "answer": "A noncompete agreement is an agreement that restricts an employee from directly competing with the organization during their employment and, in most cases, for a fixed time after employment.",
+          "explanation": "Think of the promise not to play for the rival team for a while.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Employment Agreements and Policies”. Learn it word for word."
+        },
+        {
+          "id": "d1-pers-accords-nc-def2",
+          "question": "A noncompete agreement is an agreement that restricts an employee from directly [[competing]] with the organization during their employment and, in most cases, for a [[fixed]] time after employment.",
+          "answer": "A noncompete agreement is an agreement that restricts an employee from directly competing with the organization during their employment and, in most cases, for a fixed time after employment.",
+          "explanation": "Forbidden to compete, for a fixed time."
+        },
+        {
+          "id": "d1-pers-accords-nc-def3",
+          "question": "A noncompete agreement is an agreement that restricts an employee from [[directly competing with the organization]] during [[their employment]] and, in most cases, for [[a fixed time after employment]].",
+          "answer": "A noncompete agreement is an agreement that restricts an employee from directly competing with the organization during their employment and, in most cases, for a fixed time after employment.",
+          "explanation": "Three blocks: competing directly, during the job, and for a fixed time after it."
+        },
+        {
+          "id": "d1-pers-accords-nc-def4",
+          "question": "Write the official definition of a “noncompete agreement” from memory.",
+          "answer": "A noncompete agreement is an agreement that restricts an employee from directly competing with the organization during their employment and, in most cases, for a fixed time after employment.",
+          "explanation": "Compare with the NDA: here it is about competition and a fixed time."
+        },
+        {
+          "id": "d1-pers-accords-ncsens-def1",
+          "question": "Official definition: the purpose of the “noncompete”",
+          "answer": "Noncompetes are one-way agreements that are designed to protect organizations from unfair competition by former employees or contractors.",
+          "explanation": "One-way: only the company is protected.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Employment Agreements and Policies”."
+        },
+        {
+          "id": "d1-pers-accords-ncsens-def3",
+          "question": "Noncompetes are [[one-way agreements]] that are designed to [[protect organizations]] from [[unfair competition]] by former employees or contractors.",
+          "answer": "Noncompetes are one-way agreements that are designed to protect organizations from unfair competition by former employees or contractors.",
+          "explanation": "Three blocks: one-way, protect organizations, against unfair competition."
+        },
+        {
+          "id": "d1-pers-accords-ndabut-def1",
+          "question": "Official definition: what an “NDA” is for and how long it lasts",
+          "answer": "An NDA is designed to protect the confidentiality of the organization's data (such as trade secrets or customer information) and is often a lifetime agreement (even after the employee leaves the company).",
+          "explanation": "It protects secrets, and it often lasts for life.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Employment Agreements and Policies”."
+        },
+        {
+          "id": "d1-pers-accords-ndabut-def3",
+          "question": "An NDA is designed to [[protect the confidentiality]] of the organization's data (such as trade secrets or customer information) and is often [[a lifetime agreement]] (even after [[the employee leaves the company]]).",
+          "answer": "An NDA is designed to protect the confidentiality of the organization's data (such as trade secrets or customer information) and is often a lifetime agreement (even after the employee leaves the company).",
+          "explanation": "Three blocks: protect confidentiality, a lifetime agreement, even after leaving."
+        },
+        {
+          "id": "d1-pers-accords-1",
+          "question": "A former employee tells the company's secret recipe to a newspaper. Which agreement is involved?",
+          "answer": "The NDA",
+          "explanation": "They revealed secret information. The NDA forbids that.",
+          "options": [
+            "The NDA",
+            "The noncompete"
+          ]
+        },
+        {
+          "id": "d1-pers-accords-2",
+          "question": "How long does an NDA often last?",
+          "answer": "Often for life, even after leaving",
+          "explanation": "Secrets stay secret, even when the person has left the company.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1: “often a lifetime agreement”.",
+          "options": [
+            "Often for life, even after leaving",
+            "Only while the employee works there",
+            "One year after leaving, like a noncompete",
+            "Until the end of the current year"
+          ],
+          "options_why": [
+            "",
+            "After leaving, the employee still knows the secrets: the agreement goes on.",
+            "A fixed time after leaving belongs to the noncompete.",
+            "An NDA does not stop on a calendar date."
+          ]
+        },
+        {
+          "id": "d1-pers-accords-3",
+          "question": "Who does a noncompete protect: the company or the employee?",
+          "answer": "The company: it is a one-way agreement that protects it from unfair competition by former employees.",
+          "explanation": "The employee makes a promise, and the company promises nothing in return in this agreement."
+        },
+        {
+          "id": "d1-pers-accords-4",
+          "question": "A former employee joins a competitor the month after leaving. Which agreement is involved?",
+          "answer": "The noncompete",
+          "explanation": "They work for a competitor. The NDA is about revealed secrets, not about the next employer.",
+          "options": [
+            "The noncompete",
+            "The NDA"
+          ]
+        },
+        {
+          "id": "d1-pers-accords-5",
+          "question": "Why does an NDA often go on after the employee leaves?",
+          "answer": "The employee still knows the secrets after leaving. Without this agreement, they could reveal them with no consequences.",
+          "explanation": "Leaving does not erase the secrets, so the promise stays."
+        },
+        {
+          "id": "d1-pers-accords-6",
+          "question": "An NDA protects the [[confidentiality]] of data: trade secrets, information about [[customers]].",
+          "answer": "An NDA protects the confidentiality of data: trade secrets, information about customers.",
+          "explanation": "The NDA is a confidentiality tool, the first pillar of security."
+        },
+        {
+          "id": "d1-pers-accords-7",
+          "question": "NDA or noncompete? Sort each sentence.",
+          "answer": "NDA: forbids revealing secrets, often lasts for life, protects customer information. Noncompete: forbids working for a direct competitor, lasts a fixed period after leaving, protects against unfair competition.",
+          "explanation": "The NDA is about what you say. The noncompete is about who you work for.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "NDA",
+              "Noncompete"
+            ],
+            "items": [
+              {
+                "text": "Forbids revealing the company's secrets",
+                "category": "NDA"
+              },
+              {
+                "text": "Often lasts for life",
+                "category": "NDA"
+              },
+              {
+                "text": "Protects information about customers",
+                "category": "NDA"
+              },
+              {
+                "text": "Forbids working for a direct competitor",
+                "category": "Noncompete"
+              },
+              {
+                "text": "Lasts a fixed period after leaving",
+                "category": "Noncompete"
+              },
+              {
+                "text": "Protects against unfair competition by former employees",
+                "category": "Noncompete"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-accords-8",
+          "question": "What if a company has no noncompete, and its best engineer joins a rival?",
+          "answer": "The rival benefits from what the engineer knows about the company, and nothing stops it. The company faces competition it sees as unfair.",
+          "explanation": "The noncompete gives the company time before that knowledge helps a rival."
+        },
+        {
+          "id": "d1-pers-accords-9",
+          "question": "Name three rules an employee may have to sign, besides the NDA and the noncompete.",
+          "answer": "An acceptable use policy. A code of conduct. A conflict of interest policy.",
+          "explanation": "Three rules of good behavior that the employee reads and accepts.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Employment Agreements and Policies”. The simple explanations of each policy are ours, outside the manual."
+        },
+        {
+          "id": "d1-pers-accords-10",
+          "question": "An employee uses the company computer to download games. Which signed rule is involved?",
+          "answer": "The acceptable use policy",
+          "explanation": "This policy says what you may do with company equipment.",
+          "options": [
+            "The acceptable use policy",
+            "The noncompete",
+            "The NDA",
+            "The conflict of interest policy"
+          ],
+          "options_why": [
+            "",
+            "They do not work for a competitor, so the noncompete is not involved.",
+            "They do not reveal a secret, so the NDA is not involved.",
+            "They are not mixing personal interest and company interest in a way that works against the company."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-arrivee",
+      "name": "Joining and changing roles (onboarding, transfers)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Your first day at school",
+          "paragraphes": [
+            "At the start of the year, you get your timetable, your locker and the rules. Someone explains who to talk to if something is wrong.",
+            "A few months later, you change class. Your old key to the science room should no longer open that door.",
+            "In a company, these two moments are called onboarding and transfer. Each has its own security rules."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The start-of-year rules",
+          "comme": "The rules are explained on day one. You know what to do, and what is watched, like the cameras in the playground.",
+          "enVrai": "Onboarding teaches the new employee their duty to protect information. It teaches how to report an incident. It teaches how to recognize the sensitivity level (classification) of information. The employee is also told that their actions may be monitored. The image stops here: you do not give the technical details of this monitoring."
+        },
+        {
+          "type": "predire",
+          "question": "An employee changes department. What should happen to their old access?",
+          "options": [
+            "Keep it, just in case",
+            "Remove what is no longer needed",
+            "Double it"
+          ],
+          "answer": "Remove what is no longer needed",
+          "explanation": "Keeping useless access opens doors for nothing. This applies least privilege: giving a person only the access they need."
+        },
+        {
+          "type": "exemple",
+          "titre": "From accounting to sales",
+          "texte": "Karim worked in accounting and could see salaries. He moves to sales. His access to salaries is no longer useful, so it is removed. Before the move, he takes training on the sales software and on customer data."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-arrivee-etapes-def1",
+          "question": "Official definition: the three stages of employment",
+          "answer": "Onboarding, transfers, and termination are three stages of employment that each comes with its own security considerations.",
+          "explanation": "Three moments in an employee's life: they arrive, they change role, they leave.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Onboarding, Transfers, and Termination Processes”."
+        },
+        {
+          "id": "d1-pers-arrivee-etapes-def3",
+          "question": "[[Onboarding]], [[transfers]], and [[termination]] are three stages of employment that each comes with its own security considerations.",
+          "answer": "Onboarding, transfers, and termination are three stages of employment that each comes with its own security considerations.",
+          "explanation": "In order: joining, changing role, leaving."
+        },
+        {
+          "id": "d1-pers-arrivee-orient-def1",
+          "question": "Official definition: the orientation program",
+          "answer": "Part of the employee orientation program should address information security expectations and requirements.",
+          "explanation": "From the very start, you explain what the company expects for security.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Onboarding”."
+        },
+        {
+          "id": "d1-pers-arrivee-orient-def3",
+          "question": "Part of the [[employee orientation program]] should address [[information security expectations]] and [[requirements]].",
+          "answer": "Part of the employee orientation program should address information security expectations and requirements.",
+          "explanation": "Three blocks: the orientation program, security expectations, and requirements."
+        },
+        {
+          "id": "d1-pers-arrivee-1",
+          "question": "A new employee is shown how to report an incident, as soon as they arrive. Which stage is this?",
+          "answer": "Onboarding",
+          "explanation": "Onboarding gives the right habits from the start.",
+          "options": [
+            "Onboarding",
+            "Transfer"
+          ]
+        },
+        {
+          "id": "d1-pers-arrivee-2",
+          "question": "What does the manual recommend telling a new employee about monitoring?",
+          "answer": "That controls exist that monitor how resources are used",
+          "explanation": "The employee must know their actions may be reviewed, without knowing the technical details.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Onboarding”.",
+          "options": [
+            "That controls exist that monitor how resources are used",
+            "The technical details, so they understand these controls",
+            "Nothing: it is better to keep monitoring secret",
+            "Only the cameras, not the computer tools"
+          ],
+          "options_why": [
+            "",
+            "The goal is not to give enough detail to get around the controls.",
+            "Knowing you can be observed is reassuring and discourages bad behavior.",
+            "It covers all the controls on company resources, not only cameras."
+          ]
+        },
+        {
+          "id": "d1-pers-arrivee-3",
+          "question": "Name topics that onboarding must cover about information security.",
+          "answer": "Their duty to protect information, and current threats. How to report an incident. Their role for their work area. How to recognize the sensitivity level of information.",
+          "explanation": "The new employee learns the basic habits of security.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Onboarding”."
+        },
+        {
+          "id": "d1-pers-arrivee-4",
+          "question": "Why tell employees they may be monitored?",
+          "answer": "It reassures them that information is protected. Knowing you may be observed also discourages inappropriate behavior.",
+          "explanation": "Just knowing already works as a deterrent."
+        },
+        {
+          "id": "d1-pers-arrivee-5",
+          "question": "During a transfer, you remove access that is no longer [[necessary]] in the new role: this is least [[privilege]].",
+          "answer": "During a transfer, you remove access that is no longer necessary in the new role: this is least privilege.",
+          "explanation": "Every extra access is a door left open for nothing."
+        },
+        {
+          "id": "d1-pers-arrivee-6",
+          "question": "What if you do not remove the old access of an employee who changes jobs?",
+          "answer": "They keep access to information they no longer need. After several moves, they can pile up far too many rights.",
+          "explanation": "Least privilege means reviewing access at every change."
+        },
+        {
+          "id": "d1-pers-arrivee-7",
+          "question": "An employee moves from support to database administrator, with more sensitive data. What should be done before the transfer?",
+          "answer": "Identify the role-based training she needs",
+          "explanation": "The manual wants role-based training before the transfer, especially if the data is more sensitive.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Transfers”.",
+          "options": [
+            "Identify the role-based training she needs",
+            "Let her learn alone while working",
+            "Give her all the team's access",
+            "Postpone the training by a year"
+          ],
+          "options_why": [
+            "",
+            "With more sensitive data, it is better to train before, not during.",
+            "Giving all the access goes against least privilege.",
+            "Postponing the training leaves the employee unprepared with sensitive data."
+          ]
+        },
+        {
+          "id": "d1-pers-arrivee-8",
+          "question": "Onboarding or transfer? Sort each action.",
+          "answer": "Onboarding: show how to report an incident, tell about monitoring controls, present sensitivity levels. Transfer: review access, remove useless access, plan training for the new role.",
+          "explanation": "Onboarding gives the basics to someone new. A transfer adjusts access and training for someone who changes role.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Onboarding",
+              "Transfer"
+            ],
+            "items": [
+              {
+                "text": "Show how to report an incident",
+                "category": "Onboarding"
+              },
+              {
+                "text": "Tell about the controls that monitor use",
+                "category": "Onboarding"
+              },
+              {
+                "text": "Present the sensitivity levels of information",
+                "category": "Onboarding"
+              },
+              {
+                "text": "Review the access the employee already has",
+                "category": "Transfer"
+              },
+              {
+                "text": "Remove access that is no longer needed",
+                "category": "Transfer"
+              },
+              {
+                "text": "Plan training for the new role",
+                "category": "Transfer"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-arrivee-9",
+          "question": "When does security first come up with a new employee?",
+          "answer": "Even before their first day: you set good expectations about their behavior before they arrive.",
+          "explanation": "The first expectations set the tone for what follows.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Onboarding”."
+        },
+        {
+          "id": "d1-pers-arrivee-10",
+          "question": "Describe what you would do for the security of an employee who changes department.",
+          "answer": "Review their current access. Remove what they no longer need. Plan the training for their new role before the transfer.",
+          "explanation": "Three actions: review, remove, train."
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-depart",
+      "name": "When an employee leaves (termination)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Handing back the keys",
+          "paragraphes": [
+            "You leave a sports club. You hand back your badge and the key to your locker. The club cuts your access to the booking app.",
+            "If you leave on good terms, everything goes fast. If you are fired after an argument, the club mostly wants to be sure you will do nothing against it.",
+            "A company follows the same habits at every departure (termination), chosen or not."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The leaving checklist",
+          "comme": "The club has a list: badge returned, key returned, access cut, door code changed.",
+          "enVrai": "At a departure, the company suspends electronic access, collects badges and equipment, counts keys and changes lock codes. A former employee remains a former insider: a person who knew the inside and knows a lot. The image stops here: a forced departure needs more care than a calm one."
+        },
+        {
+          "type": "predire",
+          "question": "An employee is fired on a Friday at 3 pm. When should their access be disabled?",
+          "options": [
+            "Monday, when they would have come back to work",
+            "Right away, together with the announcement",
+            "After a week, to give time to hand over their work"
+          ],
+          "answer": "Right away, together with the announcement",
+          "explanation": "The company must assume that a fired person can be a threat. Access kept for longer is an open door."
+        },
+        {
+          "type": "exemple",
+          "titre": "The technician who leaves angry",
+          "texte": "A technician is fired. Before leaving, they copy customer files. They want to sell them to a competitor, or block the company with ransomware to ask for money. A behavior analysis tool (UEBA) spots users' unusual actions: it could have flagged this person."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-depart-types-def1",
+          "question": "Official definition: voluntary and involuntary termination",
+          "answer": "Terminations may be voluntary (i.e., an employee retires or finds a new job) or involuntary (i.e., an employee is fired, furloughed, or otherwise \"let go\").",
+          "explanation": "Voluntary: the employee chooses. Involuntary: the company decides.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Termination”. “Furloughed” means sent home on forced leave."
+        },
+        {
+          "id": "d1-pers-depart-types-def3",
+          "question": "Terminations may be [[voluntary]] (i.e., an employee [[retires or finds a new job]]) or [[involuntary]] (i.e., an employee is fired, furloughed, or otherwise \"let go\").",
+          "answer": "Terminations may be voluntary (i.e., an employee retires or finds a new job) or involuntary (i.e., an employee is fired, furloughed, or otherwise \"let go\").",
+          "explanation": "Two families: voluntary, with retirement or a new job, and involuntary, with being fired."
+        },
+        {
+          "id": "d1-pers-depart-menace-def1",
+          "question": "Official definition: an involuntary termination",
+          "answer": "In virtually all cases, an involuntary termination forces the employer to assume the terminated individual is a threat to the organization, and appropriate action should be taken to protect organizational assets.",
+          "explanation": "You assume the worst to protect the company, without judging the person.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Termination”. Assets are what has value for the company."
+        },
+        {
+          "id": "d1-pers-depart-menace-def3",
+          "question": "In virtually all cases, an involuntary termination forces the employer to assume the terminated individual is [[a threat to the organization]], and [[appropriate action]] should be taken to [[protect organizational assets]].",
+          "answer": "In virtually all cases, an involuntary termination forces the employer to assume the terminated individual is a threat to the organization, and appropriate action should be taken to protect organizational assets.",
+          "explanation": "Three blocks: a possible threat, appropriate action, protecting assets."
+        },
+        {
+          "id": "d1-pers-depart-1",
+          "question": "An employee retires. Is this departure voluntary or involuntary?",
+          "answer": "Voluntary",
+          "explanation": "The manual cites retiring and finding a new job as voluntary departures.",
+          "options": [
+            "Voluntary",
+            "Involuntary"
+          ]
+        },
+        {
+          "id": "d1-pers-depart-2",
+          "question": "Voluntary or involuntary departure? Sort each situation.",
+          "answer": "Voluntary: retiring, leaving for another job. Involuntary: being fired, being laid off.",
+          "explanation": "Voluntary: the employee chooses to leave. Involuntary: the company decides.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Voluntary",
+              "Involuntary"
+            ],
+            "items": [
+              {
+                "text": "Retiring",
+                "category": "Voluntary"
+              },
+              {
+                "text": "Leaving for another job",
+                "category": "Voluntary"
+              },
+              {
+                "text": "Being fired",
+                "category": "Involuntary"
+              },
+              {
+                "text": "Being laid off by the company",
+                "category": "Involuntary"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-depart-3",
+          "question": "Which action is part of the standard checklist for a departure on good terms?",
+          "answer": "Suspend electronic access and collect badges and equipment",
+          "explanation": "The manual lists: access cut, badges and equipment collected, keys counted, lock codes changed.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Termination”.",
+          "options": [
+            "Suspend electronic access and collect badges and equipment",
+            "Leave access active for a week as a courtesy",
+            "Keep the lock codes unchanged",
+            "Let the employee keep their computer"
+          ],
+          "options_why": [
+            "",
+            "Access that stays active after the departure is a needless open door.",
+            "The lock codes the person used must be changed.",
+            "Company equipment must be collected."
+          ]
+        },
+        {
+          "id": "d1-pers-depart-4",
+          "question": "Why is a fired employee treated as a possible threat?",
+          "answer": "They know the inside of the company and may be angry. They could steal data or cause harm, for example to sell it.",
+          "explanation": "Caution protects the company without accusing the person."
+        },
+        {
+          "id": "d1-pers-depart-5",
+          "question": "What should be done with equipment collected from a fired employee, when appropriate?",
+          "answer": "Track it as evidence and keep it, for forensics: looking for evidence in devices.",
+          "explanation": "The equipment may hold useful traces if something went wrong.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Termination”."
+        },
+        {
+          "id": "d1-pers-depart-6",
+          "question": "You disable their electronic access and their [[physical]] access, then collect the [[badges]] and equipment.",
+          "answer": "You disable their electronic access and their physical access, then collect the badges and equipment.",
+          "explanation": "Access to buildings and access to systems are cut together."
+        },
+        {
+          "id": "d1-pers-depart-7",
+          "question": "What if the company forgets to tell the security team when someone is fired?",
+          "answer": "The person's access stays active. They can still enter the systems or the building and do harm.",
+          "explanation": "The departure process must tell the security team so that access is cut."
+        },
+        {
+          "id": "d1-pers-depart-8",
+          "question": "After someone is fired, what should the rest of the staff be told?",
+          "answer": "That the person no longer has access, and to report any attempt to get in",
+          "explanation": "The staff become a security relay: they report any unusual access.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Termination”.",
+          "options": [
+            "That the person no longer has access, and to report any attempt to get in",
+            "Nothing, to avoid making a fuss",
+            "The detailed reasons for the firing",
+            "That the person may come back for their things whenever they like"
+          ],
+          "options_why": [
+            "",
+            "Without this information, nobody notices an access attempt by the former employee.",
+            "Giving the detailed reasons is not useful for security.",
+            "Free access to the premises goes against protecting assets."
+          ]
+        },
+        {
+          "id": "d1-pers-depart-9",
+          "question": "What is a UEBA tool for?",
+          "answer": "It analyzes user behavior (User and Entity Behavior Analytics) to spot an unhappy employee who is planning something bad.",
+          "explanation": "It looks for unusual behavior, for example copying many files before leaving.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, “Tip” box in the section “Termination”."
+        },
+        {
+          "id": "d1-pers-depart-10",
+          "question": "Which bad actions can a fired employee try, according to the manual?",
+          "answer": "Stealing data to sell it (as with ransomware). Using it to start or join a competitor. Or revealing it to harm the company.",
+          "explanation": "Three goals: money, an edge over a competitor, or revenge.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, “Tip” box in the section “Termination”."
+        },
+        {
+          "id": "d1-pers-depart-11",
+          "question": "Write what must be done when an employee leaves the company on good terms.",
+          "answer": "Suspend their electronic access, collect their badges and equipment, count the keys and change the lock codes they used.",
+          "explanation": "Four actions: cut, collect, count, change."
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-tiers",
+      "name": "Vendors, consultants and contractors (third parties)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The plumber at your house",
+          "paragraphes": [
+            "A plumber comes to fix your bathroom. You open the door, and they spend an hour in your home.",
+            "You do not give them the key to the safe or access to your photos. You only show them the bathroom.",
+            "A company also receives people from outside: vendors, consultants, contractors. Like you, it must decide what they are allowed to see."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The expert you cannot replace",
+          "comme": "The plumber is an expert you cannot replace. They help you, but they could also see or damage what they should not.",
+          "enVrai": "A vendor sells products or services. A consultant gives expert advice for a time. A contractor does a specific job without being an employee. All of them get access, so all of them add risk."
+        },
+        {
+          "type": "predire",
+          "question": "An outside consultant must install software. What is most useful before they start?",
+          "options": [
+            "A nondisclosure agreement (NDA)",
+            "Nothing, because they are not an employee",
+            "A badge for the whole building"
+          ],
+          "answer": "A nondisclosure agreement (NDA)",
+          "explanation": "Even if they are not an employee, they will see sensitive information. The NDA sets expectations before they start."
+        },
+        {
+          "type": "exemple",
+          "titre": "The night cleaning company",
+          "texte": "A company hires a night cleaning company. Its staff have keys to the offices. They may come across papers on desks and screens left on. The company makes them sign a nondisclosure agreement and limits the rooms they enter."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-tiers-risque-def1",
+          "question": "Official definition: relationships with third parties and security",
+          "answer": "Information security policies should be in place to ensure that these relationships do not expose the organization's sensitive information to an unreasonable amount of risk.",
+          "explanation": "Written rules stop outside relationships from putting secrets in danger.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Vendor, Consultant, and Contractor Agreements and Controls”."
+        },
+        {
+          "id": "d1-pers-tiers-risque-def3",
+          "question": "[[Information security policies]] should be in place to ensure that these relationships do not [[expose the organization's sensitive information]] to [[an unreasonable amount of risk]].",
+          "answer": "Information security policies should be in place to ensure that these relationships do not expose the organization's sensitive information to an unreasonable amount of risk.",
+          "explanation": "Three blocks: security policies, sensitive information, and an unreasonable amount of risk."
+        },
+        {
+          "id": "d1-pers-tiers-nda-def1",
+          "question": "Official definition: agreements and third parties",
+          "answer": "NDAs and other employment agreement policies play a big part in establishing expectations with third parties and can lead to additional compliance burden on the organization who must enforce them.",
+          "explanation": "These agreements set the rules, but the company must then enforce them.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Vendor, Consultant, and Contractor Agreements and Controls”. “Burden” means extra workload."
+        },
+        {
+          "id": "d1-pers-tiers-nda-def3",
+          "question": "NDAs and other employment agreement policies play a big part in [[establishing expectations]] with [[third parties]] and can lead to [[additional compliance burden]] on the organization who must enforce them.",
+          "answer": "NDAs and other employment agreement policies play a big part in establishing expectations with third parties and can lead to additional compliance burden on the organization who must enforce them.",
+          "explanation": "Three blocks: setting expectations, third parties, and extra compliance burden."
+        },
+        {
+          "id": "d1-pers-tiers-1",
+          "question": "A cleaning company enters the offices at night. Is it a risk for confidentiality?",
+          "answer": "Yes, it has access to the premises",
+          "explanation": "Anyone who has access to places or data can see what they should not see.",
+          "options": [
+            "Yes, it has access to the premises",
+            "No, it is not inside the company"
+          ]
+        },
+        {
+          "id": "d1-pers-tiers-2",
+          "question": "Why does a company use consultants or vendors?",
+          "answer": "It needs skills or products it does not have in house",
+          "explanation": "These relationships are useful, but they open the company to extra risk.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Vendor, Consultant, and Contractor Agreements and Controls”. The simple explanations of vendor, consultant and contractor are ours, outside the manual.",
+          "options": [
+            "It needs skills or products it does not have in house",
+            "Because outsiders are always safer",
+            "So that it does not need a security policy",
+            "To avoid having to protect its data"
+          ],
+          "options_why": [
+            "",
+            "They also have access to information, so they add risk.",
+            "On the contrary: these relationships need security policies.",
+            "The data must still be protected, even when outsiders access it."
+          ]
+        },
+        {
+          "id": "d1-pers-tiers-3",
+          "question": "Which types of outside relationships open the company to risk?",
+          "answer": "Those for products and those for services: both types of purchase expose the organization to risk.",
+          "explanation": "Buying a product or a service gives someone outside some access.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1: “both types of acquisition open the organization to risk”."
+        },
+        {
+          "id": "d1-pers-tiers-4",
+          "question": "Why does an NDA also help with outside contractors?",
+          "answer": "It sets from the start what the contractor may say. It protects sensitive information even if they are not an employee.",
+          "explanation": "The NDA does not depend on status: it follows the information."
+        },
+        {
+          "id": "d1-pers-tiers-5",
+          "question": "Agreements like the NDA set [[expectations]] with third parties, but the company must [[enforce]] them.",
+          "answer": "Agreements like the NDA set expectations with third parties, but the company must enforce them.",
+          "explanation": "Signing is not enough: the company must check that the agreement is followed."
+        },
+        {
+          "id": "d1-pers-tiers-6",
+          "question": "What if the company gives a consultant the same access as an employee?",
+          "answer": "They can see far more than needed. This goes against least privilege and raises the risk of a leak.",
+          "explanation": "Access must match the task, not the status."
+        },
+        {
+          "id": "d1-pers-tiers-7",
+          "question": "A maintenance contractor arrives on Monday. What should be planned before their first day?",
+          "answer": "A nondisclosure agreement and access limited to their task",
+          "explanation": "An NDA sets expectations. Limited access reduces risk.",
+          "options": [
+            "A nondisclosure agreement and access limited to their task",
+            "Wide access, so they are never blocked",
+            "A simple verbal agreement, to go fast",
+            "Nothing until the end of their first day"
+          ],
+          "options_why": [
+            "",
+            "Wide access goes against least privilege.",
+            "A verbal agreement leaves no proof of what was promised.",
+            "The risk exists as soon as they come in: it is better to act before."
+          ]
+        },
+        {
+          "id": "d1-pers-tiers-8",
+          "question": "Internal or external staff? Sort each person.",
+          "answer": "External: consultant hired for a month, night cleaning company, software vendor. Internal: salaried accountant, human resources director, salaried technician.",
+          "explanation": "External people are not employees of the company, but they still have access.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "External staff",
+              "Internal staff"
+            ],
+            "items": [
+              {
+                "text": "A consultant hired for a month",
+                "category": "External staff"
+              },
+              {
+                "text": "A night cleaning company",
+                "category": "External staff"
+              },
+              {
+                "text": "A software vendor",
+                "category": "External staff"
+              },
+              {
+                "text": "The company's salaried accountant",
+                "category": "Internal staff"
+              },
+              {
+                "text": "The human resources director",
+                "category": "Internal staff"
+              },
+              {
+                "text": "A salaried technician from the IT department",
+                "category": "Internal staff"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-tiers-9",
+          "question": "Write three security rules you would ask for before letting a contractor into the premises.",
+          "answer": "A signed nondisclosure agreement. Access limited to what they need. Their access ends as soon as the job is done.",
+          "explanation": "Set expectations, limit access, cut access at the end."
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-conformite",
+      "name": "Staff compliance (compliance policy requirements)",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The signed rules",
+          "paragraphes": [
+            "At the start of the year, you sign a page that says: “I have read the rules and I promise to follow them”. This paper does not change the rules. It proves you read them.",
+            "Every year there is a reminder: a meeting, a small quiz.",
+            "In a company, the signature is called an attestation, and the yearly reminder is a recertification."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The signed page",
+          "comme": "By signing, you can no longer say: I did not know. Every year you read again so that you do not forget.",
+          "enVrai": "An attestation is a signed document where the employee says they have read the policies and promise to follow them. The first training and regular reminders keep their knowledge up to date. The image stops here: signing is not enough, you must also understand."
+        },
+        {
+          "type": "predire",
+          "question": "What is a good way to stay compliant, according to the manual?",
+          "options": [
+            "A recertification every year",
+            "A single training, when hired",
+            "Training only after an incident"
+          ],
+          "answer": "A recertification every year",
+          "explanation": "A single training is soon forgotten. Waiting for an incident means reacting too late."
+        },
+        {
+          "type": "exemple",
+          "titre": "The yearly security module",
+          "texte": "Every January, all the employees of a bank take a security module and sign that they follow the policies. Cashiers also get fraud training, because it is their job."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-conformite-resp-def1",
+          "question": "Official definition: compliance responsibilities",
+          "answer": "Responsibilities for compliance with applicable policies and regulations should be clearly documented and understood by all employees within an organization.",
+          "explanation": "The rules must be written down, and everyone must understand them.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Compliance Policy Requirements”."
+        },
+        {
+          "id": "d1-pers-conformite-resp-def3",
+          "question": "Responsibilities for compliance with applicable policies and regulations should be [[clearly documented]] and [[understood by all employees]] within [[an organization]].",
+          "answer": "Responsibilities for compliance with applicable policies and regulations should be clearly documented and understood by all employees within an organization.",
+          "explanation": "Three blocks: clearly documented, understood by all employees, across the whole organization."
+        },
+        {
+          "id": "d1-pers-conformite-attest-def1",
+          "question": "Official definition: the attestation",
+          "answer": "In many cases, employees may be required to sign an attestation stating that they have reviewed and agree to comply with all company policies and applicable regulations.",
+          "explanation": "The attestation proves that the employee read the rules and agrees to follow them.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Compliance Policy Requirements”."
+        },
+        {
+          "id": "d1-pers-conformite-attest-def3",
+          "question": "In many cases, employees may be required to [[sign an attestation]] stating that they have [[reviewed and agree to comply]] with all [[company policies and applicable regulations]].",
+          "answer": "In many cases, employees may be required to sign an attestation stating that they have reviewed and agree to comply with all company policies and applicable regulations.",
+          "explanation": "Three blocks: sign an attestation, have read and agree, all policies and regulations."
+        },
+        {
+          "id": "d1-pers-conformite-form-def1",
+          "question": "Official definition: training for people with access",
+          "answer": "Employees and other parties with access to systems and information must undergo initial and periodic training that includes security awareness and job-based training.",
+          "explanation": "Two types of training, at the start and then regularly: awareness and job-based training.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Compliance Policy Requirements”."
+        },
+        {
+          "id": "d1-pers-conformite-form-def3",
+          "question": "Employees and other parties with access to systems and information must undergo [[initial and periodic training]] that includes [[security awareness]] and [[job-based training]].",
+          "answer": "Employees and other parties with access to systems and information must undergo initial and periodic training that includes security awareness and job-based training.",
+          "explanation": "Three blocks: initial and regular training, security awareness, job-based training."
+        },
+        {
+          "id": "d1-pers-conformite-1",
+          "question": "An employee signs that they have read and accept the company policies. What is this document called?",
+          "answer": "An attestation",
+          "explanation": "The NDA forbids revealing secrets. The attestation proves that you read and accepted the rules.",
+          "options": [
+            "An attestation",
+            "An NDA"
+          ]
+        },
+        {
+          "id": "d1-pers-conformite-2",
+          "question": "Which types of training must an employee take, according to the manual?",
+          "answer": "Security awareness and training linked to their job",
+          "explanation": "The first teaches security habits. The second teaches the risks of the job.",
+          "options": [
+            "Security awareness and training linked to their job",
+            "Only technical IT training",
+            "Only training on the day of hiring",
+            "Training reserved for managers"
+          ],
+          "options_why": [
+            "",
+            "The manual also asks for security awareness.",
+            "The manual talks about initial training, then periodic training.",
+            "The manual talks about employees and anyone who has access."
+          ]
+        },
+        {
+          "id": "d1-pers-conformite-3",
+          "question": "What does annual recertification mean?",
+          "answer": "Every year, people with access redo the training and confirm that they follow the policies.",
+          "explanation": "A yearly reminder keeps good habits.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1: “annual recertification is a good way to ensure that all parties remain in compliance”."
+        },
+        {
+          "id": "d1-pers-conformite-4",
+          "question": "Why repeat the training every year?",
+          "answer": "Threats and rules change, and people forget quickly. A regular reminder keeps good habits.",
+          "explanation": "Training done only once fades with time."
+        },
+        {
+          "id": "d1-pers-conformite-5",
+          "question": "Training takes place at the start and then [[periodically]], for everyone who has [[access]] to the systems.",
+          "answer": "Training takes place at the start and then periodically, for everyone who has access to the systems.",
+          "explanation": "Initial, then periodic: two stages."
+        },
+        {
+          "id": "d1-pers-conformite-6",
+          "question": "What if the company never asks anyone to sign an attestation?",
+          "answer": "An employee can say they did not know the rules. The company has no proof that they read and accepted them.",
+          "explanation": "The attestation works as proof and reminds people of their promise."
+        },
+        {
+          "id": "d1-pers-conformite-7",
+          "question": "An employee says: “I did not know I could not plug in my personal USB stick.” What would have prevented this?",
+          "answer": "A signed attestation after reading the policies",
+          "explanation": "Rules must be documented, understood and accepted in writing.",
+          "options": [
+            "A signed attestation after reading the policies",
+            "A second computer",
+            "A longer password",
+            "A newer firewall"
+          ],
+          "options_why": [
+            "",
+            "A second computer does not teach the rules.",
+            "A longer password protects an account, not knowledge of the rules.",
+            "A firewall filters the network, it does not inform people."
+          ]
+        },
+        {
+          "id": "d1-pers-conformite-8",
+          "question": "Attestation or training? Sort each action.",
+          "answer": "Attestation: sign that you have read the policies, promise in writing to follow the rules. Training: learn to spot a phishing message, take a course on the rules of your job.",
+          "explanation": "The attestation is a written promise. Training teaches something new.",
+          "data": {
+            "mode": "classer",
+            "categories": [
+              "Attestation",
+              "Training"
+            ],
+            "items": [
+              {
+                "text": "Sign to say you have read the policies",
+                "category": "Attestation"
+              },
+              {
+                "text": "Promise in writing to follow the rules",
+                "category": "Attestation"
+              },
+              {
+                "text": "Learn to spot a phishing message",
+                "category": "Training"
+              },
+              {
+                "text": "Take a course on the rules of your job",
+                "category": "Training"
+              }
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-conformite-9",
+          "question": "What would you put in place to make sure every employee follows the policies?",
+          "answer": "Document the responsibilities clearly, have everyone sign an attestation, and give training at the start and then regularly.",
+          "explanation": "Document, sign, train."
+        }
+      ]
+    },
+    {
+      "id": "d1-pers-vieprivee",
+      "name": "The privacy policy",
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "I accept, without reading",
+          "paragraphes": [
+            "You install an app. It asks for your name, your location, your photos. You tap “I accept” without reading.",
+            "Yet a text explained which data it took, why, and how it protected it.",
+            "This text is called the privacy policy."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The label on the box",
+          "comme": "On a pack of biscuits, the label tells you what is inside. You can choose knowing what you are getting.",
+          "enVrai": "The privacy policy is the label for personal data. It says which data is taken, how it is used and how it is protected. It points to privacy laws, such as HIPAA in the United States or GDPR in Europe."
+        },
+        {
+          "type": "predire",
+          "question": "A company handles information about people who live in the European Union. Which law should its policy mention?",
+          "options": [
+            "HIPAA",
+            "GDPR",
+            "None"
+          ],
+          "answer": "GDPR",
+          "explanation": "HIPAA is American and is about health. The manual cites GDPR for companies that handle information about people who live in the European Union."
+        },
+        {
+          "type": "exemple",
+          "titre": "A sports app's policy",
+          "texte": "A sports app writes: “We take your name and your heart rate. We use them for your statistics. We do not sell them. They are encrypted on our servers.” These four sentences show what is taken, how it is used and how it is protected."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-pers-vieprivee-def1",
+          "question": "Official definition: “privacy policy”",
+          "answer": "Your organization's privacy policy is an explanation of your company's personal data collection and use practices.",
+          "explanation": "Think of the label on the box: it explains what is inside.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Privacy Policy Requirements”. Learn it word for word."
+        },
+        {
+          "id": "d1-pers-vieprivee-def2",
+          "question": "Your organization's privacy policy is an [[explanation]] of your company's personal data [[collection]] and use practices.",
+          "answer": "Your organization's privacy policy is an explanation of your company's personal data collection and use practices.",
+          "explanation": "An explanation: the collection and use of personal data."
+        },
+        {
+          "id": "d1-pers-vieprivee-def3",
+          "question": "Your organization's [[privacy policy]] is [[an explanation]] of your company's personal data [[collection and use practices]].",
+          "answer": "Your organization's privacy policy is an explanation of your company's personal data collection and use practices.",
+          "explanation": "Three blocks: the privacy policy, an explanation, collection and use practices."
+        },
+        {
+          "id": "d1-pers-vieprivee-def4",
+          "question": "Write the official definition of the “privacy policy” from memory.",
+          "answer": "Your organization's privacy policy is an explanation of your company's personal data collection and use practices.",
+          "explanation": "A short sentence, with the three key words: explanation, collection, use."
+        },
+        {
+          "id": "d1-pers-vieprivee-contenu-def1",
+          "question": "Official definition: what the “privacy policy” must explain",
+          "answer": "Your privacy policy should explain what kind of personal data is collected, how your organization will or won't use it, and how the personal data will be stored, maintained, and secured.",
+          "explanation": "Three questions: what is taken, what is it for, how is it protected.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Privacy Policy Requirements”."
+        },
+        {
+          "id": "d1-pers-vieprivee-contenu-def3",
+          "question": "Your privacy policy should explain [[what kind of personal data is collected]], [[how your organization will or won't use it]], and how the personal data will be [[stored, maintained, and secured]].",
+          "answer": "Your privacy policy should explain what kind of personal data is collected, how your organization will or won't use it, and how the personal data will be stored, maintained, and secured.",
+          "explanation": "Three blocks: what is collected, how it is used, and storage with security."
+        },
+        {
+          "id": "d1-pers-vieprivee-dispo-def1",
+          "question": "Official definition: who must be able to read the “privacy policy”",
+          "answer": "The privacy policy should be made available to all personnel, and many organizations require a signed acknowledgment from each employee.",
+          "explanation": "Everyone must be able to read it, and often each person signs to say they received it.",
+          "explanation_more": "Definition from the official (ISC)2 manual, domain 1, section “Privacy Policy Requirements”."
+        },
+        {
+          "id": "d1-pers-vieprivee-dispo-def3",
+          "question": "The privacy policy should be [[made available to all personnel]], and many organizations require [[a signed acknowledgment]] from [[each employee]].",
+          "answer": "The privacy policy should be made available to all personnel, and many organizations require a signed acknowledgment from each employee.",
+          "explanation": "Three blocks: available to all staff, a signed acknowledgment, from each employee."
+        },
+        {
+          "id": "d1-pers-vieprivee-1",
+          "question": "A text that explains which personal data a company collects is:",
+          "answer": "A privacy policy",
+          "explanation": "The NDA forbids revealing secrets. The privacy policy explains the practices about personal data.",
+          "options": [
+            "A privacy policy",
+            "An NDA"
+          ]
+        },
+        {
+          "id": "d1-pers-vieprivee-2",
+          "question": "Which of these must appear in a privacy policy?",
+          "answer": "How personal data is stored and protected",
+          "explanation": "The policy explains what is collected, how it is used, and how it is stored and protected.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Privacy Policy Requirements”.",
+          "options": [
+            "How personal data is stored and protected",
+            "The list of the most profitable customers",
+            "The details of contracts with vendors",
+            "The administrators' login details"
+          ],
+          "options_why": [
+            "",
+            "That is internal information, not an explanation about the personal data collected.",
+            "Contracts are not about personal data practices.",
+            "Login details must never be published in a document read by all staff."
+          ]
+        },
+        {
+          "id": "d1-pers-vieprivee-3",
+          "question": "Which laws must the privacy policy point to?",
+          "answer": "The privacy laws and rules that apply. For example HIPAA in the United States, or GDPR for companies that handle information about people who live in the European Union.",
+          "explanation": "The policy shows which laws it relies on.",
+          "explanation_more": "Source: official (ISC)2 manual, domain 1, section “Privacy Policy Requirements”."
+        },
+        {
+          "id": "d1-pers-vieprivee-4",
+          "question": "Why must a privacy policy say how data is protected?",
+          "answer": "People trust you with their data and have the right to know how it is kept. It also shows that the company follows the laws.",
+          "explanation": "Being open builds trust."
+        },
+        {
+          "id": "d1-pers-vieprivee-5",
+          "question": "The privacy policy says which data is [[collected]], how it is [[used]] and how it is protected.",
+          "answer": "The privacy policy says which data is collected, how it is used and how it is protected.",
+          "explanation": "Three ideas: collection, use, protection."
+        },
+        {
+          "id": "d1-pers-vieprivee-6",
+          "question": "What if a company collects data from people in the European Union without mentioning GDPR?",
+          "answer": "It may fail to follow the law that applies to it. The policy must point to the laws involved.",
+          "explanation": "The manual wants a clear link between the policy and the applicable laws."
+        },
+        {
+          "id": "d1-pers-vieprivee-7",
+          "question": "Put the three things the policy explains in order.",
+          "answer": "1 Which data is collected. 2 How it is used. 3 How it is stored and protected.",
+          "explanation": "You follow the path of the data: it is taken, used, then kept.",
+          "data": {
+            "mode": "ordonner",
+            "items": [
+              "Which data is collected",
+              "How it is used",
+              "How it is stored and protected"
+            ]
+          }
+        },
+        {
+          "id": "d1-pers-vieprivee-8",
+          "question": "A company keeps its privacy policy in a locked drawer in the management office. What is the problem?",
+          "answer": "It must be available to all staff",
+          "explanation": "The manual asks that all staff can read it, and often sign an acknowledgment of receipt.",
+          "options": [
+            "It must be available to all staff",
+            "It must be encrypted",
+            "It must stay confidential, like a trade secret",
+            "It must be sent to customers every month"
+          ],
+          "options_why": [
+            "",
+            "Encryption is not the issue: the problem is access for the staff.",
+            "The policy explains practices: it does not have to stay secret.",
+            "The manual does not ask for a monthly mailing to customers."
+          ]
+        },
+        {
+          "id": "d1-pers-vieprivee-9",
+          "question": "Write in three points what a privacy policy must explain.",
+          "answer": "What kind of personal data is collected. How the company uses it or does not use it. How it is stored, kept and protected.",
+          "explanation": "Collection, use, protection."
+        },
+        {
+          "id": "d1-pers-vieprivee-10",
+          "question": "For which region does the manual cite HIPAA?",
+          "answer": "The United States",
+          "explanation": "HIPAA is an American law. For the European Union, the manual cites GDPR.",
+          "options": [
+            "The United States",
+            "The European Union"
+          ]
+        }
+      ]
+    }
+  ]
+}
