@@ -3,7 +3,6 @@ import { Session } from "@/app/session/Session";
 import { Ambiance } from "@/components/audio/Ambiance";
 import { aujourdhui } from "@/lib/dates";
 import { CONFIG_REVISION } from "@/lib/revision/config";
-import { optionsLangue } from "@/lib/supabase/alternatives";
 import { composerSessionDepuisBase, creerSession } from "@/lib/supabase/requetes";
 
 /** Lit la durée choisie (?duree=20), sinon la durée par défaut. */
@@ -32,11 +31,10 @@ export default async function PagePatrouille({ searchParams }: PageProps<"/patro
   }
 
   const sessionId = await creerSession(minutes);
-  const { langue, cartesAlt } = await optionsLangue(cartes);
   return (
     <>
       <Ambiance />
-      <Session mode="patrouille" sessionId={sessionId} cartes={cartes} aujourdhui={aujourdhui()} retourHref="/" langue={langue} cartesAlt={cartesAlt} />
+      <Session mode="patrouille" sessionId={sessionId} cartes={cartes} aujourdhui={aujourdhui()} retourHref="/" />
     </>
   );
 }

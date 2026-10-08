@@ -1,14 +1,14 @@
 // Vérifie que chaque « définition officielle » des cartes CISSP est copiée MOT POUR MOT du manuel.
 //
 // Usage :  node scripts/verifier-definitions.mjs <domaine> <fichier.json> [<fichier.json> ...]
-//   <domaine>  1 à 8  (cherche « domain<N>.pdf » ou « domaine<N>.pdf » dans le dossier des sources)
-//   fichiers   des modules (galaxies) JSON, ou un concept seul, ou une matière entière,
-//              ou des traductions anglaises (dossier en/ : phrase officielle seule, sans « Traduction : »).
+//   <domaine>  1 à 8  (le PDF est reconnu par l'en-tête « DOMAIN N » dans le dossier des sources)
+//   fichiers   des modules (galaxies) JSON, ou un concept seul, ou une matière entière.
 //
-// Une carte est une « définition officielle » quand son id finit par -def1, -def2, -def3 ou -def4.
-// Sa phrase officielle = son champ `answer` (avant « \n\nTraduction : »). Elle doit apparaître telle quelle
-// dans le PDF. Seules les différences de casse, ponctuation, espaces, tirets et coupures de page sont ignorées.
-// Pour les textes à trous, la question une fois les trous remplis doit aussi redonner la phrase exacte.
+// Une carte est une « définition officielle » quand son id finit par -def1, -def2 ou -def3.
+// Sa phrase officielle = son champ `answer`. Elle doit apparaître telle quelle dans le PDF. Seules les
+// différences de casse, ponctuation, espaces, tirets et coupures de page sont ignorées.
+// Pour un QCM (-def2) : `answer` doit être l'une des 4 options, et les 3 AUTRES options sont des variantes
+// inventées : elles ne doivent PAS figurer dans le manuel (sinon deux phrases seraient « la bonne »).
 import { execFileSync } from "node:child_process";
 import { readdirSync, readFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -64,10 +64,6 @@ function* toutesLesCartes(noeud) {
   }
 }
 
-const SEPARATEUR = /\n\s*\nTraduction\s*:/;
-const phraseOfficielle = (answer) => answer.split(SEPARATEUR)[0].trim();
-const remplirTrous = (question) => question.replace(/\[\[(.+?)\]\]/g, (_, t) => t.split("|")[0]);
-
 const [domaineArg, ...fichiers] = process.argv.slice(2);
 if (!domaineArg || fichiers.length === 0) {
   console.error("Usage : node scripts/verifier-definitions.mjs <domaine 1-8> <fichier.json> [...]");
@@ -83,23 +79,22 @@ const echec = (carte, message) => {
 };
 
 for (const fichier of fichiers) {
-  // Les traductions anglaises (dossier en/) n'ont ni champ `type` ni ligne « Traduction : ».
-  const estEn = /[\/]en[\/]/.test(fichier);
   const json = JSON.parse(readFileSync(fichier, "utf8"));
   for (const carte of toutesLesCartes(json)) {
-    if (!/-def[1-4]$/.test(carte.id)) continue;
+    if (!/-def[1-3]$/.test(carte.id)) continue;
     total += 1;
-    const phrase = phraseOfficielle(carte.answer);
+    const phrase = String(carte.answer).trim();
     if (phrase.length < 25) echec(carte, "phrase officielle trop courte ou vide.");
     else if (!source.includes(normaliser(phrase))) echec(carte, `ne figure pas mot pour mot dans le manuel : « ${phrase.slice(0, 90)}… »`);
 
-    const estCloze = carte.type === "cloze" || (estEn && /[[.+?]]/.test(carte.question));
-    if (estCloze) {
-      if (normaliser(remplirTrous(carte.question)) !== normaliser(carte.answer)) {
-        echec(carte, "la question, une fois les trous remplis, ne redonne pas exactement la phrase de `answer`.");
+    if (carte.type === "qcm") {
+      const options = carte.options ?? [];
+      if (!options.includes(carte.answer)) echec(carte, "« answer » doit être l'une des options.");
+      for (const option of options) {
+        if (option !== carte.answer && source.includes(normaliser(option))) {
+          echec(carte, `une variante est aussi dans le manuel (donc « bonne » elle aussi) : « ${option.slice(0, 80)}… »`);
+        }
       }
-    } else if (!estEn && /-def[14]$/.test(carte.id) && !SEPARATEUR.test(carte.answer)) {
-      echec(carte, "il manque « \\n\\nTraduction : … » dans `answer`.");
     }
   }
 }

@@ -3,8 +3,6 @@
 // lire, appeler cette logique, et écrire.
 import { createClient } from "./server";
 import { profilCourantId } from "@/lib/profils";
-import { lireLangue } from "@/lib/langue";
-import { traduireCartes } from "@/lib/i18n/charger";
 import { aujourdhui, dateLocale } from "@/lib/dates";
 import { CONFIG_REVISION } from "@/lib/revision/config";
 import { composerSession, nouvellesDisponibles } from "@/lib/revision/composer";
@@ -122,7 +120,7 @@ export async function chargerCartesEtRevisions(): Promise<{ cartes: CarteAvecMat
     return { carte: versCarte(ligne), revision: r ? versEtat(r) : null, matiere: m ? { id: m.id, name: m.name, color: m.color } : null };
   });
 
-  return { cartes: await traduireCartes(cartes, await lireLangue()), revisions };
+  return { cartes, revisions };
 }
 
 // ---------- Réglages (table settings, une ligne par utilisateur) ----------

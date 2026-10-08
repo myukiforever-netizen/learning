@@ -1,0 +1,2124 @@
+{
+  "id": "d1-m00-examen",
+  "name": "D1.0 How the exam asks questions",
+  "galaxie": {
+    "teinte": 150,
+    "ambiance": "lumineux"
+  },
+  "concepts": [
+    {
+      "id": "d1-ex-format",
+      "name": "The exam in numbers",
+      "planete": {
+        "relief": "rocheuse"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "Before a big trip",
+          "paragraphes": [
+            "Before a long trip, you check how far it is and how long it takes. You also check what you must bring.",
+            "It is the same for an exam. If you know the shape of the test, you feel calmer on the day.",
+            "The CISSP exam has a clear shape. It has a number of questions, a time limit and a score you must reach."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "A game that adjusts",
+          "comme": "Some video games get harder when you play well and easier when you struggle. The game watches how you do.",
+          "enVrai": "The CISSP exam can work in a similar way. It is called an adaptive test (CAT). The computer picks the next question from your earlier answers. So two people do not get the same questions. The game idea stops here: the exam is serious, and you must read each question with care."
+        },
+        {
+          "type": "exemple",
+          "titre": "The numbers to know",
+          "texte": "The CISSP exam has 100 to 150 questions. You have 3 hours. To pass, you need 700 points out of 1000. This is a scaled score. So do not count it as a simple percent of right answers."
+        },
+        {
+          "type": "analogie",
+          "titre": "More than one kind of question",
+          "comme": "At school, a test can have a multiple-choice question, a drawing to label, and a list to put in order.",
+          "enVrai": "The exam also has more than one form. Most questions have 4 choices and one best answer. Some ask you to put steps in order. Some ask you to drag and drop items, or to click a zone on a picture. Some start with a short story called a scenario."
+        },
+        {
+          "type": "predire",
+          "question": "How many questions does the CISSP exam have?",
+          "options": [
+            "Exactly 50",
+            "100 to 150",
+            "About 500"
+          ],
+          "answer": "100 to 150",
+          "explanation": "The number is a range, because the exam adapts to you. Exactly 50 would be too few for 3 hours. About 500 would be too many."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-ex-format-q1",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "How many questions can the CISSP exam have?",
+          "options": [
+            "Exactly 250 questions",
+            "From 100 to 150 questions",
+            "From 20 to 40 questions",
+            "From 500 to 700 questions"
+          ],
+          "options_why": [
+            "That is too many for 3 hours. The real range is 100 to 150.",
+            "",
+            "That is too few. The exam is long.",
+            "The number 700 is the pass score, not the number of questions."
+          ],
+          "answer": "From 100 to 150 questions",
+          "explanation": "The exam has between 100 and 150 questions. The number depends on how you answer.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-ex-format-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "How long is the CISSP exam?",
+          "options": [
+            "1 hour",
+            "6 hours",
+            "A full day",
+            "3 hours"
+          ],
+          "options_why": [
+            "That is too short for 100 to 150 questions.",
+            "That is twice the real time limit.",
+            "The exam is long, but it does not last a full day.",
+            ""
+          ],
+          "answer": "3 hours",
+          "explanation": "You have 3 hours for the whole exam.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-ex-format-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What score do you need to pass the CISSP exam?",
+          "options": [
+            "700 points out of 1000",
+            "70 questions right out of 100",
+            "500 points out of 1000",
+            "1000 points out of 1000"
+          ],
+          "options_why": [
+            "",
+            "It looks like 70 percent, but the score is scaled. It is not a simple count.",
+            "That is too low. The pass score is 700.",
+            "You do not need a perfect score. 700 is enough."
+          ],
+          "answer": "700 points out of 1000",
+          "explanation": "The pass score is 700 points out of 1000. It is a scaled score, not a simple percent.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-ex-format-q4",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What does it mean that the exam is adaptive?",
+          "options": [
+            "All candidates get the same questions in the same order",
+            "You can choose the topics that you like",
+            "The computer picks the next question from your earlier answers",
+            "You pick the easy questions first and the hard ones later in the test"
+          ],
+          "options_why": [
+            "This is the opposite. In an adaptive test, the questions depend on each person.",
+            "The computer chooses the questions, not you.",
+            "",
+            "The computer decides the order, not you."
+          ],
+          "answer": "The computer picks the next question from your earlier answers",
+          "explanation": "An adaptive test changes as you answer. The difficulty is adjusted to you.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Four choices all sound possible to a candidate. What does a normal question ask her to find?",
+          "options": [
+            "The first choice that is true",
+            "All the choices that are true",
+            "The choice with the most words",
+            "The one BEST answer among the choices"
+          ],
+          "options_why": [
+            "The first true choice is not always the best one.",
+            "A normal question has one best answer, not a list.",
+            "Length does not show which answer is best.",
+            ""
+          ],
+          "answer": "The one BEST answer among the choices",
+          "explanation": "A normal question has 4 choices and only one best answer. Other choices may be partly true.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Mia has 150 questions and 3 hours. On average, how much time can she spend on each question?",
+          "options": [
+            "About 10 minutes",
+            "About 1 or 2 minutes",
+            "About 5 minutes",
+            "About 15 seconds"
+          ],
+          "options_why": [
+            "10 minutes times 150 is 25 hours. That is far too long.",
+            "",
+            "5 minutes times 150 is more than 12 hours.",
+            "That is too fast. She would have no time to read."
+          ],
+          "answer": "About 1 or 2 minutes",
+          "explanation": "3 hours is 180 minutes. 180 divided by 150 is a little more than 1 minute.",
+          "explanation_more": "Source: ISC2 gives the time and the number of questions. The 1 minute tip comes from exam-prep guides (not ISC2).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT a form of question that can appear on the exam?",
+          "options": [
+            "A spoken interview with a person",
+            "Putting steps in the right order",
+            "Clicking a zone on a picture",
+            "Dragging items to the right place"
+          ],
+          "options_why": [
+            "",
+            "This form can appear. ISC2 lists ordering questions.",
+            "This form can appear. It is called a hotspot.",
+            "This form can appear. It is called drag and drop."
+          ],
+          "answer": "A spoken interview with a person",
+          "explanation": "The exam is on a computer. It does not have a spoken interview.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which sentence is the BEST description of a scenario question?",
+          "options": [
+            "A question that has no choices at all",
+            "A question that you must always answer in less than ten seconds",
+            "A short story about a situation, followed by a question",
+            "A question that only asks for a definition"
+          ],
+          "options_why": [
+            "A scenario question still has choices.",
+            "There is no such rule. The time limit is for the whole exam.",
+            "",
+            "A definition question is different. A scenario starts with a situation."
+          ],
+          "answer": "A short story about a situation, followed by a question",
+          "explanation": "A scenario gives you a situation first. Then you answer what the question asks.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "The score is scaled. What does this tell you?",
+          "options": [
+            "It is not just the percent of questions that you got right",
+            "It is exactly the number of right answers",
+            "It is the number of minutes that you used",
+            "It is the same for every candidate"
+          ],
+          "options_why": [
+            "",
+            "A scaled score is calculated. It is not a plain count.",
+            "Time used is not the score.",
+            "Scores depend on how each person answers."
+          ],
+          "answer": "It is not just the percent of questions that you got right",
+          "explanation": "Do not try to turn 700 out of 1000 into a percent. Just answer each question as well as you can.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which fact about the exam is MOST useful for planning your time?",
+          "options": [
+            "You need 700 points to pass",
+            "Some questions use drag and drop",
+            "The test is adaptive",
+            "You have 3 hours for 100 to 150 questions"
+          ],
+          "options_why": [
+            "This is true, but it does not tell you how to share your time.",
+            "This is true, but it does not tell you how to plan your time.",
+            "This is true, but it does not tell you how much time each question needs.",
+            ""
+          ],
+          "answer": "You have 3 hours for 100 to 150 questions",
+          "explanation": "The time and the number of questions tell you how long you can spend on each one.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-q11",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which source is the BEST place to learn the official exam format?",
+          "options": [
+            "A website that sells copies of past exam questions",
+            "A friend's memory of the exam",
+            "The ISC2 page “Getting Ready for Your ISC2 Exam”",
+            "A video that promises the exact questions"
+          ],
+          "options_why": [
+            "Real questions are secret. Such sites can be unsafe and not correct.",
+            "A friend can forget or mix things up. Use the official page.",
+            "",
+            "Nobody may share real questions. Be careful with promises like this."
+          ],
+          "answer": "The ISC2 page “Getting Ready for Your ISC2 Exam”",
+          "explanation": "The official page gives the real facts: the number of questions, the time and the score.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-q12",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which way to prepare is the LEAST useful?",
+          "options": [
+            "Reading the exam outline from ISC2",
+            "Doing the same test again and again until you know it",
+            "Practicing with new questions and reading each explanation",
+            "Learning the ideas behind each topic"
+          ],
+          "options_why": [
+            "This is useful. It shows the topics of the exam.",
+            "",
+            "This is useful. You learn why an answer is the best one.",
+            "This is useful. Ideas help you answer new questions."
+          ],
+          "answer": "Doing the same test again and again until you know it",
+          "explanation": "If you repeat the same test, you remember the answers and not the subject.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-f1",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "How many questions and how much time does the CISSP exam give?",
+          "answer": "100 to 150 questions, in 3 hours.",
+          "explanation": "Think: a range of questions, and 180 minutes in total.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-ex-format-f2",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What score do you need to pass? Is it a simple percent?",
+          "answer": "700 points out of 1000. It is a scaled score, not a simple percent.",
+          "explanation": "The number 700 is a score, not a count of questions.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "3m"
+        },
+        {
+          "id": "d1-ex-format-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is an adaptive test (CAT)?",
+          "answer": "A test where the computer chooses the next question from your earlier answers.",
+          "explanation": "Think of the video game that adjusts to how you play.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-format-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Name three forms of question, besides the normal 4-choice question.",
+          "answer": "Putting steps in order, drag and drop, and clicking a zone on a picture. Some questions also start with a scenario.",
+          "explanation": "These forms are only a few of the types that ISC2 lists.",
+          "explanation_more": "Source: ISC2, Getting Ready for Your ISC2 Exam (isc2.org/Exams/Before-Your-Exam).",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-ex-lire",
+      "name": "Reading the question",
+      "planete": {
+        "relief": "oceanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The shopping note",
+          "paragraphes": [
+            "Your mother writes a note: “Buy bread. Not the white one.” You read only “Buy bread”. You come back with white bread.",
+            "You were fast, but you missed one small word. A small word can change everything.",
+            "Exam questions have small words like this. They are called keywords."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "Think before you read the menu",
+          "comme": "At a restaurant, you decide what you want before you read the menu. If you read the menu first, every dish looks good.",
+          "enVrai": "On the exam, read the question first and think of your own answer. Then look at the choices. If you read the choices first, many of them will look right. The image stops here: a menu has no bad dish, but exam choices have traps."
+        },
+        {
+          "type": "predire",
+          "question": "A question asks: “What should you do FIRST?” What does FIRST mean?",
+          "options": [
+            "The most important action at the end",
+            "The action that comes before all the others",
+            "The cheapest action"
+          ],
+          "answer": "The action that comes before all the others",
+          "explanation": "FIRST is about order. The first action is not always the biggest or the cheapest. It is the one that must come before the rest."
+        },
+        {
+          "type": "exemple",
+          "titre": "Five small words",
+          "texte": "BEST means the choice that is better than all the others. MOST means the choice that covers the biggest part. FIRST means what comes before the rest. LEAST means the smallest amount, or the lowest risk. NOT means you look for the choice that does not fit. In practice questions, these words are often in capital letters."
+        },
+        {
+          "type": "exemple",
+          "titre": "Find the goal in the story",
+          "texte": "A long story has many details. Find the sentence that asks the question. Then ask: which security goal is in danger? There are three goals. Confidentiality means data stays secret. Integrity means data stays correct. Availability means data can be reached when it is needed."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-ex-lire-q1",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What should you do before you read the four choices?",
+          "options": [
+            "Look at the longest choice first",
+            "Cover the question and read only the four choices first",
+            "Read the question and think of your own answer",
+            "Pick the choice with the hardest words"
+          ],
+          "options_why": [
+            "Length does not show the best answer.",
+            "Without the question, all the choices can look right.",
+            "",
+            "Hard words can be a trap. They are not a sign of a good answer."
+          ],
+          "answer": "Read the question and think of your own answer",
+          "explanation": "If you think of your own answer first, the choices have less power to trick you.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What does the keyword FIRST ask for?",
+          "options": [
+            "The action that should come before all the others",
+            "The action that costs the least",
+            "The action that takes the longest",
+            "The action that is the most advanced"
+          ],
+          "options_why": [
+            "",
+            "Cost is a different question. FIRST is about order.",
+            "The time an action takes is not what FIRST asks.",
+            "An advanced action is not always the first one."
+          ],
+          "answer": "The action that should come before all the others",
+          "explanation": "FIRST is about order. Often the first action is to find the facts.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What does the keyword NOT ask you to find?",
+          "options": [
+            "The choice that is the most true",
+            "The choice that is the longest",
+            "The choice that comes first in the list",
+            "The choice that does not fit"
+          ],
+          "options_why": [
+            "NOT turns the question around.",
+            "Length has nothing to do with it.",
+            "The order of the list has nothing to do with it.",
+            ""
+          ],
+          "answer": "The choice that does not fit",
+          "explanation": "With NOT, three choices are fine. You look for the one that is not.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q4",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "A question asks, “What is the BEST action?” Several choices are good. What does BEST mean here?",
+          "options": [
+            "The only choice that is true",
+            "The choice that is better than all the others",
+            "The choice that is the fastest",
+            "The choice that is the cheapest"
+          ],
+          "options_why": [
+            "Other choices can be true too. BEST means better than the rest.",
+            "",
+            "Fast is not always better.",
+            "Cheap is not always better."
+          ],
+          "answer": "The choice that is better than all the others",
+          "explanation": "On this exam, many choices can be good. You pick the one that is the best.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A student's grades were changed by a person with no right to do it. Which security goal is the story MOST about?",
+          "options": [
+            "Confidentiality",
+            "Availability",
+            "Integrity",
+            "Backup"
+          ],
+          "options_why": [
+            "Nobody saw secret data. The grades were changed.",
+            "The grades can still be reached. They are not correct now.",
+            "",
+            "A backup is a defense, not a security goal."
+          ],
+          "answer": "Integrity",
+          "explanation": "Data was changed, so it is not correct any more. That is integrity.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1. The three goals are taught in the next galaxies.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A shop's website is down on a busy day. Nobody can buy anything. Which security goal is MOST in danger?",
+          "options": [
+            "Availability",
+            "Confidentiality",
+            "Integrity",
+            "Firewall"
+          ],
+          "options_why": [
+            "",
+            "No secret data was seen by the wrong person.",
+            "The data was not changed. People just cannot reach it.",
+            "A firewall is a defense, not a security goal."
+          ],
+          "answer": "Availability",
+          "explanation": "People cannot reach the service when they need it. That is availability.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1. The three goals are taught in the next galaxies.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A worker sends a private list to the wrong person. Which security goal is MOST in danger?",
+          "options": [
+            "Integrity",
+            "Availability",
+            "Encryption of the list",
+            "Confidentiality"
+          ],
+          "options_why": [
+            "The list was not changed. It is still correct.",
+            "People can still reach the list. The problem is who saw it.",
+            "Encryption is a tool, not a security goal.",
+            ""
+          ],
+          "answer": "Confidentiality",
+          "explanation": "A person who should not see the list can now see it. That is a loss of confidentiality.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1. The three goals are taught in the next galaxies.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A scenario is long and full of details. What should the candidate do FIRST?",
+          "options": [
+            "Learn every detail of the story by heart",
+            "Find the sentence that asks the question",
+            "Pick the choice that repeats words from the story",
+            "Pick a choice now and read the story later"
+          ],
+          "options_why": [
+            "Many details are only noise. You cannot use them all.",
+            "",
+            "Repeated words can be a trap.",
+            "You need the story to understand the question."
+          ],
+          "answer": "Find the sentence that asks the question",
+          "explanation": "First find what is asked. Then use the story to find the clues that matter.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A school wants to test new software. Which action carries the LEAST risk?",
+          "options": [
+            "Install it on all computers at once",
+            "Test it on the main server on Monday morning",
+            "Test it on a few computers first",
+            "Test it with the real student data and no copy"
+          ],
+          "options_why": [
+            "If it has a problem, the whole school is hurt.",
+            "A problem would hit everyone on a busy day.",
+            "",
+            "Real data without a copy can be lost or changed."
+          ],
+          "answer": "Test it on a few computers first",
+          "explanation": "A small test limits the damage if something goes badly.",
+          "explanation_more": "Source: written for this course. Keyword LEAST means the lowest risk.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which tip MOST helps a candidate to avoid a trap in the choices?",
+          "options": [
+            "Read all four choices before picking one",
+            "Pick the first choice that looks good",
+            "Pick the choice that has a word from the story",
+            "Change your answer many times"
+          ],
+          "options_why": [
+            "",
+            "A better choice can come next.",
+            "A repeated word can be a trap.",
+            "Too many changes can move you away from a good first idea."
+          ],
+          "answer": "Read all four choices before picking one",
+          "explanation": "If you read all the choices, you can compare them and find the best one.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q11",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT a good habit when you read a question?",
+          "options": [
+            "Looking for the keyword in capital letters in the question",
+            "Finding the security goal in the story",
+            "Reading the question before the choices",
+            "Skipping the small words, because they do not matter"
+          ],
+          "options_why": [
+            "This is a good habit. The keyword shows what is asked.",
+            "This is a good habit. It tells you what to protect.",
+            "This is a good habit. It keeps you from being tricked.",
+            ""
+          ],
+          "answer": "Skipping the small words, because they do not matter",
+          "explanation": "Small words, such as NOT, can turn the whole question around.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-q12",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Lena read, “Which choice is NOT a way to improve security?” She picked “Train the staff”. What is the BEST explanation of her mistake?",
+          "options": [
+            "She should have picked the cheapest choice",
+            "She forgot that NOT asks for the choice that does not fit",
+            "She was right, because training is never useful",
+            "She should have read the choices before reading the question itself"
+          ],
+          "options_why": [
+            "Cost is not what the question asks.",
+            "",
+            "Training is useful. The word never is also a sign of an extreme choice.",
+            "That order makes tricks easier, not harder."
+          ],
+          "answer": "She forgot that NOT asks for the choice that does not fit",
+          "explanation": "Training is a good way to improve security. With NOT, the answer is the choice that is not good.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-f1",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What does BEST mean in an exam question?",
+          "answer": "The choice that is better than all the others. Other choices can be true too.",
+          "explanation": "Think: compare the choices, do not only check if they are true.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-f2",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What does FIRST mean in an exam question?",
+          "answer": "The action that should come before all the others. Often it means to find the facts or to assess the situation.",
+          "explanation": "Think of the order, not of the size of the action.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What does the keyword NOT or EXCEPT tell you to do?",
+          "answer": "Look for the choice that does not fit. Turn the question around.",
+          "explanation": "Three choices are fine. One is not.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-lire-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Why do you read the question before the choices?",
+          "answer": "So you can think of your own answer first. Then the choices are less likely to trick you.",
+          "explanation": "Think of the restaurant: decide before you read the menu.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-ex-pieges",
+      "name": "Removing the bad choices",
+      "planete": {
+        "relief": "gazeuse"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The quiz with a catch",
+          "paragraphes": [
+            "In a school quiz, two answers are silly. You remove them at once. Two answers are left, and both look good.",
+            "On the CISSP exam, the bad choices are not silly. They are made to look good.",
+            "They are called traps. If you know the shapes of the traps, you can see them."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "A sieve in the kitchen",
+          "comme": "A cook uses a sieve to take the lumps out of flour. What stays in the sieve is thrown away.",
+          "enVrai": "Bad choices have typical shapes, like lumps. If you know the shapes, you can take them out one by one. Then the best choice is easier to see. The image stops here: some traps are hidden, so you must look closely."
+        },
+        {
+          "type": "exemple",
+          "titre": "Three traps, part one",
+          "texte": "Trap one is too technical. The choice is about a tool or a setting, but the question asks for a decision. Trap two is off topic. The choice is true, but it does not answer the question. Trap three is extreme. It uses words like always, never or remove all risk."
+        },
+        {
+          "type": "exemple",
+          "titre": "Three traps, part two",
+          "texte": "Trap four is reactive. The choice fixes a problem after it happens, but prevention was possible. Trap five is a different goal. The choice protects another security goal than the one in the question. Trap six is a known tool that does not fit. You know the tool, but it does not solve this problem. These six traps come from exam-prep guides, not from ISC2."
+        },
+        {
+          "type": "analogie",
+          "titre": "The bicycle tire",
+          "comme": "Checking your bike tires each week is better than fixing a flat tire on the road.",
+          "enVrai": "A preventive action stops a problem before it happens. A reactive action starts after the problem. On the exam, a preventive choice is often better than a reactive one, if both fit the question."
+        },
+        {
+          "type": "predire",
+          "question": "A question asks what a school should decide about phone use. One choice says: “Install a filter with advanced settings.” Which trap fits best?",
+          "options": [
+            "Too technical",
+            "Reactive",
+            "Off topic"
+          ],
+          "answer": "Too technical",
+          "explanation": "The question asks for a decision. The choice is about a tool and its settings. Reactive and off topic are also traps, but they do not fit this choice."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-ex-pieges-q1",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "A manager must decide how to protect student files. Which choice is the “too technical” trap?",
+          "options": [
+            "Change the settings of one server by hand",
+            "Write a rule for all staff",
+            "Ask the director to agree on a plan",
+            "Train the teachers on how to handle files"
+          ],
+          "options_why": [
+            "",
+            "This is a decision for the whole school. It fits a manager.",
+            "This is a management step, not a technical detail.",
+            "Training is a decision about people, not a setting."
+          ],
+          "answer": "Change the settings of one server by hand",
+          "explanation": "The question asks for a decision. A setting on one server is a detail for a technician.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Which choice is an “extreme” trap?",
+          "options": [
+            "Lower the risk with a clear plan",
+            "Check the risk each year",
+            "Remove all risk from the school forever",
+            "Accept a small risk after a careful check"
+          ],
+          "options_why": [
+            "This is a realistic choice. It does not use extreme words.",
+            "This is a realistic choice.",
+            "",
+            "This is a realistic choice. Some risk always stays."
+          ],
+          "answer": "Remove all risk from the school forever",
+          "explanation": "Real life always keeps some risk. Words like all, forever, always and never are warning signs.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What is a “reactive” choice?",
+          "options": [
+            "An action that stops a problem before it happens",
+            "An action that costs nothing",
+            "An action that only the boss can do",
+            "An action that fixes a problem after it happened"
+          ],
+          "options_why": [
+            "This is a preventive action. It is the opposite.",
+            "Cost has nothing to do with it.",
+            "Who does the action has nothing to do with it.",
+            ""
+          ],
+          "answer": "An action that fixes a problem after it happened",
+          "explanation": "Reactive means after the event. Preventive means before the event.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q4",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "A choice is true, but it does not answer the question. Which trap is it?",
+          "options": [
+            "Extreme",
+            "Off topic",
+            "Reactive",
+            "Too technical"
+          ],
+          "options_why": [
+            "Extreme choices use words like always or never. This choice is true.",
+            "",
+            "Reactive choices fix a problem after it happens. This one is just not related.",
+            "Too technical choices are about a tool. This one is not an answer to the question."
+          ],
+          "answer": "Off topic",
+          "explanation": "A true choice can still be a bad answer if it does not match the question.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A school keeps losing homework files when computers break. What is the BEST action?",
+          "options": [
+            "Look for the lost files after each failure",
+            "Ask students to write the homework again",
+            "Make automatic backups every day",
+            "Buy the most expensive computers"
+          ],
+          "options_why": [
+            "This is reactive. The problem already happened.",
+            "This is reactive and costs time for the students.",
+            "",
+            "Expensive computers can still break. This is a known tool that does not fit."
+          ],
+          "answer": "Make automatic backups every day",
+          "explanation": "A backup is prepared before the failure. It gives a way back when a computer breaks.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A shop wants to keep customer addresses secret. Which choice is the BEST?",
+          "options": [
+            "Limit who can open the customer file",
+            "Add a second server so the shop never stops",
+            "Check each night that no address was changed",
+            "Buy a faster internet line"
+          ],
+          "options_why": [
+            "",
+            "This protects availability, not secrecy.",
+            "This protects integrity, not secrecy.",
+            "This helps speed. It does not keep anything secret."
+          ],
+          "answer": "Limit who can open the customer file",
+          "explanation": "Secret data needs limits on who can see it. The other choices protect other goals.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT a common trap in bad choices?",
+          "options": [
+            "A choice that is true but off topic",
+            "A choice that answers what the question asks",
+            "A choice that uses the word always",
+            "A choice that fixes the problem after it happens"
+          ],
+          "options_why": [
+            "This is a common trap.",
+            "",
+            "This is a common trap. It is extreme.",
+            "This is a common trap. It is reactive."
+          ],
+          "answer": "A choice that answers what the question asks",
+          "explanation": "A good choice fits the question and the goal. The others are warning signs.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Students at a school share their passwords. One choice says, “Install a firewall.” Why is this a trap?",
+          "options": [
+            "Firewalls are only used by big companies with large budgets",
+            "Firewalls are always a bad idea",
+            "Firewalls only work on school days",
+            "A firewall is a known tool that does not fit this case"
+          ],
+          "options_why": [
+            "Small schools can use firewalls too. The point is that it does not fit this problem.",
+            "This is extreme. A firewall is useful, but not for this problem.",
+            "A firewall works all the time. It does not solve this problem.",
+            ""
+          ],
+          "answer": "A firewall is a known tool that does not fit this case",
+          "explanation": "The tool is real and useful, but it does not solve the problem in the story.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "After you remove the clear traps, two choices are left. What is the BEST next step?",
+          "options": [
+            "Pick the one that has more technical words in it",
+            "Pick the one that a senior manager would choose",
+            "Pick the one that costs more",
+            "Pick the one that is the longest"
+          ],
+          "options_why": [
+            "Technical words can be a trap.",
+            "",
+            "A higher cost does not make a choice better.",
+            "Length does not show the best answer."
+          ],
+          "answer": "Pick the one that a senior manager would choose",
+          "explanation": "Ask yourself which choice a senior manager would pick to reduce the risk and keep the work going.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Staff keep clicking on phishing emails. Which choice is MOST preventive?",
+          "options": [
+            "Clean each computer after a click",
+            "Send a message to all of the staff after each click",
+            "Block the sender after an attack",
+            "Train staff to spot phishing emails every year"
+          ],
+          "options_why": [
+            "This is reactive. It starts after the click.",
+            "This is reactive. It comes after the event.",
+            "This is reactive. The attack already happened.",
+            ""
+          ],
+          "answer": "Train staff to spot phishing emails every year",
+          "explanation": "Training works before the click. It helps stop the next problem.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q11",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which choice is NOT too technical for a manager's decision?",
+          "options": [
+            "Approve a plan on how everyone handles passwords",
+            "Change the settings of one firewall",
+            "Read the logs of one single computer, line by line",
+            "Fix one computer with a special tool"
+          ],
+          "options_why": [
+            "",
+            "This is a detail for a technician.",
+            "This is a detail for a technician.",
+            "This is a detail for a technician."
+          ],
+          "answer": "Approve a plan on how everyone handles passwords",
+          "explanation": "A plan for everyone is a management decision. The others are small technical jobs.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-q12",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A school asks how to reduce phishing emails. Which choice is the LEAST related to the question?",
+          "options": [
+            "Train students to spot strange emails",
+            "Add a filter that blocks known bad senders",
+            "Make a backup of the grade files each day",
+            "Tell students to report strange emails"
+          ],
+          "options_why": [
+            "This is related. It helps people avoid phishing.",
+            "This is related. It stops phishing emails.",
+            "",
+            "This is related. It helps the school act fast."
+          ],
+          "answer": "Make a backup of the grade files each day",
+          "explanation": "A backup is a good idea, but it does not reduce phishing emails. It is true but off topic.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-f1",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is the “extreme” trap?",
+          "answer": "A choice with words like always, never or remove all risk. Real life is rarely that simple.",
+          "explanation": "Some risk always stays.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-f2",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is the difference between a preventive and a reactive action?",
+          "answer": "A preventive action stops a problem before it happens. A reactive action starts after it happened.",
+          "explanation": "Think of checking the bike tires and fixing a flat tire.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is the “too technical” trap?",
+          "answer": "A choice about a tool or a setting, when the question asks for a decision or a rule.",
+          "explanation": "A manager decides. A technician sets.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-pieges-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is the “off topic” trap?",
+          "answer": "A choice that is true, but does not answer the question.",
+          "explanation": "Ask: does this choice answer what was asked?",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-ex-manager",
+      "name": "Think like a manager",
+      "planete": {
+        "relief": "volcanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The school director",
+          "paragraphes": [
+            "A pipe breaks at school. The director does not fix the pipe.",
+            "The director checks who is in danger, calls the right people, and plans so it does not happen again.",
+            "The CISSP exam asks you to think like that director. You are a security manager, not a repair person."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "A good doctor",
+          "comme": "A good doctor looks at the patient and asks questions. Only then does the doctor give a medicine. The doctor also treats the cause, not only the pain.",
+          "enVrai": "A security manager does the same. First assess, then act. Treat the cause, not only the symptom. A symptom is a sign that shows a problem. The image stops here: a doctor treats one patient, but a manager protects a whole organization."
+        },
+        {
+          "type": "exemple",
+          "titre": "The manager mindset, part one",
+          "texte": "Rule one: reduce the risk for the whole organization, with a good balance of cost and effect on work. Rule two: policy comes before tools. A policy is a written rule of the organization. Rule three: protect as many people as you can. Rule four: if you hesitate between a tool and a policy, training or a plan, the second is often right."
+        },
+        {
+          "type": "exemple",
+          "titre": "The manager mindset, part two",
+          "texte": "Rule five: assess the situation and inform the management before you act. Rule six: fix the cause, not the symptom. Rule seven: prevent instead of react. Rule eight: separate the technical problem from the business problem. Rule nine: take the role of the most senior security person in the story. These rules come from exam-prep guides, not from ISC2."
+        },
+        {
+          "type": "predire",
+          "question": "Many students lose their passwords. What would a manager choose?",
+          "options": [
+            "Reset each password by hand every time",
+            "Make a clear password rule and train everyone",
+            "Buy a bigger server"
+          ],
+          "answer": "Make a clear password rule and train everyone",
+          "explanation": "A rule and training treat the cause for everyone. A manual reset only treats each symptom, and a bigger server has nothing to do with passwords."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-ex-manager-q1",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Which role should you take when you read an exam scenario?",
+          "options": [
+            "The technician who fixes each broken computer by hand",
+            "The most senior security person in the story",
+            "A hacker who tests the system",
+            "A new employee who only follows orders"
+          ],
+          "options_why": [
+            "The exam asks for decisions, not for repair work.",
+            "",
+            "A hacker is not the person who protects the organization.",
+            "You are the one who decides what is best."
+          ],
+          "answer": "The most senior security person in the story",
+          "explanation": "On the exam, you think like the person who is responsible for security.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What does a security manager try to do first of all?",
+          "options": [
+            "Reduce the risk for the whole organization",
+            "Make every tool as strong as possible",
+            "Fix each computer problem by hand",
+            "Make sure that nobody ever uses the system"
+          ],
+          "options_why": [
+            "",
+            "Strong tools cost money and slow down work. A manager keeps a balance.",
+            "That is a technician's job. A manager looks at the whole organization.",
+            "This is extreme. The organization needs to work."
+          ],
+          "answer": "Reduce the risk for the whole organization",
+          "explanation": "The manager looks at risk, cost and the effect on work, for the whole organization.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What comes first in the manager mindset?",
+          "options": [
+            "Tools first, rules later",
+            "Tools only, no rules",
+            "Rules only, no tools",
+            "Policy and rules, then tools"
+          ],
+          "options_why": [
+            "A tool without a rule can be used in many different ways.",
+            "This is extreme. Tools need rules to be used well.",
+            "This is extreme. Rules need tools to be applied.",
+            ""
+          ],
+          "answer": "Policy and rules, then tools",
+          "explanation": "A rule shows what to protect and why. Then a tool can help.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q4",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What does “fix the cause, not the symptom” mean? Here, what is a symptom?",
+          "options": [
+            "The root of the problem",
+            "The person who started the problem",
+            "A sign that shows there is a problem",
+            "The tool that solves the problem"
+          ],
+          "options_why": [
+            "That is the cause, not the symptom.",
+            "A symptom is a sign, not a person.",
+            "",
+            "A tool is not a symptom."
+          ],
+          "answer": "A sign that shows there is a problem",
+          "explanation": "A symptom is what you see. The cause is why it happens. A good manager treats the cause.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A teacher says that a student saw other students' grades by mistake. What should the school manager do FIRST?",
+          "options": [
+            "Check what happened and who is affected",
+            "Fire the teacher at once",
+            "Buy a new grade system",
+            "Say nothing about it, to avoid a panic in the school"
+          ],
+          "options_why": [
+            "",
+            "This acts before knowing the facts.",
+            "A big purchase comes before knowing the cause.",
+            "Hiding a problem makes it worse. The management must be told."
+          ],
+          "answer": "Check what happened and who is affected",
+          "explanation": "A manager assesses first. Without the facts, an action can be bad.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A small company has many password problems. Which action is the BEST?",
+          "options": [
+            "Reset the password of each worker every day",
+            "Install a special program on one computer",
+            "Write a password rule and train all workers",
+            "Ask the best technician to watch each worker"
+          ],
+          "options_why": [
+            "This treats the symptom and takes a lot of time.",
+            "One computer does not protect the whole company.",
+            "",
+            "This does not scale. It also does not treat the cause."
+          ],
+          "answer": "Write a password rule and train all workers",
+          "explanation": "A rule and training reach everyone and treat the cause.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Idea A protects one classroom computer. Idea B protects all computers with one rule. Which fits the manager mindset MOST?",
+          "options": [
+            "Idea A, because it is cheaper to start",
+            "Idea B, because it protects more people",
+            "Idea A, because a technician can do it fast",
+            "Neither, because rules never work"
+          ],
+          "options_why": [
+            "A manager looks at the whole organization, not only the start cost.",
+            "",
+            "Speed is not the first goal. Protecting more people is.",
+            "This is extreme. Rules are a base of security."
+          ],
+          "answer": "Idea B, because it protects more people",
+          "explanation": "The manager protects as many people as possible. One rule for all does this.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT part of thinking like a manager?",
+          "options": [
+            "Preventing problems before they can happen at all",
+            "Thinking about cost and effect on work",
+            "Assessing the situation before acting",
+            "Fixing the symptom fast and skipping the cause"
+          ],
+          "options_why": [
+            "This is part of the mindset.",
+            "This is part of the mindset.",
+            "This is part of the mindset.",
+            ""
+          ],
+          "answer": "Fixing the symptom fast and skipping the cause",
+          "explanation": "A manager looks for the cause. A quick fix of the symptom is the technician's style.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A manager must choose between a new tool and a clear rule with training. Which view is the MOST useful on the exam?",
+          "options": [
+            "A rule and training are often the better answer",
+            "The tool is always better because it is more modern",
+            "The rule is useless without a tool",
+            "Both are bad, so do nothing"
+          ],
+          "options_why": [
+            "",
+            "This is extreme. The word always is a warning sign.",
+            "This is extreme. A rule helps by itself.",
+            "Doing nothing is not a manager's choice."
+          ],
+          "answer": "A rule and training are often the better answer",
+          "explanation": "When you hesitate between a tool and a policy, training or a plan, the second is often right.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A worker reports a strange email. The security manager thinks it may be phishing. What should the manager do FIRST?",
+          "options": [
+            "Delete all the emails of the company",
+            "Fire the worker who reported it",
+            "Find out the facts and how far the problem goes",
+            "Wait to see if something happens"
+          ],
+          "options_why": [
+            "This is extreme and can destroy useful proof.",
+            "The worker did the right thing.",
+            "",
+            "This is reactive. A manager does not wait."
+          ],
+          "answer": "Find out the facts and how far the problem goes",
+          "explanation": "Assess first. Then you can choose a good action.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q11",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Students often lock themselves out of their accounts. Which action is the BEST way to treat the cause?",
+          "options": [
+            "Unlock the account each time",
+            "Remove the lock rule completely",
+            "Give each student a brand new account every month",
+            "Teach an easy way to remember strong passwords"
+          ],
+          "options_why": [
+            "This treats the symptom.",
+            "This makes the school less safe.",
+            "This costs a lot of time and does not teach anything.",
+            ""
+          ],
+          "answer": "Teach an easy way to remember strong passwords",
+          "explanation": "If students learn to manage passwords, the problem happens less often.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-q12",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "The manager rules come from study guides. How should you BEST treat them?",
+          "options": [
+            "As official ISC2 rules that always apply to everyone",
+            "As helpful methods, not as official ISC2 rules",
+            "As secret questions from the real exam",
+            "As laws that every company must follow"
+          ],
+          "options_why": [
+            "ISC2 did not write these rules. They come from prep companies.",
+            "",
+            "Real questions are secret. These are tips, not questions.",
+            "They are not laws. They are tips for the exam."
+          ],
+          "answer": "As helpful methods, not as official ISC2 rules",
+          "explanation": "The methods are useful, but you must still read each question with care.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-f1",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is the manager mindset in one sentence?",
+          "answer": "Reduce the risk for the whole organization: assess first, prevent problems, fix the cause, and put policy before tools.",
+          "explanation": "Think of the school director and the pipe.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-f2",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Why do policy and rules come before tools?",
+          "answer": "A rule says what to protect and why. A tool without a rule can be used in the wrong way.",
+          "explanation": "First decide, then equip.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What does “fix the cause, not the symptom” mean?",
+          "answer": "Do not only hide the sign of the problem. Find and fix what causes it.",
+          "explanation": "Think of the doctor who treats the cause of the pain.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-manager-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Which role do you take in a scenario, unless the question says another one?",
+          "answer": "The most senior security person in the story: a manager, not a technician.",
+          "explanation": "You decide. You do not repair.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-ex-priorites",
+      "name": "Priorities and order",
+      "planete": {
+        "relief": "glacee"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The fire alarm",
+          "paragraphes": [
+            "A fire alarm rings at school. Nobody stops to save the computers. Everyone leaves the building.",
+            "The safety of people comes before everything else.",
+            "On the exam, when you must choose, people matter more than data or machines."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "The hospital waiting room",
+          "comme": "At a hospital, the nurse sees the most serious patient first. The order does not depend on who came first.",
+          "enVrai": "Exam priorities also have an order. First, the safety of people. Then, keeping the business running. Then, the things the company owns, like machines and data. The image stops here: the hospital sorts by how serious each case is, and the exam order is a rule of thumb."
+        },
+        {
+          "type": "exemple",
+          "titre": "Laws and company rules",
+          "texte": "A school has a rule: keep student photos for 5 years. A new law says to delete them after 2 years. Which one wins? The law. Laws come before the internal rules of an organization. The organization must change its rule."
+        },
+        {
+          "type": "analogie",
+          "titre": "A recipe",
+          "comme": "A cook follows steps in order. First read the recipe. Then prepare the food, cook it, taste it, and think about how to do better next time.",
+          "enVrai": "Many security processes use the same order. Assess: look at the situation and the risk. Plan: decide what to do. Implement: put the plan into action. Monitor: keep watching to see if it works. Improve: learn and make it better. These steps come from exam-prep guides."
+        },
+        {
+          "type": "predire",
+          "question": "A flood alarm rings in a company. The server room holds important data. What comes first?",
+          "options": [
+            "Save the server data",
+            "Get all people to a safe place",
+            "Call the customers"
+          ],
+          "answer": "Get all people to a safe place",
+          "explanation": "People come first. Data and customers matter, but they can wait until everyone is safe."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-ex-priorites-q1",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "A fire starts near the server room, and workers are inside. What comes first?",
+          "options": [
+            "Save the data on the servers",
+            "Get the people to a safe place",
+            "Call the customers",
+            "Take a backup of the files"
+          ],
+          "options_why": [
+            "Data matters, but people come first.",
+            "",
+            "This can wait until people are safe.",
+            "A backup can wait. People are in danger."
+          ],
+          "answer": "Get the people to a safe place",
+          "explanation": "The safety of people comes before business, equipment and data.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "A law and a company rule do not agree. Which one should be followed?",
+          "options": [
+            "The company rule, because it is more recent",
+            "The one that costs less",
+            "The law",
+            "The one that the boss likes more"
+          ],
+          "options_why": [
+            "A rule of the company cannot cancel a law.",
+            "Cost does not decide between a law and a rule.",
+            "",
+            "The boss's taste does not change a law."
+          ],
+          "answer": "The law",
+          "explanation": "Laws come before the internal rules of an organization.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Which order of priorities is right when you must choose?",
+          "options": [
+            "People, then the business, then equipment and data",
+            "Data, then people, then the business running",
+            "The business running, then the data, then the people",
+            "Equipment, then people, then the business running"
+          ],
+          "options_why": [
+            "",
+            "Data cannot come before people.",
+            "People come first.",
+            "People come before equipment."
+          ],
+          "answer": "People, then the business, then equipment and data",
+          "explanation": "People first. Then the business must keep running. Then the things the company owns.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q4",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Which step comes FIRST in the order: assess, plan, implement, monitor, improve?",
+          "options": [
+            "Implement",
+            "Plan",
+            "Monitor",
+            "Assess"
+          ],
+          "options_why": [
+            "You must know the situation before you act.",
+            "A plan needs facts. It comes after the assessment.",
+            "You can only watch what has been put in place.",
+            ""
+          ],
+          "answer": "Assess",
+          "explanation": "You first look at the situation and the risk. Then you can plan.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A company has put its plan to protect customer data into action. What is the BEST next step?",
+          "options": [
+            "Assess the risk for the first time",
+            "Write the plan",
+            "Stop all work on security",
+            "Monitor to see if the plan works"
+          ],
+          "options_why": [
+            "The assessment was done before the plan.",
+            "The plan already exists.",
+            "Security work does not end after the plan starts.",
+            ""
+          ],
+          "answer": "Monitor to see if the plan works",
+          "explanation": "After you implement a plan, you watch it. This is the monitor step.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A storm hits a store. A worker is hurt in the back office, and wet computers hold the sales data. What should the manager do FIRST?",
+          "options": [
+            "Help the hurt worker",
+            "Save the sales data",
+            "Call the insurance company",
+            "Make a backup of the wet computers"
+          ],
+          "options_why": [
+            "",
+            "Data matters, but people come first.",
+            "This can wait.",
+            "This is not the first step when a person is hurt."
+          ],
+          "answer": "Help the hurt worker",
+          "explanation": "The safety of people always comes first.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A school rule says teachers can keep student photos for 5 years. A new law says 2 years. What is the BEST action?",
+          "options": [
+            "Keep the rule, because it is the school's own",
+            "Follow the law and change the school rule",
+            "Wait until someone complains",
+            "Ask each teacher to decide alone"
+          ],
+          "options_why": [
+            "A law is stronger than a school rule.",
+            "",
+            "This is reactive and can bring a penalty.",
+            "This gives no clear rule for the school."
+          ],
+          "answer": "Follow the law and change the school rule",
+          "explanation": "The law comes first. The school must update its rule.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A school wants to improve its security. Which sequence is the BEST?",
+          "options": [
+            "Implement, plan, assess, improve, and then monitor",
+            "Plan, monitor, assess, implement, improve",
+            "Assess, plan, implement, monitor, improve",
+            "Monitor, implement, improve, plan, assess"
+          ],
+          "options_why": [
+            "You cannot act before you know the situation.",
+            "You cannot watch a plan that does not exist yet.",
+            "",
+            "This order starts at the end."
+          ],
+          "answer": "Assess, plan, implement, monitor, improve",
+          "explanation": "The steps go from understanding to acting, then watching and learning.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A manager has a small budget. Which choice protects the MOST important thing first?",
+          "options": [
+            "A new metal cabinet to keep the old equipment safe",
+            "An alarm and clear exits for the people inside",
+            "A faster computer for the boss",
+            "A bigger screen for the lobby"
+          ],
+          "options_why": [
+            "Equipment comes after people.",
+            "",
+            "This is not a safety need.",
+            "This is not a safety need."
+          ],
+          "answer": "An alarm and clear exits for the people inside",
+          "explanation": "People's safety is the first priority when you must choose.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A manager hears that a worker's laptop may have malware. What should the manager do FIRST?",
+          "options": [
+            "Assess how serious it is and who is affected",
+            "Wipe all the laptops in the company",
+            "Write a new policy for laptops",
+            "Wait for next year's audit"
+          ],
+          "options_why": [
+            "",
+            "This is extreme and starts before the facts.",
+            "A policy is useful later. First learn what happened.",
+            "This is reactive. The problem needs action now."
+          ],
+          "answer": "Assess how serious it is and who is affected",
+          "explanation": "You assess before you act. This is the first step of the order.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q11",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which statement about priorities is NOT true?",
+          "options": [
+            "Laws come before internal rules",
+            "The safety of people comes first",
+            "You assess before you act",
+            "Data always comes before people"
+          ],
+          "options_why": [
+            "This is true.",
+            "This is true.",
+            "This is true.",
+            ""
+          ],
+          "answer": "Data always comes before people",
+          "explanation": "People come before data. The word always is also a warning sign.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-q12",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Monitoring shows that a school's backup plan is too slow. Which step MOST fits next?",
+          "options": [
+            "Assess the risk for the first time",
+            "Delete the plan",
+            "Improve the plan",
+            "Put the old plan into action again"
+          ],
+          "options_why": [
+            "The risk was assessed at the start.",
+            "This is extreme. The plan can be made better.",
+            "",
+            "The old plan has a known problem."
+          ],
+          "answer": "Improve the plan",
+          "explanation": "Monitoring found a problem. Now you learn from it and make the plan better.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-f1",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is the order of priorities when you must choose?",
+          "answer": "The safety of people, then the business running, then equipment and data.",
+          "explanation": "Think of the fire alarm at school.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-f2",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What comes first: a law or an internal rule?",
+          "answer": "The law. The organization must change its rule.",
+          "explanation": "A rule of the company cannot cancel a law.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Which step comes after “assess”, and what does it mean?",
+          "answer": "Plan: decide what to do and who does it.",
+          "explanation": "Assess first, then plan.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-priorites-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is the last step of the order, and why does it matter?",
+          "answer": "Improve: use what you learned to make the next round better.",
+          "explanation": "Security is never finished.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        }
+      ]
+    },
+    {
+      "id": "d1-ex-mixte",
+      "name": "Mixed practice",
+      "planete": {
+        "relief": "oceanique"
+      },
+      "decouverte": [
+        {
+          "type": "histoire",
+          "titre": "The pilot's checklist",
+          "paragraphes": [
+            "A pilot checks the same list before every flight. The list is short, so it is used each time.",
+            "You can do the same with an exam question. Use a short list of steps for every question.",
+            "Here is the list. You will practice it on mixed questions."
+          ]
+        },
+        {
+          "type": "analogie",
+          "titre": "A detective",
+          "comme": "A detective reads the case, finds the clues, removes the false leads, and then names the answer.",
+          "enVrai": "On the exam, read the question first. Find the keyword and the security goal. Remove the traps. Then pick the choice that a manager would pick. The image stops here: a detective can take days, but you have about a minute."
+        },
+        {
+          "type": "exemple",
+          "titre": "The five-step method",
+          "texte": "Step one: read the question without the choices. Step two: find the keyword and the security goal. Step three: remove the extreme, off-topic, too technical and reactive choices. Step four: between the last two, pick what a senior manager would pick. Step five: keep your pace, about one minute per question. This method comes from prep guides, not from ISC2."
+        },
+        {
+          "type": "exemple",
+          "titre": "Two more tips",
+          "texte": "Trust your first idea, unless you find that you read the question badly. Do not repeat the same practice tests again and again. You will remember the answers and not the subject. These tips come from exam-prep guides, not from ISC2."
+        },
+        {
+          "type": "predire",
+          "question": "A question says: “A small shop lost customer data after a hacker attack. What should the manager do FIRST?” What do you do first with this question?",
+          "options": [
+            "Read the question before looking at the choices",
+            "Pick the choice with the word hacker",
+            "Pick the longest choice"
+          ],
+          "answer": "Read the question before looking at the choices",
+          "explanation": "Read the question and find the keyword FIRST. A word like hacker can be a trap, and the longest choice is not always best."
+        }
+      ],
+      "cards": [
+        {
+          "id": "d1-ex-mixte-q1",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What is the BEST first step with a new exam question?",
+          "options": [
+            "Read all the choices and pick the first good one you see",
+            "Look for words from the story in the choices",
+            "Read the question without looking at the choices",
+            "Pick the longest choice"
+          ],
+          "options_why": [
+            "The first good choice may not be the best one.",
+            "Repeated words can be a trap.",
+            "",
+            "Length does not show the best answer."
+          ],
+          "answer": "Read the question without looking at the choices",
+          "explanation": "Think of your own answer before the choices can tempt you.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Which of these is a trap choice?",
+          "options": [
+            "A choice that says you must never accept any risk",
+            "A choice that fits the question and the security goal",
+            "A choice that a senior manager would pick",
+            "A choice that prevents the problem"
+          ],
+          "options_why": [
+            "",
+            "This is a good choice, not a trap.",
+            "This is a good sign.",
+            "This is often a good choice."
+          ],
+          "answer": "A choice that says you must never accept any risk",
+          "explanation": "Never and always are warning signs. Real life keeps some risk.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Which choice shows the manager mindset?",
+          "options": [
+            "Fix the symptom as fast as possible and move on",
+            "Buy the newest tool for every problem",
+            "Do what the technician says without asking",
+            "Assess the situation, then treat the cause"
+          ],
+          "options_why": [
+            "This is a technician's style.",
+            "A tool is not always the answer.",
+            "The manager must decide, after assessing.",
+            ""
+          ],
+          "answer": "Assess the situation, then treat the cause",
+          "explanation": "A manager assesses, then acts on the cause and thinks about the whole organization.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q4",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "A person changes the prices in a shop's database. Which security goal is MOST in danger?",
+          "options": [
+            "Confidentiality",
+            "Integrity",
+            "Availability",
+            "Policy"
+          ],
+          "options_why": [
+            "Nobody saw secret data. The data was changed.",
+            "",
+            "The data can still be reached. It is not correct now.",
+            "A policy is a rule, not a security goal."
+          ],
+          "answer": "Integrity",
+          "explanation": "The data is not correct any more. That is integrity.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1. The three goals are taught in the next galaxies.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A school's website shows a strange message. The director wants it fixed at once. What should the manager do FIRST?",
+          "options": [
+            "Find out what happened and how big the problem is",
+            "Close the whole school network now",
+            "Order a new website from a big company",
+            "Tell all teachers to change their passwords"
+          ],
+          "options_why": [
+            "",
+            "This acts before knowing the facts.",
+            "This is a big step with no facts.",
+            "This may be useful later, but it is not based on facts yet."
+          ],
+          "answer": "Find out what happened and how big the problem is",
+          "explanation": "A manager assesses first, even when someone is in a hurry.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A company has had three phishing problems this year. Which action is the BEST long-term answer?",
+          "options": [
+            "Clean each infected computer after each case",
+            "Install a special tool on the boss's computer",
+            "Train all staff and set a clear email rule",
+            "Ask staff to never use email"
+          ],
+          "options_why": [
+            "This is reactive.",
+            "This protects one person, not the whole company.",
+            "",
+            "This is extreme. The company needs email."
+          ],
+          "answer": "Train all staff and set a clear email rule",
+          "explanation": "Training and a rule are preventive and reach everyone.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A shop's customer list was shown to a stranger by mistake. Which choice should the manager NOT pick?",
+          "options": [
+            "Find out how many customers are affected",
+            "Hide the problem so customers do not worry",
+            "Follow the law about telling customers",
+            "Write a rule to stop it from happening again"
+          ],
+          "options_why": [
+            "This is a good first step.",
+            "",
+            "This is a good step. Laws come first.",
+            "This is a good preventive step."
+          ],
+          "answer": "Hide the problem so customers do not worry",
+          "explanation": "Hiding a problem makes it worse. The manager must inform the right people and follow the law.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A small company has just finished a risk check. What is the BEST next step?",
+          "options": [
+            "Monitor the plan",
+            "Improve the plan",
+            "Put the plan into action in the whole company",
+            "Plan what to do about the risks"
+          ],
+          "options_why": [
+            "There is no plan to watch yet.",
+            "There is no plan to improve yet.",
+            "A plan must be written first.",
+            ""
+          ],
+          "answer": "Plan what to do about the risks",
+          "explanation": "The order is assess, then plan, then implement.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which choice is the LEAST extreme?",
+          "options": [
+            "Remove all risk forever",
+            "Lower the risk to a level that is accepted",
+            "Never let anyone at the school use the internet",
+            "Always say no to new ideas"
+          ],
+          "options_why": [
+            "This is extreme. Some risk always stays.",
+            "",
+            "This is extreme and stops the work.",
+            "This is extreme. The school would stop learning."
+          ],
+          "answer": "Lower the risk to a level that is accepted",
+          "explanation": "A realistic choice keeps a balance. It does not use words like all, never or always.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A worker deletes the shared homework folder by mistake, and there is no backup. Which choice is the BEST way to prevent this next time?",
+          "options": [
+            "Make daily backups and limit who can delete",
+            "Ask the worker to be more careful",
+            "Restore the folder by hand each time",
+            "Buy a bigger hard disk"
+          ],
+          "options_why": [
+            "",
+            "This does not change the system. Mistakes will happen again.",
+            "This is reactive and takes a lot of time.",
+            "A bigger disk does not stop a deletion."
+          ],
+          "answer": "Make daily backups and limit who can delete",
+          "explanation": "Backups and limits on who can delete are preventive. They treat the cause.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q11",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Two choices are left: a technical fix on one machine, and a rule for all staff. Which is the MOST likely to be right?",
+          "options": [
+            "The fix on one machine",
+            "Neither, you must ask for new choices",
+            "The rule for all staff",
+            "The one that you saw first in practice"
+          ],
+          "options_why": [
+            "It protects only one machine.",
+            "On the exam you must pick one of the choices.",
+            "",
+            "A choice is not right because you saw it before."
+          ],
+          "answer": "The rule for all staff",
+          "explanation": "A rule for all staff protects more people and fits the manager mindset.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-q12",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Mia wants to change her answer, but her first idea was good. She feels nervous. What is the BEST advice?",
+          "options": [
+            "Always change the answer when you feel nervous about the exam",
+            "Never change an answer for any reason",
+            "Change it to the longest choice",
+            "Keep the first idea, unless she read the question badly"
+          ],
+          "options_why": [
+            "This is extreme. Nerves do not make an answer better.",
+            "This is extreme. If you misread the question, you can change it.",
+            "Length does not show the best answer.",
+            ""
+          ],
+          "answer": "Keep the first idea, unless she read the question badly",
+          "explanation": "A first idea is often good. Change it only if you find a real reason, like a misread keyword.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-f1",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is step one of the answering method?",
+          "answer": "Read the question without looking at the choices.",
+          "explanation": "Think of the restaurant: decide before the menu.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-f2",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Step three is to remove bad choices. Which traps do you remove?",
+          "answer": "The extreme, off-topic, too technical and reactive choices.",
+          "explanation": "These traps can look good, so look closely.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "About how much time can you spend on each question?",
+          "answer": "About one minute on average: 3 hours for up to 150 questions.",
+          "explanation": "Keep your pace.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-ex-mixte-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Why should you not repeat the same practice test many times?",
+          "answer": "You start to remember the answers and not the subject.",
+          "explanation": "New questions teach more.",
+          "explanation_more": "Source: exam-prep guides (not ISC2). This is a method, not an official ISC2 rule.",
+          "retention_goal": "1y"
+        }
+      ]
+    }
+  ]
+}

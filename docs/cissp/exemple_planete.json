@@ -1,44 +1,44 @@
 {
   "id": "d1-confid",
-  "name": "La confidentialité (confidentiality)",
+  "name": "Confidentiality",
   "planete": { "relief": "glacee" },
   "decouverte": [
     {
       "type": "histoire",
-      "titre": "Le journal et le cadenas",
+      "titre": "The diary and the lock",
       "paragraphes": [
-        "Tu écris tes secrets dans un journal. Tu mets un cadenas dessus.",
-        "Un jour, quelqu'un l'ouvre en cachette, le lit, puis le referme. Rien n'a bougé : les pages sont intactes et le journal est toujours là.",
-        "Pourtant, quelque chose est cassé : ce qui devait rester secret ne l'est plus. En cybersécurité, ça s'appelle perdre la confidentialité (confidentiality)."
+        "You write your secrets in a diary. You put a lock on it.",
+        "One day, someone opens it in secret, reads it, and closes it again. Nothing is changed. The pages are all there.",
+        "But something is lost: your secrets are not secret now. In security, this is called losing confidentiality."
       ]
     },
     {
       "type": "analogie",
-      "titre": "C'est comme le cadenas du journal",
-      "comme": "Le cadenas n'empêche pas le journal d'exister. Il décide qui a le droit de le lire.",
-      "enVrai": "La confidentialité, c'est décider qui a le droit de voir une information, et empêcher tous les autres d'y accéder. Pour une entreprise, le journal, ce sont ses données : fichiers clients, mots de passe, plans secrets."
+      "titre": "It is like the lock on the diary",
+      "comme": "The lock does not stop the diary from existing. It decides who can read it.",
+      "enVrai": "Confidentiality means that only the right people can see the information. Everyone else is kept out. For a company, the diary is its data: customer files, passwords, secret plans."
     },
     {
       "type": "predire",
-      "question": "Un cambrioleur photographie ton journal sans rien déplacer. Qu'est-ce qui est cassé ?",
+      "question": "A thief takes a photo of your diary and moves nothing. What is broken?",
       "options": [
-        "L'exactitude : le texte a changé",
-        "L'accès : tu ne peux plus ouvrir ton journal",
-        "Le secret : quelqu'un l'a lu"
+        "The text is not correct any more",
+        "You cannot open your diary any more",
+        "The secret: someone read it"
       ],
-      "answer": "Le secret : quelqu'un l'a lu",
-      "explanation": "Le texte est intact et tu peux toujours l'ouvrir. Mais quelqu'un a vu ce qu'il ne devait pas voir. Les deux autres réponses sont tentantes : ce sont deux autres piliers de la sécurité, qu'on voit dans les planètes suivantes."
+      "answer": "The secret: someone read it",
+      "explanation": "The text is the same and you can still open the diary. But someone saw what they should not see. The other two answers are tempting. They are two other goals of security, and you will meet them in the next planets."
     },
     {
       "type": "exemple",
-      "titre": "Un mail envoyé à la mauvaise personne",
-      "texte": "Une employée veut envoyer la liste des salaires aux ressources humaines. Elle clique sur le mauvais nom et tout le monde la reçoit. Aucun pirate, aucun fichier abîmé. Pourtant la confidentialité est perdue. Une simple erreur suffit."
+      "titre": "An email to the wrong person",
+      "texte": "A worker wants to send the salary list to the HR team. She clicks the wrong name, and everyone in the company gets the list. There is no hacker and no broken file. But confidentiality is lost. One simple mistake is enough."
     },
     {
       "type": "analogie",
-      "titre": "Les clés du collège",
-      "comme": "Au collège, le surveillant a la clé de la salle des profs, mais pas celle du bureau du directeur. Chacun a seulement les clés dont il a besoin.",
-      "enVrai": "C'est le principe du moindre privilège (least privilege) : chaque personne reçoit juste l'accès qu'il lui faut pour son travail. Moins il y a de clés en circulation, moins il y a de risques de fuite."
+      "titre": "The keys of the school",
+      "comme": "In a school, the guard has the key to the teachers room, but not the key to the head teacher's office. Each person has only the keys that they need.",
+      "enVrai": "This is least privilege: each person gets only the access that their job needs. Fewer keys means fewer chances of a leak."
     }
   ],
   "cards": [
@@ -46,160 +46,348 @@
       "id": "d1-confid-def1",
       "type": "flash",
       "phase": "comprehension",
-      "question": "Définition officielle (en anglais) : « confidentiality »",
-      "answer": "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.\n\nTraduction : La confidentialité est le concept qui consiste à limiter l'accès aux données aux utilisateurs et systèmes autorisés, et à empêcher l'accès aux parties non autorisées.",
-      "explanation": "Relis-la en pensant au cadenas : seuls les bons lecteurs ont la clé.",
-      "explanation_more": "Définition du manuel officiel (ISC)2, domaine 1. Elle sera à connaître mot pour mot : les cartes suivantes t'aident à la mémoriser pas à pas.",
+      "question": "Official definition: “confidentiality”",
+      "answer": "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.",
+      "explanation": "In simple words: only the right people and systems can see the data. Everyone else is kept out.",
+      "explanation_more": "Source: (ISC)2 manual, domain 1, section “Confidentiality”. You will need to know this sentence word for word.",
       "retention_goal": "life"
     },
     {
       "id": "d1-confid-def2",
-      "type": "cloze",
-      "question": "Confidentiality is the concept of [[limiting]] access to data to authorized users and systems and restricting access from [[unauthorized]] parties.",
+      "type": "qcm",
+      "phase": "entrainement",
+      "question": "Which sentence is the official definition of “confidentiality”?",
+      "options": [
+        "Confidentiality is the concept of maintaining the accuracy, validity, and completeness of data and systems.",
+        "Confidentiality is the concept of ensuring that authorized users can access data when they need it.",
+        "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.",
+        "Confidentiality is the concept of limiting access to data to administrators and restricting access from all other systems."
+      ],
+      "options_why": [
+        "This sentence is about integrity: keeping data correct and complete.",
+        "This sentence is about availability: reaching data when you need it.",
+        "",
+        "It looks close, but the real sentence says authorized users and systems, not only administrators."
+      ],
       "answer": "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.",
-      "explanation": "Deux idées : on limite l'accès pour les gens autorisés, on bloque ceux qui ne le sont pas.",
+      "explanation": "Look at the key words: limiting access, authorized users and systems, unauthorized parties.",
       "retention_goal": "life"
     },
     {
       "id": "d1-confid-def3",
-      "type": "cloze",
-      "question": "Confidentiality is the concept of [[limiting access to data]] to [[authorized users and systems]] and [[restricting access from unauthorized parties]].",
+      "type": "flash",
+      "phase": "entrainement",
+      "question": "Say the official definition of “confidentiality” from memory.",
       "answer": "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.",
-      "explanation": "Trois blocs : limiter l'accès aux données, pour les utilisateurs et systèmes autorisés, et bloquer les autres.",
-      "retention_goal": "life"
-    },
-    {
-      "id": "d1-confid-def4",
-      "type": "problem",
-      "question": "Écris de mémoire la définition officielle de « confidentiality » (en anglais).",
-      "answer": "Confidentiality is the concept of limiting access to data to authorized users and systems and restricting access from unauthorized parties.\n\nTraduction : La confidentialité est le concept qui consiste à limiter l'accès aux données aux utilisateurs et systèmes autorisés, et à empêcher l'accès aux parties non autorisées.",
-      "explanation": "Pas besoin d'être parfait du premier coup : compare, repère le mot qui manque, recommence demain.",
+      "explanation": "Three ideas: limit access, for authorized users and systems, and keep everyone else out.",
       "retention_goal": "life"
     },
     {
       "id": "d1-confid-lp-def1",
       "type": "flash",
       "phase": "comprehension",
-      "question": "Définition officielle (en anglais) : « least privilege »",
-      "answer": "Under least privilege, users are only given enough access to do their jobs — no more and no less.\n\nTraduction : Avec le moindre privilège, les utilisateurs reçoivent seulement assez d'accès pour faire leur travail, ni plus, ni moins.",
-      "explanation": "Pense aux clés du collège : chacun a seulement celles dont il a besoin.",
-      "explanation_more": "Le manuel le relie à la confidentialité : l'accès à l'information n'est donné que selon le besoin d'en connaître (need-to-know).",
+      "question": "Official definition: “least privilege”",
+      "answer": "Under least privilege, users are only given enough access to do their jobs — no more and no less.",
+      "explanation": "In simple words: give each person the access that the job needs. Not too much, not too little.",
+      "explanation_more": "Source: (ISC)2 manual, domain 1, section “Confidentiality”. The manual links it to need-to-know: access to information is given only when a person needs to know it.",
       "retention_goal": "life"
     },
     {
       "id": "d1-confid-lp-def2",
-      "type": "cloze",
-      "question": "Under least privilege, users are only given [[enough]] access to do their jobs — no more and [[no less]].",
+      "type": "qcm",
+      "phase": "entrainement",
+      "question": "Which sentence is the official definition of “least privilege”?",
+      "options": [
+        "Under least privilege, users are given full access first, and extra access is removed later.",
+        "Under least privilege, users are only given enough access to do their jobs — no more and no less.",
+        "Under least privilege, users are only given enough access to do their jobs — and a little more, for safety.",
+        "Under least privilege, managers are given access to everything that their team can see."
+      ],
+      "options_why": [
+        "It starts with full access. Least privilege starts with only what the job needs.",
+        "",
+        "A little more, for safety, is still too much. The words are no more and no less.",
+        "Managers do not get extra access just because they are managers. Access follows the job."
+      ],
       "answer": "Under least privilege, users are only given enough access to do their jobs — no more and no less.",
-      "explanation": "Ni trop (risque de fuite), ni trop peu (le travail ne se fait plus).",
+      "explanation": "The key words are: only, enough, to do their jobs, no more and no less.",
       "retention_goal": "life"
     },
     {
       "id": "d1-confid-lp-def3",
-      "type": "cloze",
-      "question": "Under [[least privilege]], users are only given [[enough access]] to [[do their jobs]] — no more and no less.",
+      "type": "flash",
+      "phase": "entrainement",
+      "question": "Say the official sentence about “least privilege” from memory.",
       "answer": "Under least privilege, users are only given enough access to do their jobs — no more and no less.",
-      "explanation": "Le nom du principe, la quantité d'accès, et la raison : le travail à faire.",
-      "retention_goal": "life"
-    },
-    {
-      "id": "d1-confid-lp-def4",
-      "type": "problem",
-      "question": "Écris de mémoire la phrase du manuel sur le « least privilege » (en anglais).",
-      "answer": "Under least privilege, users are only given enough access to do their jobs — no more and no less.\n\nTraduction : Avec le moindre privilège, les utilisateurs reçoivent seulement assez d'accès pour faire leur travail, ni plus, ni moins.",
-      "explanation": "Repère les trois idées : seulement, assez d'accès, ni plus ni moins.",
+      "explanation": "Remember three parts: only, enough access, no more and no less.",
       "retention_goal": "life"
     },
     {
       "id": "d1-confid-pii-def1",
       "type": "flash",
       "phase": "comprehension",
-      "question": "Définition officielle (en anglais) : les « PII »",
-      "answer": "Information that can be used to uniquely identify a person, such as names, birthdates, and Social Security numbers, are considered personally identifiable information (PII), which is usually required by law to be kept highly confidential.\n\nTraduction : Les informations qui permettent d'identifier une personne de façon unique, comme les noms, les dates de naissance et les numéros de sécurité sociale, sont des informations personnelles identifiables (PII), que la loi oblige en général à garder très confidentielles.",
-      "explanation": "PII = tout ce qui permet de reconnaître une personne précise.",
-      "explanation_more": "En anglais : personally identifiable information. Le livre précise que la loi impose en général de les garder très confidentielles.",
+      "question": "Official definition: “PII”",
+      "answer": "Information that can be used to uniquely identify a person, such as names, birthdates, and Social Security numbers, are considered personally identifiable information (PII), which is usually required by law to be kept highly confidential.",
+      "explanation": "In simple words: PII is any data that points to one exact person. The law usually says it must stay very private.",
+      "explanation_more": "Source: (ISC)2 manual, domain 1, section “Confidentiality”. PII stands for personally identifiable information.",
       "retention_goal": "life"
     },
     {
       "id": "d1-confid-pii-def3",
-      "type": "cloze",
-      "question": "Information that can be used to [[uniquely identify a person]], such as names, birthdates, and Social Security numbers, are considered [[personally identifiable information]] (PII), which is usually required by law to be kept [[highly confidential]].",
+      "type": "flash",
+      "phase": "entrainement",
+      "question": "Say the official sentence about “PII” from memory.",
       "answer": "Information that can be used to uniquely identify a person, such as names, birthdates, and Social Security numbers, are considered personally identifiable information (PII), which is usually required by law to be kept highly confidential.",
-      "explanation": "L'idée : identifier quelqu'un, le nom officiel (PII), et l'obligation de secret.",
+      "explanation": "Three parts: it identifies one person, its name is PII, and the law says it must be kept highly confidential.",
       "retention_goal": "life"
     },
     {
-      "id": "d1-confid-1",
-      "type": "duel",
-      "question": "Un employé envoie par erreur la liste des clients à la mauvaise personne. Quel pilier est touché ?",
-      "options": ["La confidentialité", "L'intégrité"],
-      "answer": "La confidentialité",
-      "explanation": "Personne n'a modifié la liste : elle a seulement été vue par quelqu'un qui n'y avait pas droit.",
-      "retention_goal": "1y"
-    },
-    {
-      "id": "d1-confid-2",
+      "id": "d1-confid-q1",
       "type": "qcm",
-      "question": "Lequel de ces cas fait perdre la confidentialité, sans aucun pirate ?",
+      "phase": "comprehension",
+      "question": "A worker sends the salary list to the wrong person by mistake. Which security goal is lost?",
       "options": [
-        "Un écran avec des données sensibles visible par des inconnus",
-        "Une panne de courant qui éteint le serveur",
-        "Une faute de frappe qui change un chiffre dans une base de données",
-        "Un disque dur qui tombe en panne"
+        "Confidentiality",
+        "Availability",
+        "Integrity",
+        "None, because nobody attacked the company"
       ],
       "options_why": [
         "",
-        "Là, ce sont les gens autorisés qui ne peuvent plus accéder aux données : c'est la disponibilité.",
-        "Là, une donnée est devenue fausse : c'est l'intégrité.",
-        "Là, les données ne sont plus accessibles : c'est la disponibilité."
+        "Nobody lost access to the list. The people who need it can still reach it.",
+        "Nobody changed the list. It is still correct.",
+        "Confidentiality can be lost by a simple mistake. An attacker is not needed."
       ],
-      "answer": "Un écran avec des données sensibles visible par des inconnus",
-      "explanation": "Des gens non autorisés peuvent voir l'information : c'est exactement ce que la confidentialité doit empêcher.",
-      "explanation_more": "Le manuel cite aussi comme erreurs humaines : ne pas chiffrer des données sensibles et envoyer un mail à la mauvaise adresse.",
+      "answer": "Confidentiality",
+      "explanation": "Someone who should not see the list can now see it. This is exactly what confidentiality must stop.",
       "retention_goal": "1y"
     },
     {
-      "id": "d1-confid-3",
-      "type": "sort",
-      "question": "Dans quelle boîte va chaque situation ?",
-      "answer": "Confidentialité : le mail mal envoyé et l'écran visible. Intégrité : la ligne modifiée par erreur et le virus. Disponibilité : le site en panne et le ransomware.",
-      "explanation": "Pose-toi une question : est-ce que quelqu'un a vu ce qu'il ne devait pas (confidentialité), changé quelque chose (intégrité), ou bloqué l'accès (disponibilité) ?",
-      "data": {
-        "mode": "classer",
-        "categories": ["Confidentialité", "Intégrité", "Disponibilité"],
-        "items": [
-          { "text": "Un mail confidentiel part à la mauvaise personne", "category": "Confidentialité" },
-          { "text": "Un inconnu lit un écran sensible par-dessus ton épaule", "category": "Confidentialité" },
-          { "text": "Quelqu'un change par erreur une ligne dans un fichier de configuration", "category": "Intégrité" },
-          { "text": "Un virus modifie des données", "category": "Intégrité" },
-          { "text": "Le site du magasin est en panne tout le samedi", "category": "Disponibilité" },
-          { "text": "Un ransomware bloque tous les fichiers", "category": "Disponibilité" }
-        ]
-      }
-    },
-    {
-      "id": "d1-confid-4",
-      "type": "why",
-      "question": "Pourquoi ne donne-t-on pas à chaque employé accès à tous les fichiers de l'entreprise ?",
-      "answer": "Plus il y a de personnes qui ont accès à une information, plus elle risque de fuiter, par erreur ou par malveillance. On donne seulement l'accès nécessaire au travail : c'est le moindre privilège.",
-      "explanation": "Chaque accès en trop est une porte ouverte inutile.",
+      "id": "d1-confid-q2",
+      "type": "qcm",
+      "phase": "comprehension",
+      "question": "Which situation is a problem for confidentiality?",
+      "options": [
+        "A server is turned off during a power cut",
+        "A visitor reads a private screen over a worker's shoulder",
+        "A typing mistake changes a price in a database",
+        "A hard disk breaks and files are lost"
+      ],
+      "options_why": [
+        "People cannot reach the server. That is a problem of availability.",
+        "",
+        "A price became wrong. That is a problem of integrity.",
+        "The files cannot be reached any more. That is a problem of availability."
+      ],
+      "answer": "A visitor reads a private screen over a worker's shoulder",
+      "explanation": "A person who should not see the data can see it. That is a loss of confidentiality.",
+      "explanation_more": "Source: (ISC)2 manual, domain 1, section “Confidentiality”: showing sensitive information on a screen near unauthorized viewers is one of the examples.",
       "retention_goal": "1y"
     },
     {
-      "id": "d1-confid-5",
+      "id": "d1-confid-q3",
+      "type": "qcm",
+      "phase": "comprehension",
+      "question": "What is the main goal of confidentiality?",
+      "options": [
+        "Keep the data correct",
+        "Keep the systems running all day",
+        "Keep a record of who did what",
+        "Keep the data away from people who should not see it"
+      ],
+      "options_why": [
+        "That is the goal of integrity.",
+        "That is the goal of availability.",
+        "That is about tracing actions. It is a different idea.",
+        ""
+      ],
+      "answer": "Keep the data away from people who should not see it",
+      "explanation": "Confidentiality is about who can see the data.",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-q4",
+      "type": "qcm",
+      "phase": "entrainement",
+      "question": "A new employee joins the accounting team. The manager wants her to start work quickly. What is the BEST way to set up her access?",
+      "options": [
+        "Copy the access of the most senior accountant",
+        "Give her full access now and remove what she does not use after a month",
+        "Give her only the access that an accountant needs for the job",
+        "Give her access to all company files so she never needs to ask"
+      ],
+      "options_why": [
+        "A senior person often has more access than the job needs. Copying it gives her too much.",
+        "Starting with full access is risky. A leak can happen in the first month.",
+        "",
+        "This is the fastest way to start, but it gives far too much access and breaks least privilege."
+      ],
+      "answer": "Give her only the access that an accountant needs for the job",
+      "explanation": "Least privilege: start with what the job needs, and add more only when there is a good reason.",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-q5",
+      "type": "qcm",
+      "phase": "entrainement",
+      "question": "Which of these is the BEST example of a control that protects confidentiality?",
+      "options": [
+        "A sign-in step that needs a password and a code from a phone",
+        "A daily backup of all the files",
+        "A second server that starts when the first one fails",
+        "A tool that checks if files were changed"
+      ],
+      "options_why": [
+        "",
+        "A backup helps to get data back. That is about availability, not about who can see the data.",
+        "A second server keeps the service running. That is about availability.",
+        "Checking for changes protects integrity, not confidentiality."
+      ],
+      "answer": "A sign-in step that needs a password and a code from a phone",
+      "explanation": "A second check at sign-in keeps unauthorized people out. That protects confidentiality.",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-q6",
+      "type": "qcm",
+      "phase": "entrainement",
+      "question": "Which of these is NOT a good way to protect confidentiality?",
+      "options": [
+        "Training staff to check the email address before they send",
+        "Encrypting private files",
+        "Using roles to decide who can see what",
+        "Giving every worker access to every file"
+      ],
+      "options_why": [
+        "Training is a good way. Many leaks come from human mistakes.",
+        "Encryption is a good way. Without the key, the file cannot be read.",
+        "Access by role is a good way. People see only what their role needs.",
+        ""
+      ],
+      "answer": "Giving every worker access to every file",
+      "explanation": "More people with access means more chances of a leak. This is the opposite of least privilege.",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-q7",
+      "type": "qcm",
+      "phase": "entrainement",
+      "question": "Which employee MOST needs access to the salary files?",
+      "options": [
+        "A sales manager who wants to compare her pay",
+        "A payroll clerk who prepares the monthly salaries",
+        "The receptionist who answers the phone",
+        "A new intern who is curious about the company"
+      ],
+      "options_why": [
+        "Wanting to compare is not a job need. Curiosity is not a good reason.",
+        "",
+        "Answering the phone does not need salary data.",
+        "Being curious is not a job need."
+      ],
+      "answer": "A payroll clerk who prepares the monthly salaries",
+      "explanation": "Access follows the job. The payroll clerk needs the files to do the work.",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-q8",
+      "type": "qcm",
+      "phase": "entrainement",
+      "question": "Which of these data is usually PII?",
+      "options": [
+        "The price of a product",
+        "The name of a software tool",
+        "A date of birth",
+        "The color of a company logo"
+      ],
+      "options_why": [
+        "A price does not point to one person.",
+        "A tool name does not point to one person.",
+        "",
+        "A color does not point to one person."
+      ],
+      "answer": "A date of birth",
+      "explanation": "PII is data that can point to one exact person, like a name or a date of birth.",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-q9",
+      "type": "qcm",
+      "phase": "entrainement",
+      "question": "Apart from attackers, what can also cause a loss of confidentiality?",
+      "options": [
+        "Only broken hardware",
+        "Only natural disasters",
+        "Nothing, because only attackers can do it",
+        "Human mistakes, such as sending an email to the wrong person"
+      ],
+      "options_why": [
+        "Broken hardware mostly hurts availability.",
+        "Floods and fires mostly hurt availability.",
+        "The manual says that human error, oversight, and negligence can also break confidentiality.",
+        ""
+      ],
+      "answer": "Human mistakes, such as sending an email to the wrong person",
+      "explanation": "Mistakes are a common cause of leaks. This is why staff training is an important control.",
+      "explanation_more": "Source: (ISC)2 manual, domain 1, section “Confidentiality”.",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-q10",
+      "type": "qcm",
+      "phase": "entrainement",
+      "question": "How are privacy and confidentiality related?",
+      "options": [
+        "Privacy is about the confidentiality of personal data",
+        "They are the same word, so there is no difference",
+        "Privacy is about keeping systems available",
+        "Privacy is only about passwords"
+      ],
+      "options_why": [
+        "",
+        "Privacy is a narrower idea. It is about personal data only, while confidentiality covers all sensitive data.",
+        "Keeping systems available is availability, not privacy.",
+        "Passwords can help, but privacy is about personal data in general."
+      ],
+      "answer": "Privacy is about the confidentiality of personal data",
+      "explanation": "Privacy is the part of confidentiality that protects data about people.",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-f1",
       "type": "flash",
-      "question": "Cite trois mesures qui aident à protéger la confidentialité.",
-      "answer": "Le chiffrement (encryption), l'authentification multifacteur (un second contrôle en plus du mot de passe) et les accès selon le rôle de chacun. La formation du personnel aide aussi, car beaucoup de fuites viennent d'erreurs.",
-      "explanation": "Les trois protègent l'accès ; la formation réduit les erreurs humaines.",
-      "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Confidentiality » : chiffrement, authentification multifacteur et contrôles d'accès basés sur les rôles.",
+      "phase": "entrainement",
+      "question": "What is the goal of confidentiality? Say it in your own words.",
+      "answer": "Only the right people can see the information. Everyone else is kept out.",
+      "explanation": "Think of the lock on the diary.",
       "retention_goal": "1y"
     },
     {
-      "id": "d1-confid-6",
+      "id": "d1-confid-f2",
       "type": "flash",
-      "question": "Quelle est la différence entre la vie privée (privacy) et la confidentialité ?",
-      "answer": "La confidentialité protège toutes les données sensibles. La vie privée est le domaine proche qui s'occupe seulement de la confidentialité des données personnelles.",
-      "explanation": "La vie privée est un cas particulier : celui où les données parlent de personnes.",
+      "phase": "entrainement",
+      "question": "Name three controls that help to protect confidentiality.",
+      "answer": "Encryption, multi-factor sign-in (a second check besides the password), and access based on a person's role. Staff training also helps.",
+      "explanation": "The first three keep unauthorized people out. Training cuts human mistakes.",
+      "explanation_more": "Source: (ISC)2 manual, domain 1, section “Confidentiality”: encryption, multifactor authentication, and role-based access controls, plus training.",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-f3",
+      "type": "flash",
+      "phase": "entrainement",
+      "question": "What does PII stand for, and what is it?",
+      "answer": "Personally identifiable information. It is data that can point to one exact person, like a name or a birth date.",
+      "explanation": "Think: does this data point to one exact person?",
+      "retention_goal": "1y"
+    },
+    {
+      "id": "d1-confid-f4",
+      "type": "flash",
+      "phase": "entrainement",
+      "question": "What does “need-to-know” mean?",
+      "answer": "A person gets only the information that they need for their job.",
+      "explanation": "It is the idea behind least privilege.",
       "retention_goal": "1y"
     }
   ]

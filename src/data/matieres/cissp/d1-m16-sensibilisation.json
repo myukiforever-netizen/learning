@@ -1,43 +1,48 @@
 {
   "id": "d1-m16-sensibilisation",
-  "name": "D1.16 Sensibiliser et former",
-  "galaxie": { "teinte": 256, "ambiance": "lumineux" },
+  "name": "D1.16 Raising awareness and training",
+  "galaxie": {
+    "teinte": 256,
+    "ambiance": "lumineux"
+  },
   "concepts": [
     {
       "id": "d1-sens-programme",
-      "name": "Le programme de sensibilisation à la sécurité (security awareness program)",
-      "planete": { "relief": "gazeuse" },
+      "name": "The security awareness program",
+      "planete": {
+        "relief": "gazeuse"
+      },
       "decouverte": [
         {
           "type": "histoire",
-          "titre": "Le passage piéton",
+          "titre": "The crosswalk",
           "paragraphes": [
-            "Tu sais traverser au passage piéton. On te l'a dit quand tu étais petit : regarde des deux côtés avant de passer.",
-            "Plus tard, on t'a expliqué pourquoi : les voitures ont du mal à freiner. Et un moniteur t'a fait t'entraîner à vélo, pour de vrai.",
-            "Dans une entreprise, il faut aussi apprendre les bons réflexes de sécurité à tout le monde. Cela s'appelle un programme de sensibilisation à la sécurité (security awareness program)."
+            "You know how to cross at a crosswalk. When you were small, someone told you to look both ways.",
+            "Later, someone told you why: cars need time to stop. Then an instructor made you practice on your bike.",
+            "A company also needs everyone to learn good habits. For security, this is called a security awareness program."
           ]
         },
         {
           "type": "analogie",
-          "titre": "Trois façons d'apprendre",
-          "comme": "Savoir qu'il faut traverser au passage piéton, c'est de la sensibilisation. Comprendre pourquoi, c'est de l'éducation. S'entraîner avec un moniteur, c'est de la formation.",
-          "enVrai": "Le titre de la section du manuel réunit ces trois mots : sensibilisation (awareness), éducation (education) et formation (training). Le manuel donne une définition officielle du programme de sensibilisation. L'image s'arrête ici : dans la vie réelle, ces trois façons d'apprendre se mélangent."
+          "titre": "Three ways to learn",
+          "comme": "Knowing that you should use the crosswalk is awareness. Knowing why is education. Practicing with an instructor is training.",
+          "enVrai": "The manual puts these three words together: awareness, education and training. A security awareness program does all three for the people in a company. The picture stops here: in real life, the three mix together."
         },
         {
           "type": "predire",
-          "question": "Une entreprise a les meilleurs outils de sécurité. Où est son point le plus faible ?",
+          "question": "A company has the best security tools. Where is its weakest point?",
           "options": [
-            "Les personnes qui y travaillent",
-            "Le prix de ses outils",
-            "Le nombre de ses ordinateurs"
+            "The people who work there",
+            "The price of its tools",
+            "The number of its computers"
           ],
-          "answer": "Les personnes qui y travaillent",
-          "explanation": "Les outils bloquent les attaques techniques. Mais une personne qui se laisse tromper peut tout contourner. Le prix et le nombre d'ordinateurs ne changent pas cela."
+          "answer": "The people who work there",
+          "explanation": "Tools stop technical attacks. But one person who gets tricked can go around them. The price and the number of computers do not change that."
         },
         {
           "type": "exemple",
-          "titre": "Le premier jour de Léa",
-          "texte": "Léa arrive dans une entreprise. Pendant sa première semaine, elle suit une orientation pour les nouveaux employés. Elle regarde un cours en ligne (CBT : computer-based training, une formation suivie sur ordinateur). Dans les couloirs, des affiches rappellent des conseils de sécurité."
+          "titre": "Lea's first day",
+          "texte": "Lea starts a new job. In her first week, she goes to a welcome meeting about security. Then she takes an online lesson. This is called CBT, which means computer-based training. In the hallways, posters give security tips."
         }
       ],
       "cards": [
@@ -45,204 +50,357 @@
           "id": "d1-sens-programme-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : « security awareness program »",
-          "answer": "A security awareness program is a formal program that includes processes to train users of the potential threats to an organization's information and systems, as well as educates those users on how to handle such threats.\n\nTraduction : Un programme de sensibilisation à la sécurité est un programme formel qui comprend des processus pour informer les utilisateurs des menaces possibles pour l'information et les systèmes de l'organisation, et leur apprendre à gérer ces menaces.",
-          "explanation": "Deux missions : faire connaître les menaces, puis apprendre à les gérer.",
-          "explanation_more": "Définition du manuel (ISC)2, domaine 1, section « Establish and Maintain a Security Awareness, Education, and Training Program ».",
+          "question": "Official definition: “security awareness program”",
+          "answer": "A security awareness program is a formal program that includes processes to train users of the potential threats to an organization's information and systems, as well as educates those users on how to handle such threats.",
+          "explanation": "In simple words: a plan that tells people about the dangers. Then it teaches them what to do about them.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Establish and Maintain a Security Awareness, Education, and Training Program”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-programme-def2",
-          "type": "cloze",
-          "question": "A security awareness program is a formal program that includes processes to [[train]] users of the potential threats to an organization's information and systems, as well as [[educates]] those users on how to handle such threats.",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which sentence is the official definition of “security awareness program”?",
+          "options": [
+            "A security awareness program is an informal program that includes processes to train users of the potential threats to an organization's information and systems, as well as educates those users on how to handle such threats.",
+            "A security awareness program is a formal program that includes processes to train administrators of the potential threats to an organization's information and systems, as well as educates those users on how to handle such threats.",
+            "A security awareness program is a formal program that includes processes to train users of the potential threats to an organization's information and systems, as well as educates those users on how to handle such threats.",
+            "A security awareness program is a formal program that includes processes to train users of the potential threats to an organization's information and systems, as well as reports those users who fail to handle such threats."
+          ],
+          "options_why": [
+            "It says informal. The real sentence says formal program, with set processes.",
+            "It says administrators. The real sentence says users, so everyone is trained.",
+            "",
+            "It talks about reporting users. The real sentence is about teaching users how to handle threats."
+          ],
           "answer": "A security awareness program is a formal program that includes processes to train users of the potential threats to an organization's information and systems, as well as educates those users on how to handle such threats.",
-          "explanation": "Deux verbes : train (informer) et educates (apprendre à gérer).",
+          "explanation": "Look at the key words: formal program, train users, educates those users on how to handle threats.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-programme-def3",
-          "type": "cloze",
-          "question": "A security awareness program is a [[formal program]] that includes processes to [[train users]] of the potential threats to an organization's information and systems, as well as [[educates those users]] on how to handle such threats.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official definition of “security awareness program” from memory.",
           "answer": "A security awareness program is a formal program that includes processes to train users of the potential threats to an organization's information and systems, as well as educates those users on how to handle such threats.",
-          "explanation": "Trois blocs : un programme formel, informer les utilisateurs, leur apprendre à gérer.",
-          "retention_goal": "life"
-        },
-        {
-          "id": "d1-sens-programme-def4",
-          "type": "problem",
-          "question": "Écris de mémoire la définition officielle de « security awareness program » (en anglais).",
-          "answer": "A security awareness program is a formal program that includes processes to train users of the potential threats to an organization's information and systems, as well as educates those users on how to handle such threats.\n\nTraduction : Un programme de sensibilisation à la sécurité est un programme formel qui comprend des processus pour informer les utilisateurs des menaces possibles pour l'information et les systèmes de l'organisation, et leur apprendre à gérer ces menaces.",
-          "explanation": "Commence par « formal program », puis les deux missions : train et educates.",
+          "explanation": "Three parts: a formal program, training users about threats, and teaching them how to handle threats.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-programme-minimum-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : le contenu minimal d'un programme standard",
-          "answer": "A standard security awareness program should include, at a minimum, new user orientation, lectures or computer-based trainings (CBTs), and printed materials like posters and handouts that share security tips.\n\nTraduction : Un programme standard de sensibilisation à la sécurité devrait inclure au minimum une orientation des nouveaux utilisateurs, des cours ou des formations sur ordinateur (CBT), et des documents imprimés comme des affiches et des brochures qui partagent des conseils de sécurité.",
-          "explanation": "Trois éléments : accueillir, enseigner, rappeler avec des affiches.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Establish and Maintain a Security Awareness, Education, and Training Program ».",
+          "question": "Official definition: the minimum content of a standard program",
+          "answer": "A standard security awareness program should include, at a minimum, new user orientation, lectures or computer-based trainings (CBTs), and printed materials like posters and handouts that share security tips.",
+          "explanation": "In simple words: a welcome for new people, lessons, and posters or handouts with tips.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Establish and Maintain a Security Awareness, Education, and Training Program”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-programme-minimum-def3",
-          "type": "cloze",
-          "question": "A standard security awareness program should include, at a minimum, [[new user orientation]], [[lectures or computer-based trainings]] (CBTs), and [[printed materials]] like posters and handouts that share security tips.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about the minimum content of a standard program from memory.",
           "answer": "A standard security awareness program should include, at a minimum, new user orientation, lectures or computer-based trainings (CBTs), and printed materials like posters and handouts that share security tips.",
-          "explanation": "Trois blocs : l'orientation, les cours, les documents imprimés.",
+          "explanation": "Three parts: new user orientation, lectures or CBTs, and printed materials.",
           "retention_goal": "life"
         },
         {
-          "id": "d1-sens-programme-1",
-          "type": "flash",
-          "question": "Selon le manuel, qui est responsable de la sécurité de l'information dans une entreprise ?",
-          "answer": "Chaque personne de l'organisation, même si de petites équipes la gouvernent.",
-          "explanation": "Les spécialistes sont peu nombreux, mais tout le monde fait partie de la défense.",
-          "explanation_more": "Source : manuel (ISC)2, domaine 1, début de la section sur le programme de sensibilisation.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-programme-2",
-          "type": "duel",
-          "question": "Une affiche dit : « Verrouille ton écran en partant ». Est-ce plutôt de la sensibilisation ou de la formation ?",
-          "options": ["De la sensibilisation", "De la formation"],
-          "answer": "De la sensibilisation",
-          "explanation": "Une affiche rappelle un réflexe. Elle ne te fait pas t'entraîner.",
-          "explanation_more": "Hors manuel : la différence entre sensibilisation, éducation et formation est une explication simplifiée, pas une phrase du livre.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-programme-3",
+          "id": "d1-sens-programme-q1",
           "type": "qcm",
-          "question": "Le directeur veut que tous les employés connaissent les menaces et sachent les gérer. Que met-il en place ?",
+          "phase": "comprehension",
+          "question": "A company teaches all its staff about threats and how to handle them. What is this called?",
           "options": [
-            "Orientation, cours et affiches",
-            "Un test d'intrusion et un audit",
-            "Un pare-feu et un antivirus neufs",
-            "Une sauvegarde de plus par semaine"
+            "A security awareness program",
+            "A vendor audit",
+            "A business continuity plan",
+            "A risk assessment"
           ],
           "options_why": [
             "",
-            "Ces contrôles vérifient des systèmes. Ils n'apprennent rien aux employés.",
-            "Ces outils protègent les machines, pas les décisions des personnes.",
-            "Une sauvegarde protège les données, mais n'apprend rien aux employés."
+            "An audit checks a vendor. It does not teach employees.",
+            "This plan helps the company keep working after a disaster. It does not teach people.",
+            "This finds and rates risks. It does not teach staff how to handle threats."
           ],
-          "answer": "Orientation, cours et affiches",
-          "explanation": "C'est le contenu minimal d'un programme de sensibilisation : orientation, cours et supports imprimés.",
+          "answer": "A security awareness program",
+          "explanation": "The program trains people about threats and teaches them how to handle those threats.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-programme-4",
-          "type": "sort",
-          "question": "Qu'est-ce qui fait partie du contenu minimal d'un programme standard ?",
-          "answer": "Dans le minimum : l'orientation des nouveaux, les cours ou CBT, les affiches et brochures. Hors du minimum : un nouveau pare-feu, un audit de fournisseur, un test d'intrusion.",
-          "explanation": "Le minimum parle de personnes et de messages. Les autres éléments sont des contrôles ou des outils.",
-          "data": {
-            "mode": "classer",
-            "categories": ["Dans le minimum", "Hors du minimum"],
-            "items": [
-              { "text": "L'orientation des nouveaux utilisateurs", "category": "Dans le minimum" },
-              { "text": "Des cours ou des formations sur ordinateur (CBT)", "category": "Dans le minimum" },
-              { "text": "Des affiches et des brochures de conseils", "category": "Dans le minimum" },
-              { "text": "Un nouveau pare-feu", "category": "Hors du minimum" },
-              { "text": "Un audit de fournisseur", "category": "Hors du minimum" },
-              { "text": "Un test d'intrusion", "category": "Hors du minimum" }
-            ]
-          }
-        },
-        {
-          "id": "d1-sens-programme-5",
-          "type": "cloze",
-          "question": "Un programme de sensibilisation comprend au minimum l'orientation des nouveaux, des cours ou [[CBT]], et des documents [[imprimés]].",
-          "answer": "Un programme de sensibilisation comprend au minimum l'orientation des nouveaux, des cours ou CBT, et des documents imprimés.",
-          "explanation": "Un accueil, des cours, des rappels sur papier.",
+          "id": "d1-sens-programme-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Which of these is NOT part of the minimum content of a standard awareness program?",
+          "options": [
+            "Orientation for new users",
+            "Lectures or computer-based training",
+            "Posters and handouts with tips",
+            "A new firewall for the network"
+          ],
+          "options_why": [
+            "This is part of the minimum. New people learn the basics when they start.",
+            "This is part of the minimum. People learn in a room or on a computer.",
+            "This is part of the minimum. Printed tips remind people of good habits.",
+            ""
+          ],
+          "answer": "A new firewall for the network",
+          "explanation": "A firewall is a tool for machines. The minimum content is about teaching and reminding people.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Establish and Maintain a Security Awareness, Education, and Training Program”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-programme-6",
-          "type": "why",
-          "question": "Pourquoi dit-on que la sécurité d'une entreprise est aussi forte que son maillon le plus faible ?",
-          "answer": "Les outils peuvent être excellents, mais un attaquant n'a besoin que d'une personne qui se laisse tromper. Le personnel est souvent ce maillon.",
-          "explanation": "Une seule personne mal informée peut ouvrir la porte à tous.",
-          "explanation_more": "Source : manuel (ISC)2, domaine 1. La sécurité n'est aussi forte que son maillon le plus faible, souvent le personnel.",
+          "id": "d1-sens-programme-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Why do experts say that people are often the weakest link in security?",
+          "options": [
+            "People are slower than computers",
+            "One person who gets tricked can go around good tools",
+            "Security tools cost too much for most small and large companies",
+            "Most people cannot use a computer"
+          ],
+          "options_why": [
+            "Speed is not the problem. The problem is that a person can be tricked.",
+            "",
+            "Cost is not the point. Even the best tools can be bypassed by a tricked person.",
+            "Most people use computers well. They just may not know the tricks of attackers."
+          ],
+          "answer": "One person who gets tricked can go around good tools",
+          "explanation": "Tools block technical attacks, but a tricked person can open the door for an attacker.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Establish and Maintain a Security Awareness, Education, and Training Program”. The manual says security is only as strong as its weakest link: the personnel.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-programme-7",
+          "id": "d1-sens-programme-q4",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A new employee starts on Monday. She has never seen the security rules of the company. What should the company do FIRST?",
+          "options": [
+            "Give her a welcome session about security",
+            "Send her a surprise trap email",
+            "Wait to see if she makes a mistake",
+            "Give her the full policy to read next month"
+          ],
+          "options_why": [
+            "",
+            "A test before any teaching is not fair. People must learn first.",
+            "Waiting means she learns by making a mistake. That is a risk for the company.",
+            "Next month is too late. The first days are when habits start."
+          ],
+          "answer": "Give her a welcome session about security",
+          "explanation": "New user orientation is the first part of a standard awareness program.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-programme-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A company wants daily reminders of security tips in its hallways. Which part of a standard program is BEST for this?",
+          "options": [
+            "New user orientation",
+            "A yearly lecture",
+            "Posters and handouts",
+            "A CBT lesson taken once"
+          ],
+          "options_why": [
+            "Orientation happens once, when people start. It is not a daily reminder.",
+            "A lecture happens once a year. It does not remind people each day.",
+            "",
+            "A lesson taken once is not seen every day."
+          ],
+          "answer": "Posters and handouts",
+          "explanation": "Printed materials like posters stay in view. They share tips again and again.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-programme-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Who is MOST responsible for information security in a company?",
+          "options": [
+            "Only the security team",
+            "Every person in the organization",
+            "Only the IT manager",
+            "Only the chief executive and the board of directors"
+          ],
+          "options_why": [
+            "A small team may lead security. But it cannot do it alone.",
+            "",
+            "The IT manager is one person. Security needs everyone.",
+            "The chief executive sets the direction. But all staff must act."
+          ],
+          "answer": "Every person in the organization",
+          "explanation": "Small teams govern security, but it is the job of every person in the company.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Establish and Maintain a Security Awareness, Education, and Training Program”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-programme-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A poster says “Lock your screen when you leave.” Which word describes it BEST?",
+          "options": [
+            "Training: it makes people practice",
+            "Education: it explains the full theory behind each rule",
+            "Audit: it checks that people obey",
+            "Awareness: it reminds people of a habit"
+          ],
+          "options_why": [
+            "Training means practice with an instructor. A poster does not do that.",
+            "Education explains why. A short poster does not explain much.",
+            "An audit checks a result. A poster only reminds people.",
+            ""
+          ],
+          "answer": "Awareness: it reminds people of a habit",
+          "explanation": "A poster reminds people of a habit. It does not teach in depth or make people practice.",
+          "explanation_more": "Outside the manual: the difference between awareness, education and training is a simple way to see them.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-programme-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Lea takes an online lesson on her computer about passwords. What is this kind of lesson called?",
+          "options": [
+            "New user orientation",
+            "A printed handout",
+            "CBT (computer-based training)",
+            "A lecture in a room"
+          ],
+          "options_why": [
+            "Orientation is a welcome for new people. It is not a lesson on a computer.",
+            "A handout is on paper, not on a computer.",
+            "",
+            "A lecture is given by a person in a room, not on a computer."
+          ],
+          "answer": "CBT (computer-based training)",
+          "explanation": "CBT means computer-based training: a lesson you take on a computer.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-programme-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT an extra technique named by the manual to raise awareness?",
+          "options": [
+            "A yearly financial audit",
+            "Phishing exercises",
+            "Security champions",
+            "Gamification"
+          ],
+          "options_why": [
+            "",
+            "The manual names phishing and other social engineering exercises.",
+            "The manual names security champions.",
+            "The manual names gamification."
+          ],
+          "answer": "A yearly financial audit",
+          "explanation": "The manual names phishing exercises, security champions and gamification. An audit is not one of them.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Establish and Maintain a Security Awareness, Education, and Training Program”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-programme-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "An attacker needs only one person to get tricked. How should a manager BEST use this idea?",
+          "options": [
+            "Train only the people who use servers and networks every day",
+            "Buy better tools and train less",
+            "Train people after an incident",
+            "Train everyone, not only the security team"
+          ],
+          "options_why": [
+            "One tricked person in any job can be enough. Everyone needs training.",
+            "Better tools help. But they do not stop a person who gets tricked.",
+            "After an incident is too late. Training should come first.",
+            ""
+          ],
+          "answer": "Train everyone, not only the security team",
+          "explanation": "Because one tricked person is enough, the whole staff must be trained.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-programme-f1",
           "type": "flash",
-          "question": "Que veut dire CBT ?",
-          "answer": "Computer-based training : une formation suivie sur ordinateur.",
-          "explanation": "Tu l'as sans doute déjà fait : un cours en ligne avec des questions.",
+          "phase": "entrainement",
+          "question": "Who is responsible for information security in a company?",
+          "answer": "Every person in the organization, even if a small team leads it.",
+          "explanation": "Specialists are few. But everyone is part of the defense.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-programme-8",
-          "type": "whatif",
-          "question": "Et si une entreprise n'organise aucune orientation pour ses nouveaux employés ?",
-          "answer": "Ils ne connaissent ni les menaces ni les bons réflexes dès le premier jour. Ils deviennent le maillon faible, sans le savoir.",
-          "explanation": "L'orientation est le premier contact avec la sécurité de l'entreprise.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-programme-9",
-          "type": "problem",
-          "question": "Tu es nouvel employé. Écris trois choses que tu t'attends à trouver dans le programme de sensibilisation de l'entreprise.",
-          "answer": "Une orientation à l'arrivée, des cours ou des CBT, et des affiches ou brochures de conseils de sécurité.",
-          "explanation": "Ce sont les trois éléments minimaux cités par le manuel.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-programme-10",
+          "id": "d1-sens-programme-f2",
           "type": "flash",
-          "question": "Quelles autres techniques le manuel cite-t-il pour renforcer la sensibilisation ?",
-          "answer": "Les exercices d'hameçonnage et d'ingénierie sociale, les champions de la sécurité (security champions) et la ludification (gamification).",
-          "explanation": "Chacune a sa planète dans cette galaxie.",
-          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Establish and Maintain a Security Awareness, Education, and Training Program ».",
+          "phase": "entrainement",
+          "question": "What does CBT stand for?",
+          "answer": "Computer-based training: a lesson you take on a computer.",
+          "explanation": "You have probably done one: an online course with questions.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-programme-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is the job of posters and handouts in an awareness program?",
+          "answer": "They share security tips and remind people of good habits.",
+          "explanation": "They keep the message in front of people every day.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-programme-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Why is a company only as secure as its weakest link?",
+          "answer": "The tools can be very good. But an attacker needs only one person who gets tricked.",
+          "explanation": "That person is often a member of staff.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Establish and Maintain a Security Awareness, Education, and Training Program”.",
           "retention_goal": "1y"
         }
       ]
     },
     {
       "id": "d1-sens-ingenierie",
-      "name": "L'ingénierie sociale (social engineering)",
-      "planete": { "relief": "volcanique" },
+      "name": "Social engineering",
+      "planete": {
+        "relief": "volcanique"
+      },
       "decouverte": [
         {
           "type": "histoire",
-          "titre": "L'appel du prétendu technicien",
+          "titre": "The call from the fake technician",
           "paragraphes": [
-            "Le téléphone sonne dans un bureau. Une voix dit : « Bonjour, je suis du service informatique. J'ai besoin de ton mot de passe. »",
-            "La voix est polie et un peu pressée. L'employé donne son mot de passe. Aucun ordinateur n'a été piraté : un humain a été trompé.",
-            "Se faire passer pour quelqu'un d'autre afin d'obtenir des informations, c'est de l'ingénierie sociale (social engineering)."
+            "The phone rings in an office. A voice says: “Hello, I work in IT. I need your password.”",
+            "The voice is polite and in a hurry. The worker gives the password. No computer was hacked. A person was tricked.",
+            "Pretending to be someone else to get private information is called social engineering."
           ]
         },
         {
           "type": "analogie",
-          "titre": "Le déguisement",
-          "comme": "Pour entrer dans un bâtiment fermé, quelqu'un ne force pas la porte. Il se déguise en livreur et demande gentiment qu'on lui ouvre.",
-          "enVrai": "L'ingénierie sociale attaque la personne, pas la machine. L'attaquant se fait passer pour quelqu'un d'autre afin d'obtenir des données sensibles. Le courriel (email) en est le terrain préféré : on parle alors d'hameçonnage (phishing). L'image s'arrête ici : un déguisement se voit parfois, un message trompeur peut être parfait."
+          "titre": "The disguise",
+          "comme": "To enter a locked building, a thief does not break the door. He dresses as a delivery person and asks you to open it.",
+          "enVrai": "Social engineering attacks the person, not the machine. The attacker pretends to be someone else to get private data. When it is done by email, it is called phishing. The picture stops here: a disguise can be easy to see, but a tricky email can look perfect."
         },
         {
           "type": "predire",
-          "question": "Pourquoi un pare-feu ne bloque-t-il pas un employé qui donne son mot de passe au téléphone ?",
+          "question": "Why does a firewall not stop a worker who gives a password on the phone?",
           "options": [
-            "Il surveille les machines, pas les personnes",
-            "Il est trop ancien",
-            "Il ne regarde que les mails"
+            "It watches machines, not people",
+            "It is too old",
+            "It only looks at emails"
           ],
-          "answer": "Il surveille les machines, pas les personnes",
-          "explanation": "Le pare-feu filtre le trafic des machines. Il ne peut rien contre une personne qui parle. Son âge ou son champ de surveillance ne changent rien ici."
+          "answer": "It watches machines, not people",
+          "explanation": "A firewall is a tool that filters traffic between machines. It cannot stop a person who talks. Its age or the kind of traffic does not change that."
         },
         {
           "type": "exemple",
-          "titre": "Un mail du directeur",
-          "texte": "Mia reçoit un mail : « Je suis en réunion. Achète vite des cartes cadeaux pour un client. » L'adresse ressemble à celle du directeur. Elle clique sur le lien et saisit son mot de passe. C'est de l'hameçonnage, la forme la plus courante d'ingénierie sociale."
+          "titre": "An email from the director",
+          "texte": "Mia gets an email: “I am in a meeting. Buy gift cards for a client, quickly.” The sender address looks like the director's. She clicks the link and types her password. This is phishing."
         },
         {
           "type": "exemple",
-          "titre": "Un exercice pour apprendre",
-          "texte": "Une entreprise envoie volontairement un mail piégé à ses employés : c'est un exercice d'hameçonnage simulé (simulated phishing). Celui qui clique reçoit un message poli et un rappel de formation. L'objectif est d'apprendre, pas de punir."
+          "titre": "An exercise to learn",
+          "texte": "A company sends a trap email to its staff on purpose. This is a simulated phishing exercise. A person who clicks gets a kind message and a short lesson. The goal is to learn, not to punish."
         }
       ],
       "cards": [
@@ -250,218 +408,393 @@
           "id": "d1-sens-ingenierie-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : « social engineering »",
-          "answer": "Social engineering is the practice of human manipulation that involves an attacker pretending to be someone else in an effort to retrieve sensitive data.\n\nTraduction : L'ingénierie sociale est la pratique de manipulation humaine dans laquelle un attaquant se fait passer pour quelqu'un d'autre afin de récupérer des données sensibles.",
-          "explanation": "Mots-clés : manipulation humaine, se faire passer pour quelqu'un d'autre.",
-          "explanation_more": "Définition du manuel (ISC)2, domaine 1, section « Social Engineering ».",
+          "question": "Official definition: “social engineering”",
+          "answer": "Social engineering is the practice of human manipulation that involves an attacker pretending to be someone else in an effort to retrieve sensitive data.",
+          "explanation": "In simple words: an attacker tricks a person. He pretends to be someone else to get private data.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-ingenierie-def2",
-          "type": "cloze",
-          "question": "Social engineering is the practice of human [[manipulation]] that involves an attacker pretending to be someone else in an effort to retrieve [[sensitive]] data.",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which sentence is the official definition of “social engineering”?",
+          "options": [
+            "Social engineering is the practice of technical manipulation that involves an attacker breaking into a system in an effort to retrieve sensitive data.",
+            "Social engineering is the practice of human manipulation that involves an attacker pretending to be someone else in an effort to retrieve sensitive data.",
+            "Social engineering is the practice of human manipulation that involves an attacker pretending to be someone else in an effort to destroy sensitive data.",
+            "Social engineering is the practice of human manipulation that involves an attacker hiding behind a fake website in an effort to retrieve sensitive data."
+          ],
+          "options_why": [
+            "It talks about breaking into a system. Social engineering tricks people, not machines.",
+            "",
+            "The attacker wants to retrieve data, not destroy it.",
+            "A fake website is one tool. The real sentence says pretending to be someone else."
+          ],
           "answer": "Social engineering is the practice of human manipulation that involves an attacker pretending to be someone else in an effort to retrieve sensitive data.",
-          "explanation": "On manipule des humains pour obtenir des données sensibles.",
+          "explanation": "Look at the key words: human manipulation, pretending to be someone else, retrieve sensitive data.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-ingenierie-def3",
-          "type": "cloze",
-          "question": "Social engineering is the practice of [[human manipulation]] that involves an [[attacker pretending]] to be someone else in an effort to [[retrieve sensitive data]].",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official definition of “social engineering” from memory.",
           "answer": "Social engineering is the practice of human manipulation that involves an attacker pretending to be someone else in an effort to retrieve sensitive data.",
-          "explanation": "Trois blocs : la manipulation humaine, l'attaquant qui fait semblant, le but : les données.",
-          "retention_goal": "life"
-        },
-        {
-          "id": "d1-sens-ingenierie-def4",
-          "type": "problem",
-          "question": "Écris de mémoire la définition officielle de « social engineering » (en anglais).",
-          "answer": "Social engineering is the practice of human manipulation that involves an attacker pretending to be someone else in an effort to retrieve sensitive data.\n\nTraduction : L'ingénierie sociale est la pratique de manipulation humaine dans laquelle un attaquant se fait passer pour quelqu'un d'autre afin de récupérer des données sensibles.",
-          "explanation": "Trois idées : manipulation humaine, faire semblant d'être quelqu'un d'autre, récupérer des données.",
+          "explanation": "Three ideas: human manipulation, an attacker pretending to be someone else, and the goal of getting data.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-ingenierie-phishing-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : « phishing »",
-          "answer": "Phishing is the most common form of social engineering, and it relates to social engineering activities that are conducted over email.\n\nTraduction : L'hameçonnage est la forme la plus courante d'ingénierie sociale, et il concerne les activités d'ingénierie sociale menées par courriel.",
-          "explanation": "Hameçonnage = ingénierie sociale par courriel.",
-          "explanation_more": "Définition du manuel (ISC)2, domaine 1, section « Social Engineering ».",
+          "question": "Official definition: “phishing”",
+          "answer": "Phishing is the most common form of social engineering, and it relates to social engineering activities that are conducted over email.",
+          "explanation": "In simple words: phishing is social engineering by email. It is the most common kind.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-ingenierie-phishing-def2",
-          "type": "cloze",
-          "question": "Phishing is the most [[common]] form of social engineering, and it relates to social engineering activities that are conducted over [[email]].",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which sentence is the official definition of “phishing”?",
+          "options": [
+            "Phishing is the most common form of social engineering, and it relates to social engineering activities that are conducted over email.",
+            "Phishing is the most common form of social engineering, and it relates to social engineering activities that are conducted over the phone.",
+            "Phishing is the least common form of social engineering, and it relates to social engineering activities that are conducted over email.",
+            "Phishing is the most common form of malware, and it relates to software attacks that are conducted over email."
+          ],
+          "options_why": [
+            "",
+            "Phone calls are social engineering too, but phishing is done by email.",
+            "The real sentence says the most common form, not the least common.",
+            "Phishing is a kind of social engineering, not a kind of malware."
+          ],
           "answer": "Phishing is the most common form of social engineering, and it relates to social engineering activities that are conducted over email.",
-          "explanation": "Deux mots : common (la plus courante) et email (le moyen).",
+          "explanation": "Look at the key words: most common form, social engineering, email.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-ingenierie-phishing-def3",
-          "type": "cloze",
-          "question": "Phishing is the [[most common form]] of social engineering, and it relates to [[social engineering activities]] that are [[conducted over email]].",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official definition of “phishing” from memory.",
           "answer": "Phishing is the most common form of social engineering, and it relates to social engineering activities that are conducted over email.",
-          "explanation": "Trois blocs : la forme la plus courante, l'ingénierie sociale, le courriel.",
-          "retention_goal": "life"
-        },
-        {
-          "id": "d1-sens-ingenierie-phishing-def4",
-          "type": "problem",
-          "question": "Écris de mémoire la définition officielle de « phishing » (en anglais).",
-          "answer": "Phishing is the most common form of social engineering, and it relates to social engineering activities that are conducted over email.\n\nTraduction : L'hameçonnage est la forme la plus courante d'ingénierie sociale, et il concerne les activités d'ingénierie sociale menées par courriel.",
-          "explanation": "Retiens deux idées : la forme la plus courante, et le courriel.",
+          "explanation": "Three parts: the most common form, social engineering, and email.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-ingenierie-risque-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : pourquoi l'hameçonnage inquiète tant",
-          "answer": "Phishing is routinely at the top of the most common security concerns because it can evade many of your most sophisticated security tools and compromise an organization's weakest link — its people.\n\nTraduction : L'hameçonnage est régulièrement en tête des préoccupations de sécurité les plus courantes, car il peut échapper à beaucoup de tes outils de sécurité les plus sophistiqués et compromettre le maillon le plus faible d'une organisation : ses personnes.",
-          "explanation": "Il contourne les outils et vise les personnes.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Social Engineering ».",
+          "question": "Official definition: why phishing worries people so much",
+          "answer": "Phishing is routinely at the top of the most common security concerns because it can evade many of your most sophisticated security tools and compromise an organization's weakest link — its people.",
+          "explanation": "In simple words: phishing is a top worry because it can go around clever tools. It aims at people, the weakest link.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-ingenierie-risque-def3",
-          "type": "cloze",
-          "question": "Phishing is routinely at the top of the most common security concerns because it can [[evade many]] of your most [[sophisticated security tools]] and compromise an organization's [[weakest link]] — its people.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about why phishing worries people from memory.",
           "answer": "Phishing is routinely at the top of the most common security concerns because it can evade many of your most sophisticated security tools and compromise an organization's weakest link — its people.",
-          "explanation": "Trois blocs : il échappe aux outils, même sophistiqués, et vise le maillon faible.",
+          "explanation": "Three parts: it can evade many tools, even clever ones, and it hits the weakest link, the people.",
           "retention_goal": "life"
         },
         {
-          "id": "d1-sens-ingenierie-1",
-          "type": "flash",
-          "question": "Pourquoi l'hameçonnage reste-t-il en tête des préoccupations de sécurité ?",
-          "answer": "Il peut contourner beaucoup d'outils de sécurité sophistiqués, et il vise le maillon le plus faible : les personnes.",
-          "explanation": "Un bon outil ne protège pas contre un clic malheureux.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-ingenierie-2",
-          "type": "duel",
-          "question": "Un inconnu appelle un employé en se faisant passer pour le service informatique. Est-ce de l'hameçonnage ?",
-          "options": ["Non : ce n'est pas un courriel", "Oui : toute ingénierie sociale en est"],
-          "answer": "Non : ce n'est pas un courriel",
-          "explanation": "L'hameçonnage est de l'ingénierie sociale faite par courriel. Ici, c'est un appel : c'est de l'ingénierie sociale, mais pas de l'hameçonnage.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-ingenierie-3",
+          "id": "d1-sens-ingenierie-q1",
           "type": "qcm",
-          "question": "Un employé clique sur le lien d'un exercice d'hameçonnage simulé. Que doit-il se passer ensuite ?",
+          "phase": "comprehension",
+          "question": "A caller says he is from IT and asks a worker for her password. What kind of attack is this?",
           "options": [
-            "Il est prévenu puis formé de nouveau",
-            "Il est renvoyé dès le lendemain",
-            "Rien : l'exercice est terminé pour lui",
-            "Son compte est bloqué sans explication"
+            "Malware: bad software on a computer",
+            "Brute force: trying many passwords",
+            "Social engineering",
+            "Eavesdropping: secretly listening to a network"
+          ],
+          "options_why": [
+            "No bad software was installed. A person was tricked.",
+            "The attacker did not try many passwords. He asked for one.",
+            "",
+            "Nobody listened to a network. The attacker asked the worker directly."
+          ],
+          "answer": "Social engineering",
+          "explanation": "The attacker pretends to be someone else to get private data. That is social engineering.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-ingenierie-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Which of these is phishing?",
+          "options": [
+            "A phone call from a fake technician who asks for a password",
+            "An email from a fake director who asks for a password",
+            "A thief who follows a worker through a secure door",
+            "A virus that spreads from computer to computer inside the network"
+          ],
+          "options_why": [
+            "This is social engineering, but it is done by phone, not by email.",
+            "",
+            "This is a trick in the real world. Phishing is done by email.",
+            "A virus is bad software. Phishing tricks a person, usually by email."
+          ],
+          "answer": "An email from a fake director who asks for a password",
+          "explanation": "Phishing is social engineering done by email.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-ingenierie-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Why does phishing worry security teams so much?",
+          "options": [
+            "It is a new attack that nobody has seen",
+            "It only works on computers with no firewall",
+            "It targets servers, which are very hard to protect and to repair",
+            "It goes around clever tools and tricks the weakest link"
+          ],
+          "options_why": [
+            "The manual says it is the most common form of social engineering, not a new one.",
+            "A firewall does not stop it, because it targets people. This is the reason it is a worry.",
+            "It targets people, not servers.",
+            ""
+          ],
+          "answer": "It goes around clever tools and tricks the weakest link",
+          "explanation": "Good tools can miss a trick email. A person who clicks becomes the way in.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-ingenierie-q4",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A company wants to start simulated phishing exercises. What should it do FIRST?",
+          "options": [
+            "Send a surprise trap email to everyone",
+            "Tell managers to punish anyone who clicks",
+            "Teach staff why phishing is harmful and how to spot it",
+            "Block all emails from outside the company until the exercises end"
+          ],
+          "options_why": [
+            "A test before any teaching is not fair. People must learn first.",
+            "Punishing teaches nothing. The goal is to learn.",
+            "",
+            "Blocking all outside email would stop the business. It is also not a teaching step."
+          ],
+          "answer": "Teach staff why phishing is harmful and how to spot it",
+          "explanation": "The manual says to start by educating employees. Exercises come after.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-ingenierie-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "An employee clicks the link in a simulated phishing email. What is the BEST response?",
+          "options": [
+            "Tell her and give her more training",
+            "Block her account and say nothing",
+            "Send her name to the whole company",
+            "Do nothing, because it was only a test"
           ],
           "options_why": [
             "",
-            "Le but est d'apprendre, pas de punir : le manuel parle de formation complémentaire.",
-            "Sans retour, l'employé ne saura pas qu'il s'est fait piéger, donc il n'apprendra rien.",
-            "Bloquer sans expliquer n'apprend pas à repérer l'hameçonnage."
+            "Blocking without a word teaches nothing. She will not learn what happened.",
+            "Shaming her would scare people. It does not help them learn.",
+            "If nothing happens, nobody learns. The exercise is wasted."
           ],
-          "answer": "Il est prévenu puis formé de nouveau",
-          "explanation": "Le manuel dit que celui qui clique doit être prévenu. Il suit une formation de rappel : repérer et signaler l'hameçonnage.",
+          "answer": "Tell her and give her more training",
+          "explanation": "The manual says people who click should be told and trained again to spot and report phishing.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-ingenierie-4",
-          "type": "sort",
-          "question": "Remets dans l'ordre la mise en place des exercices d'hameçonnage simulé.",
-          "answer": "1. Expliquer pourquoi l'hameçonnage est dangereux et comment le repérer\n2. Lancer des exercices simulés au hasard\n3. Repérer quels types d'hameçonnage réussissent et qui a besoin d'aide\n4. Prévenir ceux qui ont cliqué et les former de nouveau",
-          "explanation": "On éduque d'abord, on renforce par des exercices, on analyse, puis on aide ceux qui en ont besoin.",
-          "data": {
-            "mode": "ordonner",
-            "items": [
-              "Expliquer pourquoi l'hameçonnage est dangereux et comment le repérer",
-              "Lancer des exercices simulés au hasard",
-              "Repérer quels types d'hameçonnage réussissent et qui a besoin d'aide",
-              "Prévenir ceux qui ont cliqué et les former de nouveau"
-            ]
-          }
-        },
-        {
-          "id": "d1-sens-ingenierie-5",
-          "type": "cloze",
-          "question": "L'hameçonnage est une forme d'ingénierie sociale menée par [[courriel|mail|email|e-mail]].",
-          "answer": "L'hameçonnage est une forme d'ingénierie sociale menée par courriel.",
-          "explanation": "Le moyen est le courriel, pas le téléphone.",
+          "id": "d1-sens-ingenierie-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A stranger phones a worker and pretends to be from IT. Which statement is BEST?",
+          "options": [
+            "It is phishing, as all social engineering is phishing",
+            "It is phishing, because it uses a phone",
+            "It is not social engineering, as no email was used",
+            "It is social engineering, but not phishing"
+          ],
+          "options_why": [
+            "Phishing is only one form of social engineering. It is done by email.",
+            "Phishing is done by email, not by phone.",
+            "Social engineering does not need email. A phone call can trick a person too.",
+            ""
+          ],
+          "answer": "It is social engineering, but not phishing",
+          "explanation": "Phishing is social engineering by email. A phone call is social engineering, but not phishing.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-ingenierie-6",
-          "type": "why",
-          "question": "Pourquoi lancer des exercices d'hameçonnage simulé au hasard ?",
-          "answer": "Ils renforcent la formation et montrent où sont les risques. Ils révèlent quels types d'hameçonnage réussissent et qui a besoin de plus de formation.",
-          "explanation": "Un exercice au hasard donne une image honnête des réflexes de chacun.",
+          "id": "d1-sens-ingenierie-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which step comes AFTER teaching employees how to spot phishing?",
+          "options": [
+            "Tell employees the date of each exercise",
+            "Run simulated phishing exercises at random times",
+            "Stop all training, as they are ready",
+            "Publish the names of the people who click on the link"
+          ],
+          "options_why": [
+            "Random exercises show real habits. A known date would hide them.",
+            "",
+            "One lesson is not enough. The exercises help to reinforce it.",
+            "Public names would shame people. The manual says to notify and train them."
+          ],
+          "answer": "Run simulated phishing exercises at random times",
+          "explanation": "First educate, then reinforce with random exercises.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-ingenierie-7",
+          "id": "d1-sens-ingenierie-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "After the exercises, what is the BEST next step?",
+          "options": [
+            "See which phishing types worked and who needs help",
+            "End the program, as the test is over",
+            "Make the next exercises easier",
+            "Repeat the same trap email every week for a full year"
+          ],
+          "options_why": [
+            "",
+            "The exercises are there to learn. Ending now wastes what they show.",
+            "Easier tests hide the real risk.",
+            "The same email teaches nothing new. Different types of phishing must be tested."
+          ],
+          "answer": "See which phishing types worked and who needs help",
+          "explanation": "The exercises show where the risks are: which types of phishing work and which employees need more training.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-ingenierie-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT a reason to run random simulated phishing exercises?",
+          "options": [
+            "To reinforce the training",
+            "To see which types of phishing work best on staff",
+            "To find and punish the weakest employees",
+            "To find who needs more training"
+          ],
+          "options_why": [
+            "This is a real reason. The exercises help people remember the lesson.",
+            "This is a real reason. It shows where the risks are.",
+            "",
+            "This is a real reason. Those people get more training."
+          ],
+          "answer": "To find and punish the weakest employees",
+          "explanation": "The goal is to learn and to help, not to punish.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-ingenierie-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A worker gets an email from the director who wants gift cards fast. The address looks strange. What should she do FIRST?",
+          "options": [
+            "Reply to ask if the director is sure",
+            "Not click, and report it as possible phishing",
+            "Buy one card to see if it is real",
+            "Forward it to all coworkers as a warning"
+          ],
+          "options_why": [
+            "Replying may confirm her address to the attacker. It is not a safe check.",
+            "",
+            "Buying a card loses money if it is a trick.",
+            "Forwarding spreads the danger. Someone might click."
+          ],
+          "answer": "Not click, and report it as possible phishing",
+          "explanation": "The training reminds people how to identify and report the signs of phishing.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-ingenierie-f1",
           "type": "flash",
-          "question": "Par quoi le manuel conseille-t-il de commencer, avant les exercices simulés ?",
-          "answer": "Expliquer aux employés pourquoi l'hameçonnage est dangereux et comment le repérer.",
-          "explanation": "On ne teste pas quelqu'un avant de lui avoir appris.",
+          "phase": "entrainement",
+          "question": "What is social engineering? Say it in your own words.",
+          "answer": "A trick on people. An attacker pretends to be someone else to get private data.",
+          "explanation": "The attacker aims at the person, not the machine.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-ingenierie-8",
-          "type": "whatif",
-          "question": "Et si une entreprise fait seulement des exercices simulés, sans jamais expliquer l'hameçonnage ?",
-          "answer": "Les employés se font piéger sans savoir pourquoi. Le manuel dit de commencer par éduquer, puis de renforcer par des exercices.",
-          "explanation": "Un test sans cours ne fait que montrer les erreurs, sans les corriger.",
+          "id": "d1-sens-ingenierie-f2",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Which kind of social engineering is the most common?",
+          "answer": "Phishing, which is social engineering by email.",
+          "explanation": "Think of the fake email from the director.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-ingenierie-9",
-          "type": "problem",
-          "question": "Tu reçois un mail qui ressemble à de l'hameçonnage. Que fais-tu, selon l'esprit du manuel ?",
-          "answer": "Je ne clique pas, j'essaie de repérer les signes d'hameçonnage, et je le signale.",
-          "explanation": "Repérer et signaler : c'est ce que la formation de rappel enseigne.",
+          "id": "d1-sens-ingenierie-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Why does the manual say to teach before running phishing exercises?",
+          "answer": "You should not test someone before teaching them. People first need to know why phishing is harmful and how to spot it.",
+          "explanation": "A test with no lesson shows mistakes but does not fix them.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Social Engineering”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-ingenierie-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What should a worker do when she sees a possible phishing email?",
+          "answer": "Not click. Look for the signs of phishing and report it.",
+          "explanation": "Spot it and report it. This is what the refresher training teaches.",
           "retention_goal": "1y"
         }
       ]
     },
     {
       "id": "d1-sens-champions",
-      "name": "Les champions de la sécurité (security champions)",
-      "planete": { "relief": "rocheuse" },
+      "name": "Security champions",
+      "planete": {
+        "relief": "rocheuse"
+      },
       "decouverte": [
         {
           "type": "histoire",
-          "titre": "Le délégué de classe",
+          "titre": "The class representative",
           "paragraphes": [
-            "Dans ta classe, le directeur et les profs ne peuvent pas parler à chaque élève tous les jours. Alors, il y a un délégué de classe.",
-            "Il fait passer les messages dans les deux sens. Les élèves l'écoutent parce qu'il est l'un d'eux.",
-            "Dans une entreprise, l'équipe de sécurité est petite. Elle s'appuie sur un champion de la sécurité (security champion), un collègue qui relaie ses messages."
+            "At school, the principal cannot talk to every student every day. So each class has a representative.",
+            "He carries messages in both directions. Students listen to him because he is one of them.",
+            "A company has the same problem. Its security team is small. It needs a helper in each team: a security champion."
           ]
         },
         {
           "type": "analogie",
-          "titre": "Le délégué de la sécurité",
-          "comme": "Le délégué fait le lien entre la vie scolaire et sa classe. Il n'est pas surveillant : il reste un élève.",
-          "enVrai": "Le champion de la sécurité fait le lien entre l'équipe de sécurité et le reste de l'entreprise. Il encourage les bons réflexes chez ceux dont la sécurité n'est pas le métier principal. L'image s'arrête ici : un délégué est élu par sa classe, un champion est choisi par l'organisation."
+          "titre": "The representative",
+          "comme": "The representative links the school office and the class. He is not a boss. He is still a student.",
+          "enVrai": "A security champion links the security team and the rest of the company. He speaks up for good security habits. He works with people whose main job is not security. The picture stops here: students choose a representative, but a company names its champions."
         },
         {
           "type": "predire",
-          "question": "À l'origine, pour quelles équipes a-t-on créé le rôle de champion de la sécurité ?",
+          "question": "At first, which teams was the champion role made for?",
           "options": [
-            "Les équipes qui créent des logiciels",
-            "Les équipes de vente",
-            "Les équipes d'accueil"
+            "The teams that build software",
+            "The sales teams",
+            "The reception teams"
           ],
-          "answer": "Les équipes qui créent des logiciels",
-          "explanation": "Le rôle est né pour sensibiliser à la sécurité des applications, c'est-à-dire des logiciels de l'entreprise. Aujourd'hui, on peut en nommer dans n'importe quelle équipe hors sécurité."
+          "answer": "The teams that build software",
+          "explanation": "The role was made to help software teams think about application security. That means the security of programs. Today, a champion can work in any team outside security."
         },
         {
           "type": "exemple",
-          "titre": "Un champion en comptabilité",
-          "texte": "Karim travaille en comptabilité. Il suit une formation de l'équipe de sécurité. Ensuite, il rappelle à ses collègues de se méfier des mails de facture suspects. Quand quelqu'un doute, il répond ou prévient l'équipe de sécurité."
+          "titre": "A champion in accounting",
+          "texte": "Karim works in accounting. He takes a short course from the security team. Then he reminds his coworkers to be careful with strange invoice emails. If someone is not sure, he helps or calls the security team."
         }
       ],
       "cards": [
@@ -469,178 +802,350 @@
           "id": "d1-sens-champions-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : « security champion »",
-          "answer": "A security champion is a liaison between an organization's security team and the rest of the company; they are tasked with raising security awareness within the organization.\n\nTraduction : Un champion de la sécurité est un lien entre l'équipe de sécurité d'une organisation et le reste de l'entreprise ; il a pour mission d'accroître la sensibilisation à la sécurité au sein de l'organisation.",
-          "explanation": "Liaison = lien, comme le délégué de classe.",
-          "explanation_more": "Définition du manuel (ISC)2, domaine 1, section « Security Champions ».",
+          "question": "Official definition: “security champion”",
+          "answer": "A security champion is a liaison between an organization's security team and the rest of the company; they are tasked with raising security awareness within the organization.",
+          "explanation": "In simple words: a champion is a link between the security team and the other workers. His job is to make people more aware.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Security Champions”. Liaison means a person who links two groups.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-champions-def2",
-          "type": "cloze",
-          "question": "A security champion is a [[liaison]] between an organization's security team and the rest of the company; they are tasked with raising security [[awareness]] within the organization.",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which sentence is the official definition of “security champion”?",
+          "options": [
+            "A security champion is a member of an organization's security team who works apart from the rest of the company; they are tasked with raising security awareness within the organization.",
+            "A security champion is a liaison between an organization's security team and the rest of the company; they are tasked with enforcing security rules within the organization.",
+            "A security champion is a liaison between an organization's security team and its customers; they are tasked with raising security awareness within the organization.",
+            "A security champion is a liaison between an organization's security team and the rest of the company; they are tasked with raising security awareness within the organization."
+          ],
+          "options_why": [
+            "A champion is a link between the team and the others. He is not a member of the security team.",
+            "The champion raises awareness. He does not enforce rules.",
+            "The link is with the rest of the company, not with customers.",
+            ""
+          ],
           "answer": "A security champion is a liaison between an organization's security team and the rest of the company; they are tasked with raising security awareness within the organization.",
-          "explanation": "Deux mots : liaison (le lien) et awareness (la sensibilisation).",
+          "explanation": "Look at the key words: liaison, security team, the rest of the company, raising security awareness.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-champions-def3",
-          "type": "cloze",
-          "question": "A security champion is a [[liaison between]] an organization's [[security team]] and the rest of the company; they are tasked with [[raising security awareness]] within the organization.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official definition of “security champion” from memory.",
           "answer": "A security champion is a liaison between an organization's security team and the rest of the company; they are tasked with raising security awareness within the organization.",
-          "explanation": "Trois blocs : le lien entre, l'équipe de sécurité, la mission d'accroître la sensibilisation.",
-          "retention_goal": "life"
-        },
-        {
-          "id": "d1-sens-champions-def4",
-          "type": "problem",
-          "question": "Écris de mémoire la définition officielle de « security champion » (en anglais).",
-          "answer": "A security champion is a liaison between an organization's security team and the rest of the company; they are tasked with raising security awareness within the organization.\n\nTraduction : Un champion de la sécurité est un lien entre l'équipe de sécurité d'une organisation et le reste de l'entreprise ; il a pour mission d'accroître la sensibilisation à la sécurité au sein de l'organisation.",
-          "explanation": "Deux parties : le lien entre l'équipe et l'entreprise, puis sa mission.",
+          "explanation": "Two parts: a link between the security team and the company, and the job of raising awareness.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-champions-role-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : le rôle d'un champion",
-          "answer": "In this role, a security champion is an advocate of security best practices for employees who don't work on security as their primary job.\n\nTraduction : Dans ce rôle, un champion de la sécurité est un défenseur des bonnes pratiques de sécurité pour les employés dont la sécurité n'est pas le métier principal.",
-          "explanation": "Il parle à ceux qui ne sont pas spécialistes de sécurité.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Security Champions ». Advocate veut dire défenseur, quelqu'un qui plaide pour une cause.",
+          "question": "Official definition: the role of a champion",
+          "answer": "In this role, a security champion is an advocate of security best practices for employees who don't work on security as their primary job.",
+          "explanation": "In simple words: the champion speaks up for good habits. He talks to people who are not security specialists.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Security Champions”. Advocate means someone who speaks up for an idea.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-champions-role-def3",
-          "type": "cloze",
-          "question": "In this role, a [[security champion]] is an [[advocate of security best practices]] for employees who [[don't work on security]] as their primary job.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about the role of a champion from memory.",
           "answer": "In this role, a security champion is an advocate of security best practices for employees who don't work on security as their primary job.",
-          "explanation": "Trois blocs : le champion, son rôle de défenseur, son public.",
+          "explanation": "Three parts: the champion, an advocate of best practices, and employees who do not work on security.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-champions-origine-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : l'origine du rôle de champion",
-          "answer": "The role of security champion was initially created to raise awareness of application security on software development teams, but nowadays, organizations may frequently choose to assign a security champion to any (or all) nonsecurity teams.\n\nTraduction : Le rôle de champion de la sécurité a d'abord été créé pour sensibiliser à la sécurité des applications dans les équipes de développement de logiciels, mais aujourd'hui, les organisations choisissent souvent d'en nommer dans n'importe laquelle (ou dans toutes) de leurs équipes hors sécurité.",
-          "explanation": "D'abord pour les développeurs, aujourd'hui pour n'importe quelle équipe hors sécurité.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Security Champions ».",
+          "question": "Official definition: where the champion role comes from",
+          "answer": "The role of security champion was initially created to raise awareness of application security on software development teams, but nowadays, organizations may frequently choose to assign a security champion to any (or all) nonsecurity teams.",
+          "explanation": "In simple words: it began in software teams. Today, any team outside security can have a champion.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Security Champions”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-champions-origine-def3",
-          "type": "cloze",
-          "question": "The role of security champion was [[initially created]] to raise awareness of [[application security]] on software development teams, but nowadays, organizations may frequently choose to assign a security champion to [[any (or all) nonsecurity teams]].",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about where the champion role comes from from memory.",
           "answer": "The role of security champion was initially created to raise awareness of application security on software development teams, but nowadays, organizations may frequently choose to assign a security champion to any (or all) nonsecurity teams.",
-          "explanation": "Trois blocs : au départ, la sécurité des applications, et aujourd'hui toutes les équipes hors sécurité.",
+          "explanation": "Three parts: at first for application security, in software teams, and today for any nonsecurity team.",
           "retention_goal": "life"
         },
         {
-          "id": "d1-sens-champions-1",
-          "type": "flash",
-          "question": "Pour quels employés un champion défend-il les bonnes pratiques de sécurité ?",
-          "answer": "Pour les employés dont la sécurité n'est pas le métier principal.",
-          "explanation": "Les spécialistes savent déjà : le champion parle aux autres.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-champions-2",
-          "type": "duel",
-          "question": "Une employée de la comptabilité relaie les conseils de l'équipe de sécurité. Peut-elle être championne de la sécurité ?",
-          "options": ["Oui, si on lui a confié ce rôle", "Non, seuls les informaticiens le peuvent"],
-          "answer": "Oui, si on lui a confié ce rôle",
-          "explanation": "Aujourd'hui, une organisation peut nommer un champion dans n'importe quelle équipe qui ne fait pas de sécurité.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-champions-3",
+          "id": "d1-sens-champions-q1",
           "type": "qcm",
-          "question": "L'équipe de sécurité compte quatre personnes, l'entreprise quatre cents. Que peut-elle faire pour que tous reçoivent les messages ?",
+          "phase": "comprehension",
+          "question": "Which of these describes a security champion?",
           "options": [
-            "Nommer des champions dans les autres équipes",
-            "Remplacer les messages par un pare-feu",
-            "Interdire aux autres équipes de parler de sécurité",
-            "Attendre le prochain incident"
+            "A manager who punishes people who break rules",
+            "A technician who repairs broken servers",
+            "A coworker who links the security team to other teams",
+            "An outside auditor who comes once a year to check the company"
+          ],
+          "options_why": [
+            "A champion does not punish. He helps raise awareness.",
+            "Repairing servers is a technical job. A champion works on awareness.",
+            "",
+            "An auditor comes from outside. A champion works inside the company."
+          ],
+          "answer": "A coworker who links the security team to other teams",
+          "explanation": "A champion is a liaison: a link between the security team and the rest of the company.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-champions-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "For which people does a champion speak up for good security habits?",
+          "options": [
+            "Employees whose main job is not security",
+            "Only the security experts",
+            "Only the customers of the company",
+            "Only the people who build software"
           ],
           "options_why": [
             "",
-            "Un pare-feu ne transmet aucun message aux personnes.",
-            "Au contraire : on veut que la sensibilisation circule partout.",
-            "Attendre l'incident, c'est agir trop tard."
+            "The experts already know the habits. The champion talks to the others.",
+            "A champion works inside the company, not with customers.",
+            "Software teams were the first. But a champion can help any team outside security."
           ],
-          "answer": "Nommer des champions dans les autres équipes",
-          "explanation": "Les champions font le lien entre la petite équipe de sécurité et le reste de l'entreprise.",
+          "answer": "Employees whose main job is not security",
+          "explanation": "The champion advocates security best practices for employees who do not work on security as their main job.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Security Champions”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-champions-4",
-          "type": "cloze",
-          "question": "Le rôle de champion a d'abord été créé pour la sécurité des [[applications]] dans les équipes de développement.",
-          "answer": "Le rôle de champion a d'abord été créé pour la sécurité des applications dans les équipes de développement.",
-          "explanation": "Les développeurs fabriquent les logiciels : leurs choix touchent toute l'entreprise.",
+          "id": "d1-sens-champions-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Where was the champion role first used?",
+          "options": [
+            "In the human resources team, to check new workers",
+            "In the network team, to set up firewalls",
+            "In the sales team, to protect customer data",
+            "In software teams, for application security"
+          ],
+          "options_why": [
+            "Human resources was not the first team. The role began with software.",
+            "The network team does technical work. The role is about awareness.",
+            "Sales can have a champion today. But the role began with software teams.",
+            ""
+          ],
+          "answer": "In software teams, for application security",
+          "explanation": "The role began with software development teams and application security.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Security Champions”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-champions-5",
-          "type": "why",
-          "question": "Pourquoi un champion est-il utile à une petite équipe de sécurité ?",
-          "answer": "Il fait le lien avec les autres équipes et répète les bons réflexes près des collègues. L'équipe de sécurité ne peut pas parler à tout le monde chaque jour.",
-          "explanation": "Un message venu d'un collègue proche est souvent mieux écouté.",
+          "id": "d1-sens-champions-q4",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "The security team has four people. The company has four hundred. What is the BEST way to get security messages to everyone?",
+          "options": [
+            "Ask each worker to find the rules alone",
+            "Name champions in the other teams",
+            "Send one long email each year",
+            "Wait for an incident, then explain"
+          ],
+          "options_why": [
+            "Most people will not search for rules alone. They need someone to remind them.",
+            "",
+            "One email a year is quickly forgotten.",
+            "After an incident is too late. Awareness should come first."
+          ],
+          "answer": "Name champions in the other teams",
+          "explanation": "Champions link the small security team with the rest of the company.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-champions-6",
-          "type": "whatif",
-          "question": "Et si chaque équipe de l'entreprise avait un champion de la sécurité ?",
-          "answer": "Le manuel dit qu'on peut en nommer dans n'importe quelle équipe, ou dans toutes. La sensibilisation arrive alors partout, pas seulement chez les spécialistes.",
-          "explanation": "Plus il y a de relais, plus les messages passent.",
+          "id": "d1-sens-champions-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT a job of a security champion?",
+          "options": [
+            "Doing the work of the security team alone",
+            "Raising security awareness",
+            "Speaking up for good security habits",
+            "Linking the security team and other teams"
+          ],
+          "options_why": [
+            "",
+            "This is a job of a champion. It is in the definition.",
+            "This is a job of a champion. He is an advocate of best practices.",
+            "This is a job of a champion. He is the liaison."
+          ],
+          "answer": "Doing the work of the security team alone",
+          "explanation": "A champion helps the security team. He does not replace it.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-champions-7",
-          "type": "problem",
-          "question": "Tu es champion de la sécurité de ta classe. Écris ce que tu fais pour tes camarades.",
-          "answer": "Je fais le lien avec l'équipe de sécurité. Je répète les bonnes pratiques à mes camarades et je les aide à rester attentifs.",
-          "explanation": "Ton rôle : relayer, expliquer, encourager.",
+          "id": "d1-sens-champions-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A company names a champion in its human resources team. HR does not work on security. Which answer is BEST?",
+          "options": [
+            "It is not allowed: champions work only in software teams",
+            "It is not allowed: champions must be security experts",
+            "It is allowed: any team outside security can have one",
+            "It is allowed, but only in the biggest team"
+          ],
+          "options_why": [
+            "The role began in software teams. But today any team can have one.",
+            "A champion works with people who are not security specialists.",
+            "",
+            "The size of the team does not matter."
+          ],
+          "answer": "It is allowed: any team outside security can have one",
+          "explanation": "Organizations may choose to assign a champion to any, or all, nonsecurity teams.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Security Champions”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-champions-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "How is a security champion different from a member of the security team?",
+          "options": [
+            "A champion writes and approves the security rules for the company",
+            "A champion works in another team and spreads awareness",
+            "A champion works only on software tools",
+            "A champion is hired from outside the company"
+          ],
+          "options_why": [
+            "The security team and management make the rules. The champion helps people follow good habits.",
+            "",
+            "A champion works on awareness, not on tools.",
+            "A champion is a coworker inside the company."
+          ],
+          "answer": "A champion works in another team and spreads awareness",
+          "explanation": "The champion stays in his own team and links it to the security team.",
+          "explanation_more": "Outside the manual: the comparison with the security team is a simple way to see the role.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-champions-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Why did companies start to name champions outside software teams? Which reason is BEST?",
+          "options": [
+            "Software teams stopped needing security",
+            "Other teams asked to learn programming",
+            "The law now says that each team must have a champion",
+            "Awareness helps every team, not only software teams"
+          ],
+          "options_why": [
+            "Software teams still need security. The role just grew to other teams.",
+            "Programming is not the point. The role is about awareness.",
+            "No law is named in the manual. Companies choose to do it.",
+            ""
+          ],
+          "answer": "Awareness helps every team, not only software teams",
+          "explanation": "Every team can be a weak link, so every team can use a champion.",
+          "explanation_more": "Outside the manual: the reason is explained in simple words. The manual says only that organizations may choose any team.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-champions-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Karim is a champion in accounting. A coworker is not sure about an invoice email. What is the BEST thing Karim can do?",
+          "options": [
+            "Tell her to delete all invoice emails",
+            "Fix the email server himself",
+            "Help her check it, or tell the security team",
+            "Ignore it, as only security staff deal with this"
+          ],
+          "options_why": [
+            "Deleting all invoice emails would stop real work.",
+            "Fixing servers is a technical job. A champion works on awareness.",
+            "",
+            "Ignoring it breaks the champion's role: speaking up for good habits."
+          ],
+          "answer": "Help her check it, or tell the security team",
+          "explanation": "A champion helps coworkers and links them to the security team when needed.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-champions-f1",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What is a security champion?",
+          "answer": "A coworker who links the security team with the rest of the company and helps raise security awareness.",
+          "explanation": "Think of the class representative.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-champions-f2",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What does “liaison” mean?",
+          "answer": "A person who links two groups so that they can talk to each other.",
+          "explanation": "The champion is the link between the security team and the other teams.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-champions-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "For which employees does a champion speak up for good security habits?",
+          "answer": "Employees whose main job is not security.",
+          "explanation": "Specialists already know. The champion talks to the others.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-champions-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Where was the champion role first created, and where can it be used today?",
+          "answer": "First in software development teams. Today, in any team outside security.",
+          "explanation": "Today, a company may even name a champion in all nonsecurity teams.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Security Champions”.",
           "retention_goal": "1y"
         }
       ]
     },
     {
       "id": "d1-sens-gamification",
-      "name": "La ludification (gamification)",
-      "planete": { "relief": "oceanique" },
+      "name": "Gamification",
+      "planete": {
+        "relief": "oceanique"
+      },
       "decouverte": [
         {
           "type": "histoire",
-          "titre": "L'appli qui donne des points",
+          "titre": "The app that gives points",
           "paragraphes": [
-            "Tu apprends une langue avec une application. Elle te donne des points, des niveaux, et un message quand tu fais une série de jours sans pause.",
-            "Tu ne joues pas vraiment à un jeu. Pourtant, tu as envie de revenir tous les jours.",
-            "Utiliser des techniques de jeu pour donner envie d'apprendre, c'est la ludification (gamification)."
+            "You use an app to learn a language. It gives you points and levels. It also counts how many days in a row you practice.",
+            "It is not really a game. But you want to come back every day.",
+            "Using game ideas to make people want to learn is called gamification."
           ]
         },
         {
           "type": "analogie",
-          "titre": "Le tableau des scores",
-          "comme": "Au sport, le tableau des scores donne envie de s'améliorer, même à l'entraînement.",
-          "enVrai": "La ludification emprunte au jeu ses points, ses niveaux et ses défis. Elle les utilise dans des activités qui ne sont pas des jeux. En sécurité, on s'en sert pour que les employés apprennent les bons réflexes avec plaisir. L'image s'arrête ici : le but n'est pas de gagner, mais d'apprendre."
+          "titre": "The scoreboard",
+          "comme": "In sport, a scoreboard makes you want to do better, even in practice.",
+          "enVrai": "Gamification takes points, levels and challenges from games. It uses them in things that are not games. In security, it helps staff learn good habits and enjoy it. The picture stops here: the goal is not to win. The goal is to learn."
         },
         {
           "type": "predire",
-          "question": "Une entreprise propose un quiz de sécurité avec des points et un classement. Est-ce un vrai jeu vidéo ?",
+          "question": "A company offers a security quiz with points and a ranking. Is it a real video game?",
           "options": [
-            "Non : ce sont des techniques de jeu dans une activité qui n'est pas un jeu",
-            "Oui : c'est un jeu complet",
-            "On ne peut pas savoir"
+            "No: it uses game ideas in something that is not a game",
+            "Yes: it is a full video game",
+            "We cannot know"
           ],
-          "answer": "Non : ce sont des techniques de jeu dans une activité qui n'est pas un jeu",
-          "explanation": "Le quiz n'est pas un jeu : il emprunte des techniques de jeu pour intéresser et éduquer. C'est ce que le manuel appelle la gamification."
+          "answer": "No: it uses game ideas in something that is not a game",
+          "explanation": "The quiz is not a game. It borrows game ideas to keep people interested and to teach them. The manual calls this gamification."
         },
         {
           "type": "exemple",
-          "titre": "Le défi du mois",
-          "texte": "Chaque mois, une entreprise lance un petit défi : repérer des mails piégés. Les équipes gagnent des points et des badges. Le manuel dit que ce genre de jeux permet d'éduquer les employés de façon intéressante et engageante."
+          "titre": "The challenge of the month",
+          "texte": "Each month, a company runs a small challenge: find the trap emails. Teams win points and badges. The manual says this kind of game can teach staff in an interesting way."
         }
       ],
       "cards": [
@@ -648,172 +1153,349 @@
           "id": "d1-sens-gamification-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : « gamification »",
-          "answer": "Gamification is the use of game techniques in nongame applications to engage and educate an audience.\n\nTraduction : La ludification est l'utilisation de techniques de jeu dans des applications qui ne sont pas des jeux, pour captiver et éduquer un public.",
-          "explanation": "Des techniques de jeu, mais dans une activité qui n'est pas un jeu.",
-          "explanation_more": "Définition du manuel (ISC)2, domaine 1, section « Gamification ». Le mot français « ludification » vient du latin ludus, le jeu.",
+          "question": "Official definition: “gamification”",
+          "answer": "Gamification is the use of game techniques in nongame applications to engage and educate an audience.",
+          "explanation": "In simple words: use game ideas, such as points, in something that is not a game. The aim is to keep people interested and to teach them.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Gamification”. Nongame means not a game.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-gamification-def2",
-          "type": "cloze",
-          "question": "Gamification is the use of game [[techniques]] in nongame applications to engage and [[educate]] an audience.",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which sentence is the official definition of “gamification”?",
+          "options": [
+            "Gamification is the use of game techniques in nongame applications to engage and educate an audience.",
+            "Gamification is the use of game techniques in video games to engage and educate an audience.",
+            "Gamification is the use of game techniques in nongame applications to engage and test an audience.",
+            "Gamification is the use of prizes and money in nongame applications to engage and educate an audience."
+          ],
+          "options_why": [
+            "",
+            "A video game is already a game. The real sentence says nongame applications.",
+            "The aim is to engage and educate, not to test.",
+            "Gamification uses game techniques, such as points and levels. It is not about prizes and money."
+          ],
           "answer": "Gamification is the use of game techniques in nongame applications to engage and educate an audience.",
-          "explanation": "Deux mots : techniques (de jeu) et educate (éduquer).",
+          "explanation": "Look at the key words: game techniques, nongame applications, engage and educate.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-gamification-def3",
-          "type": "cloze",
-          "question": "Gamification is the [[use of game techniques]] in [[nongame applications]] to [[engage and educate]] an audience.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official definition of “gamification” from memory.",
           "answer": "Gamification is the use of game techniques in nongame applications to engage and educate an audience.",
-          "explanation": "Trois blocs : utiliser des techniques de jeu, hors des jeux, pour captiver et éduquer.",
-          "retention_goal": "life"
-        },
-        {
-          "id": "d1-sens-gamification-def4",
-          "type": "problem",
-          "question": "Écris de mémoire la définition officielle de « gamification » (en anglais).",
-          "answer": "Gamification is the use of game techniques in nongame applications to engage and educate an audience.\n\nTraduction : La ludification est l'utilisation de techniques de jeu dans des applications qui ne sont pas des jeux, pour captiver et éduquer un public.",
-          "explanation": "Trois idées : techniques de jeu, applications qui ne sont pas des jeux, captiver et éduquer.",
+          "explanation": "Three parts: using game techniques, in things that are not games, to engage and educate.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-gamification-secu-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : la gamification en sensibilisation",
-          "answer": "In security awareness, gamification can provide a fun and engaging way to educate employees and promote strong security practices.\n\nTraduction : En sensibilisation à la sécurité, la ludification peut offrir une façon amusante et captivante d'éduquer les employés et de promouvoir de solides pratiques de sécurité.",
-          "explanation": "Un moyen amusant d'apprendre les bons réflexes.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Gamification ».",
+          "question": "Official definition: gamification in security awareness",
+          "answer": "In security awareness, gamification can provide a fun and engaging way to educate employees and promote strong security practices.",
+          "explanation": "In simple words: a game can be a fun way to teach good security habits.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Gamification”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-gamification-secu-def3",
-          "type": "cloze",
-          "question": "In [[security awareness]], gamification can provide a [[fun and engaging way]] to educate employees and [[promote strong security practices]].",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about gamification in security awareness from memory.",
           "answer": "In security awareness, gamification can provide a fun and engaging way to educate employees and promote strong security practices.",
-          "explanation": "Trois blocs : la sensibilisation, un moyen amusant, de bonnes pratiques.",
+          "explanation": "Three parts: security awareness, a fun and engaging way, and strong security practices.",
           "retention_goal": "life"
         },
         {
-          "id": "d1-sens-gamification-1",
-          "type": "flash",
-          "question": "Que veut dire « nongame applications » dans la définition de la gamification ?",
-          "answer": "Des activités qui ne sont pas des jeux, comme une formation à la sécurité.",
-          "explanation": "On emprunte au jeu ses méthodes, pas son but.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-gamification-2",
-          "type": "duel",
-          "question": "Laquelle de ces deux situations est de la gamification ?",
-          "options": [
-            "Une formation de sécurité avec points et niveaux",
-            "Un jeu vidéo vendu dans le commerce"
-          ],
-          "answer": "Une formation de sécurité avec points et niveaux",
-          "explanation": "La gamification met des techniques de jeu dans une activité qui n'est pas un jeu. Un jeu vidéo est déjà un jeu.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-gamification-3",
+          "id": "d1-sens-gamification-q1",
           "type": "qcm",
-          "question": "Les employés ignorent le cours de sécurité en ligne. Quelle idée utilise la gamification ?",
+          "phase": "comprehension",
+          "question": "Which of these is gamification?",
           "options": [
-            "Donner des points et un classement",
-            "Rendre le cours obligatoire et plus long",
-            "Envoyer un rappel par mail chaque jour",
-            "Raccourcir le cours de moitié"
+            "A video game sold in a shop",
+            "A course that is longer and required",
+            "A daily reminder email about passwords",
+            "A security course with points and levels"
+          ],
+          "options_why": [
+            "A video game is already a game. Gamification puts game ideas in something that is not a game.",
+            "Making a course longer uses no game idea.",
+            "A reminder email is not a game idea, and it can be annoying.",
+            ""
+          ],
+          "answer": "A security course with points and levels",
+          "explanation": "Gamification uses game techniques, like points and levels, in a nongame activity such as training.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-gamification-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "In the definition of gamification, what are “nongame applications”?",
+          "options": [
+            "Games that run on a phone",
+            "Activities that are not games",
+            "Programs that have no screen",
+            "Software that only the security team uses"
+          ],
+          "options_why": [
+            "A phone game is still a game.",
+            "",
+            "A screen has nothing to do with it.",
+            "Who uses the software does not matter. What matters is that it is not a game."
+          ],
+          "answer": "Activities that are not games",
+          "explanation": "Nongame means not a game. We borrow the methods of games, not their goal.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-gamification-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "What are the two goals of gamification in its definition?",
+          "options": [
+            "To engage people and to educate them",
+            "To test people and to rank them from best to worst",
+            "To amuse people and to sell to them",
+            "To save time and to save money"
           ],
           "options_why": [
             "",
-            "Obliger et rallonger n'utilise aucune technique de jeu.",
-            "Un rappel quotidien n'a rien d'un jeu et peut agacer.",
-            "Raccourcir enlève du contenu sans rendre le cours plus attrayant."
+            "Tests and rankings may be used, but they are not the goals in the definition.",
+            "Selling is not the goal. The audience must learn.",
+            "Saving time or money is not in the definition."
           ],
-          "answer": "Donner des points et un classement",
-          "explanation": "Les points, niveaux et classements sont des techniques de jeu qui donnent envie de participer.",
+          "answer": "To engage people and to educate them",
+          "explanation": "The definition says: to engage and educate an audience.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-gamification-4",
-          "type": "cloze",
-          "question": "La [[gamification|ludification]] est l'utilisation de techniques de jeu dans des applications qui ne sont pas des jeux.",
-          "answer": "La gamification est l'utilisation de techniques de jeu dans des applications qui ne sont pas des jeux.",
-          "explanation": "Deux noms pour la même idée : gamification en anglais, ludification en français.",
+          "id": "d1-sens-gamification-q4",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Employees ignore the online security course. Which idea BEST uses gamification?",
+          "options": [
+            "Make the course required and longer",
+            "Send a reminder email every day",
+            "Add points, levels and a ranking",
+            "Cut the course in half"
+          ],
+          "options_why": [
+            "Forcing people and making it longer use no game technique.",
+            "A daily reminder is nothing like a game and can annoy people.",
+            "",
+            "Cutting content does not make the course more attractive."
+          ],
+          "answer": "Add points, levels and a ranking",
+          "explanation": "Points, levels and rankings are game techniques. They make people want to take part.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-gamification-5",
-          "type": "why",
-          "question": "Pourquoi la gamification peut-elle aider à apprendre les règles de sécurité ?",
-          "answer": "Parce que le jeu rend l'apprentissage intéressant et engageant. Les employés ont envie de participer, donc ils s'entraînent plus souvent aux bons réflexes.",
-          "explanation": "On apprend plus volontiers ce qui est amusant.",
+          "id": "d1-sens-gamification-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT a game technique that gamification can use?",
+          "options": [
+            "Points for right answers",
+            "A long text with no questions",
+            "Badges for finished lessons",
+            "Levels that open step by step"
+          ],
+          "options_why": [
+            "Points are a classic game technique.",
+            "",
+            "Badges are a classic game technique.",
+            "Levels are a classic game technique."
+          ],
+          "answer": "A long text with no questions",
+          "explanation": "A long text is not a game idea. Games give feedback, points and goals.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-gamification-6",
+          "id": "d1-sens-gamification-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A phishing game is a lot of fun, but it teaches no security idea. What is the MOST important problem?",
+          "options": [
+            "It is too fun to be serious",
+            "It costs more than a normal course would cost in a year",
+            "It uses points, and points are not allowed",
+            "It does not educate, so it fails its main job"
+          ],
+          "options_why": [
+            "Fun is good. The problem is that nobody learns anything.",
+            "Cost is not the main problem here.",
+            "Points are a normal game technique. They are allowed.",
+            ""
+          ],
+          "answer": "It does not educate, so it fails its main job",
+          "explanation": "The manual says these games must educate staff on key security ideas. Fun alone is not enough.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Gamification”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-gamification-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "How is gamification different from a video game?",
+          "options": [
+            "It is a game that is made and sold to customers in shops",
+            "It never uses points or levels",
+            "It uses game ideas in an activity that is not a game",
+            "It is played only by the security team"
+          ],
+          "options_why": [
+            "A game sold to customers is just a game.",
+            "Points and levels are typical gamification tools.",
+            "",
+            "Anyone in the company can take part. It is not only for the security team."
+          ],
+          "answer": "It uses game ideas in an activity that is not a game",
+          "explanation": "A video game is already a game. Gamification borrows its techniques for another purpose.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-gamification-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A manager wants to add gamification to a phishing lesson. What should she check FIRST?",
+          "options": [
+            "That the game teaches the key security ideas",
+            "That the game has the best graphics on the market",
+            "That the prizes are expensive",
+            "That the game lasts as long as possible"
+          ],
+          "options_why": [
+            "",
+            "Graphics are nice, but they do not teach.",
+            "Prizes are not the goal. Learning is.",
+            "A long game is not better. It can bore people."
+          ],
+          "answer": "That the game teaches the key security ideas",
+          "explanation": "Gamification must educate. The first check is that the game teaches the right ideas.",
+          "explanation_more": "Outside the manual: the order of checks is advice. The manual says the games must educate on key security ideas.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-gamification-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which example is gamification in security awareness?",
+          "options": [
+            "Staff must pass a yearly exam to keep their jobs",
+            "A poster lists the ten password rules",
+            "The security team checks every account each month",
+            "Teams win badges when they spot trap emails"
+          ],
+          "options_why": [
+            "A required exam is not a game technique.",
+            "A poster is a printed reminder. It has no game technique.",
+            "A monthly check is a control, not a game.",
+            ""
+          ],
+          "answer": "Teams win badges when they spot trap emails",
+          "explanation": "Badges and a team challenge are game techniques used in a nongame activity.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-gamification-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Why can gamification help people learn good security habits?",
+          "options": [
+            "It forces people to finish the whole course on time",
+            "Learning is more fun, so people take part more",
+            "It removes the need for rules",
+            "It makes the course shorter"
+          ],
+          "options_why": [
+            "Gamification invites people. It does not force them.",
+            "",
+            "Rules are still needed. Gamification only helps people learn them.",
+            "A game may be as long as a normal course."
+          ],
+          "answer": "Learning is more fun, so people take part more",
+          "explanation": "A fun and engaging way to learn makes people practice good habits more often.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Gamification”: a fun and engaging way to educate employees and promote strong security practices.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-gamification-f1",
           "type": "flash",
-          "question": "Quel est le double but de la gamification, selon sa définition ?",
-          "answer": "Engager, c'est-à-dire captiver, et éduquer le public.",
-          "explanation": "Si le jeu amuse mais n'apprend rien, il ne remplit que la moitié du rôle.",
+          "phase": "entrainement",
+          "question": "What is gamification? Say it in your own words.",
+          "answer": "Using game ideas, such as points and levels, in something that is not a game, to help people learn.",
+          "explanation": "Think of the scoreboard.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-gamification-7",
-          "type": "whatif",
-          "question": "Et si le jeu est amusant mais n'enseigne aucun concept de sécurité ?",
-          "answer": "Il ne remplit pas son rôle. Le manuel dit que ces jeux doivent éduquer les employés sur des concepts de sécurité critiques.",
-          "explanation": "Amuser ne suffit pas : il faut aussi apprendre quelque chose.",
-          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Gamification ».",
+          "id": "d1-sens-gamification-f2",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Name two game techniques you could use in a security course.",
+          "answer": "For example: points, levels, badges, a ranking or a challenge.",
+          "explanation": "These are the same things that games use to keep us playing.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-gamification-8",
-          "type": "problem",
-          "question": "Invente un petit jeu pour apprendre aux employés à repérer l'hameçonnage.",
-          "answer": "Par exemple : un quiz chronométré où l'on classe des mails en sûrs ou piégés, avec des points et un classement.",
-          "explanation": "Des points, un défi et un but d'apprentissage : c'est de la gamification.",
+          "id": "d1-sens-gamification-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Why must a security game also educate?",
+          "answer": "The goal is to teach employees key security ideas. Fun alone is not enough.",
+          "explanation": "A game that is fun but teaches nothing does only half of the job.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-gamification-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What are the two goals of gamification?",
+          "answer": "To engage the audience and to educate it.",
+          "explanation": "Engage means to keep people interested.",
           "retention_goal": "1y"
         }
       ]
     },
     {
       "id": "d1-sens-revues",
-      "name": "Les revues périodiques du contenu (periodic content reviews)",
-      "planete": { "relief": "glacee" },
+      "name": "Periodic content reviews",
+      "planete": {
+        "relief": "glacee"
+      },
       "decouverte": [
         {
           "type": "histoire",
-          "titre": "Le vieux guide de voyage",
+          "titre": "The old travel guide",
           "paragraphes": [
-            "Ton frère te prête un guide de voyage vieux de dix ans. Il indique un restaurant fermé et une route qui n'existe plus.",
-            "Tu te perds, parce que le monde a changé et pas le guide.",
-            "Un programme de formation à la sécurité peut vieillir de la même façon. Pour l'éviter, on le relit régulièrement : ce sont les revues périodiques du contenu (periodic content reviews)."
+            "Your brother lends you a travel guide that is ten years old. It shows a restaurant that has closed. It shows a road that is gone.",
+            "You get lost. The world changed, but the guide did not.",
+            "A security course can get old in the same way. To stop this, a company reads it again often. These checks are called periodic content reviews."
           ]
         },
         {
           "type": "analogie",
-          "titre": "Le guide qu'on réédite",
-          "comme": "Un bon guide de voyage est réédité chaque année, avec les nouveaux restaurants et les nouvelles routes.",
-          "enVrai": "Le contenu du cours de sécurité doit être relu et mis à jour au moins une fois par an. Les menaces changent sans cesse, donc le contenu doit changer aussi. L'image s'arrête ici : certains contenus de sécurité doivent évoluer encore plus souvent."
+          "titre": "The guide with a new edition",
+          "comme": "A good travel guide gets a new edition each year. It adds the new places and the new roads.",
+          "enVrai": "A security course must be read again and updated at least once a year. Threats keep changing, so the course must change too. The picture stops here: some security content must change even more often than once a year."
         },
         {
           "type": "predire",
-          "question": "Une entreprise réutilise le même cours de sécurité depuis cinq ans. Quel est le principal risque ?",
+          "question": "A company has used the same security course for five years. What is the main risk?",
           "options": [
-            "Il parle de technologies et de menaces dépassées",
-            "Il coûte trop cher à imprimer",
-            "Les employés le connaissent par cœur"
+            "It talks about threats and tools that are out of date",
+            "It costs too much to print",
+            "Employees know it by heart"
           ],
-          "answer": "Il parle de technologies et de menaces dépassées",
-          "explanation": "Les menaces et les vulnérabilités changent sans cesse. Un vieux cours oublie les nouveautés. Les employés qui le connaissent par cœur ne seraient pas un problème, s'il était à jour."
+          "answer": "It talks about threats and tools that are out of date",
+          "explanation": "Threats keep changing. An old course misses the new ones. If the course were up to date, knowing it by heart would not be a problem."
         },
         {
           "type": "exemple",
-          "titre": "Un cours qui parle encore de disquettes",
-          "texte": "Un cours de sécurité conseille encore de se méfier des disquettes. Il ne dit rien des mails trompeurs très bien imités. Une revue annuelle aurait retiré les termes dépassés. Elle aurait ajouté les menaces actuelles de l'organisation et de son secteur."
+          "titre": "A course about floppy disks",
+          "texte": "A security course still warns about floppy disks. It says nothing about very good fake emails. A yearly review would remove the old words. It would add the threats of today for this company and its industry."
         }
       ],
       "cards": [
@@ -821,184 +1503,353 @@
           "id": "d1-sens-revues-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : les revues périodiques du contenu",
-          "answer": "Content should be reviewed and updated annually, at a minimum, to ensure that there is no reference to obsolete or irrelevant technologies or terminology, and these reviews should validate that all security awareness and training materials reflect current security trends, concepts, and concerns that are relevant to your organization and industry.\n\nTraduction : Le contenu devrait être revu et mis à jour au moins une fois par an, pour s'assurer qu'il ne fait référence à aucune technologie ou terminologie dépassée ou sans rapport. Ces revues devraient valider que tous les supports de sensibilisation et de formation reflètent les tendances, concepts et préoccupations de sécurité actuels qui concernent ton organisation et ton secteur.",
-          "explanation": "Chaque année au minimum : retirer le dépassé, ajouter l'actuel.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Periodic Content Reviews ». Obsolete veut dire dépassé, qu'on n'utilise plus.",
+          "question": "Official definition: “periodic content reviews”",
+          "answer": "Content should be reviewed and updated annually, at a minimum, to ensure that there is no reference to obsolete or irrelevant technologies or terminology, and these reviews should validate that all security awareness and training materials reflect current security trends, concepts, and concerns that are relevant to your organization and industry.",
+          "explanation": "In simple words: check the course at least once a year. Remove what is old and add what is true today.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Periodic Content Reviews”. Obsolete means out of date.",
+          "retention_goal": "life"
+        },
+        {
+          "id": "d1-sens-revues-def2",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which sentence is the official definition of “periodic content reviews”?",
+          "options": [
+            "Content should be reviewed and updated annually, at a minimum, to ensure that there is no reference to obsolete or irrelevant technologies or terminology, and these reviews should validate that all security awareness and training materials reflect current security trends, concepts, and concerns that are relevant to your organization and industry.",
+            "Content should be reviewed and updated every five years, at a minimum, to ensure that there is no reference to obsolete or irrelevant technologies or terminology, and these reviews should validate that all security awareness and training materials reflect current security trends, concepts, and concerns that are relevant to your organization and industry.",
+            "Content should be reviewed and updated annually, at a minimum, to ensure that there is no reference to new or unfamiliar technologies or terminology, and these reviews should validate that all security awareness and training materials reflect current security trends, concepts, and concerns that are relevant to your organization and industry.",
+            "Content should be reviewed and updated annually, at a minimum, to ensure that there is no reference to obsolete or irrelevant technologies or terminology, and these reviews should validate that all security awareness and training materials reflect general security trends, concepts, and concerns that are relevant to every company and industry."
+          ],
+          "options_why": [
+            "",
+            "The real sentence says annually. Every five years is far too slow.",
+            "The aim is to remove what is obsolete, not what is new.",
+            "The materials must fit your organization and industry, not every company."
+          ],
+          "answer": "Content should be reviewed and updated annually, at a minimum, to ensure that there is no reference to obsolete or irrelevant technologies or terminology, and these reviews should validate that all security awareness and training materials reflect current security trends, concepts, and concerns that are relevant to your organization and industry.",
+          "explanation": "Look at the key words: annually, at a minimum, obsolete or irrelevant, current security trends, your organization and industry.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-revues-def3",
-          "type": "cloze",
-          "question": "Content should be reviewed and updated [[annually, at a minimum]], to ensure that there is [[no reference to obsolete]] or irrelevant technologies or terminology, and these reviews should validate that all security awareness and training materials reflect [[current security trends]], concepts, and concerns that are relevant to your organization and industry.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official definition of “periodic content reviews” from memory.",
           "answer": "Content should be reviewed and updated annually, at a minimum, to ensure that there is no reference to obsolete or irrelevant technologies or terminology, and these reviews should validate that all security awareness and training materials reflect current security trends, concepts, and concerns that are relevant to your organization and industry.",
-          "explanation": "Trois blocs : la fréquence minimale, retirer le dépassé, refléter les tendances actuelles.",
+          "explanation": "Three parts: review at least once a year, remove what is obsolete, and show current trends that fit your organization.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-revues-vivant-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : le contenu « live »",
-          "answer": "Ideally, security awareness content should be considered \"live\" material that evolves even more frequently than these periodic reviews.\n\nTraduction : Idéalement, le contenu de sensibilisation à la sécurité devrait être considéré comme un matériel « vivant » qui évolue encore plus souvent que ces revues périodiques.",
-          "explanation": "« Live » : un contenu vivant, qui bouge entre deux revues.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Periodic Content Reviews ».",
+          "question": "Official definition: “live” content",
+          "answer": "Ideally, security awareness content should be considered \"live\" material that evolves even more frequently than these periodic reviews.",
+          "explanation": "In simple words: the content should change often, even between two reviews.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Periodic Content Reviews”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-revues-vivant-def3",
-          "type": "cloze",
-          "question": "Ideally, [[security awareness content]] should be considered \"live\" material that [[evolves even more frequently]] than these [[periodic reviews]].",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about “live” content from memory.",
           "answer": "Ideally, security awareness content should be considered \"live\" material that evolves even more frequently than these periodic reviews.",
-          "explanation": "Trois blocs : le contenu de sensibilisation, il évolue plus souvent, que les revues périodiques.",
+          "explanation": "Three parts: awareness content, “live” material, and it changes more often than the reviews.",
           "retention_goal": "life"
         },
         {
-          "id": "d1-sens-revues-1",
-          "type": "flash",
-          "question": "À quelle fréquence minimale faut-il relire et mettre à jour le contenu de sensibilisation ?",
-          "answer": "Au moins une fois par an.",
-          "explanation": "C'est un minimum : on peut le faire plus souvent.",
-          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Periodic Content Reviews » : annually, at a minimum.",
+          "id": "d1-sens-revues-q1",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "How often should awareness content be reviewed and updated, at a minimum?",
+          "options": [
+            "Once every five years",
+            "Only after a major incident",
+            "At least once a year",
+            "Once, when the program starts"
+          ],
+          "options_why": [
+            "Five years is far too long. Threats change every year.",
+            "Waiting for an incident is too late. Reviews are regular.",
+            "",
+            "One review is not enough. Threats keep changing."
+          ],
+          "answer": "At least once a year",
+          "explanation": "The manual says annually, at a minimum.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Periodic Content Reviews”.",
           "retention_goal": "3m"
         },
         {
-          "id": "d1-sens-revues-2",
-          "type": "duel",
-          "question": "Deux entreprises relisent leur formation. Laquelle suit l'idéal du manuel ?",
+          "id": "d1-sens-revues-q2",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Why do we review awareness content again, even if it was good last year?",
           "options": [
-            "Celle qui met aussi à jour entre les revues",
-            "Celle qui ne touche à rien entre les revues"
+            "Employees forget the course after a week",
+            "Threats and weaknesses keep changing",
+            "The law changes the rules every month",
+            "Old content is always bad"
           ],
-          "answer": "Celle qui met aussi à jour entre les revues",
-          "explanation": "Le manuel veut un contenu « live », qui évolue encore plus souvent que les revues périodiques.",
+          "options_why": [
+            "Forgetting is real, but it is not the reason for the content review.",
+            "",
+            "Laws do change, but not that often. The manual gives a different reason.",
+            "Old content can still be good. But it may miss new threats."
+          ],
+          "answer": "Threats and weaknesses keep changing",
+          "explanation": "Information security keeps evolving. Content must stay relevant.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Periodic Content Reviews”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-revues-3",
+          "id": "d1-sens-revues-q3",
           "type": "qcm",
-          "question": "Pendant la revue annuelle, tu trouves un cours qui parle d'un outil abandonné. Que fais-tu ?",
+          "phase": "comprehension",
+          "question": "Which part of a course should a review remove?",
           "options": [
-            "Je la retire et je mets à jour",
-            "Je la garde : elle est toujours vraie",
-            "J'attends la revue de l'an prochain",
-            "Je supprime tout le cours d'un coup"
+            "Advice that still fits the company",
+            "A current threat that is seen in the industry",
+            "A rule that employees still follow",
+            "Advice about a tool that nobody uses now"
+          ],
+          "options_why": [
+            "Good advice should stay.",
+            "A current threat is exactly what the course needs.",
+            "A rule that is still used should stay.",
+            ""
+          ],
+          "answer": "Advice about a tool that nobody uses now",
+          "explanation": "The review removes obsolete or irrelevant technologies and words.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-revues-q4",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "In the yearly review, you find a lesson about a tool nobody uses now. What is the BEST action?",
+          "options": [
+            "Keep it, as it does no harm",
+            "Wait for next year's review",
+            "Remove or update that part now",
+            "Delete the whole course"
+          ],
+          "options_why": [
+            "An old lesson wastes time and may hide new threats.",
+            "The review is there to fix things now.",
+            "",
+            "The rest of the course may still be useful."
+          ],
+          "answer": "Remove or update that part now",
+          "explanation": "The review is the moment to remove obsolete content and show current trends.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-revues-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT something the reviews should check?",
+          "options": [
+            "That the course is as long as last year's",
+            "That old words and tools are removed",
+            "That the materials show current security trends",
+            "That the materials fit the organization and industry"
           ],
           "options_why": [
             "",
-            "Une référence à un outil abandonné n'aide plus personne.",
-            "Le but de la revue est justement de corriger maintenant.",
-            "Supprimer tout le cours prive les employés de ce qui reste utile."
+            "This is a real check. Obsolete words must go.",
+            "This is a real check. The materials must reflect current trends.",
+            "This is a real check. The content must be relevant to your company."
           ],
-          "answer": "Je la retire et je mets à jour",
-          "explanation": "La revue sert à retirer le dépassé et à refléter les tendances actuelles.",
+          "answer": "That the course is as long as last year's",
+          "explanation": "The length of the course does not matter. What matters is that the content is current and relevant.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Periodic Content Reviews”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-revues-4",
-          "type": "sort",
-          "question": "Après une revue, que retire-t-on et que garde-t-on ?",
-          "answer": "À retirer ou à mettre à jour : un conseil sur une technologie abandonnée, un vocabulaire oublié, un exemple hors secteur. À garder : un conseil toujours valable, une tendance actuelle, une préoccupation actuelle.",
-          "explanation": "On garde ce qui est actuel et utile à l'organisation, on retire ce qui est dépassé.",
-          "data": {
-            "mode": "classer",
-            "categories": ["À retirer ou mettre à jour", "À garder"],
-            "items": [
-              { "text": "Un conseil sur une technologie abandonnée", "category": "À retirer ou mettre à jour" },
-              { "text": "Un vocabulaire qui n'est plus utilisé", "category": "À retirer ou mettre à jour" },
-              { "text": "Un exemple qui ne concerne plus ton secteur", "category": "À retirer ou mettre à jour" },
-              { "text": "Un conseil toujours valable et utile à l'entreprise", "category": "À garder" },
-              { "text": "Une tendance de sécurité actuelle dans ton secteur", "category": "À garder" },
-              { "text": "Une préoccupation actuelle de l'organisation", "category": "À garder" }
-            ]
-          }
+          "id": "d1-sens-revues-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Two companies review their training. Which one follows the manual's ideal MOST closely?",
+          "options": [
+            "The one that reviews once and never again",
+            "The one that reviews only after an attack",
+            "The one that changes nothing, to keep it stable",
+            "The one that also updates between reviews"
+          ],
+          "options_why": [
+            "One review is not enough. Content must be reviewed at least yearly.",
+            "Reviews are regular. They do not wait for an attack.",
+            "Stable content gets old. Threats keep changing.",
+            ""
+          ],
+          "answer": "The one that also updates between reviews",
+          "explanation": "The manual wants “live” content that changes even more often than the periodic reviews.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Periodic Content Reviews”.",
+          "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-revues-5",
-          "type": "cloze",
-          "question": "Le contenu doit être relu et mis à jour [[annuellement|chaque année|tous les ans]] au minimum.",
-          "answer": "Le contenu doit être relu et mis à jour annuellement au minimum.",
-          "explanation": "Une fois par an, au moins.",
+          "id": "d1-sens-revues-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which content is LEAST useful for the awareness course of a bank?",
+          "options": [
+            "A new type of phishing seen in banking",
+            "A story about a threat in another industry",
+            "A rule taken from the bank's own security policy",
+            "A lesson about a tool the bank uses today"
+          ],
+          "options_why": [
+            "This is very useful. It is a current threat in the bank's industry.",
+            "",
+            "This is useful. It is relevant to the organization.",
+            "This is useful. Staff use the tool today."
+          ],
+          "answer": "A story about a threat in another industry",
+          "explanation": "Materials must reflect trends and concerns relevant to your organization and your industry.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Periodic Content Reviews”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-revues-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A course was written four years ago. A new manager sees many old tools in it. What should she do FIRST?",
+          "options": [
+            "Review the content to find what is out of date",
+            "Cancel the awareness program",
+            "Add many new lessons without reading the old ones",
+            "Ask employees to write new lessons"
+          ],
+          "options_why": [
+            "",
+            "Cancelling removes useful training. The content just needs a review.",
+            "Adding lessons on top of old ones leaves the old problems in place.",
+            "Employees do not know the full threats. The review is a job for security professionals."
+          ],
+          "answer": "Review the content to find what is out of date",
+          "explanation": "A review first finds what is obsolete or irrelevant. Then you can update it.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-revues-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "What does it mean that awareness content is “live” material?",
+          "options": [
+            "It is given only in live classes",
+            "It is read aloud by a trainer",
+            "It changes often, even between two reviews",
+            "It never changes after its very first release"
+          ],
+          "options_why": [
+            "“Live” does not mean a live class. It means the content keeps moving.",
+            "It does not matter who reads it. The point is that it changes.",
+            "",
+            "This is the opposite. Live content keeps changing."
+          ],
+          "answer": "It changes often, even between two reviews",
+          "explanation": "Ideally, the content evolves even more often than the periodic reviews.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-revues-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "As a CISSP, who should make sure the training has all the current information employees need?",
+          "options": [
+            "The employees themselves",
+            "You, as the security professional",
+            "The vendor that sold the training tool",
+            "The company's lawyers"
+          ],
+          "options_why": [
+            "Employees take the training. They cannot know all the current threats.",
+            "",
+            "A vendor may help, but the responsibility stays with you.",
+            "Lawyers know the law, but the security content is your job."
+          ],
+          "answer": "You, as the security professional",
+          "explanation": "The manual says: as a CISSP, you should make sure the content has all the current information.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Periodic Content Reviews”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-revues-f1",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "How often must awareness content be reviewed, at a minimum?",
+          "answer": "At least once a year.",
+          "explanation": "This is a minimum. You can review more often.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Periodic Content Reviews”.",
           "retention_goal": "3m"
         },
         {
-          "id": "d1-sens-revues-6",
-          "type": "why",
-          "question": "Pourquoi relire le contenu de sensibilisation, même s'il était bon l'an dernier ?",
-          "answer": "Parce que les menaces et les vulnérabilités changent sans cesse. Un contenu qui n'évolue pas finit par parler de choses dépassées.",
-          "explanation": "Un bon cours d'hier peut devenir un cours incomplet aujourd'hui.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-revues-7",
+          "id": "d1-sens-revues-f2",
           "type": "flash",
-          "question": "Que doivent valider les revues du contenu, selon le manuel ?",
-          "answer": "Que tous les supports reflètent les tendances, concepts et préoccupations de sécurité actuels, utiles à l'organisation et à son secteur.",
-          "explanation": "Le contenu doit coller à la réalité de ton entreprise et de ton secteur.",
+          "phase": "entrainement",
+          "question": "What should the content reviews check?",
+          "answer": "That all materials show current security trends, concepts and concerns that matter to the organization and its industry.",
+          "explanation": "The content must fit your company, not just any company.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-revues-8",
-          "type": "whatif",
-          "question": "Et si le contenu est traité comme un matériel « live » ?",
-          "answer": "Il est mis à jour souvent, même entre deux revues. Il suit mieux les menaces qui changent.",
-          "explanation": "Un contenu vivant réagit vite aux nouveautés.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-revues-9",
-          "type": "problem",
-          "question": "Écris trois questions à te poser pendant une revue annuelle du contenu.",
-          "answer": "Y a-t-il des technologies ou des mots dépassés ? Les supports reflètent-ils les tendances actuelles ? Sont-ils utiles à notre organisation et à notre secteur ?",
-          "explanation": "Ces trois questions suivent les points cités par le manuel.",
-          "retention_goal": "1y"
-        },
-        {
-          "id": "d1-sens-revues-10",
+          "id": "d1-sens-revues-f3",
           "type": "flash",
-          "question": "Selon le manuel, qui doit s'assurer que la formation contient les informations actuelles utiles ?",
-          "answer": "Toi, en tant que CISSP. Tu dois veiller à ce que la formation contienne tout ce que les employés doivent savoir.",
-          "explanation": "C'est une responsabilité du professionnel de la sécurité.",
-          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Periodic Content Reviews », dernière phrase.",
+          "phase": "entrainement",
+          "question": "What does “obsolete” mean?",
+          "answer": "Out of date. No longer used.",
+          "explanation": "Think of the floppy disk.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-revues-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Why can old awareness content be a problem?",
+          "answer": "Threats keep changing. Old content talks about things that are out of date and misses new threats.",
+          "explanation": "A good course from yesterday can be an incomplete course today.",
           "retention_goal": "1y"
         }
       ]
     },
     {
       "id": "d1-sens-evaluation",
-      "name": "Mesurer l'efficacité du programme (program effectiveness evaluation)",
-      "planete": { "relief": "oceanique" },
+      "name": "Program effectiveness evaluation",
+      "planete": {
+        "relief": "oceanique"
+      },
       "decouverte": [
         {
           "type": "histoire",
-          "titre": "Le petit contrôle de maths",
+          "titre": "The small math quiz",
           "paragraphes": [
-            "Ton prof de maths a passé un mois à expliquer les fractions. Il a bien parlé, tout le monde a écouté. Mais a-t-on compris ?",
-            "Il organise un petit contrôle. Beaucoup d'élèves ratent la même question. Il comprend qu'il doit réexpliquer ce point.",
-            "En entreprise, donner des cours de sécurité ne suffit pas : il faut mesurer si ça marche. C'est l'évaluation de l'efficacité du programme (program effectiveness evaluation)."
+            "Your math teacher spent a month on fractions. He spoke well and everyone listened. But did anyone understand?",
+            "He gives a small quiz. Many students miss the same question. Now he knows he must explain that point again.",
+            "In a company, giving security lessons is not enough. You must also measure if they work. This is the program effectiveness evaluation."
           ]
         },
         {
           "type": "analogie",
-          "titre": "Le bulletin de notes",
-          "comme": "Un bulletin ne sert pas à punir. Il montre où il faut aider.",
-          "enVrai": "Mesurer l'efficacité d'un programme de sensibilisation sert à repérer ses faiblesses, pas à juger les personnes. On regarde les chiffres, les quiz, les avis des employés et les signalements. L'image s'arrête ici : on note le programme, pas les élèves."
+          "titre": "The report card",
+          "comme": "A report card is not there to punish. It shows where help is needed.",
+          "enVrai": "To measure a program, we look at numbers, quizzes, opinions and reports from employees. This helps us find the weak points of the program. The picture stops here: we grade the program, not the students."
         },
         {
           "type": "predire",
-          "question": "Dans un quiz de sécurité, la moitié des employés rate la même question. Que faut-il en conclure ?",
+          "question": "In a security quiz, half of the employees miss the same question. What should we think?",
           "options": [
-            "Le contenu est peut-être peu clair sur ce sujet",
-            "Ces employés ne veulent pas apprendre",
-            "Le quiz est trop facile"
+            "The content may be unclear on this topic",
+            "These employees do not want to learn",
+            "The quiz is too easy"
           ],
-          "answer": "Le contenu est peut-être peu clair sur ce sujet",
-          "explanation": "Si beaucoup d'employés se trompent sur le même sujet, il faut probablement donner une information plus claire. On améliore le programme, on n'accuse pas les gens."
+          "answer": "The content may be unclear on this topic",
+          "explanation": "If many people make a mistake on the same topic, clearer information is probably needed. We improve the program. We do not blame people."
         },
         {
           "type": "exemple",
-          "titre": "Plus de signalements, c'est bon signe",
-          "texte": "Après une formation, une entreprise reçoit deux fois plus de messages de collègues qui signalent des mails suspects. Cela peut sembler inquiétant. Pourtant, c'est un bon signe : les employés sont plus attentifs. Mieux vaut plus de signalements que plus d'attaques réussies."
+          "titre": "More reports is a good sign",
+          "texte": "After a training, a company gets twice as many reports of suspicious emails. This may sound bad. But it is a good sign: employees are more alert. More reports is better than more successful attacks."
         }
       ],
       "cards": [
@@ -1006,203 +1857,380 @@
           "id": "d1-sens-evaluation-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : évaluer l'efficacité des activités de sensibilisation",
-          "answer": "Conducting security awareness, education, and training activities is not enough; it's equally important to evaluate and measure the effectiveness of your security education activities.\n\nTraduction : Mener des activités de sensibilisation, d'éducation et de formation à la sécurité ne suffit pas ; il est tout aussi important d'évaluer et de mesurer l'efficacité de tes activités d'éducation à la sécurité.",
-          "explanation": "Faire ne suffit pas : il faut aussi mesurer si ça marche.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Program Effectiveness Evaluation ».",
+          "question": "Official definition: “program effectiveness evaluation”",
+          "answer": "Conducting security awareness, education, and training activities is not enough; it's equally important to evaluate and measure the effectiveness of your security education activities.",
+          "explanation": "In simple words: giving lessons is not enough. You must also measure if the lessons work.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-def2",
-          "type": "cloze",
-          "question": "Conducting security awareness, education, and training activities is not [[enough]]; it's equally important to evaluate and [[measure]] the effectiveness of your security education activities.",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which sentence is the official definition of “program effectiveness evaluation”?",
+          "options": [
+            "Conducting security awareness, education, and training activities is not enough; it's equally important to evaluate and report the cost of your security education activities.",
+            "Conducting security awareness, education, and training activities is usually enough; it's optional to evaluate and measure the effectiveness of your security education activities.",
+            "Conducting security awareness, education, and training activities is not enough; it's equally important to evaluate and measure the satisfaction of your security education audience.",
+            "Conducting security awareness, education, and training activities is not enough; it's equally important to evaluate and measure the effectiveness of your security education activities."
+          ],
+          "options_why": [
+            "The real sentence is about effectiveness, not cost.",
+            "The real sentence says it is not enough. Evaluating is equally important.",
+            "The real sentence is about effectiveness, not only how happy people are.",
+            ""
+          ],
           "answer": "Conducting security awareness, education, and training activities is not enough; it's equally important to evaluate and measure the effectiveness of your security education activities.",
-          "explanation": "Deux mots : enough (assez) et measure (mesurer).",
+          "explanation": "Look at the key words: not enough, equally important, evaluate and measure the effectiveness.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-def3",
-          "type": "cloze",
-          "question": "Conducting security awareness, education, and training activities is [[not enough]]; it's [[equally important]] to [[evaluate and measure]] the effectiveness of your security education activities.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official definition of “program effectiveness evaluation” from memory.",
           "answer": "Conducting security awareness, education, and training activities is not enough; it's equally important to evaluate and measure the effectiveness of your security education activities.",
-          "explanation": "Trois blocs : ça ne suffit pas, c'est tout aussi important, évaluer et mesurer.",
-          "retention_goal": "life"
-        },
-        {
-          "id": "d1-sens-evaluation-def4",
-          "type": "problem",
-          "question": "Écris de mémoire la phrase officielle sur l'évaluation des activités de sensibilisation (en anglais).",
-          "answer": "Conducting security awareness, education, and training activities is not enough; it's equally important to evaluate and measure the effectiveness of your security education activities.\n\nTraduction : Mener des activités de sensibilisation, d'éducation et de formation à la sécurité ne suffit pas ; il est tout aussi important d'évaluer et de mesurer l'efficacité de tes activités d'éducation à la sécurité.",
-          "explanation": "Deux parties : ce n'est pas assez, c'est tout aussi important d'évaluer et de mesurer.",
+          "explanation": "Three parts: doing activities is not enough, evaluating is equally important, and measuring the effectiveness.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-metriques-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : « training metrics »",
-          "answer": "Simple metrics like training completion rates are a great place to start when evaluating the effectiveness of your security awareness program.\n\nTraduction : Des mesures simples, comme les taux de réalisation des formations, sont un excellent point de départ pour évaluer l'efficacité de ton programme de sensibilisation.",
-          "explanation": "Compter qui a fini la formation : le plus simple pour commencer.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Program Effectiveness Evaluation ». Metrics veut dire mesures, des chiffres qu'on suit.",
+          "question": "Official definition: “training metrics”",
+          "answer": "Simple metrics like training completion rates are a great place to start when evaluating the effectiveness of your security awareness program.",
+          "explanation": "In simple words: count how many people finished the training. It is the easiest way to start.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”. Metrics means measurements: numbers that you keep track of.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-metriques-def3",
-          "type": "cloze",
-          "question": "[[Simple metrics]] like training completion rates are a [[great place to start]] when [[evaluating the effectiveness]] of your security awareness program.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about training metrics from memory.",
           "answer": "Simple metrics like training completion rates are a great place to start when evaluating the effectiveness of your security awareness program.",
-          "explanation": "Trois blocs : des mesures simples, un bon point de départ, évaluer l'efficacité.",
+          "explanation": "Three parts: simple metrics, a great place to start, and evaluating the effectiveness.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-quiz-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : les « quizzes »",
-          "answer": "Quizzes are most reliable when measuring the effectiveness of security policies and related information.\n\nTraduction : Les quiz sont les plus fiables pour mesurer l'efficacité des politiques de sécurité et des informations associées.",
-          "explanation": "Un quiz teste surtout les politiques et les informations qui s'y rattachent.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Program Effectiveness Evaluation ».",
+          "question": "Official definition: “quizzes”",
+          "answer": "Quizzes are most reliable when measuring the effectiveness of security policies and related information.",
+          "explanation": "In simple words: a quiz is best for checking if people know the security rules.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-quiz-def3",
-          "type": "cloze",
-          "question": "Quizzes are [[most reliable]] when measuring the effectiveness of [[security policies]] and [[related information]].",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about quizzes from memory.",
           "answer": "Quizzes are most reliable when measuring the effectiveness of security policies and related information.",
-          "explanation": "Trois blocs : les plus fiables, les politiques de sécurité, les informations associées.",
+          "explanation": "Three parts: most reliable, security policies, and related information.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-journees-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : les journées ou semaines de la sécurité",
-          "answer": "By sponsoring security awareness days or weeks, you not only have an opportunity to provide security education, but you can also use this as an opportunity to solicit feedback from your employees on the program itself.\n\nTraduction : En organisant des journées ou des semaines de sensibilisation à la sécurité, tu peux non seulement éduquer, mais aussi en profiter pour recueillir l'avis de tes employés sur le programme lui-même.",
-          "explanation": "Éduquer, et en même temps demander l'avis des employés.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Program Effectiveness Evaluation ». Le manuel parle de questionnaires anonymes.",
+          "question": "Official definition: security awareness days or weeks",
+          "answer": "By sponsoring security awareness days or weeks, you not only have an opportunity to provide security education, but you can also use this as an opportunity to solicit feedback from your employees on the program itself.",
+          "explanation": "In simple words: use the days to teach, and also to ask employees what they think of the program.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”. The manual says to use anonymous questionnaires.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-journees-def3",
-          "type": "cloze",
-          "question": "By sponsoring [[security awareness days or weeks]], you not only have an opportunity to provide security education, but you can also use this as an opportunity to [[solicit feedback]] from your employees on [[the program itself]].",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about security awareness days or weeks from memory.",
           "answer": "By sponsoring security awareness days or weeks, you not only have an opportunity to provide security education, but you can also use this as an opportunity to solicit feedback from your employees on the program itself.",
-          "explanation": "Trois blocs : les journées, recueillir l'avis, sur le programme lui-même.",
+          "explanation": "Three parts: the days or weeks, collecting feedback, and the program itself.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-inherente-def1",
           "type": "flash",
           "phase": "comprehension",
-          "question": "Définition officielle (en anglais) : l'évaluation « inherent » par les signalements",
-          "answer": "Certain metrics, such as the number of phishing emails and other security issues reported to IT, can provide a great deal of insight into the effectiveness of your program.\n\nTraduction : Certaines mesures, comme le nombre de mails d'hameçonnage et d'autres problèmes de sécurité signalés à l'informatique, peuvent beaucoup renseigner sur l'efficacité de ton programme.",
-          "explanation": "Le nombre de signalements montre si les employés ont retenu les réflexes.",
-          "explanation_more": "Phrase du manuel (ISC)2, domaine 1, section « Program Effectiveness Evaluation ». Inherent veut dire qu'on regarde l'état général de la sécurité, sans test à part.",
+          "question": "Official definition: “inherent evaluation”",
+          "answer": "Certain metrics, such as the number of phishing emails and other security issues reported to IT, can provide a great deal of insight into the effectiveness of your program.",
+          "explanation": "In simple words: the number of reports to IT shows if people remember good habits.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”. Inherent means that we look at the overall state of security, with no separate test.",
           "retention_goal": "life"
         },
         {
           "id": "d1-sens-evaluation-inherente-def3",
-          "type": "cloze",
-          "question": "Certain metrics, such as the number of [[phishing emails]] and other security issues [[reported to IT]], can provide a great deal of [[insight into the effectiveness]] of your program.",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Say the official sentence about inherent evaluation from memory.",
           "answer": "Certain metrics, such as the number of phishing emails and other security issues reported to IT, can provide a great deal of insight into the effectiveness of your program.",
-          "explanation": "Trois blocs : les mails d'hameçonnage, signalés à l'informatique, ce que cela dit de l'efficacité.",
+          "explanation": "Three parts: phishing emails, reported to IT, and insight into the effectiveness of the program.",
           "retention_goal": "life"
         },
         {
-          "id": "d1-sens-evaluation-1",
-          "type": "sort",
-          "question": "À quelle méthode d'évaluation correspond chaque exemple ?",
-          "answer": "Taux de formation : le pourcentage d'employés qui ont terminé le cours. Quiz : beaucoup d'erreurs sur la même question, un test sur la politique de mots de passe. Journées de sensibilisation : un questionnaire anonyme, une semaine de la sécurité. Évaluation inhérente : le nombre de mails suspects signalés.",
-          "explanation": "Chaque méthode regarde un indice différent : l'achèvement, la connaissance, l'avis ou le comportement.",
-          "data": {
-            "mode": "classer",
-            "categories": ["Taux de formation", "Quiz", "Journées de sensibilisation", "Évaluation inhérente"],
-            "items": [
-              { "text": "Le pourcentage d'employés qui ont terminé le cours", "category": "Taux de formation" },
-              { "text": "Beaucoup d'employés se trompent sur la même question", "category": "Quiz" },
-              { "text": "Un résultat de test sur la politique de mots de passe", "category": "Quiz" },
-              { "text": "Un questionnaire anonyme remis aux participants", "category": "Journées de sensibilisation" },
-              { "text": "Une semaine de la sécurité où l'on recueille des avis", "category": "Journées de sensibilisation" },
-              { "text": "Le nombre de mails suspects signalés à l'informatique", "category": "Évaluation inhérente" }
-            ]
-          }
+          "id": "d1-sens-evaluation-q1",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "Why is giving security lessons not enough?",
+          "options": [
+            "Lessons are never useful alone",
+            "Employees stop listening after a month",
+            "We must also measure if the lessons work",
+            "The law asks for a test every week"
+          ],
+          "options_why": [
+            "Lessons are useful. They just need to be measured.",
+            "The manual does not say this. The point is measuring effectiveness.",
+            "",
+            "No such law is named in the manual."
+          ],
+          "answer": "We must also measure if the lessons work",
+          "explanation": "It is equally important to evaluate and measure the effectiveness of your activities.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
+          "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-evaluation-2",
+          "id": "d1-sens-evaluation-q2",
           "type": "qcm",
-          "question": "Seuls 30 % des employés ont suivi le cours en ligne. Quelle méthode l'a montré ?",
+          "phase": "comprehension",
+          "question": "Which number is a simple metric to start with?",
           "options": [
-            "Les taux de réalisation",
-            "Un quiz sur les règles de sécurité",
-            "Un questionnaire anonyme de satisfaction",
-            "Le nombre de mails suspects signalés"
+            "The training completion rate",
+            "The number of firewalls in the company",
+            "The number of computers",
+            "The price of the course"
           ],
           "options_why": [
             "",
-            "Un quiz mesure ce que les gens ont retenu, pas combien ont suivi le cours.",
-            "Un questionnaire recueille des avis, pas le nombre de participants.",
-            "Les signalements montrent les réflexes des employés, pas leur participation au cours."
+            "Firewalls are tools. They do not show if people learned.",
+            "The number of computers says nothing about the training.",
+            "Price does not show if the training works."
           ],
-          "answer": "Les taux de réalisation",
-          "explanation": "Les taux de réalisation disent si la formation touche assez d'employés. Ils montrent aussi s'il faut changer de mode de diffusion.",
+          "answer": "The training completion rate",
+          "explanation": "The completion rate shows how many employees finished the training.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-evaluation-3",
-          "type": "duel",
-          "question": "Après la formation, le nombre de mails suspects signalés augmente. Est-ce plutôt un bon ou un mauvais signe ?",
-          "options": ["Un bon signe", "Un mauvais signe"],
-          "answer": "Un bon signe",
-          "explanation": "Les employés repèrent plus de mails suspects et en parlent. Mieux vaut plus de signalements que plus de compromissions réussies.",
+          "id": "d1-sens-evaluation-q3",
+          "type": "qcm",
+          "phase": "comprehension",
+          "question": "After training, employees report more suspicious emails. What does this show?",
+          "options": [
+            "The training made the company less safe than before",
+            "Attackers are sending fewer emails",
+            "The email filter has stopped working",
+            "Employees are more alert, which is a good sign"
+          ],
+          "options_why": [
+            "More reports is better than more successful compromises.",
+            "Reports do not tell us anything about how many emails attackers send.",
+            "The reports do not point to a filter problem.",
+            ""
+          ],
+          "answer": "Employees are more alert, which is a good sign",
+          "explanation": "As employees learn about risks, the number of self-reported issues should rise.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-evaluation-4",
-          "type": "cloze",
-          "question": "Mieux vaut voir augmenter les [[signalements]] de problèmes suspects que les [[compromissions|attaques|intrusions]] réussies.",
-          "answer": "Mieux vaut voir augmenter les signalements de problèmes suspects que les compromissions réussies.",
-          "explanation": "Un employé qui signale a repéré le danger avant qu'il ne réussisse.",
-          "explanation_more": "Source : manuel (ISC)2, domaine 1, section « Program Effectiveness Evaluation ».",
+          "id": "d1-sens-evaluation-q4",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Only 30 percent of employees took the online course. Which method BEST shows this?",
+          "options": [
+            "A quiz about the security rules",
+            "Training completion rates",
+            "An anonymous questionnaire on opinions",
+            "The number of suspicious emails reported"
+          ],
+          "options_why": [
+            "A quiz measures what people remember, not how many took the course.",
+            "",
+            "A questionnaire collects opinions, not the number of participants.",
+            "Reports show habits, not how many people took the course."
+          ],
+          "answer": "Training completion rates",
+          "explanation": "Completion rates show if the training reaches enough employees. They may also show that you need other ways to deliver it.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-evaluation-5",
-          "type": "why",
-          "question": "Pourquoi un quiz peut-il montrer qu'il faut changer le contenu du cours ?",
-          "answer": "Si beaucoup d'employés ratent la même question, il faut probablement donner une information plus claire sur ce sujet.",
-          "explanation": "Une erreur répandue vient souvent du cours, pas des personnes.",
+          "id": "d1-sens-evaluation-q5",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Many employees miss the same quiz question. What is the BEST next step?",
+          "options": [
+            "Give clearer information about that topic",
+            "Blame those employees",
+            "Make the quiz easier so that fewer people miss it",
+            "Remove the question next time"
+          ],
+          "options_why": [
+            "",
+            "A common mistake often comes from the course, not from the people.",
+            "An easier quiz hides the problem. It does not fix it.",
+            "Removing the question hides the problem too."
+          ],
+          "answer": "Give clearer information about that topic",
+          "explanation": "If many people miss the same question, you need to provide further or clearer information on that topic.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-evaluation-6",
+          "id": "d1-sens-evaluation-q6",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which of these is NOT a method named in the manual to evaluate a program?",
+          "options": [
+            "Training metrics",
+            "Quizzes",
+            "Counting how many posters are printed",
+            "Security awareness days or weeks"
+          ],
+          "options_why": [
+            "The manual names training metrics, such as completion rates.",
+            "The manual names quizzes.",
+            "",
+            "The manual names awareness days or weeks."
+          ],
+          "answer": "Counting how many posters are printed",
+          "explanation": "The number of posters does not show if people learned anything.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-evaluation-q7",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which method is MOST reliable for measuring the effectiveness of security policies and related information?",
+          "options": [
+            "Training completion rates",
+            "Quizzes",
+            "Anonymous questionnaires on opinions",
+            "Counting the reported phishing emails"
+          ],
+          "options_why": [
+            "Completion rates show who finished, not what they know.",
+            "",
+            "Questionnaires collect opinions, not knowledge of policies.",
+            "Reports show habits. They are less direct for knowing policies."
+          ],
+          "answer": "Quizzes",
+          "explanation": "Quizzes test knowledge, so they are the most reliable for policies and related information.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-evaluation-q8",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A company runs a security week. What can it also do during the week, besides teaching?",
+          "options": [
+            "Run a hidden exam to catch people",
+            "Publish each worker's quiz score on the notice board",
+            "Stop all other training for a year",
+            "Ask for feedback with anonymous questionnaires"
+          ],
+          "options_why": [
+            "A hidden exam does not help people learn or give feedback.",
+            "Publishing scores would shame people. It does not collect feedback.",
+            "Stopping training weakens the program.",
+            ""
+          ],
+          "answer": "Ask for feedback with anonymous questionnaires",
+          "explanation": "Awareness days or weeks are also a chance to ask employees what they think of the program.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-evaluation-q9",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "Which clue comes from inherent evaluation?",
+          "options": [
+            "The percent of staff who finished the whole course",
+            "The scores on a quiz",
+            "The number of phishing emails reported to IT",
+            "Answers on an anonymous questionnaire"
+          ],
+          "options_why": [
+            "This is a training metric, not inherent evaluation.",
+            "This is a quiz result, not inherent evaluation.",
+            "",
+            "This comes from awareness days or weeks, not inherent evaluation."
+          ],
+          "answer": "The number of phishing emails reported to IT",
+          "explanation": "Inherent evaluation looks at overall security, such as the number of issues reported to IT.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-evaluation-q10",
+          "type": "qcm",
+          "phase": "entrainement",
+          "question": "A company checks only its overall security and does not evaluate the program itself. Which statement is BEST?",
+          "options": [
+            "A formal evaluation is still needed for the program",
+            "Overall security is enough to judge how good the program is",
+            "A formal evaluation is needed only after an attack",
+            "A formal evaluation replaces all training"
+          ],
+          "options_why": [
+            "",
+            "Overall security gives some clues. But the manual asks for a formal evaluation too.",
+            "The evaluation should be regular, not only after an attack.",
+            "Evaluation measures the training. It cannot replace it."
+          ],
+          "answer": "A formal evaluation is still needed for the program",
+          "explanation": "Overall security may give clues, but a formal evaluation targets deficiencies within the awareness program itself.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-evaluation-f1",
           "type": "flash",
-          "question": "Que mesure-t-on avec les taux de réalisation des formations ?",
-          "answer": "Si les ressources de formation touchent assez d'employés. Ils peuvent aussi montrer qu'il faut d'autres modes de diffusion.",
-          "explanation": "C'est la mesure la plus simple pour commencer.",
+          "phase": "entrainement",
+          "question": "What does a training completion rate tell you?",
+          "answer": "Whether your lessons reach enough employees. It may also show that you need another way to deliver them.",
+          "explanation": "This is the simplest measure to start with.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-evaluation-7",
+          "id": "d1-sens-evaluation-f2",
           "type": "flash",
-          "question": "À part éduquer, pourquoi organiser des journées ou semaines de la sécurité ?",
-          "answer": "Pour recueillir l'avis des employés sur le programme, par exemple avec des questionnaires anonymes.",
-          "explanation": "Les employés disent ce qui marche et ce qui ennuie.",
+          "phase": "entrainement",
+          "question": "Besides teaching, why hold security awareness days or weeks?",
+          "answer": "To ask employees for their opinion of the program, for example with anonymous questionnaires.",
+          "explanation": "Employees say what works and what is boring.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-evaluation-8",
-          "type": "whatif",
-          "question": "Et si une entreprise ne regarde que la sécurité globale, sans évaluation formelle du programme ?",
-          "answer": "Elle peut se faire une idée de l'efficacité. Le manuel demande aussi une évaluation formelle, qui cible les faiblesses du programme lui-même.",
-          "explanation": "La sécurité globale dépend de beaucoup de choses : on veut isoler ce que vaut le programme.",
+          "id": "d1-sens-evaluation-f3",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What should you do when many employees miss the same quiz question?",
+          "answer": "Give more or clearer information about that topic.",
+          "explanation": "The problem is probably in the course, not in the people.",
           "retention_goal": "1y"
         },
         {
-          "id": "d1-sens-evaluation-9",
-          "type": "problem",
-          "question": "Tu diriges la formation sécurité d'une entreprise. Écris deux façons de savoir si elle marche.",
-          "answer": "Par exemple : un quiz dont on analyse les erreurs, et le suivi des signalements de mails suspects.",
-          "explanation": "L'une mesure ce que les gens savent, l'autre ce qu'ils font.",
+          "id": "d1-sens-evaluation-f4",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "Which is better: more reports of suspected issues, or more successful compromises?",
+          "answer": "More reports. It means employees are learning to spot problems.",
+          "explanation": "A report means someone spotted the danger before it succeeded.",
+          "explanation_more": "Source: (ISC)2 manual, domain 1, section “Program Effectiveness Evaluation”.",
+          "retention_goal": "1y"
+        },
+        {
+          "id": "d1-sens-evaluation-f5",
+          "type": "flash",
+          "phase": "entrainement",
+          "question": "What does “metrics” mean?",
+          "answer": "Measurements: numbers that you keep track of.",
+          "explanation": "A completion rate is a simple metric.",
           "retention_goal": "1y"
         }
       ]

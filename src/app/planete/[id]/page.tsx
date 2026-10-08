@@ -1,8 +1,5 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { BoutonLangue } from "@/components/BoutonLangue";
-import { lireLangue } from "@/lib/langue";
-import { estMatiereTraduite } from "@/lib/langue-types";
 import { Ambiance } from "@/components/audio/Ambiance";
 import { PlaneteSvg } from "@/components/odyssee/PlaneteSvg";
 import { apparenceGalaxie } from "@/lib/odyssee/planete";
@@ -49,12 +46,9 @@ export default async function PagePlanete({ params }: PageProps<"/planete/[id]">
           <p className="texte-2 text-sm">{galaxie.nom}</p>
           <h1 className="text-2xl font-semibold">{planete.nom}</h1>
         </div>
-        <div className="flex items-center gap-4">
-          {estMatiereTraduite(univers.secteur.id) && <BoutonLangue langue={await lireLangue()} />}
-          <Link href={routes.galaxie(galaxie.id)} className="texte-2 text-sm underline underline-offset-4 whitespace-nowrap">
-            Galaxie
-          </Link>
-        </div>
+        <Link href={routes.galaxie(galaxie.id)} className="texte-2 text-sm underline underline-offset-4 whitespace-nowrap">
+          Galaxie
+        </Link>
       </header>
 
       <div className="flex items-center gap-4 sm:gap-6 panneau p-4 sm:p-5">

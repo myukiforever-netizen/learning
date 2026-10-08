@@ -1,89 +1,104 @@
-# GUIDE_CISSP.md : écrire l'univers « CISSP » (cybersécurité pour débutants)
+# GUIDE_CISSP.md : écrire l'univers « CISSP » (v2, 08/10/2026)
 
-Complète `docs/GUIDE_UNIVERS.md` (lire d'abord) et `SCHEMA.md`. Ce guide ne répète pas : il ajoute ce qui est propre au CISSP.
-Modèle de planète complète : `docs/cissp/exemple_planete.json` (la planète « confidentialité »). **Copier son niveau de détail et son ton.**
+Complète `docs/GUIDE_UNIVERS.md` (lire d'abord) et `SCHEMA.md`. Modèle de planète complète : `docs/cissp/exemple_planete.json` (la planète « confidentiality »).
+**Copier son niveau de détail et son ton.**
 
-## 1. Le projet
+## 1. Ce qui a changé en v2 (demande du 08/10/2026)
 
-- Source : les 8 domaines du manuel officiel (ISC)2 CISSP, en anglais, dans `Univers Informatique a Renommer/` (PDF ; **jamais publié** : dossier ignoré par git).
-- Texte propre, une ligne numérotée par paragraphe : `Univers Informatique a Renommer/_texte/domaine<N>.txt` (format `numéro<TAB>texte`). Régénérer : `node scripts/extraire-source.mjs <N> <sortie>`.
-- Public : **débutant complet, dès 13 ans.** Priorité absolue : **la compréhension.** Puis la mémorisation mot pour mot des définitions officielles.
-- Un domaine = plusieurs galaxies (une par grande section du livre). Une matière unique : `cissp`, un fichier JSON par galaxie dans `src/data/matieres/cissp/`.
+- **Tout le CISSP est en anglais seulement.** Plus de version française, plus de bouton FR/EN. L'interface de l'app autour des cartes reste en français.
+- **Vocabulaire encore plus simple** (voir §3).
+- **Deux types de cartes seulement : `qcm` (priorité absolue) et `flash` (« self memory » : on répond dans sa tête, on se corrige).** Plus de cloze, duel, sort, why, whatif, problem, exemples.
+- **Les QCM imitent ceux de l'examen** (voir §5) : 4 choix, une seule meilleure réponse, scénarios, mots-clés BEST / FIRST / MOST / LEAST.
 
-## 2. Les deux règles d'or
+## 2. Le projet
 
-### Règle 1 : comprendre d'abord
-- Chaque planète commence par une **découverte** (3 à 8 écrans) avec une **analogie** du quotidien (collège, cuisine, sport, jeux, maison, magasin) et un écran **predire**.
-- Tutoiement, **phrases de 20 mots maximum**, une idée par phrase, mots simples. Jamais « évidemment », « simplement », « faux », « échec ».
-- **Chaque mot technique est défini au moment où il apparaît** (dans la phrase, avec un exemple), ou il a déjà été défini dans une planète précédente de la matière. Un mot technique n'est **jamais** utilisé avant sa définition. Les mots du quotidien informatique (réseau, serveur, mot de passe, chiffrer, pirate, malware…) sont définis dans la galaxie « mots de base » (`d1-m00-mots`) : on peut les utiliser partout.
-- Premier emploi d'un terme dans une planète : **nom français (nom anglais)**, ex. « le moindre privilège (least privilege) ». Ensuite on peut garder le français.
-- Chaque idée a au moins une carte **« pourquoi »** ou **« mise en situation »** (un petit scénario concret à analyser). On ne teste pas seulement des mots.
-- Les pièges de l'examen (deux notions qu'on confond) deviennent des **duels**, avec l'explication de la différence.
+- Source : les 8 domaines du manuel officiel (ISC)2 CISSP, en anglais, dans `Univers Informatique a Renommer/` (PDF ; **jamais publié** : dossier ignoré par git). Texte propre numéroté : `Univers Informatique a Renommer/_texte/domaine<N>.txt` (régénérer : `node scripts/extraire-source.mjs <N> <sortie>`).
+- Public : un apprenant français, débutant complet, qui prépare l'examen CISSP **en anglais**. Priorité : **comprendre**, puis **réussir les QCM de l'examen**, puis **retenir mot pour mot les définitions officielles**.
+- Les vraies questions passées de l'examen sont confidentielles (ISC2 interdit de les diffuser) : on n'en utilise **aucune**. Toutes les questions sont écrites par nous, dans le **style** officiel.
+- Une matière unique `cissp`, un fichier JSON par galaxie dans `src/data/matieres/cissp/`.
 
-### Règle 2 : les définitions officielles sont apprises TELLES QUELLES, en anglais
-Le livre définit des notions avec des phrases précises. Elles sont à connaître **mot pour mot**.
+## 3. L'anglais simple (très important)
 
-**Ce qui compte comme « définition officielle »** : toute phrase du livre qui définit un terme (« X is… », « X refers to… », « (ISC)2 defines X as… », « NIST defines the purpose of … as follows »), et chaque élément d'une liste à retenir (les 4 canons, les lettres de SMART, les 5 fonctions du NIST CSF…).
+- Niveau visé : **anglais facile (A2-B1)**, celui d'un élève de 13 ans qui apprend l'anglais.
+- **Phrases courtes** : 12 mots en moyenne, **22 mots au maximum**. Une idée par phrase.
+- **Mots courants** : `use` (pas `utilize`), `start` (pas `commence`), `help` (pas `facilitate`), `show` (pas `demonstrate`), `need` (pas `require`), `buy` (pas `purchase`), `end` (pas `terminate`), `about` (pas `approximately`). Interdits dans nos textes : `utilize, commence, subsequently, furthermore, moreover, whereas, thereby, albeit, ascertain, endeavor, facilitate, leverage, notwithstanding, henceforth`.
+- **Pas d'expressions imagées** ni de verbes à particule difficiles (`carry out`, `figure out`) quand un mot simple existe ; pas de références culturelles (sport, séries…). Temps simples : présent, passé simple, `will`, `can`.
+- **Les mots techniques de l'examen sont gardés** (confidentiality, least privilege, due care…) : ce sont les mots de l'examen. Chacun est **expliqué en mots très simples la première fois** (dans la découverte), avec un exemple. Un mot technique n'est jamais utilisé avant d'être expliqué.
+- Les **définitions officielles du manuel** restent **telles quelles** (leur anglais est plus difficile) ; la carte qui les montre donne juste après **une explication en mots simples**.
+- Ton calme et encourageant : jamais « wrong », « failed », « obviously », « simply ». On dit « not quite », « look at why ».
+- Pas de gras, pas de balises, pas d'emoji. Guillemets : “ ” ; jamais de guillemet droit " dans un texte (sauf dans une phrase officielle qui en contient, écrit `\"` dans le JSON).
 
-**Chaque définition** est une suite de cartes dont l'id finit par `-def1`, `-def2`, `-def3`, `-def4`. Toutes contiennent la phrase du livre **sans changer un seul mot** (seules la casse, la ponctuation et les coupures de page peuvent différer). Interdit : résumer, reformuler, couper au milieu d'une proposition, corriger la grammaire du livre.
+## 4. Structure
+
+- **Module (galaxie)** : `id` = nom du fichier (`d1-mNN-slug`), `name` « D1.NN titre court » ; 4 à 9 planètes ; `galaxie: { teinte, ambiance }`.
+- **Concept (planète)** : `id` `d1-<slug court>` unique dans toute la matière ; `name` = le terme anglais ; `planete: { relief }` ; `decouverte` (3 à 8 écrans).
+- **Ids de cartes** : `<id planète>-def1|def2|def3` (définitions officielles), `<id planète>-<terme>-def1…` s'il y en a plusieurs, `<id planète>-q<n>` (QCM), `<id planète>-f<n>` (flash). **Les anciens ids du type `<planète>-<chiffre>` ne sont plus utilisés** (ils sont archivés à l'import) : ne jamais en réutiliser un.
+- **Phase** (important) : un QCM est par défaut un exercice de « Laboratoire » (sans révision espacée). Pour qu'une carte entre dans la révision espacée, il faut `"phase": "entrainement"`. Règle : environ **1 QCM sur 3 en `comprehension`** (vérifier qu'on a compris, juste après la découverte), **les autres en `entrainement`** ; les flash sont en `entrainement` ; les `-def1` sont en `comprehension`.
+- `retention_goal` : `life` pour les définitions officielles, `1y` par défaut, `3m` pour un chiffre précis ou une date.
+- Par planète : **de 16 à 36 cartes** dont :
+  - toutes les définitions officielles de la section (voir §6) ;
+  - **au moins 9 QCM** hors définitions, dont **au moins 4 « style examen »** (scénario ou mot-clé BEST / FIRST / MOST / LEAST / NOT) ;
+  - **au moins 3 QCM en `comprehension`** et **5 en `entrainement`** ;
+  - **au moins 3 flash** (`self memory`).
+- Une planète = **une idée**. Si elle a plus de 6 définitions, la couper en deux.
+
+## 5. Les QCM : comme à l'examen (priorité absolue)
+
+### Ce que l'on sait de l'examen
+Examen ISC2 : 100 à 150 questions en 3 heures, test adaptatif (CAT), 700 points sur 1000 pour réussir. Question normale = **4 choix, une seule meilleure réponse**. Certaines sont des **scénarios** (une situation, puis une question). Quelques questions ont d'autres formes (glisser-déposer, zones à cliquer) : nous les remplaçons par des QCM. Les pièges viennent presque toujours de **réponses plausibles** : il faut choisir **la meilleure**, pas une réponse « pas fausse ».
+Sources publiques : page ISC2 « Getting Ready for Your ISC2 Exam », guides de préparation (voir `docs/cissp/examen_notes.md`).
+
+### Règles d'écriture
+1. **Exactement 4 options**, une seule bonne. **La position de la bonne réponse varie** : l'app n'a pas de mélange, donc sur une galaxie la bonne réponse est en position 1, 2, 3 et 4 à peu près autant (le test refuse plus de 35 % pour une position). Pas plus de 2 bonnes réponses de suite à la même position.
+2. **La bonne réponse n'est ni toujours ni jamais la plus longue** (le test exige entre 10 % et 45 % de bonnes réponses les plus longues par galaxie). Les 4 options ont une longueur et une forme proches.
+3. **Question** : une situation courte (1 à 3 phrases), puis la question. Les mots-clés sont **en majuscules** comme à l'examen : `BEST`, `MOST`, `FIRST`, `LEAST`, `NOT`. Pas d'indice dans la formulation.
+4. **Les mauvaises réponses sont de vraies erreurs de débutant ou de manager pressé**, jamais absurdes :
+   - le **mauvais objectif de sécurité** (disponibilité à la place de confidentialité) ;
+   - une réponse **trop technique** quand la question demande une décision de gestion ;
+   - une réponse **extrême** (« remove all risk completely », « always », « never ») ;
+   - une action **réactive** quand une action préventive existe ;
+   - une réponse **hors sujet** (vraie, mais ne répond pas à la question) ;
+   - **un terme voisin** de la même galaxie mal utilisé (seulement des termes déjà enseignés).
+5. **Pas de « all of the above » ni de « none of the above »**, pas de double négation.
+6. `answer` = copie exacte d'une option. **`options_why` : 4 éléments** ; `""` pour la bonne réponse, et pour chaque mauvaise une phrase simple qui dit **pourquoi elle est tentante et pourquoi elle ne va pas**.
+7. `explanation` : pourquoi la bonne réponse est la meilleure (1 à 2 phrases). `explanation_more` (facultatif) : source du manuel (« Source: (ISC)2 manual, domain 1, section … ») ; ce qui vient d'ailleurs : « outside the manual ».
+8. **L'état d'esprit du manager** (enseigné dans la galaxie « How the exam asks questions ») : réduire le risque pour l'organisation, politique et gouvernance avant la technique, évaluer avant d'agir, prévenir plutôt que réparer, protéger le plus de monde possible. Les QCM de scénario appliquent cette logique.
+9. Types de QCM à mélanger dans chaque planète : (a) comprendre une idée (« which goal is lost? »), (b) **scénario** (« what is the BEST action? »), (c) **FIRST** (« what should the manager do FIRST? »), (d) **NOT / LEAST** (« which is NOT part of… »), (e) **comparer deux notions proches** (qui remplace les duels), (f) **ordre d'un processus** (« which step comes AFTER … ? », qui remplace les « ordonner »), (g) **ranger** (« which item belongs to category X ? », qui remplace les « classer »).
+
+### Les cartes `flash` (« self memory »)
+Question courte → on répond dans sa tête → on révèle → on se corrige (« I knew it / not yet »). À utiliser pour : un sigle (« What does SLE stand for? »), un chiffre ou une date clé, **un élément d'une liste** (une carte par élément, jamais « récite la liste »), une idée à dire avec ses mots. `answer` en 1 à 3 phrases simples.
+
+## 6. Les définitions officielles (apprises TELLES QUELLES)
+
+Les phrases qui **définissent un terme** dans le manuel (« X is… », « X refers to… », « (ISC)2 defines X as… ») et chaque élément d'une liste à retenir (les 4 canons, les lettres de SMART, les 5 fonctions du NIST CSF…) suivent cette règle. La phrase est copiée du manuel **sans changer un mot** (seules la casse, la ponctuation et les coupures de page peuvent différer).
 
 | Carte | Type | Phase | Contenu |
 |---|---|---|---|
-| `…-def1` | `flash` | `comprehension` | question : « Définition officielle (en anglais) : « terme » ». `answer` = phrase EN exacte + `\n\nTraduction : ` + traduction française fidèle. |
-| `…-def2` | `cloze` | entraînement (défaut) | La phrase EN avec **2 trous** sur des mots-clés (un seul mot par trou). |
-| `…-def3` | `cloze` | entraînement | La phrase EN avec **3 trous** sur des groupes de 2 à 4 mots (environ la moitié de la phrase). |
-| `…-def4` | `problem` | entraînement | « Écris de mémoire la définition officielle de « terme » (en anglais). » `answer` = phrase EN exacte + `\n\nTraduction : …`. |
+| `…-def1` | `flash` | `comprehension` | question : « Official definition: “term” ». `answer` = la phrase exacte du manuel. `explanation` = **la même idée en mots très simples** (1 à 2 phrases). |
+| `…-def2` | `qcm` | `entrainement` | « Which sentence is the official definition of “term”? » : **4 phrases**, dont la phrase exacte du manuel (réponse) et **3 variantes proches** (un ou deux mots clés changés : un mot opposé, un objectif de sécurité voisin, un « only » ajouté…). Les 3 variantes ne sont pas du manuel. |
+| `…-def3` | `flash` | `entrainement` | « Say the official definition of “term” from memory. » `answer` = la phrase exacte. Auto-évaluation. |
 
-- Pour les `cloze` : `answer` = la phrase complète EN exacte ; la question, trous remplis, doit redonner exactement `answer`.
-- **Définition clé** (3 par planète au maximum, ce que l'examen demande vraiment, souvent le titre de la planète) : les 4 cartes. **Définition secondaire** : seulement `-def1` et `-def3`.
-- `retention_goal: "life"` pour toutes ces cartes. `explanation` : une phrase qui aide à comprendre ou à retenir (image, mot-clé), jamais une répétition.
-- Pour une définition qui contient un guillemet droit, l'écrire `\"` dans le JSON.
-- **Le contrôle est automatique** : `node scripts/verifier-definitions.mjs <domaine> <fichier.json>` échoue si une phrase n'est pas exactement dans le manuel. Il doit afficher « 0 erreur » avant de rendre le travail.
-- Id des définitions : `<id du concept>-def1` ou `<id du concept>-<terme>-def1` s'il y a plusieurs définitions dans la planète (ex. `d1-confid-lp-def1`).
-- La traduction française est fidèle et simple, mais n'a pas besoin d'être mot pour mot.
+- **Définition clé** (3 par planète au maximum, ce que l'examen demande vraiment) : `def1`, `def2`, `def3`. **Définition secondaire** : `def1` et `def3` seulement.
+- `retention_goal: "life"` pour toutes. `explanation_more` de `def1` : « Source: (ISC)2 manual, domain N, section … ».
+- Une définition qui contient un guillemet droit : l'écrire `\"` dans le JSON.
+- **Contrôle automatique** : `node scripts/verifier-definitions.mjs <domaine> <fichier>` échoue si la phrase de `answer` d'une carte `-def1/2/3` n'est pas exactement dans le manuel, ou si les 3 variantes d'un `-def2` sont aussi dans le manuel. À lancer avant de rendre.
 
-## 3. Structure
+## 7. Découverte (3 à 8 écrans, 4 à 6 conseillés)
 
-- **Module (galaxie)** : `id` `d1-mNN-slug` (NN = numéro à 2 chiffres, ex. `d1-m01-ethique-cia`), `name` « D1.NN titre court » ; 4 à 9 planètes ; `galaxie: { "teinte": 0-360, "ambiance": "calme|tendu|mysterieux|lumineux" }` (teinte distincte d'une galaxie à l'autre : domaine 1 = teintes 180 à 260).
-- **Concept (planète)** : `id` `d1-<slug court>` (ex. `d1-confid`) unique dans toute la matière, et préfixe de tous les ids de ses cartes ; `name` en français avec le terme anglais entre parenthèses quand il y en a un ; `decouverte` (3 à 8 écrans) ; `planete: { "relief": … }` (varier).
-- **Cartes** : `id` = `<id concept>-<n>` pour les cartes normales (`d1-confid-1`), `-defN` pour les définitions. Les ids sont uniques et ne changent jamais.
-- Une planète = **une idée**. Si elle a plus de 6 définitions, la couper en deux planètes.
-- Par planète : de **12 à 28 cartes** au total, dont :
-  - toutes les définitions officielles de la section (voir règle 2) ;
-  - au moins **2 cartes de compréhension** (duel, qcm, sort, worked_example) hors définitions ;
-  - au moins **3 cartes d'entraînement** (flash, cloze, why, whatif, problem) hors définitions ;
-  - au moins **1 mise en situation** (qcm ou why avec un petit scénario) ;
-  - types variés : pas plus de 2 cartes du même type d'affilée (hors suites de définitions).
-- Chaque planète est autonome : une planète doit pouvoir être faite après la précédente de la galaxie, sans rien d'autre.
+`histoire` (une situation de la vie, sans la réponse), `analogie` (« comme » / « en vrai » ; dire où l'image s'arrête si elle peut tromper), `predire` (2 à 4 options plausibles, `answer` copiée exactement d'une option), `exemple` concret (une entreprise, un bureau). Analogies de la vie d'un adolescent (école, maison, jeux, téléphone, cuisine, magasin) ; elles ne contredisent jamais la notion. Les textes de découverte suivent aussi l'anglais simple du §3.
 
-## 4. Que mettre dans une planète (et quoi laisser de côté)
+## 8. Liste rouge
 
-Le livre est long et technique. On **garde tout ce qui peut tomber à l'examen** : définitions, listes officielles (même longues : les découper en plusieurs cartes ou un `sort`/`ordonner`), noms de lois, de normes et de cadres, dates et chiffres clés, différences entre notions.
-On **explique en simple** tout le reste, par une analogie ou un exemple. On ne supprime pas une notion parce qu'elle est difficile : on la découpe en petits morceaux.
-- Les noms de lois, sigles et chiffres : cartes `flash`/`cloze`/`duel` avec `retention_goal: "3m"` (chiffre précis) ou `"1y"`. La source (domaine, section) dans `explanation_more`.
-- Les longues listes (les 18 familles du NIST 800-53…) : un `sort` ou `ordonner` par petits groupes, ou une carte flash par élément, jamais une carte « récite la liste ».
-- Les sigles : toujours donner l'écriture complète (en anglais) et le sens en français.
+- Reformuler une définition officielle ; un mot technique non expliqué ou utilisé avant son explication.
+- Un type de carte autre que `qcm` ou `flash`.
+- Un QCM : à 3 ou 5 options, avec « all of the above », avec une bonne réponse devinable (la plus longue, la plus précise), avec une mauvaise réponse absurde, ou dont l'`options_why` est incomplet.
+- Une phrase de plus de 22 mots, ou un des mots interdits du §3.
+- Une carte « récite la liste » ; deux idées dans une carte.
+- Inventer un chiffre, une date, un nom de loi absents du manuel (une information venue d'ailleurs va en `explanation_more` avec « outside the manual »).
+- Réutiliser un ancien id `<planète>-<chiffre>`.
 
-## 5. Découverte : consignes en plus
-
-- 4 à 6 écrans : `histoire` (une situation de la vie, pas la réponse), `analogie` (« comme » / « en vrai », dire où l'image s'arrête si elle peut tromper), `predire` (2 à 4 options plausibles, `answer` copiée exactement d'une option), `exemple` concret (une entreprise, un site, une situation réelle de bureau).
-- Les analogies viennent de la vie d'un adolescent ou d'un foyer (collège, famille, sport, jeux vidéo, téléphone, magasin, cuisine). Elles ne contredisent jamais la notion.
-- **Pas de gras ni de balises** dans les textes (`**`, `_`, HTML) : le rendu les afficherait tels quels.
-- Pas d'emoji dans le contenu.
-
-## 6. Liste rouge (en plus de celle du GUIDE_UNIVERS)
-
-- Reformuler ou « améliorer » une définition officielle.
-- Un mot technique non défini (anglais ou français), ou utilisé avant sa définition.
-- Une phrase de plus de 22 mots dans les textes en français (les définitions officielles en anglais sont exemptées).
-- Une carte qui demande de réciter une liste entière.
-- Une réponse de QCM devinable par sa forme (la plus longue, la plus précise…).
-- Un piège de QCM absurde : chaque piège doit être une erreur qu'un vrai débutant ferait, et `options_why` dit pourquoi.
-- Inventer un chiffre, une date, un nom de loi qui ne sont pas dans le manuel (si une information vient d'ailleurs, elle va dans `explanation_more` avec « hors manuel »).
-- Un simple vrai/faux à rallonge ; une carte qui contient deux idées.
-
-## 7. Contrôles avant de rendre un fichier
+## 9. Contrôles avant de rendre un fichier
 
 1. JSON valide ; `node scripts/verifier-definitions.mjs <N> <fichier>` : « 0 erreur ».
-2. `npx vitest run tests/cissp.test.ts` (avec `CISSP_FICHIER=<nom du fichier>` pour ne tester que le sien) : tout vert (format, nombre d'écrans et de cartes par planète, ids uniques, cohérence des suites de définitions, longueur des phrases).
-3. Relecture : un adolescent de 13 ans comprend chaque écran de découverte sans aide ; aucun mot technique n'est utilisé avant sa définition ; chaque définition du livre de la section est couverte.
+2. `CISSP_FICHIER=<fichier>.json npx vitest run tests/cissp.test.ts` : tout vert (types, QCM à 4 options, positions des bonnes réponses, longueurs, phases, définitions, anglais simple).
+3. Relecture : un élève de 13 ans qui apprend l'anglais comprend chaque écran et chaque question ; chaque QCM a une seule meilleure réponse que le manuel justifie.

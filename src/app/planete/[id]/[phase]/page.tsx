@@ -6,7 +6,6 @@ import { aujourdhui } from "@/lib/dates";
 import { composerMission, composerPhase } from "@/lib/odyssee/composer";
 import { etapeAuMoins } from "@/lib/odyssee/univers";
 import { depuisUrl, routes } from "@/lib/odyssee/urls";
-import { optionsLangue } from "@/lib/supabase/alternatives";
 import { cartesDePlanete, chargerUnivers } from "@/lib/supabase/odyssee";
 import { creerSession } from "@/lib/supabase/requetes";
 
@@ -33,18 +32,14 @@ export default async function PagePhase({ params }: PageProps<"/planete/[id]/[ph
       ? composerMission(cartes, `${planete.id}:${planete.tentatives}`)
       : composerPhase(cartes, phase as "comprehension" | "entrainement");
 
-  const cartesSeance = file.map((carte) => parId.get(carte.id)!);
   const sessionId = await creerSession(0);
-  const { langue, cartesAlt } = await optionsLangue(cartesSeance);
   return (
     <>
     <Ambiance teinte={apparenceGalaxie(galaxie.id).teinte} />
     <Session
       mode={phase as Phase}
       sessionId={sessionId}
-      cartes={cartesSeance}
-      langue={langue}
-      cartesAlt={cartesAlt}
+      cartes={file.map((carte) => parId.get(carte.id)!)}
       aujourdhui={aujourdhui()}
       cibleId={planete.id}
       retourHref={routes.planete(planete.id)}

@@ -1,7 +1,4 @@
 import Link from "next/link";
-import { BoutonLangue } from "@/components/BoutonLangue";
-import { lireLangue } from "@/lib/langue";
-import { estMatiereTraduite } from "@/lib/langue-types";
 import { Ambiance } from "@/components/audio/Ambiance";
 import { CarteUnivers } from "@/components/odyssee/CarteUnivers";
 import { Hud } from "@/components/odyssee/Hud";
@@ -32,7 +29,6 @@ export default async function PageUnivers() {
   }
 
   const { secteur, detresse } = univers;
-  const langue = await lireLangue();
   const destination = prochaineDestination(secteur);
   const resume = resumeSecteur(secteur);
   const signaux = [...detresse.values()].reduce((s, n) => s + n, 0);
@@ -42,10 +38,7 @@ export default async function PageUnivers() {
       <Ambiance />
       <Hud profil={univers.profil} joueur={profil} serie={chiffres.serie} signaux={chiffres.dues} />
 
-      <div className="flex flex-wrap items-center justify-between gap-3">
-        <SelecteurSecteur secteurs={univers.secteurs} courantId={secteur.id} />
-        {estMatiereTraduite(secteur.id) && <BoutonLangue langue={langue} />}
-      </div>
+      <SelecteurSecteur secteurs={univers.secteurs} courantId={secteur.id} />
 
       <section className="flex flex-col gap-2">
         <p className="texte-2 text-sm">Secteur</p>
